@@ -10,7 +10,7 @@ navbar:
     - text: "About"
       href: about.html
     - text: "GitHub"
-      href: https://bryanwhiting.github.io/ds-arxiv/
+      href: https://github.com/bryanwhiting/ds-arxiv
     - icon: fa fa-rss
       href: index.xml
 base_url: bryanwhiting.github.io/ds-arxiv/
