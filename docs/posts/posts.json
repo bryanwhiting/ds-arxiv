@@ -1,0 +1,17 @@
+[
+  {
+    "path": "posts/welcome/",
+    "title": "Welcome to The Data Science ArXiv",
+    "description": "The daily published ArXiv!",
+    "author": [
+      {
+        "name": "Nora Jones",
+        "url": "https://example.com/norajones"
+      }
+    ],
+    "date": "2019-12-16",
+    "categories": [],
+    "preview": {},
+    "last_modified": "2019-12-16T20:46:22-05:00"
+  }
+]
