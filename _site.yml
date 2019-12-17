@@ -17,4 +17,10 @@ base_url: bryanwhiting.github.io/arxiv-ds/
 output: 
   distill::distill_article:
     toc: true
-   
+collections:
+  posts:
+    disqus: 
+      shortname: dsarxiv
+      hidden: false
+    share: [twitter, linkedin]   
+    citations: false
