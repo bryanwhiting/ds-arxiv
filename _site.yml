@@ -10,10 +10,10 @@ navbar:
     - text: "About"
       href: about.html
     - text: "GitHub"
-      href: https://bryanwhiting.github.io/arxiv-ds/
+      href: https://bryanwhiting.github.io/ds-arxiv/
     - icon: fa fa-rss
       href: index.xml
-base_url: bryanwhiting.github.io/arxiv-ds/
+base_url: bryanwhiting.github.io/ds-arxiv/
 output: 
   distill::distill_article:
     toc: true
