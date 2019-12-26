@@ -1,5 +1,5 @@
 ---
-title: "The Data Science ArXiv"
+title: "daily dump of data science research from arxiv.org"
 site: distill::distill_website
 listing: posts
 ---
