@@ -38,7 +38,7 @@ refinement and evaluation, and the accordingly generated Web-based
 domain-specific tool, which we also provide as an artifact for cooperative
 experimentation. In particular, the artifact allows readers to combine a given
 Random Forest with their own ADDs regarded as expert knowledge and to
-experience the corresponding effect.",cs.SE,"cs.AI, cs.LG, cs.PL, cs.SE",4,Software Engineering,"Artificial Intelligence, Machine Learning, Programming Languages, Software Engineering",Bernhard Steffen,"Frederik Gossen, Alnis Murtovi, Philip Zweihoff, Bernhard Steffen",4,http://arxiv.org/pdf/1912.11308v1,http://arxiv.org/abs/1912.11308v1,2019-12-24
+experience the corresponding effect.",cs.SE,"cs.SE, cs.AI, cs.PL, cs.LG",4,Software Engineering,"Software Engineering, Artificial Intelligence, Programming Languages, Machine Learning",Bernhard Steffen,"Frederik Gossen, Alnis Murtovi, Philip Zweihoff, Bernhard Steffen",4,http://arxiv.org/pdf/1912.11308v1,http://arxiv.org/abs/1912.11308v1,2019-12-24
 "Stochastic Fairness and Language-Theoretic Fairness in Planning on
   Nondeterministic Domains","We address two central notions of fairness in the literature of planning on
 nondeterministic fully observable domains. The first, which we call stochastic
@@ -56,7 +56,7 @@ provide an optimal sound and complete algorithm for solving state-action fair
 planning for LTL/LTLf goals, as well as a correct proof of the lower bound of
 the goal-complexity (our proof is general enough that it provides new proofs
 also for the no-fairness and stochastic-fairness cases). Overall, we show that
-stochastic fairness is better behaved than state-action fairness.",cs.AI,"cs.FL, cs.AI",2,Artificial Intelligence,"Formal Languages and Automata Theory, Artificial Intelligence",Sasha Rubin,"Benjamin Aminof, Giuseppe De Giacomo, Sasha Rubin",3,http://arxiv.org/pdf/1912.11203v1,http://arxiv.org/abs/1912.11203v1,2019-12-24
+stochastic fairness is better behaved than state-action fairness.",cs.AI,"cs.AI, cs.FL",2,Artificial Intelligence,"Artificial Intelligence, Formal Languages and Automata Theory",Sasha Rubin,"Benjamin Aminof, Giuseppe De Giacomo, Sasha Rubin",3,http://arxiv.org/pdf/1912.11203v1,http://arxiv.org/abs/1912.11203v1,2019-12-24
 "Evolution of the accretion disk-corona during bright hard-to-soft state
   transition: A reflection spectroscopic study with GX 339-4","We present the analysis of several observations of the black hole binary GX
 339--4 during its bright intermediate states from two different outbursts (2002
@@ -79,7 +79,7 @@ an analysis by employing a self-consistent Comptonized accretion disk model
 accounting for the scatter of disk photons by the corona, and measure low inner
 disk truncation radius across the bright intermediate states, using the
 temperature dependent values of spectral hardening factor, thereby
-independently confirming our results from the reflection spectrum analysis.",astro-ph.HE,"astro-ph.HE, physics.plasm-ph, physics.data-an, gr-qc, hep-ex",5,High Energy Astrophysical Phenomena,"High Energy Astrophysical Phenomena, Plasma Physics, Data Analysis, Statistics and Probability, General Relativity and Quantum Cosmology, High Energy Physics - Experiment",Fiona A. Harrison,"Navin Sridhar, Javier A. García, James F. Steiner, Riley M. T. Connors, Victoria Grinberg, Fiona A. Harrison",6,http://arxiv.org/pdf/1912.11447v1,http://arxiv.org/abs/1912.11447v1,2019-12-24
+independently confirming our results from the reflection spectrum analysis.",astro-ph.HE,"astro-ph.HE, gr-qc, hep-ex, physics.plasm-ph, physics.data-an",5,High Energy Astrophysical Phenomena,"High Energy Astrophysical Phenomena, General Relativity and Quantum Cosmology, High Energy Physics - Experiment, Plasma Physics, Data Analysis, Statistics and Probability",Fiona A. Harrison,"Navin Sridhar, Javier A. García, James F. Steiner, Riley M. T. Connors, Victoria Grinberg, Fiona A. Harrison",6,http://arxiv.org/pdf/1912.11447v1,http://arxiv.org/abs/1912.11447v1,2019-12-24
 "Continuous-variable quantum cryptography with discrete alphabets:
   Composable security under collective Gaussian attacks","We consider continuous-variable quantum key distribution with
 discrete-alphabet encodings. In particular, we study protocols where
@@ -90,7 +90,7 @@ a composable security analysis in the finite-size regime assuming the realistic
 but restrictive hypothesis of collective Gaussian attacks. Under this
 assumption, we can efficiently estimate the parameters of the channel via
 maximum likelihood estimators and bound the corresponding error in the final
-secret key rate.",quant-ph,"physics.optics, quant-ph, physics.data-an",3,Quantum Physics,"Optics, Quantum Physics, Data Analysis, Statistics and Probability",Stefano Pirandola,"Panagiotis Papanastasiou, Stefano Pirandola",2,http://arxiv.org/pdf/1912.11418v1,http://arxiv.org/abs/1912.11418v1,2019-12-24
+secret key rate.",quant-ph,"physics.data-an, quant-ph, physics.optics",3,Quantum Physics,"Data Analysis, Statistics and Probability, Quantum Physics, Optics",Stefano Pirandola,"Panagiotis Papanastasiou, Stefano Pirandola",2,http://arxiv.org/pdf/1912.11418v1,http://arxiv.org/abs/1912.11418v1,2019-12-24
 Device-independent Randomness Expansion with Entangled Photons,"With the growing availability of experimental loophole-free Bell tests, it
 has become possible to implement a new class of device-independent random
 number generators whose output can be certified to be uniformly random without
@@ -107,7 +107,7 @@ bits/s with a soundness error bounded by $5.7\times 10^{-7}$ in the presence of
 classical side information. Our system will allow for greater trust in public
 sources of randomness, such as randomness beacons, and the protocols may one
 day enable high-quality sources of private randomness as the device footprint
-shrinks.",quant-ph,"quant-ph, physics.data-an",2,Quantum Physics,"Quantum Physics, Data Analysis, Statistics and Probability",Emanuel Knill,"Lynden K. Shalm, Yanbao Zhang, Joshua C. Bienfang, Collin Schlager, Martin J. Stevens, Michael D. Mazurek, Carlos Abellán, Waldimar Amaya, Morgan W. Mitchell, Mohammad A. Alhejji, Honghao Fu, Joel Ornstein, Richard P. Mirin, Sae Woo Nam, Emanuel Knill",15,http://arxiv.org/pdf/1912.11158v1,http://arxiv.org/abs/1912.11158v1,2019-12-24
+shrinks.",quant-ph,"physics.data-an, quant-ph",2,Quantum Physics,"Data Analysis, Statistics and Probability, Quantum Physics",Emanuel Knill,"Lynden K. Shalm, Yanbao Zhang, Joshua C. Bienfang, Collin Schlager, Martin J. Stevens, Michael D. Mazurek, Carlos Abellán, Waldimar Amaya, Morgan W. Mitchell, Mohammad A. Alhejji, Honghao Fu, Joel Ornstein, Richard P. Mirin, Sae Woo Nam, Emanuel Knill",15,http://arxiv.org/pdf/1912.11158v1,http://arxiv.org/abs/1912.11158v1,2019-12-24
 "TF3P: Three-dimensional Force Fields Fingerprint Learned by Deep
   Capsular Network","Molecular fingerprints are the workhorse in ligand-based drug discovery. In
 recent years, increasing number of research papers reported fascinating results
@@ -124,7 +124,7 @@ solely existing 3D fingerprint E3FP, based on only ligands similarity.
 Furthermore, TF3P is compatible with both statistical models (e.g. similarity
 ensemble approach) and machine learning models. Altogether, we report TF3P as a
 new 3D small molecule fingerprint with promising future in ligand-based drug
-discovery.",q-bio.QM,"q-bio.QM, cs.LG, q-bio.BM",3,Quantitative Methods,"Quantitative Methods, Machine Learning, Biomolecules",Zhenming Liu,"Yanxing Wang, Jianxing Hu, Junyong Lai, Yibo Li, Hongwei Jin, Lihe Zhang, Liangren Zhang, Zhenming Liu",8,http://arxiv.org/pdf/1912.11430v1,http://arxiv.org/abs/1912.11430v1,2019-12-24
+discovery.",q-bio.QM,"q-bio.BM, q-bio.QM, cs.LG",3,Quantitative Methods,"Biomolecules, Quantitative Methods, Machine Learning",Zhenming Liu,"Yanxing Wang, Jianxing Hu, Junyong Lai, Yibo Li, Hongwei Jin, Lihe Zhang, Liangren Zhang, Zhenming Liu",8,http://arxiv.org/pdf/1912.11430v1,http://arxiv.org/abs/1912.11430v1,2019-12-24
 "The Dynamics of Financial Markets: Fibonacci numbers, Elliott waves, and
   solitons","In this paper information theoretical approach is applied to the description
 of financial markets. A model which is expected to describe the markets
@@ -198,7 +198,7 @@ they have intractable limiting distributions. In contrast, the method we
 suggest works for any parametric model and also for some nonparametric models.
 The split LRT can also be used with profile likelihoods to deal with nuisance
 parameters, and it can also be run sequentially to yield anytime-valid
-$p$-values and confidence sequences.",math.ST,"math.ST, stat.ML, stat.ME, stat.TH",4,Statistics Theory,"Statistics Theory, Machine Learning, Methodology, Statistics Theory",Sivaraman Balakrishnan,"Larry Wasserman, Aaditya Ramdas, Sivaraman Balakrishnan",3,http://arxiv.org/pdf/1912.11436v1,http://arxiv.org/abs/1912.11436v1,2019-12-24
+$p$-values and confidence sequences.",math.ST,"stat.ML, math.ST, stat.ME, stat.TH",4,Statistics Theory,"Machine Learning, Statistics Theory, Methodology, Statistics Theory",Sivaraman Balakrishnan,"Larry Wasserman, Aaditya Ramdas, Sivaraman Balakrishnan",3,http://arxiv.org/pdf/1912.11436v1,http://arxiv.org/abs/1912.11436v1,2019-12-24
 Bayesian Aggregation,"A general challenge in statistics is prediction in the presence of multiple
 candidate models or learning algorithms. Model aggregation tries to combine all
 predictive distributions from individual models, which is more stable and
@@ -234,7 +234,7 @@ Then, we introduce a set of important principled characteristics that take
 advantage of the generated instances near the decision boundary to provide
 multifaceted understandings of deep neural networks. We have performed
 extensive experiments on multiple representative datasets across various deep
-neural network models and characterized their decision boundaries.",cs.LG,"stat.ML, cs.LG, cs.CV",3,Machine Learning,"Machine Learning, Machine Learning, Computer Vision and Pattern Recognition",Jiliang Tang,"Hamid Karimi, Tyler Derr, Jiliang Tang",3,http://arxiv.org/pdf/1912.11460v1,http://arxiv.org/abs/1912.11460v1,2019-12-24
+neural network models and characterized their decision boundaries.",cs.LG,"stat.ML, cs.CV, cs.LG",3,Machine Learning,"Machine Learning, Computer Vision and Pattern Recognition, Machine Learning",Jiliang Tang,"Hamid Karimi, Tyler Derr, Jiliang Tang",3,http://arxiv.org/pdf/1912.11460v1,http://arxiv.org/abs/1912.11460v1,2019-12-24
 Fast and deep neuromorphic learning with time-to-first-spike coding,"For a biological agent operating under environmental pressure, energy
 consumption and reaction times are of critical importance. Similarly,
 engineered systems also strive for short time-to-solution and low
@@ -251,7 +251,7 @@ narrows the gap between previous models of first-spike-time learning and
 biological neuronal dynamics, thereby also enabling fast and energy-efficient
 inference on analog neuromorphic devices that inherit these dynamics from their
 biological archetypes, which we demonstrate on two generations of the
-BrainScaleS analog neuromorphic architecture.",cs.NE,"stat.ML, cs.NE, cs.ET, q-bio.NC",4,Neural and Evolutionary Computing,"Machine Learning, Neural and Evolutionary Computing, Emerging Technologies, Neurons and Cognition",Mihai Alexandru Petrovici,"Julian Göltz, Andreas Baumbach, Sebastian Billaudelle, Oliver Breitwieser, Dominik Dold, Laura Kriener, Akos Ferenc Kungl, Walter Senn, Johannes Schemmel, Karlheinz Meier, Mihai Alexandru Petrovici",11,http://arxiv.org/pdf/1912.11443v1,http://arxiv.org/abs/1912.11443v1,2019-12-24
+BrainScaleS analog neuromorphic architecture.",cs.NE,"stat.ML, q-bio.NC, cs.ET, cs.NE",4,Neural and Evolutionary Computing,"Machine Learning, Neurons and Cognition, Emerging Technologies, Neural and Evolutionary Computing",Mihai Alexandru Petrovici,"Julian Göltz, Andreas Baumbach, Sebastian Billaudelle, Oliver Breitwieser, Dominik Dold, Laura Kriener, Akos Ferenc Kungl, Walter Senn, Johannes Schemmel, Karlheinz Meier, Mihai Alexandru Petrovici",11,http://arxiv.org/pdf/1912.11443v1,http://arxiv.org/abs/1912.11443v1,2019-12-24
 "Detection of Community Structures in Networks with Nodal Features based
   on Generative Probabilistic Approach","Community detection is considered as a fundamental task in analyzing social
 networks. Even though many techniques have been proposed for community
@@ -267,7 +267,7 @@ without any prior assumption on the communities. Furthermore, the model is
 capable of determining the strength of node features and structural elements of
 the networks on shaping the communities. The effectiveness of the proposed
 approach over the state-of-the-art algorithms is revealed on synthetic and
-benchmark networks.",cs.SI,"stat.ML, cs.SI",2,Social and Information Networks,"Machine Learning, Social and Information Networks",Mahdi Jalili,"Hadi Zare, Mahdi Hajiabadi, Mahdi Jalili",3,http://arxiv.org/pdf/1912.11420v1,http://arxiv.org/abs/1912.11420v1,2019-12-24
+benchmark networks.",cs.SI,"cs.SI, stat.ML",2,Social and Information Networks,"Social and Information Networks, Machine Learning",Mahdi Jalili,"Hadi Zare, Mahdi Hajiabadi, Mahdi Jalili",3,http://arxiv.org/pdf/1912.11420v1,http://arxiv.org/abs/1912.11420v1,2019-12-24
 Broad Learning System Based on Maximum Correntropy Criterion,"As an effective and efficient discriminative learning method, Broad Learning
 System (BLS) has received increasing attention due to its outstanding
 performance in various regression and classification problems. However, the
@@ -308,7 +308,7 @@ require any changes in the architecture nor on the training procedure. We
 evaluate our method on standard classification and regression benchmarks, and
 on out-of-distribution detection for classification and semantic segmentation.
 We achieve competitive results, while preserving computational efficiency in
-comparison to other popular approaches.",cs.LG,"stat.ML, cs.LG, cs.CV",3,Machine Learning,"Machine Learning, Machine Learning, Computer Vision and Pattern Recognition",Isabelle Bloch,"Gianni Franchi, Andrei Bursuc, Emanuel Aldea, Severine Dubuisson, Isabelle Bloch",5,http://arxiv.org/pdf/1912.11316v1,http://arxiv.org/abs/1912.11316v1,2019-12-24
+comparison to other popular approaches.",cs.LG,"stat.ML, cs.CV, cs.LG",3,Machine Learning,"Machine Learning, Computer Vision and Pattern Recognition, Machine Learning",Isabelle Bloch,"Gianni Franchi, Andrei Bursuc, Emanuel Aldea, Severine Dubuisson, Isabelle Bloch",5,http://arxiv.org/pdf/1912.11316v1,http://arxiv.org/abs/1912.11316v1,2019-12-24
 "Cronus: Robust and Heterogeneous Collaborative Learning with Black-Box
   Knowledge Transfer","Collaborative (federated) learning enables multiple parties to train a model
 without sharing their private data, but through repeated sharing of the
@@ -335,7 +335,7 @@ information leakage through models, and enables us using existing
 privacy-preserving algorithms that mitigate the risk of information leakage
 through the model's output (predictions). Cronus also has a significantly lower
 sample complexity, compared to federated learning, which does not bind its
-security to the number of participants.",stat.ML,"cs.CR, stat.ML, cs.LG",3,Machine Learning,"Cryptography and Security, Machine Learning, Machine Learning",Amir Houmansadr,"Hongyan Chang, Virat Shejwalkar, Reza Shokri, Amir Houmansadr",4,http://arxiv.org/pdf/1912.11279v1,http://arxiv.org/abs/1912.11279v1,2019-12-24
+security to the number of participants.",stat.ML,"stat.ML, cs.LG, cs.CR",3,Machine Learning,"Machine Learning, Machine Learning, Cryptography and Security",Amir Houmansadr,"Hongyan Chang, Virat Shejwalkar, Reza Shokri, Amir Houmansadr",4,http://arxiv.org/pdf/1912.11279v1,http://arxiv.org/abs/1912.11279v1,2019-12-24
 "Mining User Behaviour from Smartphone data, a literature review","To study users' travel behaviour and travel time between origin and
 destination, researchers employ travel surveys. Although there is consensus in
 the field about the potential, after over ten years of research and field
@@ -420,7 +420,7 @@ further introduce audio renderings based on geometrical acoustic simulations
 for a set of publicly available 3D assets and instrument AI-Habitat to support
 the new sensor, making it possible to insert arbitrary sound sources in an
 array of apartment, office, and hotel environments. Our results show that audio
-greatly benefits embodied visual navigation in 3D spaces.",cs.CV,"cs.SD, eess.AS, cs.CV, cs.HC",4,Computer Vision and Pattern Recognition,"Sound, Audio and Speech Processing, Computer Vision and Pattern Recognition, Human-Computer Interaction",Kristen Grauman,"Changan Chen, Unnat Jain, Carl Schissler, Sebastia Vicenc Amengual Gari, Ziad Al-Halah, Vamsi Krishna Ithapu, Philip Robinson, Kristen Grauman",8,http://arxiv.org/pdf/1912.11474v1,http://arxiv.org/abs/1912.11474v1,2019-12-24
+greatly benefits embodied visual navigation in 3D spaces.",cs.CV,"cs.SD, cs.HC, cs.CV, eess.AS",4,Computer Vision and Pattern Recognition,"Sound, Human-Computer Interaction, Computer Vision and Pattern Recognition, Audio and Speech Processing",Kristen Grauman,"Changan Chen, Unnat Jain, Carl Schissler, Sebastia Vicenc Amengual Gari, Ziad Al-Halah, Vamsi Krishna Ithapu, Philip Robinson, Kristen Grauman",8,http://arxiv.org/pdf/1912.11474v1,http://arxiv.org/abs/1912.11474v1,2019-12-24
 Dense RepPoints: Representing Visual Objects with Dense Point Sets,"We present an object representation, called \textbf{Dense RepPoints}, for
 flexible and detailed modeling of object appearance and geometry. In contrast
 to the coarse geometric localization and feature extraction of bounding boxes,
@@ -450,7 +450,7 @@ reconstruction ability and better reconstruction quality with fewer network
 parameters. We design a dense feedback block and propose an end-to-end feedback
 network- FHDR for HDR image generation from a single exposure LDR image.
 Qualitative and quantitative evaluations show the superiority of our approach
-over the state-of-the-art methods.",cs.CV,"eess.IV, cs.CV",2,Computer Vision and Pattern Recognition,"Image and Video Processing, Computer Vision and Pattern Recognition",Shanmuganathan Raman,"Zeeshan Khan, Mukul Khanna, Shanmuganathan Raman",3,http://arxiv.org/pdf/1912.11463v1,http://arxiv.org/abs/1912.11463v1,2019-12-24
+over the state-of-the-art methods.",cs.CV,"cs.CV, eess.IV",2,Computer Vision and Pattern Recognition,"Computer Vision and Pattern Recognition, Image and Video Processing",Shanmuganathan Raman,"Zeeshan Khan, Mukul Khanna, Shanmuganathan Raman",3,http://arxiv.org/pdf/1912.11463v1,http://arxiv.org/abs/1912.11463v1,2019-12-24
 Large Scale Learning of General Visual Representations for Transfer,"Transfer of pre-trained representations improves sample efficiency and
 simplifies hyperparameter tuning when training deep neural networks for vision.
 We revisit the paradigm of pre-training on large supervised datasets and
@@ -463,7 +463,7 @@ achieves 87.8% top-1 accuracy on ILSVRC-2012, 99.3% on CIFAR-10, and 76.7% on
 the Visual Task Adaptation Benchmark (which includes 19 tasks). On small
 datasets, BiT attains 86.4% on ILSVRC-2012 with 25 examples per class, and
 97.6% on CIFAR-10 with 10 examples per class. We conduct detailed analysis of
-the main components that lead to high transfer performance.",cs.CV,"cs.LG, cs.CV",2,Computer Vision and Pattern Recognition,"Machine Learning, Computer Vision and Pattern Recognition",Neil Houlsby,"Alexander Kolesnikov, Lucas Beyer, Xiaohua Zhai, Joan Puigcerver, Jessica Yung, Sylvain Gelly, Neil Houlsby",7,http://arxiv.org/pdf/1912.11370v1,http://arxiv.org/abs/1912.11370v1,2019-12-24
+the main components that lead to high transfer performance.",cs.CV,"cs.CV, cs.LG",2,Computer Vision and Pattern Recognition,"Computer Vision and Pattern Recognition, Machine Learning",Neil Houlsby,"Alexander Kolesnikov, Lucas Beyer, Xiaohua Zhai, Joan Puigcerver, Jessica Yung, Sylvain Gelly, Neil Houlsby",7,http://arxiv.org/pdf/1912.11370v1,http://arxiv.org/abs/1912.11370v1,2019-12-24
 "Robust Visual Tracking via Implicit Low-Rank Constraints and Structural
   Color Histograms","With the guaranteed discrimination and efficiency of spatial appearance
 model, Discriminative Correlation Filters (DCF-) based tracking methods have
@@ -500,7 +500,7 @@ generalization behavior and is sufficient to solve this segmentation problem.
 We illustrate why extensions of this model cannot only be pointless but even
 harmful in a realistic scenario. Also, we suggest two simple modifications
 (that do not alter the topology) to further improve its generalization
-performance.",eess.IV,"cs.LG, eess.IV, cs.CV",3,Image and Video Processing,"Machine Learning, Image and Video Processing, Computer Vision and Pattern Recognition",Norbert Graf,"Sabine Müller, Joachim Weickert, Norbert Graf",3,http://arxiv.org/pdf/1912.11312v1,http://arxiv.org/abs/1912.11312v1,2019-12-24
+performance.",eess.IV,"cs.CV, eess.IV, cs.LG",3,Image and Video Processing,"Computer Vision and Pattern Recognition, Image and Video Processing, Machine Learning",Norbert Graf,"Sabine Müller, Joachim Weickert, Norbert Graf",3,http://arxiv.org/pdf/1912.11312v1,http://arxiv.org/abs/1912.11312v1,2019-12-24
 Deep Manifold Embedding for Hyperspectral Image Classification,"Deep learning methods have played a more and more important role in
 hyperspectral image classification. However, the general deep learning methods
 mainly take advantage of the information of sample itself or the pairwise
@@ -516,7 +516,7 @@ correlation between different subclasses, the DMEM is constructed to preserve
 the estimated geodesic distances on the data manifold between the learned low
 dimensional features of different samples. Experiments over three real-world
 hyperspectral image datasets have demonstrated the effectiveness of the
-proposed method.",cs.CV,"eess.IV, cs.CV",2,Computer Vision and Pattern Recognition,"Image and Video Processing, Computer Vision and Pattern Recognition",Panhe Hu,"Zhiqiang Gong, Weidong Hu, Xiaoyong Du, Ping Zhong, Panhe Hu",5,http://arxiv.org/pdf/1912.11264v1,http://arxiv.org/abs/1912.11264v1,2019-12-24
+proposed method.",cs.CV,"cs.CV, eess.IV",2,Computer Vision and Pattern Recognition,"Computer Vision and Pattern Recognition, Image and Video Processing",Panhe Hu,"Zhiqiang Gong, Weidong Hu, Xiaoyong Du, Ping Zhong, Panhe Hu",5,http://arxiv.org/pdf/1912.11264v1,http://arxiv.org/abs/1912.11264v1,2019-12-24
 Multi-Graph Transformer for Free-Hand Sketch Recognition,"Learning meaningful representations of free-hand sketches remains a
 challenging task given the signal sparsity and the high-level abstraction of
 sketches. Existing techniques have focused on exploiting either the static
@@ -534,7 +534,7 @@ small recognition gap to the CNN-based performance upper bound (72.80% vs.
 the best of our knowledge, this is the first work proposing to represent
 sketches as graphs and apply GNNs for sketch recognition. Code and trained
 models are available at
-https://github.com/PengBoXiangShang/multigraph_transformer.",cs.CV,"cs.LG, cs.CV",2,Computer Vision and Pattern Recognition,"Machine Learning, Computer Vision and Pattern Recognition",Xavier Bresson,"Peng Xu, Chaitanya K. Joshi, Xavier Bresson",3,http://arxiv.org/pdf/1912.11258v1,http://arxiv.org/abs/1912.11258v1,2019-12-24
+https://github.com/PengBoXiangShang/multigraph_transformer.",cs.CV,"cs.CV, cs.LG",2,Computer Vision and Pattern Recognition,"Computer Vision and Pattern Recognition, Machine Learning",Xavier Bresson,"Peng Xu, Chaitanya K. Joshi, Xavier Bresson",3,http://arxiv.org/pdf/1912.11258v1,http://arxiv.org/abs/1912.11258v1,2019-12-24
 Ordered or Orderless: A Revisit for Video based Person Re-Identification,"Is recurrent network really necessary for learning a good visual
 representation for video based person re-identification (VPRe-id)? In this
 paper, we first show that the common practice of employing recurrent neural
@@ -567,7 +567,7 @@ AP respectively without any additional computation budget. The models
 discovered by CR-NAS can be equiped to other powerful detection neck/head and
 be easily transferred to other dataset, e.g. PASCAL VOC, and other vision
 tasks, e.g. instance segmentation. Our CR-NAS can be used as a plugin to
-improve the performance of various networks, which is demanding.",cs.CV,"cs.LG, cs.CV",2,Computer Vision and Pattern Recognition,"Machine Learning, Computer Vision and Pattern Recognition",Wanli Ouyang,"Feng Liang, Chen Lin, Ronghao Guo, Ming Sun, Wei Wu, Junjie Yan, Wanli Ouyang",7,http://arxiv.org/pdf/1912.11234v1,http://arxiv.org/abs/1912.11234v1,2019-12-24
+improve the performance of various networks, which is demanding.",cs.CV,"cs.CV, cs.LG",2,Computer Vision and Pattern Recognition,"Computer Vision and Pattern Recognition, Machine Learning",Wanli Ouyang,"Feng Liang, Chen Lin, Ronghao Guo, Ming Sun, Wei Wu, Junjie Yan, Wanli Ouyang",7,http://arxiv.org/pdf/1912.11234v1,http://arxiv.org/abs/1912.11234v1,2019-12-24
 "Towards Multicellular Biological Deep Neural Nets Based on
   Transcriptional Regulation","Artificial neurons built on synthetic gene networks have potential
 applications ranging from complex cellular decision-making to bioreactor
@@ -581,7 +581,7 @@ Using gene expression models, we simulate its ability to perform arbitrary
 linear classifications from multiple inputs. Finally, we construct a two-layer
 neural network to demonstrate scalability and nonlinear decision boundaries,
 and discuss future directions for utilizing uncontrolled neurons in
-computational tasks.",cs.NE,"q-bio.MN, cs.NE, cs.ET",3,Neural and Evolutionary Computing,"Molecular Networks, Neural and Evolutionary Computing, Emerging Technologies",Sihao Huang,Sihao Huang,1,http://arxiv.org/pdf/1912.11423v1,http://arxiv.org/abs/1912.11423v1,2019-12-24
+computational tasks.",cs.NE,"q-bio.MN, cs.ET, cs.NE",3,Neural and Evolutionary Computing,"Molecular Networks, Emerging Technologies, Neural and Evolutionary Computing",Sihao Huang,Sihao Huang,1,http://arxiv.org/pdf/1912.11423v1,http://arxiv.org/abs/1912.11423v1,2019-12-24
 Audio-based automatic mating success prediction of giant pandas,"Giant pandas, stereotyped as silent animals, make significantly more vocal
 sounds during breeding season, suggesting that sounds are essential for
 coordinating their reproduction and expression of mating preference. Previous
@@ -598,7 +598,7 @@ recurrent units to extract vocal features, and applies attention mechanism to
 force the network to focus on most relevant features. Evaluation experiments on
 a data set collected during the past nine years obtain promising results,
 proving the potential of audio-based automatic mating success prediction
-methods in assisting giant panda reproduction.",cs.SD,"cs.SD, cs.LG, eess.AS",3,Sound,"Sound, Machine Learning, Audio and Speech Processing",Zhihe Zhang,"WeiRan Yan, MaoLin Tang, Qijun Zhao, Peng Chen, Dunwu Qi, Rong Hou, Zhihe Zhang",7,http://arxiv.org/pdf/1912.11333v1,http://arxiv.org/abs/1912.11333v1,2019-12-24
+methods in assisting giant panda reproduction.",cs.SD,"cs.SD, eess.AS, cs.LG",3,Sound,"Sound, Audio and Speech Processing, Machine Learning",Zhihe Zhang,"WeiRan Yan, MaoLin Tang, Qijun Zhao, Peng Chen, Dunwu Qi, Rong Hou, Zhihe Zhang",7,http://arxiv.org/pdf/1912.11333v1,http://arxiv.org/abs/1912.11333v1,2019-12-24
 "Comparison of the P300 detection accuracy related to the BCI speller and
   image recognition scenarios","There are several protocols in the Electroencephalography (EEG) recording
 scenarios which produce various types of event-related potentials (ERP). P300
@@ -618,7 +618,7 @@ increased by increasing the number of trials and channels. The results prove
 that better accuracy is observed in the case of the image recognition scenario
 for the different sets of channels and by using the different number of trials.
 So it can be concluded that P300 pattern which produced in image recognition
-paradigm is more separable than BCI (matrix speller).",eess.SP,"cs.HC, cs.LG, eess.SP, q-bio.NC",4,Signal Processing,"Human-Computer Interaction, Machine Learning, Signal Processing, Neurons and Cognition",S. Mirzakuchaki,"S. A. Karimi, A. M. Mijani, M. T. Talebian, S. Mirzakuchaki",4,http://arxiv.org/pdf/1912.11371v1,http://arxiv.org/abs/1912.11371v1,2019-12-24
+paradigm is more separable than BCI (matrix speller).",eess.SP,"cs.HC, eess.SP, q-bio.NC, cs.LG",4,Signal Processing,"Human-Computer Interaction, Signal Processing, Neurons and Cognition, Machine Learning",S. Mirzakuchaki,"S. A. Karimi, A. M. Mijani, M. T. Talebian, S. Mirzakuchaki",4,http://arxiv.org/pdf/1912.11371v1,http://arxiv.org/abs/1912.11371v1,2019-12-24
 Assessing differentially private deep learning with Membership Inference,"Releasing data in the form of trained neural networks with differential
 privacy promises meaningful anonymization. However, there is an inherent
 privacy-accuracy trade-off in differential privacy which is challenging to
@@ -636,7 +636,7 @@ differential privacy yields a consistently better privacy-accuracy trade-off in
 all cases. We also show that the relative privacy-accuracy trade-off, instead
 of strictly declining linearly over $\epsilon$, is only favorable within a
 small interval. For this purpose we propose $\varphi$, a ratio expressing the
-relative privacy-accuracy trade-off.",cs.CR,"cs.CR, cs.LG",2,Cryptography and Security,"Cryptography and Security, Machine Learning",Florian Kerschbaum,"Daniel Bernau, Philip-William Grassal, Jonas Robl, Florian Kerschbaum",4,http://arxiv.org/pdf/1912.11328v1,http://arxiv.org/abs/1912.11328v1,2019-12-24
+relative privacy-accuracy trade-off.",cs.CR,"cs.LG, cs.CR",2,Cryptography and Security,"Machine Learning, Cryptography and Security",Florian Kerschbaum,"Daniel Bernau, Philip-William Grassal, Jonas Robl, Florian Kerschbaum",4,http://arxiv.org/pdf/1912.11328v1,http://arxiv.org/abs/1912.11328v1,2019-12-24
 "An Analisys of Application Logs with Splunk : developing an App for the
   synthetic analysis of data and security incidents","The present work aims to enhance the application logs of an hypothetical
 infrastructure platform, and to build an App that displays the synthetic data
@@ -644,7 +644,7 @@ about performance, anomalies and security incidents synthesized in the form of
 a Dashboard. The reference architecture, with multiple applications and
 multiple HW distribution, implementing a Service Oriented Architecture, is a
 real case of which the details have been abstracted because we want to extend
-the concept to all architectures with similar characteristics.",cs.CR,"cs.CR, cs.LG",2,Cryptography and Security,"Cryptography and Security, Machine Learning",Roberto Bruzzese,Roberto Bruzzese,1,http://arxiv.org/pdf/1912.11283v1,http://arxiv.org/abs/1912.11283v1,2019-12-24
+the concept to all architectures with similar characteristics.",cs.CR,"cs.LG, cs.CR",2,Cryptography and Security,"Machine Learning, Cryptography and Security",Roberto Bruzzese,Roberto Bruzzese,1,http://arxiv.org/pdf/1912.11283v1,http://arxiv.org/abs/1912.11283v1,2019-12-24
 Interfacial Atomic Number Contrast in Thick TEM Samples,"The atomic number contrast imaging technique reveals an increase in intensity
 at interfaces of a high and low-density material in case of relatively thick
 samples. Elastic scattering factors and absorption coefficients are
@@ -681,7 +681,7 @@ the nonpolar volatile species induces a complete change of the ice surface, as
 the refractory polar molecules (H2O) are left behind. Conclusions. The
 effectiveness of thermal desorption from heated icy grains (e.g., the yield of
 cosmic-ray-induced desorption) is primarily controlled by the thermal energy
-content of the grain and the number and availability of volatile molecules.",astro-ph.GA,"physics.space-ph, physics.comp-ph, astro-ph.GA",3,Astrophysics of Galaxies,"Space Physics, Computational Physics, Astrophysics of Galaxies",Juris Roberts Kalnin,"Juris Kalvans, Juris Roberts Kalnin",2,http://arxiv.org/pdf/1912.11378v1,http://arxiv.org/abs/1912.11378v1,2019-12-24
+content of the grain and the number and availability of volatile molecules.",astro-ph.GA,"astro-ph.GA, physics.comp-ph, physics.space-ph",3,Astrophysics of Galaxies,"Astrophysics of Galaxies, Computational Physics, Space Physics",Juris Roberts Kalnin,"Juris Kalvans, Juris Roberts Kalnin",2,http://arxiv.org/pdf/1912.11378v1,http://arxiv.org/abs/1912.11378v1,2019-12-24
 "Computational framework for monolithic coupling for thin fluid flow in
   contact interfaces","We develop a computational framework for simulating thin fluid flow in narrow
 interfaces between contacting solids, which is relevant for a range
@@ -706,4 +706,4 @@ under increasing external load until the complete sealing of the interface is
 displayed. Finally, effective properties of flat-on-flat rough contact
 interfaces such as transmissivity and real contact area growth are calculated
 using the developed framework, showing qualitatively new results compared to
-the one-way coupling approximation.",cs.CE,"physics.comp-ph, cs.CE, J.2, math.NA, cs.NA",5,"Computational Engineering, Finance, and Science","Computational Physics, Computational Engineering, Finance, and Science, Numerical Analysis, Numerical Analysis",Vladislav A. Yastrebov,"Andrei G. Shvarts, Julien Vignollet, Vladislav A. Yastrebov",3,http://arxiv.org/pdf/1912.11292v1,http://arxiv.org/abs/1912.11292v1,2019-12-24
+the one-way coupling approximation.",cs.CE,"math.NA, J.2, physics.comp-ph, cs.CE, cs.NA",5,"Computational Engineering, Finance, and Science","Numerical Analysis, Computational Physics, Computational Engineering, Finance, and Science, Numerical Analysis",Vladislav A. Yastrebov,"Andrei G. Shvarts, Julien Vignollet, Vladislav A. Yastrebov",3,http://arxiv.org/pdf/1912.11292v1,http://arxiv.org/abs/1912.11292v1,2019-12-24
