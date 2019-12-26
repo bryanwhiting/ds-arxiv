@@ -174,6 +174,8 @@ def replace_rmd_template_metadata(dir_post, fp_post, date_today, date_query):
     # Replace the XXDESCRIPTIONXX with tweet content
     fp_tweet = os.path.join(dir_post, 'tweet.txt')
     tweet = read_file(filename=fp_tweet)
+    tweet = tweet.replace('#datascience', 'data science')
+    tweet = tweet.replace('#machinelearning', 'machine learning')
     replace_in_template(fp_post, text_to_search='XXDESCRIPTIONXX', replacement_text=tweet)
 
     # Replace 2000-01-01 with today's build_date
