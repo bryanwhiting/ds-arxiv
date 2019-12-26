@@ -1,5 +1,20 @@
 [
   {
+    "path": "posts/2019-12-18/",
+    "title": "Daily arXiv Articles in the areas of Data Science",
+    "description": "There are 60 articles published today.",
+    "author": [
+      {
+        "name": "Bryan Whiting",
+        "url": "https://www.bryanwhiting.com"
+      }
+    ],
+    "date": "2019-12-18",
+    "categories": [],
+    "preview": {},
+    "last_modified": "2019-12-19T15:15:00-05:00"
+  },
+  {
     "path": "posts/2019-12-16-hello/",
     "title": "Hello",
     "description": "A short description of the post.",
@@ -27,6 +42,6 @@
     "date": "2019-12-16",
     "categories": [],
     "preview": {},
-    "last_modified": "2019-12-16T20:46:22-05:00"
+    "last_modified": "2019-12-19T15:02:42-05:00"
   }
 ]

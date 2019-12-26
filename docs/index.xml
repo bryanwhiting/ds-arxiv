@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
   <channel>
-    <title>The Data Science ArXiv</title>
+    <title>The Data Science arXiv</title>
     <link>bryanwhiting.github.io/ds-arxiv/</link>
     <atom:link href="bryanwhiting.github.io/ds-arxiv/index.xml" rel="self" type="application/rss+xml"/>
-    <description>The Data Science ArXiv
+    <description>A daily digest of arXiv articles focused on data science topics.
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Mon, 16 Dec 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 18 Dec 2019 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Daily arXiv Articles in the areas of Data Science</title>
+      <dc:creator>Bryan Whiting</dc:creator>
+      <link>bryanwhiting.github.io/ds-arxiv/posts/2019-12-18</link>
+      <description>There are 60 articles published today.</description>
+      <guid>bryanwhiting.github.io/ds-arxiv/posts/2019-12-18</guid>
+      <pubDate>Wed, 18 Dec 2019 00:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>Hello</title>
       <dc:creator>Nora Jones</dc:creator>

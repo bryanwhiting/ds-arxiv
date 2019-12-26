@@ -1,0 +1,941 @@
+title,summary,primary_tag,tags,n_tags,primary_category,categories,author,authors,n_authors,url_pdf,url_href,date
+"Artificial Agents Learn Flexible Visual Representations by Playing a
+  Hiding Game","The ubiquity of embodied gameplay, observed in a wide variety of animal
+species including turtles and ravens, has led researchers to question what
+advantages play provides to the animals engaged in it. Mounting evidence
+suggests that play is critical in developing the neural flexibility for
+creative problem solving, socialization, and can improve the plasticity of the
+medial prefrontal cortex. Comparatively little is known regarding the impact of
+gameplay upon embodied artificial agents. While recent work has produced
+artificial agents proficient in abstract games, the environments these agents
+act within are far removed the real world and thus these agents provide little
+insight into the advantages of embodied play. Hiding games have arisen in
+multiple cultures and species, and provide a rich ground for studying the
+impact of embodied gameplay on representation learning in the context of
+perspective taking, secret keeping, and false belief understanding. Here we are
+the first to show that embodied adversarial reinforcement learning agents
+playing cache, a variant of hide-and-seek, in a high fidelity, interactive,
+environment, learn representations of their observations encoding information
+such as occlusion, object permanence, free space, and containment; on par with
+representations learnt by the most popular modern paradigm for visual
+representation learning which requires large datasets independently labeled for
+each new task. Our representations are enhanced by intent and memory, through
+interaction and play, moving closer to biologically motivated learning
+strategies. These results serve as a model for studying how facets of vision
+and perspective taking develop through play, provide an experimental framework
+for assessing what is learned by artificial agents, and suggest that
+representation learning should move from static datasets and towards
+experiential, interactive, learning.",cs.CV,"cs.CV, cs.AI, cs.LG",3,Computer Vision and Pattern Recognition,"Computer Vision and Pattern Recognition, Artificial Intelligence, Machine Learning",Ali Farhadi,"Luca Weihs, Aniruddha Kembhavi, Winson Han, Alvaro Herrasti, Eric Kolve, Dustin Schwenk, Roozbeh Mottaghi, Ali Farhadi",8,http://arxiv.org/pdf/1912.08195v1,http://arxiv.org/abs/1912.08195v1,2019-12-17
+Causality matters in medical imaging,"This article discusses how the language of causality can shed new light on
+the major challenges in machine learning for medical imaging: 1) data scarcity,
+which is the limited availability of high-quality annotations, and 2) data
+mismatch, whereby a trained algorithm may fail to generalize in clinical
+practice. Looking at these challenges through the lens of causality allows
+decisions about data collection, annotation procedures, and learning strategies
+to be made (and scrutinized) more transparently. We discuss how causal
+relationships between images and annotations can not only have profound effects
+on the performance of predictive models, but may even dictate which learning
+strategies should be considered in the first place. For example, we conclude
+that semi-supervision may be unsuitable for image segmentation---one of the
+possibly surprising insights from our causal analysis, which is illustrated
+with representative real-world examples of computer-aided diagnosis (skin
+lesion classification in dermatology) and radiotherapy (automated contouring of
+tumours). We highlight that being aware of and accounting for the causal
+relationships in medical imaging data is important for the safe development of
+machine learning and essential for regulation and responsible reporting. To
+facilitate this we provide step-by-step recommendations for future studies.",eess.IV,"eess.IV, cs.AI, cs.CV, cs.LG",4,Image and Video Processing,"Image and Video Processing, Artificial Intelligence, Computer Vision and Pattern Recognition, Machine Learning",Ben Glocker,"Daniel C. Castro, Ian Walker, Ben Glocker",3,http://arxiv.org/pdf/1912.08142v1,http://arxiv.org/abs/1912.08142v1,2019-12-17
+"Putting Ridesharing to the Test: Efficient and Scalable Solutions and
+  the Power of Dynamic Vehicle Relocation","Ridesharing is a coordination problem in its core. Traditionally it has been
+solved in a centralized manner by ridesharing platforms. Yet, to truly allow
+for scalable solutions, we needs to shift from traditional approaches, to
+multi-agent systems, ideally run on-device. In this paper, we show that a
+recently proposed heuristic (ALMA), which exhibits such properties, offers an
+efficient, end-to-end solution for the ridesharing problem. Moreover, by
+utilizing simple relocation schemes we significantly improve QoS metrics, by up
+to 50%.
+  To demonstrate the latter, we perform a systematic evaluation of a diverse
+set of algorithms for the ridesharing problem, which is, to the best of our
+knowledge, one of the largest and most comprehensive to date. Our evaluation
+setting is specifically designed to resemble reality as closely as possible. In
+particular, we evaluate 12 different algorithms over 12 metrics related to
+global efficiency, complexity, passenger, driver, and platform incentives.",cs.MA,"cs.MA, cs.DS",2,Multiagent Systems,"Multiagent Systems, Data Structures and Algorithms",Boi Faltings,"Panayiotis Danassis, Marija Sakota, Aris Filos-Ratsikas, Boi Faltings",4,http://arxiv.org/pdf/1912.08066v1,http://arxiv.org/abs/1912.08066v1,2019-12-17
+"A Novel Self-Organizing PID Approach for Controlling Mobile Robot
+  Locomotion","A novel self-organizing fuzzy proportional-integral-derivative (SOF-PID)
+control system is proposed in this paper. The proposed system consists of a
+pair of control and reference models, both of which are implemented by a
+first-order autonomous learning multiple model (ALMMo) neuro-fuzzy system. The
+SOF-PID controller self-organizes and self-updates the structures and
+meta-parameters of both the control and reference models during the control
+process ""on the fly"". This gives the SOF-PID control system the capability of
+quickly adapting to entirely new operating environments without a full
+re-training. Moreover, the SOF-PID control system is free from user- and
+problem-specific parameters, and the uniform stability of the SOF-PID control
+system is theoretically guaranteed. Simulations and real-world experiments with
+mobile robots demonstrate the effectiveness and validity of the proposed
+SOF-PID control system.",eess.SY,"eess.SY, cs.RO, cs.SY",3,eess.SY,"Robotics, Systems and Control",Zhao-Xu Yang,"Xiaowei Gu, Muhammad Aurangzeb Khan, Plamen Angelov, Bikash Tiwary, Elnaz Shafipour Yourdshah, Zhao-Xu Yang",6,http://arxiv.org/pdf/1912.08057v1,http://arxiv.org/abs/1912.08057v1,2019-12-17
+"A Multi-task Learning Model for Chinese-oriented Aspect Polarity
+  Classification and Aspect Term Extraction","Aspect-based sentiment analysis (ABSA) task is a multi-grained task of
+natural language processing and consists of two subtasks: aspect term
+extraction (ATE) and aspect polarity classification (APC). Most of the existing
+work focuses on the subtask of aspect term polarity inferring and ignores the
+significance of aspect term extraction. Besides, the xisting researches do not
+pay attention to the research of the Chinese-oriented ABSA task. Based on the
+local context focus (LCF) mechanism, this paper firstly proposes a multi-task
+learning model for Chineseoriented aspect-based sentiment analysis, namely
+LCF-ATEPC. Compared with existing models, this model equips the capability of
+extracting aspect term and inferring aspect term polarity synchronously,
+moreover, this model is effective to analyze both Chinese and English comments
+simultaneously and the experiment on a multilingual mixed dataset proved its
+availability. By integrating the domain-adapted BERT model, the LCF-ATEPC model
+achieved the state-ofthe-art performance of aspect term extraction and aspect
+polarity classification in four Chinese review datasets. Besides, the
+experimental results on the most commonly used SemEval-2014 task4 Restaurant
+and Laptop datasets outperform the state-of-the-art performance on the ATE
+subtask.",cs.CL,"cs.CL, cs.LG",2,Computation and Language,"Computation and Language, Machine Learning",Ruyang Xu,"Heng Yang, Biqing Zeng, JianHao Yang, Youwei Song, Ruyang Xu",5,http://arxiv.org/pdf/1912.07976v1,http://arxiv.org/abs/1912.07976v1,2019-12-17
+"Pioneer dataset and automatic recognition of Urdu handwritten characters
+  using a deep autoencoder and convolutional neural network","Automatic recognition of Urdu handwritten digits and characters, is a
+challenging task. It has applications in postal address reading, bank's cheque
+processing, and digitization and preservation of handwritten manuscripts from
+old ages. While there exists a significant work for automatic recognition of
+handwritten English characters and other major languages of the world, the work
+done for Urdu lan-guage is extremely insufficient. This paper has two goals.
+Firstly, we introduce a pioneer dataset for handwritten digits and characters
+of Urdu, containing samples from more than 900 individuals. Secondly, we report
+results for automatic recog-nition of handwritten digits and characters as
+achieved by using deep auto-encoder network and convolutional neural network.
+More specifically, we use a two-layer and a three-layer deep autoencoder
+network and convolutional neural network and evaluate the two frameworks in
+terms of recognition accuracy. The proposed framework of deep autoencoder can
+successfully recognize digits and characters with an accuracy of 97% for digits
+only, 81% for characters only and 82% for both digits and characters
+simultaneously. In comparison, the framework of convolutional neural network
+has accuracy of 96.7% for digits only, 86.5% for characters only and 82.7% for
+both digits and characters simultaneously. These frameworks can serve as
+baselines for future research on Urdu handwritten text.",cs.CV,"cs.CV, cs.CL, cs.LG",3,Computer Vision and Pattern Recognition,"Computer Vision and Pattern Recognition, Computation and Language, Machine Learning",Shahid Khattak,"Hazrat Ali, Ahsan Ullah, Talha Iqbal, Shahid Khattak",4,http://arxiv.org/pdf/1912.07943v1,http://arxiv.org/abs/1912.07943v1,2019-12-17
+"Knowledge-Enhanced Attentive Learning for Answer Selection in Community
+  Question Answering Systems","In the community question answering (CQA) system, the answer selection task
+aims to identify the best answer for a specific question, and thus is playing a
+key role in enhancing the service quality through recommending appropriate
+answers for new questions. Recent advances in CQA answer selection focus on
+enhancing the performance by incorporating the community information,
+particularly the expertise (previous answers) and authority (position in the
+social network) of an answerer. However, existing approaches for incorporating
+such information are limited in (a) only considering either the expertise or
+the authority, but not both; (b) ignoring the domain knowledge to differentiate
+topics of previous answers; and (c) simply using the authority information to
+adjust the similarity score, instead of fully utilizing it in the process of
+measuring the similarity between segments of the question and the answer. We
+propose the Knowledge-enhanced Attentive Answer Selection (KAAS) model, which
+enhances the performance through (a) considering both the expertise and the
+authority of the answerer; (b) utilizing the human-labeled tags, the taxonomy
+of the tags, and the votes as the domain knowledge to infer the expertise of
+the answer; (c) using matrix decomposition of the social network (formed by
+following-relationship) to infer the authority of the answerer and
+incorporating such information in the process of evaluating the similarity
+between segments. Besides, for vertical community, we incorporate an external
+knowledge graph to capture more professional information for vertical CQA
+systems. Then we adopt the attention mechanism to integrate the analysis of the
+text of questions and answers and the aforementioned community information.
+Experiments with both vertical and general CQA sites demonstrate the superior
+performance of the proposed KAAS model.",cs.AI,"cs.AI, cs.CL, cs.IR",3,Artificial Intelligence,"Artificial Intelligence, Computation and Language, Information Retrieval",Qingpeng Zhang,"Fengshi Jing, Qingpeng Zhang",2,http://arxiv.org/pdf/1912.07915v1,http://arxiv.org/abs/1912.07915v1,2019-12-17
+"Joint Interaction and Trajectory Prediction for Autonomous Driving using
+  Graph Neural Networks","In this work, we aim to predict the future motion of vehicles in a traffic
+scene by explicitly modeling their pairwise interactions. Specifically, we
+propose a graph neural network that jointly predicts the discrete interaction
+modes and 5-second future trajectories for all agents in the scene. Our model
+infers an interaction graph whose nodes are agents and whose edges capture the
+long-term interaction intents among the agents. In order to train the model to
+recognize known modes of interaction, we introduce an auto-labeling function to
+generate ground truth interaction labels. Using a large-scale real-world
+driving dataset, we demonstrate that jointly predicting the trajectories along
+with the explicit interaction types leads to significantly lower trajectory
+error than baseline methods. Finally, we show through simulation studies that
+the learned interaction modes are semantically meaningful.",stat.ML,"stat.ML, cs.AI, cs.LG",3,Machine Learning,"Machine Learning, Artificial Intelligence, Machine Learning",Micol Marchetti-Bowick,"Donsuk Lee, Yiming Gu, Jerrick Hoang, Micol Marchetti-Bowick",4,http://arxiv.org/pdf/1912.07882v1,http://arxiv.org/abs/1912.07882v1,2019-12-17
+Cross-Lingual Ability of Multilingual BERT: An Empirical Study,"Recent work has exhibited the surprising cross-lingual abilities of
+multilingual BERT (M-BERT) -- surprising since it is trained without any
+cross-lingual objective and with no aligned data. In this work, we provide a
+comprehensive study of the contribution of different components in M-BERT to
+its cross-lingual ability. We study the impact of linguistic properties of the
+languages, the architecture of the model, and the learning objectives. The
+experimental study is done in the context of three typologically different
+languages -- Spanish, Hindi, and Russian -- and using two conceptually
+different NLP tasks, textual entailment and named entity recognition. Among our
+key conclusions is the fact that the lexical overlap between languages plays a
+negligible role in the cross-lingual success, while the depth of the network is
+an integral part of it.",cs.CL,"cs.CL, cs.AI, cs.LG",3,Computation and Language,"Computation and Language, Artificial Intelligence, Machine Learning",Dan Roth,"Karthikeyan K, Zihan Wang, Stephen Mayhew, Dan Roth",4,http://arxiv.org/pdf/1912.07840v1,http://arxiv.org/abs/1912.07840v1,2019-12-17
+Design and Implementation of Linked Planning Domain Definition Language,"Planning is a critical component of any artificial intelligence system that
+concerns the realization of strategies or action sequences typically for
+intelligent agents and autonomous robots. Given predefined parameterized
+actions, a planning service should accept a query with the goal and initial
+state to give a solution with a sequence of actions applied to environmental
+objects. This paper addresses the problem by providing a repository of actions
+generically applicable to various environmental objects based on Semantic Web
+technologies. Ontologies are used for asserting constraints in common sense as
+well as for resolving compatibilities between actions and states. Constraints
+are defined using Web standards such as SPARQL and SHACL to allow conditional
+predicates. We demonstrate the usefulness of the proposed planning domain
+description language with our robotics applications.",cs.AI,"cs.AI, cs.LO, cs.RO",3,Artificial Intelligence,"Artificial Intelligence, Logic in Computer Science, Robotics",Takao Moriyama,"Michiaki Tatsubori, Asim Munawar, Takao Moriyama",3,http://arxiv.org/pdf/1912.07834v1,http://arxiv.org/abs/1912.07834v1,2019-12-17
+ORC Layout: Adaptive GUI Layout with OR-Constraints,"We propose a novel approach for constraint-based graphical user interface
+(GUI) layout based on OR-constraints (ORC) in standard soft/hard linear
+constraint systems. ORC layout unifies grid layout and flow layout, supporting
+both their features as well as cases where grid and flow layouts individually
+fail. We describe ORC design patterns that enable designers to safely create
+flexible layouts that work across different screen sizes and orientations. We
+also present the ORC Editor, a GUI editor that enables designers to apply ORC
+in a safe and effective manner, mixing grid, flow and new ORC layout features
+as appropriate. We demonstrate that our prototype can adapt layouts to screens
+with different aspect ratios with only a single layout specification, easing
+the burden of GUI maintenance. Finally, we show that ORC specifications can be
+modified interactively and solved efficiently at runtime.",cs.HC,"cs.HC, cs.GR",2,Human-Computer Interaction,"Human-Computer Interaction, Graphics",Wolfgang Stuerzlinger,"Yue Jiang, Ruofei Du, Christof Lutteroth, Wolfgang Stuerzlinger",4,http://arxiv.org/pdf/1912.07827v1,http://arxiv.org/abs/1912.07827v1,2019-12-17
+Balancing the Tradeoff Between Clustering Value and Interpretability,"Graph clustering groups entities -- the vertices of a graph -- based on their
+similarity, typically using a complex distance function over a large number of
+features. Successful integration of clustering approaches in automated
+decision-support systems hinges on the interpretability of the resulting
+clusters. This paper addresses the problem of generating interpretable
+clusters, given features of interest that signify interpretability to an
+end-user, by optimizing interpretability in addition to common clustering
+objectives. We propose a $\beta$-interpretable clustering algorithm that
+ensures that at least $\beta$ fraction of nodes in each cluster share the same
+feature value. The tunable parameter $\beta$ is user-specified. We also present
+a more efficient algorithm for scenarios with $\beta\!=\!1$ and analyze the
+theoretical guarantees of the two algorithms. Finally, we empirically
+demonstrate the benefits of our approaches in generating interpretable clusters
+using four real-world datasets. The interpretability of the clusters is
+complemented by generating simple explanations denoting the feature values of
+the nodes in the clusters, using frequent pattern mining.",stat.ML,"stat.ML, cs.DS, cs.LG",3,Machine Learning,"Machine Learning, Data Structures and Algorithms, Machine Learning",Shlomo Zilberstein,"Sandhya Saisubramanian, Sainyam Galhotra, Shlomo Zilberstein",3,http://arxiv.org/pdf/1912.07820v1,http://arxiv.org/abs/1912.07820v1,2019-12-17
+Angular Learning: Toward Discriminative Embedded Features,"The margin-based softmax loss functions greatly enhance intra-class
+compactness and perform well on the tasks of face recognition and object
+classification. Outperformance, however, depends on the careful hyperparameter
+selection. Moreover, the hard angle restriction also increases the risk of
+overfitting. In this paper, angular loss suggested by maximizing the angular
+gradient to promote intra-class compactness avoids overfitting. Besides, our
+method has only one adjustable constant for intra-class compactness control. We
+define three metrics to measure inter-class separability and intra-class
+compactness. In experiments, we test our method, as well as other methods, on
+many well-known datasets. Experimental results reveal that our method has the
+superiority of accuracy improvement, discriminative information, and
+time-consumption.",cs.CV,"cs.CV, cs.LG, stat.ML",3,Computer Vision and Pattern Recognition,"Computer Vision and Pattern Recognition, Machine Learning, Machine Learning",L. Wang,"JT Wu, L. Wang",2,http://arxiv.org/pdf/1912.07819v1,http://arxiv.org/abs/1912.07819v1,2019-12-17
+LTLf Synthesis with Fairness and Stability Assumptions,"In synthesis, assumptions are constraints on the environment that rule out
+certain environment behaviors. A key observation here is that even if we
+consider systems with LTLf goals on finite traces, environment assumptions need
+to be expressed over infinite traces, since accomplishing the agent goals may
+require an unbounded number of environment action. To solve synthesis with
+respect to finite-trace LTLf goals under infinite-trace assumptions, we could
+reduce the problem to LTL synthesis. Unfortunately, while synthesis in LTLf and
+in LTL have the same worst-case complexity (both 2EXPTIME-complete), the
+algorithms available for LTL synthesis are much more difficult in practice than
+those for LTLf synthesis. In this work we show that in interesting cases we can
+avoid such a detour to LTL synthesis and keep the simplicity of LTLf synthesis.
+Specifically, we develop a BDD-based fixpoint-based technique for handling
+basic forms of fairness and of stability assumptions. We show, empirically,
+that this technique performs much better than standard LTL synthesis.",cs.AI,"cs.AI, cs.FL, cs.GT, cs.LO",4,Artificial Intelligence,"Artificial Intelligence, Formal Languages and Automata Theory, Computer Science and Game Theory, Logic in Computer Science",Moshe Vardi,"Shufang Zhu, Giuseppe De Giacomo, Geguang Pu, Moshe Vardi",4,http://arxiv.org/pdf/1912.07804v1,http://arxiv.org/abs/1912.07804v1,2019-12-17
+"A Comprehensive Review of Shepherding as a Bio-inspired Swarm-Robotics
+  Guidance Approach","The simultaneous control of multiple coordinated robotic agents represents an
+elaborate problem. If solved, however, the interaction between the agents can
+lead to solutions to sophisticated problems. The concept of swarming, inspired
+by nature, can be described as the emergence of complex system-level behaviors
+from the interactions of relatively elementary agents. Due to the effectiveness
+of solutions found in nature, bio-inspired swarming-based control techniques
+are receiving a lot of attention in robotics. One method, known as swarm
+shepherding, is founded on the sheep herding behavior exhibited by sheepdogs,
+where a swarm of relatively simple agents are governed by a shepherd (or
+shepherds) which is responsible for high-level guidance and planning. Many
+studies have been conducted on shepherding as a control technique, ranging from
+the replication of sheep herding via simulation, to the control of uninhabited
+vehicles and robots for a variety of applications. We present a comprehensive
+review of the literature on swarm shepherding to reveal the advantages and
+potential of the approach to be applied to a plethora of robotic systems in the
+future.",cs.RO,"cs.RO, cs.AI, cs.SY, eess.SY",4,Robotics,"Robotics, Artificial Intelligence, Systems and Control",Hussein Abbass,"Nathan K Long, Karl Sammut, Daniel Sgarioto, Matthew Garratt, Hussein Abbass",5,http://arxiv.org/pdf/1912.07796v1,http://arxiv.org/abs/1912.07796v1,2019-12-17
+PointRend: Image Segmentation as Rendering,"We present a new method for efficient high-quality image segmentation of
+objects and scenes. By analogizing classical computer graphics methods for
+efficient rendering with over- and undersampling challenges faced in pixel
+labeling tasks, we develop a unique perspective of image segmentation as a
+rendering problem. From this vantage, we present the PointRend (Point-based
+Rendering) neural network module: a module that performs point-based
+segmentation predictions at adaptively selected locations based on an iterative
+subdivision algorithm. PointRend can be flexibly applied to both instance and
+semantic segmentation tasks by building on top of existing state-of-the-art
+models. While many concrete implementations of the general idea are possible,
+we show that a simple design already achieves excellent results. Qualitatively,
+PointRend outputs crisp object boundaries in regions that are over-smoothed by
+previous methods. Quantitatively, PointRend yields significant gains on COCO
+and Cityscapes, for both instance and semantic segmentation. PointRend's
+efficiency enables output resolutions that are otherwise impractical in terms
+of memory or computation compared to existing approaches.",cs.CV,cs.CV,1,Computer Vision and Pattern Recognition,Computer Vision and Pattern Recognition,Ross Girshick,"Alexander Kirillov, Yuxin Wu, Kaiming He, Ross Girshick",4,http://arxiv.org/pdf/1912.08193v1,http://arxiv.org/abs/1912.08193v1,2019-12-17
+AeroRIT: A New Scene for Hyperspectral Image Analysis,"Hyperspectral imagery oriented research like image super-resolution and image
+fusion is often conducted on open source datasets captured via point and shoot
+camera setups (ICVL, CAVE) that have high signal to noise ratio. In contrast,
+spectral images captured from aircrafts have low spatial resolution and suffer
+from higher noise interference due to factors pertaining to atmospheric
+conditions. This leads to challenges in extracting contextual information from
+the captured data as convolutional neural networks are very noise-sensitive and
+slight atmospheric changes can often lead to a large distribution spread in
+spectral values overlooking the same object.
+  To understand the challenges faced with aerial spectral data, we collect and
+label a flight line over the university campus, AeroRIT, and explore the task
+of semantic segmentation. To the best of our knowledge, this is the first
+comprehensive large-scale hyperspectral scene with nearly seven million
+semantic annotations for identifying cars, roads and buildings. We compare the
+performance of three popular architectures - SegNet, U-Net and Res-U-Net, for
+scene understanding and object identification. To date, aerial hyperspectral
+image analysis has been restricted to small datasets with limited train/test
+splits capabilities. We believe AeroRIT will help advance the research in the
+field with a more complex object distribution.",eess.IV,"eess.IV, cs.CV",2,Image and Video Processing,"Image and Video Processing, Computer Vision and Pattern Recognition",Matthew J. Hoffman,"Aneesh Rangnekar, Nilay Mokashi, Emmett Ientilucci, Christopher Kanan, Matthew J. Hoffman",5,http://arxiv.org/pdf/1912.08178v1,http://arxiv.org/abs/1912.08178v1,2019-12-17
+"Fast Glioblastoma Detection in Fluid-attenuated inversion recovery
+  (FLAIR) images by Topological Explainable Automatic Machine Learning","Glioblastoma multiforme (GBM) is a fast-growing and highly invasive brain
+tumor, it tends to occur in adults between the ages of 45 and 70 and it
+accounts for 52 percent of all primary brain tumors. Usually, GBMs are detected
+by magnetic resonance images (MRI). Among MRI images, Fluid-attenuated
+inversion recovery (FLAIR) sequence produces high quality digital tumor
+representation. This sequence is very sensitive to pathology and makes the
+differentiation between cerebrospinal fluid (CSF) and an abnormality much
+easier. Fast detection and segmentation techniques are needed for overcoming
+subjective medical doctors (MDs) judgment. In this work, a new methodology for
+fast detection and segmentation of GBM on FLAIR images is presented. The
+methodology leverages topological data analysis, textural features and
+interpretable machine learning algorithm, it was evaluated on a public
+available dataset. The machine learning classifier uses only eight input
+numerical features and it reaches up to the 97% of accuracy on the detection
+task and up to 95% of accuracy on the segmentation task. Tools from information
+theory were used for interpreting, in a human readable format, what are the
+main numerical characteristics of an image to be classified ill or healthy.",eess.IV,"eess.IV, cs.CV, q-bio.QM",3,Image and Video Processing,"Image and Video Processing, Computer Vision and Pattern Recognition, Quantitative Methods",Matteo Rucco,Matteo Rucco,1,http://arxiv.org/pdf/1912.08167v1,http://arxiv.org/abs/1912.08167v1,2019-12-17
+APRICOT: A Dataset of Physical Adversarial Attacks on Object Detection,"Physical adversarial attacks threaten to fool object detection systems, but
+reproducible research on the real-world effectiveness of physical patches and
+how to defend against them requires a publicly available benchmark dataset. We
+present APRICOT, a collection of over 1,000 annotated photographs of printed
+adversarial patches in public locations. The patches target several object
+categories for three COCO-trained detection models, and the photos represent
+natural variation in position, distance, lighting conditions, and viewing
+angle. Our analysis suggests that maintaining adversarial robustness in
+uncontrolled settings is highly challenging, but it is still possible to
+produce targeted detections under white-box and sometimes black-box settings.
+We establish baselines for defending against adversarial patches through
+several methods, including a detector supervised with synthetic data and
+unsupervised methods such as kernel density estimation, Bayesian uncertainty,
+and reconstruction error. Our results suggest that adversarial patches can be
+effectively flagged, both in a high-knowledge, attack-specific scenario, and in
+an unsupervised setting where patches are detected as anomalies in natural
+images. This dataset and the described experiments provide a benchmark for
+future research on the effectiveness of and defenses against physical
+adversarial objects in the wild.",cs.CV,cs.CV,1,Computer Vision and Pattern Recognition,Computer Vision and Pattern Recognition,Matthew Walmer,"Anneliese Braunegg, Amartya Chakraborty, Michael Krumdick, Nicole Lape, Sara Leary, Keith Manville, Elizabeth Merkhofer, Laura Strickhart, Matthew Walmer",9,http://arxiv.org/pdf/1912.08166v1,http://arxiv.org/abs/1912.08166v1,2019-12-17
+"Direction Concentration Learning: Enhancing Congruency in Machine
+  Learning","One of the well-known challenges in computer vision tasks is the visual
+diversity of images, which could result in an agreement or disagreement between
+the learned knowledge and the visual content exhibited by the current
+observation. In this work, we first define such an agreement in a concepts
+learning process as congruency. Formally, given a particular task and
+sufficiently large dataset, the congruency issue occurs in the learning process
+whereby the task-specific semantics in the training data are highly varying. We
+propose a Direction Concentration Learning (DCL) method to improve congruency
+in the learning process, where enhancing congruency influences the convergence
+path to be less circuitous. The experimental results show that the proposed DCL
+method generalizes to state-of-the-art models and optimizers, as well as
+improves the performances of saliency prediction task, continual learning task,
+and classification task. Moreover, it helps mitigate the catastrophic
+forgetting problem in the continual learning task. The code is publicly
+available at https://github.com/luoyan407/congruency.",cs.LG,"cs.LG, cs.CV, stat.ML",3,Machine Learning,"Machine Learning, Computer Vision and Pattern Recognition, Machine Learning",Qi Zhao,"Yan Luo, Yongkang Wong, Mohan S. Kankanhalli, Qi Zhao",4,http://arxiv.org/pdf/1912.08136v1,http://arxiv.org/abs/1912.08136v1,2019-12-17
+"Improved Surrogates in Inertial Confinement Fusion with Manifold and
+  Cycle Consistencies","Neural networks have become very popular in surrogate modeling because of
+their ability to characterize arbitrary, high dimensional functions in a data
+driven fashion. This paper advocates for the training of surrogates that are
+consistent with the physical manifold -- i.e., predictions are always
+physically meaningful, and are cyclically consistent -- i.e., when the
+predictions of the surrogate, when passed through an independently trained
+inverse model give back the original input parameters. We find that these two
+consistencies lead to surrogates that are superior in terms of predictive
+performance, more resilient to sampling artifacts, and tend to be more data
+efficient. Using Inertial Confinement Fusion (ICF) as a test bed problem, we
+model a 1D semi-analytic numerical simulator and demonstrate the effectiveness
+of our approach. Code and data are available at
+https://github.com/rushilanirudh/macc/",cs.LG,"cs.LG, cs.CV, physics.comp-ph, stat.ML",4,Machine Learning,"Machine Learning, Computer Vision and Pattern Recognition, Computational Physics, Machine Learning",Brian K. Spears,"Rushil Anirudh, Jayaraman J. Thiagarajan, Peer-Timo Bremer, Brian K. Spears",4,http://arxiv.org/pdf/1912.08113v1,http://arxiv.org/abs/1912.08113v1,2019-12-17
+"Feature Fusion Use Unsupervised Prior Knowledge to Let Small Object
+  Represent","Fusing low level and high level features is a widely used strategy to provide
+details that might be missing during convolution and pooling. Different from
+previous works, we propose a new fusion mechanism called FillIn which takes
+advantage of prior knowledge described with superpixel segmentation. According
+to the prior knowledge, the FillIn chooses small region on low level feature
+map to fill into high level feature map. By using the proposed fusion
+mechanism, the low level features have equal channels for some tiny region as
+high level features, which makes the low level features have relatively
+independent power to decide final semantic label. We demonstrate the
+effectiveness of our model on PASCAL VOC 2012, it achieves competitive test
+result based on DeepLabv3+ backbone and visualizations of predictions prove our
+fusion can let small objects represent and low level features have potential
+for segmenting small objects.",cs.CV,cs.CV,1,Computer Vision and Pattern Recognition,Computer Vision and Pattern Recognition,Shaofan Wang,"Tian Liu, Lichun Wang, Shaofan Wang",3,http://arxiv.org/pdf/1912.08059v1,http://arxiv.org/abs/1912.08059v1,2019-12-17
+Single-Stage Monocular 3D Object Detection with Virtual Cameras,"While expensive LiDAR and stereo camera rigs have enabled the development of
+successful 3D object detection methods, monocular RGB-only approaches still lag
+significantly behind. Our work advances the state of the art by introducing
+MoVi-3D, a novel, single-stage deep architecture for monocular 3D object
+detection. At its core, MoVi-3D leverages geometrical information to generate
+synthetic views from virtual cameras at both, training and test time, resulting
+in normalized object appearance with respect to distance. Our synthetically
+generated views facilitate the detection task as they cut down the variability
+in visual appearance associated to objects placed at different distances from
+the camera. As a consequence, the deep model is relieved from learning
+depth-specific representations and its complexity can be significantly reduced.
+In particular we show that our proposed concept of exploiting virtual cameras
+enables us to set new state-of-the-art results on the popular KITTI3D benchmark
+using just a lightweight, single-stage architecture.",cs.CV,cs.CV,1,Computer Vision and Pattern Recognition,Computer Vision and Pattern Recognition,Peter Kontschieder,"Andrea Simonelli, Samuel Rota Bulò, Lorenzo Porzi, Elisa Ricci, Peter Kontschieder",5,http://arxiv.org/pdf/1912.08035v1,http://arxiv.org/abs/1912.08035v1,2019-12-17
+Adaptive Densely Connected Super-Resolution Reconstruction,"For a better performance in single image super-resolution(SISR), we present
+an image super-resolution algorithm based on adaptive dense connection (ADCSR).
+The algorithm is divided into two parts: BODY and SKIP. BODY improves the
+utilization of convolution features through adaptive dense connections. Also,
+we develop an adaptive sub-pixel reconstruction layer (AFSL) to reconstruct the
+features of the BODY output. We pre-trained SKIP to make BODY focus on
+high-frequency feature learning. The comparison of PSNR, SSIM, and visual
+effects verify the superiority of our method to the state-of-the-art
+algorithms.",eess.IV,"eess.IV, cs.CV",2,Image and Video Processing,"Image and Video Processing, Computer Vision and Pattern Recognition",Xiaocuan Li,"Tangxin Xie, Xin Yang, Yu Jia, Chen Zu, Xiaocuan Li",5,http://arxiv.org/pdf/1912.08002v1,http://arxiv.org/abs/1912.08002v1,2019-12-17
+Jointly Trained Image and Video Generation using Residual Vectors,"In this work, we propose a modeling technique for jointly training image and
+video generation models by simultaneously learning to map latent variables with
+a fixed prior onto real images and interpolate over images to generate videos.
+The proposed approach models the variations in representations using residual
+vectors encoding the change at each time step over a summary vector for the
+entire video. We utilize the technique to jointly train an image generation
+model with a fixed prior along with a video generation model lacking
+constraints such as disentanglement. The joint training enables the image
+generator to exploit temporal information while the video generation model
+learns to flexibly share information across frames. Moreover, experimental
+results verify our approach's compatibility with pre-training on videos or
+images and training on datasets containing a mixture of both. A comprehensive
+set of quantitative and qualitative evaluations reveal the improvements in
+sample quality and diversity over both video generation and image generation
+baselines. We further demonstrate the technique's capabilities of exploiting
+similarity in features across frames by applying it to a model based on
+decomposing the video into motion and content. The proposed model allows minor
+variations in content across frames while maintaining the temporal dependence
+through latent vectors encoding the pose or motion features.",cs.LG,"cs.LG, cs.CV, stat.ML",3,Machine Learning,"Machine Learning, Computer Vision and Pattern Recognition, Machine Learning",Piyush Rai,"Yatin Dandi, Aniket Das, Soumye Singhal, Vinay P. Namboodiri, Piyush Rai",5,http://arxiv.org/pdf/1912.07991v1,http://arxiv.org/abs/1912.07991v1,2019-12-17
+Conditional Generative ConvNets for Exemplar-based Texture Synthesis,"The goal of exemplar-based texture synthesis is to generate texture images
+that are visually similar to a given exemplar. Recently, promising results have
+been reported by methods relying on convolutional neural networks (ConvNets)
+pretrained on large-scale image datasets. However, these methods have
+difficulties in synthesizing image textures with non-local structures and
+extending to dynamic or sound textures. In this paper, we present a conditional
+generative ConvNet (cgCNN) model which combines deep statistics and the
+probabilistic framework of generative ConvNet (gCNN) model. Given a texture
+exemplar, the cgCNN model defines a conditional distribution using deep
+statistics of a ConvNet, and synthesize new textures by sampling from the
+conditional distribution. In contrast to previous deep texture models, the
+proposed cgCNN dose not rely on pre-trained ConvNets but learns the weights of
+ConvNets for each input exemplar instead. As a result, the cgCNN model can
+synthesize high quality dynamic, sound and image textures in a unified manner.
+We also explore the theoretical connections between our model and other texture
+models. Further investigations show that the cgCNN model can be easily
+generalized to texture expansion and inpainting. Extensive experiments
+demonstrate that our model can achieve better or at least comparable results
+than the state-of-the-art methods.",cs.CV,cs.CV,1,Computer Vision and Pattern Recognition,Computer Vision and Pattern Recognition,Gui-Song Xia,"Zi-Ming Wang, Meng-Han Li, Gui-Song Xia",3,http://arxiv.org/pdf/1912.07971v1,http://arxiv.org/abs/1912.07971v1,2019-12-17
+"Defects Mitigation in Resistive Crossbars for Analog Vector Matrix
+  Multiplication","With storage and computation happening at the same place, computing in
+resistive crossbars minimizes data movement and avoids the memory bottleneck
+issue. It leads to ultra-high energy efficiency for data-intensive
+applications. However, defects in crossbars severely affect computing accuracy.
+Existing solutions, including re-training with defects and redundant designs,
+but they have limitations in practical implementations. In this work, we
+introduce row shuffling and output compensation to mitigate defects without
+re-training or redundant resistive crossbars. We also analyzed the coupling
+effects of defects and circuit parasitics. Moreover, We study different
+combinations of methods to achieve the best trade-off between cost and
+performance. Our proposed methods could rescue up to 10% of defects in
+ResNet-20 application without performance degradation.",cs.ET,"cs.ET, cs.LG",2,Emerging Technologies,"Emerging Technologies, Machine Learning",Miao Hu,"Fan Zhang, Miao Hu",2,http://arxiv.org/pdf/1912.07829v1,http://arxiv.org/abs/1912.07829v1,2019-12-17
+"Valley-Coupled-Spintronic Non-Volatile Memories with Compute-In-Memory
+  Support","In this work, we propose valley-coupled spin-hall memories (VSH-MRAMs) based
+on monolayer WSe2. The key features of the proposed memories are (a) the
+ability to switch magnets with perpendicular magnetic anisotropy (PMA) via VSH
+effect and (b) an integrated gate that can modulate the charge/spin current
+(IC/IS) flow. The former attribute results in high energy efficiency (compared
+to the Giant-Spin Hall (GSH) effect-based devices with in-plane magnetic
+anisotropy (IMA) magnets). The latter feature leads to a compact access
+transistor-less memory array design. We experimentally measure the gate
+controllability of the current as well as the nonlocal resistance associated
+with VSH effect. Based on the measured data, we develop a simulation framework
+(using physical equations) to propose and analyze single-ended and differential
+VSH effect based magnetic memories (VSH-MRAM and DVSH-MRAM, respectively). At
+the array level, the proposed VSH/DVSH-MRAMs achieve 50%/ 11% lower write time,
+59%/ 67% lower write energy and 35%/ 41% lower read energy at iso-sense margin,
+compared to single ended/differential (GSH/DGSH)-MRAMs. System level evaluation
+in the context of general purpose processor and intermittently-powered system
+shows up to 3.14X and 1.98X better energy efficiency for the proposed
+(D)VSH-MRAMs over (D)GSH-MRAMs respectively. Further, the differential sensing
+of the proposed DVSH-MRAM leads to natural and simultaneous in-memory
+computation of bit-wise AND and NOR logic functions. Using this feature, we
+design a computation-in-memory (CiM) architecture that performs Boolean logic
+and addition (ADD) with a single array access. System analysis performed by
+integrating our DVSH-MRAM: CiM in the Nios II processor across various
+application benchmarks shows up to 2.66X total energy savings, compared to
+DGSH-MRAM: CiM.",cs.ET,"cs.ET, physics.app-ph",2,Emerging Technologies,"Emerging Technologies, Applied Physics",Sumeet Gupta,"Sandeep Thirumala, Yi-Tse Hung, Shubham Jain, Arnab Raha, Niharika Thakuria, Vijay Raghunathan, Anand Raghunathan, Zhihong Chen, Sumeet Gupta",9,http://arxiv.org/pdf/1912.07821v1,http://arxiv.org/abs/1912.07821v1,2019-12-17
+"Towards Smart Radio Environment for Wireless Communications via
+  Intelligent Reflecting Surfaces: A Comprehensive Survey","This paper presents a comprehensive literature review on applications and
+design aspects of the intelligent reflecting surface (IRS) in the future
+wireless networks. Conventionally, the network optimization has been limited to
+transmission control at two endpoints, i.e., end users and network controller.
+The fading wireless channel is uncontrollable and becomes one of the main
+limiting factors for performance improvement. The IRS is composed of a large
+array of scattering elements, which can be individually configured to generate
+additional phase shifts to the signal reflections. Hence, it can actively
+control the signal propagation properties in favor of signal reception, and
+thus realize the notion of a smart radio environment. As such, the IRS's phase
+control combined with the conventional transmission control can potentially
+bring performance gain compared to the conventional wireless networks without
+using the IRS. In this survey, we first introduce basic concepts of the IRS and
+the realizations of its reconfigurability. Then, we focus on applications of
+the IRS in wireless communications. We overview different performance metrics
+and analytical approaches to characterize the performance improvement of
+IRS-assisted wireless networks. To exploit the performance gain, we discuss the
+joint optimization of the IRS's phase control and the transceivers'
+transmission control in different network design problems, e.g., rate
+maximization and power minimization problems. Furthermore, we extend the
+discussion of IRS-assisted wireless networks to some emerging wireless
+applications. Finally, we highlight important practical challenges and future
+research directions of realizing IRS-assisted wireless communications in beyond
+5G networks.",cs.IT,"cs.IT, cs.ET, math.IT",3,Information Theory,"Information Theory, Emerging Technologies, Information Theory",Ying-Chang Liang,"Shimin Gong, Xiao Lu, Dinh Thai Hoang, Dusit Niyato, Lei Shu, Dong In Kim, Ying-Chang Liang",7,http://arxiv.org/pdf/1912.07794v1,http://arxiv.org/abs/1912.07794v1,2019-12-17
+"Supervised learning algorithms resilient to discriminatory data
+  perturbations","The actions of individuals can be discriminatory with respect to certain
+protected attributes, such as race or sex. Recently, discrimination has become
+a focal concern in supervised learning algorithms augmenting human
+decision-making. These systems are trained using historical data, which may
+have been tainted by discrimination, and may learn biases against the protected
+groups. An important question is how to train models without propagating
+discrimination. Such discrimination can be either direct, when one or more of
+protected attributes are used in the decision-making directly, or indirect,
+when other attributes correlated with the protected attributes are used in an
+unjustified manner. In this work, we i) model discrimination as a perturbation
+of data-generating process; ii) introduce a measure of resilience of a
+supervised learning algorithm to potentially discriminatory data perturbations;
+and iii) propose a novel supervised learning method that is more resilient to
+such discriminatory perturbations than state-of-the-art learning algorithms
+addressing discrimination. The proposed method can be used with general
+supervised learning algorithms, prevents direct discrimination and avoids
+inducement of indirect discrimination, while maximizing model accuracy.",cs.LG,"cs.LG, cs.CY, physics.soc-ph, I.2.6; K.4.1",4,Machine Learning,"Machine Learning, Computers and Society, Physics and Society",Luis F. Lafuerza,"Przemyslaw A. Grabowicz, Kenta Takatsu, Luis F. Lafuerza",3,http://arxiv.org/pdf/1912.08189v1,http://arxiv.org/abs/1912.08189v1,2019-12-17
+Deep Radar Waveform Design for Efficient Automotive Radar Sensing,"In radar systems, unimodular (or constant-modulus) waveform design plays an
+important role in achieving better clutter/interference rejection, as well as a
+more accurate estimation of the target parameters. The design of such sequences
+has been studied widely in the last few decades, with most design algorithms
+requiring sophisticated a priori knowledge of environmental parameters which
+may be difficult to obtain in real-time scenarios. In this paper, we propose a
+novel hybrid model-driven and data-driven architecture that adapts to the ever
+changing environment and allows for adaptive unimodular waveform design. In
+particular, the approach lays the groundwork for developing extremely low-cost
+waveform design and processing frameworks for radar systems deployed in
+autonomous vehicles. The proposed model-based deep architecture imitates a
+well-known unimodular signal design algorithm in its structure, and can quickly
+infer statistical information from the environment using the observed data. Our
+numerical experiments portray the advantages of using the proposed method for
+efficient radar waveform design in time-varying environments.",eess.SP,"eess.SP, cs.LG, stat.ML",3,Signal Processing,"Signal Processing, Machine Learning, Machine Learning",Mojtaba Soltanalian,"Shahin Khobahi, Arindam Bose, Mojtaba Soltanalian",3,http://arxiv.org/pdf/1912.08180v1,http://arxiv.org/abs/1912.08180v1,2019-12-17
+"Lift & Learn: Physics-informed machine learning for large-scale
+  nonlinear dynamical systems","We present Lift & Learn, a physics-informed method for learning
+low-dimensional models for large-scale dynamical systems. The method exploits
+knowledge of a system's governing equations to identify a coordinate
+transformation in which the system dynamics have quadratic structure. This
+transformation is called a lifting map because it often adds auxiliary
+variables to the system state. The lifting map is applied to data obtained by
+evaluating a model for the original nonlinear system. This lifted data is
+projected onto its leading principal components, and low-dimensional linear and
+quadratic matrix operators are fit to the lifted reduced data using a
+least-squares operator inference procedure. Analysis of our method shows that
+the Lift & Learn models are able to capture the system physics in the lifted
+coordinates at least as accurately as traditional intrusive model reduction
+approaches. This preservation of system physics makes the Lift & Learn models
+robust to changes in inputs. Numerical experiments on the FitzHugh-Nagumo
+neuron activation model and the compressible Euler equations demonstrate the
+generalizability of our model.",math.NA,"math.NA, cs.LG, cs.NA",3,Numerical Analysis,"Numerical Analysis, Machine Learning, Numerical Analysis",Karen Willcox,"Elizabeth Qian, Boris Kramer, Benjamin Peherstorfer, Karen Willcox",4,http://arxiv.org/pdf/1912.08177v1,http://arxiv.org/abs/1912.08177v1,2019-12-17
+"Cyanure: An Open-Source Toolbox for Empirical Risk Minimization for
+  Python, C++, and soon more","Cyanure is an open-source C++ software package with a Python interface. The
+goal of Cyanure is to provide state-of-the-art solvers for learning linear
+models, based on stochastic variance-reduced stochastic optimization with
+acceleration mechanisms. Cyanure can handle a large variety of loss functions
+(logistic, square, squared hinge, multinomial logistic) and regularization
+functions (l_2, l_1, elastic-net, fused Lasso, multi-task group Lasso). It
+provides a simple Python API, which is very close to that of scikit-learn,
+which should be extended to other languages such as R or Matlab in a near
+future.",stat.ML,"stat.ML, cs.LG",2,Machine Learning,"Machine Learning, Machine Learning",Julien Mairal,Julien Mairal,1,http://arxiv.org/pdf/1912.08165v1,http://arxiv.org/abs/1912.08165v1,2019-12-17
+Performance of regression models as a function of experiment noise,"A challenge in developing machine learning regression models is that it is
+difficult to know whether maximal performance has been reached on a particular
+dataset, or whether further model improvement is possible. In biology this
+problem is particularly pronounced as sample labels are typically obtained
+through experiments and therefore have experiment noise associated with them.
+Such label noise puts a fundamental limit to the performance attainable by
+regression models. We address this challenge by deriving a theoretical upper
+bound for the coefficient of determination (R2) for regression models. This
+theoretical upper bound depends only on the noise associated with sample labels
+in a dataset as well as the label variance. The upper bound estimate was
+validated via Monte Carlo simulations and then used as a tool to bootstrap
+performance of regression models trained on biological datasets, including
+protein sequence data, transcriptomic data, and genomic data. Although we study
+biological datasets in this work, the new upper bound estimates will hold true
+for regression models from any research field or application area where sample
+labels are associated with noise.",q-bio.BM,"q-bio.BM, cs.LG",2,Biomolecules,"Biomolecules, Machine Learning",Martin KM Engqvist,"Gang Li, Jan Zrimec, Boyang Ji, Jun Geng, Johan Larsbrink, Aleksej Zelezniak, Jens Nielsen, Martin KM Engqvist",8,http://arxiv.org/pdf/1912.08141v1,http://arxiv.org/abs/1912.08141v1,2019-12-17
+An Embarrassingly Simple Baseline for eXtreme Multi-label Prediction,"The goal of eXtreme Multi-label Learning (XML) is to design and learn a model
+that can automatically annotate a given data point with the most relevant
+subset of labels from an extremely large label set. Recently, many techniques
+have been proposed for XML that achieve reasonable performance on benchmark
+datasets. Motivated by the complexities of these methods and their subsequent
+training requirements, in this paper we propose a simple baseline technique for
+this task. Precisely, we present a global feature embedding technique for XML
+that can easily scale to very large datasets containing millions of data points
+in very high-dimensional feature space, irrespective of number of samples and
+labels. Next we show how an ensemble of such global embeddings can be used to
+achieve further boost in prediction accuracies with only linear increase in
+training and prediction time. During testing, we assign the labels using a
+weighted k-nearest neighbour classifier in the embedding space. Experiments
+reveal that though conceptually simple, this technique achieves quite
+competitive results, and has training time of less than one minute using a
+single CPU core with 15.6 GB RAM even for large-scale datasets such as
+Amazon-3M.",cs.LG,"cs.LG, stat.ML",2,Machine Learning,"Machine Learning, Machine Learning",Yashaswi Verma,Yashaswi Verma,1,http://arxiv.org/pdf/1912.08140v1,http://arxiv.org/abs/1912.08140v1,2019-12-17
+"A learning-based algorithm to quickly compute good primal solutions for
+  Stochastic Integer Programs","We propose a novel approach using supervised learning to obtain near-optimal
+primal solutions for two-stage stochastic integer programming (2SIP) problems
+with constraints in the first and second stages. The goal of the algorithm is
+to predict a ""representative scenario"" (RS) for the problem such that,
+deterministically solving the 2SIP with the random realization equal to the RS,
+gives a near-optimal solution to the original 2SIP. Predicting an RS, instead
+of directly predicting a solution ensures first-stage feasibility of the
+solution. If the problem is known to have complete recourse, second-stage
+feasibility is also guaranteed. For computational testing, we learn to find an
+RS for a two-stage stochastic facility location problem with integer variables
+and linear constraints in both stages and consistently provide near-optimal
+solutions. Our computing times are very competitive with those of
+general-purpose integer programming solvers to achieve a similar solution
+quality.",math.OC,"math.OC, cs.LG",2,Optimization and Control,"Optimization and Control, Machine Learning",Sriram Sankaranarayanan,"Yoshua Bengio, Emma Frejinger, Andrea Lodi, Rahul Patel, Sriram Sankaranarayanan",5,http://arxiv.org/pdf/1912.08112v1,http://arxiv.org/abs/1912.08112v1,2019-12-17
+"HCNAF: Hyper-Conditioned Neural Autoregressive Flow and its Application
+  for Probabilistic Occupancy Map Forecasting","We introduce Hyper-Conditioned Neural Autoregressive Flow (HCNAF); a powerful
+universal distribution approximator designed to model arbitrarily complex
+conditional probability density functions. HCNAF consists of a neural-net based
+conditional autoregressive flow (AF) and a hyper-network that can take large
+conditions in non-autoregressive fashion and outputs the network parameters of
+the AF. Like other flow models, HCNAF performs exact likelihood inference. We
+demonstrate the effectiveness and attributes of HCNAF, including its
+generalization capability over unseen conditions and show that HCNAF
+outperforms recent AF models in a conditional density estimation task for
+MNIST. We also show that HCNAF scales up to complex high-dimensional prediction
+problems of the magnitude of self-driving and that HCNAF yields a
+state-of-the-art performance in a public self-driving dataset.",cs.LG,"cs.LG, cs.RO, stat.ML",3,Machine Learning,"Machine Learning, Robotics, Machine Learning",Jean-Sebastien Valois,"Geunseob, Oh, Jean-Sebastien Valois",3,http://arxiv.org/pdf/1912.08111v1,http://arxiv.org/abs/1912.08111v1,2019-12-17
+A Finite-Sample Deviation Bound for Stable Autoregressive Processes,"In this paper, we study non-asymptotic deviation bounds of the least squares
+estimator in Gaussian AR($n$) processes. By relying on martingale concentration
+inequalities and a tail-bound for $\chi^2$ distributed variables, we provide a
+concentration bound for the sample covariance matrix of the process output.
+With this, we present a problem-dependent finite-time bound on the deviation
+probability of any fixed linear combination of the estimated parameters of the
+AR$(n)$ process. We discuss extensions and limitations of our approach.",stat.ML,"stat.ML, cs.LG, eess.SP, math.ST, stat.TH",5,Machine Learning,"Machine Learning, Machine Learning, Signal Processing, Statistics Theory, Statistics Theory",Cristian R. Rojas,"Rodrigo A. González, Cristian R. Rojas",2,http://arxiv.org/pdf/1912.08103v1,http://arxiv.org/abs/1912.08103v1,2019-12-17
+"Detection of a Source Code Plagiarism in a Student Programming
+  Competition","The article presents a system for testing the independence of solutions to
+algorithmic problems sent by students as part of the student programming
+competition. First, the context was discussed, as well as the need to organize
+programming competitions resulting from this context. Then, an algorithm was
+proposed to study the mutual similarity of source codes of programs sent as
+part of a programming competition. Since, after implementation, the algorithm
+was used in practice, examples of its application for detecting the plagiarism
+of source codes of solutions in two programming competitions conducted as part
+of classes on Algorithms and Numerical Methods were also presented. Finally,
+the effectiveness of the solutions used in the work was discussed.",cs.SE,cs.SE,1,Software Engineering,Software Engineering,Maciej Boniecki,"Zenon Gniazdowski, Maciej Boniecki",2,http://arxiv.org/pdf/1912.08138v1,http://arxiv.org/abs/1912.08138v1,2019-12-17
+"Probabilistic Software Modeling: A Data-driven Paradigm for Software
+  Analysis","Software systems are complex, and behavioral comprehension with the
+increasing amount of AI components challenges traditional testing and
+maintenance strategies.The lack of tools and methodologies for behavioral
+software comprehension leaves developers to testing and debugging that work in
+the boundaries of known scenarios. We present Probabilistic Software Modeling
+(PSM), a data-driven modeling paradigm for predictive and generative methods in
+software engineering. PSM analyzes a program and synthesizes a network of
+probabilistic models that can simulate and quantify the original program's
+behavior. The approach extracts the type, executable, and property structure of
+a program and copies its topology. Each model is then optimized towards the
+observed runtime leading to a network that reflects the system's structure and
+behavior. The resulting network allows for the full spectrum of statistical
+inferential analysis with which rich predictive and generative applications can
+be built. Applications range from the visualization of states, inferential
+queries, test case generation, and anomaly detection up to the stochastic
+execution of the modeled system. In this work, we present the modeling
+methodologies, an empirical study of the runtime behavior of software systems,
+and a comprehensive study on PSM modeled systems. Results indicate that PSM is
+a solid foundation for structural and behavioral software comprehension
+applications.",cs.SE,"cs.SE, cs.LG",2,Software Engineering,"Software Engineering, Machine Learning",Alexander Egyed,"Hannes Thaller, Lukas Linsbauer, Rudolf Ramler, Alexander Egyed",4,http://arxiv.org/pdf/1912.07936v1,http://arxiv.org/abs/1912.07936v1,2019-12-17
+"Prema: A Tool for Precise Requirements Editing, Modeling and Analysis","We present Prema, a tool for Precise Requirement Editing, Modeling and
+Analysis. It can be used in various fields for describing precise requirements
+using formal notations and performing rigorous analysis. By parsing the
+requirements written in formal modeling language, Prema is able to get a model
+which aptly depicts the requirements. It also provides different rigorous
+verification and validation techniques to check whether the requirements meet
+users' expectation and find potential errors. We show that our tool can provide
+a unified environment for writing and verifying requirements without using
+tools that are not well inter-related. For experimental demonstration, we use
+the requirements of the automatic train protection (ATP) system of CASCO signal
+co. LTD., the largest railway signal control system manufacturer of China. The
+code of the tool cannot be released here because the project is commercially
+confidential. However, a demonstration video of the tool is available at
+https://youtu.be/BX0yv8pRMWs.",cs.FL,"cs.FL, cs.SE",2,Formal Languages and Automata Theory,"Formal Languages and Automata Theory, Software Engineering",Geguang Pu,"Yihao Huang, Jincao Feng, Hanyue Zheng, Jiayi Zhu, Shang Wang, Siyuan Jiang, Weikai Miao, Geguang Pu",8,http://arxiv.org/pdf/1912.07817v1,http://arxiv.org/abs/1912.07817v1,2019-12-17
+"Changing reference measure in Bayes spaces with applications to
+  functional data analysis","Probability density functions (PDFs) can be understood as continuous
+compositions by the theory of Bayes spaces. The origin of a Bayes space is
+determined by a given reference measure. This can be easily changed through the
+well-known chain rule which has an impact on the geometry of the Bayes space.
+This work provides a mathematical framework for setting a reference measure. It
+is used to develop a weighting scheme on the bounded domain of distributional
+data. The impact on statistical analysis is shown from the perspective of
+simplicial functional principal component analysis. Moreover, a novel centered
+log-ratio transformation is proposed to map a weighted Bayes spaces into an
+unweighted $L^2$ space, enabling to use most tools developed in functional data
+analysis (e.g. clustering, regression analysis, etc.) while accounting for the
+weighting strategy. The potential of our proposal is shown through simulation
+and on a real case study using Italian income data.",math.ST,"math.ST, stat.TH, 62H25",3,Statistics Theory,"Statistics Theory, Statistics Theory",J. Palarea-Albaladejo,"R. Talska, A. Menafoglio, K. Hron, J. J. Egozcue, J. Palarea-Albaladejo",5,http://arxiv.org/pdf/1912.08003v1,http://arxiv.org/abs/1912.08003v1,2019-12-17
+"Weibull analysis with sequential order statistics under a power trend
+  model for hazard rates","In engineering systems, it is usually assumed that lifetimes of components
+are independent and identically distributed (iid). But, the failure of a
+component results in a higher load on the remaining components and hence causes
+the distribution of the surviving components change. For modeling this kind of
+systems, the theory of sequential order statistics (SOS) can be used. Assuming
+Weibull distribution for lifetimes of components and conditionally proportional
+hazard rates model as a special case of the SOS theory, the maximum likelihood
+estimates of the unknown parameters are obtained in different cases. A new
+model, denoted by PTCPHM, as a generalization of the iid case is proposed, and
+then statistical inferential methods including point and interval estimation as
+well as hypothesis tests under PTCPHM are then developed. Finally, a real data
+on failure times of aircraft components, due to Mann and Fertig (1973), is
+analyzed to illustrate the model and inferential methods developed here.",math.ST,"math.ST, stat.ME, stat.TH, 62F10",4,Statistics Theory,"Statistics Theory, Methodology, Statistics Theory",E. Velayati Moghaddam 1,"M. Doostparast, M. Hashempour, E. Velayati Moghaddam 1",3,http://arxiv.org/pdf/1912.07967v1,http://arxiv.org/abs/1912.07967v1,2019-12-17
+Jackknife covariance matrix estimation for observations from mixture,"A general jackknife estimator for the asymptotic covariance of moment
+estimators is considered in the case when the sample is taken from a mixture
+with varying concentrations of components. Consistency of the estimator is
+demonstrated. A fast algorithm for its calculation is described. The estimator
+is applied to construction of confidence sets for regression parameters in the
+linear regression with errors in variables. An application to sociological data
+analysis is considered.",math.ST,"math.ST, stat.TH",2,Statistics Theory,"Statistics Theory, Statistics Theory",Olena Sugakova,"Rostyslav Maiboroda, Olena Sugakova",2,http://arxiv.org/pdf/1912.07948v1,http://arxiv.org/abs/1912.07948v1,2019-12-17
+"Nonparametric density estimation for intentionally corrupted functional
+  data","We consider statistical models where functional data are artificially
+contaminated by independent Wiener processes in order to satisfy privacy
+constraints. We show that the corrupted observations have a Wiener density
+which determines the distribution of the original functional random variables,
+masked near the origin, uniquely, and we construct a nonparametric estimator of
+that density. We derive an upper bound for its mean integrated squared error
+which has a polynomial convergence rate, and we establish an asymptotic lower
+bound on the minimax convergence rates which is close to the rate attained by
+our estimator. Our estimator requires the choice of a basis and of two
+smoothing parameters. We propose data-driven ways of choosing them and prove
+that the asymptotic quality of our estimator is not significantly affected by
+the empirical parameter selection. We examine the numerical performance of our
+method via simulated examples.",math.ST,"math.ST, stat.TH, 62G07, 62M99, 62H30",3,Statistics Theory,"Statistics Theory, Statistics Theory",Alexander Meister,"Aurore Delaigle, Alexander Meister",2,http://arxiv.org/pdf/1912.07879v1,http://arxiv.org/abs/1912.07879v1,2019-12-17
+"Antiferromagnetic CuMnAs: Ab initio description of finite temperature
+  magnetism and resistivity","Noncollinear magnetic moments in antiferromagnets (AFM) lead to a complex
+behavior of electrical transport, even to a decreasing resistivity due to an
+increasing temperature. Proper treatment of such phenomena is required for
+understanding AFM systems at finite temperatures; however first-principles
+description of these effects is complicated. With ab initio techniques, we
+investigate three numerically feasible models of spin fluctuations (magnons)
+influencing the transport in AFM CuMnAs. We numerically justified a fully
+relativistic collinear disordered local moment approach, whose uncompensated
+generalization reliably describes spin fluctuations, including anisotropy of
+electrical transport, in a wide temperature range. A saturation or a decrease
+of resistivity caused by magnons, phonons, and their combination (above approx.
+400 K) was observed and explained by changes in electronic structure. Within
+the coherent potential approximation, our finite-temperature approaches may be
+applied also to systems with impurities, which are found to have a large impact
+not only on residual resistivity, but also on canting of magnetic moments from
+the AFM to the ferromagnetic state.",cond-mat.mtrl-sci,"cond-mat.mtrl-sci, physics.comp-ph",2,Materials Science,"Materials Science, Computational Physics",Ilja Turek,"David Wagenknecht, Karel Výborný, Karel Carva, Ilja Turek",4,http://arxiv.org/pdf/1912.08025v1,http://arxiv.org/abs/1912.08025v1,2019-12-17
+A multiscale discrete velocity method for model kinetic equations,"In this paper, authors focus effort on improving the conventional discrete
+velocity method (DVM) into a multiscale scheme in finite volume framework for
+gas flow in all flow regimes. Unlike the typical multiscale kinetic methods
+unified gas-kinetic scheme (UGKS) and discrete unified gas-kinetic scheme
+(DUGKS), which concentrate on the evolution of the distribution function at the
+cell interface, in the present scheme the flux for macroscopic variables is
+split into the equilibrium part and the nonequilibrium part, and the
+nonequilibrium flux is calculated by integrating the discrete distribution
+function at the cell center, which overcomes the excess numerical dissipation
+of the conventional DVM in the continuum flow regime. Afterwards, the
+macroscopic variables are finally updated by simply integrating the discrete
+distribution function at the cell center, or by a blend of the increments based
+on the macroscopic and the microscopic systems, and the multiscale property is
+achieved. Several test cases, involving unsteady, steady, high speed, low speed
+gas flows in all flow regimes, have been performed, demonstrating the good
+performance of the multiscale DVM from free molecule to continuum Navier-Stokes
+solutions and the multiscale property of the scheme is proved.",physics.comp-ph,"physics.comp-ph, cs.NA, math.NA, physics.flu-dyn, 76P05, G.1.8; J.2",6,Computational Physics,"Computational Physics, Numerical Analysis, Numerical Analysis, Fluid Dynamics",Chengwen Zhong,"Ruifeng Yuan, Sha Liu, Chengwen Zhong",3,http://arxiv.org/pdf/1912.07982v1,http://arxiv.org/abs/1912.07982v1,2019-12-17
+"Octopus, a computational framework for exploring light-driven phenomena
+  and quantum dynamics in extended and finite systems","Over the last years extraordinary advances in experimental and theoretical
+tools have allowed us to monitor and control matter at short time and atomic
+scales with a high-degree of precision. An appealing and challenging route
+towards engineering materials with tailored properties is to find ways to
+design or selectively manipulate materials, especially at the quantum level. To
+this end, having a state-of-the-art ab initio computer simulation tool that
+enables a reliable and accurate simulation of light-induced changes in the
+physical and chemical properties of complex systems is of utmost importance.
+The first principles real-space-based Octopus project was born with that idea
+in mind, providing an unique framework allowing to describe non-equilibrium
+phenomena in molecular complexes, low dimensional materials, and extended
+systems by accounting for electronic, ionic, and photon quantum mechanical
+effects within a generalized time-dependent density functional theory
+framework. The present article aims to present the new features that have been
+implemented over the last few years, including technical developments related
+to performance and massive parallelism. We also describe the major theoretical
+developments to address ultrafast light-driven processes, like the new
+theoretical framework of quantum electrodynamics density-functional formalism
+(QEDFT) for the description of novel light-matter hybrid states. Those
+advances, and other being released soon as part of the Octopus package, will
+enable the scientific community to simulate and characterize spatial and
+time-resolved spectroscopies, ultrafast phenomena in molecules and materials,
+and new emergent states of matter (QED-materials).",physics.comp-ph,physics.comp-ph,1,Computational Physics,Computational Physics,Angel Rubio,"Nicolas Tancogne-Dejean, Micael J. T. Oliveira, Xavier Andrade, Heiko Appel, Carlos H. Borca, Guillaume Le Breton, Florian Buchholz, Alberto Castro, Stefano Corni, Alfredo A. Correa, Umberto De Giovannini, Alain Delgado, Florian G. Eich, Johannes Flick, Gabriel Gil, Adrián Gomez, Nicole Helbig, Hannes Hübener, René Jestädt, Joaquim Jornet-Somoza, Ask H. Larsen, Irina V. Lebedeva, Martin Lüders, Miguel A. L. Marques, Sebastian T. Ohlmann, Silvio Pipolo, Markus Rampp, Carlo A. Rozzi, David A. Strubbe, Shunsuke A. Sato, Christian Schäfer, Iris Theophilou, Alicia Welden, Angel Rubio",34,http://arxiv.org/pdf/1912.07921v1,http://arxiv.org/abs/1912.07921v1,2019-12-17
+"QuESTlink -- Mathematica embiggened by a hardware-optimised quantum
+  emulator","We introduce QuESTlink, pronounced ""quest link"", an open-source Mathematica
+package which efficiently emulates quantum computers. By integrating with the
+Quantum Exact Simulation Toolkit (QuEST), QuESTlink offers a high-level,
+expressive and usable interface to a high-performance, hardware-accelerated
+emulator. Requiring no installation, QuESTlink streamlines the powerful
+analysis capabilities of Mathematica into the study of quantum systems, even
+utilising remote multicore and GPU hardware. We demonstrate the use of
+QuESTlink to concisely and efficiently simulate several quantum algorithms, and
+present some comparative benchmarking against core QuEST.",quant-ph,"quant-ph, physics.comp-ph",2,Quantum Physics,"Quantum Physics, Computational Physics",Simon C Benjamin,"Tyson Jones, Simon C Benjamin",2,http://arxiv.org/pdf/1912.07904v1,http://arxiv.org/abs/1912.07904v1,2019-12-17
+Upper limit to the photovoltaic efficiency of imperfect crystals,"The Shockley-Queisser (SQ) limit provides a convenient metric for predicting
+light-to-electricity conversion efficiency of a solar cell based on the band
+gap of the light-absorbing layer. In reality, few materials approach this
+radiative limit. We develop a formalism and a computational method to predict
+the maximum photovoltaic efficiency of imperfect crystals from first
+principles. Our scheme includes equilibrium populations of native defects,
+their carrier-capture coefficients, and the associated recombination rates.
+When applied to kesterite solar cells, we reveal an intrinsic limit of 20% for
+Cu2ZnSnSe4, which falls far below the SQ limit of 32%. The effects of atomic
+substitution and extrinsic doping are studied, leading to pathways for an
+enhanced efficiency of 31%. This approach can be applied to support
+targeted-materials selection for future solar-energy technologies.",physics.comp-ph,"physics.comp-ph, cond-mat.mtrl-sci",2,Computational Physics,"Computational Physics, Materials Science",Aron Walsh,"Sunghyun Kim, José A. Márquez, 2 Thomas Unold, Aron Walsh",4,http://arxiv.org/pdf/1912.07889v1,http://arxiv.org/abs/1912.07889v1,2019-12-17
+"Large-scale simulation of shallow water waves with computation only on
+  small staggered patches","The multiscale patch scheme is built from given small micro-scale simulations
+of complicated physical processes to empower large macro-scale simulations. By
+coupling small patches of simulations over unsimulated spatial gaps, large
+savings in computational time are possible. Here we discuss generalising the
+patch scheme to the case of wave systems on staggered grids in 2D space.
+Classic macro-scale interpolation provides a generic coupling between patches
+that achieves arbitrarily high order consistency between the emergent
+macro-scale simulation and the underlying micro-scale dynamics. Eigen-analysis
+indicates that the resultant scheme empowers feasible computation of large
+macro-scale simulations of wave systems even with complicated underlying
+physics. As examples we use the scheme to simulate some wave scenarios via a
+turbulent shallow water model.",physics.comp-ph,"physics.comp-ph, cs.NA, math.DS, math.NA, nlin.PS",5,Computational Physics,"Computational Physics, Numerical Analysis, Dynamical Systems, Numerical Analysis, Pattern Formation and Solitons",A. J. Roberts,"J. E. Bunder, J. Divahar, Ioannis G. Kevrekidis, Trent W. Mattner, A. J. Roberts",5,http://arxiv.org/pdf/1912.07815v1,http://arxiv.org/abs/1912.07815v1,2019-12-17
+"Search in a fitness landscape: How to assess the difficulty of a search
+  problem","Computational modeling is widely used to study how individuals and
+organizations search and solve problems in fields such as economics,
+management, cultural evolution, and computer science. We argue that current
+computational modelling research on problem-solving needs to address several
+fundamental issues in order to generate more meaningful and falsifiable
+contributions. Based on comparative simulations and a new type of visualization
+of how to assess the nature of the fitness landscape, we address two key
+assumptions that approaches such as the NK framework rely on: that the NK
+captures the continuum of complexity of empirical fitness landscapes, and that
+search behavior is a distinct component, independent from the topology of the
+fitness landscape. We show the limitations of the most common approach to
+conceptualize how complex, or rugged, a landscape is, as well as how the nature
+of the fitness landscape is fundamentally intertwined with search behavior.
+Finally, we outline broader implications for how to stimulate problem-solving.",physics.data-an,"physics.data-an, physics.soc-ph",2,"Data Analysis, Statistics and Probability","Data Analysis, Statistics and Probability, Physics and Society",Jacob F. Sherson,"Oana Vuculescu, Mads Kock Pedersen, Carsten Bergenholtz, Jacob F. Sherson",4,http://arxiv.org/pdf/1912.07954v1,http://arxiv.org/abs/1912.07954v1,2019-12-17
+"Spinal compressive forces in adolescent idiopathic scoliosis with and
+  without carrying loads: a musculoskeletal modeling study","The pathogenesis of adolescent idiopathic scoliosis (AIS) remains poorly
+understood and biomechanical data are limited. A deeper insight into spinal
+loading could provide valuable information for the improvement of current
+treatment strategies. This work therefore aimed at using subject-specific
+musculoskeletal full-body models of patients with AIS to predict segmental
+compressive forces around the curve apex and to investigate how these forces
+are affected by simulated load carrying. Models were created based on spatially
+calibrated biplanar radiographic images from 24 patients with mild to moderate
+AIS and validated by comparing predictions of paravertebral muscle activity
+with reported values from in vivo studies. Spinal compressive forces were
+predicted during unloaded upright standing as well as upright standing with
+external loads of 10%, 15% and 20% of body weight (BW) applied to the scapulae
+to simulate carrying a backpack in the regular way, in front of the body and
+over both shoulders. The validation studies showed higher convex muscle
+activity, which was comparable to the literature. The implementation of spinal
+deformity resulted in a 10% increase of compressive force at the curve apex
+during unloaded upright standing. Apical compressive forces further increased
+by 50-62%, 77-94% and 103-128% for 10%, 15% and 20% BW loads, respectively.
+Moreover, load-dependent compressive force increases were the lowest in the
+regular backpack and the highest in the frontpack and convex conditions. The
+predictions indicated increased segmental compressive forces during unloaded
+standing, which could be ascribed to the scoliotic deformation. When carrying
+loads, compressive forces further increased depending on the carrying mode and
+the weight of the load. These results can be used as a basis for further
+studies investigating segmental loading in AIS patients during functional
+activities.",physics.med-ph,"physics.med-ph, physics.bio-ph, q-bio.QM, q-bio.TO",4,Medical Physics,"Medical Physics, Biological Physics, Quantitative Methods, Tissues and Organs",Dennis E. Anderson,"Stefan Schmid, Katelyn A. Burkhart, Brett T. Allaire, Daniel Grindle, Tito Bassani, Fabio Galbusera, Dennis E. Anderson",7,http://arxiv.org/pdf/1912.07893v1,http://arxiv.org/abs/1912.07893v1,2019-12-17
+"Estimation of Residential Radon Concentration in Pennsylvania Counties
+  by Data Fusion","A data fusion method for the estimation of residential radon level
+distribution in any Pennsylvania county is proposed. The method is based on a
+multi-sample density ratio model with variable tilts and is applied to combined
+radon data from a reference county of interest and its neighboring counties.
+Beaver county and its four immediate neighbors are taken as a case in point.
+The distribution of radon concentration is estimated in each of six periods,
+and then the analysis is repeated combining the data from all the periods to
+obtain estimates of Beaver threshold probabilities and the corresponding
+confidence intervals.",stat.AP,"stat.AP, stat.ME",2,Applications,"Applications, Methodology",Benjamin Kedem,"Xuze Zhang, Saumyadipta Pyne, Benjamin Kedem",3,http://arxiv.org/pdf/1912.08149v1,http://arxiv.org/abs/1912.08149v1,2019-12-17
+"A nonparametric Bayesian approach to simultaneous subject and cell
+  heterogeneity discovery for single cell RNA-seq data","The advent of the single cell sequencing era opens new avenues for the
+personalized treatment. The first but important step is to discover the subject
+heterogeneity at the single cell resolution. In this article, we address the
+two-level-clustering problem of simultaneous subject subgroup discovery
+(subject level) and cell type detection (cell level) based on the scRNA-seq
+data from multiple subjects. However, the current statistical approaches either
+cluster cells without considering the subject heterogeneity or group subjects
+not using the single-cell information. To overcome the challenges and fill the
+gap between cell clustering and subject grouping, we develop a solid
+nonparametric Bayesian model SCSC (Subject and Cell clustering for Single-Cell
+expression data) to achieve subject and cell grouping at the same time. SCSC
+does not need to prespecify the subject subgroup number or the cell type
+number, automatically induces subject subgroup structures and matches cell
+types across subjects, and directly models the scRNA-seq raw count data by
+deliberately considering the data's dropouts, library sizes, and
+over-dispersion. A computationally efficient blocked Gibbs sampler is proposed
+for the posterior inference. The simulation and the application to a
+multi-subject iPSC scRNA-seq dataset validate the function of SCSC to discover
+subject and cell heterogeneity.",stat.ME,"stat.ME, stat.AP",2,Methodology,"Methodology, Applications",Xiangyu Luo,"Qiuyu Wu, Xiangyu Luo",2,http://arxiv.org/pdf/1912.08050v1,http://arxiv.org/abs/1912.08050v1,2019-12-17
+"Multiple Change Point Detection and Validation in Autoregressive Time
+  Series Data","It is quite common that the structure of a time series changes abruptly.
+Identifying these change points and describing the model structure in the
+segments between these change points is of interest. In this paper, time series
+data is modelled assuming each segment is an autoregressive time series with
+possibly different autoregressive parameters. This is achieved using two main
+steps. The first step is to use a likelihood ratio scan based estimation
+technique to identify these potential change points to segment the time series.
+Once these potential change points are identified, modified parametric spectral
+discrimination tests are used to validate the proposed segments. A numerical
+study is conducted to demonstrate the performance of the proposed method across
+various scenarios and compared against other contemporary techniques.",stat.CO,"stat.CO, stat.ME",2,Computation,"Computation, Methodology",Georgy Sofronov,"Lijing Ma, Andrew Grant, Georgy Sofronov",3,http://arxiv.org/pdf/1912.07775v1,http://arxiv.org/abs/1912.07775v1,2019-12-17
+Optimality of Observed Information Adaptive Designs in Linear Models,"This work considers experimental design in linear models with additive
+errors. A traditional objective in design is to minimize the variance of the
+estimates of the model parameters. The optimal design, which is found by
+minimizing a convex function of the expected Fisher information, accomplishes
+this objective, approximately. The inverse of expected Fisher information is
+asymptotically equivalent to the variance of the maximum likelihood estimate.
+It is often remarked that observed Fisher information is a better measure of
+the variance of the maximum likelihood estimate than the expected Fisher
+information [Efron and Hinkley (1978)]. However, unlike expected Fisher
+information, observed Fisher information depends on the observed data and
+cannot be used to design an experiment in advance of data collection. In a
+sequential experiment the observed Fisher information from past observations is
+available to incorporate into the design of the current observation. In this
+work an adaptive design that incorporates observed Fisher information is
+proposed. It is shown that this proposed design is optimal, at the limit, with
+respect to inference and conditional mean square error. In a simulation study
+the proposed adaptive design performs nearly uniformly better than the optimal
+design.",stat.ME,stat.ME,1,Methodology,Methodology,Adam Lane,Adam Lane,1,http://arxiv.org/pdf/1912.08162v1,http://arxiv.org/abs/1912.08162v1,2019-12-17
+Substitutes for the non-existent square lattice designs for 36 varieties,"Square lattice designs are often used in trials of new varieties of various
+agricultural crops. However, there are no square lattice designs for 36
+varieties in blocks of size six for four or more replicates. Here we use three
+different approaches to construct designs for up to eight replicates. All the
+designs perform well in terms of giving a low average variance of variety
+contrasts.
+  Supplementary materials are available online.",stat.ME,"stat.ME, math.CO, 62K10",3,Methodology,"Methodology, Combinatorics",E. R. Williams,"R. A. Bailey, Peter J. Cameron, L. H. Soicher, E. R. Williams",4,http://arxiv.org/pdf/1912.08087v1,http://arxiv.org/abs/1912.08087v1,2019-12-17
+Sim-to-Real Domain Adaptation For High Energy Physics,"Particle physics or High Energy Physics (HEP) studies the elementary
+constituents of matter and their interactions with each other. Machine Learning
+(ML) has played an important role in HEP analysis and has proven extremely
+successful in this area. Usually, the ML algorithms are trained on numerical
+simulations of the experimental setup and then applied to the real experimental
+data. However, any discrepancy between the simulation and real data may lead to
+dramatic consequences concerning the performances of the algorithm on real
+data. In this paper, we present an application of domain adaptation using a
+Domain Adversarial Neural Network trained on public HEP data. We demonstrate
+the success of this approach to achieve sim-to-real transfer and ensure the
+consistency of the ML algorithms performances on real and simulated HEP
+datasets.",cs.LG,"cs.LG, stat.ML",2,Machine Learning,"Machine Learning, Machine Learning",Noëlie Cherrier,"Marouen Baalouch, Maxime Defurne, Jean-Philippe Poli, Noëlie Cherrier",4,http://arxiv.org/pdf/1912.08001v1,http://arxiv.org/abs/1912.08001v1,2019-12-17
+"Embedded Constrained Feature Construction for High-Energy Physics Data
+  Classification","Before any publication, data analysis of high-energy physics experiments must
+be validated. This validation is granted only if a perfect understanding of the
+data and the analysis process is demonstrated. Therefore, physicists prefer
+using transparent machine learning algorithms whose performances highly rely on
+the suitability of the provided input features. To transform the feature space,
+feature construction aims at automatically generating new relevant features.
+Whereas most of previous works in this area perform the feature construction
+prior to the model training, we propose here a general framework to embed a
+feature construction technique adapted to the constraints of high-energy
+physics in the induction of tree-based models. Experiments on two high-energy
+physics datasets confirm that a significant gain is obtained on the
+classification scores, while limiting the number of built features. Since the
+features are built to be interpretable, the whole model is transparent and
+readable.",cs.LG,"cs.LG, stat.ML",2,Machine Learning,"Machine Learning, Machine Learning",Franck Sabatié,"Noëlie Cherrier, Maxime Defurne, Jean-Philippe Poli, Franck Sabatié",4,http://arxiv.org/pdf/1912.07999v1,http://arxiv.org/abs/1912.07999v1,2019-12-17

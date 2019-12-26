@@ -1,7 +1,7 @@
 name: "arxiv-ds"
-title: "The Data Science ArXiv"
+title: "The Data Science arXiv"
 description: |
-  The Data Science ArXiv
+  A daily digest of arXiv articles focused on data science topics.
 output_dir: "docs"
 navbar:
   right:
@@ -17,6 +17,7 @@ base_url: bryanwhiting.github.io/ds-arxiv/
 output: 
   distill::distill_article:
     toc: true
+    css: styles.css
 collections:
   posts:
     disqus: 
