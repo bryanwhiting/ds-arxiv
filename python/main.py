@@ -181,22 +181,17 @@ def replace_rmd_template_metadata(dir_post, fp_post, date_today, date_query):
     
     # Replace XXYESTERDAY_DATEXX with date_query's date (which will 99% be "yesterday")
     replace_in_template(fp_post, text_to_search='XXYESTERDAY_DATEXX', replacement_text=date_query)
-    return True
-
-
-
-
 
 
 @task
-def knit_rmd_to_html(fp_post, written_df: bool):
+def knit_rmd_to_html(fp_post):
     """Renders to HTML"""
-    if written_df:
-        cmd = f'Rscript -e \'rmarkdown::render(\"{fp_post}\")\''
-        os.system(cmd)
+    cmd = f'Rscript -e \'rmarkdown::render(\"{fp_post}\")\''
+    os.system(cmd)
 
 if __name__ == '__main__':
-    with Flow('parse_arxiv') as flow:
+    # using the Imperitive API: https://docs.prefect.io/core/concepts/flows.html#imperative-api
+    with Flow('Build Arxiv') as flow:
 
         date_today = datetime.now().strftime('%Y-%m-%d')
 
@@ -210,12 +205,17 @@ if __name__ == '__main__':
         dir_post = create_dir_post()
         written_df = write_df_to_csv(df=df, dir_post=dir_post)
         fp_post = copy_rmd_template(dir_post)
-        knit = knit_rmd_to_html(fp_post=fp_post, written_df=written_df) 
-        # once knit, re-build with tweet
-        bool_finish = replace_rmd_template_metadata(dir_post=dir_post, fp_post=fp_post, date_today=date_today, date_query=date_query)
-        knit2 = knit_rmd_to_html(fp_post=fp_post, written_df=bool_finish)
-        gcp = git_commit_push()
+        knit = knit_rmd_to_html(fp_post=fp_post)
+        knit.set_dependencies(upstream_tasks = [written_df])
         
+        # once knit, re-build with tweet. Requires set_dependencies to avoid conflict
+        replace = replace_rmd_template_metadata(dir_post=dir_post, fp_post=fp_post, date_today=date_today, date_query=date_query)
+        replace.set_dependencies(upstream_tasks=[knit])
+        knit2 = knit_rmd_to_html(fp_post=fp_post)
+        knit2.set_dependencies(upstream_tasks=[knit, replace])
+        gcp = git_commit_push()
+
+    # flow.visualize()    
     flow.run()
         
         # Read in the produced tweet (after HTML compiled)
