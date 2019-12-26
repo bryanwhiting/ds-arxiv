@@ -139,6 +139,7 @@ def write_df_to_csv(df, dir_post):
     # save out arxiv.csv file
     fp_arxiv = os.path.join(dir_post, 'arxiv.csv')
     df.to_csv(fp_arxiv, index=False)
+    return True
 
 
 @task
@@ -150,10 +151,11 @@ def copy_rmd_template(dir_post):
     return fp_post
 
 @task
-def knit_rmd_to_html(fp_post):
+def knit_rmd_to_html(fp_post, written_df: bool):
     """Renders to HTML"""
-    cmd = f'Rscript -e \'rmarkdown::render(\"{fp_post}\")\''
-    os.system(cmd)
+    if written_df:
+        cmd = f'Rscript -e \'rmarkdown::render(\"{fp_post}\")\''
+        os.system(cmd)
 
 if __name__ == '__main__':
     with Flow('parse_arxiv') as flow:
@@ -165,9 +167,9 @@ if __name__ == '__main__':
 
         # Creating the Post folder, save the dataframe there, and build the rmd
         dir_post = create_dir_post()
-        write_df = write_df_to_csv(df=df, dir_post=dir_post)
+        written_df = write_df_to_csv(df=df, dir_post=dir_post)
         fp_post = copy_rmd_template(dir_post)
-        knit = knit_rmd_to_html(fp_post=fp_post) 
+        knit = knit_rmd_to_html(fp_post=fp_post, written_df=written_df) 
         gcp = git_commit_push()
         
     flow.run()
