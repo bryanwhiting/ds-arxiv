@@ -22,7 +22,6 @@ import mypass
 from arxivapi import arx_dict, arx_list
 from resources.config import feeds
 
-@task
 def extract_domain(url):
     parsed_uri = urlparse(url)
     return '{uri.netloc}'.format(uri=parsed_uri).replace('www.', '').replace('.com', '')
@@ -36,7 +35,6 @@ def parse_rss(url: str) -> pd.DataFrame:
     tags = ['title', 'link', 'summary', 'published']
     return pd.DataFrame(items)[tags]
 
-@task
 def arxiv_query(cat, n=20) -> dict:
     """https://arxiv.org/help/api/user-manual#Architecture"""
     sort = '&sortBy=lastUpdatedDate&sortOrder=descending'
@@ -46,7 +44,6 @@ def arxiv_query(cat, n=20) -> dict:
     r = requests.get(q)
     return r.text
 
-@task
 def parse_arxiv_post(post, arx_dict):
     """Code to parse the arxiv query:
 
