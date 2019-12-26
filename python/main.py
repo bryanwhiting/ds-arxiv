@@ -203,7 +203,7 @@ if __name__ == '__main__':
         # Default is to filter to yesterday's publications
         date_query = datetime.strftime(datetime.now() - timedelta(1), '%Y-%m-%d')
         # for debugging:
-        # date_query = '2019-12-24'
+        date_query = '2019-12-24'
         df = df_get_arxiv(arx_list, arx_dict, date_query)
 
         # Creating the Post folder, save the dataframe there, and build the rmd
