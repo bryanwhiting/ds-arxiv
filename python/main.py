@@ -164,10 +164,6 @@ if __name__ == '__main__':
         # Default is to filter to yesterday's publications
         df = df_get_arxiv(arx_list, arx_dict, '2019-12-24')
 
-        # Articles aren't published every day:
-        if len(df) == 0:
-            exit(1)
-
         today = datetime.now().strftime('%Y-%m-%d')
 
         # Creating the Post folder, save the dataframe there, and build the rmd
@@ -177,8 +173,7 @@ if __name__ == '__main__':
         knit = knit_rmd_to_html(fp_post=fp_post) 
         gcp = git_commit_push()
         
-        # Publish via git commit, git push
-
+    flow.run()
         
         # Read in the produced tweet (after HTML compiled)
 
