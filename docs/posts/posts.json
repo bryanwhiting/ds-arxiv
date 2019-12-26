@@ -17,7 +17,7 @@
   {
     "path": "posts/2019-12-18/",
     "title": "Daily arXiv Articles in the areas of Data Science",
-    "description": "There are 60 articles published today.",
+    "description": "Read yesterday's arXiv articles about Data Science and Machine Learning.",
     "author": [
       {
         "name": "Bryan Whiting",
@@ -27,6 +27,6 @@
     "date": "2019-12-18",
     "categories": [],
     "preview": {},
-    "last_modified": "2019-12-26T09:20:43-05:00"
+    "last_modified": "2019-12-26T15:42:55-05:00"
   }
 ]

@@ -6,6 +6,7 @@ TODO: Parse cs, stat, math, etc to have "domains"
 
 """
 
+import fileinput
 from git import Repo
 import os 
 import shutil
@@ -102,7 +103,7 @@ def parse_arxiv_post(post, arx_dict):
 def df_get_arxiv(
     arx_list, 
     arx_dict, 
-    filter_to_date=datetime.strftime(datetime.now() - timedelta(1), '%Y-%m-%d'),
+    filter_to_date,
  ):
     """Loop all the arx_list categories and combine into one"""
     df = pd.DataFrame()
@@ -150,6 +151,43 @@ def copy_rmd_template(dir_post):
     shutil.copy(fp_template, fp_post)
     return fp_post
 
+
+def replace_in_template(filename, text_to_search, replacement_text):
+    """https://stackoverflow.com/a/20593644/2138773"""
+    with fileinput.FileInput(filename, inplace=True, backup='.bak') as file:
+        for line in file:
+            print(line.replace(text_to_search, replacement_text), end='')
+
+def read_file(filename):
+    with open(filename,'r') as f:
+        text = f.read()
+    return text
+
+@task
+def replace_rmd_template_metadata(dir_post, fp_post, date_today, date_query):
+    """After R Markdown is compiled, tweet.txt is created. This pulls that tweet and 
+    replaces the XXDESCRIPTIONXX in the template
+
+    Theoretically I could restructure the RMD as a long f string, but this seems simpler. 
+    """
+
+    # Replace the XXDESCRIPTIONXX with tweet content
+    fp_tweet = os.path.join(dir_post, 'tweet.txt')
+    tweet = read_file(filename=fp_tweet)
+    replace_in_template(fp_post, text_to_search='XXDESCRIPTIONXX', replacement_text=tweet)
+
+    # Replace 2000-01-01 with today's build_date
+    replace_in_template(fp_post, text_to_search='2000-01-01', replacement_text=date_today)
+    
+    # Replace XXYESTERDAY_DATEXX with date_query's date (which will 99% be "yesterday")
+    replace_in_template(fp_post, text_to_search='XXYESTERDAY_DATEXX', replacement_text=date_query)
+    return True
+
+
+
+
+
+
 @task
 def knit_rmd_to_html(fp_post, written_df: bool):
     """Renders to HTML"""
@@ -160,16 +198,22 @@ def knit_rmd_to_html(fp_post, written_df: bool):
 if __name__ == '__main__':
     with Flow('parse_arxiv') as flow:
 
-        # Default is to filter to yesterday's publications
-        df = df_get_arxiv(arx_list, arx_dict, '2019-12-24')
+        date_today = datetime.now().strftime('%Y-%m-%d')
 
-        today = datetime.now().strftime('%Y-%m-%d')
+        # Default is to filter to yesterday's publications
+        date_query = datetime.strftime(datetime.now() - timedelta(1), '%Y-%m-%d')
+        # for debugging:
+        # date_query = '2019-12-24'
+        df = df_get_arxiv(arx_list, arx_dict, date_query)
 
         # Creating the Post folder, save the dataframe there, and build the rmd
         dir_post = create_dir_post()
         written_df = write_df_to_csv(df=df, dir_post=dir_post)
         fp_post = copy_rmd_template(dir_post)
         knit = knit_rmd_to_html(fp_post=fp_post, written_df=written_df) 
+        # once knit, re-build with tweet
+        bool_finish = replace_rmd_template_metadata(dir_post=dir_post, fp_post=fp_post, date_today=date_today, date_query=date_query)
+        knit2 = knit_rmd_to_html(fp_post=fp_post, written_df=bool_finish)
         gcp = git_commit_push()
         
     flow.run()

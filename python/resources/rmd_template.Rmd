@@ -1,8 +1,9 @@
 
 ---
-title: "Daily arXiv Articles in the areas of Data Science"
+title: "Articles from XXDATEXX"
 description: |
-  Read yesterday's arXiv articles about Data Science and Machine Learning.
+  XXDESCRIPTIONXX
+date: 2000-01-01
 author:
   - name: Bryan Whiting
     url: https://www.bryanwhiting.com

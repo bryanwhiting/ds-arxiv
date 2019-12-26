@@ -2,7 +2,7 @@ rmd_template = """
 ---
 title: "Daily Articles"
 description: |
-  There are {n} articles published on {date}.
+  There are {n} articles published on {yesterday}.
 author:
   - name: Bryan Whiting
     url: https://www.bryanwhiting.com

@@ -5,20 +5,22 @@ TODO: Parse cs, stat, math, etc to have "domains"
 * Provide links to topic-specific articles (not just subject)
 
 """
-import os
+
+from git import Repo
+import os 
+import shutil
 import feedparser
 from urllib.parse import urlparse
 import requests
 from bs4 import BeautifulSoup
 from IPython.core.display import display, HTML
 import pandas as pd
+from prefect import task, Flow
 from datetime import datetime, timedelta, date
 
-import sendemail
 import mypass
 from arxivapi import arx_dict, arx_list
 from resources.config import feeds
-from resources.rmdhead import rmd_template
 
 def extract_domain(url):
     parsed_uri = urlparse(url)
@@ -41,7 +43,6 @@ def arxiv_query(cat, n=20) -> dict:
     q = f'http://export.arxiv.org/api/query?search_query=cat:{cat}{sort}{max_res}'
     r = requests.get(q)
     return r.text
-
 
 def parse_arxiv_post(post, arx_dict):
     """Code to parse the arxiv query:
@@ -97,7 +98,12 @@ def parse_arxiv_post(post, arx_dict):
         'date': post['published']
     })
 
-def get_arxiv(arx_list, arx_dict):
+@task
+def df_get_arxiv(
+    arx_list, 
+    arx_dict, 
+    filter_to_date=datetime.strftime(datetime.now() - timedelta(1), '%Y-%m-%d'),
+ ):
     """Loop all the arx_list categories and combine into one"""
     df = pd.DataFrame()
     for cat in arx_list:
@@ -109,173 +115,65 @@ def get_arxiv(arx_list, arx_dict):
     df['date'] = pd.to_datetime(df['date']).dt.date.astype('str')
 
     # filter to today's date and remove duplicates
-    yesterday = datetime.strftime(datetime.now() - timedelta(1), '%Y-%m-%d')
-    df = df[df['date'] == yesterday]
+    df = df[df['date'] == filter_to_date]
     df = df.drop_duplicates(['title', 'date'])
     return df
 
+@task
+def git_commit_push():
+    repo = Repo(os.path.expanduser('~/github/ds-arxiv/.git'))
+    repo.git.add('.')
+    repo.index.commit('Daily batch run')
+    repo.remote(name='origin').push()
+
+@task
+def create_dir_post():
+    """Creates the folder where the post will live"""
+    dir_post = os.path.expanduser(f'~/github/ds-arxiv/_posts/{today}')
+    os.makedirs(dir_post, exist_ok=True)
+    return dir_post
 
 
-# def get_arxiv(arx_list, arx_dict):
-#     """Get all arxiv from list in arxivapi.py"""
-
-#     df = pd.DataFrame()
-#     for cat in arx_list:
-#         df_new = parse_rss(post, arx_dict)
-#         df_new['field'] = cat
-#         df_new['topic'] = arx_dict[cat]
-#         df = df.append(df_new)
-
-#     # multiple postings on same category
-#     df = df.drop_duplicates(['title', 'published'])
-#     return df
-
-# def combine_feeds(feeds: dict) -> pd.DataFrame:
-#     """Combine multiple feeds"""
-#     df = pd.DataFrame()
-#     for category, feed in feeds.items():
-#         for f, url in feed.items():
-#             try:
-#                 df_new = parse_rss(url)
-#             except:
-#                 print('error on', f, category, url, 'trying a replace')
-#                 r = requests.get(url)
-#                 t = r.text.replace('\r\n', '')
-#                 df_new = parse_rss(t)
-#             df_new['feed'] = f
-#             df_new['category'] = category
-#             df = df.append(df_new)
-
-#     # Add the arxiv feeds (it's not a category)
-#     if date.today().weekday() in [0, 4]: #0,4=monday and friday
-#         df = df.append(get_arxiv(), sort=False)
-
-#     df['summary'] = df['summary'].apply(lambda x: strip_html(x))
-#     df['domain'] = df['link'].apply(lambda x: extract_domain(x))
-#     df['date'] = pd.to_datetime(df['published'])
-#     df['short_date'] = df['date'].dt.date
-
-#     # sort
-#     df = df.sort_values('date', ascending=False)
-
-#     return df
-
-# def produce_html(df):
-#     cats = df.category.unique().tolist()
-
-#     msg = ''
-#     for cat in cats:
-#         df_cat = (df.query(f'category == "{cat}"')
-#                     .sort_values('date', ascending=False))
-#         # msg += f'<h3>{cat}</h3>'
-#         msg += f'\n### {cat}'
-
-#         domains = df_cat.domain.unique().tolist()
-#         # Create a TOC within each cat
-#         for dom in domains:
-#             df_dom = (df_cat.query(f'domain == "{dom}"')
-#                        .sort_values('date', ascending=False))
-#             msg += f'\n* {dom} ({df_dom.shape[0]})'
+@task
+def write_df_to_csv(df, dir_post):
+    # save out arxiv.csv file
+    fp_arxiv = os.path.join(dir_post, 'arxiv.csv')
+    df.to_csv(fp_arxiv, index=False)
+    return True
 
 
-#         for dom in domains:
-#             df_dom = (df_cat.query(f'domain == "{dom}"')
-#                        .sort_values('date', ascending=False))
-#             # msg += f'\n#####{dom} ({df_dom.shape[0]})\n\n'
-#             msg += f'\n\n<details open><summary><strong>{dom} ({df_dom.shape[0]})</strong></summary>'
+@task
+def copy_rmd_template(dir_post):
+    """Copy in the Rmarkdown template file"""
+    fp_template = os.path.expanduser(f'~/github/ds-arxiv/python/resources/rmd_template.Rmd')
+    fp_post = os.path.join(dir_post, 'news.Rmd')
+    shutil.copy(fp_template, fp_post)
+    return fp_post
 
-#             for idx, r in df_dom.iterrows():
-#                 link = str(r.link)#.replace('_', '\_') #underscores get messed up in markdown conversion. You can escape them in a markdown bracket, but i'm wrapping all this in an html tag. Maybe not necessary to do all in html, and could just do details tags
-#                 date = r.short_date.strftime('%m-%d')
-#                 if r.feed == 'arxiv':
-#                     msg += f'\t<details><summary><a href={link}>({date})</a> <strong>{r.topic}</strong> {r.title}</summary><br>{r.summary}</br><br></details>'
-#                 else:
-#                     msg += f'\t<details><summary><a href={link}>({date})</a> {r.title}</summary><br>{r.summary}</br><br></details>'
-
-#             msg += f'\n</details>'
-
-#     # msg = '<html><head></head><body>' + msg + '</body></html>'
-#     # display(HTML(msg))
-#     return msg
-
-def produce_rmd(df):
-
-    today = datetime.now().strftime('%Y-%m-%d')
-    yesterday = datetime.strftime(datetime.now() - timedelta(1), '%Y-%m-%d')
-    md = rmd_template.format(n = len(df), date=today, yesterday=yesterday)
-
-    post_folder = os.path.expanduser(f'~/github/ds-arxiv/_posts/{today}')
-    os.makedirs(post_folder, exist_ok=True)
-    with open(os.path.expanduser(f'~/github/ds-arxiv/_posts/{today}/news.Rmd'), 'w') as file:
-        file.write(md)
-    
-    # Save the dataframe there
-    fp_df = os.path.join(post_folder, 'arxiv.csv')
-    df.to_csv(path_or_buf=fp_df, index=False)
-
-
-def main():
-    df = get_arxiv(arx_list, arx_dict)
-    produce_rmd(df)
-
-
-
-def produce_md(html, feeds):
-
-    today = datetime.now().strftime('%Y-%m-%d')
-    cats = list(feeds.keys())
-    title = ', '.join(cats)
-    mdhead = mdheadtemplate.format(today=today, title=title, cats=cats)
-    md = mdhead + '\n' + html
-
-    with open(os.path.expanduser(f'~/gitlab/newsfeed/content/post/{today}-news.md'), 'w') as file:
-        file.write(md)
-    return md
-
-
-def main(emails=True):
-
-    today = datetime.now().strftime('%Y-%m-%d')
-    y = datetime.now().strftime('%Y')
-    m = datetime.now().strftime('%m')
-    # if emails:
-        #sendemail.send_email(subject=f'Daily news for {today}', body='starting')
-        #sendemail.send_email(subject=f'Daily news for {today}', body='starting', _to='2038224355@vtext.com')
-
-    last_week = datetime.now() - timedelta(days=7)
-    df = combine_feeds(feeds)
-
-    df = df[df['short_date'] > last_week.date()]
-    html = produce_html(df)
-    md = produce_md(html, feeds)
-
-    if emails:
-        email_body = f'https://relaxed-darwin-5226d1.netlify.com/{y}/{m}/{today}/'
-        #sendemail.send_email(subject=f'Daily news for {today}', body=email_body)
-        sendemail.send_email(subject=f'Daily news for {today}', body=email_body, _to='2038224355@vtext.com')
-
-#%%
+@task
+def knit_rmd_to_html(fp_post, written_df: bool):
+    """Renders to HTML"""
+    if written_df:
+        cmd = f'Rscript -e \'rmarkdown::render(\"{fp_post}\")\''
+        os.system(cmd)
 
 if __name__ == '__main__':
-    main()
-    # main(emails=False)
-    # display(HTML(msg))
+    with Flow('parse_arxiv') as flow:
 
-    # df.query('feed == "devto"').loc[0, 'link']
+        # Default is to filter to yesterday's publications
+        df = df_get_arxiv(arx_list, arx_dict, '2019-12-24')
 
+        today = datetime.now().strftime('%Y-%m-%d')
 
-# DOESNT HANDLE MISSING DATA WELL
-# def parse_rss(url) -> pd.DataFrame:
-#     feed = feedparser.parse(url)
-#     df = pd.DataFrame()
-#     for i in feed['items']:
-#         df = df.append(pd.DataFrame({
-#             'title': [i['title']],
-#             'link': [i['link']],
-#             'date': [pd.to_datetime(i['published'])],
-#             'summary': [BeautifulSoup(i['summary'], 'html5lib').text],
-#         }))
-#     return df
+        # Creating the Post folder, save the dataframe there, and build the rmd
+        dir_post = create_dir_post()
+        written_df = write_df_to_csv(df=df, dir_post=dir_post)
+        fp_post = copy_rmd_template(dir_post)
+        knit = knit_rmd_to_html(fp_post=fp_post, written_df=written_df) 
+        gcp = git_commit_push()
+        
+    flow.run()
+        
+        # Read in the produced tweet (after HTML compiled)
 
-
-# %%
+        # Tweet out

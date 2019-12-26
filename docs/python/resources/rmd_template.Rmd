@@ -3,7 +3,6 @@
 title: "Daily arXiv Articles in the areas of Data Science"
 description: |
   Read yesterday's arXiv articles about Data Science and Machine Learning.
-date: 2019-12-18
 author:
   - name: Bryan Whiting
     url: https://www.bryanwhiting.com
@@ -222,7 +221,7 @@ write(tweet, 'tweet.txt')
 ## Articles for Statitstics, Machine Learning Econonmetrics, and Finance
 This section contains all articles with any tag of `stat.AP`, `stat.co`, `stat.ML`, `cs.LG`, `q-fin.ST`, `q-fin.EC`, or `econ-EM`. Only the first two sentences are shown - click the links for more detail.
 
-```{r, results='asis', layout='l-screen-inset'}
+```{r list-ds-articles, results='asis', layout='l-screen-inset'}
 #### Produce Headers and Subheaders with core stats articles
 
 df_relevant <- df %>% 
@@ -263,7 +262,7 @@ for (tg in tags){
 
 The tables below show abstracts organized by category with hyperlinks back to the arXiv site. 
 
-```{r, layout='l-page', results='asis'}
+```{r list-primary-tags, layout='l-page', results='asis'}
 # https://rstudio.github.io/DT/#escaping-table-content
 
 subjects <- df_summary$subject %>% unique()
