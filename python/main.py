@@ -128,9 +128,9 @@ def git_commit_push():
     repo.remote(name='origin').push()
 
 @task
-def create_dir_post():
+def create_dir_post(date_published):
     """Creates the folder where the post will live"""
-    dir_post = os.path.expanduser(f'~/github/ds-arxiv/_posts/{today}')
+    dir_post = os.path.expanduser(f'~/github/ds-arxiv/_posts/{date_published}')
     os.makedirs(dir_post, exist_ok=True)
     return dir_post
 
@@ -193,16 +193,19 @@ if __name__ == '__main__':
     # using the Imperitive API: https://docs.prefect.io/core/concepts/flows.html#imperative-api
     with Flow('Build Arxiv') as flow:
 
+        # Dates
         date_today = datetime.now().strftime('%Y-%m-%d')
-
         # Default is to filter to yesterday's publications
         date_query = datetime.strftime(datetime.now() - timedelta(1), '%Y-%m-%d')
         # for debugging:
         date_query = '2019-12-24'
+
+
+        # Begin the flow
         df = df_get_arxiv(arx_list, arx_dict, date_query)
 
         # Creating the Post folder, save the dataframe there, and build the rmd
-        dir_post = create_dir_post()
+        dir_post = create_dir_post(date_published=date_today)
         written_df = write_df_to_csv(df=df, dir_post=dir_post)
         fp_post = copy_rmd_template(dir_post)
         knit = knit_rmd_to_html(fp_post=fp_post)
