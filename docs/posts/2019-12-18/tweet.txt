@@ -1,0 +1,1 @@
+There were 60 new #datascience research articles published on @arXiv yesterday. 24 discussed #machinelearning. https://bryanwhiting.github.io/ds-arxiv/posts/2019-12-26
