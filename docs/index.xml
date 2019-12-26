@@ -7,7 +7,15 @@
     <description>A daily digest of arXiv articles focused on data science topics.
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Wed, 18 Dec 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 26 Dec 2019 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Daily arXiv Articles in the areas of Data Science</title>
+      <dc:creator>Bryan Whiting</dc:creator>
+      <link>bryanwhiting.github.io/ds-arxiv/posts/2019-12-26</link>
+      <description>Read yesterday's arXiv articles about Data Science and Machine Learning.</description>
+      <guid>bryanwhiting.github.io/ds-arxiv/posts/2019-12-26</guid>
+      <pubDate>Thu, 26 Dec 2019 00:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>Daily arXiv Articles in the areas of Data Science</title>
       <dc:creator>Bryan Whiting</dc:creator>
@@ -15,22 +23,6 @@
       <description>There are 60 articles published today.</description>
       <guid>bryanwhiting.github.io/ds-arxiv/posts/2019-12-18</guid>
       <pubDate>Wed, 18 Dec 2019 00:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Hello</title>
-      <dc:creator>Nora Jones</dc:creator>
-      <link>bryanwhiting.github.io/ds-arxiv/posts/2019-12-16-hello</link>
-      <description>A short description of the post.</description>
-      <guid>bryanwhiting.github.io/ds-arxiv/posts/2019-12-16-hello</guid>
-      <pubDate>Mon, 16 Dec 2019 00:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Welcome to The Data Science ArXiv</title>
-      <dc:creator>Nora Jones</dc:creator>
-      <link>bryanwhiting.github.io/ds-arxiv/posts/welcome</link>
-      <description>The daily published ArXiv!</description>
-      <guid>bryanwhiting.github.io/ds-arxiv/posts/welcome</guid>
-      <pubDate>Mon, 16 Dec 2019 00:00:00 +0000</pubDate>
     </item>
   </channel>
 </rss>

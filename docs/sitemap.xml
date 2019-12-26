@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" version="1.0">
   <url>
+    <loc>bryanwhiting.github.io/ds-arxiv/README.html</loc>
+    <lastmod>2019-12-26T14:51:09-05:00</lastmod>
+  </url>
+  <url>
     <loc>bryanwhiting.github.io/ds-arxiv/about.html</loc>
     <lastmod>2019-12-16T20:32:56-05:00</lastmod>
   </url>
@@ -9,19 +13,11 @@
     <lastmod>2019-12-16T20:32:56-05:00</lastmod>
   </url>
   <url>
-    <loc>bryanwhiting.github.io/ds-arxiv/README.html</loc>
-    <lastmod>2019-12-16T21:14:19-05:00</lastmod>
+    <loc>bryanwhiting.github.io/ds-arxiv/posts/2019-12-26/</loc>
+    <lastmod>2019-12-26T15:25:02-05:00</lastmod>
   </url>
   <url>
     <loc>bryanwhiting.github.io/ds-arxiv/posts/2019-12-18/</loc>
     <lastmod>2019-12-26T09:20:43-05:00</lastmod>
-  </url>
-  <url>
-    <loc>bryanwhiting.github.io/ds-arxiv/posts/2019-12-16-hello/</loc>
-    <lastmod>2019-12-16T21:09:49-05:00</lastmod>
-  </url>
-  <url>
-    <loc>bryanwhiting.github.io/ds-arxiv/posts/welcome/</loc>
-    <lastmod>2019-12-19T15:02:42-05:00</lastmod>
   </url>
 </urlset>

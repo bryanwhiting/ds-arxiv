@@ -5,6 +5,8 @@ TODO: Parse cs, stat, math, etc to have "domains"
 * Provide links to topic-specific articles (not just subject)
 
 """
+
+from git import Repo
 import os 
 import shutil
 import feedparser
@@ -13,14 +15,14 @@ import requests
 from bs4 import BeautifulSoup
 from IPython.core.display import display, HTML
 import pandas as pd
+from prefect import task, Flow
 from datetime import datetime, timedelta, date
 
-import sendemail
 import mypass
 from arxivapi import arx_dict, arx_list
 from resources.config import feeds
-from resources.rmdhead import rmd_template
 
+@task
 def extract_domain(url):
     parsed_uri = urlparse(url)
     return '{uri.netloc}'.format(uri=parsed_uri).replace('www.', '').replace('.com', '')
@@ -34,6 +36,7 @@ def parse_rss(url: str) -> pd.DataFrame:
     tags = ['title', 'link', 'summary', 'published']
     return pd.DataFrame(items)[tags]
 
+@task
 def arxiv_query(cat, n=20) -> dict:
     """https://arxiv.org/help/api/user-manual#Architecture"""
     sort = '&sortBy=lastUpdatedDate&sortOrder=descending'
@@ -43,7 +46,7 @@ def arxiv_query(cat, n=20) -> dict:
     r = requests.get(q)
     return r.text
 
-
+@task
 def parse_arxiv_post(post, arx_dict):
     """Code to parse the arxiv query:
 
@@ -98,7 +101,8 @@ def parse_arxiv_post(post, arx_dict):
         'date': post['published']
     })
 
-def get_arxiv(
+@task
+def df_get_arxiv(
     arx_list, 
     arx_dict, 
     filter_to_date=datetime.strftime(datetime.now() - timedelta(1), '%Y-%m-%d'),
@@ -118,60 +122,64 @@ def get_arxiv(
     df = df.drop_duplicates(['title', 'date'])
     return df
 
-
-def main():
-    df = get_arxiv(arx_list, arx_dict, '2019-12-24')
-
-    # Articles aren't published every day:
-    if len(df) > 0:
-    today = datetime.now().strftime('%Y-%m-%d')
-
-    # Create the post folder
-    dir_post = os.path.expanduser(f'~/github/ds-arxiv/_posts/{today}')
-    os.makedirs(post_folder, exist_ok=True)
-
-    # Copy in the Rmarkdown template file
-    fp_template = os.path.expanduser(f'~/github/ds-arxiv/python/resources/rmd_template.Rmd')
-    fp_post = os.path.join(dir_post, 'news.Rmd')
-    shutil.copy(fp_template, fp_post)
-
-    # Compile the HTML
-
-    
-    # Publish via git commit, git push
-    from git import Repo
+@task
+def git_commit_push():
     repo = Repo(os.path.expanduser('~/github/ds-arxiv/.git'))
     repo.git.add('.')
     repo.index.commit('Daily batch run')
     repo.remote(name='origin').push()
 
-    
-    # Read in the produced tweet (after HTML compiled)
+@task
+def create_dir_post():
+    """Creates the folder where the post will live"""
+    dir_post = os.path.expanduser(f'~/github/ds-arxiv/_posts/{today}')
+    os.makedirs(dir_post, exist_ok=True)
+    return dir_post
 
-    # Tweet out
 
-#%%
+@task
+def write_df_to_csv(df, dir_post):
+    # save out arxiv.csv file
+    fp_arxiv = os.path.join(dir_post, 'arxiv.csv')
+    df.to_csv(fp_arxiv, index=False)
+
+
+@task
+def copy_rmd_template(dir_post):
+    """Copy in the Rmarkdown template file"""
+    fp_template = os.path.expanduser(f'~/github/ds-arxiv/python/resources/rmd_template.Rmd')
+    fp_post = os.path.join(dir_post, 'news.Rmd')
+    shutil.copy(fp_template, fp_post)
+    return fp_post
+
+@task
+def knit_rmd_to_html(fp_post):
+    """Renders to HTML"""
+    cmd = f'Rscript -e \'rmarkdown::render(\"{fp_post}\")\''
+    os.system(cmd)
 
 if __name__ == '__main__':
-    main()
-    # main(emails=False)
-    # display(HTML(msg))
+    with Flow('parse_arxiv') as flow:
 
-    # df.query('feed == "devto"').loc[0, 'link']
+        # Default is to filter to yesterday's publications
+        df = df_get_arxiv(arx_list, arx_dict, '2019-12-24')
 
+        # Articles aren't published every day:
+        if len(df) == 0:
+            exit(1)
 
-# DOESNT HANDLE MISSING DATA WELL
-# def parse_rss(url) -> pd.DataFrame:
-#     feed = feedparser.parse(url)
-#     df = pd.DataFrame()
-#     for i in feed['items']:
-#         df = df.append(pd.DataFrame({
-#             'title': [i['title']],
-#             'link': [i['link']],
-#             'date': [pd.to_datetime(i['published'])],
-#             'summary': [BeautifulSoup(i['summary'], 'html5lib').text],
-#         }))
-#     return df
+        today = datetime.now().strftime('%Y-%m-%d')
 
+        # Creating the Post folder, save the dataframe there, and build the rmd
+        dir_post = create_dir_post()
+        write_df = write_df_to_csv(df=df, dir_post=dir_post)
+        fp_post = copy_rmd_template(dir_post)
+        knit = knit_rmd_to_html(fp_post=fp_post) 
+        gcp = git_commit_push()
+        
+        # Publish via git commit, git push
 
-# %%
+        
+        # Read in the produced tweet (after HTML compiled)
+
+        # Tweet out
