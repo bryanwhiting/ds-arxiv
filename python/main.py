@@ -211,6 +211,10 @@ def tweet_bryan(tweet):
     api.send_direct_message(mypass.MY_TWITTER_ID, text=tweet)
 
 
+@task 
+def tweet_world(tweet):
+    api = create_twitter_api()
+    api.update_status(tweet)
 
 if __name__ == '__main__':
     # using the Imperitive API: https://docs.prefect.io/core/concepts/flows.html#imperative-api
@@ -221,7 +225,7 @@ if __name__ == '__main__':
         # Default is to filter to yesterday's publications
         date_query = datetime.strftime(datetime.now() - timedelta(1), '%Y-%m-%d')
         # for debugging:
-        date_query = '2019-12-24'
+        # date_query = '2019-12-24'
 
 
         # Begin the flow. Will fail if len(df) = 0
@@ -247,6 +251,7 @@ if __name__ == '__main__':
         tweet = create_tweet(dir_post, date_published=date_today, date_query=date_query)
         tweet.set_dependencies(upstream_tasks=[gcp])
         tweet_b = tweet_bryan(tweet=tweet)
+        tweet_w = tweet_world(tweet=tweet)
 
     # flow.visualize()    
     flow.run()
