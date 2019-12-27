@@ -118,7 +118,10 @@ def df_get_arxiv(
     # filter to today's date and remove duplicates
     df = df[df['date'] == filter_to_date]
     df = df.drop_duplicates(['title', 'date'])
-    return df
+    if len(df) > 0:
+        return df
+    else:
+        raise ValueError('Len of df = 0. No posts from yesterday.')
 
 @task
 def git_commit_push():
@@ -203,11 +206,12 @@ if __name__ == '__main__':
         # date_query = '2019-12-24'
 
 
-        # Begin the flow
+        # Begin the flow. Will fail if len(df) = 0
         df = df_get_arxiv(arx_list, arx_dict, date_query)
 
         # Creating the Post folder, save the dataframe there, and build the rmd
         dir_post = create_dir_post(date_published=date_today)
+        dir_post.set_dependencies(upstream_tasks = [df])
         written_df = write_df_to_csv(df=df, dir_post=dir_post)
         fp_post = copy_rmd_template(dir_post)
         knit = knit_rmd_to_html(fp_post=fp_post)
