@@ -28,5 +28,20 @@
     "categories": [],
     "preview": {},
     "last_modified": "2019-12-26T15:42:55-05:00"
+  },
+  {
+    "path": "posts/2019-12-27/",
+    "title": "Articles from XXYESTERDAY_DATEXX",
+    "description": "XXDESCRIPTIONXX",
+    "author": [
+      {
+        "name": "Bryan Whiting",
+        "url": "https://www.bryanwhiting.com"
+      }
+    ],
+    "date": "2000-01-01",
+    "categories": [],
+    "preview": {},
+    "last_modified": "2019-12-27T10:16:16-05:00"
   }
 ]

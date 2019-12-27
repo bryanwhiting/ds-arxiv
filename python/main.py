@@ -20,6 +20,7 @@ from prefect import task, Flow
 from datetime import datetime, timedelta, date
 
 import mypass
+from tweet import create_twitter_api
 from arxivapi import arx_dict, arx_list
 from resources.config import feeds
 
@@ -194,6 +195,21 @@ def knit_rmd_to_html(fp_post):
     cmd = f'Rscript -e \'rmarkdown::render(\"{fp_post}\")\''
     os.system(cmd)
 
+@task
+def create_tweet(dir_post, fp_post):
+    fp_tweet = os.path.join(dir_post, 'tweet.txt')
+    tweet = read_file(filename=fp_tweet)
+    tweet = f'{tweet}. Read at {fp_post}'
+    return tweet
+
+@task
+def tweet_bryan(tweet):
+
+    api = create_twitter_api()
+    api.send_direct_message(mypass.MY_TWITTER_ID, text=tweet)
+
+
+
 if __name__ == '__main__':
     # using the Imperitive API: https://docs.prefect.io/core/concepts/flows.html#imperative-api
     with Flow('Build Arxiv') as flow:
@@ -203,7 +219,7 @@ if __name__ == '__main__':
         # Default is to filter to yesterday's publications
         date_query = datetime.strftime(datetime.now() - timedelta(1), '%Y-%m-%d')
         # for debugging:
-        # date_query = '2019-12-24'
+        date_query = '2019-12-24'
 
 
         # Begin the flow. Will fail if len(df) = 0
@@ -223,6 +239,11 @@ if __name__ == '__main__':
         knit2 = knit_rmd_to_html(fp_post=fp_post)
         knit2.set_dependencies(upstream_tasks=[knit, replace])
         gcp = git_commit_push()
+
+        # Send tweets
+        tweet = create_tweet(dir_post, fp_post)
+        tweet.set_dependencies(upstream_tasks=[gcp])
+        tweet_b = tweet_bryan(tweet=tweet)
 
     # flow.visualize()    
     flow.run()

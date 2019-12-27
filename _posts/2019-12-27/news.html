@@ -1,0 +1,2185 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+  <meta name="generator" content="distill" />
+
+  <style type="text/css">
+  /* Hide doc at startup (prevent jankiness while JS renders/transforms) */
+  body {
+    visibility: hidden;
+  }
+  </style>
+
+ <!--radix_placeholder_import_source-->
+ <!--/radix_placeholder_import_source-->
+
+  <!--radix_placeholder_meta_tags-->
+  <title>Articles from XXYESTERDAY_DATEXX</title>
+  
+  <meta property="description" itemprop="description" content="XXDESCRIPTIONXX"/>
+  
+  
+  <!--  https://schema.org/Article -->
+  <meta property="article:published" itemprop="datePublished" content="2000-01-01"/>
+  <meta property="article:created" itemprop="dateCreated" content="2000-01-01"/>
+  <meta name="article:author" content="Bryan Whiting"/>
+  
+  <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
+  <meta property="og:title" content="Articles from XXYESTERDAY_DATEXX"/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:description" content="XXDESCRIPTIONXX"/>
+  <meta property="og:locale" content="en_US"/>
+  
+  <!--  https://dev.twitter.com/cards/types/summary -->
+  <meta property="twitter:card" content="summary"/>
+  <meta property="twitter:title" content="Articles from XXYESTERDAY_DATEXX"/>
+  <meta property="twitter:description" content="XXDESCRIPTIONXX"/>
+  
+  <!--/radix_placeholder_meta_tags-->
+  <!--radix_placeholder_rmarkdown_metadata-->
+  
+  <script type="text/json" id="radix-rmarkdown-metadata">
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","date","author","output"]}},"value":[{"type":"character","attributes":{},"value":["Articles from XXYESTERDAY_DATEXX"]},{"type":"character","attributes":{},"value":["XXDESCRIPTIONXX\n"]},{"type":"character","attributes":{},"value":["2000-01-01"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url"]}},"value":[{"type":"character","attributes":{},"value":["Bryan Whiting"]},{"type":"character","attributes":{},"value":["https://www.bryanwhiting.com"]}]}]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained","toc"]}},"value":[{"type":"logical","attributes":{},"value":[false]},{"type":"logical","attributes":{},"value":[true]}]}]}]}
+  </script>
+  <!--/radix_placeholder_rmarkdown_metadata-->
+  
+  <script type="text/json" id="radix-resource-manifest">
+  {"type":"character","attributes":{},"value":["arxiv.csv","output_df_summary.Rda","tweet.txt"]}
+  </script>
+  <!--radix_placeholder_navigation_in_header-->
+  <!--/radix_placeholder_navigation_in_header-->
+  <!--radix_placeholder_distill-->
+  
+  <style type="text/css">
+  
+  body {
+    background-color: white;
+  }
+  
+  .pandoc-table {
+    width: 100%;
+  }
+  
+  .pandoc-table>caption {
+    margin-bottom: 10px;
+  }
+  
+  .pandoc-table th:not([align]) {
+    text-align: left;
+  }
+  
+  .pagedtable-footer {
+    font-size: 15px;
+  }
+  
+  .html-widget {
+    margin-bottom: 2.0em;
+  }
+  
+  .l-screen-inset {
+    padding-right: 16px;
+  }
+  
+  .l-screen .caption {
+    margin-left: 10px;
+  }
+  
+  .shaded {
+    background: rgb(247, 247, 247);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  
+  .shaded .html-widget {
+    margin-bottom: 0;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  
+  .shaded .shaded-content {
+    background: white;
+  }
+  
+  .text-output {
+    margin-top: 0;
+    line-height: 1.5em;
+  }
+  
+  .hidden {
+    display: none !important;
+  }
+  
+  d-article {
+    padding-bottom: 30px;
+  }
+  
+  d-appendix {
+    padding-top: 30px;
+  }
+  
+  d-article>p>img {
+    width: 100%;
+  }
+  
+  d-article iframe {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 2.0em;
+    width: 100%;
+  }
+  
+  figure img.external {
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+    padding: 18px;
+    box-sizing: border-box;
+  }
+  
+  /* CSS for table of contents */
+  
+  .d-toc {
+    color: rgba(0,0,0,0.8);
+    font-size: 0.8em;
+    line-height: 1em;
+  }
+  
+  .d-toc-header {
+    font-size: 0.6rem;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 1.3em;
+  }
+  
+  .d-toc a {
+    border-bottom: none;
+  }
+  
+  .d-toc ul {
+    padding-left: 0;
+  }
+  
+  .d-toc li>ul {
+    padding-top: 0.8em;
+    padding-left: 16px;
+    margin-bottom: 0.6em;
+  }
+  
+  .d-toc ul,
+  .d-toc li {
+    list-style-type: none;
+  }
+  
+  .d-toc li {
+    margin-bottom: 0.9em;
+  }
+  
+  .d-toc-separator {
+    margin-top: 20px;
+    margin-bottom: 2em;
+  }
+  
+  .d-article-with-toc {
+    border-top: none;
+    padding-top: 0;
+  }
+  
+  
+  
+  /* Tweak code blocks (note that this CSS is repeated above in an injection
+     into the d-code shadow dom) */
+  
+  d-code {
+    overflow-x: auto !important;
+  }
+  
+  pre.d-code code.d-code {
+    padding-left: 10px;
+    font-size: 12px;
+    border-left: 2px solid rgba(0,0,0,0.1);
+  }
+  
+  pre.text-output {
+  
+    font-size: 12px;
+    color: black;
+    background: none;
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.5;
+  
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+  
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+  }
+  
+  @media(min-width: 768px) {
+  
+  d-code {
+    overflow-x: visible !important;
+  }
+  
+  pre.d-code code.d-code  {
+      padding-left: 18px;
+      font-size: 14px;
+  }
+  pre.text-output {
+    font-size: 14px;
+  }
+  }
+  
+  /* Figure */
+  
+  .figure {
+    position: relative;
+    margin-bottom: 2.5em;
+    margin-top: 1.5em;
+  }
+  
+  .figure img {
+    width: 100%;
+  }
+  
+  .figure .caption {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 12px;
+    line-height: 1.5em;
+  }
+  
+  .figure img.external {
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+    padding: 18px;
+    box-sizing: border-box;
+  }
+  
+  .figure .caption a {
+    color: rgba(0, 0, 0, 0.6);
+  }
+  
+  .figure .caption b,
+  .figure .caption strong, {
+    font-weight: 600;
+    color: rgba(0, 0, 0, 1.0);
+  }
+  
+  
+  
+  /* Tweak 1000px media break to show more text */
+  
+  @media(min-width: 1000px) {
+    .base-grid,
+    distill-header,
+    d-title,
+    d-abstract,
+    d-article,
+    d-appendix,
+    distill-appendix,
+    d-byline,
+    d-footnote-list,
+    d-citation-list,
+    distill-footer {
+      grid-template-columns: [screen-start] 1fr [page-start kicker-start] 80px [middle-start] 50px [text-start kicker-end] 65px 65px 65px 65px 65px 65px 65px 65px [text-end gutter-start] 65px [middle-end] 65px [page-end gutter-end] 1fr [screen-end];
+      grid-column-gap: 16px;
+    }
+  
+    .grid {
+      grid-column-gap: 16px;
+    }
+  
+    d-article {
+      font-size: 1.06rem;
+      line-height: 1.7em;
+    }
+    figure .caption, .figure .caption, figure figcaption {
+      font-size: 13px;
+    }
+  }
+  
+  @media(min-width: 1180px) {
+    .base-grid,
+    distill-header,
+    d-title,
+    d-abstract,
+    d-article,
+    d-appendix,
+    distill-appendix,
+    d-byline,
+    d-footnote-list,
+    d-citation-list,
+    distill-footer {
+      grid-template-columns: [screen-start] 1fr [page-start kicker-start] 60px [middle-start] 60px [text-start kicker-end] 60px 60px 60px 60px 60px 60px 60px 60px [text-end gutter-start] 60px [middle-end] 60px [page-end gutter-end] 1fr [screen-end];
+      grid-column-gap: 32px;
+    }
+  
+    .grid {
+      grid-column-gap: 32px;
+    }
+  }
+  
+  
+  /* Get the citation styles for the appendix (not auto-injected on render since
+     we do our own rendering of the citation appendix) */
+  
+  d-appendix .citation-appendix,
+  .d-appendix .citation-appendix {
+    font-size: 11px;
+    line-height: 15px;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    padding-left: 18px;
+    border: 1px solid rgba(0,0,0,0.1);
+    background: rgba(0, 0, 0, 0.02);
+    padding: 10px 18px;
+    border-radius: 3px;
+    color: rgba(150, 150, 150, 1);
+    overflow: hidden;
+    margin-top: -12px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+  
+  
+  /* Social footer */
+  
+  .social_footer {
+    margin-top: 30px;
+    margin-bottom: 0;
+    color: rgba(0,0,0,0.67);
+  }
+  
+  .disqus-comments {
+    margin-right: 30px;
+  }
+  
+  .disqus-comment-count {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+  }
+  
+  #disqus_thread {
+    margin-top: 30px;
+  }
+  
+  .article-sharing a {
+    border-bottom: none;
+    margin-right: 8px;
+  }
+  
+  .article-sharing a:hover {
+    border-bottom: none;
+  }
+  
+  .sidebar-section.subscribe {
+    font-size: 12px;
+    line-height: 1.6em;
+  }
+  
+  .subscribe p {
+    margin-bottom: 0.5em;
+  }
+  
+  
+  .article-footer .subscribe {
+    font-size: 15px;
+    margin-top: 45px;
+  }
+  
+  
+  /* Improve display for browsers without grid (IE/Edge <= 15) */
+  
+  .downlevel {
+    line-height: 1.6em;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+  }
+  
+  .downlevel .d-title {
+    padding-top: 6rem;
+    padding-bottom: 1.5rem;
+  }
+  
+  .downlevel .d-title h1 {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.1em;
+    margin: 0 0 0.5rem;
+  }
+  
+  .downlevel .d-title p {
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 1.55em;
+    margin-top: 0;
+  }
+  
+  .downlevel .d-byline {
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+    font-size: 0.8rem;
+    line-height: 1.8em;
+  }
+  
+  .downlevel .section-separator {
+    border: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  
+  .downlevel .d-article {
+    font-size: 1.06rem;
+    line-height: 1.7em;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
+  
+  
+  .downlevel .d-appendix {
+    padding-left: 0;
+    padding-right: 0;
+    max-width: none;
+    font-size: 0.8em;
+    line-height: 1.7em;
+    margin-bottom: 0;
+    color: rgba(0,0,0,0.5);
+    padding-top: 40px;
+    padding-bottom: 48px;
+  }
+  
+  .downlevel .footnotes ol {
+    padding-left: 13px;
+  }
+  
+  .downlevel .base-grid,
+  .downlevel .distill-header,
+  .downlevel .d-title,
+  .downlevel .d-abstract,
+  .downlevel .d-article,
+  .downlevel .d-appendix,
+  .downlevel .distill-appendix,
+  .downlevel .d-byline,
+  .downlevel .d-footnote-list,
+  .downlevel .d-citation-list,
+  .downlevel .distill-footer,
+  .downlevel .appendix-bottom,
+  .downlevel .posts-container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  
+  @media(min-width: 768px) {
+    .downlevel .base-grid,
+    .downlevel .distill-header,
+    .downlevel .d-title,
+    .downlevel .d-abstract,
+    .downlevel .d-article,
+    .downlevel .d-appendix,
+    .downlevel .distill-appendix,
+    .downlevel .d-byline,
+    .downlevel .d-footnote-list,
+    .downlevel .d-citation-list,
+    .downlevel .distill-footer,
+    .downlevel .appendix-bottom,
+    .downlevel .posts-container {
+    padding-left: 150px;
+    padding-right: 150px;
+    max-width: 900px;
+  }
+  }
+  
+  .downlevel pre code {
+    display: block;
+    border-left: 2px solid rgba(0, 0, 0, .1);
+    padding: 0 0 0 20px;
+    font-size: 14px;
+  }
+  
+  .downlevel code, .downlevel pre {
+    color: black;
+    background: none;
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.5;
+  
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+  
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+  }
+  
+  </style>
+  
+  <script type="application/javascript">
+  
+  function is_downlevel_browser() {
+    if (bowser.isUnsupportedBrowser({ msie: "12", msedge: "16"},
+                                   window.navigator.userAgent)) {
+      return true;
+    } else {
+      return window.load_distill_framework === undefined;
+    }
+  }
+  
+  // show body when load is complete
+  function on_load_complete() {
+  
+    // set body to visible
+    document.body.style.visibility = 'visible';
+  
+    // force redraw for leaflet widgets
+    if (window.HTMLWidgets) {
+      var maps = window.HTMLWidgets.findAll(".leaflet");
+      $.each(maps, function(i, el) {
+        var map = this.getMap();
+        map.invalidateSize();
+        map.eachLayer(function(layer) {
+          if (layer instanceof L.TileLayer)
+            layer.redraw();
+        });
+      });
+    }
+  
+    // trigger 'shown' so htmlwidgets resize
+    $('d-article').trigger('shown');
+  }
+  
+  function init_distill() {
+  
+    init_common();
+  
+    // create front matter
+    var front_matter = $('<d-front-matter></d-front-matter>');
+    $('#distill-front-matter').wrap(front_matter);
+  
+    // create d-title
+    $('.d-title').changeElementType('d-title');
+  
+    // create d-byline
+    var byline = $('<d-byline></d-byline>');
+    $('.d-byline').replaceWith(byline);
+  
+    // create d-article
+    var article = $('<d-article></d-article>');
+    $('.d-article').wrap(article).children().unwrap();
+  
+    // move posts container into article
+    $('.posts-container').appendTo($('d-article'));
+  
+    // create d-appendix
+    $('.d-appendix').changeElementType('d-appendix');
+  
+    // create d-bibliography
+    var bibliography = $('<d-bibliography></d-bibliography>');
+    $('#distill-bibliography').wrap(bibliography);
+  
+    // flag indicating that we have appendix items
+    var appendix = $('.appendix-bottom').children('h3').length > 0;
+  
+    // replace citations with <d-cite>
+    $('.citation').each(function(i, val) {
+      appendix = true;
+      var cites = $(this).attr('data-cites').split(" ");
+      var dt_cite = $('<d-cite></d-cite>');
+      dt_cite.attr('key', cites.join());
+      $(this).replaceWith(dt_cite);
+    });
+    // remove refs
+    $('#refs').remove();
+  
+    // replace footnotes with <d-footnote>
+    $('.footnote-ref').each(function(i, val) {
+      appendix = true;
+      var href = $(this).attr('href');
+      var id = href.replace('#', '');
+      var fn = $('#' + id);
+      var fn_p = $('#' + id + '>p');
+      fn_p.find('.footnote-back').remove();
+      var text = fn_p.html();
+      var dtfn = $('<d-footnote></d-footnote>');
+      dtfn.html(text);
+      $(this).replaceWith(dtfn);
+    });
+    // remove footnotes
+    $('.footnotes').remove();
+  
+    $('h1.appendix, h2.appendix').each(function(i, val) {
+      $(this).changeElementType('h3');
+    });
+    $('h3.appendix').each(function(i, val) {
+      var id = $(this).attr('id');
+      $('.d-toc a[href="#' + id + '"]').parent().remove();
+      appendix = true;
+      $(this).nextUntil($('h1, h2, h3')).addBack().appendTo($('d-appendix'));
+    });
+  
+    // show d-appendix if we have appendix content
+    $("d-appendix").css('display', appendix ? 'grid' : 'none');
+  
+    // replace code blocks with d-code
+    $('pre>code').each(function(i, val) {
+      var code = $(this);
+      var pre = code.parent();
+      var clz = "";
+      var language = pre.attr('class');
+      if (language) {
+        // map unknown languages to "clike" (without this they just dissapear)
+        if ($.inArray(language, ["bash", "clike", "css", "go", "html",
+                                 "javascript", "js", "julia", "lua", "markdown",
+                                 "markup", "mathml", "python", "svg", "xml"]) == -1)
+          language = "clike";
+        language = ' language="' + language + '"';
+        var dt_code = $('<d-code block' + language + clz + '></d-code>');
+        dt_code.text(code.text());
+        pre.replaceWith(dt_code);
+      } else {
+        code.addClass('text-output').unwrap().changeElementType('pre');
+      }
+    });
+  
+    // localize layout chunks to just output
+    $('.layout-chunk').each(function(i, val) {
+  
+      // capture layout
+      var layout = $(this).attr('data-layout');
+  
+      // apply layout to markdown level block elements
+      var elements = $(this).children().not('d-code, pre.text-output, script');
+      elements.each(function(i, el) {
+        var layout_div = $('<div class="' + layout + '"></div>');
+        if (layout_div.hasClass('shaded')) {
+          var shaded_content = $('<div class="shaded-content"></div>');
+          $(this).wrap(shaded_content);
+          $(this).parent().wrap(layout_div);
+        } else {
+          $(this).wrap(layout_div);
+        }
+      });
+  
+  
+      // unwrap the layout-chunk div
+      $(this).children().unwrap();
+    });
+  
+    // load distill framework
+    load_distill_framework();
+  
+    // wait for window.distillRunlevel == 4 to do post processing
+    function distill_post_process() {
+  
+      if (!window.distillRunlevel || window.distillRunlevel < 4)
+        return;
+  
+      // hide author/affiliations entirely if we have no authors
+      var front_matter = JSON.parse($("#distill-front-matter").html());
+      var have_authors = front_matter.authors && front_matter.authors.length > 0;
+      if (!have_authors)
+        $('d-byline').addClass('hidden');
+  
+      // table of contents
+      if (have_authors) // adjust border if we are in authors
+        $('.d-toc').parent().addClass('d-article-with-toc');
+  
+      // strip links that point to #
+      $('.authors-affiliations').find('a[href="#"]').removeAttr('href');
+  
+      // hide elements of author/affiliations grid that have no value
+      function hide_byline_column(caption) {
+        $('d-byline').find('h3:contains("' + caption + '")').parent().css('visibility', 'hidden');
+      }
+  
+      // affiliations
+      var have_affiliations = false;
+      for (var i = 0; i<front_matter.authors.length; ++i) {
+        var author = front_matter.authors[i];
+        if (author.affiliation !== "&nbsp;") {
+          have_affiliations = true;
+          break;
+        }
+      }
+      if (!have_affiliations)
+        $('d-byline').find('h3:contains("Affiliations")').css('visibility', 'hidden');
+  
+      // published date
+      if (!front_matter.publishedDate)
+        hide_byline_column("Published");
+  
+      // document object identifier
+      var doi = $('d-byline').find('h3:contains("DOI")');
+      var doi_p = doi.next().empty();
+      if (!front_matter.doi) {
+        // if we have a citation and valid citationText then link to that
+        if ($('#citation').length > 0 && front_matter.citationText) {
+          doi.html('Citation');
+          $('<a href="#citation"></a>')
+            .text(front_matter.citationText)
+            .appendTo(doi_p);
+        } else {
+          hide_byline_column("DOI");
+        }
+      } else {
+        $('<a></a>')
+           .attr('href', "https://doi.org/" + front_matter.doi)
+           .html(front_matter.doi)
+           .appendTo(doi_p);
+      }
+  
+       // change plural form of authors/affiliations
+      if (front_matter.authors.length === 1) {
+        var grid = $('.authors-affiliations');
+        grid.children('h3:contains("Authors")').text('Author');
+        grid.children('h3:contains("Affiliations")').text('Affiliation');
+      }
+  
+      // inject pre code styles (can't do this with a global stylesheet b/c a shadow root is used)
+      $('d-code').each(function(i, val) {
+        var style = document.createElement('style');
+        style.innerHTML = 'pre code { padding-left: 10px; font-size: 12px; border-left: 2px solid rgba(0,0,0,0.1); } ' +
+                          '@media(min-width: 768px) { pre code { padding-left: 18px; font-size: 14px; } }';
+        if (this.shadowRoot)
+          this.shadowRoot.appendChild(style);
+      });
+  
+      // move appendix-bottom entries to the bottom
+      $('.appendix-bottom').appendTo('d-appendix').children().unwrap();
+      $('.appendix-bottom').remove();
+  
+      // clear polling timer
+      clearInterval(tid);
+  
+      // show body now that everything is ready
+      on_load_complete();
+    }
+  
+    var tid = setInterval(distill_post_process, 50);
+    distill_post_process();
+  
+  }
+  
+  function init_downlevel() {
+  
+    init_common();
+  
+     // insert hr after d-title
+    $('.d-title').after($('<hr class="section-separator"/>'));
+  
+    // check if we have authors
+    var front_matter = JSON.parse($("#distill-front-matter").html());
+    var have_authors = front_matter.authors && front_matter.authors.length > 0;
+  
+    // manage byline/border
+    if (!have_authors)
+      $('.d-byline').remove();
+    $('.d-byline').after($('<hr class="section-separator"/>'));
+    $('.d-byline a').remove();
+  
+    // remove toc
+    $('.d-toc-header').remove();
+    $('.d-toc').remove();
+    $('.d-toc-separator').remove();
+  
+    // move appendix elements
+    $('h1.appendix, h2.appendix').each(function(i, val) {
+      $(this).changeElementType('h3');
+    });
+    $('h3.appendix').each(function(i, val) {
+      $(this).nextUntil($('h1, h2, h3')).addBack().appendTo($('.d-appendix'));
+    });
+  
+  
+    // inject headers into references and footnotes
+    var refs_header = $('<h3></h3>');
+    refs_header.text('References');
+    $('#refs').prepend(refs_header);
+  
+    var footnotes_header = $('<h3></h3');
+    footnotes_header.text('Footnotes');
+    $('.footnotes').children('hr').first().replaceWith(footnotes_header);
+  
+    // move appendix-bottom entries to the bottom
+    $('.appendix-bottom').appendTo('.d-appendix').children().unwrap();
+    $('.appendix-bottom').remove();
+  
+    // remove appendix if it's empty
+    if ($('.d-appendix').children().length === 0)
+      $('.d-appendix').remove();
+  
+    // prepend separator above appendix
+    $('.d-appendix').before($('<hr class="section-separator" style="clear: both"/>'));
+  
+    // trim code
+    $('pre>code').each(function(i, val) {
+      $(this).html($.trim($(this).html()));
+    });
+  
+    // move posts-container right before article
+    $('.posts-container').insertBefore($('.d-article'));
+  
+    $('body').addClass('downlevel');
+  
+    on_load_complete();
+  }
+  
+  
+  function init_common() {
+  
+    // jquery plugin to change element types
+    (function($) {
+      $.fn.changeElementType = function(newType) {
+        var attrs = {};
+  
+        $.each(this[0].attributes, function(idx, attr) {
+          attrs[attr.nodeName] = attr.nodeValue;
+        });
+  
+        this.replaceWith(function() {
+          return $("<" + newType + "/>", attrs).append($(this).contents());
+        });
+      };
+    })(jQuery);
+  
+    // prevent underline for linked images
+    $('a > img').parent().css({'border-bottom' : 'none'});
+  
+    // mark non-body figures created by knitr chunks as 100% width
+    $('.layout-chunk').each(function(i, val) {
+      var figures = $(this).find('img, .html-widget');
+      if ($(this).attr('data-layout') !== "l-body") {
+        figures.css('width', '100%');
+      } else {
+        figures.css('max-width', '100%');
+        figures.filter("[width]").each(function(i, val) {
+          var fig = $(this);
+          fig.css('width', fig.attr('width') + 'px');
+        });
+  
+      }
+    });
+  
+    // auto-append index.html to post-preview links in file: protocol
+    // and in rstudio ide preview
+    $('.post-preview').each(function(i, val) {
+      if (window.location.protocol === "file:")
+        $(this).attr('href', $(this).attr('href') + "index.html");
+    });
+  
+    // get rid of index.html references in header
+    if (window.location.protocol !== "file:") {
+      $('.distill-site-header a[href]').each(function(i,val) {
+        $(this).attr('href', $(this).attr('href').replace("index.html", "./"));
+      });
+    }
+  
+    // add class to pandoc style tables
+    $('tr.header').parent('thead').parent('table').addClass('pandoc-table');
+    $('.kable-table').children('table').addClass('pandoc-table');
+  
+    // add figcaption style to table captions
+    $('caption').parent('table').addClass("figcaption");
+  
+    // initialize posts list
+    if (window.init_posts_list)
+      window.init_posts_list();
+  
+    // implmement disqus comment link
+    $('.disqus-comment-count').click(function() {
+      window.headroom_prevent_pin = true;
+      $('#disqus_thread').toggleClass('hidden');
+      if (!$('#disqus_thread').hasClass('hidden')) {
+        var offset = $(this).offset();
+        $(window).resize();
+        $('html, body').animate({
+          scrollTop: offset.top - 35
+        });
+      }
+    });
+  }
+  
+  document.addEventListener('DOMContentLoaded', function() {
+    if (is_downlevel_browser())
+      init_downlevel();
+    else
+      window.addEventListener('WebComponentsReady', init_distill);
+  });
+  
+  </script>
+  
+  <!--/radix_placeholder_distill-->
+  <script src="news_files/kePrint-0.0.1/kePrint.js"></script>
+  <script src="news_files/jquery-1.11.3/jquery.min.js"></script>
+  <script src="news_files/bowser-1.9.3/bowser.min.js"></script>
+  <script src="news_files/webcomponents-2.0.0/webcomponents.js"></script>
+  <script src="news_files/distill-2.2.21/template.v2.js"></script>
+  <!--radix_placeholder_site_in_header-->
+  <!--/radix_placeholder_site_in_header-->
+
+
+</head>
+
+<body>
+
+<!--radix_placeholder_front_matter-->
+
+<script id="distill-front-matter" type="text/json">
+{"title":"Articles from XXYESTERDAY_DATEXX","description":"XXDESCRIPTIONXX","authors":[{"author":"Bryan Whiting","authorURL":"https://www.bryanwhiting.com","affiliation":"&nbsp;","affiliationURL":"#"}],"publishedDate":"2000-01-01T00:00:00.000-05:00","citationText":"Whiting, 2000"}
+</script>
+
+<!--/radix_placeholder_front_matter-->
+<!--radix_placeholder_navigation_before_body-->
+<!--/radix_placeholder_navigation_before_body-->
+<!--radix_placeholder_site_before_body-->
+<!--/radix_placeholder_site_before_body-->
+
+<div class="d-title">
+<h1>Articles from XXYESTERDAY_DATEXX</h1>
+<p>XXDESCRIPTIONXX</p>
+</div>
+
+<div class="d-byline">
+  Bryan Whiting <a href="https://www.bryanwhiting.com" class="uri">https://www.bryanwhiting.com</a> 
+  
+<br/>2000-01-01
+</div>
+
+<div class="d-article">
+<h3 class="d-toc-header">Table of Contents</h3>
+<nav class="d-toc" id="TOC">
+<ul>
+<li><a href="#breakdown-of-arxiv-publication-counts">Breakdown of arXiv Publication Counts</a></li>
+<li><a href="#articles-for-statitstics-machine-learning-econonmetrics-and-finance">Articles for Statitstics, Machine Learning Econonmetrics, and Finance</a><ul>
+<li><a href="#applications--stat-ap-">Applications (stat.AP): 2 new</a></li>
+<li><a href="#machine-learning--stat-ml-">Machine Learning (stat.ML): 13 new</a></li>
+<li><a href="#machine-learning--cs-lg-">Machine Learning (cs.LG): 20 new</a></li>
+<li><a href="#statistical-finance--q-fin-st-">Statistical Finance (q-fin.ST): 1 new</a></li>
+</ul></li>
+<li><a href="#data-science-arxiv-by-primary-tag">Data Science arXiv by Primary Tag</a><ul>
+<li><a href="#computer-science">Computer Science</a></li>
+<li><a href="#statistics">Statistics</a></li>
+<li><a href="#elec.-eng.-and-systems-science">Elec. Eng. and Systems Science</a></li>
+<li><a href="#other">Other</a></li>
+<li><a href="#quantitative-finance">Quantitative Finance</a></li>
+<li><a href="#quantum-physics">Quantum Physics</a></li>
+<li><a href="#mathematics">Mathematics</a></li>
+<li><a href="#physics">Physics</a></li>
+<li><a href="#quantitative-biology">Quantitative Biology</a></li>
+</ul></li>
+</ul>
+</nav>
+<hr class="d-toc-separator"/>
+<h2 id="breakdown-of-arxiv-publication-counts">Breakdown of arXiv Publication Counts</h2>
+<p>Yesterday’s counts of submitted papers on www.arxiv.org grouped by primary subject. Click the links in the table to be re-directed to the abstracts below. The links under <code>Subject</code> will redirect you to abstracts with the primary subject (there can only be one primary subject on arXiv). The links under <code>Category</code> will redirect you to all publications yesterday with a given tag (primary or secondary).</p>
+<div class="layout-chunk" data-layout="l-body">
+<table class="table table-striped" style="margin-left: auto; margin-right: auto;">
+<caption>
+<span id="tab:summary-table-with-counts">Table 1: </span>Number of articles by subject and primary category. Colored titles represent hyperlinks that take you below to abstracts. Key - Subject: Computer Science (5) means there were 5 articles with primary tag CS. Category: Machine Learning (cs.LG) N = 8 (16) means there were 8 primary articles with the (cs.LG) tag but 16 articles had it as a secondary tag, so there should be 24 in total. Click this link to be taken to all 24. Only select categories are highlighted because they are of particular interest to applied data scientists.
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+Subject
+</th>
+<th style="text-align:left;">
+Category
+</th>
+<th style="text-align:left;">
+N
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;font-weight: bold;vertical-align: top !important;" rowspan="9">
+<a href="#computer-science" style=" font-weight: bold;    color: #d9230f !important;">Computer Science (30)</a>
+</td>
+<td style="text-align:left;">
+Computer Vision and Pattern Recognition (cs.CV)
+</td>
+<td style="text-align:left;">
+10 (3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="#machine-learning--cs-lg-" style=" font-weight: bold;    color: #d9230f !important;">Machine Learning (cs.LG)</a>
+</td>
+<td style="text-align:left;">
+9 (11)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Artificial Intelligence (cs.AI)
+</td>
+<td style="text-align:left;">
+3 (1)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Cryptography and Security (cs.CR)
+</td>
+<td style="text-align:left;">
+2 (1)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Neural and Evolutionary Computing (cs.NE)
+</td>
+<td style="text-align:left;">
+2
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Sound (cs.SD)
+</td>
+<td style="text-align:left;">
+1 (1)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Computational Engineering, Finance, and Science (cs.CE)
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Social and Information Networks (cs.SI)
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Software Engineering (cs.SE)
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;font-weight: bold;vertical-align: top !important;" rowspan="3">
+<a href="#statistics" style=" font-weight: bold;    color: #d9230f !important;">Statistics (4)</a>
+</td>
+<td style="text-align:left;">
+Methodology (stat.ME)
+</td>
+<td style="text-align:left;">
+2 (1)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="#machine-learning--stat-ml-" style=" font-weight: bold;    color: #d9230f !important;">Machine Learning (stat.ML)</a>
+</td>
+<td style="text-align:left;">
+1 (12)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="#applications--stat-ap-" style=" font-weight: bold;    color: #d9230f !important;">Applications (stat.AP)</a>
+</td>
+<td style="text-align:left;">
+1 (1)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;font-weight: bold;vertical-align: top !important;" rowspan="2">
+<a href="#elec.-eng.%20and%20systems%20science" style=" font-weight: bold;    color: #d9230f !important;">Elec. Eng. and Systems Science (2)</a>
+</td>
+<td style="text-align:left;">
+Image and Video Processing (eess.IV)
+</td>
+<td style="text-align:left;">
+1 (2)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Signal Processing (eess.SP)
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;font-weight: bold;vertical-align: top !important;" rowspan="2">
+<a href="#other" style=" font-weight: bold;    color: #d9230f !important;">Other (2)</a>
+</td>
+<td style="text-align:left;">
+Astrophysics of Galaxies (astro-ph.GA)
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+High Energy Astrophysical Phenomena (astro-ph.HE)
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;font-weight: bold;vertical-align: top !important;" rowspan="2">
+<a href="#quantitative-finance" style=" font-weight: bold;    color: #d9230f !important;">Quantitative Finance (2)</a>
+</td>
+<td style="text-align:left;">
+Risk Management (q-fin.RM)
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="#statistical-finance--q-fin-st-" style=" font-weight: bold;    color: #d9230f !important;">Statistical Finance (q-fin.ST)</a>
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;font-weight: bold;">
+<a href="#quantum-physics" style=" font-weight: bold;    color: #d9230f !important;">Quantum Physics (2)</a>
+</td>
+<td style="text-align:left;">
+Quantum Physics (quant-ph)
+</td>
+<td style="text-align:left;">
+2
+</td>
+</tr>
+<tr>
+<td style="text-align:left;font-weight: bold;">
+<a href="#mathematics" style=" font-weight: bold;    color: #d9230f !important;">Mathematics (1)</a>
+</td>
+<td style="text-align:left;">
+Statistics Theory (math.ST)
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;font-weight: bold;">
+<a href="#physics" style=" font-weight: bold;    color: #d9230f !important;">Physics (1)</a>
+</td>
+<td style="text-align:left;">
+Computational Physics (physics.comp-ph)
+</td>
+<td style="text-align:left;">
+1 (2)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;font-weight: bold;">
+<a href="#quantitative-biology" style=" font-weight: bold;    color: #d9230f !important;">Quantitative Biology (1)</a>
+</td>
+<td style="text-align:left;">
+Quantitative Methods (q-bio.QM)
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+
+</div>
+<div class="layout-chunk" data-layout="l-body">
+
+</div>
+<h2 id="articles-for-statitstics-machine-learning-econonmetrics-and-finance">Articles for Statitstics, Machine Learning Econonmetrics, and Finance</h2>
+<p>This section contains all articles with any tag of <code>stat.AP</code>, <code>stat.co</code>, <code>stat.ML</code>, <code>cs.LG</code>, <code>q-fin.ST</code>, <code>q-fin.EC</code>, or <code>econ-EM</code>. Only the first two sentences are shown - click the links for more detail.</p>
+<div class="layout-chunk" data-layout="l-screen-inset">
+
+<h3 id="applications--stat-ap-">Applications (stat.AP): 2 new</h3>
+<table class="table table-striped table-condensed" style="margin-left: auto; margin-right: auto;">
+<tbody>
+<tr grouplength="2">
+<td colspan="1" style="background-color: #666; color: #fff;">
+<strong>Applications (stat.AP)</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.11409v1" style="color: #d9230f">Aggregating predictions from experts: a scoping review of statistical methods, experiments, and applications</a></b><br><em>Applications</em>. 4 authors. <a href="http://arxiv.org/pdf/1912.11409v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Forecasts support decision making in a variety of applications. Statistical models can produce accurate forecasts given abundant training data, but when data is sparse, rapidly changing, or unavailable, statistical models may not be able to make accurate predictions. …</summary><br> Expert judgmental forecasts—models that combine expert-generated predictions into a single forecast—can make predictions when training data is limited by relying on expert intuition to take the place of concrete training data. Researchers have proposed a wide array of algorithms to combine expert predictions into a single forecast, but there is no consensus on an optimal aggregation model. This scoping review surveyed recent literature on aggregating expert-elicited predictions. We gathered common terminology, aggregation methods, and forecasting performance metrics, and offer guidance to strengthen future work that is growing at an accelerated pace.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.11172v1" style="color: #d9230f">Online Quantification of Input Model Uncertainty by Two-Layer Importance Sampling</a></b><br><em>Applications, Risk Management</em>. 2 authors. <a href="http://arxiv.org/pdf/1912.11172v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Stochastic simulation has been widely used to analyze the performance of complex stochastic systems and facilitate decision making in those systems. Stochastic simulation is driven by the input model, which is a collection of probability distributions that model the stochasticity in the system. …</summary><br> The input model is usually estimated using a finite amount of data, which introduces the so-called input model uncertainty (or, input uncertainty for short) to the simulation output. How to quantify input uncertainty has been studied extensively, and many methods have been proposed for the batch data setting, i.e., when all the data are available at once. However, methods for ``streaming data’’ arriving sequentially in time are still in demand, despite that streaming data have become increasingly prevalent in modern applications. To fill in this gap, we propose a two-layer importance sampling framework that incorporates streaming data for online input uncertainty quantification. Under this framework, we develop two algorithms that suit two different application scenarios: the first is when data come at a fast speed and there is no time for any simulation in between updates; the second is when data come at a moderate speed and a few but limited simulations are allowed at each time stage. We show the consistency and asymptotic convergence rate results, which theoretically show the efficiency of our proposed approach. We further demonstrate the proposed algorithms on an example of the news vendor problem.
+</details>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="machine-learning--stat-ml-">Machine Learning (stat.ML): 13 new</h3>
+<table class="table table-striped table-condensed" style="margin-left: auto; margin-right: auto;">
+<tbody>
+<tr grouplength="13">
+<td colspan="1" style="background-color: #666; color: #fff;">
+<strong>Machine Learning (stat.ML)</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.11443v1" style="color: #d9230f">Fast and deep neuromorphic learning with time-to-first-spike coding</a></b><br><em>Machine Learning, Emerging Technologies, Neural and Evolutionary Computing, Neurons and Cognition</em>. 11 authors. <a href="http://arxiv.org/pdf/1912.11443v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>For a biological agent operating under environmental pressure, energy consumption and reaction times are of critical importance. Similarly, engineered systems also strive for short time-to-solution and low energy-to-solution characteristics. …</summary><br> At the level of neuronal implementation, this implies achieving the desired results with as few and as early spikes as possible. In the time-to-first-spike coding framework, both of these goals are inherently emerging features of learning. Here, we describe a rigorous derivation of error-backpropagation-based learning for hierarchical networks of leaky integrate-and-fire neurons. We explicitly address two issues that are relevant for both biological plausibility and applicability to neuromorphic substrates by incorporating dynamics with finite time constants and by optimizing the backward pass with respect to substrate variability. This narrows the gap between previous models of first-spike-time learning and biological neuronal dynamics, thereby also enabling fast and energy-efficient inference on analog neuromorphic devices that inherit these dynamics from their biological archetypes, which we demonstrate on two generations of the BrainScaleS analog neuromorphic architecture.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.11368v1" style="color: #d9230f">Broad Learning System Based on Maximum Correntropy Criterion</a></b><br><em>Machine Learning, Machine Learning</em>. 10 authors. <a href="http://arxiv.org/pdf/1912.11368v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>As an effective and efficient discriminative learning method, Broad Learning System (BLS) has received increasing attention due to its outstanding performance in various regression and classification problems. However, the standard BLS is derived under the minimum mean square error (MMSE) criterion, which is, of course, not always a good choice due to its sensitivity to outliers. …</summary><br> To enhance the robustness of BLS, we propose in this work to adopt the maximum correntropy criterion (MCC) to train the output weights, obtaining a correntropy based broad learning system (C-BLS). Thanks to the inherent superiorities of MCC, the proposed C-BLS is expected to achieve excellent robustness to outliers while maintaining the original performance of the standard BLS in Gaussian or noise-free environment. In addition, three alternative incremental learning algorithms, derived from a weighted regularized least-squares solution rather than pseudoinverse formula, for C-BLS are developed.With the incremental learning algorithms, the system can be updated quickly without the entire retraining process from the beginning, when some new samples arrive or the network deems to be expanded. Experiments on various regression and classification datasets are reported to demonstrate the desirable performance of the new methods.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.11316v1" style="color: #d9230f">TRADI: Tracking deep neural network weight distributions</a></b><br><em>Computer Vision and Pattern Recognition, Machine Learning, Machine Learning</em>. 5 authors. <a href="http://arxiv.org/pdf/1912.11316v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>During training, the weights of a Deep Neural Network (DNN) are optimized from a random initialization towards a nearly optimum value minimizing a loss function. Only this final state of the weights is typically kept for testing, while the wealth of information on the geometry of the weight space, accumulated over the descent towards the minimum is discarded. …</summary><br> In this work we propose to make use of this knowledge and leverage it for computing the distributions of the weights of the DNN. This can be further used for estimating the epistemic uncertainty of the DNN by sampling an ensemble of networks from these distributions. To this end we introduce a method for tracking the trajectory of the weights during optimization, that does not require any changes in the architecture nor on the training procedure. We evaluate our method on standard classification and regression benchmarks, and on out-of-distribution detection for classification and semantic segmentation. We achieve competitive results, while preserving computational efficiency in comparison to other popular approaches.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.11238v1" style="color: #d9230f">Attention-Aware Answers of the Crowd</a></b><br><em>Machine Learning, Machine Learning</em>. 5 authors. <a href="http://arxiv.org/pdf/1912.11238v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Crowdsourcing is a relatively economic and efficient solution to collect annotations from the crowd through online platforms. Answers collected from workers with different expertise may be noisy and unreliable, and the quality of annotated data needs to be further maintained. …</summary><br> Various solutions have been attempted to obtain high-quality annotations. However, they all assume that workers’ label quality is stable over time (always at the same level whenever they conduct the tasks). In practice, workers’ attention level changes over time, and the ignorance of which can affect the reliability of the annotations. In this paper, we focus on a novel and realistic crowdsourcing scenario involving attention-aware annotations. We propose a new probabilistic model that takes into account workers’ attention to estimate the label quality. Expectation propagation is adopted for efficient Bayesian inference of our model, and a generalized Expectation Maximization algorithm is derived to estimate both the ground truth of all tasks and the label-quality of each individual crowd worker with attention. In addition, the number of tasks best suited for a worker is estimated according to changes in attention. Experiments against related methods on three real-world and one semi-simulated datasets demonstrate that our method quantifies the relationship between workers’ attention and label-quality on the given tasks, and improves the aggregated labels.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.11464v1" style="color: #d9230f">Attack-Resistant Federated Learning with Residual-based Reweighting</a></b><br><em>Machine Learning, Machine Learning</em>. 4 authors. <a href="http://arxiv.org/pdf/1912.11464v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Federated learning has a variety of applications in multiple domains by utilizing private training data stored on different devices. However, the aggregation process in federated learning is highly vulnerable to adversarial attacks so that the global model may behave abnormally under attacks. …</summary><br> To tackle this challenge, we present a novel aggregation algorithm with residual-based reweighting to defend federated learning. Our aggregation algorithm combines repeated median regression with the reweighting scheme in iteratively reweighted least squares. Our experiments show that our aggregation algorithm outperforms other alternative algorithms in the presence of label-flipping, backdoor, and Gaussian noise attacks. We also provide theoretical guarantees for our aggregation algorithm.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.11279v1" style="color: #d9230f">Cronus: Robust and Heterogeneous Collaborative Learning with Black-Box Knowledge Transfer</a></b><br><em>Cryptography and Security, Machine Learning, Machine Learning</em>. 4 authors. <a href="http://arxiv.org/pdf/1912.11279v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Collaborative (federated) learning enables multiple parties to train a model without sharing their private data, but through repeated sharing of the parameters of their local models. Despite its advantages, this approach has many known privacy and security weaknesses and performance overhead, in addition to being limited only to models with homogeneous architectures. …</summary><br> Shared parameters leak a significant amount of information about the local (and supposedly private) datasets. Besides, federated learning is severely vulnerable to poisoning attacks, where some participants can adversarially influence the aggregate parameters. Large models, with high dimensional parameter vectors, are in particular highly susceptible to privacy and security attacks: curse of dimensionality in federated learning. We argue that sharing parameters is the most naive way of information exchange in collaborative learning, as they open all the internal state of the model to inference attacks, and maximize the model’s malleability by stealthy poisoning attacks. We propose Cronus, a robust collaborative machine learning framework. The simple yet effective idea behind designing Cronus is to control, unify, and significantly reduce the dimensions of the exchanged information between parties, through robust knowledge transfer between their black-box local models. We evaluate all existing federated learning algorithms against poisoning attacks, and we show that Cronus is the only secure method, due to its tight robustness guarantee. Treating local models as black-box, reduces the information leakage through models, and enables us using existing privacy-preserving algorithms that mitigate the risk of information leakage through the model’s output (predictions). Cronus also has a significantly lower sample complexity, compared to federated learning, which does not bind its security to the number of participants.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.11259v1" style="color: #d9230f">Mining User Behaviour from Smartphone data, a literature review</a></b><br><em>Machine Learning, Machine Learning</em>. 4 authors. <a href="http://arxiv.org/pdf/1912.11259v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>To study users’ travel behaviour and travel time between origin and destination, researchers employ travel surveys. Although there is consensus in the field about the potential, after over ten years of research and field experimentation, Smartphone-based travel surveys still did not take off to a large scale. …</summary><br> Here, computer intelligence algorithms take the role that operators have in Traditional Travel Surveys; since we train each algorithm on data, performances rest on the data quality, thus on the ground truth. Inaccurate validations affect negatively: labels, algorithms’ training, travel diaries precision, and therefore data validation, within a very critical loop. Interestingly, boundaries are proven burdensome to push even for Machine Learning methods. To support optimal investment decisions for practitioners, we expose the drivers they should consider when assessing what they need against what they get. This paper highlights and examines the critical aspects of the underlying research and provides some recommendations: (i) from the device perspective, on the main physical limitations; (ii) from the application perspective, the methodological framework deployed for the automatic generation of travel diaries; (iii)from the ground truth perspective, the relationship between user interaction, methods, and data.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.11252v1" style="color: #d9230f">Meta-Learning PAC-Bayes Priors in Model Averaging</a></b><br><em>Machine Learning, Machine Learning</em>. 4 authors. <a href="http://arxiv.org/pdf/1912.11252v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Nowadays model uncertainty has become one of the most important problems in both academia and industry. In this paper, we mainly consider the scenario in which we have a common model set used for model averaging instead of selecting a single final model via a model selection procedure to account for this model’s uncertainty to improve reliability and accuracy of inferences. …</summary><br> Here one main challenge is to learn the prior over the model set. To tackle this problem, we propose two data-based algorithms to get proper priors for model averaging. One is for meta-learner, the analysts should use historical similar tasks to extract the information about the prior. The other one is for base-learner, a subsampling method is used to deal with the data step by step. Theoretically, an upper bound of risk for our algorithm is presented to guarantee the performance of the worst situation. In practice, both methods perform well in simulations and real data studies, especially with poor quality data.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.11436v1" style="color: #d9230f">Universal Inference Using the Split Likelihood Ratio Test</a></b><br><em>Methodology, Statistics Theory, Machine Learning, Statistics Theory</em>. 3 authors. <a href="http://arxiv.org/pdf/1912.11436v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>We propose a general method for constructing hypothesis tests and confidence sets that have finite sample guarantees without regularity conditions. We refer to such procedures as <code>universal. ...&lt;/summary&gt;&lt;br&gt;'' The method is very simple and is based on a modified version of the usual likelihood ratio statistic, that we call</code>the split likelihood ratio test’’ (split LRT). The method is especially appealing for irregular statistical models. Canonical examples include mixture models and models that arise in shape-constrained inference. %mixture models and shape-constrained models are just two examples. Constructing tests and confidence sets for such models is notoriously difficult. Typical inference methods, like the likelihood ratio test, are not useful in these cases because they have intractable limiting distributions. In contrast, the method we suggest works for any parametric model and also for some nonparametric models. The split LRT can also be used with profile likelihoods to deal with nuisance parameters, and it can also be run sequentially to yield anytime-valid <span class="math inline">\(p\)</span>-values and confidence sequences.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.11460v1" style="color: #d9230f">Characterizing the Decision Boundary of Deep Neural Networks</a></b><br><em>Computer Vision and Pattern Recognition, Machine Learning, Machine Learning</em>. 3 authors. <a href="http://arxiv.org/pdf/1912.11460v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Deep neural networks and in particular, deep neural classifiers have become an integral part of many modern applications. Despite their practical success, we still have limited knowledge of how they work and the demand for such an understanding is evergrowing. …</summary><br> In this regard, one crucial aspect of deep neural network classifiers that can help us deepen our knowledge about their decision-making behavior is to investigate their decision boundaries. Nevertheless, this is contingent upon having access to samples populating the areas near the decision boundary. To achieve this, we propose a novel approach we call Deep Decision boundary Instance Generation (DeepDIG). DeepDIG utilizes a method based on adversarial example generation as an effective way of generating samples near the decision boundary of any deep neural network model. Then, we introduce a set of important principled characteristics that take advantage of the generated instances near the decision boundary to provide multifaceted understandings of deep neural networks. We have performed extensive experiments on multiple representative datasets across various deep neural network models and characterized their decision boundaries.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.11420v1" style="color: #d9230f">Detection of Community Structures in Networks with Nodal Features based on Generative Probabilistic Approach</a></b><br><em>Social and Information Networks, Machine Learning</em>. 3 authors. <a href="http://arxiv.org/pdf/1912.11420v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Community detection is considered as a fundamental task in analyzing social networks. Even though many techniques have been proposed for community detection, most of them are based exclusively on the connectivity structures. …</summary><br> However, there are node features in real networks, such as gender types in social networks, feeding behavior in ecological networks, and location on e-trading networks, that can be further leveraged with the network structure to attain more accurate community detection methods. We propose a novel probabilistic graphical model to detect communities by taking into account both network structure and nodes’ features. The proposed approach learns the relevant features of communities through a generative probabilistic model without any prior assumption on the communities. Furthermore, the model is capable of determining the strength of node features and structural elements of the networks on shaping the communities. The effectiveness of the proposed approach over the state-of-the-art algorithms is revealed on synthetic and benchmark networks.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.11367v1" style="color: #d9230f">Online Algorithms for Multiclass Classification using Partial Labels</a></b><br><em>Machine Learning, Machine Learning</em>. 2 authors. <a href="http://arxiv.org/pdf/1912.11367v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>In this paper, we propose online algorithms for multiclass classification using partial labels. We propose two variants of Perceptron called Avg Perceptron and Max Perceptron to deal with the partial labeled data. …</summary><br> We also propose Avg Pegasos and Max Pegasos, which are extensions of Pegasos algorithm. We also provide mistake bounds for Avg Perceptron and regret bound for Avg Pegasos. We show the effectiveness of the proposed approaches by experimenting on various datasets and comparing them with the standard Perceptron and Pegasos.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.11235v1" style="color: #d9230f">mRMR-DNN with Transfer Learning for IntelligentFault Diagnosis of Rotating Machines</a></b><br><em>Machine Learning, Machine Learning</em>. 2 authors. <a href="http://arxiv.org/pdf/1912.11235v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>In recent years, intelligent condition-based monitoring of rotary machinery systems has become a major research focus of machine fault diagnosis. In condition-based monitoring, it is challenging to form a large-scale well-annotated dataset due to the expense of data acquisition and costly annotation. …</summary><br> Along with that, the generated data have a large number of redundant features which degraded the performance of the machine learning models. To overcome this, we have utilized the advantages of minimum redundancy maximum relevance (mRMR) and transfer learning with deep learning model. In this work, mRMR is combined with deep learning and deep transfer learning framework to improve the fault diagnostics performance in term of accuracy and computational complexity. The mRMR reduces the redundant information from data and increases the deep learning performance, whereas transfer learning, reduces a large amount of data dependency for training the model. In the proposed work, two frameworks, i.e., mRMR with deep learning and mRMR with deep transfer learning, have explored and validated on CWRU and IMS rolling element bearings datasets. The analysis shows that the proposed frameworks are able to obtain better diagnostic accuracy in comparison of existing methods and also able to handle the data with a large number of features more quickly.
+</details>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="machine-learning--cs-lg-">Machine Learning (cs.LG): 20 new</h3>
+<table class="table table-striped table-condensed" style="margin-left: auto; margin-right: auto;">
+<tbody>
+<tr grouplength="20">
+<td colspan="1" style="background-color: #666; color: #fff;">
+<strong>Machine Learning (cs.LG)</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.11368v1" style="color: #d9230f">Broad Learning System Based on Maximum Correntropy Criterion</a></b><br><em>Machine Learning, Machine Learning</em>. 10 authors. <a href="http://arxiv.org/pdf/1912.11368v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>As an effective and efficient discriminative learning method, Broad Learning System (BLS) has received increasing attention due to its outstanding performance in various regression and classification problems. However, the standard BLS is derived under the minimum mean square error (MMSE) criterion, which is, of course, not always a good choice due to its sensitivity to outliers. …</summary><br> To enhance the robustness of BLS, we propose in this work to adopt the maximum correntropy criterion (MCC) to train the output weights, obtaining a correntropy based broad learning system (C-BLS). Thanks to the inherent superiorities of MCC, the proposed C-BLS is expected to achieve excellent robustness to outliers while maintaining the original performance of the standard BLS in Gaussian or noise-free environment. In addition, three alternative incremental learning algorithms, derived from a weighted regularized least-squares solution rather than pseudoinverse formula, for C-BLS are developed.With the incremental learning algorithms, the system can be updated quickly without the entire retraining process from the beginning, when some new samples arrive or the network deems to be expanded. Experiments on various regression and classification datasets are reported to demonstrate the desirable performance of the new methods.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.11430v1" style="color: #d9230f">TF3P: Three-dimensional Force Fields Fingerprint Learned by Deep Capsular Network</a></b><br><em>Biomolecules, Quantitative Methods, Machine Learning</em>. 8 authors. <a href="http://arxiv.org/pdf/1912.11430v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Molecular fingerprints are the workhorse in ligand-based drug discovery. In recent years, increasing number of research papers reported fascinating results on using deep neural networks to learn 2D molecular representations as fingerprints. …</summary><br> One may anticipate that the integration of deep learning would also contribute to the prosperity of 3D fingerprints. Here, we presented a new 3D small molecule fingerprint, the three-dimensional force fields fingerprint (TF3P), learned by deep capsular network whose training is in no need of labeled dataset for specific predictive tasks. TF3P can encode the 3D force fields information of molecules and demonstrates its stronger ability to capture 3D structural changes, recognize molecules alike in 3D but not in 2D, and recognize similar targets inaccessible by other fingerprints, including the solely existing 3D fingerprint E3FP, based on only ligands similarity. Furthermore, TF3P is compatible with both statistical models (e.g. similarity ensemble approach) and machine learning models. Altogether, we report TF3P as a new 3D small molecule fingerprint with promising future in ligand-based drug discovery.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.11370v1" style="color: #d9230f">Large Scale Learning of General Visual Representations for Transfer</a></b><br><em>Machine Learning, Computer Vision and Pattern Recognition</em>. 7 authors. <a href="http://arxiv.org/pdf/1912.11370v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Transfer of pre-trained representations improves sample efficiency and simplifies hyperparameter tuning when training deep neural networks for vision. We revisit the paradigm of pre-training on large supervised datasets and fine-tuning the weights on the target task. …</summary><br> We scale up pre-training, and create a simple recipe that we call Big Transfer (BiT). By combining a few carefully selected components, and transferring using a simple heuristic, we achieve strong performance on over 20 datasets. BiT performs well across a surprisingly wide range of data regimes - from 10 to 1M labeled examples. BiT achieves 87.8% top-1 accuracy on ILSVRC-2012, 99.3% on CIFAR-10, and 76.7% on the Visual Task Adaptation Benchmark (which includes 19 tasks). On small datasets, BiT attains 86.4% on ILSVRC-2012 with 25 examples per class, and 97.6% on CIFAR-10 with 10 examples per class. We conduct detailed analysis of the main components that lead to high transfer performance.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.11234v1" style="color: #d9230f">Computation Reallocation for Object Detection</a></b><br><em>Machine Learning, Computer Vision and Pattern Recognition</em>. 7 authors. <a href="http://arxiv.org/pdf/1912.11234v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>The allocation of computation resources in the backbone is a crucial issue in object detection. However, classification allocation pattern is usually adopted directly to object detector, which is proved to be sub-optimal. …</summary><br> In order to reallocate the engaged computation resources in a more efficient way, we present CR-NAS (Computation Reallocation Neural Architecture Search) that can learn computation reallocation strategies across different feature resolution and spatial position diectly on the target detection dataset. A two-level reallocation space is proposed for both stage and spatial reallocation. A novel hierarchical search procedure is adopted to cope with the complex search space. We apply CR-NAS to multiple backbones and achieve consistent improvements. Our CR-ResNet50 and CR-MobileNetV2 outperforms the baseline by 1.9% and 1.7% COCO AP respectively without any additional computation budget. The models discovered by CR-NAS can be equiped to other powerful detection neck/head and be easily transferred to other dataset, e.g. PASCAL VOC, and other vision tasks, e.g. instance segmentation. Our CR-NAS can be used as a plugin to improve the performance of various networks, which is demanding.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.11333v1" style="color: #d9230f">Audio-based automatic mating success prediction of giant pandas</a></b><br><em>Machine Learning, Audio and Speech Processing, Sound</em>. 7 authors. <a href="http://arxiv.org/pdf/1912.11333v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Giant pandas, stereotyped as silent animals, make significantly more vocal sounds during breeding season, suggesting that sounds are essential for coordinating their reproduction and expression of mating preference. Previous biological studies have also proven that giant panda sounds are correlated with mating results and reproduction. …</summary><br> This paper makes the first attempt to devise an automatic method for predicting mating success of giant pandas based on their vocal sounds. Given an audio sequence of mating giant pandas recorded during breeding encounters, we first crop out the segments with vocal sound of giant pandas, and normalize its magnitude, and length. We then extract acoustic features from the audio segment and feed the features into a deep neural network, which classifies the mating into success or failure. The proposed deep neural network employs convolution layers followed by bidirection gated recurrent units to extract vocal features, and applies attention mechanism to force the network to focus on most relevant features. Evaluation experiments on a data set collected during the past nine years obtain promising results, proving the potential of audio-based automatic mating success prediction methods in assisting giant panda reproduction.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.11316v1" style="color: #d9230f">TRADI: Tracking deep neural network weight distributions</a></b><br><em>Computer Vision and Pattern Recognition, Machine Learning, Machine Learning</em>. 5 authors. <a href="http://arxiv.org/pdf/1912.11316v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>During training, the weights of a Deep Neural Network (DNN) are optimized from a random initialization towards a nearly optimum value minimizing a loss function. Only this final state of the weights is typically kept for testing, while the wealth of information on the geometry of the weight space, accumulated over the descent towards the minimum is discarded. …</summary><br> In this work we propose to make use of this knowledge and leverage it for computing the distributions of the weights of the DNN. This can be further used for estimating the epistemic uncertainty of the DNN by sampling an ensemble of networks from these distributions. To this end we introduce a method for tracking the trajectory of the weights during optimization, that does not require any changes in the architecture nor on the training procedure. We evaluate our method on standard classification and regression benchmarks, and on out-of-distribution detection for classification and semantic segmentation. We achieve competitive results, while preserving computational efficiency in comparison to other popular approaches.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.11238v1" style="color: #d9230f">Attention-Aware Answers of the Crowd</a></b><br><em>Machine Learning, Machine Learning</em>. 5 authors. <a href="http://arxiv.org/pdf/1912.11238v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Crowdsourcing is a relatively economic and efficient solution to collect annotations from the crowd through online platforms. Answers collected from workers with different expertise may be noisy and unreliable, and the quality of annotated data needs to be further maintained. …</summary><br> Various solutions have been attempted to obtain high-quality annotations. However, they all assume that workers’ label quality is stable over time (always at the same level whenever they conduct the tasks). In practice, workers’ attention level changes over time, and the ignorance of which can affect the reliability of the annotations. In this paper, we focus on a novel and realistic crowdsourcing scenario involving attention-aware annotations. We propose a new probabilistic model that takes into account workers’ attention to estimate the label quality. Expectation propagation is adopted for efficient Bayesian inference of our model, and a generalized Expectation Maximization algorithm is derived to estimate both the ground truth of all tasks and the label-quality of each individual crowd worker with attention. In addition, the number of tasks best suited for a worker is estimated according to changes in attention. Experiments against related methods on three real-world and one semi-simulated datasets demonstrate that our method quantifies the relationship between workers’ attention and label-quality on the given tasks, and improves the aggregated labels.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.11308v1" style="color: #d9230f">ADD-Lib: Decision Diagrams in Practice</a></b><br><em>Artificial Intelligence, Machine Learning, Software Engineering, Programming Languages</em>. 4 authors. <a href="http://arxiv.org/pdf/1912.11308v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>In the paper, we present the ADD-Lib, our efficient and easy to use framework for Algebraic Decision Diagrams (ADDs). The focus of the ADD-Lib is not so much on its efficient implementation of individual operations, which are taken by other established ADD frameworks, but its ease and flexibility, which arise at two levels: the level of individual ADD-tools, which come with a dedicated user-friendly web-based graphical user interface, and at the meta level, where such tools are specified. …</summary><br> Both levels are described in the paper: the meta level by explaining how we can construct an ADD-tool tailored for Random Forest refinement and evaluation, and the accordingly generated Web-based domain-specific tool, which we also provide as an artifact for cooperative experimentation. In particular, the artifact allows readers to combine a given Random Forest with their own ADDs regarded as expert knowledge and to experience the corresponding effect.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.11464v1" style="color: #d9230f">Attack-Resistant Federated Learning with Residual-based Reweighting</a></b><br><em>Machine Learning, Machine Learning</em>. 4 authors. <a href="http://arxiv.org/pdf/1912.11464v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Federated learning has a variety of applications in multiple domains by utilizing private training data stored on different devices. However, the aggregation process in federated learning is highly vulnerable to adversarial attacks so that the global model may behave abnormally under attacks. …</summary><br> To tackle this challenge, we present a novel aggregation algorithm with residual-based reweighting to defend federated learning. Our aggregation algorithm combines repeated median regression with the reweighting scheme in iteratively reweighted least squares. Our experiments show that our aggregation algorithm outperforms other alternative algorithms in the presence of label-flipping, backdoor, and Gaussian noise attacks. We also provide theoretical guarantees for our aggregation algorithm.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.11279v1" style="color: #d9230f">Cronus: Robust and Heterogeneous Collaborative Learning with Black-Box Knowledge Transfer</a></b><br><em>Cryptography and Security, Machine Learning, Machine Learning</em>. 4 authors. <a href="http://arxiv.org/pdf/1912.11279v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Collaborative (federated) learning enables multiple parties to train a model without sharing their private data, but through repeated sharing of the parameters of their local models. Despite its advantages, this approach has many known privacy and security weaknesses and performance overhead, in addition to being limited only to models with homogeneous architectures. …</summary><br> Shared parameters leak a significant amount of information about the local (and supposedly private) datasets. Besides, federated learning is severely vulnerable to poisoning attacks, where some participants can adversarially influence the aggregate parameters. Large models, with high dimensional parameter vectors, are in particular highly susceptible to privacy and security attacks: curse of dimensionality in federated learning. We argue that sharing parameters is the most naive way of information exchange in collaborative learning, as they open all the internal state of the model to inference attacks, and maximize the model’s malleability by stealthy poisoning attacks. We propose Cronus, a robust collaborative machine learning framework. The simple yet effective idea behind designing Cronus is to control, unify, and significantly reduce the dimensions of the exchanged information between parties, through robust knowledge transfer between their black-box local models. We evaluate all existing federated learning algorithms against poisoning attacks, and we show that Cronus is the only secure method, due to its tight robustness guarantee. Treating local models as black-box, reduces the information leakage through models, and enables us using existing privacy-preserving algorithms that mitigate the risk of information leakage through the model’s output (predictions). Cronus also has a significantly lower sample complexity, compared to federated learning, which does not bind its security to the number of participants.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.11259v1" style="color: #d9230f">Mining User Behaviour from Smartphone data, a literature review</a></b><br><em>Machine Learning, Machine Learning</em>. 4 authors. <a href="http://arxiv.org/pdf/1912.11259v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>To study users’ travel behaviour and travel time between origin and destination, researchers employ travel surveys. Although there is consensus in the field about the potential, after over ten years of research and field experimentation, Smartphone-based travel surveys still did not take off to a large scale. …</summary><br> Here, computer intelligence algorithms take the role that operators have in Traditional Travel Surveys; since we train each algorithm on data, performances rest on the data quality, thus on the ground truth. Inaccurate validations affect negatively: labels, algorithms’ training, travel diaries precision, and therefore data validation, within a very critical loop. Interestingly, boundaries are proven burdensome to push even for Machine Learning methods. To support optimal investment decisions for practitioners, we expose the drivers they should consider when assessing what they need against what they get. This paper highlights and examines the critical aspects of the underlying research and provides some recommendations: (i) from the device perspective, on the main physical limitations; (ii) from the application perspective, the methodological framework deployed for the automatic generation of travel diaries; (iii)from the ground truth perspective, the relationship between user interaction, methods, and data.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.11252v1" style="color: #d9230f">Meta-Learning PAC-Bayes Priors in Model Averaging</a></b><br><em>Machine Learning, Machine Learning</em>. 4 authors. <a href="http://arxiv.org/pdf/1912.11252v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Nowadays model uncertainty has become one of the most important problems in both academia and industry. In this paper, we mainly consider the scenario in which we have a common model set used for model averaging instead of selecting a single final model via a model selection procedure to account for this model’s uncertainty to improve reliability and accuracy of inferences. …</summary><br> Here one main challenge is to learn the prior over the model set. To tackle this problem, we propose two data-based algorithms to get proper priors for model averaging. One is for meta-learner, the analysts should use historical similar tasks to extract the information about the prior. The other one is for base-learner, a subsampling method is used to deal with the data step by step. Theoretically, an upper bound of risk for our algorithm is presented to guarantee the performance of the worst situation. In practice, both methods perform well in simulations and real data studies, especially with poor quality data.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.11371v1" style="color: #d9230f">Comparison of the P300 detection accuracy related to the BCI speller and image recognition scenarios</a></b><br><em>Neurons and Cognition, Machine Learning, Human-Computer Interaction, Signal Processing</em>. 4 authors. <a href="http://arxiv.org/pdf/1912.11371v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>There are several protocols in the Electroencephalography (EEG) recording scenarios which produce various types of event-related potentials (ERP). P300 pattern is a well-known ERP which produced by auditory and visual oddball paradigm and BCI speller system. …</summary><br> In this study, P300 and non-P300 separability are investigated in two scenarios including image recognition paradigm and BCI speller. Image recognition scenario is an experiment that examines the participants, knowledge about an image that shown to them before by analyzing the EEG signal recorded during the observing of that image as visual stimulation. To do this, three types of famous classifiers (SVM, Bayes LDA, and sparse logistic regression) were used to classify EEG recordings in six classes problem. Filtered and down-sampled (temporal samples) of EEG recording were considered as features in classification P300 pattern. Also, different sets of EEG recording including 4, 8 and 16 channels and different trial numbers were used to considering various situations in comparison. The accuracy was increased by increasing the number of trials and channels. The results prove that better accuracy is observed in the case of the image recognition scenario for the different sets of channels and by using the different number of trials. So it can be concluded that P300 pattern which produced in image recognition paradigm is more separable than BCI (matrix speller).
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.11328v1" style="color: #d9230f">Assessing differentially private deep learning with Membership Inference</a></b><br><em>Cryptography and Security, Machine Learning</em>. 4 authors. <a href="http://arxiv.org/pdf/1912.11328v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Releasing data in the form of trained neural networks with differential privacy promises meaningful anonymization. However, there is an inherent privacy-accuracy trade-off in differential privacy which is challenging to assess for non-privacy experts. …</summary><br> Furthermore, local and central differential privacy mechanisms are available to either anonymize the training data or the learnt neural network, and the privacy parameter <span class="math inline">\(\epsilon\)</span> cannot be used to compare these two mechanisms. We propose to measure privacy through a black-box membership inference attack and compare the privacy-accuracy trade-off for different local and central differential privacy mechanisms. Furthermore, we need to evaluate whether differential privacy is a useful mechanism in practice since differential privacy will especially be used by data scientists if membership inference risk is lowered more than accuracy. We experiment with several datasets and show that neither local differential privacy nor central differential privacy yields a consistently better privacy-accuracy trade-off in all cases. We also show that the relative privacy-accuracy trade-off, instead of strictly declining linearly over <span class="math inline">\(\epsilon\)</span>, is only favorable within a small interval. For this purpose we propose <span class="math inline">\(\varphi\)</span>, a ratio expressing the relative privacy-accuracy trade-off.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.11460v1" style="color: #d9230f">Characterizing the Decision Boundary of Deep Neural Networks</a></b><br><em>Computer Vision and Pattern Recognition, Machine Learning, Machine Learning</em>. 3 authors. <a href="http://arxiv.org/pdf/1912.11460v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Deep neural networks and in particular, deep neural classifiers have become an integral part of many modern applications. Despite their practical success, we still have limited knowledge of how they work and the demand for such an understanding is evergrowing. …</summary><br> In this regard, one crucial aspect of deep neural network classifiers that can help us deepen our knowledge about their decision-making behavior is to investigate their decision boundaries. Nevertheless, this is contingent upon having access to samples populating the areas near the decision boundary. To achieve this, we propose a novel approach we call Deep Decision boundary Instance Generation (DeepDIG). DeepDIG utilizes a method based on adversarial example generation as an effective way of generating samples near the decision boundary of any deep neural network model. Then, we introduce a set of important principled characteristics that take advantage of the generated instances near the decision boundary to provide multifaceted understandings of deep neural networks. We have performed extensive experiments on multiple representative datasets across various deep neural network models and characterized their decision boundaries.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.11312v1" style="color: #d9230f">Robustness of Brain Tumor Segmentation</a></b><br><em>Image and Video Processing, Machine Learning, Computer Vision and Pattern Recognition</em>. 3 authors. <a href="http://arxiv.org/pdf/1912.11312v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>We address the generalization behavior of deep neural networks in the context of brain tumor segmentation. While current topologies show an increasingly complex structure, the overall benchmark performance does improve negligibly. …</summary><br> In our experiments, we demonstrate that a well trained U-Net shows the best generalization behavior and is sufficient to solve this segmentation problem. We illustrate why extensions of this model cannot only be pointless but even harmful in a realistic scenario. Also, we suggest two simple modifications (that do not alter the topology) to further improve its generalization performance.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.11258v1" style="color: #d9230f">Multi-Graph Transformer for Free-Hand Sketch Recognition</a></b><br><em>Machine Learning, Computer Vision and Pattern Recognition</em>. 3 authors. <a href="http://arxiv.org/pdf/1912.11258v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Learning meaningful representations of free-hand sketches remains a challenging task given the signal sparsity and the high-level abstraction of sketches. Existing techniques have focused on exploiting either the static nature of sketches with Convolutional Neural Networks (CNNs) or the temporal sequential property with Recurrent Neural Networks (RNNs). …</summary><br> In this work, we propose a new representation of sketches as multiple sparsely connected graphs. We design a novel Graph Neural Network (GNN), the Multi-Graph Transformer (MGT), for learning representations of sketches from multiple graphs which simultaneously capture global and local geometric stroke structures, as well as temporal information. We report extensive numerical experiments on a sketch recognition task to demonstrate the performance of the proposed approach. Particularly, MGT applied on 414k sketches from Google QuickDraw: (i) achieves small recognition gap to the CNN-based performance upper bound (72.80% vs. 74.22%), and (ii) outperforms all RNN-based models by a significant margin. To the best of our knowledge, this is the first work proposing to represent sketches as graphs and apply GNNs for sketch recognition. Code and trained models are available at <a href="https://github.com/PengBoXiangShang/multigraph_transformer" class="uri">https://github.com/PengBoXiangShang/multigraph_transformer</a>.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.11367v1" style="color: #d9230f">Online Algorithms for Multiclass Classification using Partial Labels</a></b><br><em>Machine Learning, Machine Learning</em>. 2 authors. <a href="http://arxiv.org/pdf/1912.11367v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>In this paper, we propose online algorithms for multiclass classification using partial labels. We propose two variants of Perceptron called Avg Perceptron and Max Perceptron to deal with the partial labeled data. …</summary><br> We also propose Avg Pegasos and Max Pegasos, which are extensions of Pegasos algorithm. We also provide mistake bounds for Avg Perceptron and regret bound for Avg Pegasos. We show the effectiveness of the proposed approaches by experimenting on various datasets and comparing them with the standard Perceptron and Pegasos.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.11235v1" style="color: #d9230f">mRMR-DNN with Transfer Learning for IntelligentFault Diagnosis of Rotating Machines</a></b><br><em>Machine Learning, Machine Learning</em>. 2 authors. <a href="http://arxiv.org/pdf/1912.11235v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>In recent years, intelligent condition-based monitoring of rotary machinery systems has become a major research focus of machine fault diagnosis. In condition-based monitoring, it is challenging to form a large-scale well-annotated dataset due to the expense of data acquisition and costly annotation. …</summary><br> Along with that, the generated data have a large number of redundant features which degraded the performance of the machine learning models. To overcome this, we have utilized the advantages of minimum redundancy maximum relevance (mRMR) and transfer learning with deep learning model. In this work, mRMR is combined with deep learning and deep transfer learning framework to improve the fault diagnostics performance in term of accuracy and computational complexity. The mRMR reduces the redundant information from data and increases the deep learning performance, whereas transfer learning, reduces a large amount of data dependency for training the model. In the proposed work, two frameworks, i.e., mRMR with deep learning and mRMR with deep transfer learning, have explored and validated on CWRU and IMS rolling element bearings datasets. The analysis shows that the proposed frameworks are able to obtain better diagnostic accuracy in comparison of existing methods and also able to handle the data with a large number of features more quickly.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.11283v1" style="color: #d9230f">An Analisys of Application Logs with Splunk : developing an App for the synthetic analysis of data and security incidents</a></b><br><em>Cryptography and Security, Machine Learning</em>. 1 authors. <a href="http://arxiv.org/pdf/1912.11283v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>The present work aims to enhance the application logs of an hypothetical infrastructure platform, and to build an App that displays the synthetic data about performance, anomalies and security incidents synthesized in the form of a Dashboard. The reference architecture, with multiple applications and multiple HW distribution, implementing a Service Oriented Architecture, is a real case of which the details have been abstracted because we want to extend the concept to all architectures with similar characteristics. …</summary><br>
+</details>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="statistical-finance--q-fin-st-">Statistical Finance (q-fin.ST): 1 new</h3>
+<table class="table table-striped table-condensed" style="margin-left: auto; margin-right: auto;">
+<tbody>
+<tr grouplength="1">
+<td colspan="1" style="background-color: #666; color: #fff;">
+<strong>Statistical Finance (q-fin.ST)</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.11216v1" style="color: #d9230f">The Dynamics of Financial Markets: Fibonacci numbers, Elliott waves, and solitons</a></b><br><em>Statistical Finance</em>. 1 authors. <a href="http://arxiv.org/pdf/1912.11216v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>In this paper information theoretical approach is applied to the description of financial markets. A model which is expected to describe the markets dynamics is presented. …</summary><br> It is shown the possibility to describe market trend and cycle dynamics from a unified viewpoint. The model predictions comparatively well suit Fibonacci ratios and numbers used for the analysis of market price and time projections. It proves possible to link time and price projections, thus allowing increase the accuracy of predicting well in advance the moment of trend termination. The model is tested against real data from the stock and financial markets.
+</details>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="data-science-arxiv-by-primary-tag">Data Science arXiv by Primary Tag</h2>
+<p>The tables below show abstracts organized by category with hyperlinks back to the arXiv site.</p>
+<div class="layout-chunk" data-layout="l-page">
+
+<h3 id="computer-science">Computer Science</h3>
+<table class="table table-striped table-condensed" style="margin-left: auto; margin-right: auto;">
+<tbody>
+<tr grouplength="10">
+<td colspan="1" style="background-color: #666; color: #fff;">
+<strong>Computer Vision and Pattern Recognition (cs.CV)</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.11443v1" style="color: #d9230f">Fast and deep neuromorphic learning with time-to-first-spike coding</a></b><br><em>Machine Learning, Emerging Technologies, Neural and Evolutionary Computing, Neurons and Cognition</em>. 11 authors. <a href="http://arxiv.org/pdf/1912.11443v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>For a biological agent operating under environmental pressure, energy consumption and reaction times are of critical importance. Similarly, engineered systems also strive for short time-to-solution and low energy-to-solution characteristics. …</summary><br> At the level of neuronal implementation, this implies achieving the desired results with as few and as early spikes as possible. In the time-to-first-spike coding framework, both of these goals are inherently emerging features of learning. Here, we describe a rigorous derivation of error-backpropagation-based learning for hierarchical networks of leaky integrate-and-fire neurons. We explicitly address two issues that are relevant for both biological plausibility and applicability to neuromorphic substrates by incorporating dynamics with finite time constants and by optimizing the backward pass with respect to substrate variability. This narrows the gap between previous models of first-spike-time learning and biological neuronal dynamics, thereby also enabling fast and energy-efficient inference on analog neuromorphic devices that inherit these dynamics from their biological archetypes, which we demonstrate on two generations of the BrainScaleS analog neuromorphic architecture.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.11368v1" style="color: #d9230f">Broad Learning System Based on Maximum Correntropy Criterion</a></b><br><em>Machine Learning, Machine Learning</em>. 10 authors. <a href="http://arxiv.org/pdf/1912.11368v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>As an effective and efficient discriminative learning method, Broad Learning System (BLS) has received increasing attention due to its outstanding performance in various regression and classification problems. However, the standard BLS is derived under the minimum mean square error (MMSE) criterion, which is, of course, not always a good choice due to its sensitivity to outliers. …</summary><br> To enhance the robustness of BLS, we propose in this work to adopt the maximum correntropy criterion (MCC) to train the output weights, obtaining a correntropy based broad learning system (C-BLS). Thanks to the inherent superiorities of MCC, the proposed C-BLS is expected to achieve excellent robustness to outliers while maintaining the original performance of the standard BLS in Gaussian or noise-free environment. In addition, three alternative incremental learning algorithms, derived from a weighted regularized least-squares solution rather than pseudoinverse formula, for C-BLS are developed.With the incremental learning algorithms, the system can be updated quickly without the entire retraining process from the beginning, when some new samples arrive or the network deems to be expanded. Experiments on various regression and classification datasets are reported to demonstrate the desirable performance of the new methods.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.11474v1" style="color: #d9230f">Audio-Visual Embodied Navigation</a></b><br><em>Sound, Human-Computer Interaction, Audio and Speech Processing, Computer Vision and Pattern Recognition</em>. 8 authors. <a href="http://arxiv.org/pdf/1912.11474v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Moving around in the world is naturally a multisensory experience, but today’s embodied agents are deaf - restricted to solely their visual perception of the environment. We introduce audio-visual navigation for complex, acoustically and visually realistic 3D environments. …</summary><br> By both seeing and hearing, the agent must learn to navigate to an audio-based target. We develop a multi-modal deep reinforcement learning pipeline to train navigation policies end-to-end from a stream of egocentric audio-visual observations, allowing the agent to (1) discover elements of the geometry of the physical space indicated by the reverberating audio and (2) detect and follow sound-emitting targets. We further introduce audio renderings based on geometrical acoustic simulations for a set of publicly available 3D assets and instrument AI-Habitat to support the new sensor, making it possible to insert arbitrary sound sources in an array of apartment, office, and hotel environments. Our results show that audio greatly benefits embodied visual navigation in 3D spaces.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.11473v1" style="color: #d9230f">Dense RepPoints: Representing Visual Objects with Dense Point Sets</a></b><br><em>Computer Vision and Pattern Recognition</em>. 8 authors. <a href="http://arxiv.org/pdf/1912.11473v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>We present an object representation, called , for flexible and detailed modeling of object appearance and geometry. In contrast to the coarse geometric localization and feature extraction of bounding boxes, Dense RepPoints adaptively distributes a dense set of points to semantically and geometrically significant positions on an object, providing informative cues for object analysis. …</summary><br> Techniques are developed to address challenges related to supervised training for dense point sets from image segments annotations and making this extensive representation computationally practical. In addition, the versatility of this representation is exploited to model object structure over multiple levels of granularity. Dense RepPoints significantly improves performance on geometrically-oriented visual understanding tasks, including a <span class="math inline">\(1.6\)</span> AP gain in object detection on the challenging COCO benchmark.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.11236v1" style="color: #d9230f">Ordered or Orderless: A Revisit for Video based Person Re-Identification</a></b><br><em>Computer Vision and Pattern Recognition</em>. 8 authors. <a href="http://arxiv.org/pdf/1912.11236v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Is recurrent network really necessary for learning a good visual representation for video based person re-identification (VPRe-id)? In this paper, we first show that the common practice of employing recurrent neural networks (RNNs) to aggregate temporal spatial features may not be optimal. Specifically, with a diagnostic analysis, we show that the recurrent structure may not be effective to learn temporal dependencies than what we expected and implicitly yields an orderless representation. …</summary><br> Based on this observation, we then present a simple yet surprisingly powerful approach for VPRe-id, where we treat VPRe-id as an efficient orderless ensemble of image based person re-identification problem. More specifically, we divide videos into individual images and re-identify person with ensemble of image based rankers. Under the i.i.d. assumption, we provide an error bound that sheds light upon how could we improve VPRe-id. Our work also presents a promising way to bridge the gap between video and image based person re-identification. Comprehensive experimental evaluations demonstrate that the proposed solution achieves state-of-the-art performances on multiple widely used datasets (iLIDS-VID, PRID 2011, and MARS).
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.11370v1" style="color: #d9230f">Large Scale Learning of General Visual Representations for Transfer</a></b><br><em>Machine Learning, Computer Vision and Pattern Recognition</em>. 7 authors. <a href="http://arxiv.org/pdf/1912.11370v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Transfer of pre-trained representations improves sample efficiency and simplifies hyperparameter tuning when training deep neural networks for vision. We revisit the paradigm of pre-training on large supervised datasets and fine-tuning the weights on the target task. …</summary><br> We scale up pre-training, and create a simple recipe that we call Big Transfer (BiT). By combining a few carefully selected components, and transferring using a simple heuristic, we achieve strong performance on over 20 datasets. BiT performs well across a surprisingly wide range of data regimes - from 10 to 1M labeled examples. BiT achieves 87.8% top-1 accuracy on ILSVRC-2012, 99.3% on CIFAR-10, and 76.7% on the Visual Task Adaptation Benchmark (which includes 19 tasks). On small datasets, BiT attains 86.4% on ILSVRC-2012 with 25 examples per class, and 97.6% on CIFAR-10 with 10 examples per class. We conduct detailed analysis of the main components that lead to high transfer performance.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.11234v1" style="color: #d9230f">Computation Reallocation for Object Detection</a></b><br><em>Machine Learning, Computer Vision and Pattern Recognition</em>. 7 authors. <a href="http://arxiv.org/pdf/1912.11234v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>The allocation of computation resources in the backbone is a crucial issue in object detection. However, classification allocation pattern is usually adopted directly to object detector, which is proved to be sub-optimal. …</summary><br> In order to reallocate the engaged computation resources in a more efficient way, we present CR-NAS (Computation Reallocation Neural Architecture Search) that can learn computation reallocation strategies across different feature resolution and spatial position diectly on the target detection dataset. A two-level reallocation space is proposed for both stage and spatial reallocation. A novel hierarchical search procedure is adopted to cope with the complex search space. We apply CR-NAS to multiple backbones and achieve consistent improvements. Our CR-ResNet50 and CR-MobileNetV2 outperforms the baseline by 1.9% and 1.7% COCO AP respectively without any additional computation budget. The models discovered by CR-NAS can be equiped to other powerful detection neck/head and be easily transferred to other dataset, e.g. PASCAL VOC, and other vision tasks, e.g. instance segmentation. Our CR-NAS can be used as a plugin to improve the performance of various networks, which is demanding.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.11333v1" style="color: #d9230f">Audio-based automatic mating success prediction of giant pandas</a></b><br><em>Machine Learning, Audio and Speech Processing, Sound</em>. 7 authors. <a href="http://arxiv.org/pdf/1912.11333v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Giant pandas, stereotyped as silent animals, make significantly more vocal sounds during breeding season, suggesting that sounds are essential for coordinating their reproduction and expression of mating preference. Previous biological studies have also proven that giant panda sounds are correlated with mating results and reproduction. …</summary><br> This paper makes the first attempt to devise an automatic method for predicting mating success of giant pandas based on their vocal sounds. Given an audio sequence of mating giant pandas recorded during breeding encounters, we first crop out the segments with vocal sound of giant pandas, and normalize its magnitude, and length. We then extract acoustic features from the audio segment and feed the features into a deep neural network, which classifies the mating into success or failure. The proposed deep neural network employs convolution layers followed by bidirection gated recurrent units to extract vocal features, and applies attention mechanism to force the network to focus on most relevant features. Evaluation experiments on a data set collected during the past nine years obtain promising results, proving the potential of audio-based automatic mating success prediction methods in assisting giant panda reproduction.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.11316v1" style="color: #d9230f">TRADI: Tracking deep neural network weight distributions</a></b><br><em>Computer Vision and Pattern Recognition, Machine Learning, Machine Learning</em>. 5 authors. <a href="http://arxiv.org/pdf/1912.11316v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>During training, the weights of a Deep Neural Network (DNN) are optimized from a random initialization towards a nearly optimum value minimizing a loss function. Only this final state of the weights is typically kept for testing, while the wealth of information on the geometry of the weight space, accumulated over the descent towards the minimum is discarded. …</summary><br> In this work we propose to make use of this knowledge and leverage it for computing the distributions of the weights of the DNN. This can be further used for estimating the epistemic uncertainty of the DNN by sampling an ensemble of networks from these distributions. To this end we introduce a method for tracking the trajectory of the weights during optimization, that does not require any changes in the architecture nor on the training procedure. We evaluate our method on standard classification and regression benchmarks, and on out-of-distribution detection for classification and semantic segmentation. We achieve competitive results, while preserving computational efficiency in comparison to other popular approaches.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.11238v1" style="color: #d9230f">Attention-Aware Answers of the Crowd</a></b><br><em>Machine Learning, Machine Learning</em>. 5 authors. <a href="http://arxiv.org/pdf/1912.11238v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Crowdsourcing is a relatively economic and efficient solution to collect annotations from the crowd through online platforms. Answers collected from workers with different expertise may be noisy and unreliable, and the quality of annotated data needs to be further maintained. …</summary><br> Various solutions have been attempted to obtain high-quality annotations. However, they all assume that workers’ label quality is stable over time (always at the same level whenever they conduct the tasks). In practice, workers’ attention level changes over time, and the ignorance of which can affect the reliability of the annotations. In this paper, we focus on a novel and realistic crowdsourcing scenario involving attention-aware annotations. We propose a new probabilistic model that takes into account workers’ attention to estimate the label quality. Expectation propagation is adopted for efficient Bayesian inference of our model, and a generalized Expectation Maximization algorithm is derived to estimate both the ground truth of all tasks and the label-quality of each individual crowd worker with attention. In addition, the number of tasks best suited for a worker is estimated according to changes in attention. Experiments against related methods on three real-world and one semi-simulated datasets demonstrate that our method quantifies the relationship between workers’ attention and label-quality on the given tasks, and improves the aggregated labels.
+</details>
+</td>
+</tr>
+<tr grouplength="9">
+<td colspan="1" style="background-color: #666; color: #fff;">
+<strong>Machine Learning (cs.LG)</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.11325v1" style="color: #d9230f">Adaptive Distraction Context Aware Tracking Based on Correlation Filter</a></b><br><em>Computer Vision and Pattern Recognition</em>. 5 authors. <a href="http://arxiv.org/pdf/1912.11325v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>The Discriminative Correlation Filter (CF) uses a circulant convolution operation to provide several training samples for the design of a classifier that can distinguish the target from the background. The filter design may be interfered by objects close to the target during the tracking process, resulting in tracking failure. …</summary><br> This paper proposes an adaptive distraction context aware tracking algorithm to solve this problem. In the response map obtained for the previous frame by the CF algorithm, we adaptively find the image blocks that are similar to the target and use them as negative samples. This diminishes the influence of similar image blocks on the classifier in the tracking process and its accuracy is improved. The tracking results on video sequences show that the algorithm can cope with rapid changes such as occlusion and rotation, and can adaptively use the distractive objects around the target as negative samples to improve the accuracy of target tracking.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.11264v1" style="color: #d9230f">Deep Manifold Embedding for Hyperspectral Image Classification</a></b><br><em>Image and Video Processing, Computer Vision and Pattern Recognition</em>. 5 authors. <a href="http://arxiv.org/pdf/1912.11264v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Deep learning methods have played a more and more important role in hyperspectral image classification. However, the general deep learning methods mainly take advantage of the information of sample itself or the pairwise information between samples while ignore the intrinsic data structure within the whole data. …</summary><br> To tackle this problem, this work develops a novel deep manifold embedding method(DMEM) for hyperspectral image classification. First, each class in the image is modelled as a specific nonlinear manifold and the geodesic distance is used to measure the correlation between the samples. Then, based on the hierarchical clustering, the manifold structure of the data can be captured and each nonlinear data manifold can be divided into several sub-classes. Finally, considering the distribution of each sub-class and the correlation between different subclasses, the DMEM is constructed to preserve the estimated geodesic distances on the data manifold between the learned low dimensional features of different samples. Experiments over three real-world hyperspectral image datasets have demonstrated the effectiveness of the proposed method.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.11462v1" style="color: #d9230f">PILS: Exploring high-order neighborhoods by pattern mining and injection</a></b><br><em>Artificial Intelligence</em>. 4 authors. <a href="http://arxiv.org/pdf/1912.11462v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>We introduce pattern injection local search (PILS), an optimization strategy that uses pattern mining to explore high-order local-search neighborhoods, and illustrate its application on the vehicle routing problem. PILS operates by storing a limited number of frequent patterns from elite solutions. …</summary><br> During the local search, each pattern is used to define one move in which 1) incompatible edges are disconnected, 2) the edges defined by the pattern are reconnected, and 3) the remaining solution fragments are optimally reconnected. Each such move is accepted only in case of solution improvement. As visible in our experiments, this strategy results in a new paradigm of local search, which complements and enhances classical search approaches in a controllable amount of computational time. We demonstrate that PILS identifies useful high-order moves (e.g., 9-opt and 10-opt) which would otherwise not be found by enumeration, and that it significantly improves the performance of state-of-the-art population-based and neighborhood-centered metaheuristics.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.11323v1" style="color: #d9230f">Bidding in Spades</a></b><br><em>Artificial Intelligence</em>. 4 authors. <a href="http://arxiv.org/pdf/1912.11323v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>We present a Spades bidding algorithm that is superior to recreational human players and to publicly available bots. Like in Bridge, the game of Spades is composed of two independent phases,  and . …</summary><br> This paper focuses on the bidding algorithm, since this phase holds a precise challenge: based on the input, choose the bid that maximizes the agent’s winning probability. Our  (BIS) algorithm heuristically determines the bidding strategy by comparing the expected utility of each possible bid. A major challenge is how to estimate these expected utilities. To this end, we propose a set of domain-specific heuristics, and then correct them via machine learning using data from real-world players. The algorithm we present can be attached to any playing algorithm. It beats rule-based bidding bots when all use the same playing component. When combined with a rule-based playing algorithm, it is superior to the average recreational human.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.11308v1" style="color: #d9230f">ADD-Lib: Decision Diagrams in Practice</a></b><br><em>Artificial Intelligence, Machine Learning, Software Engineering, Programming Languages</em>. 4 authors. <a href="http://arxiv.org/pdf/1912.11308v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>In the paper, we present the ADD-Lib, our efficient and easy to use framework for Algebraic Decision Diagrams (ADDs). The focus of the ADD-Lib is not so much on its efficient implementation of individual operations, which are taken by other established ADD frameworks, but its ease and flexibility, which arise at two levels: the level of individual ADD-tools, which come with a dedicated user-friendly web-based graphical user interface, and at the meta level, where such tools are specified. …</summary><br> Both levels are described in the paper: the meta level by explaining how we can construct an ADD-tool tailored for Random Forest refinement and evaluation, and the accordingly generated Web-based domain-specific tool, which we also provide as an artifact for cooperative experimentation. In particular, the artifact allows readers to combine a given Random Forest with their own ADDs regarded as expert knowledge and to experience the corresponding effect.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.11464v1" style="color: #d9230f">Attack-Resistant Federated Learning with Residual-based Reweighting</a></b><br><em>Machine Learning, Machine Learning</em>. 4 authors. <a href="http://arxiv.org/pdf/1912.11464v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Federated learning has a variety of applications in multiple domains by utilizing private training data stored on different devices. However, the aggregation process in federated learning is highly vulnerable to adversarial attacks so that the global model may behave abnormally under attacks. …</summary><br> To tackle this challenge, we present a novel aggregation algorithm with residual-based reweighting to defend federated learning. Our aggregation algorithm combines repeated median regression with the reweighting scheme in iteratively reweighted least squares. Our experiments show that our aggregation algorithm outperforms other alternative algorithms in the presence of label-flipping, backdoor, and Gaussian noise attacks. We also provide theoretical guarantees for our aggregation algorithm.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.11259v1" style="color: #d9230f">Mining User Behaviour from Smartphone data, a literature review</a></b><br><em>Machine Learning, Machine Learning</em>. 4 authors. <a href="http://arxiv.org/pdf/1912.11259v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>To study users’ travel behaviour and travel time between origin and destination, researchers employ travel surveys. Although there is consensus in the field about the potential, after over ten years of research and field experimentation, Smartphone-based travel surveys still did not take off to a large scale. …</summary><br> Here, computer intelligence algorithms take the role that operators have in Traditional Travel Surveys; since we train each algorithm on data, performances rest on the data quality, thus on the ground truth. Inaccurate validations affect negatively: labels, algorithms’ training, travel diaries precision, and therefore data validation, within a very critical loop. Interestingly, boundaries are proven burdensome to push even for Machine Learning methods. To support optimal investment decisions for practitioners, we expose the drivers they should consider when assessing what they need against what they get. This paper highlights and examines the critical aspects of the underlying research and provides some recommendations: (i) from the device perspective, on the main physical limitations; (ii) from the application perspective, the methodological framework deployed for the automatic generation of travel diaries; (iii)from the ground truth perspective, the relationship between user interaction, methods, and data.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.11252v1" style="color: #d9230f">Meta-Learning PAC-Bayes Priors in Model Averaging</a></b><br><em>Machine Learning, Machine Learning</em>. 4 authors. <a href="http://arxiv.org/pdf/1912.11252v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Nowadays model uncertainty has become one of the most important problems in both academia and industry. In this paper, we mainly consider the scenario in which we have a common model set used for model averaging instead of selecting a single final model via a model selection procedure to account for this model’s uncertainty to improve reliability and accuracy of inferences. …</summary><br> Here one main challenge is to learn the prior over the model set. To tackle this problem, we propose two data-based algorithms to get proper priors for model averaging. One is for meta-learner, the analysts should use historical similar tasks to extract the information about the prior. The other one is for base-learner, a subsampling method is used to deal with the data step by step. Theoretically, an upper bound of risk for our algorithm is presented to guarantee the performance of the worst situation. In practice, both methods perform well in simulations and real data studies, especially with poor quality data.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.11328v1" style="color: #d9230f">Assessing differentially private deep learning with Membership Inference</a></b><br><em>Cryptography and Security, Machine Learning</em>. 4 authors. <a href="http://arxiv.org/pdf/1912.11328v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Releasing data in the form of trained neural networks with differential privacy promises meaningful anonymization. However, there is an inherent privacy-accuracy trade-off in differential privacy which is challenging to assess for non-privacy experts. …</summary><br> Furthermore, local and central differential privacy mechanisms are available to either anonymize the training data or the learnt neural network, and the privacy parameter <span class="math inline">\(\epsilon\)</span> cannot be used to compare these two mechanisms. We propose to measure privacy through a black-box membership inference attack and compare the privacy-accuracy trade-off for different local and central differential privacy mechanisms. Furthermore, we need to evaluate whether differential privacy is a useful mechanism in practice since differential privacy will especially be used by data scientists if membership inference risk is lowered more than accuracy. We experiment with several datasets and show that neither local differential privacy nor central differential privacy yields a consistently better privacy-accuracy trade-off in all cases. We also show that the relative privacy-accuracy trade-off, instead of strictly declining linearly over <span class="math inline">\(\epsilon\)</span>, is only favorable within a small interval. For this purpose we propose <span class="math inline">\(\varphi\)</span>, a ratio expressing the relative privacy-accuracy trade-off.
+</details>
+</td>
+</tr>
+<tr grouplength="3">
+<td colspan="1" style="background-color: #666; color: #fff;">
+<strong>Artificial Intelligence (cs.AI)</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.11203v1" style="color: #d9230f">Stochastic Fairness and Language-Theoretic Fairness in Planning on Nondeterministic Domains</a></b><br><em>Artificial Intelligence, Formal Languages and Automata Theory</em>. 3 authors. <a href="http://arxiv.org/pdf/1912.11203v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>We address two central notions of fairness in the literature of planning on nondeterministic fully observable domains. The first, which we call stochastic fairness, is classical, and assumes an environment which operates probabilistically using possibly unknown probabilities. …</summary><br> The second, which is language-theoretic, assumes that if an action is taken from a given state infinitely often then all its possible outcomes should appear infinitely often (we call this state-action fairness). While the two notions coincide for standard reachability goals, they diverge for temporally extended goals. This important difference has been overlooked in the planning literature, and we argue has led to confusion in a number of published algorithms which use reductions that were stated for state-action fairness, for which they are incorrect, while being correct for stochastic fairness. We remedy this and provide an optimal sound and complete algorithm for solving state-action fair planning for LTL/LTLf goals, as well as a correct proof of the lower bound of the goal-complexity (our proof is general enough that it provides new proofs also for the no-fairness and stochastic-fairness cases). Overall, we show that stochastic fairness is better behaved than state-action fairness.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.11460v1" style="color: #d9230f">Characterizing the Decision Boundary of Deep Neural Networks</a></b><br><em>Computer Vision and Pattern Recognition, Machine Learning, Machine Learning</em>. 3 authors. <a href="http://arxiv.org/pdf/1912.11460v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Deep neural networks and in particular, deep neural classifiers have become an integral part of many modern applications. Despite their practical success, we still have limited knowledge of how they work and the demand for such an understanding is evergrowing. …</summary><br> In this regard, one crucial aspect of deep neural network classifiers that can help us deepen our knowledge about their decision-making behavior is to investigate their decision boundaries. Nevertheless, this is contingent upon having access to samples populating the areas near the decision boundary. To achieve this, we propose a novel approach we call Deep Decision boundary Instance Generation (DeepDIG). DeepDIG utilizes a method based on adversarial example generation as an effective way of generating samples near the decision boundary of any deep neural network model. Then, we introduce a set of important principled characteristics that take advantage of the generated instances near the decision boundary to provide multifaceted understandings of deep neural networks. We have performed extensive experiments on multiple representative datasets across various deep neural network models and characterized their decision boundaries.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.11420v1" style="color: #d9230f">Detection of Community Structures in Networks with Nodal Features based on Generative Probabilistic Approach</a></b><br><em>Social and Information Networks, Machine Learning</em>. 3 authors. <a href="http://arxiv.org/pdf/1912.11420v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Community detection is considered as a fundamental task in analyzing social networks. Even though many techniques have been proposed for community detection, most of them are based exclusively on the connectivity structures. …</summary><br> However, there are node features in real networks, such as gender types in social networks, feeding behavior in ecological networks, and location on e-trading networks, that can be further leveraged with the network structure to attain more accurate community detection methods. We propose a novel probabilistic graphical model to detect communities by taking into account both network structure and nodes’ features. The proposed approach learns the relevant features of communities through a generative probabilistic model without any prior assumption on the communities. Furthermore, the model is capable of determining the strength of node features and structural elements of the networks on shaping the communities. The effectiveness of the proposed approach over the state-of-the-art algorithms is revealed on synthetic and benchmark networks.
+</details>
+</td>
+</tr>
+<tr grouplength="2">
+<td colspan="1" style="background-color: #666; color: #fff;">
+<strong>Cryptography and Security (cs.CR)</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.11463v1" style="color: #d9230f">FHDR: HDR Image Reconstruction from a Single LDR Image using Feedback Network</a></b><br><em>Image and Video Processing, Computer Vision and Pattern Recognition</em>. 3 authors. <a href="http://arxiv.org/pdf/1912.11463v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>High dynamic range (HDR) image generation from a single exposure low dynamic range (LDR) image has been made possible due to the recent advances in Deep Learning. Various feed-forward Convolutional Neural Networks (CNNs) have been proposed for learning LDR to HDR representations. …</summary><br> To better utilize the power of CNNs, we exploit the idea of feedback, where the initial low level features are guided by the high level features using a hidden state of a Recurrent Neural Network. Unlike a single forward pass in a conventional feed-forward network, the reconstruction from LDR to HDR in a feedback network is learned over multiple iterations. This enables us to create a coarse-to-fine representation, leading to an improved reconstruction at every iteration. Various advantages over standard feed-forward networks include early reconstruction ability and better reconstruction quality with fewer network parameters. We design a dense feedback block and propose an end-to-end feedback network- FHDR for HDR image generation from a single exposure LDR image. Qualitative and quantitative evaluations show the superiority of our approach over the state-of-the-art methods.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.11343v1" style="color: #d9230f">Robust Visual Tracking via Implicit Low-Rank Constraints and Structural Color Histograms</a></b><br><em>Computer Vision and Pattern Recognition</em>. 3 authors. <a href="http://arxiv.org/pdf/1912.11343v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>With the guaranteed discrimination and efficiency of spatial appearance model, Discriminative Correlation Filters (DCF-) based tracking methods have achieved outstanding performance recently. However, the construction of effective temporal appearance model is still challenging on account of filter degeneration becomes a significant factor that causes tracking failures in the DCF framework. …</summary><br> To encourage temporal continuity and to explore the smooth variation of target appearance, we propose to enhance low-rank structure of the learned filters, which can be realized by constraining the successive filters within a <span class="math inline">\(\ell_2\)</span>-norm ball. Moreover, we design a global descriptor, structural color histograms, to provide complementary support to the final response map, improving the stability and robustness to the DCF framework. The experimental results on standard benchmarks demonstrate that our Implicit Low-Rank Constraints and Structural Color Histograms (ILRCSCH) tracker outperforms state-of-the-art methods.
+</details>
+</td>
+</tr>
+<tr grouplength="2">
+<td colspan="1" style="background-color: #666; color: #fff;">
+<strong>Neural and Evolutionary Computing (cs.NE)</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.11258v1" style="color: #d9230f">Multi-Graph Transformer for Free-Hand Sketch Recognition</a></b><br><em>Machine Learning, Computer Vision and Pattern Recognition</em>. 3 authors. <a href="http://arxiv.org/pdf/1912.11258v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Learning meaningful representations of free-hand sketches remains a challenging task given the signal sparsity and the high-level abstraction of sketches. Existing techniques have focused on exploiting either the static nature of sketches with Convolutional Neural Networks (CNNs) or the temporal sequential property with Recurrent Neural Networks (RNNs). …</summary><br> In this work, we propose a new representation of sketches as multiple sparsely connected graphs. We design a novel Graph Neural Network (GNN), the Multi-Graph Transformer (MGT), for learning representations of sketches from multiple graphs which simultaneously capture global and local geometric stroke structures, as well as temporal information. We report extensive numerical experiments on a sketch recognition task to demonstrate the performance of the proposed approach. Particularly, MGT applied on 414k sketches from Google QuickDraw: (i) achieves small recognition gap to the CNN-based performance upper bound (72.80% vs. 74.22%), and (ii) outperforms all RNN-based models by a significant margin. To the best of our knowledge, this is the first work proposing to represent sketches as graphs and apply GNNs for sketch recognition. Code and trained models are available at <a href="https://github.com/PengBoXiangShang/multigraph_transformer" class="uri">https://github.com/PengBoXiangShang/multigraph_transformer</a>.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.11292v1" style="color: #d9230f">Computational framework for monolithic coupling for thin fluid flow in contact interfaces</a></b><br><em>Numerical Analysis, Numerical Analysis, Computational Engineering, Finance, and Science, Computational Physics</em>. 3 authors. <a href="http://arxiv.org/pdf/1912.11292v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>We develop a computational framework for simulating thin fluid flow in narrow interfaces between contacting solids, which is relevant for a range engineering, biological and geophysical applications. The treatment of this problem requires coupling between fluid and solid mechanics equations, further complicated by contact constraints and potentially complex geometrical features of contacting surfaces. …</summary><br> We develop a monolithic finite-element framework for handling contact, thin incompressible viscous flow and fluid-induced tractions on the surface of the solid, suitable for both one- and two-way coupling approaches. Additionally, we consider fluid entrapment in “pools” delimited by contact patches and its pressurisation following a non-linear compressible constitutive law. Image analysis algorithms are adopted to identify the local status of each interface element (i.e. distinguish between contact, fluid flow and trapped fluid zones) within the Newton convergence loop. First, an application of the proposed framework for a problem with a model geometry is given, and the robustness is demonstrated by the DOF-wise and status-wise convergence. The full capability of the developed two-way coupling framework is demonstrated on a problem of a fluid flow in a contact interface between a solid with representative rough surface and a rigid flat. The evolution of the contact pressure, fluid flow pattern and the morphology of trapped fluid zones under increasing external load until the complete sealing of the interface is displayed. Finally, effective properties of flat-on-flat rough contact interfaces such as transmissivity and real contact area growth are calculated using the developed framework, showing qualitatively new results compared to the one-way coupling approximation.
+</details>
+</td>
+</tr>
+<tr grouplength="1">
+<td colspan="1" style="background-color: #666; color: #fff;">
+<strong>Computational Engineering, Finance, and Science (cs.CE)</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.11367v1" style="color: #d9230f">Online Algorithms for Multiclass Classification using Partial Labels</a></b><br><em>Machine Learning, Machine Learning</em>. 2 authors. <a href="http://arxiv.org/pdf/1912.11367v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>In this paper, we propose online algorithms for multiclass classification using partial labels. We propose two variants of Perceptron called Avg Perceptron and Max Perceptron to deal with the partial labeled data. …</summary><br> We also propose Avg Pegasos and Max Pegasos, which are extensions of Pegasos algorithm. We also provide mistake bounds for Avg Perceptron and regret bound for Avg Pegasos. We show the effectiveness of the proposed approaches by experimenting on various datasets and comparing them with the standard Perceptron and Pegasos.
+</details>
+</td>
+</tr>
+<tr grouplength="1">
+<td colspan="1" style="background-color: #666; color: #fff;">
+<strong>Social and Information Networks (cs.SI)</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.11235v1" style="color: #d9230f">mRMR-DNN with Transfer Learning for IntelligentFault Diagnosis of Rotating Machines</a></b><br><em>Machine Learning, Machine Learning</em>. 2 authors. <a href="http://arxiv.org/pdf/1912.11235v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>In recent years, intelligent condition-based monitoring of rotary machinery systems has become a major research focus of machine fault diagnosis. In condition-based monitoring, it is challenging to form a large-scale well-annotated dataset due to the expense of data acquisition and costly annotation. …</summary><br> Along with that, the generated data have a large number of redundant features which degraded the performance of the machine learning models. To overcome this, we have utilized the advantages of minimum redundancy maximum relevance (mRMR) and transfer learning with deep learning model. In this work, mRMR is combined with deep learning and deep transfer learning framework to improve the fault diagnostics performance in term of accuracy and computational complexity. The mRMR reduces the redundant information from data and increases the deep learning performance, whereas transfer learning, reduces a large amount of data dependency for training the model. In the proposed work, two frameworks, i.e., mRMR with deep learning and mRMR with deep transfer learning, have explored and validated on CWRU and IMS rolling element bearings datasets. The analysis shows that the proposed frameworks are able to obtain better diagnostic accuracy in comparison of existing methods and also able to handle the data with a large number of features more quickly.
+</details>
+</td>
+</tr>
+<tr grouplength="1">
+<td colspan="1" style="background-color: #666; color: #fff;">
+<strong>Software Engineering (cs.SE)</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.11423v1" style="color: #d9230f">Towards Multicellular Biological Deep Neural Nets Based on Transcriptional Regulation</a></b><br><em>Molecular Networks, Emerging Technologies, Neural and Evolutionary Computing</em>. 1 authors. <a href="http://arxiv.org/pdf/1912.11423v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Artificial neurons built on synthetic gene networks have potential applications ranging from complex cellular decision-making to bioreactor regulation. Furthermore, due to the high information throughput of natural systems, it provides an interesting candidate for biologically-based supercomputing and analog simulations of traditionally intractable problems. …</summary><br> In this paper, we propose an architecture for constructing multicellular neural networks and programmable nonlinear systems. We design an artificial neuron based on gene regulatory networks and optimize its dynamics for modularity. Using gene expression models, we simulate its ability to perform arbitrary linear classifications from multiple inputs. Finally, we construct a two-layer neural network to demonstrate scalability and nonlinear decision boundaries, and discuss future directions for utilizing uncontrolled neurons in computational tasks.
+</details>
+</td>
+</tr>
+<tr grouplength="1">
+<td colspan="1" style="background-color: #666; color: #fff;">
+<strong>Sound (cs.SD)</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.11283v1" style="color: #d9230f">An Analisys of Application Logs with Splunk : developing an App for the synthetic analysis of data and security incidents</a></b><br><em>Cryptography and Security, Machine Learning</em>. 1 authors. <a href="http://arxiv.org/pdf/1912.11283v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>The present work aims to enhance the application logs of an hypothetical infrastructure platform, and to build an App that displays the synthetic data about performance, anomalies and security incidents synthesized in the form of a Dashboard. The reference architecture, with multiple applications and multiple HW distribution, implementing a Service Oriented Architecture, is a real case of which the details have been abstracted because we want to extend the concept to all architectures with similar characteristics. …</summary><br>
+</details>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="statistics">Statistics</h3>
+<table class="table table-striped table-condensed" style="margin-left: auto; margin-right: auto;">
+<tbody>
+<tr grouplength="2">
+<td colspan="1" style="background-color: #666; color: #fff;">
+<strong>Methodology (stat.ME)</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.11409v1" style="color: #d9230f">Aggregating predictions from experts: a scoping review of statistical methods, experiments, and applications</a></b><br><em>Applications</em>. 4 authors. <a href="http://arxiv.org/pdf/1912.11409v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Forecasts support decision making in a variety of applications. Statistical models can produce accurate forecasts given abundant training data, but when data is sparse, rapidly changing, or unavailable, statistical models may not be able to make accurate predictions. …</summary><br> Expert judgmental forecasts—models that combine expert-generated predictions into a single forecast—can make predictions when training data is limited by relying on expert intuition to take the place of concrete training data. Researchers have proposed a wide array of algorithms to combine expert predictions into a single forecast, but there is no consensus on an optimal aggregation model. This scoping review surveyed recent literature on aggregating expert-elicited predictions. We gathered common terminology, aggregation methods, and forecasting performance metrics, and offer guidance to strengthen future work that is growing at an accelerated pace.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.11279v1" style="color: #d9230f">Cronus: Robust and Heterogeneous Collaborative Learning with Black-Box Knowledge Transfer</a></b><br><em>Cryptography and Security, Machine Learning, Machine Learning</em>. 4 authors. <a href="http://arxiv.org/pdf/1912.11279v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Collaborative (federated) learning enables multiple parties to train a model without sharing their private data, but through repeated sharing of the parameters of their local models. Despite its advantages, this approach has many known privacy and security weaknesses and performance overhead, in addition to being limited only to models with homogeneous architectures. …</summary><br> Shared parameters leak a significant amount of information about the local (and supposedly private) datasets. Besides, federated learning is severely vulnerable to poisoning attacks, where some participants can adversarially influence the aggregate parameters. Large models, with high dimensional parameter vectors, are in particular highly susceptible to privacy and security attacks: curse of dimensionality in federated learning. We argue that sharing parameters is the most naive way of information exchange in collaborative learning, as they open all the internal state of the model to inference attacks, and maximize the model’s malleability by stealthy poisoning attacks. We propose Cronus, a robust collaborative machine learning framework. The simple yet effective idea behind designing Cronus is to control, unify, and significantly reduce the dimensions of the exchanged information between parties, through robust knowledge transfer between their black-box local models. We evaluate all existing federated learning algorithms against poisoning attacks, and we show that Cronus is the only secure method, due to its tight robustness guarantee. Treating local models as black-box, reduces the information leakage through models, and enables us using existing privacy-preserving algorithms that mitigate the risk of information leakage through the model’s output (predictions). Cronus also has a significantly lower sample complexity, compared to federated learning, which does not bind its security to the number of participants.
+</details>
+</td>
+</tr>
+<tr grouplength="1">
+<td colspan="1" style="background-color: #666; color: #fff;">
+<strong>Applications (stat.AP)</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.11466v1" style="color: #d9230f">Power Comparisons in 2x2 Contingency Tables: Odds Ratio versus Pearson Correlation versus Canonical Correlation</a></b><br><em>Methodology</em>. 3 authors. <a href="http://arxiv.org/pdf/1912.11466v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>It is an important inferential problem to test no association between two binary variables based on data. Tests based on the sample odds ratio are commonly used. …</summary><br> We bring in a competing test based on the Pearson correlation coefficient. In particular, the Odds ratio does not extend to higher order contingency tables, whereas Pearson correlation does. It is important to understand how Pearson correlation stacks against the odds ratio in 2x2 tables. Another measure of association is the canonical correlation. In this paper, we examine how competitive Pearson correlation is vis-`a-vis odds ratio in terms of power in the binary context, contrasting further with both the Wald Z and Rao Score tests. We generated an extensive collection of joint distributions of the binary variables and estimated the power of the tests under each joint alternative distribution based on random samples. The consensus is that none of the tests dominates the other.
+</details>
+</td>
+</tr>
+<tr grouplength="1">
+<td colspan="1" style="background-color: #666; color: #fff;">
+<strong>Machine Learning (stat.ML)</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.11218v1" style="color: #d9230f">Bayesian Aggregation</a></b><br><em>Methodology</em>. 1 authors. <a href="http://arxiv.org/pdf/1912.11218v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>A general challenge in statistics is prediction in the presence of multiple candidate models or learning algorithms. Model aggregation tries to combine all predictive distributions from individual models, which is more stable and flexible than single model selection. …</summary><br> In this article we describe when and how to aggregate models under the lens of Bayesian decision theory. Among two widely used methods, Bayesian model averaging (BMA) and Bayesian stacking, we compare their predictive performance, and review their theoretical optimality, probabilistic interpretation, practical implementation, and extensions in complex models.
+</details>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="elec.-eng.-and-systems-science">Elec. Eng. and Systems Science</h3>
+<table class="table table-striped table-condensed" style="margin-left: auto; margin-right: auto;">
+<tbody>
+<tr grouplength="1">
+<td colspan="1" style="background-color: #666; color: #fff;">
+<strong>Image and Video Processing (eess.IV)</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.11371v1" style="color: #d9230f">Comparison of the P300 detection accuracy related to the BCI speller and image recognition scenarios</a></b><br><em>Neurons and Cognition, Machine Learning, Human-Computer Interaction, Signal Processing</em>. 4 authors. <a href="http://arxiv.org/pdf/1912.11371v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>There are several protocols in the Electroencephalography (EEG) recording scenarios which produce various types of event-related potentials (ERP). P300 pattern is a well-known ERP which produced by auditory and visual oddball paradigm and BCI speller system. …</summary><br> In this study, P300 and non-P300 separability are investigated in two scenarios including image recognition paradigm and BCI speller. Image recognition scenario is an experiment that examines the participants, knowledge about an image that shown to them before by analyzing the EEG signal recorded during the observing of that image as visual stimulation. To do this, three types of famous classifiers (SVM, Bayes LDA, and sparse logistic regression) were used to classify EEG recordings in six classes problem. Filtered and down-sampled (temporal samples) of EEG recording were considered as features in classification P300 pattern. Also, different sets of EEG recording including 4, 8 and 16 channels and different trial numbers were used to considering various situations in comparison. The accuracy was increased by increasing the number of trials and channels. The results prove that better accuracy is observed in the case of the image recognition scenario for the different sets of channels and by using the different number of trials. So it can be concluded that P300 pattern which produced in image recognition paradigm is more separable than BCI (matrix speller).
+</details>
+</td>
+</tr>
+<tr grouplength="1">
+<td colspan="1" style="background-color: #666; color: #fff;">
+<strong>Signal Processing (eess.SP)</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.11312v1" style="color: #d9230f">Robustness of Brain Tumor Segmentation</a></b><br><em>Image and Video Processing, Machine Learning, Computer Vision and Pattern Recognition</em>. 3 authors. <a href="http://arxiv.org/pdf/1912.11312v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>We address the generalization behavior of deep neural networks in the context of brain tumor segmentation. While current topologies show an increasingly complex structure, the overall benchmark performance does improve negligibly. …</summary><br> In our experiments, we demonstrate that a well trained U-Net shows the best generalization behavior and is sufficient to solve this segmentation problem. We illustrate why extensions of this model cannot only be pointless but even harmful in a realistic scenario. Also, we suggest two simple modifications (that do not alter the topology) to further improve its generalization performance.
+</details>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="other">Other</h3>
+<table class="table table-striped table-condensed" style="margin-left: auto; margin-right: auto;">
+<tbody>
+<tr grouplength="1">
+<td colspan="1" style="background-color: #666; color: #fff;">
+<strong>Astrophysics of Galaxies (astro-ph.GA)</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.11447v1" style="color: #d9230f">Evolution of the accretion disk-corona during bright hard-to-soft state transition: A reflection spectroscopic study with GX 339-4</a></b><br><em>General Relativity and Quantum Cosmology, High Energy Astrophysical Phenomena, High Energy Physics - Experiment, Plasma Physics, Data Analysis, Statistics and Probability</em>. 6 authors. <a href="http://arxiv.org/pdf/1912.11447v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>We present the analysis of several observations of the black hole binary GX 339–4 during its bright intermediate states from two different outbursts (2002 and 2004), as observed by RXTE/PCA. We perform a consistent study of its reflection spectrum by employing the relxill family of relativistic reflection models to probe the evolutionary properties of the accretion disk including the inner disk radius (<span class="math inline">\(R_{\rm in}\)</span>), ionization parameter (<span class="math inline">\(\xi\)</span>), temperatures of the inner disk (<span class="math inline">\(T_{\rm in}\)</span>), corona (<span class="math inline">\(kT_{\rm e}\)</span>), and its optical depth (<span class="math inline">\(\tau\)</span>). …</summary><br> Our analysis indicates that the disk inner edge approaches the inner-most stable circular orbit (ISCO) during the early onset of bright hard state, and that the truncation radius of the disk remains low (<span class="math inline">\(&amp;lt; 9 R_{\rm g}\)</span>) throughout the transition from hard to soft state. This suggests that the changes observed in the accretion disk properties during the state transition are driven by variation in accretion rate, and not necessarily due to changes in the inner disk’s radius. We compare the aforementioned disk properties in two different outbursts, with state transitions occurring at dissimilar luminosities, and find identical evolutionary trends in the disk properties, with differences only seen in corona’s <span class="math inline">\(kT_{\rm e}\)</span> and <span class="math inline">\(\tau\)</span>. We also perform an analysis by employing a self-consistent Comptonized accretion disk model accounting for the scatter of disk photons by the corona, and measure low inner disk truncation radius across the bright intermediate states, using the temperature dependent values of spectral hardening factor, thereby independently confirming our results from the reflection spectrum analysis.
+</details>
+</td>
+</tr>
+<tr grouplength="1">
+<td colspan="1" style="background-color: #666; color: #fff;">
+<strong>High Energy Astrophysical Phenomena (astro-ph.HE)</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.11378v1" style="color: #d9230f">Evaporative cooling of icy interstellar grains. I</a></b><br><em>Astrophysics of Galaxies, Space Physics, Computational Physics</em>. 2 authors. <a href="http://arxiv.org/pdf/1912.11378v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Context. While radiative cooling of interstellar grains is a well-known process, little detail is known about the cooling of grains with an icy mantle that contains volatile adsorbed molecules. …</summary><br> Aims. We explore basic details for the cooling process of an icy grain with properties relevant to dark interstellar clouds. Methods. Grain cooling was described with a numerical code considering a grain with an icy mantle that is structured in monolayers and containing several volatile species in proportions consistent with interstellar ice. Evaporation was treated as first-order decay. Diffusion and subsequent thermal desorption of bulk-ice species was included. Temperature decrease from initial temperatures of 100, 90, 80, 70, 60, 50, 40, 30, and 20K was studied, and we also followed the composition of ice and evaporated matter. Results. We find that grain cooling occurs by partially successive and partially overlapping evaporation of different species. The most volatile molecules (N2) first evaporate at the greatest rate and are most rapidly depleted from the outer ice monolayers. The most important coolant is CO, but evaporation of more refractory species, such as CH4 and even CO2, is possible when the former volatiles are not available. Cooling of high-temperature grains takes longer because volatile molecules are depleted faster and the grain has to switch to slow radiative cooling at a higher temperature. For grain temperatures above 40K, most of the thermal energy is carried away by evaporation. Evaporation of the nonpolar volatile species induces a complete change of the ice surface, as the refractory polar molecules (H2O) are left behind. Conclusions. The effectiveness of thermal desorption from heated icy grains (e.g., the yield of cosmic-ray-induced desorption) is primarily controlled by the thermal energy content of the grain and the number and availability of volatile molecules.
+</details>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="quantitative-finance">Quantitative Finance</h3>
+<table class="table table-striped table-condensed" style="margin-left: auto; margin-right: auto;">
+<tbody>
+<tr grouplength="1">
+<td colspan="1" style="background-color: #666; color: #fff;">
+<strong>Risk Management (q-fin.RM)</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.11172v1" style="color: #d9230f">Online Quantification of Input Model Uncertainty by Two-Layer Importance Sampling</a></b><br><em>Applications, Risk Management</em>. 2 authors. <a href="http://arxiv.org/pdf/1912.11172v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Stochastic simulation has been widely used to analyze the performance of complex stochastic systems and facilitate decision making in those systems. Stochastic simulation is driven by the input model, which is a collection of probability distributions that model the stochasticity in the system. …</summary><br> The input model is usually estimated using a finite amount of data, which introduces the so-called input model uncertainty (or, input uncertainty for short) to the simulation output. How to quantify input uncertainty has been studied extensively, and many methods have been proposed for the batch data setting, i.e., when all the data are available at once. However, methods for ``streaming data’’ arriving sequentially in time are still in demand, despite that streaming data have become increasingly prevalent in modern applications. To fill in this gap, we propose a two-layer importance sampling framework that incorporates streaming data for online input uncertainty quantification. Under this framework, we develop two algorithms that suit two different application scenarios: the first is when data come at a fast speed and there is no time for any simulation in between updates; the second is when data come at a moderate speed and a few but limited simulations are allowed at each time stage. We show the consistency and asymptotic convergence rate results, which theoretically show the efficiency of our proposed approach. We further demonstrate the proposed algorithms on an example of the news vendor problem.
+</details>
+</td>
+</tr>
+<tr grouplength="1">
+<td colspan="1" style="background-color: #666; color: #fff;">
+<strong>Statistical Finance (q-fin.ST)</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.11216v1" style="color: #d9230f">The Dynamics of Financial Markets: Fibonacci numbers, Elliott waves, and solitons</a></b><br><em>Statistical Finance</em>. 1 authors. <a href="http://arxiv.org/pdf/1912.11216v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>In this paper information theoretical approach is applied to the description of financial markets. A model which is expected to describe the markets dynamics is presented. …</summary><br> It is shown the possibility to describe market trend and cycle dynamics from a unified viewpoint. The model predictions comparatively well suit Fibonacci ratios and numbers used for the analysis of market price and time projections. It proves possible to link time and price projections, thus allowing increase the accuracy of predicting well in advance the moment of trend termination. The model is tested against real data from the stock and financial markets.
+</details>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="quantum-physics">Quantum Physics</h3>
+<table class="table table-striped table-condensed" style="margin-left: auto; margin-right: auto;">
+<tbody>
+<tr grouplength="2">
+<td colspan="1" style="background-color: #666; color: #fff;">
+<strong>Quantum Physics (quant-ph)</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.11158v1" style="color: #d9230f">Device-independent Randomness Expansion with Entangled Photons</a></b><br><em>Quantum Physics, Data Analysis, Statistics and Probability</em>. 15 authors. <a href="http://arxiv.org/pdf/1912.11158v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>With the growing availability of experimental loophole-free Bell tests, it has become possible to implement a new class of device-independent random number generators whose output can be certified to be uniformly random without requiring a detailed model of the quantum devices used. However, all of these experiments require many input bits in order to certify a small number of output bits, and it is an outstanding challenge to develop a system that generates more randomness than is used. …</summary><br> Here, we devise a device-independent spot-checking protocol which uses only uniform bits as input. Implemented with a photonic loophole-free Bell test, we can produce 24% more certified output bits (1,181,264,237) than consumed input bits (953,301,640), which is 5 orders of magnitude more efficient than our previous work [arXiv:1812.07786]. The experiment ran for 91.0 hours, creating randomness at an average rate of 3606 bits/s with a soundness error bounded by <span class="math inline">\(5.7\times 10^{-7}\)</span> in the presence of classical side information. Our system will allow for greater trust in public sources of randomness, such as randomness beacons, and the protocols may one day enable high-quality sources of private randomness as the device footprint shrinks.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.11418v1" style="color: #d9230f">Continuous-variable quantum cryptography with discrete alphabets: Composable security under collective Gaussian attacks</a></b><br><em>Quantum Physics, Data Analysis, Statistics and Probability</em>. 2 authors. <a href="http://arxiv.org/pdf/1912.11418v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>We consider continuous-variable quantum key distribution with discrete-alphabet encodings. In particular, we study protocols where information is encoded in the phase of displaced coherent (or thermal) states, even though the results can be directly extended to any protocol based on finite constellations of displaced Gaussian states. …</summary><br> In this setting, we provide a composable security analysis in the finite-size regime assuming the realistic but restrictive hypothesis of collective Gaussian attacks. Under this assumption, we can efficiently estimate the parameters of the channel via maximum likelihood estimators and bound the corresponding error in the final secret key rate.
+</details>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="mathematics">Mathematics</h3>
+<table class="table table-striped table-condensed" style="margin-left: auto; margin-right: auto;">
+<tbody>
+<tr grouplength="1">
+<td colspan="1" style="background-color: #666; color: #fff;">
+<strong>Statistics Theory (math.ST)</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.11436v1" style="color: #d9230f">Universal Inference Using the Split Likelihood Ratio Test</a></b><br><em>Methodology, Statistics Theory, Machine Learning, Statistics Theory</em>. 3 authors. <a href="http://arxiv.org/pdf/1912.11436v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>We propose a general method for constructing hypothesis tests and confidence sets that have finite sample guarantees without regularity conditions. We refer to such procedures as <code>universal. ...&lt;/summary&gt;&lt;br&gt;'' The method is very simple and is based on a modified version of the usual likelihood ratio statistic, that we call</code>the split likelihood ratio test’’ (split LRT). The method is especially appealing for irregular statistical models. Canonical examples include mixture models and models that arise in shape-constrained inference. %mixture models and shape-constrained models are just two examples. Constructing tests and confidence sets for such models is notoriously difficult. Typical inference methods, like the likelihood ratio test, are not useful in these cases because they have intractable limiting distributions. In contrast, the method we suggest works for any parametric model and also for some nonparametric models. The split LRT can also be used with profile likelihoods to deal with nuisance parameters, and it can also be run sequentially to yield anytime-valid <span class="math inline">\(p\)</span>-values and confidence sequences.
+</details>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="physics">Physics</h3>
+<table class="table table-striped table-condensed" style="margin-left: auto; margin-right: auto;">
+<tbody>
+<tr grouplength="1">
+<td colspan="1" style="background-color: #666; color: #fff;">
+<strong>Computational Physics (physics.comp-ph)</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.11440v1" style="color: #d9230f">Interfacial Atomic Number Contrast in Thick TEM Samples</a></b><br><em>Instrumentation and Detectors, Computational Physics</em>. 2 authors. <a href="http://arxiv.org/pdf/1912.11440v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>The atomic number contrast imaging technique reveals an increase in intensity at interfaces of a high and low-density material in case of relatively thick samples. Elastic scattering factors and absorption coefficients are incorporated in a probabilistic model to study atomic contrast occurring at the interface of two materials when the High-Angle Annular Dark-Field (HAADF) detector is used in the Scanning TEM (STEM) mode. …</summary><br> Simulations of thick samples reveal that electrons traverse from a higher density material to a lower density material near the interface which increases the HAADF-STEM signal. This effect is more dominant in TEM samples of thickness greater than 100 nm and the increase in signal occurs up to 20 nm from the interface. The behavior of electrons near the interface is explained by comparing the simulation results with experimental TEM micrographs in the HAADF-STEM mode.
+</details>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="quantitative-biology">Quantitative Biology</h3>
+<table class="table table-striped table-condensed" style="margin-left: auto; margin-right: auto;">
+<tbody>
+<tr grouplength="1">
+<td colspan="1" style="background-color: #666; color: #fff;">
+<strong>Quantitative Methods (q-bio.QM)</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.11430v1" style="color: #d9230f">TF3P: Three-dimensional Force Fields Fingerprint Learned by Deep Capsular Network</a></b><br><em>Biomolecules, Quantitative Methods, Machine Learning</em>. 8 authors. <a href="http://arxiv.org/pdf/1912.11430v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Molecular fingerprints are the workhorse in ligand-based drug discovery. In recent years, increasing number of research papers reported fascinating results on using deep neural networks to learn 2D molecular representations as fingerprints. …</summary><br> One may anticipate that the integration of deep learning would also contribute to the prosperity of 3D fingerprints. Here, we presented a new 3D small molecule fingerprint, the three-dimensional force fields fingerprint (TF3P), learned by deep capsular network whose training is in no need of labeled dataset for specific predictive tasks. TF3P can encode the 3D force fields information of molecules and demonstrates its stronger ability to capture 3D structural changes, recognize molecules alike in 3D but not in 2D, and recognize similar targets inaccessible by other fingerprints, including the solely existing 3D fingerprint E3FP, based on only ligands similarity. Furthermore, TF3P is compatible with both statistical models (e.g. similarity ensemble approach) and machine learning models. Altogether, we report TF3P as a new 3D small molecule fingerprint with promising future in ligand-based drug discovery.
+</details>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!--radix_placeholder_article_footer-->
+<!--/radix_placeholder_article_footer-->
+</div>
+
+<div class="d-appendix">
+</div>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+<!--radix_placeholder_site_after_body-->
+<!--/radix_placeholder_site_after_body-->
+<!--radix_placeholder_appendices-->
+<div class="appendix-bottom"></div>
+<!--/radix_placeholder_appendices-->
+<!--radix_placeholder_navigation_after_body-->
+<!--/radix_placeholder_navigation_after_body-->
+
+</body>
+
+</html>
