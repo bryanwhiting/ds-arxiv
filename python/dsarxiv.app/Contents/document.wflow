@@ -59,14 +59,7 @@
 				<key>ActionParameters</key>
 				<dict>
 					<key>COMMAND_STRING</key>
-					<string>/Users/bryanwhiting/venvs/py37/bin/python3 /Users/bryanwhiting/gitlab/newsfeed/src/main.py
-
-cd /Users/bryanwhiting/gitlab/newsfeed
-git add .
-git commit -am "Uploading newsfeed"
-git push
-
-exit</string>
+					<string>/Users/bryanwhiting/venvs/py37/bin/python3 /Users/bryanwhiting/github/ds-arxiv/python/main.py</string>
 					<key>CheckedForUserDefaultShell</key>
 					<true/>
 					<key>inputMethod</key>
@@ -176,12 +169,10 @@ exit</string>
 						<string>4</string>
 					</dict>
 				</dict>
-				<key>conversionLabel</key>
-				<integer>0</integer>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>309.000000:433.000000</string>
+				<string>309.000000:253.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>

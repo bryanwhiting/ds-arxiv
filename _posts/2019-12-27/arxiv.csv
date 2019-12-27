@@ -38,7 +38,7 @@ refinement and evaluation, and the accordingly generated Web-based
 domain-specific tool, which we also provide as an artifact for cooperative
 experimentation. In particular, the artifact allows readers to combine a given
 Random Forest with their own ADDs regarded as expert knowledge and to
-experience the corresponding effect.",cs.SE,"cs.AI, cs.SE, cs.PL, cs.LG",4,Software Engineering,"Artificial Intelligence, Software Engineering, Programming Languages, Machine Learning",Bernhard Steffen,"Frederik Gossen, Alnis Murtovi, Philip Zweihoff, Bernhard Steffen",4,http://arxiv.org/pdf/1912.11308v1,http://arxiv.org/abs/1912.11308v1,2019-12-24
+experience the corresponding effect.",cs.SE,"cs.SE, cs.LG, cs.AI, cs.PL",4,Software Engineering,"Software Engineering, Machine Learning, Artificial Intelligence, Programming Languages",Bernhard Steffen,"Frederik Gossen, Alnis Murtovi, Philip Zweihoff, Bernhard Steffen",4,http://arxiv.org/pdf/1912.11308v1,http://arxiv.org/abs/1912.11308v1,2019-12-24
 "Stochastic Fairness and Language-Theoretic Fairness in Planning on
   Nondeterministic Domains","We address two central notions of fairness in the literature of planning on
 nondeterministic fully observable domains. The first, which we call stochastic
@@ -79,7 +79,7 @@ an analysis by employing a self-consistent Comptonized accretion disk model
 accounting for the scatter of disk photons by the corona, and measure low inner
 disk truncation radius across the bright intermediate states, using the
 temperature dependent values of spectral hardening factor, thereby
-independently confirming our results from the reflection spectrum analysis.",astro-ph.HE,"physics.data-an, gr-qc, hep-ex, physics.plasm-ph, astro-ph.HE",5,High Energy Astrophysical Phenomena,"Data Analysis, Statistics and Probability, General Relativity and Quantum Cosmology, High Energy Physics - Experiment, Plasma Physics, High Energy Astrophysical Phenomena",Fiona A. Harrison,"Navin Sridhar, Javier A. García, James F. Steiner, Riley M. T. Connors, Victoria Grinberg, Fiona A. Harrison",6,http://arxiv.org/pdf/1912.11447v1,http://arxiv.org/abs/1912.11447v1,2019-12-24
+independently confirming our results from the reflection spectrum analysis.",astro-ph.HE,"hep-ex, gr-qc, astro-ph.HE, physics.data-an, physics.plasm-ph",5,High Energy Astrophysical Phenomena,"High Energy Physics - Experiment, General Relativity and Quantum Cosmology, High Energy Astrophysical Phenomena, Data Analysis, Statistics and Probability, Plasma Physics",Fiona A. Harrison,"Navin Sridhar, Javier A. García, James F. Steiner, Riley M. T. Connors, Victoria Grinberg, Fiona A. Harrison",6,http://arxiv.org/pdf/1912.11447v1,http://arxiv.org/abs/1912.11447v1,2019-12-24
 "Continuous-variable quantum cryptography with discrete alphabets:
   Composable security under collective Gaussian attacks","We consider continuous-variable quantum key distribution with
 discrete-alphabet encodings. In particular, we study protocols where
@@ -124,7 +124,7 @@ solely existing 3D fingerprint E3FP, based on only ligands similarity.
 Furthermore, TF3P is compatible with both statistical models (e.g. similarity
 ensemble approach) and machine learning models. Altogether, we report TF3P as a
 new 3D small molecule fingerprint with promising future in ligand-based drug
-discovery.",q-bio.QM,"cs.LG, q-bio.BM, q-bio.QM",3,Quantitative Methods,"Machine Learning, Biomolecules, Quantitative Methods",Zhenming Liu,"Yanxing Wang, Jianxing Hu, Junyong Lai, Yibo Li, Hongwei Jin, Lihe Zhang, Liangren Zhang, Zhenming Liu",8,http://arxiv.org/pdf/1912.11430v1,http://arxiv.org/abs/1912.11430v1,2019-12-24
+discovery.",q-bio.QM,"q-bio.QM, cs.LG, q-bio.BM",3,Quantitative Methods,"Quantitative Methods, Machine Learning, Biomolecules",Zhenming Liu,"Yanxing Wang, Jianxing Hu, Junyong Lai, Yibo Li, Hongwei Jin, Lihe Zhang, Liangren Zhang, Zhenming Liu",8,http://arxiv.org/pdf/1912.11430v1,http://arxiv.org/abs/1912.11430v1,2019-12-24
 "The Dynamics of Financial Markets: Fibonacci numbers, Elliott waves, and
   solitons","In this paper information theoretical approach is applied to the description
 of financial markets. A model which is expected to describe the markets
@@ -198,7 +198,7 @@ they have intractable limiting distributions. In contrast, the method we
 suggest works for any parametric model and also for some nonparametric models.
 The split LRT can also be used with profile likelihoods to deal with nuisance
 parameters, and it can also be run sequentially to yield anytime-valid
-$p$-values and confidence sequences.",math.ST,"stat.ME, stat.ML, stat.TH, math.ST",4,Statistics Theory,"Methodology, Machine Learning, Statistics Theory, Statistics Theory",Sivaraman Balakrishnan,"Larry Wasserman, Aaditya Ramdas, Sivaraman Balakrishnan",3,http://arxiv.org/pdf/1912.11436v1,http://arxiv.org/abs/1912.11436v1,2019-12-24
+$p$-values and confidence sequences.",math.ST,"math.ST, stat.ML, stat.TH, stat.ME",4,Statistics Theory,"Statistics Theory, Machine Learning, Statistics Theory, Methodology",Sivaraman Balakrishnan,"Larry Wasserman, Aaditya Ramdas, Sivaraman Balakrishnan",3,http://arxiv.org/pdf/1912.11436v1,http://arxiv.org/abs/1912.11436v1,2019-12-24
 Bayesian Aggregation,"A general challenge in statistics is prediction in the presence of multiple
 candidate models or learning algorithms. Model aggregation tries to combine all
 predictive distributions from individual models, which is more stable and
@@ -251,7 +251,7 @@ narrows the gap between previous models of first-spike-time learning and
 biological neuronal dynamics, thereby also enabling fast and energy-efficient
 inference on analog neuromorphic devices that inherit these dynamics from their
 biological archetypes, which we demonstrate on two generations of the
-BrainScaleS analog neuromorphic architecture.",cs.NE,"stat.ML, cs.ET, cs.NE, q-bio.NC",4,Neural and Evolutionary Computing,"Machine Learning, Emerging Technologies, Neural and Evolutionary Computing, Neurons and Cognition",Mihai Alexandru Petrovici,"Julian Göltz, Andreas Baumbach, Sebastian Billaudelle, Oliver Breitwieser, Dominik Dold, Laura Kriener, Akos Ferenc Kungl, Walter Senn, Johannes Schemmel, Karlheinz Meier, Mihai Alexandru Petrovici",11,http://arxiv.org/pdf/1912.11443v1,http://arxiv.org/abs/1912.11443v1,2019-12-24
+BrainScaleS analog neuromorphic architecture.",cs.NE,"stat.ML, q-bio.NC, cs.NE, cs.ET",4,Neural and Evolutionary Computing,"Machine Learning, Neurons and Cognition, Neural and Evolutionary Computing, Emerging Technologies",Mihai Alexandru Petrovici,"Julian Göltz, Andreas Baumbach, Sebastian Billaudelle, Oliver Breitwieser, Dominik Dold, Laura Kriener, Akos Ferenc Kungl, Walter Senn, Johannes Schemmel, Karlheinz Meier, Mihai Alexandru Petrovici",11,http://arxiv.org/pdf/1912.11443v1,http://arxiv.org/abs/1912.11443v1,2019-12-24
 "Detection of Community Structures in Networks with Nodal Features based
   on Generative Probabilistic Approach","Community detection is considered as a fundamental task in analyzing social
 networks. Even though many techniques have been proposed for community
@@ -267,7 +267,7 @@ without any prior assumption on the communities. Furthermore, the model is
 capable of determining the strength of node features and structural elements of
 the networks on shaping the communities. The effectiveness of the proposed
 approach over the state-of-the-art algorithms is revealed on synthetic and
-benchmark networks.",cs.SI,"stat.ML, cs.SI",2,Social and Information Networks,"Machine Learning, Social and Information Networks",Mahdi Jalili,"Hadi Zare, Mahdi Hajiabadi, Mahdi Jalili",3,http://arxiv.org/pdf/1912.11420v1,http://arxiv.org/abs/1912.11420v1,2019-12-24
+benchmark networks.",cs.SI,"cs.SI, stat.ML",2,Social and Information Networks,"Social and Information Networks, Machine Learning",Mahdi Jalili,"Hadi Zare, Mahdi Hajiabadi, Mahdi Jalili",3,http://arxiv.org/pdf/1912.11420v1,http://arxiv.org/abs/1912.11420v1,2019-12-24
 Broad Learning System Based on Maximum Correntropy Criterion,"As an effective and efficient discriminative learning method, Broad Learning
 System (BLS) has received increasing attention due to its outstanding
 performance in various regression and classification problems. However, the
@@ -335,7 +335,7 @@ information leakage through models, and enables us using existing
 privacy-preserving algorithms that mitigate the risk of information leakage
 through the model's output (predictions). Cronus also has a significantly lower
 sample complexity, compared to federated learning, which does not bind its
-security to the number of participants.",stat.ML,"stat.ML, cs.CR, cs.LG",3,Machine Learning,"Machine Learning, Cryptography and Security, Machine Learning",Amir Houmansadr,"Hongyan Chang, Virat Shejwalkar, Reza Shokri, Amir Houmansadr",4,http://arxiv.org/pdf/1912.11279v1,http://arxiv.org/abs/1912.11279v1,2019-12-24
+security to the number of participants.",stat.ML,"stat.ML, cs.LG, cs.CR",3,Machine Learning,"Machine Learning, Machine Learning, Cryptography and Security",Amir Houmansadr,"Hongyan Chang, Virat Shejwalkar, Reza Shokri, Amir Houmansadr",4,http://arxiv.org/pdf/1912.11279v1,http://arxiv.org/abs/1912.11279v1,2019-12-24
 "Mining User Behaviour from Smartphone data, a literature review","To study users' travel behaviour and travel time between origin and
 destination, researchers employ travel surveys. Although there is consensus in
 the field about the potential, after over ten years of research and field
@@ -420,7 +420,7 @@ further introduce audio renderings based on geometrical acoustic simulations
 for a set of publicly available 3D assets and instrument AI-Habitat to support
 the new sensor, making it possible to insert arbitrary sound sources in an
 array of apartment, office, and hotel environments. Our results show that audio
-greatly benefits embodied visual navigation in 3D spaces.",cs.CV,"eess.AS, cs.SD, cs.HC, cs.CV",4,Computer Vision and Pattern Recognition,"Audio and Speech Processing, Sound, Human-Computer Interaction, Computer Vision and Pattern Recognition",Kristen Grauman,"Changan Chen, Unnat Jain, Carl Schissler, Sebastia Vicenc Amengual Gari, Ziad Al-Halah, Vamsi Krishna Ithapu, Philip Robinson, Kristen Grauman",8,http://arxiv.org/pdf/1912.11474v1,http://arxiv.org/abs/1912.11474v1,2019-12-24
+greatly benefits embodied visual navigation in 3D spaces.",cs.CV,"eess.AS, cs.HC, cs.CV, cs.SD",4,Computer Vision and Pattern Recognition,"Audio and Speech Processing, Human-Computer Interaction, Computer Vision and Pattern Recognition, Sound",Kristen Grauman,"Changan Chen, Unnat Jain, Carl Schissler, Sebastia Vicenc Amengual Gari, Ziad Al-Halah, Vamsi Krishna Ithapu, Philip Robinson, Kristen Grauman",8,http://arxiv.org/pdf/1912.11474v1,http://arxiv.org/abs/1912.11474v1,2019-12-24
 Dense RepPoints: Representing Visual Objects with Dense Point Sets,"We present an object representation, called \textbf{Dense RepPoints}, for
 flexible and detailed modeling of object appearance and geometry. In contrast
 to the coarse geometric localization and feature extraction of bounding boxes,
@@ -581,7 +581,7 @@ Using gene expression models, we simulate its ability to perform arbitrary
 linear classifications from multiple inputs. Finally, we construct a two-layer
 neural network to demonstrate scalability and nonlinear decision boundaries,
 and discuss future directions for utilizing uncontrolled neurons in
-computational tasks.",cs.NE,"cs.ET, cs.NE, q-bio.MN",3,Neural and Evolutionary Computing,"Emerging Technologies, Neural and Evolutionary Computing, Molecular Networks",Sihao Huang,Sihao Huang,1,http://arxiv.org/pdf/1912.11423v1,http://arxiv.org/abs/1912.11423v1,2019-12-24
+computational tasks.",cs.NE,"cs.NE, cs.ET, q-bio.MN",3,Neural and Evolutionary Computing,"Neural and Evolutionary Computing, Emerging Technologies, Molecular Networks",Sihao Huang,Sihao Huang,1,http://arxiv.org/pdf/1912.11423v1,http://arxiv.org/abs/1912.11423v1,2019-12-24
 Audio-based automatic mating success prediction of giant pandas,"Giant pandas, stereotyped as silent animals, make significantly more vocal
 sounds during breeding season, suggesting that sounds are essential for
 coordinating their reproduction and expression of mating preference. Previous
@@ -598,7 +598,7 @@ recurrent units to extract vocal features, and applies attention mechanism to
 force the network to focus on most relevant features. Evaluation experiments on
 a data set collected during the past nine years obtain promising results,
 proving the potential of audio-based automatic mating success prediction
-methods in assisting giant panda reproduction.",cs.SD,"cs.LG, cs.SD, eess.AS",3,Sound,"Machine Learning, Sound, Audio and Speech Processing",Zhihe Zhang,"WeiRan Yan, MaoLin Tang, Qijun Zhao, Peng Chen, Dunwu Qi, Rong Hou, Zhihe Zhang",7,http://arxiv.org/pdf/1912.11333v1,http://arxiv.org/abs/1912.11333v1,2019-12-24
+methods in assisting giant panda reproduction.",cs.SD,"cs.LG, eess.AS, cs.SD",3,Sound,"Machine Learning, Audio and Speech Processing, Sound",Zhihe Zhang,"WeiRan Yan, MaoLin Tang, Qijun Zhao, Peng Chen, Dunwu Qi, Rong Hou, Zhihe Zhang",7,http://arxiv.org/pdf/1912.11333v1,http://arxiv.org/abs/1912.11333v1,2019-12-24
 "Comparison of the P300 detection accuracy related to the BCI speller and
   image recognition scenarios","There are several protocols in the Electroencephalography (EEG) recording
 scenarios which produce various types of event-related potentials (ERP). P300
@@ -618,7 +618,7 @@ increased by increasing the number of trials and channels. The results prove
 that better accuracy is observed in the case of the image recognition scenario
 for the different sets of channels and by using the different number of trials.
 So it can be concluded that P300 pattern which produced in image recognition
-paradigm is more separable than BCI (matrix speller).",eess.SP,"eess.SP, q-bio.NC, cs.LG, cs.HC",4,Signal Processing,"Signal Processing, Neurons and Cognition, Machine Learning, Human-Computer Interaction",S. Mirzakuchaki,"S. A. Karimi, A. M. Mijani, M. T. Talebian, S. Mirzakuchaki",4,http://arxiv.org/pdf/1912.11371v1,http://arxiv.org/abs/1912.11371v1,2019-12-24
+paradigm is more separable than BCI (matrix speller).",eess.SP,"cs.HC, eess.SP, cs.LG, q-bio.NC",4,Signal Processing,"Human-Computer Interaction, Signal Processing, Machine Learning, Neurons and Cognition",S. Mirzakuchaki,"S. A. Karimi, A. M. Mijani, M. T. Talebian, S. Mirzakuchaki",4,http://arxiv.org/pdf/1912.11371v1,http://arxiv.org/abs/1912.11371v1,2019-12-24
 Assessing differentially private deep learning with Membership Inference,"Releasing data in the form of trained neural networks with differential
 privacy promises meaningful anonymization. However, there is an inherent
 privacy-accuracy trade-off in differential privacy which is challenging to
@@ -636,7 +636,7 @@ differential privacy yields a consistently better privacy-accuracy trade-off in
 all cases. We also show that the relative privacy-accuracy trade-off, instead
 of strictly declining linearly over $\epsilon$, is only favorable within a
 small interval. For this purpose we propose $\varphi$, a ratio expressing the
-relative privacy-accuracy trade-off.",cs.CR,"cs.CR, cs.LG",2,Cryptography and Security,"Cryptography and Security, Machine Learning",Florian Kerschbaum,"Daniel Bernau, Philip-William Grassal, Jonas Robl, Florian Kerschbaum",4,http://arxiv.org/pdf/1912.11328v1,http://arxiv.org/abs/1912.11328v1,2019-12-24
+relative privacy-accuracy trade-off.",cs.CR,"cs.LG, cs.CR",2,Cryptography and Security,"Machine Learning, Cryptography and Security",Florian Kerschbaum,"Daniel Bernau, Philip-William Grassal, Jonas Robl, Florian Kerschbaum",4,http://arxiv.org/pdf/1912.11328v1,http://arxiv.org/abs/1912.11328v1,2019-12-24
 "An Analisys of Application Logs with Splunk : developing an App for the
   synthetic analysis of data and security incidents","The present work aims to enhance the application logs of an hypothetical
 infrastructure platform, and to build an App that displays the synthetic data
@@ -644,7 +644,7 @@ about performance, anomalies and security incidents synthesized in the form of
 a Dashboard. The reference architecture, with multiple applications and
 multiple HW distribution, implementing a Service Oriented Architecture, is a
 real case of which the details have been abstracted because we want to extend
-the concept to all architectures with similar characteristics.",cs.CR,"cs.CR, cs.LG",2,Cryptography and Security,"Cryptography and Security, Machine Learning",Roberto Bruzzese,Roberto Bruzzese,1,http://arxiv.org/pdf/1912.11283v1,http://arxiv.org/abs/1912.11283v1,2019-12-24
+the concept to all architectures with similar characteristics.",cs.CR,"cs.LG, cs.CR",2,Cryptography and Security,"Machine Learning, Cryptography and Security",Roberto Bruzzese,Roberto Bruzzese,1,http://arxiv.org/pdf/1912.11283v1,http://arxiv.org/abs/1912.11283v1,2019-12-24
 Interfacial Atomic Number Contrast in Thick TEM Samples,"The atomic number contrast imaging technique reveals an increase in intensity
 at interfaces of a high and low-density material in case of relatively thick
 samples. Elastic scattering factors and absorption coefficients are
@@ -656,7 +656,7 @@ density material near the interface which increases the HAADF-STEM signal. This
 effect is more dominant in TEM samples of thickness greater than 100 nm and the
 increase in signal occurs up to 20 nm from the interface. The behavior of
 electrons near the interface is explained by comparing the simulation results
-with experimental TEM micrographs in the HAADF-STEM mode.",physics.comp-ph,"physics.comp-ph, physics.ins-det",2,Computational Physics,"Computational Physics, Instrumentation and Detectors",Helge Heinrich,"Aniruddha Dutta, Helge Heinrich",2,http://arxiv.org/pdf/1912.11440v1,http://arxiv.org/abs/1912.11440v1,2019-12-24
+with experimental TEM micrographs in the HAADF-STEM mode.",physics.comp-ph,"physics.ins-det, physics.comp-ph",2,Computational Physics,"Instrumentation and Detectors, Computational Physics",Helge Heinrich,"Aniruddha Dutta, Helge Heinrich",2,http://arxiv.org/pdf/1912.11440v1,http://arxiv.org/abs/1912.11440v1,2019-12-24
 Evaporative cooling of icy interstellar grains. I,"Context. While radiative cooling of interstellar grains is a well-known
 process, little detail is known about the cooling of grains with an icy mantle
 that contains volatile adsorbed molecules. Aims. We explore basic details for
@@ -681,7 +681,7 @@ the nonpolar volatile species induces a complete change of the ice surface, as
 the refractory polar molecules (H2O) are left behind. Conclusions. The
 effectiveness of thermal desorption from heated icy grains (e.g., the yield of
 cosmic-ray-induced desorption) is primarily controlled by the thermal energy
-content of the grain and the number and availability of volatile molecules.",astro-ph.GA,"astro-ph.GA, physics.comp-ph, physics.space-ph",3,Astrophysics of Galaxies,"Astrophysics of Galaxies, Computational Physics, Space Physics",Juris Roberts Kalnin,"Juris Kalvans, Juris Roberts Kalnin",2,http://arxiv.org/pdf/1912.11378v1,http://arxiv.org/abs/1912.11378v1,2019-12-24
+content of the grain and the number and availability of volatile molecules.",astro-ph.GA,"physics.space-ph, physics.comp-ph, astro-ph.GA",3,Astrophysics of Galaxies,"Space Physics, Computational Physics, Astrophysics of Galaxies",Juris Roberts Kalnin,"Juris Kalvans, Juris Roberts Kalnin",2,http://arxiv.org/pdf/1912.11378v1,http://arxiv.org/abs/1912.11378v1,2019-12-24
 "Computational framework for monolithic coupling for thin fluid flow in
   contact interfaces","We develop a computational framework for simulating thin fluid flow in narrow
 interfaces between contacting solids, which is relevant for a range
@@ -706,4 +706,4 @@ under increasing external load until the complete sealing of the interface is
 displayed. Finally, effective properties of flat-on-flat rough contact
 interfaces such as transmissivity and real contact area growth are calculated
 using the developed framework, showing qualitatively new results compared to
-the one-way coupling approximation.",cs.CE,"cs.CE, J.2, physics.comp-ph, cs.NA, math.NA",5,"Computational Engineering, Finance, and Science","Computational Engineering, Finance, and Science, Computational Physics, Numerical Analysis, Numerical Analysis",Vladislav A. Yastrebov,"Andrei G. Shvarts, Julien Vignollet, Vladislav A. Yastrebov",3,http://arxiv.org/pdf/1912.11292v1,http://arxiv.org/abs/1912.11292v1,2019-12-24
+the one-way coupling approximation.",cs.CE,"J.2, cs.CE, cs.NA, math.NA, physics.comp-ph",5,"Computational Engineering, Finance, and Science","Computational Engineering, Finance, and Science, Numerical Analysis, Numerical Analysis, Computational Physics",Vladislav A. Yastrebov,"Andrei G. Shvarts, Julien Vignollet, Vladislav A. Yastrebov",3,http://arxiv.org/pdf/1912.11292v1,http://arxiv.org/abs/1912.11292v1,2019-12-24
