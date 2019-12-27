@@ -200,7 +200,7 @@ if __name__ == '__main__':
         # Default is to filter to yesterday's publications
         date_query = datetime.strftime(datetime.now() - timedelta(1), '%Y-%m-%d')
         # for debugging:
-        date_query = '2019-12-24'
+        # date_query = '2019-12-24'
 
 
         # Begin the flow

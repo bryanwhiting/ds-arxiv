@@ -26,4 +26,9 @@ def create_twitter_api():
     api = tweepy.API(auth, wait_on_rate_limit=True)
     return api
 
+# Send direct message
+api = create_twitter_api()
+api.send_direct_message(recipient_id=mypass.MY_TWITTER_ID, text='hello')
+
+
 # TODO: scrape tweets: https://gist.github.com/vickyqian/f70e9ab3910c7c290d9d715491cde44c
