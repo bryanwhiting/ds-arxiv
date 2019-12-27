@@ -196,10 +196,12 @@ def knit_rmd_to_html(fp_post):
     os.system(cmd)
 
 @task
-def create_tweet(dir_post, fp_post):
+def create_tweet(dir_post, date_published, date_query):
+    url_post = f'https://bryanwhiting.github.io/ds-arxiv/posts/{date_published}/'
     fp_tweet = os.path.join(dir_post, 'tweet.txt')
     tweet = read_file(filename=fp_tweet)
-    tweet = f'{tweet}. Read at {fp_post}'
+    tweet = tweet.replace('XXYESTERDAY_DATEXX', date_query)
+    tweet = f'{tweet}Read at {url_post}'
     return tweet
 
 @task
@@ -239,9 +241,10 @@ if __name__ == '__main__':
         knit2 = knit_rmd_to_html(fp_post=fp_post)
         knit2.set_dependencies(upstream_tasks=[knit, replace])
         gcp = git_commit_push()
+        gcp.set_dependencies(upstream_tasks=[knit2])
 
         # Send tweets
-        tweet = create_tweet(dir_post, fp_post)
+        tweet = create_tweet(dir_post, date_published=date_today, date_query=date_query)
         tweet.set_dependencies(upstream_tasks=[gcp])
         tweet_b = tweet_bryan(tweet=tweet)
 
