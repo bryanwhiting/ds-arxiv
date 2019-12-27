@@ -202,7 +202,7 @@ save(df_summary, file = 'output_df_summary.Rda')
 # "There were 60 new data-science articles published on archive yesterday, with 24 talking about machine learning."
 n_articles <- nrow(df)
 n_ml <- df %>% filter(str_detect(tags, 'stat.ML|cs.LG')) %>% nrow()
-tweet <- paste(n_articles, 'new #datascience research articles were published on @arXiv yesterday.', n_ml, 'discussed #machinelearning.')
+tweet <- paste(n_articles, 'new #datascience research articles were published on XXYESTERDAY_DATEXX.', n_ml, 'discussed #machinelearning.')
 write(tweet, 'tweet.txt')
 
 
