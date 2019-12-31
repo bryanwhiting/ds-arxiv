@@ -104,7 +104,6 @@ def parse_arxiv_post(post, arx_dict):
 def df_get_arxiv(
     arx_list, 
     arx_dict, 
-    filter_to_date,
  ):
     """Loop all the arx_list categories and combine into one"""
     df = pd.DataFrame()
@@ -115,6 +114,15 @@ def df_get_arxiv(
 
     # Pares date 
     df['date'] = pd.to_datetime(df['date']).dt.date.astype('str')
+    return df
+
+@task
+def determine_filter_date(df):
+
+    # Default is to filter to yesterday's publications
+    # filter_to_date = datetime.strftime(datetime.now() - timedelta(1), '%Y-%m-%d')
+    # for debugging:
+    # date_query = '2019-12-24'
 
     # filter to today's date and remove duplicates
     # FIXME
@@ -125,7 +133,12 @@ def df_get_arxiv(
     # have been queried. But since nobody cares about this blog yet, I'm just going to do the "max" date.
     # If anyone ever cares, then I can start indexing which dates have been published. For now, i'll just 
     # publish the latest day on record.
+    # Instead of taking filter_to_date as an argument I return it
     filter_to_date = df.date.max()
+    return filter_to_date
+
+@task
+def filter_df_arxiv(df, filter_to_date):
     df = df[df['date'] == filter_to_date]
     df = df.drop_duplicates(['title', 'date'])
     if len(df) > 0:
@@ -226,19 +239,22 @@ def tweet_world(tweet):
     api.update_status(tweet)
 
 if __name__ == '__main__':
+    from prefect.tasks.core.constants import Constant
+    # Use Constant() to avoid prefect blowing up the DAG with the 
+    # dicionary values: https://docs.prefect.io/core/tutorials/task-guide.html#adding-tasks-to-flows
+
     # using the Imperitive API: https://docs.prefect.io/core/concepts/flows.html#imperative-api
     with Flow('Build Arxiv') as flow:
 
         # Dates
         date_today = datetime.now().strftime('%Y-%m-%d')
-        # Default is to filter to yesterday's publications
-        date_query = datetime.strftime(datetime.now() - timedelta(1), '%Y-%m-%d')
-        # for debugging:
-        # date_query = '2019-12-24'
 
         # Begin the flow. Will fail if len(df) = 0
         # FIXME: date_query is actually overwritten within the function to just be the max date. See function for details.
-        df = df_get_arxiv(arx_list, arx_dict, filter_to_date=date_query)
+        df_full = df_get_arxiv(Constant(arx_list), Constant(arx_dict))
+        filter_to_date = determine_filter_date(df_full)
+        df = filter_df_arxiv(df=df_full, filter_to_date=filter_to_date)
+
 
         # Creating the Post folder, save the dataframe there, and build the rmd
         dir_post = create_dir_post(date_published=date_today)
@@ -249,7 +265,7 @@ if __name__ == '__main__':
         knit.set_dependencies(upstream_tasks = [written_df])
         
         # once knit, re-build with tweet. Requires set_dependencies to avoid conflict
-        replace = replace_rmd_template_metadata(dir_post=dir_post, fp_post=fp_post, date_today=date_today, date_query=date_query)
+        replace = replace_rmd_template_metadata(dir_post=dir_post, fp_post=fp_post, date_today=date_today, date_query=filter_to_date)
         replace.set_dependencies(upstream_tasks=[knit])
         knit2 = knit_rmd_to_html(fp_post=fp_post)
         knit2.set_dependencies(upstream_tasks=[knit, replace])
@@ -257,17 +273,19 @@ if __name__ == '__main__':
         gcp.set_dependencies(upstream_tasks=[knit2])
 
         # Send tweets
-        tweet = create_tweet(dir_post, date_published=date_today, date_query=date_query)
+        tweet = create_tweet(dir_post, date_published=date_today, date_query=filter_to_date)
         tweet.set_dependencies(upstream_tasks=[gcp])
         tweet_b = tweet_bryan(tweet=tweet)
         tweet_w = tweet_world(tweet=tweet)
 
     # flow.visualize()    
     state = flow.run()
+    flow.visualize(flow_state=state)
 
-    # debug: 
-    state.result[df]
-    raise state.result[df].result   
+    # TO debug: 
+    # put a breakpoint() in your functions above. you don't need the below.
+    # state.result[df]
+    # raise state.result[df].result   
     # breakpoint()
     # print('hello')     
         # Read in the produced tweet (after HTML compiled)

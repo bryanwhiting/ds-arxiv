@@ -1,8 +1,8 @@
 
 ---
-title: "Articles from 2019-12-30"
+title: "Articles from 2019-12-27"
 description: |
-  38 new data science research articles were published on 2019-12-30. 18 discussed machine learning.
+  38 new data science research articles were published on 2019-12-27. 18 discussed machine learning.
 
 date: 2019-12-31
 author:
@@ -203,7 +203,7 @@ save(df_summary, file = 'output_df_summary.Rda')
 # "There were 60 new data-science articles published on archive yesterday, with 24 talking about machine learning."
 n_articles <- nrow(df)
 n_ml <- df %>% filter(str_detect(tags, 'stat.ML|cs.LG')) %>% nrow()
-tweet <- paste(n_articles, 'new #datascience research articles were published on 2019-12-30.', n_ml, 'discussed #machinelearning.')
+tweet <- paste(n_articles, 'new #datascience research articles were published on 2019-12-27.', n_ml, 'discussed #machinelearning.')
 write(tweet, 'tweet.txt')
 
 
