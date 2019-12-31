@@ -1,0 +1,614 @@
+title,summary,primary_tag,tags,n_tags,primary_category,categories,author,authors,n_authors,url_pdf,url_href,date
+Learning by Cheating,"Vision-based urban driving is hard. The autonomous system needs to learn to
+perceive the world and act in it. We show that this challenging learning
+problem can be simplified by decomposing it into two stages. We first train an
+agent that has access to privileged information. This privileged agent cheats
+by observing the ground-truth layout of the environment and the positions of
+all traffic participants. In the second stage, the privileged agent acts as a
+teacher that trains a purely vision-based sensorimotor agent. The resulting
+sensorimotor agent does not have access to any privileged information and does
+not cheat. This two-stage training procedure is counter-intuitive at first, but
+has a number of important advantages that we analyze and empirically
+demonstrate. We use the presented approach to train a vision-based autonomous
+driving system that substantially outperforms the state of the art on the CARLA
+benchmark and the recent NoCrash benchmark. Our approach achieves, for the
+first time, 100% success rate on all tasks in the original CARLA benchmark,
+sets a new record on the NoCrash benchmark, and reduces the frequency of
+infractions by an order of magnitude compared to the prior state of the art.
+For the video that summarizes this work, see https://youtu.be/u9ZCxxD-UUw",cs.RO,"cs.LG, cs.AI, cs.RO, cs.CV",4,Robotics,"Machine Learning, Artificial Intelligence, Robotics, Computer Vision and Pattern Recognition",Philipp Krähenbühl,"Dian Chen, Brady Zhou, Vladlen Koltun, Philipp Krähenbühl",4,http://arxiv.org/pdf/1912.12294v1,http://arxiv.org/abs/1912.12294v1,2019-12-27
+Evolutionary Clustering via Message Passing,"We are often interested in clustering objects that evolve over time and
+identifying solutions to the clustering problem for every time step.
+Evolutionary clustering provides insight into cluster evolution and temporal
+changes in cluster memberships while enabling performance superior to that
+achieved by independently clustering data collected at different time points.
+In this paper we introduce evolutionary affinity propagation (EAP), an
+evolutionary clustering algorithm that groups data points by exchanging
+messages on a factor graph. EAP promotes temporal smoothness of the solution to
+clustering time-evolving data by linking the nodes of the factor graph that are
+associated with adjacent data snapshots, and introduces consensus nodes to
+enable cluster tracking and identification of cluster births and deaths. Unlike
+existing evolutionary clustering methods that require additional processing to
+approximate the number of clusters or match them across time, EAP determines
+the number of clusters and tracks them automatically. A comparison with
+existing methods on simulated and experimental data demonstrates effectiveness
+of the proposed EAP algorithm.",cs.LG,"cs.LG, cs.AI, cs.NE, stat.ML",4,Machine Learning,"Machine Learning, Artificial Intelligence, Neural and Evolutionary Computing, Machine Learning",Haris Vikalo,"Natalia M. Arzeno, Haris Vikalo",2,http://arxiv.org/pdf/1912.11970v1,http://arxiv.org/abs/1912.11970v1,2019-12-27
+"Discussion on a ""Dynamic model to conceptualize multiple environmental
+  pathways to the epidemic of Chronic Kidney Disease of unknown etiology
+  (CKDu)""","Jayasinghe et al. [Science of the Total Environment, 705 (2020) 135766]
+propose a 'dynamical' model of Chronic Kidney Disease of Unknown etiology
+(CKDu) wherein CKDu arises as an emergent property of a complex system where
+they claim that weak multiple environmental factors contribute. They criticize
+the usual approaches as being ""reductionist"". We use their model as a basis of
+a discussion on the possibility of treating CKDu as an emergent property
+resulting from the interaction of multiple weak environmental factors with the
+organism. The model does not reveal anything beyond what is already known from
+simple considerations of well-known feed-back loops, but has the merit of
+re-stating those issues in a different format. If a proper weighting of the
+possible environmental factors is included, most proposed environmental factors
+drop out and what Jayasinghe et al. call the ""reductionist"" approach naturally
+arises due to the weight of evidence. The theory that the consumption of water
+containing fluoride and magnesium ions as found in water from regolith aquifers
+drawn via house-hold wells is found to clearly hold within this model when
+proper weighting is included. However, we show by examples that such models can
+be easily misused, leading to completely misleading conclusions. A response
+formalism useful in the theory of complex systems and emergent modes is
+presented in the context of the current problem. In addition to there being a
+lack of adequate data to fully implement such a theory, it is seen that such
+elaborations are unnecessary and misleading in the present context.",q-bio.QM,"q-bio.QM, nlin.AO",2,Quantitative Methods,"Quantitative Methods, Adaptation and Self-Organizing Systems",M. W. C. Dharma-wardana,M. W. C. Dharma-wardana,1,http://arxiv.org/pdf/1912.12248v1,http://arxiv.org/abs/1912.12248v1,2019-12-27
+"Precision limits of tissue microstructure characterization by Magnetic
+  Resonance Imaging","Characterization of microstructures in live tissues is one of the keys to
+diagnosing early stages of pathology and understanding disease mechanisms.
+However, the extraction of reliable information on biomarkers based on
+microstructure details is still a challenge, as the size of features that can
+be resolved with non-invasive Magnetic Resonance Imaging (MRI) is orders of
+magnitude larger than the relevant structures. Here we derive from quantum
+information theory the ultimate precision limits for obtaining such details by
+MRI probing of water-molecule diffusion. We show that already available MRI
+pulse sequences can be optimized to attain the ultimate precision limits by
+choosing control parameters that are uniquely determined by the expected size,
+the diffusion coefficient and the spin relaxation time $T_{2}$. By attaining
+the ultimate precision limit per measurement, the number of measurements and
+the total acquisition time may be drastically reduced compared to the present
+state of the art. These results will therefore allow MRI to advance towards
+unravelling a wealth of diagnostic information.",quant-ph,"q-bio.QM, quant-ph, physics.med-ph",3,Quantum Physics,"Quantitative Methods, Quantum Physics, Medical Physics",Gonzalo A. Alvarez,"Analia Zwick, Dieter Suter, Gershon Kurizki, Gonzalo A. Alvarez",4,http://arxiv.org/pdf/1912.12239v1,http://arxiv.org/abs/1912.12239v1,2019-12-27
+A general statistical model for waiting times until collapse of a system,"The distribution of waiting times until the occurrence of a critical event is
+a crucial statistical problem across several disciplines in Science. In this
+work we present a statistical model in which a relevant quantity X accumulates
+until overcoming a threshold X*, which defines the collapse. The obtained
+waiting time distribution is a mixture of gamma distributions, which in turn
+can be approximated as an effective gamma distribution.",stat.AP,stat.AP,1,Applications,Applications,Gonzalo Gutiérrez,"Vivianne Olguín-Arias, Sergio Davis, Gonzalo Gutiérrez",3,http://arxiv.org/pdf/1912.12275v1,http://arxiv.org/abs/1912.12275v1,2019-12-27
+"Statistical Agnostic Mapping: a Framework in Neuroimaging based on
+  Concentration Inequalities","In the 70s a novel branch of statistics emerged focusing its effort in
+selecting a function in the pattern recognition problem, which fulfils a
+definite relationship between the quality of the approximation and its
+complexity. These data-driven approaches are mainly devoted to problems of
+estimating dependencies with limited sample sizes and comprise all the
+empirical out-of sample generalization approaches, e.g. cross validation (CV)
+approaches. Although the latter are \emph{not designed for testing competing
+hypothesis or comparing different models} in neuroimaging, there are a number
+of theoretical developments within this theory which could be employed to
+derive a Statistical Agnostic (non-parametric) Mapping (SAM) at voxel or
+multi-voxel level. Moreover, SAMs could relieve i) the problem of instability
+in limited sample sizes when estimating the actual risk via the CV approaches,
+e.g. large error bars, and provide ii) an alternative way of Family-wise-error
+(FWE) corrected p-value maps in inferential statistics for hypothesis testing.
+In this sense, we propose a novel framework in neuroimaging based on
+concentration inequalities, which results in (i) a rigorous development for
+model validation with a small sample/dimension ratio, and (ii) a
+less-conservative procedure than FWE p-value correction, to determine the brain
+significance maps from the inferences made using small upper bounds of the
+actual risk.",stat.ML,"cs.LG, stat.AP, stat.ML, eess.IV",4,Machine Learning,"Machine Learning, Applications, Machine Learning, Image and Video Processing",CAM neuroscience,"J M Gorriz, SiPBA Group, CAM neuroscience",3,http://arxiv.org/pdf/1912.12274v1,http://arxiv.org/abs/1912.12274v1,2019-12-27
+Bayesian joint modeling of chemical structure and dose response curves,"Today there are approximately 85,000 chemicals regulated under the Toxic
+Substances Control Act, with around 2,000 new chemicals introduced each year.
+It is impossible to screen all of these chemicals for potential toxic effects
+either via full organism in vivo studies or in vitro high-throughput screening
+(HTS) programs. Toxicologists face the challenge of choosing which chemicals to
+screen, and predicting the toxicity of as-yet-unscreened chemicals. Our goal is
+to describe how variation in chemical structure relates to variation in
+toxicological response to enable in silico toxicity characterization designed
+to meet both of these challenges. With our Bayesian partially Supervised Sparse
+and Smooth Factor Analysis (BS3FA) model, we learn a distance between chemicals
+targeted to toxicity, rather than one based on molecular structure alone. Our
+model also enables the prediction of chemical dose-response profiles based on
+chemical structure (that is, without in vivo or in vitro testing) by taking
+advantage of a large database of chemicals that have already been tested for
+toxicity in HTS programs. We show superior simulation performance in distance
+learning and modest to large gains in predictive ability compared to existing
+methods. Results from the high-throughput screening data application elucidate
+the relationship between chemical structure and a toxicity-relevant
+high-throughput assay. An R package for BS3FA is available online at
+https://github.com/kelrenmor/bs3fa.",stat.AP,stat.AP,1,Applications,Applications,Amy H. Herring,"Kelly R. Moran, David Dunson, Amy H. Herring",3,http://arxiv.org/pdf/1912.12228v1,http://arxiv.org/abs/1912.12228v1,2019-12-27
+"Comparative Analysis of Predictive Methods for Early Assessment of
+  Compliance with Continuous Positive Airway Pressure Therapy","Patients suffering from obstructive sleep apnea are mainly treated with
+continuous positive airway pressure (CPAP). Good compliance with this therapy
+is broadly accepted as more than 4h of CPAP average use nightly. Although it is
+a highly effective treatment, compliance with this therapy is problematic to
+achieve with serious consequences for the patients' health. Previous works
+already reported factors significantly related to compliance with the therapy.
+However, further research is still required to support clinicians to early
+anticipate patients' therapy compliance. This work intends to take a further
+step in this direction by building compliance classifiers with CPAP therapy at
+three different moments of the patient follow-up (i.e. before the therapy
+starts and at months 1 and 3 after the baseline). Results of the clinical trial
+confirmed that month 3 was the time-point with the most accurate classifier
+reaching an f1-score of 87% and 84% in cross-validation and test. At month 1,
+performances were almost as high as in month 3 with 82% and 84% of f1-score. At
+baseline, where no information about patients' CPAP use was given yet, the best
+classifier achieved 73% and 76% of f1-score in cross-validation and test set
+respectively. Subsequent analyses carried out with the best classifiers of each
+time point revealed that certain baseline factors (i.e. headaches,
+psychological symptoms, arterial hypertension and EuroQol visual analogue
+scale) were closely related to the prediction of compliance independently of
+the time-point. In addition, among the variables taken only during the
+follow-up of the patients, Epworth and the average nighttime hours were the
+most important to predict compliance with CPAP.",cs.LG,"cs.LG, J.3, stat.AP, stat.ML",4,Machine Learning,"Machine Learning, Applications, Machine Learning",Eloisa Vargiu,"Xavier Rafael-Palou, Cecilia Turino, Alexander Steblin, Manuel Sánchez-de-la-Torre, Ferran Barbé, Eloisa Vargiu",6,http://arxiv.org/pdf/1912.12116v1,http://arxiv.org/abs/1912.12116v1,2019-12-27
+The Chi-Square Test of Distance Correlation,"Distance correlation has gained much recent attention in the statistics and
+machine learning community: the sample statistic is straightforward to compute,
+works for any metric or kernel choice, and equals 0 asymptotically if and only
+if independence. One major bottleneck is the testing process: the null
+distribution of distance correlation depends on the metric choice and marginal
+distributions, which cannot be readily estimated. To compute a p-value, the
+standard approach is to estimate the null distribution via permutation, which
+generally requires O(rn^2) time complexity for n samples and r permutations and
+too costly for big data applications. In this paper, we propose a chi-square
+distribution to approximate the null distribution of the unbiased distance
+correlation. We prove that the chi-square distribution either equals or
+well-approximates the null distribution, and always upper tail dominates the
+null distribution. The resulting distance correlation chi-square test does not
+require any permutation nor parameter estimation, is simple and fast to
+implement, works with any strong negative type metric or characteristic kernel,
+is valid and universally consistent for independence testing, and enjoys a
+similar finite-sample testing power as the standard permutation test. When
+testing one-dimensional data using Euclidean distance, the unbiased distance
+correlation testing runs in O(nlog(n)), rendering it comparable in speed to the
+Pearson correlation t-test. The results are supported and demonstrated via
+simulations.",stat.ML,"stat.ML, stat.ME, stat.TH, math.ST, cs.LG",5,Machine Learning,"Machine Learning, Methodology, Statistics Theory, Statistics Theory, Machine Learning",Joshua T. Vogelstein,"Cencheng Shen, Joshua T. Vogelstein",2,http://arxiv.org/pdf/1912.12150v1,http://arxiv.org/abs/1912.12150v1,2019-12-27
+"Projection pursuit based on Gaussian mixtures and evolutionary
+  algorithms","We propose a projection pursuit (PP) algorithm based on Gaussian mixture
+models (GMMs). The negentropy obtained from a multivariate density estimated by
+GMMs is adopted as the PP index to be maximised. For a fixed dimension of the
+projection subspace, the GMM-based density estimation is projected onto that
+subspace, where an approximation of the negentropy for Gaussian mixtures is
+computed. Then, Genetic Algorithms (GAs) are used to find the optimal,
+orthogonal projection basis by maximising the former approximation. We show
+that this semi-parametric approach to PP is flexible and allows highly
+informative structures to be detected, by projecting multivariate datasets onto
+a subspace, where the data can be feasibly visualised. The performance of the
+proposed approach is shown on both artificial and real datasets.",stat.ML,"cs.LG, stat.ML, stat.ME, cs.NE",4,Machine Learning,"Machine Learning, Machine Learning, Methodology, Neural and Evolutionary Computing",Alessio Serafini,"Luca Scrucca, Alessio Serafini",2,http://arxiv.org/pdf/1912.12049v1,http://arxiv.org/abs/1912.12049v1,2019-12-27
+Predicting Attributes of Nodes Using Network Structure,"In many graphs such as social networks, nodes have associated attributes
+representing their behavior. Predicting node attributes in such graphs is an
+important problem with applications in many domains like recommendation
+systems, privacy preservation, and targeted advertisement. Attributes values
+can be predicted by analyzing patterns and correlations among attributes and
+employing classification/regression algorithms. However, these approaches do
+not utilize readily available network topology information. In this regard,
+interconnections between different attributes of nodes can be exploited to
+improve the prediction accuracy. In this paper, we propose an approach to
+represent a node by a feature map with respect to an attribute $a_i$ (which is
+used as input for machine learning algorithms) using all attributes of
+neighbors to predict attributes values for $a_i$. We perform extensive
+experimentation on ten real-world datasets and show that the proposed feature
+map significantly improves the prediction accuracy as compared to baseline
+approaches on these datasets.",cs.LG,"cs.LG, stat.ML",2,Machine Learning,"Machine Learning, Machine Learning",Muhammad Asad Khan,"Sarwan Ali, Muhammad Haroon Shakeel, Imdadullah Khan, Safiullah Faizullah, Muhammad Asad Khan",5,http://arxiv.org/pdf/1912.12264v1,http://arxiv.org/abs/1912.12264v1,2019-12-27
+Nonlinear Markov Clustering by Minimum Curvilinear Sparse Similarity,"The development of algorithms for unsupervised pattern recognition by
+nonlinear clustering is a notable problem in data science. Markov clustering
+(MCL) is a renowned algorithm that simulates stochastic flows on a network of
+sample similarities to detect the structural organization of clusters in the
+data, but it has never been generalized to deal with data nonlinearity. Minimum
+Curvilinearity (MC) is a principle that approximates nonlinear sample distances
+in the high-dimensional feature space by curvilinear distances, which are
+computed as transversal paths over their minimum spanning tree, and then stored
+in a kernel. Here we propose MC-MCL, which is the first nonlinear kernel
+extension of MCL and exploits Minimum Curvilinearity to enhance the performance
+of MCL in real and synthetic data with underlying nonlinear patterns. MC-MCL is
+compared with baseline clustering methods, including DBSCAN, K-means and
+affinity propagation. We find that Minimum Curvilinearity provides a valuable
+framework to estimate nonlinear distances also when its kernel is applied in
+combination with MCL. Indeed, MC-MCL overcomes classical MCL and even baseline
+clustering algorithms in different nonlinear datasets.",cs.LG,"cs.LG, stat.ML",2,Machine Learning,"Machine Learning, Machine Learning",CV. Cannistraci,"C. Duran, A. Acevedo, S. Ciucci, A. Muscoloni, CV. Cannistraci",5,http://arxiv.org/pdf/1912.12211v1,http://arxiv.org/abs/1912.12211v1,2019-12-27
+Learning Neural Activations,"An artificial neuron is modelled as a weighted summation followed by an
+activation function which determines its output. A wide variety of activation
+functions such as rectified linear units (ReLU), leaky-ReLU, Swish, MISH, etc.
+have been explored in the literature. In this short paper, we explore what
+happens when the activation function of each neuron in an artificial neural
+network is learned natively from data alone. This is achieved by modelling the
+activation function of each neuron as a small neural network whose weights are
+shared by all neurons in the original network. We list our primary findings in
+the conclusions section. The code for our analysis is available at:
+https://github.com/amina01/Learning-Neural-Activations.",cs.LG,"cs.LG, cs.NE, stat.ML",3,Machine Learning,"Machine Learning, Neural and Evolutionary Computing, Machine Learning",Amina Asif,"Fayyaz ul Amir Afsar Minhas, Amina Asif",2,http://arxiv.org/pdf/1912.12187v1,http://arxiv.org/abs/1912.12187v1,2019-12-27
+Split Learning for collaborative deep learning in healthcare,"Shortage of labeled data has been holding the surge of deep learning in
+healthcare back, as sample sizes are often small, patient information cannot be
+shared openly, and multi-center collaborative studies are a burden to set up.
+Distributed machine learning methods promise to mitigate these problems. We
+argue for a split learning based approach and apply this distributed learning
+method for the first time in the medical field to compare performance against
+(1) centrally hosted and (2) non collaborative configurations for a range of
+participants. Two medical deep learning tasks are used to compare split
+learning to conventional single and multi center approaches: a binary
+classification problem of a data set of 9000 fundus photos, and multi-label
+classification problem of a data set of 156,535 chest X-rays. The several
+distributed learning setups are compared for a range of 1-50 distributed
+participants. Performance of the split learning configuration remained constant
+for any number of clients compared to a single center study, showing a marked
+difference compared to the non collaborative configuration after 2 clients (p <
+0.001) for both sets. Our results affirm the benefits of collaborative training
+of deep neural networks in health care. Our work proves the significant benefit
+of distributed learning in healthcare, and paves the way for future real-world
+implementations.",cs.LG,"cs.LG, stat.ML, cs.DC",3,Machine Learning,"Machine Learning, Machine Learning, Distributed, Parallel, and Cluster Computing",Ramesh Raskar,"Maarten G. Poirot, Praneeth Vepakomma, Ken Chang, Jayashree Kalpathy-Cramer, Rajiv Gupta, Ramesh Raskar",6,http://arxiv.org/pdf/1912.12115v1,http://arxiv.org/abs/1912.12115v1,2019-12-27
+Quaternion Equivariant Capsule Networks for 3D Point Clouds,"We present a 3D capsule architecture for processing of point clouds that is
+equivariant with respect to the $SO(3)$ rotation group, translation and
+permutation of the unordered input sets. The network operates on a sparse set
+of local reference frames, computed from an input point cloud and establishes
+end-to-end equivariance through a novel 3D quaternion group capsule layer,
+including an equivariant dynamic routing procedure. The capsule layer enables
+us to disentangle geometry from pose, paving the way for more informative
+descriptions and a structured latent space. In the process, we theoretically
+connect the process of dynamic routing between capsules to the well-known
+Weiszfeld algorithm, a scheme for solving \emph{iterative re-weighted least
+squares (IRLS)} problems with provable convergence properties, enabling robust
+pose estimation between capsule layers. Due to the sparse equivariant
+quaternion capsules, our architecture allows joint object classification and
+orientation estimation, which we validate empirically on common benchmark
+datasets.",cs.LG,"stat.ML, cs.CV, cs.RO, cs.LG, cs.GR",5,Machine Learning,"Machine Learning, Computer Vision and Pattern Recognition, Robotics, Machine Learning, Graphics",Federico Tombari,"Yongheng Zhao, Tolga Birdal, Jan Eric Lenssen, Emanuele Menegatti, Leonidas Guibas, Federico Tombari",6,http://arxiv.org/pdf/1912.12098v1,http://arxiv.org/abs/1912.12098v1,2019-12-27
+Efficient Data Analytics on Augmented Similarity Triplets,"Many machine learning methods (classification, clustering, etc.) start with a
+known kernel that provides similarity or distance measure between two objects.
+Recent work has extended this to situations where the information about objects
+is limited to comparisons of distances between three objects (triplets). Humans
+find the comparison task much easier than the estimation of absolute
+similarities, so this kind of data can be easily obtained using crowd-sourcing.
+In this work, we give an efficient method of augmenting the triplets data, by
+utilizing additional implicit information inferred from the existing data.
+Triplets augmentation improves the quality of kernel-based and kernel-free data
+analytics tasks. Secondly, we also propose a novel set of algorithms for common
+supervised and unsupervised machine learning tasks based on triplets. These
+methods work directly with triplets, avoiding kernel evaluations. Experimental
+evaluation on real and synthetic datasets shows that our methods are more
+accurate than the current best-known techniques.",cs.LG,"cs.LG, stat.ML",2,Machine Learning,"Machine Learning, Machine Learning",Asim Karim,"Muhammad Ahmad, Muhammad Haroon Shakeel, Sarwan Ali, Imdadullah Khan, Arif Zaman, Asim Karim",6,http://arxiv.org/pdf/1912.12064v1,http://arxiv.org/abs/1912.12064v1,2019-12-27
+Minimax Semiparametric Learning With Approximate Sparsity,"Many objects of interest can be expressed as a linear, mean square continuous
+functional of a least squares projection (regression). Often the regression may
+be high dimensional, depending on many variables. This paper gives minimal
+conditions for root-n consistent and efficient estimation of such objects when
+the regression and the Riesz representer of the functional are approximately
+sparse and the sum of the absolute value of the coefficients is bounded. The
+approximately sparse functions we consider are those where an approximation by
+some $t$ regressors has root mean square error less than or equal to
+$Ct^{-\xi}$ for $C,$ $\xi>0.$ We show that a necessary condition for efficient
+estimation is that the sparse approximation rate $\xi_{1}$ for the regression
+and the rate $\xi_{2}$ for the Riesz representer satisfy $\max\{\xi_{1}
+,\xi_{2}\}>1/2.$ This condition is stronger than the corresponding condition
+$\xi_{1}+\xi_{2}>1/2$ for Holder classes of functions. We also show that Lasso
+based, cross-fit, debiased machine learning estimators are asymptotically
+efficient under these conditions. In addition we show efficiency of an
+estimator without cross-fitting when the functional depends on the regressors
+and the regression sparse approximation rate satisfies $\xi_{1}>1/2$.",math.ST,"econ.EM, stat.TH, math.ST",3,Statistics Theory,"Econometrics, Statistics Theory, Statistics Theory",Yinchu Zhu,"Jelena Bradic, Victor Chernozhukov, Whitney K. Newey, Yinchu Zhu",4,http://arxiv.org/pdf/1912.12213v1,http://arxiv.org/abs/1912.12213v1,2019-12-27
+"On the identifiability of interaction functions in systems of
+  interacting particles","Identifiability is of fundamental importance in the statistical learning of
+dynamical systems of interacting particles. We prove that the interaction
+functions are identifiable for a class of first-order stochastic systems,
+including linear systems and a class of nonlinear systems with stationary
+distributions in the decentralized directions. We show that the identfiability
+is equivalent to strict positiveness of integral operators associated to
+integral kernels arisen from the nonparametric regression. We then prove the
+positiveness based on series representation of the integral kernels and a
+M\""untz type theorem for the completeness of even polynomials.",math.ST,"math.CA, 62G08, 42A82, 62M86, math.PR, stat.TH, math.ST, math.DS",6,Statistics Theory,"Classical Analysis and ODEs, Probability, Statistics Theory, Statistics Theory, Dynamical Systems",Cheng Zhang,"Zhongyang Li, Fei Lu, Mauro Maggioni, Sui Tang, Cheng Zhang",5,http://arxiv.org/pdf/1912.11965v1,http://arxiv.org/abs/1912.11965v1,2019-12-27
+"Seeing without Looking: Contextual Rescoring of Object Detections for AP
+  Maximization","The majority of current object detectors lack context: class predictions are
+made independently from other detections. We propose to incorporate context in
+object detection by post-processing the output of an arbitrary detector to
+rescore the confidences of its detections. Rescoring is done by conditioning on
+contextual information from the entire set of detections: their confidences,
+predicted classes, and positions. We show that AP can be improved by simply
+reassigning the detection confidence values such that true positives that
+survive longer (i.e., those with the correct class and large IoU) are scored
+higher than false positives or detections with small IoU. In this setting, we
+use a bidirectional RNN with attention for contextual rescoring and introduce a
+training target that uses the IoU with ground truth to maximize AP for the
+given set of detections. The fact that our approach does not require access to
+visual features makes it computationally inexpensive and agnostic to the
+detection architecture. In spite of this simplicity, our model consistently
+improves AP over strong pre-trained baselines (Cascade R-CNN and Faster R-CNN
+with several backbones), particularly by reducing the confidence of duplicate
+detections (a learned form of non-maximum suppression) and removing
+out-of-context objects by conditioning on the confidences, classes, positions,
+and sizes of the co-occurrent detections (e.g., a high-confidence detection of
+bird makes a detection of sports ball less likely).",cs.CV,cs.CV,1,Computer Vision and Pattern Recognition,Computer Vision and Pattern Recognition,Pedro M. Q. Aguiar,"Lourenço V. Pato, Renato Negrinho, Pedro M. Q. Aguiar",3,http://arxiv.org/pdf/1912.12290v1,http://arxiv.org/abs/1912.12290v1,2019-12-27
+"Combining Deep Learning and Verification for Precise Object Instance
+  Detection","Deep learning object detectors often return false positives with very high
+confidence. Although they optimize generic detection performance, such as mean
+average precision (mAP), they are not designed for reliability. For a reliable
+detection system, if a high confidence detection is made, we would want high
+certainty that the object has indeed been detected. To achieve this, we have
+developed a set of verification tests which a proposed detection must pass to
+be accepted. We develop a theoretical framework which proves that, under
+certain assumptions, our verification tests will not accept any false
+positives. Based on an approximation to this framework, we present a practical
+detection system that can verify, with high precision, whether each detection
+of a machine-learning based object detector is correct. We show that these
+tests can improve the overall accuracy of a base detector and that accepted
+examples are highly likely to be correct. This allows the detector to operate
+in a high precision regime and can thus be used for robotic perception systems
+as a reliable instance detection method.",cs.CV,"cs.LG, cs.CV, eess.IV",3,Computer Vision and Pattern Recognition,"Machine Learning, Computer Vision and Pattern Recognition, Image and Video Processing",David Held,"Siddharth Ancha, Junyu Nan, David Held",3,http://arxiv.org/pdf/1912.12270v1,http://arxiv.org/abs/1912.12270v1,2019-12-27
+"Local Class-Specific and Global Image-Level Generative Adversarial
+  Networks for Semantic-Guided Scene Generation","In this paper, we address the task of semantic-guided scene generation. One
+open challenge in scene generation is the difficulty of the generation of small
+objects and detailed local texture, which has been widely observed in global
+image-level generation methods. To tackle this issue, in this work we consider
+learning the scene generation in a local context, and correspondingly design a
+local class-specific generative network with semantic maps as a guidance, which
+separately constructs and learns sub-generators concentrating on the generation
+of different classes, and is able to provide more scene details. To learn more
+discriminative class-specific feature representations for the local generation,
+a novel classification module is also proposed. To combine the advantage of
+both the global image-level and the local class-specific generation, a joint
+generation network is designed with an attention fusion module and a
+dual-discriminator structure embedded. Extensive experiments on two scene image
+generation tasks show superior generation performance of the proposed model.
+The state-of-the-art results are established by large margins on both tasks and
+on challenging public benchmarks. The source code and trained models are
+available at https://github.com/Ha0Tang/LGGAN.",cs.CV,"cs.LG, cs.CV, eess.IV",3,Computer Vision and Pattern Recognition,"Machine Learning, Computer Vision and Pattern Recognition, Image and Video Processing",Nicu Sebe,"Hao Tang, Dan Xu, Yan Yan, Philip H. S. Torr, Nicu Sebe",5,http://arxiv.org/pdf/1912.12215v1,http://arxiv.org/abs/1912.12215v1,2019-12-27
+"A 3D-Deep-Learning-based Augmented Reality Calibration Method for
+  Robotic Environments using Depth Sensor Data","Augmented Reality and mobile robots are gaining much attention within
+industries due to the high potential to make processes cost and time efficient.
+To facilitate augmented reality, a calibration between the Augmented Reality
+device and the environment is necessary. This is a challenge when dealing with
+mobile robots due to the mobility of all entities making the environment
+dynamic. On this account, we propose a novel approach to calibrate the
+Augmented Reality device using 3D depth sensor data. We use the depth camera of
+a cutting edge Augmented Reality Device - the Microsoft Hololens for deep
+learning based calibration. Therefore, we modified a neural network based on
+the recently published VoteNet architecture which works directly on the point
+cloud input observed by the Hololens. We achieve satisfying results and
+eliminate external tools like markers, thus enabling a more intuitive and
+flexible work flow for Augmented Reality integration. The results are adaptable
+to work with all depth cameras and are promising for further research.
+Furthermore, we introduce an open source 3D point cloud labeling tool, which is
+to our knowledge the first open source tool for labeling raw point cloud data.",cs.CV,"cs.LG, cs.CV, cs.RO",3,Computer Vision and Pattern Recognition,"Machine Learning, Computer Vision and Pattern Recognition, Robotics",Jens Lambrecht,"Linh Kästner, Vlad Catalin Frasineanu, Jens Lambrecht",3,http://arxiv.org/pdf/1912.12101v1,http://arxiv.org/abs/1912.12101v1,2019-12-27
+"One Point, One Object: Simultaneous 3D Object Segmentation and 6-DOF
+  Pose Estimation","We propose a single-shot method for simultaneous 3D object segmentation and
+6-DOF pose estimation in pure 3D point clouds scenes based on a consensus that
+\emph{one point only belongs to one object}, i.e., each point has the potential
+power to predict the 6-DOF pose of its corresponding object. Unlike the
+recently proposed methods of the similar task, which rely on 2D detectors to
+predict the projection of 3D corners of the 3D bounding boxes and the 6-DOF
+pose must be estimated by a PnP like spatial transformation method, ours is
+concise enough not to require additional spatial transformation between
+different dimensions. Due to the lack of training data for many objects, the
+recently proposed 2D detection methods try to generate training data by using
+rendering engine and achieve good results. However, rendering in 3D space along
+with 6-DOF is relatively difficult. Therefore, we propose an augmented reality
+technology to generate the training data in semi-virtual reality 3D space. The
+key component of our method is a multi-task CNN architecture that can
+simultaneously predicts the 3D object segmentation and 6-DOF pose estimation in
+pure 3D point clouds.
+  For experimental evaluation, we generate expanded training data for two
+state-of-the-arts 3D object datasets \cite{PLCHF}\cite{TLINEMOD} by using
+Augmented Reality technology (AR). We evaluate our proposed method on the two
+datasets. The results show that our method can be well generalized into
+multiple scenarios and provide performance comparable to or better than the
+state-of-the-arts.",cs.CV,cs.CV,1,Computer Vision and Pattern Recognition,Computer Vision and Pattern Recognition,Yandong Tang,"Hongsen Liu, Yang Cong, Yandong Tang",3,http://arxiv.org/pdf/1912.12095v1,http://arxiv.org/abs/1912.12095v1,2019-12-27
+Pointwise Attention-Based Atrous Convolutional Neural Networks,"With the rapid progress of deep convolutional neural networks, in almost all
+robotic applications, the availability of 3D point clouds improves the accuracy
+of 3D semantic segmentation methods. Rendering of these irregular,
+unstructured, and unordered 3D points to 2D images from multiple viewpoints
+imposes some issues such as loss of information due to 3D to 2D projection,
+discretizing artifacts, and high computational costs. To efficiently deal with
+a large number of points and incorporate more context of each point, a
+pointwise attention-based atrous convolutional neural network architecture is
+proposed. It focuses on salient 3D feature points among all feature maps while
+considering outstanding contextual information via spatial channel-wise
+attention modules. The proposed model has been evaluated on the two most
+important 3D point cloud datasets for the 3D semantic segmentation task. It
+achieves a reasonable performance compared to state-of-the-art models in terms
+of accuracy, with a much smaller number of parameters.",cs.CV,cs.CV,1,Computer Vision and Pattern Recognition,Computer Vision and Pattern Recognition,Shohreh Kasaei,"Mobina Mahdavi, Fahimeh Fooladgar, Shohreh Kasaei",3,http://arxiv.org/pdf/1912.12082v1,http://arxiv.org/abs/1912.12082v1,2019-12-27
+"A sparsity augmented probabilistic collaborative representation based
+  classification method","In order to enhance the performance of image recognition, a sparsity
+augmented probabilistic collaborative representation based classification
+(SA-ProCRC) method is presented. The proposed method obtains the dense
+coefficient through ProCRC, then augments the dense coefficient with a sparse
+one, and the sparse coefficient is attained by the orthogonal matching pursuit
+(OMP) algorithm. In contrast to conventional methods which require explicit
+computation of the reconstruction residuals for each class, the proposed method
+employs the augmented coefficient and the label matrix of the training samples
+to classify the test sample. Experimental results indicate that the proposed
+method can achieve promising results for face and scene images. The source code
+of our proposed SA-ProCRC is accessible at
+https://github.com/yinhefeng/SAProCRC.",cs.CV,cs.CV,1,Computer Vision and Pattern Recognition,Computer Vision and Pattern Recognition,He-Feng Yin,"Xiao-Yun Cai, He-Feng Yin",2,http://arxiv.org/pdf/1912.12044v1,http://arxiv.org/abs/1912.12044v1,2019-12-27
+Deep Learning for 3D Point Clouds: A Survey,"Point cloud learning has lately attracted increasing attention due to its
+wide applications in many areas, such as computer vision, autonomous driving,
+and robotics. As a dominating technique in AI, deep learning has been
+successfully used to solve various 2D vision problems. However, deep learning
+on point clouds is still in its infancy due to the unique challenges faced by
+the processing of point clouds with deep neural networks. Recently, deep
+learning on point clouds has become even thriving, with numerous methods being
+proposed to address different problems in this area. To stimulate future
+research, this paper presents a comprehensive review of recent progress in deep
+learning methods for point clouds. It covers three major tasks, including 3D
+shape classification, 3D object detection and tracking, and 3D point cloud
+segmentation. It also presents comparative results on several publicly
+available datasets, together with insightful observations and inspiring future
+research directions.",cs.CV,"cs.LG, cs.CV, cs.RO, eess.IV",4,Computer Vision and Pattern Recognition,"Machine Learning, Computer Vision and Pattern Recognition, Robotics, Image and Video Processing",Mohammed Bennamoun,"Yulan Guo, Hanyun Wang, Qingyong Hu, Hao Liu, Li Liu, Mohammed Bennamoun",6,http://arxiv.org/pdf/1912.12033v1,http://arxiv.org/abs/1912.12033v1,2019-12-27
+A General Framework for Saliency Detection Methods,"Saliency detection is one of the most challenging problems in the fields of
+image analysis and computer vision. Many approaches propose different
+architectures based on the psychological and biological properties of the human
+visual attention system. However, there is not still an abstract framework,
+which summarized the existed methods. In this paper, we offered a general
+framework for saliency models, which consists of five main steps:
+pre-processing, feature extraction, saliency map generation, saliency map
+combination, and post-processing. Also, we study different saliency models
+containing each level and compare their performance together. This framework
+helps researchers to have a comprehensive view of studying new methods.",cs.CV,cs.CV,1,Computer Vision and Pattern Recognition,Computer Vision and Pattern Recognition,Shadrokh Samavi,"Fateme Mostafaie, Zahra Nabizadeh, Nader Karimi, Shadrokh Samavi",4,http://arxiv.org/pdf/1912.12027v1,http://arxiv.org/abs/1912.12027v1,2019-12-27
+"Visual Agreement Regularized Training for Multi-Modal Machine
+  Translation","Multi-modal machine translation aims at translating the source sentence into
+a different language in the presence of the paired image. Previous work
+suggests that additional visual information only provides dispensable help to
+translation, which is needed in several very special cases such as translating
+ambiguous words. To make better use of visual information, this work presents
+visual agreement regularized training. The proposed approach jointly trains the
+source-to-target and target-to-source translation models and encourages them to
+share the same focus on the visual information when generating semantically
+equivalent visual words (e.g. ""ball"" in English and ""ballon"" in French).
+Besides, a simple yet effective multi-head co-attention model is also
+introduced to capture interactions between visual and textual features. The
+results show that our approaches can outperform competitive baselines by a
+large margin on the Multi30k dataset. Further analysis demonstrates that the
+proposed regularized training can effectively improve the agreement of
+attention on the image, leading to better use of visual information.",cs.CL,"cs.CV, cs.CL",2,Computation and Language,"Computer Vision and Pattern Recognition, Computation and Language",Xu Sun,"Pengcheng Yang, Boxing Chen, Pei Zhang, Xu Sun",4,http://arxiv.org/pdf/1912.12014v1,http://arxiv.org/abs/1912.12014v1,2019-12-27
+An Abstraction Model for Semantic Segmentation Algorithms,"Semantic segmentation is a process of classifying each pixel in the image.
+Due to its advantages, sematic segmentation is used in many tasks such as
+cancer detection, robot-assisted surgery, satellite image analysis,
+self-driving car control, etc. In this process, accuracy and efficiency are the
+two crucial goals for this purpose, and there are several state of the art
+neural networks. In each method, by employing different techniques, new
+solutions have been presented for increasing efficiency, accuracy, and reducing
+the costs. The diversity of the implemented approaches for semantic
+segmentation makes it difficult for researches to achieve a comprehensive view
+of the field. To offer a comprehensive view, in this paper, an abstraction
+model for the task of semantic segmentation is offered. The proposed framework
+consists of four general blocks that cover the majority of majority of methods
+that have been proposed for semantic segmentation. We also compare different
+approaches and consider the importance of each part in the overall performance
+of a method.",cs.CV,cs.CV,1,Computer Vision and Pattern Recognition,Computer Vision and Pattern Recognition,Shadrokh Samavi,"Reihaneh Teymoori, Zahra Nabizadeh, Nader Karimi, Shadrokh Samavi",4,http://arxiv.org/pdf/1912.11995v1,http://arxiv.org/abs/1912.11995v1,2019-12-27
+HoMM: Higher-order Moment Matching for Unsupervised Domain Adaptation,"Minimizing the discrepancy of feature distributions between different domains
+is one of the most promising directions in unsupervised domain adaptation. From
+the perspective of distribution matching, most existing discrepancy-based
+methods are designed to match the second-order or lower statistics, which
+however, have limited expression of statistical characteristic for non-Gaussian
+distributions. In this work, we explore the benefits of using higher-order
+statistics (mainly refer to third-order and fourth-order statistics) for domain
+matching. We propose a Higher-order Moment Matching (HoMM) method, and further
+extend the HoMM into reproducing kernel Hilbert spaces (RKHS). In particular,
+our proposed HoMM can perform arbitrary-order moment tensor matching, we show
+that the first-order HoMM is equivalent to Maximum Mean Discrepancy (MMD) and
+the second-order HoMM is equivalent to Correlation Alignment (CORAL). Moreover,
+the third-order and the fourth-order moment tensor matching are expected to
+perform comprehensive domain alignment as higher-order statistics can
+approximate more complex, non-Gaussian distributions. Besides, we also exploit
+the pseudo-labeled target samples to learn discriminative representations in
+the target domain, which further improves the transfer performance. Extensive
+experiments are conducted, showing that our proposed HoMM consistently
+outperforms the existing moment matching methods by a large margin. Codes are
+available at \url{https://github.com/chenchao666/HoMM-Master}",cs.CV,cs.CV,1,Computer Vision and Pattern Recognition,Computer Vision and Pattern Recognition,Xian-Sheng Hua,"Chao Chen, Zhihang Fu, Zhihong Chen, Sheng Jin, Zhaowei Cheng, Xinyu Jin, Xian-Sheng Hua",7,http://arxiv.org/pdf/1912.11976v1,http://arxiv.org/abs/1912.11976v1,2019-12-27
+"Deep Transfer Learning Based Downlink Channel Prediction for FDD Massive
+  MIMO Systems","Artificial intelligence (AI) based downlink channel state information (CSI)
+prediction for frequency division duplexing (FDD) massive multiple-input
+multiple-output (MIMO) systems has attracted growing attention recently.
+However, existing works focus on the downlink CSI prediction for the users
+under a given environment and is hard to adapt to users in new environment
+especially when labeled data is limited. To address this issue, we formulate
+the downlink channel prediction as a deep transfer learning (DTL) problem,
+where each learning task aims to predict the downlink CSI from the uplink CSI
+for one single environment. Specifically, we develop the direct-transfer
+algorithm based on the fully-connected neural network architecture, where the
+network is trained on the data from all previous environments in the manner of
+classical deep learning and is then fine-tuned for new environments. To further
+improve the transfer efficiency, we propose the meta-learning algorithm that
+trains the network by alternating inner-task and across-task updates and then
+adapts to a new environment with a small number of labeled data. Simulation
+results show that the direct-transfer algorithm achieves better performance
+than the deep learning algorithm, which implies that the transfer learning
+benefits the downlink channel prediction in new environments. Moreover, the
+meta-learning algorithm significantly outperforms the direct-transfer algorithm
+in terms of both prediction accuracy and stability, especially when the number
+of samples is very small, which validates its effectiveness and superiority.",cs.IT,"cs.LG, cs.IT, eess.SP, math.IT",4,Information Theory,"Machine Learning, Information Theory, Signal Processing, Information Theory",Ahmed Alkhateeb,"Yuwen Yang, Feifei Gao, Zhimeng Zhong, Bo Ai, Ahmed Alkhateeb",5,http://arxiv.org/pdf/1912.12265v1,http://arxiv.org/abs/1912.12265v1,2019-12-27
+Emergence of Network Motifs in Deep Neural Networks,"Network science can offer fundamental insights into the structural and
+functional properties of complex systems. For example, it is widely known that
+neuronal circuits tend to organize into basic functional topological modules,
+called ""network motifs"". In this article we show that network science tools can
+be successfully applied also to the study of artificial neural networks
+operating according to self-organizing (learning) principles. In particular, we
+study the emergence of network motifs in multi-layer perceptrons, whose initial
+connectivity is defined as a stack of fully-connected, bipartite graphs. Our
+simulations show that the final network topology is primarily shaped by
+learning dynamics, but can be strongly biased by choosing appropriate weight
+initialization schemes. Overall, our results suggest that non-trivial
+initialization strategies can make learning more effective by promoting the
+development of useful network motifs, which are often surprisingly consistent
+with those observed in general transduction networks.",nlin.AO,"cs.LG, physics.bio-ph, nlin.AO",3,Adaptation and Self-Organizing Systems,"Machine Learning, Biological Physics, Adaptation and Self-Organizing Systems",Amos Maritan,"Matteo Zambra, Alberto Testolin, Amos Maritan",3,http://arxiv.org/pdf/1912.12244v1,http://arxiv.org/abs/1912.12244v1,2019-12-27
+LLOV: A Fast Static Data-Race Checker for OpenMP Programs,"In the era of Exascale computing, writing efficient parallel programs is
+indispensable and at the same time, writing sound parallel programs is highly
+difficult. While parallel programming is easier with frameworks such as OpenMP,
+the possibility of data races in these programs still persists. In this paper,
+we propose a fast, lightweight, language agnostic, and static data race checker
+for OpenMP programs based on the LLVM compiler framework. We compare our tool
+with other state-of-the-art data race checkers on a variety of well-established
+benchmarks. We show that the precision, accuracy, and the F1 score of our tool
+is comparable to other checkers while being orders of magnitude faster. To the
+best of our knowledge, this work is the only tool among the state-of-the-art
+data race checkers that can verify a FORTRAN program to be datarace free.",cs.PL,"cs.SE, cs.PL",2,Programming Languages,"Software Engineering, Programming Languages",Sanjay Rajopadhye,"Utpal Bora, Santanu Das, Pankaj Kureja, Saurabh Joshi, Ramakrishna Upadrasta, Sanjay Rajopadhye",6,http://arxiv.org/pdf/1912.12189v1,http://arxiv.org/abs/1912.12189v1,2019-12-27
+Quantum Monte Carlo Compton profiles of solid and liquid lithium,"We computed the Compton profile of solid and liquid lithium using quantum
+Monte Carlo (QMC) and compared with recent experimental measurements obtaining
+good agreement. Importantly, we find it crucial to account for proper
+core-valence orthogonalization and to address density differences when
+comparing with experiment. To account for disorder effects, we sampled
+finite-temperature configurations using molecular dynamics (MD), then performed
+diffusion Monte Carlo (DMC) simulations on each configuration. We used
+Slater-Jastrow wavefunctions and grand-canonical twist-averaged boundary
+conditions. A QMC pseudopotential correction, derived from an all-electron DMC
+simulation of the perfect crystal was also used. Our calculations provide the
+first all-electron QMC benchmark for the Compton profile of lithium crystal and
+pseudopotential-corrected QMC Compton profiles for both the liquid and solid.",cond-mat.mtrl-sci,"cond-mat.mtrl-sci, physics.comp-ph, cond-mat.str-el",3,Materials Science,"Materials Science, Computational Physics, Strongly Correlated Electrons",David M. Ceperley,"Yubo Yang, Nozomu Hiraoka, Kazuhiro Matsuda, Markus Holzmann, David M. Ceperley",5,http://arxiv.org/pdf/1912.12295v1,http://arxiv.org/abs/1912.12295v1,2019-12-27
+"Calculating the divided differences of the exponential function by
+  addition and removal of inputs","We introduce a method for calculating the divided differences of the
+exponential function by means of addition and removal of items from the input
+list to the function. Our technique exploits a new identity related to divided
+differences recently derived by F. Zivcovich [Dolomites Research Notes on
+Approximation 12, 28-42 (2019)]. We show that upon adding an item to or
+removing an item from the input list of an already evaluated exponential, the
+re-evaluation of the divided differences can be done with only $O(s n)$
+floating point operations and $O(s n)$ bytes of memory, where $[z_0,\dots,z_n]$
+are the inputs and $s \propto \max_{i,j} |z_i - z_j|$. We demonstrate our
+algorithm's ability to deal with input lists that are orders-of-magnitude
+longer than the maximal capacities of the current state-of-the-art. We discuss
+in detail one practical application of our method: the efficient calculation of
+weights in the off-diagonal series expansion quantum Monte Carlo algorithm.",physics.comp-ph,"cs.NA, math.NA, physics.comp-ph",3,Computational Physics,"Numerical Analysis, Numerical Analysis, Computational Physics",Itay Hen,"Lalit Gupta, Lev Barash, Itay Hen",3,http://arxiv.org/pdf/1912.12157v1,http://arxiv.org/abs/1912.12157v1,2019-12-27
+A Parabolic Relaxation Model for the Navier-Stokes-Korteweg Equations,"The isothermal Navier-Stokes-Korteweg system is a classical diffuse interface
+model for compressible two-phase flow. However, the numerical solution faces
+two major challenges: due to a third-order dispersion contribution in the
+momentum equations, extended numerical stencils are required for the flux
+calculation. Furthermore, the equation of state given by a Van-der-Waals law,
+exhibits non-monotone behaviour in the two-phase state space leading to
+imaginary eigenvalues of the Jacobian of the first-order fluxes. In this work a
+lower-order parabolic relaxation model is used to approximate solutions of the
+classical NSK equations. Whereas an additional parabolic evolution equation for
+the relaxation variable has to be solved, the system involves no differential
+operator of higher as second order. The use of a modified pressure function
+guarantees that the first-order fluxes remain hyperbolic. Altogether, the
+relaxation system is directly accessible for standard compressible flow
+solvers. We use the higher-order Discontinuous Galerkin spectral element method
+as realized in the open source code FLEXI. The relaxation model is validated
+against solutions of the original NSK model for a variety of 1D and 2D test
+cases. Three-dimensional simulations of head-on droplet collisions for a range
+of different collision Weber numbers underline the capability of the approach.",physics.flu-dyn,"physics.flu-dyn, physics.comp-ph",2,Fluid Dynamics,"Fluid Dynamics, Computational Physics",Christian Rohde,"Timon Hitz, Jens Keim, Claus-Dieter Munz, Christian Rohde",4,http://arxiv.org/pdf/1912.12059v1,http://arxiv.org/abs/1912.12059v1,2019-12-27
+"Strain tunable pudding-mold-type band structure and thermoelectric
+  properties of SnP$_3$ monolayer","Recent studies indicated the interesting metal-to-semiconductor transition
+when layered bulk GeP3 and SnP3 are restricted to the monolayer or bilayer, and
+SnP3 monolayer has been predicted to possess high carrier mobility and
+promising thermoelectric performance. Here, we investigate the biaxial strain
+effect on the electronic and thermoelectric properties of SnP3 monolayer. Our
+first-principles calculations combined with Boltzmann transport theory indicate
+that SnP3 monolayer has the pudding-mold-type valence band structure, giving
+rise to a large p-type Seebeck coefficient and a high p-type power factor. The
+compressive biaxial strain can decrease the energy gap and result in the
+metallicity. In contrast, the tensile biaxial strain increases the energy gap,
+and increases the n-type Seebeck coefficient and decreases the n-type
+electrical conductivity. Although the lattice thermal conductivity becomes
+larger at a tensile biaxial strain due to the increased maximum frequency of
+the acoustic phonon modes and the increased phonon group velocity, it is still
+low, only e.g. 3.1 W/(mK) at room temperature with the 6% tensile biaxial
+strain. Therefore, SnP3 monolayer is a good thermoelectric material with low
+lattice thermal conductivity even at the 6% tensile strain, and the tensile
+strain is beneficial to the increase of the n-type Seebeck coefficient.",physics.comp-ph,"cond-mat.mtrl-sci, physics.comp-ph",2,Computational Physics,"Materials Science, Computational Physics",Guoying Gao,"Shasha Wei, Cong Wang, Guoying Gao",3,http://arxiv.org/pdf/1912.12048v1,http://arxiv.org/abs/1912.12048v1,2019-12-27
+"An overview of self-consistent field calculations within finite basis
+  sets","A uniform derivation is presented of the self-consistent field equations in a
+finite basis set. Both restricted and unrestricted Hartree-Fock (HF) theory as
+well as various density functional (DF) approximations are considered. The
+unitary invariance of the HF and DF models is discussed, paving the way for the
+use of localized molecular orbitals. The self-consistent field equations are
+derived in a non-orthogonal basis set, and their solution is discussed in the
+presence of linear dependencies in the basis set. It is argued why iterative
+diagonalization of the Kohn-Sham-Fock matrix leads to the minimization of the
+total energy. Alternative methods for the solution of the self-consistent field
+equations via direct minimization as well as stability analysis are also
+briefly discussed. Explicit expressions are given for the contributions to the
+Kohn-Sham-Fock matrix up to meta-GGA functionals. Range-separated hybrids and
+non-local correlation functionals are also briefly discussed.",physics.comp-ph,"physics.chem-ph, physics.comp-ph",2,Computational Physics,"Chemical Physics, Computational Physics",Christian Van Alsenoy,"Susi Lehtola, Frank Blockhuys, Christian Van Alsenoy",3,http://arxiv.org/pdf/1912.12029v1,http://arxiv.org/abs/1912.12029v1,2019-12-27

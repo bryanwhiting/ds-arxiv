@@ -117,6 +117,15 @@ def df_get_arxiv(
     df['date'] = pd.to_datetime(df['date']).dt.date.astype('str')
 
     # filter to today's date and remove duplicates
+    # FIXME
+    # TODO: arxiv has odd publishing dates. So using "yesterday" as the query date doesn't necessarily make sense.
+    # for example, arxiv might publish 4 days of work all on the same date.
+    # this causes problems with getting "the latest".
+    # In order to do this the RIGHT way, I'd keep some internal record of which dates
+    # have been queried. But since nobody cares about this blog yet, I'm just going to do the "max" date.
+    # If anyone ever cares, then I can start indexing which dates have been published. For now, i'll just 
+    # publish the latest day on record.
+    filter_to_date = df.date.max()
     df = df[df['date'] == filter_to_date]
     df = df.drop_duplicates(['title', 'date'])
     if len(df) > 0:
@@ -227,9 +236,9 @@ if __name__ == '__main__':
         # for debugging:
         # date_query = '2019-12-24'
 
-
         # Begin the flow. Will fail if len(df) = 0
-        df = df_get_arxiv(arx_list, arx_dict, date_query)
+        # FIXME: date_query is actually overwritten within the function to just be the max date. See function for details.
+        df = df_get_arxiv(arx_list, arx_dict, filter_to_date=date_query)
 
         # Creating the Post folder, save the dataframe there, and build the rmd
         dir_post = create_dir_post(date_published=date_today)
@@ -254,8 +263,13 @@ if __name__ == '__main__':
         tweet_w = tweet_world(tweet=tweet)
 
     # flow.visualize()    
-    flow.run()
-        
+    state = flow.run()
+
+    # debug: 
+    state.result[df]
+    raise state.result[df].result   
+    # breakpoint()
+    # print('hello')     
         # Read in the produced tweet (after HTML compiled)
 
         # Tweet out

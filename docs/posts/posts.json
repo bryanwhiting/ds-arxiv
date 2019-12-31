@@ -1,5 +1,20 @@
 [
   {
+    "path": "posts/2019-12-31/",
+    "title": "Articles from 2019-12-30",
+    "description": "38 new data science research articles were published on 2019-12-30. 18 discussed machine learning.",
+    "author": [
+      {
+        "name": "Bryan Whiting",
+        "url": "https://www.bryanwhiting.com"
+      }
+    ],
+    "date": "2019-12-31",
+    "categories": [],
+    "preview": {},
+    "last_modified": "2019-12-31T13:52:49-05:00"
+  },
+  {
     "path": "posts/2019-12-27/",
     "title": "Articles from 2019-12-24",
     "description": "45 new data science research articles were published on 2019-12-24. 23 discussed machine learning.",

@@ -1,0 +1,2407 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+  <meta name="generator" content="distill" />
+
+  <style type="text/css">
+  /* Hide doc at startup (prevent jankiness while JS renders/transforms) */
+  body {
+    visibility: hidden;
+  }
+  </style>
+
+ <!--radix_placeholder_import_source-->
+ <!--/radix_placeholder_import_source-->
+
+  <!--radix_placeholder_meta_tags-->
+<title>The Data Science arXiv: Articles from 2019-12-30</title>
+
+<meta property="description" itemprop="description" content="38 new data science research articles were published on 2019-12-30. 18 discussed machine learning."/>
+
+<link rel="canonical" href="bryanwhiting.github.io/ds-arxiv/posts/2019-12-31/"/>
+
+<!--  https://schema.org/Article -->
+<meta property="article:published" itemprop="datePublished" content="2019-12-31"/>
+<meta property="article:created" itemprop="dateCreated" content="2019-12-31"/>
+<meta name="article:author" content="Bryan Whiting"/>
+
+<!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
+<meta property="og:title" content="The Data Science arXiv: Articles from 2019-12-30"/>
+<meta property="og:type" content="article"/>
+<meta property="og:description" content="38 new data science research articles were published on 2019-12-30. 18 discussed machine learning."/>
+<meta property="og:url" content="bryanwhiting.github.io/ds-arxiv/posts/2019-12-31/"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:site_name" content="The Data Science arXiv"/>
+
+<!--  https://dev.twitter.com/cards/types/summary -->
+<meta property="twitter:card" content="summary"/>
+<meta property="twitter:title" content="The Data Science arXiv: Articles from 2019-12-30"/>
+<meta property="twitter:description" content="38 new data science research articles were published on 2019-12-30. 18 discussed machine learning."/>
+<meta property="twitter:url" content="bryanwhiting.github.io/ds-arxiv/posts/2019-12-31/"/>
+
+<!--/radix_placeholder_meta_tags-->
+  <!--radix_placeholder_rmarkdown_metadata-->
+
+<script type="text/json" id="radix-rmarkdown-metadata">
+{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","date","author","output","canonical_url"]}},"value":[{"type":"character","attributes":{},"value":["Articles from 2019-12-30"]},{"type":"character","attributes":{},"value":["38 new data science research articles were published on 2019-12-30. 18 discussed machine learning."]},{"type":"character","attributes":{},"value":["2019-12-31"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url"]}},"value":[{"type":"character","attributes":{},"value":["Bryan Whiting"]},{"type":"character","attributes":{},"value":["https://www.bryanwhiting.com"]}]}]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained","toc"]}},"value":[{"type":"logical","attributes":{},"value":[false]},{"type":"logical","attributes":{},"value":[true]}]}]},{"type":"character","attributes":{},"value":["bryanwhiting.github.io/ds-arxiv/posts/2019-12-31/"]}]}
+</script>
+<!--/radix_placeholder_rmarkdown_metadata-->
+  
+  <script type="text/json" id="radix-resource-manifest">
+  {"type":"character","attributes":{},"value":["arxiv.csv","news_files/bowser-1.9.3/bowser.min.js","news_files/distill-2.2.21/template.v2.js","news_files/jquery-1.11.3/jquery.min.js","news_files/kePrint-0.0.1/kePrint.js","news_files/webcomponents-2.0.0/webcomponents.js","news.Rmd.bak","output_df_summary.Rda","tweet.txt"]}
+  </script>
+  <!--radix_placeholder_navigation_in_header-->
+
+<script type="application/javascript">
+
+  window.headroom_prevent_pin = false;
+
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+
+    // initialize headroom for banner
+    var header = $('header').get(0);
+    var headerHeight = header.offsetHeight;
+    var headroom = new Headroom(header, {
+      onPin : function() {
+        if (window.headroom_prevent_pin) {
+          window.headroom_prevent_pin = false;
+          headroom.unpin();
+        }
+      }
+    });
+    headroom.init();
+    if(window.location.hash)
+      headroom.unpin();
+    $(header).addClass('headroom--transition');
+
+    // offset scroll location for banner on hash change
+    // (see: https://github.com/WickyNilliams/headroom.js/issues/38)
+    window.addEventListener("hashchange", function(event) {
+      window.scrollTo(0, window.pageYOffset - (headerHeight + 25));
+    });
+
+    // responsive menu
+    $('.distill-site-header').each(function(i, val) {
+      var topnav = $(this);
+      var toggle = topnav.find('.nav-toggle');
+      toggle.on('click', function() {
+        topnav.toggleClass('responsive');
+      });
+    });
+
+    // nav dropdowns
+    $('.nav-dropbtn').click(function(e) {
+      $(this).next('.nav-dropdown-content').toggleClass('nav-dropdown-active');
+      $(this).parent().siblings('.nav-dropdown')
+         .children('.nav-dropdown-content').removeClass('nav-dropdown-active');
+    });
+    $("body").click(function(e){
+      $('.nav-dropdown-content').removeClass('nav-dropdown-active');
+    });
+    $(".nav-dropdown").click(function(e){
+      e.stopPropagation();
+    });
+  });
+</script>
+
+<style type="text/css">
+
+/* Theme (user-documented overrideables for nav appearance) */
+
+.distill-site-nav {
+  color: rgba(255, 255, 255, 0.8);
+  background-color: #455a64;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.distill-site-nav a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.distill-site-nav a:hover {
+  color: white;
+}
+
+@media print {
+  .distill-site-nav {
+    display: none;
+  }
+}
+
+.distill-site-header {
+
+}
+
+.distill-site-footer {
+
+}
+
+
+/* Site Header */
+
+.distill-site-header {
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 3;
+}
+
+.distill-site-header .nav-left {
+  display: inline-block;
+  margin-left: 8px;
+}
+
+@media screen and (max-width: 768px) {
+  .distill-site-header .nav-left {
+    margin-left: 0;
+  }
+}
+
+
+.distill-site-header .nav-right {
+  float: right;
+  margin-right: 8px;
+}
+
+.distill-site-header a,
+.distill-site-header .title {
+  display: inline-block;
+  text-align: center;
+  padding: 14px 10px 14px 10px;
+}
+
+.distill-site-header .title {
+  font-size: 18px;
+}
+
+.distill-site-header .logo {
+  padding: 0;
+}
+
+.distill-site-header .logo img {
+  display: none;
+  max-height: 20px;
+  width: auto;
+  margin-bottom: -4px;
+}
+
+.distill-site-header .nav-image img {
+  max-height: 18px;
+  width: auto;
+  display: inline-block;
+  margin-bottom: -3px;
+}
+
+
+
+@media screen and (min-width: 1000px) {
+  .distill-site-header .logo img {
+    display: inline-block;
+  }
+  .distill-site-header .nav-left {
+    margin-left: 20px;
+  }
+  .distill-site-header .nav-right {
+    margin-right: 20px;
+  }
+  .distill-site-header .title {
+    padding-left: 12px;
+  }
+}
+
+
+.distill-site-header .nav-toggle {
+  display: none;
+}
+
+.nav-dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.nav-dropdown .nav-dropbtn {
+  border: none;
+  outline: none;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 16px 10px;
+  background-color: transparent;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0;
+  margin-top: 1px;
+  z-index: 2;
+}
+
+.nav-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 200px;
+  border: 1px solid rgba(0,0,0,0.15);
+  border-radius: 4px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+  z-index: 1;
+  margin-top: 2px;
+  white-space: nowrap;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.nav-dropdown-content hr {
+  margin-top: 4px;
+  margin-bottom: 4px;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.nav-dropdown-active {
+  display: block;
+}
+
+.nav-dropdown-content a, .nav-dropdown-content .nav-dropdown-header {
+  color: black;
+  padding: 6px 24px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.nav-dropdown-content .nav-dropdown-header {
+  display: block;
+  padding: 5px 24px;
+  padding-bottom: 0;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #999999;
+  white-space: nowrap;
+}
+
+.nav-dropdown:hover .nav-dropbtn {
+  color: white;
+}
+
+.nav-dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.nav-right .nav-dropdown-content {
+  margin-left: -45%;
+  right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .distill-site-header a, .distill-site-header .nav-dropdown  {display: none;}
+  .distill-site-header a.nav-toggle {
+    float: right;
+    display: block;
+  }
+  .distill-site-header .title {
+    margin-left: 0;
+  }
+  .distill-site-header .nav-right {
+    margin-right: 0;
+  }
+  .distill-site-header {
+    overflow: hidden;
+  }
+  .nav-right .nav-dropdown-content {
+    margin-left: 0;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .distill-site-header.responsive {position: relative;}
+  .distill-site-header.responsive a.nav-toggle {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .distill-site-header.responsive a,
+  .distill-site-header.responsive .nav-dropdown {
+    display: block;
+    text-align: left;
+  }
+  .distill-site-header.responsive .nav-left,
+  .distill-site-header.responsive .nav-right {
+    width: 100%;
+  }
+  .distill-site-header.responsive .nav-dropdown {float: none;}
+  .distill-site-header.responsive .nav-dropdown-content {position: relative;}
+  .distill-site-header.responsive .nav-dropdown .nav-dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+/* Site Footer */
+
+.distill-site-footer {
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  z-index: 3;
+  margin-top: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+/* Headroom */
+
+d-title {
+  padding-top: 6rem;
+}
+
+@media print {
+  d-title {
+    padding-top: 4rem;
+  }
+}
+
+.headroom {
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.headroom--transition {
+  transition: all .4s ease-in-out;
+}
+
+.headroom--unpinned {
+  top: -100px;
+}
+
+.headroom--pinned {
+  top: 0;
+}
+
+</style>
+
+<link href="../../site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
+<link href="../../site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
+<script src="../../site_libs/headroom-0.9.4/headroom.min.js"></script>
+<!--/radix_placeholder_navigation_in_header-->
+  <!--radix_placeholder_distill-->
+
+<style type="text/css">
+
+body {
+  background-color: white;
+}
+
+.pandoc-table {
+  width: 100%;
+}
+
+.pandoc-table>caption {
+  margin-bottom: 10px;
+}
+
+.pandoc-table th:not([align]) {
+  text-align: left;
+}
+
+.pagedtable-footer {
+  font-size: 15px;
+}
+
+.html-widget {
+  margin-bottom: 2.0em;
+}
+
+.l-screen-inset {
+  padding-right: 16px;
+}
+
+.l-screen .caption {
+  margin-left: 10px;
+}
+
+.shaded {
+  background: rgb(247, 247, 247);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.shaded .html-widget {
+  margin-bottom: 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.shaded .shaded-content {
+  background: white;
+}
+
+.text-output {
+  margin-top: 0;
+  line-height: 1.5em;
+}
+
+.hidden {
+  display: none !important;
+}
+
+d-article {
+  padding-bottom: 30px;
+}
+
+d-appendix {
+  padding-top: 30px;
+}
+
+d-article>p>img {
+  width: 100%;
+}
+
+d-article iframe {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 2.0em;
+  width: 100%;
+}
+
+figure img.external {
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+  padding: 18px;
+  box-sizing: border-box;
+}
+
+/* CSS for table of contents */
+
+.d-toc {
+  color: rgba(0,0,0,0.8);
+  font-size: 0.8em;
+  line-height: 1em;
+}
+
+.d-toc-header {
+  font-size: 0.6rem;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 1.3em;
+}
+
+.d-toc a {
+  border-bottom: none;
+}
+
+.d-toc ul {
+  padding-left: 0;
+}
+
+.d-toc li>ul {
+  padding-top: 0.8em;
+  padding-left: 16px;
+  margin-bottom: 0.6em;
+}
+
+.d-toc ul,
+.d-toc li {
+  list-style-type: none;
+}
+
+.d-toc li {
+  margin-bottom: 0.9em;
+}
+
+.d-toc-separator {
+  margin-top: 20px;
+  margin-bottom: 2em;
+}
+
+.d-article-with-toc {
+  border-top: none;
+  padding-top: 0;
+}
+
+
+
+/* Tweak code blocks (note that this CSS is repeated above in an injection
+   into the d-code shadow dom) */
+
+d-code {
+  overflow-x: auto !important;
+}
+
+pre.d-code code.d-code {
+  padding-left: 10px;
+  font-size: 12px;
+  border-left: 2px solid rgba(0,0,0,0.1);
+}
+
+pre.text-output {
+
+  font-size: 12px;
+  color: black;
+  background: none;
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+@media(min-width: 768px) {
+
+d-code {
+  overflow-x: visible !important;
+}
+
+pre.d-code code.d-code  {
+    padding-left: 18px;
+    font-size: 14px;
+}
+pre.text-output {
+  font-size: 14px;
+}
+}
+
+/* Figure */
+
+.figure {
+  position: relative;
+  margin-bottom: 2.5em;
+  margin-top: 1.5em;
+}
+
+.figure img {
+  width: 100%;
+}
+
+.figure .caption {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 12px;
+  line-height: 1.5em;
+}
+
+.figure img.external {
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+  padding: 18px;
+  box-sizing: border-box;
+}
+
+.figure .caption a {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.figure .caption b,
+.figure .caption strong, {
+  font-weight: 600;
+  color: rgba(0, 0, 0, 1.0);
+}
+
+
+
+/* Tweak 1000px media break to show more text */
+
+@media(min-width: 1000px) {
+  .base-grid,
+  distill-header,
+  d-title,
+  d-abstract,
+  d-article,
+  d-appendix,
+  distill-appendix,
+  d-byline,
+  d-footnote-list,
+  d-citation-list,
+  distill-footer {
+    grid-template-columns: [screen-start] 1fr [page-start kicker-start] 80px [middle-start] 50px [text-start kicker-end] 65px 65px 65px 65px 65px 65px 65px 65px [text-end gutter-start] 65px [middle-end] 65px [page-end gutter-end] 1fr [screen-end];
+    grid-column-gap: 16px;
+  }
+
+  .grid {
+    grid-column-gap: 16px;
+  }
+
+  d-article {
+    font-size: 1.06rem;
+    line-height: 1.7em;
+  }
+  figure .caption, .figure .caption, figure figcaption {
+    font-size: 13px;
+  }
+}
+
+@media(min-width: 1180px) {
+  .base-grid,
+  distill-header,
+  d-title,
+  d-abstract,
+  d-article,
+  d-appendix,
+  distill-appendix,
+  d-byline,
+  d-footnote-list,
+  d-citation-list,
+  distill-footer {
+    grid-template-columns: [screen-start] 1fr [page-start kicker-start] 60px [middle-start] 60px [text-start kicker-end] 60px 60px 60px 60px 60px 60px 60px 60px [text-end gutter-start] 60px [middle-end] 60px [page-end gutter-end] 1fr [screen-end];
+    grid-column-gap: 32px;
+  }
+
+  .grid {
+    grid-column-gap: 32px;
+  }
+}
+
+
+/* Get the citation styles for the appendix (not auto-injected on render since
+   we do our own rendering of the citation appendix) */
+
+d-appendix .citation-appendix,
+.d-appendix .citation-appendix {
+  font-size: 11px;
+  line-height: 15px;
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  padding-left: 18px;
+  border: 1px solid rgba(0,0,0,0.1);
+  background: rgba(0, 0, 0, 0.02);
+  padding: 10px 18px;
+  border-radius: 3px;
+  color: rgba(150, 150, 150, 1);
+  overflow: hidden;
+  margin-top: -12px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+
+/* Social footer */
+
+.social_footer {
+  margin-top: 30px;
+  margin-bottom: 0;
+  color: rgba(0,0,0,0.67);
+}
+
+.disqus-comments {
+  margin-right: 30px;
+}
+
+.disqus-comment-count {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+#disqus_thread {
+  margin-top: 30px;
+}
+
+.article-sharing a {
+  border-bottom: none;
+  margin-right: 8px;
+}
+
+.article-sharing a:hover {
+  border-bottom: none;
+}
+
+.sidebar-section.subscribe {
+  font-size: 12px;
+  line-height: 1.6em;
+}
+
+.subscribe p {
+  margin-bottom: 0.5em;
+}
+
+
+.article-footer .subscribe {
+  font-size: 15px;
+  margin-top: 45px;
+}
+
+
+/* Improve display for browsers without grid (IE/Edge <= 15) */
+
+.downlevel {
+  line-height: 1.6em;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
+}
+
+.downlevel .d-title {
+  padding-top: 6rem;
+  padding-bottom: 1.5rem;
+}
+
+.downlevel .d-title h1 {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1.1em;
+  margin: 0 0 0.5rem;
+}
+
+.downlevel .d-title p {
+  font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 1.55em;
+  margin-top: 0;
+}
+
+.downlevel .d-byline {
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+  font-size: 0.8rem;
+  line-height: 1.8em;
+}
+
+.downlevel .section-separator {
+  border: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.downlevel .d-article {
+  font-size: 1.06rem;
+  line-height: 1.7em;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+
+.downlevel .d-appendix {
+  padding-left: 0;
+  padding-right: 0;
+  max-width: none;
+  font-size: 0.8em;
+  line-height: 1.7em;
+  margin-bottom: 0;
+  color: rgba(0,0,0,0.5);
+  padding-top: 40px;
+  padding-bottom: 48px;
+}
+
+.downlevel .footnotes ol {
+  padding-left: 13px;
+}
+
+.downlevel .base-grid,
+.downlevel .distill-header,
+.downlevel .d-title,
+.downlevel .d-abstract,
+.downlevel .d-article,
+.downlevel .d-appendix,
+.downlevel .distill-appendix,
+.downlevel .d-byline,
+.downlevel .d-footnote-list,
+.downlevel .d-citation-list,
+.downlevel .distill-footer,
+.downlevel .appendix-bottom,
+.downlevel .posts-container {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+@media(min-width: 768px) {
+  .downlevel .base-grid,
+  .downlevel .distill-header,
+  .downlevel .d-title,
+  .downlevel .d-abstract,
+  .downlevel .d-article,
+  .downlevel .d-appendix,
+  .downlevel .distill-appendix,
+  .downlevel .d-byline,
+  .downlevel .d-footnote-list,
+  .downlevel .d-citation-list,
+  .downlevel .distill-footer,
+  .downlevel .appendix-bottom,
+  .downlevel .posts-container {
+  padding-left: 150px;
+  padding-right: 150px;
+  max-width: 900px;
+}
+}
+
+.downlevel pre code {
+  display: block;
+  border-left: 2px solid rgba(0, 0, 0, .1);
+  padding: 0 0 0 20px;
+  font-size: 14px;
+}
+
+.downlevel code, .downlevel pre {
+  color: black;
+  background: none;
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+</style>
+
+<script type="application/javascript">
+
+function is_downlevel_browser() {
+  if (bowser.isUnsupportedBrowser({ msie: "12", msedge: "16"},
+                                 window.navigator.userAgent)) {
+    return true;
+  } else {
+    return window.load_distill_framework === undefined;
+  }
+}
+
+// show body when load is complete
+function on_load_complete() {
+
+  // set body to visible
+  document.body.style.visibility = 'visible';
+
+  // force redraw for leaflet widgets
+  if (window.HTMLWidgets) {
+    var maps = window.HTMLWidgets.findAll(".leaflet");
+    $.each(maps, function(i, el) {
+      var map = this.getMap();
+      map.invalidateSize();
+      map.eachLayer(function(layer) {
+        if (layer instanceof L.TileLayer)
+          layer.redraw();
+      });
+    });
+  }
+
+  // trigger 'shown' so htmlwidgets resize
+  $('d-article').trigger('shown');
+}
+
+function init_distill() {
+
+  init_common();
+
+  // create front matter
+  var front_matter = $('<d-front-matter></d-front-matter>');
+  $('#distill-front-matter').wrap(front_matter);
+
+  // create d-title
+  $('.d-title').changeElementType('d-title');
+
+  // create d-byline
+  var byline = $('<d-byline></d-byline>');
+  $('.d-byline').replaceWith(byline);
+
+  // create d-article
+  var article = $('<d-article></d-article>');
+  $('.d-article').wrap(article).children().unwrap();
+
+  // move posts container into article
+  $('.posts-container').appendTo($('d-article'));
+
+  // create d-appendix
+  $('.d-appendix').changeElementType('d-appendix');
+
+  // create d-bibliography
+  var bibliography = $('<d-bibliography></d-bibliography>');
+  $('#distill-bibliography').wrap(bibliography);
+
+  // flag indicating that we have appendix items
+  var appendix = $('.appendix-bottom').children('h3').length > 0;
+
+  // replace citations with <d-cite>
+  $('.citation').each(function(i, val) {
+    appendix = true;
+    var cites = $(this).attr('data-cites').split(" ");
+    var dt_cite = $('<d-cite></d-cite>');
+    dt_cite.attr('key', cites.join());
+    $(this).replaceWith(dt_cite);
+  });
+  // remove refs
+  $('#refs').remove();
+
+  // replace footnotes with <d-footnote>
+  $('.footnote-ref').each(function(i, val) {
+    appendix = true;
+    var href = $(this).attr('href');
+    var id = href.replace('#', '');
+    var fn = $('#' + id);
+    var fn_p = $('#' + id + '>p');
+    fn_p.find('.footnote-back').remove();
+    var text = fn_p.html();
+    var dtfn = $('<d-footnote></d-footnote>');
+    dtfn.html(text);
+    $(this).replaceWith(dtfn);
+  });
+  // remove footnotes
+  $('.footnotes').remove();
+
+  $('h1.appendix, h2.appendix').each(function(i, val) {
+    $(this).changeElementType('h3');
+  });
+  $('h3.appendix').each(function(i, val) {
+    var id = $(this).attr('id');
+    $('.d-toc a[href="#' + id + '"]').parent().remove();
+    appendix = true;
+    $(this).nextUntil($('h1, h2, h3')).addBack().appendTo($('d-appendix'));
+  });
+
+  // show d-appendix if we have appendix content
+  $("d-appendix").css('display', appendix ? 'grid' : 'none');
+
+  // replace code blocks with d-code
+  $('pre>code').each(function(i, val) {
+    var code = $(this);
+    var pre = code.parent();
+    var clz = "";
+    var language = pre.attr('class');
+    if (language) {
+      // map unknown languages to "clike" (without this they just dissapear)
+      if ($.inArray(language, ["bash", "clike", "css", "go", "html",
+                               "javascript", "js", "julia", "lua", "markdown",
+                               "markup", "mathml", "python", "svg", "xml"]) == -1)
+        language = "clike";
+      language = ' language="' + language + '"';
+      var dt_code = $('<d-code block' + language + clz + '></d-code>');
+      dt_code.text(code.text());
+      pre.replaceWith(dt_code);
+    } else {
+      code.addClass('text-output').unwrap().changeElementType('pre');
+    }
+  });
+
+  // localize layout chunks to just output
+  $('.layout-chunk').each(function(i, val) {
+
+    // capture layout
+    var layout = $(this).attr('data-layout');
+
+    // apply layout to markdown level block elements
+    var elements = $(this).children().not('d-code, pre.text-output, script');
+    elements.each(function(i, el) {
+      var layout_div = $('<div class="' + layout + '"></div>');
+      if (layout_div.hasClass('shaded')) {
+        var shaded_content = $('<div class="shaded-content"></div>');
+        $(this).wrap(shaded_content);
+        $(this).parent().wrap(layout_div);
+      } else {
+        $(this).wrap(layout_div);
+      }
+    });
+
+
+    // unwrap the layout-chunk div
+    $(this).children().unwrap();
+  });
+
+  // load distill framework
+  load_distill_framework();
+
+  // wait for window.distillRunlevel == 4 to do post processing
+  function distill_post_process() {
+
+    if (!window.distillRunlevel || window.distillRunlevel < 4)
+      return;
+
+    // hide author/affiliations entirely if we have no authors
+    var front_matter = JSON.parse($("#distill-front-matter").html());
+    var have_authors = front_matter.authors && front_matter.authors.length > 0;
+    if (!have_authors)
+      $('d-byline').addClass('hidden');
+
+    // table of contents
+    if (have_authors) // adjust border if we are in authors
+      $('.d-toc').parent().addClass('d-article-with-toc');
+
+    // strip links that point to #
+    $('.authors-affiliations').find('a[href="#"]').removeAttr('href');
+
+    // hide elements of author/affiliations grid that have no value
+    function hide_byline_column(caption) {
+      $('d-byline').find('h3:contains("' + caption + '")').parent().css('visibility', 'hidden');
+    }
+
+    // affiliations
+    var have_affiliations = false;
+    for (var i = 0; i<front_matter.authors.length; ++i) {
+      var author = front_matter.authors[i];
+      if (author.affiliation !== "&nbsp;") {
+        have_affiliations = true;
+        break;
+      }
+    }
+    if (!have_affiliations)
+      $('d-byline').find('h3:contains("Affiliations")').css('visibility', 'hidden');
+
+    // published date
+    if (!front_matter.publishedDate)
+      hide_byline_column("Published");
+
+    // document object identifier
+    var doi = $('d-byline').find('h3:contains("DOI")');
+    var doi_p = doi.next().empty();
+    if (!front_matter.doi) {
+      // if we have a citation and valid citationText then link to that
+      if ($('#citation').length > 0 && front_matter.citationText) {
+        doi.html('Citation');
+        $('<a href="#citation"></a>')
+          .text(front_matter.citationText)
+          .appendTo(doi_p);
+      } else {
+        hide_byline_column("DOI");
+      }
+    } else {
+      $('<a></a>')
+         .attr('href', "https://doi.org/" + front_matter.doi)
+         .html(front_matter.doi)
+         .appendTo(doi_p);
+    }
+
+     // change plural form of authors/affiliations
+    if (front_matter.authors.length === 1) {
+      var grid = $('.authors-affiliations');
+      grid.children('h3:contains("Authors")').text('Author');
+      grid.children('h3:contains("Affiliations")').text('Affiliation');
+    }
+
+    // inject pre code styles (can't do this with a global stylesheet b/c a shadow root is used)
+    $('d-code').each(function(i, val) {
+      var style = document.createElement('style');
+      style.innerHTML = 'pre code { padding-left: 10px; font-size: 12px; border-left: 2px solid rgba(0,0,0,0.1); } ' +
+                        '@media(min-width: 768px) { pre code { padding-left: 18px; font-size: 14px; } }';
+      if (this.shadowRoot)
+        this.shadowRoot.appendChild(style);
+    });
+
+    // move appendix-bottom entries to the bottom
+    $('.appendix-bottom').appendTo('d-appendix').children().unwrap();
+    $('.appendix-bottom').remove();
+
+    // clear polling timer
+    clearInterval(tid);
+
+    // show body now that everything is ready
+    on_load_complete();
+  }
+
+  var tid = setInterval(distill_post_process, 50);
+  distill_post_process();
+
+}
+
+function init_downlevel() {
+
+  init_common();
+
+   // insert hr after d-title
+  $('.d-title').after($('<hr class="section-separator"/>'));
+
+  // check if we have authors
+  var front_matter = JSON.parse($("#distill-front-matter").html());
+  var have_authors = front_matter.authors && front_matter.authors.length > 0;
+
+  // manage byline/border
+  if (!have_authors)
+    $('.d-byline').remove();
+  $('.d-byline').after($('<hr class="section-separator"/>'));
+  $('.d-byline a').remove();
+
+  // remove toc
+  $('.d-toc-header').remove();
+  $('.d-toc').remove();
+  $('.d-toc-separator').remove();
+
+  // move appendix elements
+  $('h1.appendix, h2.appendix').each(function(i, val) {
+    $(this).changeElementType('h3');
+  });
+  $('h3.appendix').each(function(i, val) {
+    $(this).nextUntil($('h1, h2, h3')).addBack().appendTo($('.d-appendix'));
+  });
+
+
+  // inject headers into references and footnotes
+  var refs_header = $('<h3></h3>');
+  refs_header.text('References');
+  $('#refs').prepend(refs_header);
+
+  var footnotes_header = $('<h3></h3');
+  footnotes_header.text('Footnotes');
+  $('.footnotes').children('hr').first().replaceWith(footnotes_header);
+
+  // move appendix-bottom entries to the bottom
+  $('.appendix-bottom').appendTo('.d-appendix').children().unwrap();
+  $('.appendix-bottom').remove();
+
+  // remove appendix if it's empty
+  if ($('.d-appendix').children().length === 0)
+    $('.d-appendix').remove();
+
+  // prepend separator above appendix
+  $('.d-appendix').before($('<hr class="section-separator" style="clear: both"/>'));
+
+  // trim code
+  $('pre>code').each(function(i, val) {
+    $(this).html($.trim($(this).html()));
+  });
+
+  // move posts-container right before article
+  $('.posts-container').insertBefore($('.d-article'));
+
+  $('body').addClass('downlevel');
+
+  on_load_complete();
+}
+
+
+function init_common() {
+
+  // jquery plugin to change element types
+  (function($) {
+    $.fn.changeElementType = function(newType) {
+      var attrs = {};
+
+      $.each(this[0].attributes, function(idx, attr) {
+        attrs[attr.nodeName] = attr.nodeValue;
+      });
+
+      this.replaceWith(function() {
+        return $("<" + newType + "/>", attrs).append($(this).contents());
+      });
+    };
+  })(jQuery);
+
+  // prevent underline for linked images
+  $('a > img').parent().css({'border-bottom' : 'none'});
+
+  // mark non-body figures created by knitr chunks as 100% width
+  $('.layout-chunk').each(function(i, val) {
+    var figures = $(this).find('img, .html-widget');
+    if ($(this).attr('data-layout') !== "l-body") {
+      figures.css('width', '100%');
+    } else {
+      figures.css('max-width', '100%');
+      figures.filter("[width]").each(function(i, val) {
+        var fig = $(this);
+        fig.css('width', fig.attr('width') + 'px');
+      });
+
+    }
+  });
+
+  // auto-append index.html to post-preview links in file: protocol
+  // and in rstudio ide preview
+  $('.post-preview').each(function(i, val) {
+    if (window.location.protocol === "file:")
+      $(this).attr('href', $(this).attr('href') + "index.html");
+  });
+
+  // get rid of index.html references in header
+  if (window.location.protocol !== "file:") {
+    $('.distill-site-header a[href]').each(function(i,val) {
+      $(this).attr('href', $(this).attr('href').replace("index.html", "./"));
+    });
+  }
+
+  // add class to pandoc style tables
+  $('tr.header').parent('thead').parent('table').addClass('pandoc-table');
+  $('.kable-table').children('table').addClass('pandoc-table');
+
+  // add figcaption style to table captions
+  $('caption').parent('table').addClass("figcaption");
+
+  // initialize posts list
+  if (window.init_posts_list)
+    window.init_posts_list();
+
+  // implmement disqus comment link
+  $('.disqus-comment-count').click(function() {
+    window.headroom_prevent_pin = true;
+    $('#disqus_thread').toggleClass('hidden');
+    if (!$('#disqus_thread').hasClass('hidden')) {
+      var offset = $(this).offset();
+      $(window).resize();
+      $('html, body').animate({
+        scrollTop: offset.top - 35
+      });
+    }
+  });
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  if (is_downlevel_browser())
+    init_downlevel();
+  else
+    window.addEventListener('WebComponentsReady', init_distill);
+});
+
+</script>
+
+<!--/radix_placeholder_distill-->
+  <script src="../../site_libs/kePrint-0.0.1/kePrint.js"></script>
+  <script src="../../site_libs/jquery-1.11.3/jquery.min.js"></script>
+  <script src="../../site_libs/bowser-1.9.3/bowser.min.js"></script>
+  <script src="../../site_libs/webcomponents-2.0.0/webcomponents.js"></script>
+  <script src="../../site_libs/distill-2.2.21/template.v2.js"></script>
+  <!--radix_placeholder_site_in_header-->
+<style type="text/css">
+.distill-site-nav {
+  color: rgba(255, 255, 255, 0.8);
+  background-color: #455a64;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.distill-site-nav a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.distill-site-nav a:hover {
+  color: white;
+}
+
+.distill-site-header {
+}
+
+.distill-site-footer {
+}
+
+@media print {
+  .distill-site-nav {
+    display: none;
+  }
+}
+
+a {
+  color: #d9230f;
+  text-decoration: none;
+}
+</style>
+<!--/radix_placeholder_site_in_header-->
+
+
+</head>
+
+<body>
+
+<!--radix_placeholder_front_matter-->
+
+<script id="distill-front-matter" type="text/json">
+{"title":"Articles from 2019-12-30","description":"38 new data science research articles were published on 2019-12-30. 18 discussed machine learning.","authors":[{"author":"Bryan Whiting","authorURL":"https://www.bryanwhiting.com","affiliation":"&nbsp;","affiliationURL":"#"}],"publishedDate":"2019-12-31T00:00:00.000-05:00","citationText":"Whiting, 2019"}
+</script>
+
+<!--/radix_placeholder_front_matter-->
+<!--radix_placeholder_navigation_before_body-->
+<header class="header header--fixed" role="banner">
+<nav class="distill-site-nav distill-site-header">
+<div class="nav-left">
+<a href="../../index.html" class="title">The Data Science arXiv</a>
+</div>
+<div class="nav-right">
+<a href="../../index.html">Home</a>
+<a href="../../about.html">About</a>
+<a href="https://github.com/bryanwhiting/ds-arxiv">GitHub</a>
+<a href="../../index.xml">
+<i class="fa fa-rss"></i>
+</a>
+<a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
+</div>
+</nav>
+</header>
+<!--/radix_placeholder_navigation_before_body-->
+<!--radix_placeholder_site_before_body-->
+<!--/radix_placeholder_site_before_body-->
+
+<div class="d-title">
+<h1>Articles from 2019-12-30</h1>
+<p>38 new data science research articles were published on 2019-12-30. 18 discussed machine learning.</p>
+</div>
+
+<div class="d-byline">
+  Bryan Whiting <a href="https://www.bryanwhiting.com" class="uri">https://www.bryanwhiting.com</a> 
+  
+<br/>2019-12-31
+</div>
+
+<div class="d-article">
+<h3 class="d-toc-header">Table of Contents</h3>
+<nav class="d-toc" id="TOC">
+<ul>
+<li><a href="#breakdown-of-arxiv-publication-counts">Breakdown of arXiv Publication Counts</a></li>
+<li><a href="#articles-for-statitstics-machine-learning-econonmetrics-and-finance">Articles for Statitstics, Machine Learning Econonmetrics, and Finance</a><ul>
+<li><a href="#applications--stat-ap-">Applications (stat.AP): 4 new</a></li>
+<li><a href="#machine-learning--stat-ml-">Machine Learning (stat.ML): 11 new</a></li>
+<li><a href="#machine-learning--cs-lg-">Machine Learning (cs.LG): 18 new</a></li>
+</ul></li>
+<li><a href="#data-science-arxiv-by-primary-tag">Data Science arXiv by Primary Tag</a><ul>
+<li><a href="#computer-science">Computer Science</a></li>
+<li><a href="#statistics">Statistics</a></li>
+<li><a href="#physics">Physics</a></li>
+<li><a href="#mathematics">Mathematics</a></li>
+<li><a href="#condensed-matter">Condensed Matter</a></li>
+<li><a href="#other">Other</a></li>
+<li><a href="#quantitative-biology">Quantitative Biology</a></li>
+<li><a href="#quantum-physics">Quantum Physics</a></li>
+</ul></li>
+</ul>
+</nav>
+<hr class="d-toc-separator"/>
+<h2 id="breakdown-of-arxiv-publication-counts">Breakdown of arXiv Publication Counts</h2>
+<p>Yesterday’s counts of submitted papers on www.arxiv.org grouped by primary subject. Click the links in the table to be re-directed to the abstracts below. The links under <code>Subject</code> will redirect you to abstracts with the primary subject (there can only be one primary subject on arXiv). The links under <code>Category</code> will redirect you to all publications yesterday with a given tag (primary or secondary).</p>
+<div class="layout-chunk" data-layout="l-body">
+<table class="table table-striped" style="margin-left: auto; margin-right: auto;">
+<caption>
+<span id="tab:summary-table-with-counts">Table 1: </span>Number of articles by subject and primary category. Colored titles represent hyperlinks that take you below to abstracts. Key - Subject: Computer Science (5) means there were 5 articles with primary tag CS. Category: Machine Learning (cs.LG) N = 8 (16) means there were 8 primary articles with the (cs.LG) tag but 16 articles had it as a secondary tag, so there should be 24 in total. Click this link to be taken to all 24. Only select categories are highlighted because they are of particular interest to applied data scientists.
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+Subject
+</th>
+<th style="text-align:left;">
+Category
+</th>
+<th style="text-align:left;">
+N
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;font-weight: bold;vertical-align: top !important;" rowspan="6">
+<a href="#computer-science" style=" font-weight: bold;    color: #d9230f !important;">Computer Science (23)</a>
+</td>
+<td style="text-align:left;">
+Computer Vision and Pattern Recognition (cs.CV)
+</td>
+<td style="text-align:left;">
+11 (3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="#machine-learning--cs-lg-" style=" font-weight: bold;    color: #d9230f !important;">Machine Learning (cs.LG)</a>
+</td>
+<td style="text-align:left;">
+8 (10)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Robotics (cs.RO)
+</td>
+<td style="text-align:left;">
+1 (3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Computation and Language (cs.CL)
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Information Theory (cs.IT)
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Programming Languages (cs.PL)
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;font-weight: bold;vertical-align: top !important;" rowspan="2">
+<a href="#statistics" style=" font-weight: bold;    color: #d9230f !important;">Statistics (5)</a>
+</td>
+<td style="text-align:left;">
+<a href="#machine-learning--stat-ml-" style=" font-weight: bold;    color: #d9230f !important;">Machine Learning (stat.ML)</a>
+</td>
+<td style="text-align:left;">
+3 (8)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="#applications--stat-ap-" style=" font-weight: bold;    color: #d9230f !important;">Applications (stat.AP)</a>
+</td>
+<td style="text-align:left;">
+2 (2)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;font-weight: bold;vertical-align: top !important;" rowspan="2">
+<a href="#physics" style=" font-weight: bold;    color: #d9230f !important;">Physics (4)</a>
+</td>
+<td style="text-align:left;">
+Computational Physics (physics.comp-ph)
+</td>
+<td style="text-align:left;">
+3 (2)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Fluid Dynamics (physics.flu-dyn)
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;font-weight: bold;">
+<a href="#mathematics" style=" font-weight: bold;    color: #d9230f !important;">Mathematics (2)</a>
+</td>
+<td style="text-align:left;">
+Statistics Theory (math.ST)
+</td>
+<td style="text-align:left;">
+2 (1)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;font-weight: bold;">
+<a href="#condensed-matter" style=" font-weight: bold;    color: #d9230f !important;">Condensed Matter (1)</a>
+</td>
+<td style="text-align:left;">
+Materials Science (cond-mat.mtrl-sci)
+</td>
+<td style="text-align:left;">
+1 (1)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;font-weight: bold;">
+<a href="#other" style=" font-weight: bold;    color: #d9230f !important;">Other (1)</a>
+</td>
+<td style="text-align:left;">
+Adaptation and Self-Organizing Systems (nlin.AO)
+</td>
+<td style="text-align:left;">
+1 (1)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;font-weight: bold;">
+<a href="#quantitative-biology" style=" font-weight: bold;    color: #d9230f !important;">Quantitative Biology (1)</a>
+</td>
+<td style="text-align:left;">
+Quantitative Methods (q-bio.QM)
+</td>
+<td style="text-align:left;">
+1 (1)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;font-weight: bold;">
+<a href="#quantum-physics" style=" font-weight: bold;    color: #d9230f !important;">Quantum Physics (1)</a>
+</td>
+<td style="text-align:left;">
+Quantum Physics (quant-ph)
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+
+</div>
+<div class="layout-chunk" data-layout="l-body">
+
+</div>
+<h2 id="articles-for-statitstics-machine-learning-econonmetrics-and-finance">Articles for Statitstics, Machine Learning Econonmetrics, and Finance</h2>
+<p>This section contains all articles with any tag of <code>stat.AP</code>, <code>stat.co</code>, <code>stat.ML</code>, <code>cs.LG</code>, <code>q-fin.ST</code>, <code>q-fin.EC</code>, or <code>econ-EM</code>. Only the first two sentences are shown - click the links for more detail.</p>
+<div class="layout-chunk" data-layout="l-screen-inset">
+
+<h3 id="applications--stat-ap-">Applications (stat.AP): 4 new</h3>
+<table class="table table-striped table-condensed" style="margin-left: auto; margin-right: auto;">
+<tbody>
+<tr grouplength="4">
+<td colspan="1" style="background-color: #666; color: #fff;">
+<strong>Applications (stat.AP)</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.12116v1" style="color: #d9230f">Comparative Analysis of Predictive Methods for Early Assessment of Compliance with Continuous Positive Airway Pressure Therapy</a></b><br><em>Machine Learning, Applications, Machine Learning</em>. 6 authors. <a href="http://arxiv.org/pdf/1912.12116v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Patients suffering from obstructive sleep apnea are mainly treated with continuous positive airway pressure (CPAP). Good compliance with this therapy is broadly accepted as more than 4h of CPAP average use nightly. …</summary><br> Although it is a highly effective treatment, compliance with this therapy is problematic to achieve with serious consequences for the patients’ health. Previous works already reported factors significantly related to compliance with the therapy. However, further research is still required to support clinicians to early anticipate patients’ therapy compliance. This work intends to take a further step in this direction by building compliance classifiers with CPAP therapy at three different moments of the patient follow-up (i.e. before the therapy starts and at months 1 and 3 after the baseline). Results of the clinical trial confirmed that month 3 was the time-point with the most accurate classifier reaching an f1-score of 87% and 84% in cross-validation and test. At month 1, performances were almost as high as in month 3 with 82% and 84% of f1-score. At baseline, where no information about patients’ CPAP use was given yet, the best classifier achieved 73% and 76% of f1-score in cross-validation and test set respectively. Subsequent analyses carried out with the best classifiers of each time point revealed that certain baseline factors (i.e. headaches, psychological symptoms, arterial hypertension and EuroQol visual analogue scale) were closely related to the prediction of compliance independently of the time-point. In addition, among the variables taken only during the follow-up of the patients, Epworth and the average nighttime hours were the most important to predict compliance with CPAP.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.12275v1" style="color: #d9230f">A general statistical model for waiting times until collapse of a system</a></b><br><em>Applications</em>. 3 authors. <a href="http://arxiv.org/pdf/1912.12275v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>The distribution of waiting times until the occurrence of a critical event is a crucial statistical problem across several disciplines in Science. In this work we present a statistical model in which a relevant quantity X accumulates until overcoming a threshold X*, which defines the collapse. …</summary><br> The obtained waiting time distribution is a mixture of gamma distributions, which in turn can be approximated as an effective gamma distribution.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.12274v1" style="color: #d9230f">Statistical Agnostic Mapping: a Framework in Neuroimaging based on Concentration Inequalities</a></b><br><em>Machine Learning, Applications, Machine Learning, Image and Video Processing</em>. 3 authors. <a href="http://arxiv.org/pdf/1912.12274v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>In the 70s a novel branch of statistics emerged focusing its effort in selecting a function in the pattern recognition problem, which fulfils a definite relationship between the quality of the approximation and its complexity. These data-driven approaches are mainly devoted to problems of estimating dependencies with limited sample sizes and comprise all the empirical out-of sample generalization approaches, e. …</summary><br>g. cross validation (CV) approaches. Although the latter are  in neuroimaging, there are a number of theoretical developments within this theory which could be employed to derive a Statistical Agnostic (non-parametric) Mapping (SAM) at voxel or multi-voxel level. Moreover, SAMs could relieve i) the problem of instability in limited sample sizes when estimating the actual risk via the CV approaches, e.g. large error bars, and provide ii) an alternative way of Family-wise-error (FWE) corrected p-value maps in inferential statistics for hypothesis testing. In this sense, we propose a novel framework in neuroimaging based on concentration inequalities, which results in (i) a rigorous development for model validation with a small sample/dimension ratio, and (ii) a less-conservative procedure than FWE p-value correction, to determine the brain significance maps from the inferences made using small upper bounds of the actual risk.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.12228v1" style="color: #d9230f">Bayesian joint modeling of chemical structure and dose response curves</a></b><br><em>Applications</em>. 3 authors. <a href="http://arxiv.org/pdf/1912.12228v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Today there are approximately 85,000 chemicals regulated under the Toxic Substances Control Act, with around 2,000 new chemicals introduced each year. It is impossible to screen all of these chemicals for potential toxic effects either via full organism in vivo studies or in vitro high-throughput screening (HTS) programs. …</summary><br> Toxicologists face the challenge of choosing which chemicals to screen, and predicting the toxicity of as-yet-unscreened chemicals. Our goal is to describe how variation in chemical structure relates to variation in toxicological response to enable in silico toxicity characterization designed to meet both of these challenges. With our Bayesian partially Supervised Sparse and Smooth Factor Analysis (BS3FA) model, we learn a distance between chemicals targeted to toxicity, rather than one based on molecular structure alone. Our model also enables the prediction of chemical dose-response profiles based on chemical structure (that is, without in vivo or in vitro testing) by taking advantage of a large database of chemicals that have already been tested for toxicity in HTS programs. We show superior simulation performance in distance learning and modest to large gains in predictive ability compared to existing methods. Results from the high-throughput screening data application elucidate the relationship between chemical structure and a toxicity-relevant high-throughput assay. An R package for BS3FA is available online at <a href="https://github.com/kelrenmor/bs3fa" class="uri">https://github.com/kelrenmor/bs3fa</a>.
+</details>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="machine-learning--stat-ml-">Machine Learning (stat.ML): 11 new</h3>
+<table class="table table-striped table-condensed" style="margin-left: auto; margin-right: auto;">
+<tbody>
+<tr grouplength="11">
+<td colspan="1" style="background-color: #666; color: #fff;">
+<strong>Machine Learning (stat.ML)</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.12116v1" style="color: #d9230f">Comparative Analysis of Predictive Methods for Early Assessment of Compliance with Continuous Positive Airway Pressure Therapy</a></b><br><em>Machine Learning, Applications, Machine Learning</em>. 6 authors. <a href="http://arxiv.org/pdf/1912.12116v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Patients suffering from obstructive sleep apnea are mainly treated with continuous positive airway pressure (CPAP). Good compliance with this therapy is broadly accepted as more than 4h of CPAP average use nightly. …</summary><br> Although it is a highly effective treatment, compliance with this therapy is problematic to achieve with serious consequences for the patients’ health. Previous works already reported factors significantly related to compliance with the therapy. However, further research is still required to support clinicians to early anticipate patients’ therapy compliance. This work intends to take a further step in this direction by building compliance classifiers with CPAP therapy at three different moments of the patient follow-up (i.e. before the therapy starts and at months 1 and 3 after the baseline). Results of the clinical trial confirmed that month 3 was the time-point with the most accurate classifier reaching an f1-score of 87% and 84% in cross-validation and test. At month 1, performances were almost as high as in month 3 with 82% and 84% of f1-score. At baseline, where no information about patients’ CPAP use was given yet, the best classifier achieved 73% and 76% of f1-score in cross-validation and test set respectively. Subsequent analyses carried out with the best classifiers of each time point revealed that certain baseline factors (i.e. headaches, psychological symptoms, arterial hypertension and EuroQol visual analogue scale) were closely related to the prediction of compliance independently of the time-point. In addition, among the variables taken only during the follow-up of the patients, Epworth and the average nighttime hours were the most important to predict compliance with CPAP.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.12115v1" style="color: #d9230f">Split Learning for collaborative deep learning in healthcare</a></b><br><em>Machine Learning, Machine Learning, Distributed, Parallel, and Cluster Computing</em>. 6 authors. <a href="http://arxiv.org/pdf/1912.12115v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Shortage of labeled data has been holding the surge of deep learning in healthcare back, as sample sizes are often small, patient information cannot be shared openly, and multi-center collaborative studies are a burden to set up. Distributed machine learning methods promise to mitigate these problems. …</summary><br> We argue for a split learning based approach and apply this distributed learning method for the first time in the medical field to compare performance against (1) centrally hosted and (2) non collaborative configurations for a range of participants. Two medical deep learning tasks are used to compare split learning to conventional single and multi center approaches: a binary classification problem of a data set of 9000 fundus photos, and multi-label classification problem of a data set of 156,535 chest X-rays. The several distributed learning setups are compared for a range of 1-50 distributed participants. Performance of the split learning configuration remained constant for any number of clients compared to a single center study, showing a marked difference compared to the non collaborative configuration after 2 clients (p &lt; 0.001) for both sets. Our results affirm the benefits of collaborative training of deep neural networks in health care. Our work proves the significant benefit of distributed learning in healthcare, and paves the way for future real-world implementations.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.12098v1" style="color: #d9230f">Quaternion Equivariant Capsule Networks for 3D Point Clouds</a></b><br><em>Machine Learning, Computer Vision and Pattern Recognition, Robotics, Machine Learning, Graphics</em>. 6 authors. <a href="http://arxiv.org/pdf/1912.12098v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>We present a 3D capsule architecture for processing of point clouds that is equivariant with respect to the <span class="math inline">\(SO(3)\)</span> rotation group, translation and permutation of the unordered input sets. The network operates on a sparse set of local reference frames, computed from an input point cloud and establishes end-to-end equivariance through a novel 3D quaternion group capsule layer, including an equivariant dynamic routing procedure. …</summary><br> The capsule layer enables us to disentangle geometry from pose, paving the way for more informative descriptions and a structured latent space. In the process, we theoretically connect the process of dynamic routing between capsules to the well-known Weiszfeld algorithm, a scheme for solving  problems with provable convergence properties, enabling robust pose estimation between capsule layers. Due to the sparse equivariant quaternion capsules, our architecture allows joint object classification and orientation estimation, which we validate empirically on common benchmark datasets.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.12064v1" style="color: #d9230f">Efficient Data Analytics on Augmented Similarity Triplets</a></b><br><em>Machine Learning, Machine Learning</em>. 6 authors. <a href="http://arxiv.org/pdf/1912.12064v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Many machine learning methods (classification, clustering, etc.) start with a known kernel that provides similarity or distance measure between two objects. …</summary><br> Recent work has extended this to situations where the information about objects is limited to comparisons of distances between three objects (triplets). Humans find the comparison task much easier than the estimation of absolute similarities, so this kind of data can be easily obtained using crowd-sourcing. In this work, we give an efficient method of augmenting the triplets data, by utilizing additional implicit information inferred from the existing data. Triplets augmentation improves the quality of kernel-based and kernel-free data analytics tasks. Secondly, we also propose a novel set of algorithms for common supervised and unsupervised machine learning tasks based on triplets. These methods work directly with triplets, avoiding kernel evaluations. Experimental evaluation on real and synthetic datasets shows that our methods are more accurate than the current best-known techniques.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.12264v1" style="color: #d9230f">Predicting Attributes of Nodes Using Network Structure</a></b><br><em>Machine Learning, Machine Learning</em>. 5 authors. <a href="http://arxiv.org/pdf/1912.12264v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>In many graphs such as social networks, nodes have associated attributes representing their behavior. Predicting node attributes in such graphs is an important problem with applications in many domains like recommendation systems, privacy preservation, and targeted advertisement. …</summary><br> Attributes values can be predicted by analyzing patterns and correlations among attributes and employing classification/regression algorithms. However, these approaches do not utilize readily available network topology information. In this regard, interconnections between different attributes of nodes can be exploited to improve the prediction accuracy. In this paper, we propose an approach to represent a node by a feature map with respect to an attribute <span class="math inline">\(a_i\)</span> (which is used as input for machine learning algorithms) using all attributes of neighbors to predict attributes values for <span class="math inline">\(a_i\)</span>. We perform extensive experimentation on ten real-world datasets and show that the proposed feature map significantly improves the prediction accuracy as compared to baseline approaches on these datasets.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.12211v1" style="color: #d9230f">Nonlinear Markov Clustering by Minimum Curvilinear Sparse Similarity</a></b><br><em>Machine Learning, Machine Learning</em>. 5 authors. <a href="http://arxiv.org/pdf/1912.12211v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>The development of algorithms for unsupervised pattern recognition by nonlinear clustering is a notable problem in data science. Markov clustering (MCL) is a renowned algorithm that simulates stochastic flows on a network of sample similarities to detect the structural organization of clusters in the data, but it has never been generalized to deal with data nonlinearity. …</summary><br> Minimum Curvilinearity (MC) is a principle that approximates nonlinear sample distances in the high-dimensional feature space by curvilinear distances, which are computed as transversal paths over their minimum spanning tree, and then stored in a kernel. Here we propose MC-MCL, which is the first nonlinear kernel extension of MCL and exploits Minimum Curvilinearity to enhance the performance of MCL in real and synthetic data with underlying nonlinear patterns. MC-MCL is compared with baseline clustering methods, including DBSCAN, K-means and affinity propagation. We find that Minimum Curvilinearity provides a valuable framework to estimate nonlinear distances also when its kernel is applied in combination with MCL. Indeed, MC-MCL overcomes classical MCL and even baseline clustering algorithms in different nonlinear datasets.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.12274v1" style="color: #d9230f">Statistical Agnostic Mapping: a Framework in Neuroimaging based on Concentration Inequalities</a></b><br><em>Machine Learning, Applications, Machine Learning, Image and Video Processing</em>. 3 authors. <a href="http://arxiv.org/pdf/1912.12274v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>In the 70s a novel branch of statistics emerged focusing its effort in selecting a function in the pattern recognition problem, which fulfils a definite relationship between the quality of the approximation and its complexity. These data-driven approaches are mainly devoted to problems of estimating dependencies with limited sample sizes and comprise all the empirical out-of sample generalization approaches, e. …</summary><br>g. cross validation (CV) approaches. Although the latter are  in neuroimaging, there are a number of theoretical developments within this theory which could be employed to derive a Statistical Agnostic (non-parametric) Mapping (SAM) at voxel or multi-voxel level. Moreover, SAMs could relieve i) the problem of instability in limited sample sizes when estimating the actual risk via the CV approaches, e.g. large error bars, and provide ii) an alternative way of Family-wise-error (FWE) corrected p-value maps in inferential statistics for hypothesis testing. In this sense, we propose a novel framework in neuroimaging based on concentration inequalities, which results in (i) a rigorous development for model validation with a small sample/dimension ratio, and (ii) a less-conservative procedure than FWE p-value correction, to determine the brain significance maps from the inferences made using small upper bounds of the actual risk.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.11970v1" style="color: #d9230f">Evolutionary Clustering via Message Passing</a></b><br><em>Machine Learning, Artificial Intelligence, Neural and Evolutionary Computing, Machine Learning</em>. 2 authors. <a href="http://arxiv.org/pdf/1912.11970v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>We are often interested in clustering objects that evolve over time and identifying solutions to the clustering problem for every time step. Evolutionary clustering provides insight into cluster evolution and temporal changes in cluster memberships while enabling performance superior to that achieved by independently clustering data collected at different time points. …</summary><br> In this paper we introduce evolutionary affinity propagation (EAP), an evolutionary clustering algorithm that groups data points by exchanging messages on a factor graph. EAP promotes temporal smoothness of the solution to clustering time-evolving data by linking the nodes of the factor graph that are associated with adjacent data snapshots, and introduces consensus nodes to enable cluster tracking and identification of cluster births and deaths. Unlike existing evolutionary clustering methods that require additional processing to approximate the number of clusters or match them across time, EAP determines the number of clusters and tracks them automatically. A comparison with existing methods on simulated and experimental data demonstrates effectiveness of the proposed EAP algorithm.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.12150v1" style="color: #d9230f">The Chi-Square Test of Distance Correlation</a></b><br><em>Machine Learning, Methodology, Statistics Theory, Statistics Theory, Machine Learning</em>. 2 authors. <a href="http://arxiv.org/pdf/1912.12150v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Distance correlation has gained much recent attention in the statistics and machine learning community: the sample statistic is straightforward to compute, works for any metric or kernel choice, and equals 0 asymptotically if and only if independence. One major bottleneck is the testing process: the null distribution of distance correlation depends on the metric choice and marginal distributions, which cannot be readily estimated. …</summary><br> To compute a p-value, the standard approach is to estimate the null distribution via permutation, which generally requires O(rn^2) time complexity for n samples and r permutations and too costly for big data applications. In this paper, we propose a chi-square distribution to approximate the null distribution of the unbiased distance correlation. We prove that the chi-square distribution either equals or well-approximates the null distribution, and always upper tail dominates the null distribution. The resulting distance correlation chi-square test does not require any permutation nor parameter estimation, is simple and fast to implement, works with any strong negative type metric or characteristic kernel, is valid and universally consistent for independence testing, and enjoys a similar finite-sample testing power as the standard permutation test. When testing one-dimensional data using Euclidean distance, the unbiased distance correlation testing runs in O(nlog(n)), rendering it comparable in speed to the Pearson correlation t-test. The results are supported and demonstrated via simulations.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.12049v1" style="color: #d9230f">Projection pursuit based on Gaussian mixtures and evolutionary algorithms</a></b><br><em>Machine Learning, Machine Learning, Methodology, Neural and Evolutionary Computing</em>. 2 authors. <a href="http://arxiv.org/pdf/1912.12049v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>We propose a projection pursuit (PP) algorithm based on Gaussian mixture models (GMMs). The negentropy obtained from a multivariate density estimated by GMMs is adopted as the PP index to be maximised. …</summary><br> For a fixed dimension of the projection subspace, the GMM-based density estimation is projected onto that subspace, where an approximation of the negentropy for Gaussian mixtures is computed. Then, Genetic Algorithms (GAs) are used to find the optimal, orthogonal projection basis by maximising the former approximation. We show that this semi-parametric approach to PP is flexible and allows highly informative structures to be detected, by projecting multivariate datasets onto a subspace, where the data can be feasibly visualised. The performance of the proposed approach is shown on both artificial and real datasets.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.12187v1" style="color: #d9230f">Learning Neural Activations</a></b><br><em>Machine Learning, Neural and Evolutionary Computing, Machine Learning</em>. 2 authors. <a href="http://arxiv.org/pdf/1912.12187v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>An artificial neuron is modelled as a weighted summation followed by an activation function which determines its output. A wide variety of activation functions such as rectified linear units (ReLU), leaky-ReLU, Swish, MISH, etc. …</summary><br> have been explored in the literature. In this short paper, we explore what happens when the activation function of each neuron in an artificial neural network is learned natively from data alone. This is achieved by modelling the activation function of each neuron as a small neural network whose weights are shared by all neurons in the original network. We list our primary findings in the conclusions section. The code for our analysis is available at: <a href="https://github.com/amina01/Learning-Neural-Activations" class="uri">https://github.com/amina01/Learning-Neural-Activations</a>.
+</details>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="machine-learning--cs-lg-">Machine Learning (cs.LG): 18 new</h3>
+<table class="table table-striped table-condensed" style="margin-left: auto; margin-right: auto;">
+<tbody>
+<tr grouplength="18">
+<td colspan="1" style="background-color: #666; color: #fff;">
+<strong>Machine Learning (cs.LG)</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.12116v1" style="color: #d9230f">Comparative Analysis of Predictive Methods for Early Assessment of Compliance with Continuous Positive Airway Pressure Therapy</a></b><br><em>Machine Learning, Applications, Machine Learning</em>. 6 authors. <a href="http://arxiv.org/pdf/1912.12116v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Patients suffering from obstructive sleep apnea are mainly treated with continuous positive airway pressure (CPAP). Good compliance with this therapy is broadly accepted as more than 4h of CPAP average use nightly. …</summary><br> Although it is a highly effective treatment, compliance with this therapy is problematic to achieve with serious consequences for the patients’ health. Previous works already reported factors significantly related to compliance with the therapy. However, further research is still required to support clinicians to early anticipate patients’ therapy compliance. This work intends to take a further step in this direction by building compliance classifiers with CPAP therapy at three different moments of the patient follow-up (i.e. before the therapy starts and at months 1 and 3 after the baseline). Results of the clinical trial confirmed that month 3 was the time-point with the most accurate classifier reaching an f1-score of 87% and 84% in cross-validation and test. At month 1, performances were almost as high as in month 3 with 82% and 84% of f1-score. At baseline, where no information about patients’ CPAP use was given yet, the best classifier achieved 73% and 76% of f1-score in cross-validation and test set respectively. Subsequent analyses carried out with the best classifiers of each time point revealed that certain baseline factors (i.e. headaches, psychological symptoms, arterial hypertension and EuroQol visual analogue scale) were closely related to the prediction of compliance independently of the time-point. In addition, among the variables taken only during the follow-up of the patients, Epworth and the average nighttime hours were the most important to predict compliance with CPAP.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.12115v1" style="color: #d9230f">Split Learning for collaborative deep learning in healthcare</a></b><br><em>Machine Learning, Machine Learning, Distributed, Parallel, and Cluster Computing</em>. 6 authors. <a href="http://arxiv.org/pdf/1912.12115v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Shortage of labeled data has been holding the surge of deep learning in healthcare back, as sample sizes are often small, patient information cannot be shared openly, and multi-center collaborative studies are a burden to set up. Distributed machine learning methods promise to mitigate these problems. …</summary><br> We argue for a split learning based approach and apply this distributed learning method for the first time in the medical field to compare performance against (1) centrally hosted and (2) non collaborative configurations for a range of participants. Two medical deep learning tasks are used to compare split learning to conventional single and multi center approaches: a binary classification problem of a data set of 9000 fundus photos, and multi-label classification problem of a data set of 156,535 chest X-rays. The several distributed learning setups are compared for a range of 1-50 distributed participants. Performance of the split learning configuration remained constant for any number of clients compared to a single center study, showing a marked difference compared to the non collaborative configuration after 2 clients (p &lt; 0.001) for both sets. Our results affirm the benefits of collaborative training of deep neural networks in health care. Our work proves the significant benefit of distributed learning in healthcare, and paves the way for future real-world implementations.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.12098v1" style="color: #d9230f">Quaternion Equivariant Capsule Networks for 3D Point Clouds</a></b><br><em>Machine Learning, Computer Vision and Pattern Recognition, Robotics, Machine Learning, Graphics</em>. 6 authors. <a href="http://arxiv.org/pdf/1912.12098v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>We present a 3D capsule architecture for processing of point clouds that is equivariant with respect to the <span class="math inline">\(SO(3)\)</span> rotation group, translation and permutation of the unordered input sets. The network operates on a sparse set of local reference frames, computed from an input point cloud and establishes end-to-end equivariance through a novel 3D quaternion group capsule layer, including an equivariant dynamic routing procedure. …</summary><br> The capsule layer enables us to disentangle geometry from pose, paving the way for more informative descriptions and a structured latent space. In the process, we theoretically connect the process of dynamic routing between capsules to the well-known Weiszfeld algorithm, a scheme for solving  problems with provable convergence properties, enabling robust pose estimation between capsule layers. Due to the sparse equivariant quaternion capsules, our architecture allows joint object classification and orientation estimation, which we validate empirically on common benchmark datasets.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.12064v1" style="color: #d9230f">Efficient Data Analytics on Augmented Similarity Triplets</a></b><br><em>Machine Learning, Machine Learning</em>. 6 authors. <a href="http://arxiv.org/pdf/1912.12064v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Many machine learning methods (classification, clustering, etc.) start with a known kernel that provides similarity or distance measure between two objects. …</summary><br> Recent work has extended this to situations where the information about objects is limited to comparisons of distances between three objects (triplets). Humans find the comparison task much easier than the estimation of absolute similarities, so this kind of data can be easily obtained using crowd-sourcing. In this work, we give an efficient method of augmenting the triplets data, by utilizing additional implicit information inferred from the existing data. Triplets augmentation improves the quality of kernel-based and kernel-free data analytics tasks. Secondly, we also propose a novel set of algorithms for common supervised and unsupervised machine learning tasks based on triplets. These methods work directly with triplets, avoiding kernel evaluations. Experimental evaluation on real and synthetic datasets shows that our methods are more accurate than the current best-known techniques.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.12033v1" style="color: #d9230f">Deep Learning for 3D Point Clouds: A Survey</a></b><br><em>Machine Learning, Computer Vision and Pattern Recognition, Robotics, Image and Video Processing</em>. 6 authors. <a href="http://arxiv.org/pdf/1912.12033v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Point cloud learning has lately attracted increasing attention due to its wide applications in many areas, such as computer vision, autonomous driving, and robotics. As a dominating technique in AI, deep learning has been successfully used to solve various 2D vision problems. …</summary><br> However, deep learning on point clouds is still in its infancy due to the unique challenges faced by the processing of point clouds with deep neural networks. Recently, deep learning on point clouds has become even thriving, with numerous methods being proposed to address different problems in this area. To stimulate future research, this paper presents a comprehensive review of recent progress in deep learning methods for point clouds. It covers three major tasks, including 3D shape classification, 3D object detection and tracking, and 3D point cloud segmentation. It also presents comparative results on several publicly available datasets, together with insightful observations and inspiring future research directions.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.12264v1" style="color: #d9230f">Predicting Attributes of Nodes Using Network Structure</a></b><br><em>Machine Learning, Machine Learning</em>. 5 authors. <a href="http://arxiv.org/pdf/1912.12264v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>In many graphs such as social networks, nodes have associated attributes representing their behavior. Predicting node attributes in such graphs is an important problem with applications in many domains like recommendation systems, privacy preservation, and targeted advertisement. …</summary><br> Attributes values can be predicted by analyzing patterns and correlations among attributes and employing classification/regression algorithms. However, these approaches do not utilize readily available network topology information. In this regard, interconnections between different attributes of nodes can be exploited to improve the prediction accuracy. In this paper, we propose an approach to represent a node by a feature map with respect to an attribute <span class="math inline">\(a_i\)</span> (which is used as input for machine learning algorithms) using all attributes of neighbors to predict attributes values for <span class="math inline">\(a_i\)</span>. We perform extensive experimentation on ten real-world datasets and show that the proposed feature map significantly improves the prediction accuracy as compared to baseline approaches on these datasets.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.12211v1" style="color: #d9230f">Nonlinear Markov Clustering by Minimum Curvilinear Sparse Similarity</a></b><br><em>Machine Learning, Machine Learning</em>. 5 authors. <a href="http://arxiv.org/pdf/1912.12211v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>The development of algorithms for unsupervised pattern recognition by nonlinear clustering is a notable problem in data science. Markov clustering (MCL) is a renowned algorithm that simulates stochastic flows on a network of sample similarities to detect the structural organization of clusters in the data, but it has never been generalized to deal with data nonlinearity. …</summary><br> Minimum Curvilinearity (MC) is a principle that approximates nonlinear sample distances in the high-dimensional feature space by curvilinear distances, which are computed as transversal paths over their minimum spanning tree, and then stored in a kernel. Here we propose MC-MCL, which is the first nonlinear kernel extension of MCL and exploits Minimum Curvilinearity to enhance the performance of MCL in real and synthetic data with underlying nonlinear patterns. MC-MCL is compared with baseline clustering methods, including DBSCAN, K-means and affinity propagation. We find that Minimum Curvilinearity provides a valuable framework to estimate nonlinear distances also when its kernel is applied in combination with MCL. Indeed, MC-MCL overcomes classical MCL and even baseline clustering algorithms in different nonlinear datasets.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.12215v1" style="color: #d9230f">Local Class-Specific and Global Image-Level Generative Adversarial Networks for Semantic-Guided Scene Generation</a></b><br><em>Machine Learning, Computer Vision and Pattern Recognition, Image and Video Processing</em>. 5 authors. <a href="http://arxiv.org/pdf/1912.12215v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>In this paper, we address the task of semantic-guided scene generation. One open challenge in scene generation is the difficulty of the generation of small objects and detailed local texture, which has been widely observed in global image-level generation methods. …</summary><br> To tackle this issue, in this work we consider learning the scene generation in a local context, and correspondingly design a local class-specific generative network with semantic maps as a guidance, which separately constructs and learns sub-generators concentrating on the generation of different classes, and is able to provide more scene details. To learn more discriminative class-specific feature representations for the local generation, a novel classification module is also proposed. To combine the advantage of both the global image-level and the local class-specific generation, a joint generation network is designed with an attention fusion module and a dual-discriminator structure embedded. Extensive experiments on two scene image generation tasks show superior generation performance of the proposed model. The state-of-the-art results are established by large margins on both tasks and on challenging public benchmarks. The source code and trained models are available at <a href="https://github.com/Ha0Tang/LGGAN" class="uri">https://github.com/Ha0Tang/LGGAN</a>.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.12265v1" style="color: #d9230f">Deep Transfer Learning Based Downlink Channel Prediction for FDD Massive MIMO Systems</a></b><br><em>Machine Learning, Information Theory, Signal Processing, Information Theory</em>. 5 authors. <a href="http://arxiv.org/pdf/1912.12265v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Artificial intelligence (AI) based downlink channel state information (CSI) prediction for frequency division duplexing (FDD) massive multiple-input multiple-output (MIMO) systems has attracted growing attention recently. However, existing works focus on the downlink CSI prediction for the users under a given environment and is hard to adapt to users in new environment especially when labeled data is limited. …</summary><br> To address this issue, we formulate the downlink channel prediction as a deep transfer learning (DTL) problem, where each learning task aims to predict the downlink CSI from the uplink CSI for one single environment. Specifically, we develop the direct-transfer algorithm based on the fully-connected neural network architecture, where the network is trained on the data from all previous environments in the manner of classical deep learning and is then fine-tuned for new environments. To further improve the transfer efficiency, we propose the meta-learning algorithm that trains the network by alternating inner-task and across-task updates and then adapts to a new environment with a small number of labeled data. Simulation results show that the direct-transfer algorithm achieves better performance than the deep learning algorithm, which implies that the transfer learning benefits the downlink channel prediction in new environments. Moreover, the meta-learning algorithm significantly outperforms the direct-transfer algorithm in terms of both prediction accuracy and stability, especially when the number of samples is very small, which validates its effectiveness and superiority.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.12294v1" style="color: #d9230f">Learning by Cheating</a></b><br><em>Machine Learning, Artificial Intelligence, Robotics, Computer Vision and Pattern Recognition</em>. 4 authors. <a href="http://arxiv.org/pdf/1912.12294v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Vision-based urban driving is hard. The autonomous system needs to learn to perceive the world and act in it. …</summary><br> We show that this challenging learning problem can be simplified by decomposing it into two stages. We first train an agent that has access to privileged information. This privileged agent cheats by observing the ground-truth layout of the environment and the positions of all traffic participants. In the second stage, the privileged agent acts as a teacher that trains a purely vision-based sensorimotor agent. The resulting sensorimotor agent does not have access to any privileged information and does not cheat. This two-stage training procedure is counter-intuitive at first, but has a number of important advantages that we analyze and empirically demonstrate. We use the presented approach to train a vision-based autonomous driving system that substantially outperforms the state of the art on the CARLA benchmark and the recent NoCrash benchmark. Our approach achieves, for the first time, 100% success rate on all tasks in the original CARLA benchmark, sets a new record on the NoCrash benchmark, and reduces the frequency of infractions by an order of magnitude compared to the prior state of the art. For the video that summarizes this work, see <a href="https://youtu.be/u9ZCxxD-UUw" class="uri">https://youtu.be/u9ZCxxD-UUw</a>
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.12274v1" style="color: #d9230f">Statistical Agnostic Mapping: a Framework in Neuroimaging based on Concentration Inequalities</a></b><br><em>Machine Learning, Applications, Machine Learning, Image and Video Processing</em>. 3 authors. <a href="http://arxiv.org/pdf/1912.12274v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>In the 70s a novel branch of statistics emerged focusing its effort in selecting a function in the pattern recognition problem, which fulfils a definite relationship between the quality of the approximation and its complexity. These data-driven approaches are mainly devoted to problems of estimating dependencies with limited sample sizes and comprise all the empirical out-of sample generalization approaches, e. …</summary><br>g. cross validation (CV) approaches. Although the latter are  in neuroimaging, there are a number of theoretical developments within this theory which could be employed to derive a Statistical Agnostic (non-parametric) Mapping (SAM) at voxel or multi-voxel level. Moreover, SAMs could relieve i) the problem of instability in limited sample sizes when estimating the actual risk via the CV approaches, e.g. large error bars, and provide ii) an alternative way of Family-wise-error (FWE) corrected p-value maps in inferential statistics for hypothesis testing. In this sense, we propose a novel framework in neuroimaging based on concentration inequalities, which results in (i) a rigorous development for model validation with a small sample/dimension ratio, and (ii) a less-conservative procedure than FWE p-value correction, to determine the brain significance maps from the inferences made using small upper bounds of the actual risk.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.12270v1" style="color: #d9230f">Combining Deep Learning and Verification for Precise Object Instance Detection</a></b><br><em>Machine Learning, Computer Vision and Pattern Recognition, Image and Video Processing</em>. 3 authors. <a href="http://arxiv.org/pdf/1912.12270v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Deep learning object detectors often return false positives with very high confidence. Although they optimize generic detection performance, such as mean average precision (mAP), they are not designed for reliability. …</summary><br> For a reliable detection system, if a high confidence detection is made, we would want high certainty that the object has indeed been detected. To achieve this, we have developed a set of verification tests which a proposed detection must pass to be accepted. We develop a theoretical framework which proves that, under certain assumptions, our verification tests will not accept any false positives. Based on an approximation to this framework, we present a practical detection system that can verify, with high precision, whether each detection of a machine-learning based object detector is correct. We show that these tests can improve the overall accuracy of a base detector and that accepted examples are highly likely to be correct. This allows the detector to operate in a high precision regime and can thus be used for robotic perception systems as a reliable instance detection method.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.12101v1" style="color: #d9230f">A 3D-Deep-Learning-based Augmented Reality Calibration Method for Robotic Environments using Depth Sensor Data</a></b><br><em>Machine Learning, Computer Vision and Pattern Recognition, Robotics</em>. 3 authors. <a href="http://arxiv.org/pdf/1912.12101v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Augmented Reality and mobile robots are gaining much attention within industries due to the high potential to make processes cost and time efficient. To facilitate augmented reality, a calibration between the Augmented Reality device and the environment is necessary. …</summary><br> This is a challenge when dealing with mobile robots due to the mobility of all entities making the environment dynamic. On this account, we propose a novel approach to calibrate the Augmented Reality device using 3D depth sensor data. We use the depth camera of a cutting edge Augmented Reality Device - the Microsoft Hololens for deep learning based calibration. Therefore, we modified a neural network based on the recently published VoteNet architecture which works directly on the point cloud input observed by the Hololens. We achieve satisfying results and eliminate external tools like markers, thus enabling a more intuitive and flexible work flow for Augmented Reality integration. The results are adaptable to work with all depth cameras and are promising for further research. Furthermore, we introduce an open source 3D point cloud labeling tool, which is to our knowledge the first open source tool for labeling raw point cloud data.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.12244v1" style="color: #d9230f">Emergence of Network Motifs in Deep Neural Networks</a></b><br><em>Machine Learning, Biological Physics, Adaptation and Self-Organizing Systems</em>. 3 authors. <a href="http://arxiv.org/pdf/1912.12244v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Network science can offer fundamental insights into the structural and functional properties of complex systems. For example, it is widely known that neuronal circuits tend to organize into basic functional topological modules, called “network motifs”. …</summary><br> In this article we show that network science tools can be successfully applied also to the study of artificial neural networks operating according to self-organizing (learning) principles. In particular, we study the emergence of network motifs in multi-layer perceptrons, whose initial connectivity is defined as a stack of fully-connected, bipartite graphs. Our simulations show that the final network topology is primarily shaped by learning dynamics, but can be strongly biased by choosing appropriate weight initialization schemes. Overall, our results suggest that non-trivial initialization strategies can make learning more effective by promoting the development of useful network motifs, which are often surprisingly consistent with those observed in general transduction networks.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.11970v1" style="color: #d9230f">Evolutionary Clustering via Message Passing</a></b><br><em>Machine Learning, Artificial Intelligence, Neural and Evolutionary Computing, Machine Learning</em>. 2 authors. <a href="http://arxiv.org/pdf/1912.11970v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>We are often interested in clustering objects that evolve over time and identifying solutions to the clustering problem for every time step. Evolutionary clustering provides insight into cluster evolution and temporal changes in cluster memberships while enabling performance superior to that achieved by independently clustering data collected at different time points. …</summary><br> In this paper we introduce evolutionary affinity propagation (EAP), an evolutionary clustering algorithm that groups data points by exchanging messages on a factor graph. EAP promotes temporal smoothness of the solution to clustering time-evolving data by linking the nodes of the factor graph that are associated with adjacent data snapshots, and introduces consensus nodes to enable cluster tracking and identification of cluster births and deaths. Unlike existing evolutionary clustering methods that require additional processing to approximate the number of clusters or match them across time, EAP determines the number of clusters and tracks them automatically. A comparison with existing methods on simulated and experimental data demonstrates effectiveness of the proposed EAP algorithm.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.12150v1" style="color: #d9230f">The Chi-Square Test of Distance Correlation</a></b><br><em>Machine Learning, Methodology, Statistics Theory, Statistics Theory, Machine Learning</em>. 2 authors. <a href="http://arxiv.org/pdf/1912.12150v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Distance correlation has gained much recent attention in the statistics and machine learning community: the sample statistic is straightforward to compute, works for any metric or kernel choice, and equals 0 asymptotically if and only if independence. One major bottleneck is the testing process: the null distribution of distance correlation depends on the metric choice and marginal distributions, which cannot be readily estimated. …</summary><br> To compute a p-value, the standard approach is to estimate the null distribution via permutation, which generally requires O(rn^2) time complexity for n samples and r permutations and too costly for big data applications. In this paper, we propose a chi-square distribution to approximate the null distribution of the unbiased distance correlation. We prove that the chi-square distribution either equals or well-approximates the null distribution, and always upper tail dominates the null distribution. The resulting distance correlation chi-square test does not require any permutation nor parameter estimation, is simple and fast to implement, works with any strong negative type metric or characteristic kernel, is valid and universally consistent for independence testing, and enjoys a similar finite-sample testing power as the standard permutation test. When testing one-dimensional data using Euclidean distance, the unbiased distance correlation testing runs in O(nlog(n)), rendering it comparable in speed to the Pearson correlation t-test. The results are supported and demonstrated via simulations.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.12049v1" style="color: #d9230f">Projection pursuit based on Gaussian mixtures and evolutionary algorithms</a></b><br><em>Machine Learning, Machine Learning, Methodology, Neural and Evolutionary Computing</em>. 2 authors. <a href="http://arxiv.org/pdf/1912.12049v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>We propose a projection pursuit (PP) algorithm based on Gaussian mixture models (GMMs). The negentropy obtained from a multivariate density estimated by GMMs is adopted as the PP index to be maximised. …</summary><br> For a fixed dimension of the projection subspace, the GMM-based density estimation is projected onto that subspace, where an approximation of the negentropy for Gaussian mixtures is computed. Then, Genetic Algorithms (GAs) are used to find the optimal, orthogonal projection basis by maximising the former approximation. We show that this semi-parametric approach to PP is flexible and allows highly informative structures to be detected, by projecting multivariate datasets onto a subspace, where the data can be feasibly visualised. The performance of the proposed approach is shown on both artificial and real datasets.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.12187v1" style="color: #d9230f">Learning Neural Activations</a></b><br><em>Machine Learning, Neural and Evolutionary Computing, Machine Learning</em>. 2 authors. <a href="http://arxiv.org/pdf/1912.12187v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>An artificial neuron is modelled as a weighted summation followed by an activation function which determines its output. A wide variety of activation functions such as rectified linear units (ReLU), leaky-ReLU, Swish, MISH, etc. …</summary><br> have been explored in the literature. In this short paper, we explore what happens when the activation function of each neuron in an artificial neural network is learned natively from data alone. This is achieved by modelling the activation function of each neuron as a small neural network whose weights are shared by all neurons in the original network. We list our primary findings in the conclusions section. The code for our analysis is available at: <a href="https://github.com/amina01/Learning-Neural-Activations" class="uri">https://github.com/amina01/Learning-Neural-Activations</a>.
+</details>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="data-science-arxiv-by-primary-tag">Data Science arXiv by Primary Tag</h2>
+<p>The tables below show abstracts organized by category with hyperlinks back to the arXiv site.</p>
+<div class="layout-chunk" data-layout="l-page">
+
+<h3 id="computer-science">Computer Science</h3>
+<table class="table table-striped table-condensed" style="margin-left: auto; margin-right: auto;">
+<tbody>
+<tr grouplength="11">
+<td colspan="1" style="background-color: #666; color: #fff;">
+<strong>Computer Vision and Pattern Recognition (cs.CV)</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.11976v1" style="color: #d9230f">HoMM: Higher-order Moment Matching for Unsupervised Domain Adaptation</a></b><br><em>Computer Vision and Pattern Recognition</em>. 7 authors. <a href="http://arxiv.org/pdf/1912.11976v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Minimizing the discrepancy of feature distributions between different domains is one of the most promising directions in unsupervised domain adaptation. From the perspective of distribution matching, most existing discrepancy-based methods are designed to match the second-order or lower statistics, which however, have limited expression of statistical characteristic for non-Gaussian distributions. …</summary><br> In this work, we explore the benefits of using higher-order statistics (mainly refer to third-order and fourth-order statistics) for domain matching. We propose a Higher-order Moment Matching (HoMM) method, and further extend the HoMM into reproducing kernel Hilbert spaces (RKHS). In particular, our proposed HoMM can perform arbitrary-order moment tensor matching, we show that the first-order HoMM is equivalent to Maximum Mean Discrepancy (MMD) and the second-order HoMM is equivalent to Correlation Alignment (CORAL). Moreover, the third-order and the fourth-order moment tensor matching are expected to perform comprehensive domain alignment as higher-order statistics can approximate more complex, non-Gaussian distributions. Besides, we also exploit the pseudo-labeled target samples to learn discriminative representations in the target domain, which further improves the transfer performance. Extensive experiments are conducted, showing that our proposed HoMM consistently outperforms the existing moment matching methods by a large margin. Codes are available at 
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.12116v1" style="color: #d9230f">Comparative Analysis of Predictive Methods for Early Assessment of Compliance with Continuous Positive Airway Pressure Therapy</a></b><br><em>Machine Learning, Applications, Machine Learning</em>. 6 authors. <a href="http://arxiv.org/pdf/1912.12116v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Patients suffering from obstructive sleep apnea are mainly treated with continuous positive airway pressure (CPAP). Good compliance with this therapy is broadly accepted as more than 4h of CPAP average use nightly. …</summary><br> Although it is a highly effective treatment, compliance with this therapy is problematic to achieve with serious consequences for the patients’ health. Previous works already reported factors significantly related to compliance with the therapy. However, further research is still required to support clinicians to early anticipate patients’ therapy compliance. This work intends to take a further step in this direction by building compliance classifiers with CPAP therapy at three different moments of the patient follow-up (i.e. before the therapy starts and at months 1 and 3 after the baseline). Results of the clinical trial confirmed that month 3 was the time-point with the most accurate classifier reaching an f1-score of 87% and 84% in cross-validation and test. At month 1, performances were almost as high as in month 3 with 82% and 84% of f1-score. At baseline, where no information about patients’ CPAP use was given yet, the best classifier achieved 73% and 76% of f1-score in cross-validation and test set respectively. Subsequent analyses carried out with the best classifiers of each time point revealed that certain baseline factors (i.e. headaches, psychological symptoms, arterial hypertension and EuroQol visual analogue scale) were closely related to the prediction of compliance independently of the time-point. In addition, among the variables taken only during the follow-up of the patients, Epworth and the average nighttime hours were the most important to predict compliance with CPAP.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.12115v1" style="color: #d9230f">Split Learning for collaborative deep learning in healthcare</a></b><br><em>Machine Learning, Machine Learning, Distributed, Parallel, and Cluster Computing</em>. 6 authors. <a href="http://arxiv.org/pdf/1912.12115v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Shortage of labeled data has been holding the surge of deep learning in healthcare back, as sample sizes are often small, patient information cannot be shared openly, and multi-center collaborative studies are a burden to set up. Distributed machine learning methods promise to mitigate these problems. …</summary><br> We argue for a split learning based approach and apply this distributed learning method for the first time in the medical field to compare performance against (1) centrally hosted and (2) non collaborative configurations for a range of participants. Two medical deep learning tasks are used to compare split learning to conventional single and multi center approaches: a binary classification problem of a data set of 9000 fundus photos, and multi-label classification problem of a data set of 156,535 chest X-rays. The several distributed learning setups are compared for a range of 1-50 distributed participants. Performance of the split learning configuration remained constant for any number of clients compared to a single center study, showing a marked difference compared to the non collaborative configuration after 2 clients (p &lt; 0.001) for both sets. Our results affirm the benefits of collaborative training of deep neural networks in health care. Our work proves the significant benefit of distributed learning in healthcare, and paves the way for future real-world implementations.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.12098v1" style="color: #d9230f">Quaternion Equivariant Capsule Networks for 3D Point Clouds</a></b><br><em>Machine Learning, Computer Vision and Pattern Recognition, Robotics, Machine Learning, Graphics</em>. 6 authors. <a href="http://arxiv.org/pdf/1912.12098v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>We present a 3D capsule architecture for processing of point clouds that is equivariant with respect to the <span class="math inline">\(SO(3)\)</span> rotation group, translation and permutation of the unordered input sets. The network operates on a sparse set of local reference frames, computed from an input point cloud and establishes end-to-end equivariance through a novel 3D quaternion group capsule layer, including an equivariant dynamic routing procedure. …</summary><br> The capsule layer enables us to disentangle geometry from pose, paving the way for more informative descriptions and a structured latent space. In the process, we theoretically connect the process of dynamic routing between capsules to the well-known Weiszfeld algorithm, a scheme for solving  problems with provable convergence properties, enabling robust pose estimation between capsule layers. Due to the sparse equivariant quaternion capsules, our architecture allows joint object classification and orientation estimation, which we validate empirically on common benchmark datasets.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.12064v1" style="color: #d9230f">Efficient Data Analytics on Augmented Similarity Triplets</a></b><br><em>Machine Learning, Machine Learning</em>. 6 authors. <a href="http://arxiv.org/pdf/1912.12064v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Many machine learning methods (classification, clustering, etc.) start with a known kernel that provides similarity or distance measure between two objects. …</summary><br> Recent work has extended this to situations where the information about objects is limited to comparisons of distances between three objects (triplets). Humans find the comparison task much easier than the estimation of absolute similarities, so this kind of data can be easily obtained using crowd-sourcing. In this work, we give an efficient method of augmenting the triplets data, by utilizing additional implicit information inferred from the existing data. Triplets augmentation improves the quality of kernel-based and kernel-free data analytics tasks. Secondly, we also propose a novel set of algorithms for common supervised and unsupervised machine learning tasks based on triplets. These methods work directly with triplets, avoiding kernel evaluations. Experimental evaluation on real and synthetic datasets shows that our methods are more accurate than the current best-known techniques.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.12033v1" style="color: #d9230f">Deep Learning for 3D Point Clouds: A Survey</a></b><br><em>Machine Learning, Computer Vision and Pattern Recognition, Robotics, Image and Video Processing</em>. 6 authors. <a href="http://arxiv.org/pdf/1912.12033v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Point cloud learning has lately attracted increasing attention due to its wide applications in many areas, such as computer vision, autonomous driving, and robotics. As a dominating technique in AI, deep learning has been successfully used to solve various 2D vision problems. …</summary><br> However, deep learning on point clouds is still in its infancy due to the unique challenges faced by the processing of point clouds with deep neural networks. Recently, deep learning on point clouds has become even thriving, with numerous methods being proposed to address different problems in this area. To stimulate future research, this paper presents a comprehensive review of recent progress in deep learning methods for point clouds. It covers three major tasks, including 3D shape classification, 3D object detection and tracking, and 3D point cloud segmentation. It also presents comparative results on several publicly available datasets, together with insightful observations and inspiring future research directions.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.12189v1" style="color: #d9230f">LLOV: A Fast Static Data-Race Checker for OpenMP Programs</a></b><br><em>Software Engineering, Programming Languages</em>. 6 authors. <a href="http://arxiv.org/pdf/1912.12189v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>In the era of Exascale computing, writing efficient parallel programs is indispensable and at the same time, writing sound parallel programs is highly difficult. While parallel programming is easier with frameworks such as OpenMP, the possibility of data races in these programs still persists. …</summary><br> In this paper, we propose a fast, lightweight, language agnostic, and static data race checker for OpenMP programs based on the LLVM compiler framework. We compare our tool with other state-of-the-art data race checkers on a variety of well-established benchmarks. We show that the precision, accuracy, and the F1 score of our tool is comparable to other checkers while being orders of magnitude faster. To the best of our knowledge, this work is the only tool among the state-of-the-art data race checkers that can verify a FORTRAN program to be datarace free.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.12264v1" style="color: #d9230f">Predicting Attributes of Nodes Using Network Structure</a></b><br><em>Machine Learning, Machine Learning</em>. 5 authors. <a href="http://arxiv.org/pdf/1912.12264v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>In many graphs such as social networks, nodes have associated attributes representing their behavior. Predicting node attributes in such graphs is an important problem with applications in many domains like recommendation systems, privacy preservation, and targeted advertisement. …</summary><br> Attributes values can be predicted by analyzing patterns and correlations among attributes and employing classification/regression algorithms. However, these approaches do not utilize readily available network topology information. In this regard, interconnections between different attributes of nodes can be exploited to improve the prediction accuracy. In this paper, we propose an approach to represent a node by a feature map with respect to an attribute <span class="math inline">\(a_i\)</span> (which is used as input for machine learning algorithms) using all attributes of neighbors to predict attributes values for <span class="math inline">\(a_i\)</span>. We perform extensive experimentation on ten real-world datasets and show that the proposed feature map significantly improves the prediction accuracy as compared to baseline approaches on these datasets.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.12211v1" style="color: #d9230f">Nonlinear Markov Clustering by Minimum Curvilinear Sparse Similarity</a></b><br><em>Machine Learning, Machine Learning</em>. 5 authors. <a href="http://arxiv.org/pdf/1912.12211v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>The development of algorithms for unsupervised pattern recognition by nonlinear clustering is a notable problem in data science. Markov clustering (MCL) is a renowned algorithm that simulates stochastic flows on a network of sample similarities to detect the structural organization of clusters in the data, but it has never been generalized to deal with data nonlinearity. …</summary><br> Minimum Curvilinearity (MC) is a principle that approximates nonlinear sample distances in the high-dimensional feature space by curvilinear distances, which are computed as transversal paths over their minimum spanning tree, and then stored in a kernel. Here we propose MC-MCL, which is the first nonlinear kernel extension of MCL and exploits Minimum Curvilinearity to enhance the performance of MCL in real and synthetic data with underlying nonlinear patterns. MC-MCL is compared with baseline clustering methods, including DBSCAN, K-means and affinity propagation. We find that Minimum Curvilinearity provides a valuable framework to estimate nonlinear distances also when its kernel is applied in combination with MCL. Indeed, MC-MCL overcomes classical MCL and even baseline clustering algorithms in different nonlinear datasets.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.12215v1" style="color: #d9230f">Local Class-Specific and Global Image-Level Generative Adversarial Networks for Semantic-Guided Scene Generation</a></b><br><em>Machine Learning, Computer Vision and Pattern Recognition, Image and Video Processing</em>. 5 authors. <a href="http://arxiv.org/pdf/1912.12215v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>In this paper, we address the task of semantic-guided scene generation. One open challenge in scene generation is the difficulty of the generation of small objects and detailed local texture, which has been widely observed in global image-level generation methods. …</summary><br> To tackle this issue, in this work we consider learning the scene generation in a local context, and correspondingly design a local class-specific generative network with semantic maps as a guidance, which separately constructs and learns sub-generators concentrating on the generation of different classes, and is able to provide more scene details. To learn more discriminative class-specific feature representations for the local generation, a novel classification module is also proposed. To combine the advantage of both the global image-level and the local class-specific generation, a joint generation network is designed with an attention fusion module and a dual-discriminator structure embedded. Extensive experiments on two scene image generation tasks show superior generation performance of the proposed model. The state-of-the-art results are established by large margins on both tasks and on challenging public benchmarks. The source code and trained models are available at <a href="https://github.com/Ha0Tang/LGGAN" class="uri">https://github.com/Ha0Tang/LGGAN</a>.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.12265v1" style="color: #d9230f">Deep Transfer Learning Based Downlink Channel Prediction for FDD Massive MIMO Systems</a></b><br><em>Machine Learning, Information Theory, Signal Processing, Information Theory</em>. 5 authors. <a href="http://arxiv.org/pdf/1912.12265v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Artificial intelligence (AI) based downlink channel state information (CSI) prediction for frequency division duplexing (FDD) massive multiple-input multiple-output (MIMO) systems has attracted growing attention recently. However, existing works focus on the downlink CSI prediction for the users under a given environment and is hard to adapt to users in new environment especially when labeled data is limited. …</summary><br> To address this issue, we formulate the downlink channel prediction as a deep transfer learning (DTL) problem, where each learning task aims to predict the downlink CSI from the uplink CSI for one single environment. Specifically, we develop the direct-transfer algorithm based on the fully-connected neural network architecture, where the network is trained on the data from all previous environments in the manner of classical deep learning and is then fine-tuned for new environments. To further improve the transfer efficiency, we propose the meta-learning algorithm that trains the network by alternating inner-task and across-task updates and then adapts to a new environment with a small number of labeled data. Simulation results show that the direct-transfer algorithm achieves better performance than the deep learning algorithm, which implies that the transfer learning benefits the downlink channel prediction in new environments. Moreover, the meta-learning algorithm significantly outperforms the direct-transfer algorithm in terms of both prediction accuracy and stability, especially when the number of samples is very small, which validates its effectiveness and superiority.
+</details>
+</td>
+</tr>
+<tr grouplength="8">
+<td colspan="1" style="background-color: #666; color: #fff;">
+<strong>Machine Learning (cs.LG)</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.12294v1" style="color: #d9230f">Learning by Cheating</a></b><br><em>Machine Learning, Artificial Intelligence, Robotics, Computer Vision and Pattern Recognition</em>. 4 authors. <a href="http://arxiv.org/pdf/1912.12294v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Vision-based urban driving is hard. The autonomous system needs to learn to perceive the world and act in it. …</summary><br> We show that this challenging learning problem can be simplified by decomposing it into two stages. We first train an agent that has access to privileged information. This privileged agent cheats by observing the ground-truth layout of the environment and the positions of all traffic participants. In the second stage, the privileged agent acts as a teacher that trains a purely vision-based sensorimotor agent. The resulting sensorimotor agent does not have access to any privileged information and does not cheat. This two-stage training procedure is counter-intuitive at first, but has a number of important advantages that we analyze and empirically demonstrate. We use the presented approach to train a vision-based autonomous driving system that substantially outperforms the state of the art on the CARLA benchmark and the recent NoCrash benchmark. Our approach achieves, for the first time, 100% success rate on all tasks in the original CARLA benchmark, sets a new record on the NoCrash benchmark, and reduces the frequency of infractions by an order of magnitude compared to the prior state of the art. For the video that summarizes this work, see <a href="https://youtu.be/u9ZCxxD-UUw" class="uri">https://youtu.be/u9ZCxxD-UUw</a>
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.12027v1" style="color: #d9230f">A General Framework for Saliency Detection Methods</a></b><br><em>Computer Vision and Pattern Recognition</em>. 4 authors. <a href="http://arxiv.org/pdf/1912.12027v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Saliency detection is one of the most challenging problems in the fields of image analysis and computer vision. Many approaches propose different architectures based on the psychological and biological properties of the human visual attention system. …</summary><br> However, there is not still an abstract framework, which summarized the existed methods. In this paper, we offered a general framework for saliency models, which consists of five main steps: pre-processing, feature extraction, saliency map generation, saliency map combination, and post-processing. Also, we study different saliency models containing each level and compare their performance together. This framework helps researchers to have a comprehensive view of studying new methods.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.12014v1" style="color: #d9230f">Visual Agreement Regularized Training for Multi-Modal Machine Translation</a></b><br><em>Computer Vision and Pattern Recognition, Computation and Language</em>. 4 authors. <a href="http://arxiv.org/pdf/1912.12014v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Multi-modal machine translation aims at translating the source sentence into a different language in the presence of the paired image. Previous work suggests that additional visual information only provides dispensable help to translation, which is needed in several very special cases such as translating ambiguous words. …</summary><br> To make better use of visual information, this work presents visual agreement regularized training. The proposed approach jointly trains the source-to-target and target-to-source translation models and encourages them to share the same focus on the visual information when generating semantically equivalent visual words (e.g. “ball” in English and “ballon” in French). Besides, a simple yet effective multi-head co-attention model is also introduced to capture interactions between visual and textual features. The results show that our approaches can outperform competitive baselines by a large margin on the Multi30k dataset. Further analysis demonstrates that the proposed regularized training can effectively improve the agreement of attention on the image, leading to better use of visual information.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.11995v1" style="color: #d9230f">An Abstraction Model for Semantic Segmentation Algorithms</a></b><br><em>Computer Vision and Pattern Recognition</em>. 4 authors. <a href="http://arxiv.org/pdf/1912.11995v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Semantic segmentation is a process of classifying each pixel in the image. Due to its advantages, sematic segmentation is used in many tasks such as cancer detection, robot-assisted surgery, satellite image analysis, self-driving car control, etc. …</summary><br> In this process, accuracy and efficiency are the two crucial goals for this purpose, and there are several state of the art neural networks. In each method, by employing different techniques, new solutions have been presented for increasing efficiency, accuracy, and reducing the costs. The diversity of the implemented approaches for semantic segmentation makes it difficult for researches to achieve a comprehensive view of the field. To offer a comprehensive view, in this paper, an abstraction model for the task of semantic segmentation is offered. The proposed framework consists of four general blocks that cover the majority of majority of methods that have been proposed for semantic segmentation. We also compare different approaches and consider the importance of each part in the overall performance of a method.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.12290v1" style="color: #d9230f">Seeing without Looking: Contextual Rescoring of Object Detections for AP Maximization</a></b><br><em>Computer Vision and Pattern Recognition</em>. 3 authors. <a href="http://arxiv.org/pdf/1912.12290v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>The majority of current object detectors lack context: class predictions are made independently from other detections. We propose to incorporate context in object detection by post-processing the output of an arbitrary detector to rescore the confidences of its detections. …</summary><br> Rescoring is done by conditioning on contextual information from the entire set of detections: their confidences, predicted classes, and positions. We show that AP can be improved by simply reassigning the detection confidence values such that true positives that survive longer (i.e., those with the correct class and large IoU) are scored higher than false positives or detections with small IoU. In this setting, we use a bidirectional RNN with attention for contextual rescoring and introduce a training target that uses the IoU with ground truth to maximize AP for the given set of detections. The fact that our approach does not require access to visual features makes it computationally inexpensive and agnostic to the detection architecture. In spite of this simplicity, our model consistently improves AP over strong pre-trained baselines (Cascade R-CNN and Faster R-CNN with several backbones), particularly by reducing the confidence of duplicate detections (a learned form of non-maximum suppression) and removing out-of-context objects by conditioning on the confidences, classes, positions, and sizes of the co-occurrent detections (e.g., a high-confidence detection of bird makes a detection of sports ball less likely).
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.12270v1" style="color: #d9230f">Combining Deep Learning and Verification for Precise Object Instance Detection</a></b><br><em>Machine Learning, Computer Vision and Pattern Recognition, Image and Video Processing</em>. 3 authors. <a href="http://arxiv.org/pdf/1912.12270v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Deep learning object detectors often return false positives with very high confidence. Although they optimize generic detection performance, such as mean average precision (mAP), they are not designed for reliability. …</summary><br> For a reliable detection system, if a high confidence detection is made, we would want high certainty that the object has indeed been detected. To achieve this, we have developed a set of verification tests which a proposed detection must pass to be accepted. We develop a theoretical framework which proves that, under certain assumptions, our verification tests will not accept any false positives. Based on an approximation to this framework, we present a practical detection system that can verify, with high precision, whether each detection of a machine-learning based object detector is correct. We show that these tests can improve the overall accuracy of a base detector and that accepted examples are highly likely to be correct. This allows the detector to operate in a high precision regime and can thus be used for robotic perception systems as a reliable instance detection method.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.12101v1" style="color: #d9230f">A 3D-Deep-Learning-based Augmented Reality Calibration Method for Robotic Environments using Depth Sensor Data</a></b><br><em>Machine Learning, Computer Vision and Pattern Recognition, Robotics</em>. 3 authors. <a href="http://arxiv.org/pdf/1912.12101v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Augmented Reality and mobile robots are gaining much attention within industries due to the high potential to make processes cost and time efficient. To facilitate augmented reality, a calibration between the Augmented Reality device and the environment is necessary. …</summary><br> This is a challenge when dealing with mobile robots due to the mobility of all entities making the environment dynamic. On this account, we propose a novel approach to calibrate the Augmented Reality device using 3D depth sensor data. We use the depth camera of a cutting edge Augmented Reality Device - the Microsoft Hololens for deep learning based calibration. Therefore, we modified a neural network based on the recently published VoteNet architecture which works directly on the point cloud input observed by the Hololens. We achieve satisfying results and eliminate external tools like markers, thus enabling a more intuitive and flexible work flow for Augmented Reality integration. The results are adaptable to work with all depth cameras and are promising for further research. Furthermore, we introduce an open source 3D point cloud labeling tool, which is to our knowledge the first open source tool for labeling raw point cloud data.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.12095v1" style="color: #d9230f">One Point, One Object: Simultaneous 3D Object Segmentation and 6-DOF Pose Estimation</a></b><br><em>Computer Vision and Pattern Recognition</em>. 3 authors. <a href="http://arxiv.org/pdf/1912.12095v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>We propose a single-shot method for simultaneous 3D object segmentation and 6-DOF pose estimation in pure 3D point clouds scenes based on a consensus that , i.e. …</summary><br>, each point has the potential power to predict the 6-DOF pose of its corresponding object. Unlike the recently proposed methods of the similar task, which rely on 2D detectors to predict the projection of 3D corners of the 3D bounding boxes and the 6-DOF pose must be estimated by a PnP like spatial transformation method, ours is concise enough not to require additional spatial transformation between different dimensions. Due to the lack of training data for many objects, the recently proposed 2D detection methods try to generate training data by using rendering engine and achieve good results. However, rendering in 3D space along with 6-DOF is relatively difficult. Therefore, we propose an augmented reality technology to generate the training data in semi-virtual reality 3D space. The key component of our method is a multi-task CNN architecture that can simultaneously predicts the 3D object segmentation and 6-DOF pose estimation in pure 3D point clouds. For experimental evaluation, we generate expanded training data for two state-of-the-arts 3D object datasets  by using Augmented Reality technology (AR). We evaluate our proposed method on the two datasets. The results show that our method can be well generalized into multiple scenarios and provide performance comparable to or better than the state-of-the-arts.
+</details>
+</td>
+</tr>
+<tr grouplength="1">
+<td colspan="1" style="background-color: #666; color: #fff;">
+<strong>Computation and Language (cs.CL)</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.12082v1" style="color: #d9230f">Pointwise Attention-Based Atrous Convolutional Neural Networks</a></b><br><em>Computer Vision and Pattern Recognition</em>. 3 authors. <a href="http://arxiv.org/pdf/1912.12082v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>With the rapid progress of deep convolutional neural networks, in almost all robotic applications, the availability of 3D point clouds improves the accuracy of 3D semantic segmentation methods. Rendering of these irregular, unstructured, and unordered 3D points to 2D images from multiple viewpoints imposes some issues such as loss of information due to 3D to 2D projection, discretizing artifacts, and high computational costs. …</summary><br> To efficiently deal with a large number of points and incorporate more context of each point, a pointwise attention-based atrous convolutional neural network architecture is proposed. It focuses on salient 3D feature points among all feature maps while considering outstanding contextual information via spatial channel-wise attention modules. The proposed model has been evaluated on the two most important 3D point cloud datasets for the 3D semantic segmentation task. It achieves a reasonable performance compared to state-of-the-art models in terms of accuracy, with a much smaller number of parameters.
+</details>
+</td>
+</tr>
+<tr grouplength="1">
+<td colspan="1" style="background-color: #666; color: #fff;">
+<strong>Information Theory (cs.IT)</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.11970v1" style="color: #d9230f">Evolutionary Clustering via Message Passing</a></b><br><em>Machine Learning, Artificial Intelligence, Neural and Evolutionary Computing, Machine Learning</em>. 2 authors. <a href="http://arxiv.org/pdf/1912.11970v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>We are often interested in clustering objects that evolve over time and identifying solutions to the clustering problem for every time step. Evolutionary clustering provides insight into cluster evolution and temporal changes in cluster memberships while enabling performance superior to that achieved by independently clustering data collected at different time points. …</summary><br> In this paper we introduce evolutionary affinity propagation (EAP), an evolutionary clustering algorithm that groups data points by exchanging messages on a factor graph. EAP promotes temporal smoothness of the solution to clustering time-evolving data by linking the nodes of the factor graph that are associated with adjacent data snapshots, and introduces consensus nodes to enable cluster tracking and identification of cluster births and deaths. Unlike existing evolutionary clustering methods that require additional processing to approximate the number of clusters or match them across time, EAP determines the number of clusters and tracks them automatically. A comparison with existing methods on simulated and experimental data demonstrates effectiveness of the proposed EAP algorithm.
+</details>
+</td>
+</tr>
+<tr grouplength="1">
+<td colspan="1" style="background-color: #666; color: #fff;">
+<strong>Programming Languages (cs.PL)</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.12187v1" style="color: #d9230f">Learning Neural Activations</a></b><br><em>Machine Learning, Neural and Evolutionary Computing, Machine Learning</em>. 2 authors. <a href="http://arxiv.org/pdf/1912.12187v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>An artificial neuron is modelled as a weighted summation followed by an activation function which determines its output. A wide variety of activation functions such as rectified linear units (ReLU), leaky-ReLU, Swish, MISH, etc. …</summary><br> have been explored in the literature. In this short paper, we explore what happens when the activation function of each neuron in an artificial neural network is learned natively from data alone. This is achieved by modelling the activation function of each neuron as a small neural network whose weights are shared by all neurons in the original network. We list our primary findings in the conclusions section. The code for our analysis is available at: <a href="https://github.com/amina01/Learning-Neural-Activations" class="uri">https://github.com/amina01/Learning-Neural-Activations</a>.
+</details>
+</td>
+</tr>
+<tr grouplength="1">
+<td colspan="1" style="background-color: #666; color: #fff;">
+<strong>Robotics (cs.RO)</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.12044v1" style="color: #d9230f">A sparsity augmented probabilistic collaborative representation based classification method</a></b><br><em>Computer Vision and Pattern Recognition</em>. 2 authors. <a href="http://arxiv.org/pdf/1912.12044v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>In order to enhance the performance of image recognition, a sparsity augmented probabilistic collaborative representation based classification (SA-ProCRC) method is presented. The proposed method obtains the dense coefficient through ProCRC, then augments the dense coefficient with a sparse one, and the sparse coefficient is attained by the orthogonal matching pursuit (OMP) algorithm. …</summary><br> In contrast to conventional methods which require explicit computation of the reconstruction residuals for each class, the proposed method employs the augmented coefficient and the label matrix of the training samples to classify the test sample. Experimental results indicate that the proposed method can achieve promising results for face and scene images. The source code of our proposed SA-ProCRC is accessible at <a href="https://github.com/yinhefeng/SAProCRC" class="uri">https://github.com/yinhefeng/SAProCRC</a>.
+</details>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="statistics">Statistics</h3>
+<table class="table table-striped table-condensed" style="margin-left: auto; margin-right: auto;">
+<tbody>
+<tr grouplength="3">
+<td colspan="1" style="background-color: #666; color: #fff;">
+<strong>Machine Learning (stat.ML)</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.12275v1" style="color: #d9230f">A general statistical model for waiting times until collapse of a system</a></b><br><em>Applications</em>. 3 authors. <a href="http://arxiv.org/pdf/1912.12275v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>The distribution of waiting times until the occurrence of a critical event is a crucial statistical problem across several disciplines in Science. In this work we present a statistical model in which a relevant quantity X accumulates until overcoming a threshold X*, which defines the collapse. …</summary><br> The obtained waiting time distribution is a mixture of gamma distributions, which in turn can be approximated as an effective gamma distribution.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.12274v1" style="color: #d9230f">Statistical Agnostic Mapping: a Framework in Neuroimaging based on Concentration Inequalities</a></b><br><em>Machine Learning, Applications, Machine Learning, Image and Video Processing</em>. 3 authors. <a href="http://arxiv.org/pdf/1912.12274v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>In the 70s a novel branch of statistics emerged focusing its effort in selecting a function in the pattern recognition problem, which fulfils a definite relationship between the quality of the approximation and its complexity. These data-driven approaches are mainly devoted to problems of estimating dependencies with limited sample sizes and comprise all the empirical out-of sample generalization approaches, e. …</summary><br>g. cross validation (CV) approaches. Although the latter are  in neuroimaging, there are a number of theoretical developments within this theory which could be employed to derive a Statistical Agnostic (non-parametric) Mapping (SAM) at voxel or multi-voxel level. Moreover, SAMs could relieve i) the problem of instability in limited sample sizes when estimating the actual risk via the CV approaches, e.g. large error bars, and provide ii) an alternative way of Family-wise-error (FWE) corrected p-value maps in inferential statistics for hypothesis testing. In this sense, we propose a novel framework in neuroimaging based on concentration inequalities, which results in (i) a rigorous development for model validation with a small sample/dimension ratio, and (ii) a less-conservative procedure than FWE p-value correction, to determine the brain significance maps from the inferences made using small upper bounds of the actual risk.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.12228v1" style="color: #d9230f">Bayesian joint modeling of chemical structure and dose response curves</a></b><br><em>Applications</em>. 3 authors. <a href="http://arxiv.org/pdf/1912.12228v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Today there are approximately 85,000 chemicals regulated under the Toxic Substances Control Act, with around 2,000 new chemicals introduced each year. It is impossible to screen all of these chemicals for potential toxic effects either via full organism in vivo studies or in vitro high-throughput screening (HTS) programs. …</summary><br> Toxicologists face the challenge of choosing which chemicals to screen, and predicting the toxicity of as-yet-unscreened chemicals. Our goal is to describe how variation in chemical structure relates to variation in toxicological response to enable in silico toxicity characterization designed to meet both of these challenges. With our Bayesian partially Supervised Sparse and Smooth Factor Analysis (BS3FA) model, we learn a distance between chemicals targeted to toxicity, rather than one based on molecular structure alone. Our model also enables the prediction of chemical dose-response profiles based on chemical structure (that is, without in vivo or in vitro testing) by taking advantage of a large database of chemicals that have already been tested for toxicity in HTS programs. We show superior simulation performance in distance learning and modest to large gains in predictive ability compared to existing methods. Results from the high-throughput screening data application elucidate the relationship between chemical structure and a toxicity-relevant high-throughput assay. An R package for BS3FA is available online at <a href="https://github.com/kelrenmor/bs3fa" class="uri">https://github.com/kelrenmor/bs3fa</a>.
+</details>
+</td>
+</tr>
+<tr grouplength="2">
+<td colspan="1" style="background-color: #666; color: #fff;">
+<strong>Applications (stat.AP)</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.12150v1" style="color: #d9230f">The Chi-Square Test of Distance Correlation</a></b><br><em>Machine Learning, Methodology, Statistics Theory, Statistics Theory, Machine Learning</em>. 2 authors. <a href="http://arxiv.org/pdf/1912.12150v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Distance correlation has gained much recent attention in the statistics and machine learning community: the sample statistic is straightforward to compute, works for any metric or kernel choice, and equals 0 asymptotically if and only if independence. One major bottleneck is the testing process: the null distribution of distance correlation depends on the metric choice and marginal distributions, which cannot be readily estimated. …</summary><br> To compute a p-value, the standard approach is to estimate the null distribution via permutation, which generally requires O(rn^2) time complexity for n samples and r permutations and too costly for big data applications. In this paper, we propose a chi-square distribution to approximate the null distribution of the unbiased distance correlation. We prove that the chi-square distribution either equals or well-approximates the null distribution, and always upper tail dominates the null distribution. The resulting distance correlation chi-square test does not require any permutation nor parameter estimation, is simple and fast to implement, works with any strong negative type metric or characteristic kernel, is valid and universally consistent for independence testing, and enjoys a similar finite-sample testing power as the standard permutation test. When testing one-dimensional data using Euclidean distance, the unbiased distance correlation testing runs in O(nlog(n)), rendering it comparable in speed to the Pearson correlation t-test. The results are supported and demonstrated via simulations.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.12049v1" style="color: #d9230f">Projection pursuit based on Gaussian mixtures and evolutionary algorithms</a></b><br><em>Machine Learning, Machine Learning, Methodology, Neural and Evolutionary Computing</em>. 2 authors. <a href="http://arxiv.org/pdf/1912.12049v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>We propose a projection pursuit (PP) algorithm based on Gaussian mixture models (GMMs). The negentropy obtained from a multivariate density estimated by GMMs is adopted as the PP index to be maximised. …</summary><br> For a fixed dimension of the projection subspace, the GMM-based density estimation is projected onto that subspace, where an approximation of the negentropy for Gaussian mixtures is computed. Then, Genetic Algorithms (GAs) are used to find the optimal, orthogonal projection basis by maximising the former approximation. We show that this semi-parametric approach to PP is flexible and allows highly informative structures to be detected, by projecting multivariate datasets onto a subspace, where the data can be feasibly visualised. The performance of the proposed approach is shown on both artificial and real datasets.
+</details>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="physics">Physics</h3>
+<table class="table table-striped table-condensed" style="margin-left: auto; margin-right: auto;">
+<tbody>
+<tr grouplength="3">
+<td colspan="1" style="background-color: #666; color: #fff;">
+<strong>Computational Physics (physics.comp-ph)</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.12059v1" style="color: #d9230f">A Parabolic Relaxation Model for the Navier-Stokes-Korteweg Equations</a></b><br><em>Fluid Dynamics, Computational Physics</em>. 4 authors. <a href="http://arxiv.org/pdf/1912.12059v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>The isothermal Navier-Stokes-Korteweg system is a classical diffuse interface model for compressible two-phase flow. However, the numerical solution faces two major challenges: due to a third-order dispersion contribution in the momentum equations, extended numerical stencils are required for the flux calculation. …</summary><br> Furthermore, the equation of state given by a Van-der-Waals law, exhibits non-monotone behaviour in the two-phase state space leading to imaginary eigenvalues of the Jacobian of the first-order fluxes. In this work a lower-order parabolic relaxation model is used to approximate solutions of the classical NSK equations. Whereas an additional parabolic evolution equation for the relaxation variable has to be solved, the system involves no differential operator of higher as second order. The use of a modified pressure function guarantees that the first-order fluxes remain hyperbolic. Altogether, the relaxation system is directly accessible for standard compressible flow solvers. We use the higher-order Discontinuous Galerkin spectral element method as realized in the open source code FLEXI. The relaxation model is validated against solutions of the original NSK model for a variety of 1D and 2D test cases. Three-dimensional simulations of head-on droplet collisions for a range of different collision Weber numbers underline the capability of the approach.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.12157v1" style="color: #d9230f">Calculating the divided differences of the exponential function by addition and removal of inputs</a></b><br><em>Numerical Analysis, Numerical Analysis, Computational Physics</em>. 3 authors. <a href="http://arxiv.org/pdf/1912.12157v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>We introduce a method for calculating the divided differences of the exponential function by means of addition and removal of items from the input list to the function. Our technique exploits a new identity related to divided differences recently derived by F. …</summary><br> Zivcovich [Dolomites Research Notes on Approximation 12, 28-42 (2019)]. We show that upon adding an item to or removing an item from the input list of an already evaluated exponential, the re-evaluation of the divided differences can be done with only <span class="math inline">\(O(s n)\)</span> floating point operations and <span class="math inline">\(O(s n)\)</span> bytes of memory, where <span class="math inline">\([z_0,\dots,z_n]\)</span> are the inputs and <span class="math inline">\(s \propto \max_{i,j} |z_i - z_j|\)</span>. We demonstrate our algorithm’s ability to deal with input lists that are orders-of-magnitude longer than the maximal capacities of the current state-of-the-art. We discuss in detail one practical application of our method: the efficient calculation of weights in the off-diagonal series expansion quantum Monte Carlo algorithm.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.12048v1" style="color: #d9230f">Strain tunable pudding-mold-type band structure and thermoelectric properties of SnP<span class="math inline">\(_3\)</span> monolayer</a></b><br><em>Materials Science, Computational Physics</em>. 3 authors. <a href="http://arxiv.org/pdf/1912.12048v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Recent studies indicated the interesting metal-to-semiconductor transition when layered bulk GeP3 and SnP3 are restricted to the monolayer or bilayer, and SnP3 monolayer has been predicted to possess high carrier mobility and promising thermoelectric performance. Here, we investigate the biaxial strain effect on the electronic and thermoelectric properties of SnP3 monolayer. …</summary><br> Our first-principles calculations combined with Boltzmann transport theory indicate that SnP3 monolayer has the pudding-mold-type valence band structure, giving rise to a large p-type Seebeck coefficient and a high p-type power factor. The compressive biaxial strain can decrease the energy gap and result in the metallicity. In contrast, the tensile biaxial strain increases the energy gap, and increases the n-type Seebeck coefficient and decreases the n-type electrical conductivity. Although the lattice thermal conductivity becomes larger at a tensile biaxial strain due to the increased maximum frequency of the acoustic phonon modes and the increased phonon group velocity, it is still low, only e.g. 3.1 W/(mK) at room temperature with the 6% tensile biaxial strain. Therefore, SnP3 monolayer is a good thermoelectric material with low lattice thermal conductivity even at the 6% tensile strain, and the tensile strain is beneficial to the increase of the n-type Seebeck coefficient.
+</details>
+</td>
+</tr>
+<tr grouplength="1">
+<td colspan="1" style="background-color: #666; color: #fff;">
+<strong>Fluid Dynamics (physics.flu-dyn)</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.12029v1" style="color: #d9230f">An overview of self-consistent field calculations within finite basis sets</a></b><br><em>Chemical Physics, Computational Physics</em>. 3 authors. <a href="http://arxiv.org/pdf/1912.12029v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>A uniform derivation is presented of the self-consistent field equations in a finite basis set. Both restricted and unrestricted Hartree-Fock (HF) theory as well as various density functional (DF) approximations are considered. …</summary><br> The unitary invariance of the HF and DF models is discussed, paving the way for the use of localized molecular orbitals. The self-consistent field equations are derived in a non-orthogonal basis set, and their solution is discussed in the presence of linear dependencies in the basis set. It is argued why iterative diagonalization of the Kohn-Sham-Fock matrix leads to the minimization of the total energy. Alternative methods for the solution of the self-consistent field equations via direct minimization as well as stability analysis are also briefly discussed. Explicit expressions are given for the contributions to the Kohn-Sham-Fock matrix up to meta-GGA functionals. Range-separated hybrids and non-local correlation functionals are also briefly discussed.
+</details>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="mathematics">Mathematics</h3>
+<table class="table table-striped table-condensed" style="margin-left: auto; margin-right: auto;">
+<tbody>
+<tr grouplength="2">
+<td colspan="1" style="background-color: #666; color: #fff;">
+<strong>Statistics Theory (math.ST)</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.11965v1" style="color: #d9230f">On the identifiability of interaction functions in systems of interacting particles</a></b><br><em>Classical Analysis and ODEs, Probability, Statistics Theory, Statistics Theory, Dynamical Systems</em>. 5 authors. <a href="http://arxiv.org/pdf/1912.11965v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Identifiability is of fundamental importance in the statistical learning of dynamical systems of interacting particles. We prove that the interaction functions are identifiable for a class of first-order stochastic systems, including linear systems and a class of nonlinear systems with stationary distributions in the decentralized directions. …</summary><br> We show that the identfiability is equivalent to strict positiveness of integral operators associated to integral kernels arisen from the nonparametric regression. We then prove the positiveness based on series representation of the integral kernels and a M&quot;untz type theorem for the completeness of even polynomials.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.12213v1" style="color: #d9230f">Minimax Semiparametric Learning With Approximate Sparsity</a></b><br><em>Econometrics, Statistics Theory, Statistics Theory</em>. 4 authors. <a href="http://arxiv.org/pdf/1912.12213v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Many objects of interest can be expressed as a linear, mean square continuous functional of a least squares projection (regression). Often the regression may be high dimensional, depending on many variables. …</summary><br> This paper gives minimal conditions for root-n consistent and efficient estimation of such objects when the regression and the Riesz representer of the functional are approximately sparse and the sum of the absolute value of the coefficients is bounded. The approximately sparse functions we consider are those where an approximation by some <span class="math inline">\(t\)</span> regressors has root mean square error less than or equal to <span class="math inline">\(Ct^{-\xi}\)</span> for <span class="math inline">\(C,\)</span> <span class="math inline">\(\xi&amp;gt;0.\)</span> We show that a necessary condition for efficient estimation is that the sparse approximation rate <span class="math inline">\(\xi_{1}\)</span> for the regression and the rate <span class="math inline">\(\xi_{2}\)</span> for the Riesz representer satisfy <span class="math inline">\(\max\{\xi_{1} ,\xi_{2}\}&amp;gt;1/2.\)</span> This condition is stronger than the corresponding condition <span class="math inline">\(\xi_{1}+\xi_{2}&amp;gt;1/2\)</span> for Holder classes of functions. We also show that Lasso based, cross-fit, debiased machine learning estimators are asymptotically efficient under these conditions. In addition we show efficiency of an estimator without cross-fitting when the functional depends on the regressors and the regression sparse approximation rate satisfies <span class="math inline">\(\xi_{1}&amp;gt;1/2\)</span>.
+</details>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="condensed-matter">Condensed Matter</h3>
+<table class="table table-striped table-condensed" style="margin-left: auto; margin-right: auto;">
+<tbody>
+<tr grouplength="1">
+<td colspan="1" style="background-color: #666; color: #fff;">
+<strong>Materials Science (cond-mat.mtrl-sci)</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.12295v1" style="color: #d9230f">Quantum Monte Carlo Compton profiles of solid and liquid lithium</a></b><br><em>Materials Science, Computational Physics, Strongly Correlated Electrons</em>. 5 authors. <a href="http://arxiv.org/pdf/1912.12295v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>We computed the Compton profile of solid and liquid lithium using quantum Monte Carlo (QMC) and compared with recent experimental measurements obtaining good agreement. Importantly, we find it crucial to account for proper core-valence orthogonalization and to address density differences when comparing with experiment. …</summary><br> To account for disorder effects, we sampled finite-temperature configurations using molecular dynamics (MD), then performed diffusion Monte Carlo (DMC) simulations on each configuration. We used Slater-Jastrow wavefunctions and grand-canonical twist-averaged boundary conditions. A QMC pseudopotential correction, derived from an all-electron DMC simulation of the perfect crystal was also used. Our calculations provide the first all-electron QMC benchmark for the Compton profile of lithium crystal and pseudopotential-corrected QMC Compton profiles for both the liquid and solid.
+</details>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="other">Other</h3>
+<table class="table table-striped table-condensed" style="margin-left: auto; margin-right: auto;">
+<tbody>
+<tr grouplength="1">
+<td colspan="1" style="background-color: #666; color: #fff;">
+<strong>Adaptation and Self-Organizing Systems (nlin.AO)</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.12244v1" style="color: #d9230f">Emergence of Network Motifs in Deep Neural Networks</a></b><br><em>Machine Learning, Biological Physics, Adaptation and Self-Organizing Systems</em>. 3 authors. <a href="http://arxiv.org/pdf/1912.12244v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Network science can offer fundamental insights into the structural and functional properties of complex systems. For example, it is widely known that neuronal circuits tend to organize into basic functional topological modules, called “network motifs”. …</summary><br> In this article we show that network science tools can be successfully applied also to the study of artificial neural networks operating according to self-organizing (learning) principles. In particular, we study the emergence of network motifs in multi-layer perceptrons, whose initial connectivity is defined as a stack of fully-connected, bipartite graphs. Our simulations show that the final network topology is primarily shaped by learning dynamics, but can be strongly biased by choosing appropriate weight initialization schemes. Overall, our results suggest that non-trivial initialization strategies can make learning more effective by promoting the development of useful network motifs, which are often surprisingly consistent with those observed in general transduction networks.
+</details>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="quantitative-biology">Quantitative Biology</h3>
+<table class="table table-striped table-condensed" style="margin-left: auto; margin-right: auto;">
+<tbody>
+<tr grouplength="1">
+<td colspan="1" style="background-color: #666; color: #fff;">
+<strong>Quantitative Methods (q-bio.QM)</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.12248v1" style="color: #d9230f">Discussion on a “Dynamic model to conceptualize multiple environmental pathways to the epidemic of Chronic Kidney Disease of unknown etiology (CKDu)”</a></b><br><em>Quantitative Methods, Adaptation and Self-Organizing Systems</em>. 1 authors. <a href="http://arxiv.org/pdf/1912.12248v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Jayasinghe et al. [Science of the Total Environment, 705 (2020) 135766] propose a ‘dynamical’ model of Chronic Kidney Disease of Unknown etiology (CKDu) wherein CKDu arises as an emergent property of a complex system where they claim that weak multiple environmental factors contribute. …</summary><br> They criticize the usual approaches as being “reductionist”. We use their model as a basis of a discussion on the possibility of treating CKDu as an emergent property resulting from the interaction of multiple weak environmental factors with the organism. The model does not reveal anything beyond what is already known from simple considerations of well-known feed-back loops, but has the merit of re-stating those issues in a different format. If a proper weighting of the possible environmental factors is included, most proposed environmental factors drop out and what Jayasinghe et al. call the “reductionist” approach naturally arises due to the weight of evidence. The theory that the consumption of water containing fluoride and magnesium ions as found in water from regolith aquifers drawn via house-hold wells is found to clearly hold within this model when proper weighting is included. However, we show by examples that such models can be easily misused, leading to completely misleading conclusions. A response formalism useful in the theory of complex systems and emergent modes is presented in the context of the current problem. In addition to there being a lack of adequate data to fully implement such a theory, it is seen that such elaborations are unnecessary and misleading in the present context.
+</details>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="quantum-physics">Quantum Physics</h3>
+<table class="table table-striped table-condensed" style="margin-left: auto; margin-right: auto;">
+<tbody>
+<tr grouplength="1">
+<td colspan="1" style="background-color: #666; color: #fff;">
+<strong>Quantum Physics (quant-ph)</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/1912.12239v1" style="color: #d9230f">Precision limits of tissue microstructure characterization by Magnetic Resonance Imaging</a></b><br><em>Quantitative Methods, Quantum Physics, Medical Physics</em>. 4 authors. <a href="http://arxiv.org/pdf/1912.12239v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Characterization of microstructures in live tissues is one of the keys to diagnosing early stages of pathology and understanding disease mechanisms. However, the extraction of reliable information on biomarkers based on microstructure details is still a challenge, as the size of features that can be resolved with non-invasive Magnetic Resonance Imaging (MRI) is orders of magnitude larger than the relevant structures. …</summary><br> Here we derive from quantum information theory the ultimate precision limits for obtaining such details by MRI probing of water-molecule diffusion. We show that already available MRI pulse sequences can be optimized to attain the ultimate precision limits by choosing control parameters that are uniquely determined by the expected size, the diffusion coefficient and the spin relaxation time <span class="math inline">\(T_{2}\)</span>. By attaining the ultimate precision limit per measurement, the number of measurements and the total acquisition time may be drastically reduced compared to the present state of the art. These results will therefore allow MRI to advance towards unravelling a wealth of diagnostic information.
+</details>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!--radix_placeholder_article_footer-->
+<div class="article-footer">
+  <p class="social_footer">
+    <span class="disqus-comments">
+      <i class="fas fa-comments"></i>
+      &nbsp;
+      <span class="disqus-comment-count" data-disqus-identifier="posts/2019-12-31/">Comment on this article</span>
+    </span>
+    <span class="article-sharing">
+      Share: &nbsp;
+      <a href="https://twitter.com/share?text=Articles%20from%202019-12-30&amp;url=bryanwhiting.github.io%2Fds-arxiv%2Fposts%2F2019-12-31%2F">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=bryanwhiting.github.io%2Fds-arxiv%2Fposts%2F2019-12-31%2F&amp;title=Articles%20from%202019-12-30">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </span>
+  </p>
+  <script id="dsq-count-scr" src="https://dsarxiv.disqus.com/count.js" async></script>
+  <div id="disqus_thread"></div>
+  <script>
+var disqus_config = function () {
+  this.page.url = 'bryanwhiting.github.io/ds-arxiv/posts/2019-12-31/';
+  this.page.identifier = 'posts/2019-12-31/';
+};
+(function() {
+  var d = document, s = d.createElement('script');
+  s.src = 'https://dsarxiv.disqus.com/embed.js';
+  s.setAttribute('data-timestamp', +new Date());
+  (d.head || d.body).appendChild(s);
+})();
+</script>
+</div>
+<!--/radix_placeholder_article_footer-->
+</div>
+
+<div class="d-appendix">
+</div>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+<!--radix_placeholder_site_after_body-->
+<!--/radix_placeholder_site_after_body-->
+<!--radix_placeholder_appendices-->
+<div class="appendix-bottom"></div>
+<!--/radix_placeholder_appendices-->
+<!--radix_placeholder_navigation_after_body-->
+<!--/radix_placeholder_navigation_after_body-->
+
+</body>
+
+</html>
