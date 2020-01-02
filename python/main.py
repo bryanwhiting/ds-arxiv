@@ -280,7 +280,8 @@ if __name__ == '__main__':
 
     # flow.visualize()    
     state = flow.run()
-    flow.visualize(flow_state=state)
+    fp_pdf = os.path.expanduser('~/github/ds-arxiv/python/state-viz.pdf')
+    flow.visualize(flow_state=state, filename=fp_pdf)
 
     # TO debug: 
     # put a breakpoint() in your functions above. you don't need the below.

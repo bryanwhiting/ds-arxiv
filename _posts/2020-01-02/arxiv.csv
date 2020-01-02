@@ -21,7 +21,7 @@ the internal manipulation of representations. This allows us to propose that
 the subjective experience of consciousness is associated to the human capacity
 to generate and control a simulated internal reality that is vividly perceived
 and felt through the same perceptual and emotional mechanisms used to tackle
-the external world.",cs.AI,"q-bio.NC, cs.LG, cs.AI, stat.ML, cs.NE",5,Artificial Intelligence,"Neurons and Cognition, Machine Learning, Artificial Intelligence, Machine Learning, Neural and Evolutionary Computing",Giovanni Granato,"Gianluca Baldassarre, Giovanni Granato",2,http://arxiv.org/pdf/1912.13490v1,http://arxiv.org/abs/1912.13490v1,2019-12-31
+the external world.",cs.AI,"cs.NE, cs.LG, stat.ML, q-bio.NC, cs.AI",5,Artificial Intelligence,"Neural and Evolutionary Computing, Machine Learning, Machine Learning, Neurons and Cognition, Artificial Intelligence",Giovanni Granato,"Gianluca Baldassarre, Giovanni Granato",2,http://arxiv.org/pdf/1912.13490v1,http://arxiv.org/abs/1912.13490v1,2019-12-31
 "Towards Neural-Guided Program Synthesis for Linear Temporal Logic
   Specifications","Synthesizing a program that realizes a logical specification is a classical
 problem in computer science. We examine a particular type of program synthesis,
@@ -34,7 +34,7 @@ learn a Q-function that is then used to guide search, and to construct programs
 that are subsequently verified for correctness. Our method is unique in
 combining search with deep learning to realize LTL synthesis. In our
 experiments the learned Q-function provides effective guidance for synthesis
-problems with relatively small specifications.",cs.AI,"cs.GT, cs.LO, cs.FL, cs.NE, cs.AI",5,Artificial Intelligence,"Computer Science and Game Theory, Logic in Computer Science, Formal Languages and Automata Theory, Neural and Evolutionary Computing, Artificial Intelligence",Sheila A. McIlraith,"Alberto Camacho, Sheila A. McIlraith",2,http://arxiv.org/pdf/1912.13430v1,http://arxiv.org/abs/1912.13430v1,2019-12-31
+problems with relatively small specifications.",cs.AI,"cs.GT, cs.LO, cs.NE, cs.FL, cs.AI",5,Artificial Intelligence,"Computer Science and Game Theory, Logic in Computer Science, Neural and Evolutionary Computing, Formal Languages and Automata Theory, Artificial Intelligence",Sheila A. McIlraith,"Alberto Camacho, Sheila A. McIlraith",2,http://arxiv.org/pdf/1912.13430v1,http://arxiv.org/abs/1912.13430v1,2019-12-31
 oLMpics -- On what Language Model Pre-training Captures,"Recent success of pre-trained language models (LMs) has spurred widespread
 interest in the language capabilities that they possess. However, efforts to
 understand whether LM representations are useful for symbolic reasoning tasks
@@ -53,7 +53,7 @@ abstract manner and are context-dependent, e.g., while RoBERTa can compare
 ages, it can do so only when the ages are in the typical range of human ages;
 (c) On half of our reasoning tasks all models fail completely. Our findings and
 infrastructure can help future work on designing new datasets, models and
-objective functions for pre-training.",cs.CL,"cs.CL, cs.LG, cs.AI",3,Computation and Language,"Computation and Language, Machine Learning, Artificial Intelligence",Jonathan Berant,"Alon Talmor, Yanai Elazar, Yoav Goldberg, Jonathan Berant",4,http://arxiv.org/pdf/1912.13283v1,http://arxiv.org/abs/1912.13283v1,2019-12-31
+objective functions for pre-training.",cs.CL,"cs.LG, cs.AI, cs.CL",3,Computation and Language,"Machine Learning, Artificial Intelligence, Computation and Language",Jonathan Berant,"Alon Talmor, Yanai Elazar, Yoav Goldberg, Jonathan Berant",4,http://arxiv.org/pdf/1912.13283v1,http://arxiv.org/abs/1912.13283v1,2019-12-31
 Intrinsic motivations and open-ended learning,"There is a growing interest and literature on intrinsic motivations and
 open-ended learning in both cognitive robotics and machine learning on one
 side, and in psychology and neuroscience on the other. This paper aims to
@@ -68,7 +68,7 @@ biological underpinnings, the paper next presents a selection of models from
 cognitive robotics and machine learning that computationally operationalise the
 concepts of intrinsic motivations and links them to biology concepts. The
 contribution finally presents some of the open challenges of the field from
-both the psychological/neuroscientific and computational perspectives.",cs.AI,"stat.ML, cs.LG, cs.AI",3,Artificial Intelligence,"Machine Learning, Machine Learning, Artificial Intelligence",Gianluca Baldassarre,Gianluca Baldassarre,1,http://arxiv.org/pdf/1912.13263v1,http://arxiv.org/abs/1912.13263v1,2019-12-31
+both the psychological/neuroscientific and computational perspectives.",cs.AI,"stat.ML, cs.AI, cs.LG",3,Artificial Intelligence,"Machine Learning, Artificial Intelligence, Machine Learning",Gianluca Baldassarre,Gianluca Baldassarre,1,http://arxiv.org/pdf/1912.13263v1,http://arxiv.org/abs/1912.13263v1,2019-12-31
 Leveraging Semi-Supervised Learning for Fairness using Neural Networks,"There has been a growing concern about the fairness of decision-making
 systems based on machine learning. The shortage of labeled data has been always
 a challenging problem facing machine learning based systems. In such scenarios,
@@ -81,7 +81,7 @@ framework. In this paper, we propose a semi-supervised algorithm using neural
 networks benefiting from unlabeled data to not just improve the performance but
 also improve the fairness of the decision-making process. The proposed model,
 called SSFair, exploits the information in the unlabeled data to mitigate the
-bias in the training data.",cs.LG,"stat.ML, cs.LG, cs.AI",3,Machine Learning,"Machine Learning, Machine Learning, Artificial Intelligence",Philip S. Yu,"Vahid Noroozi, Sara Bahaadini, Samira Sheikhi, Nooshin Mojab, Philip S. Yu",5,http://arxiv.org/pdf/1912.13230v1,http://arxiv.org/abs/1912.13230v1,2019-12-31
+bias in the training data.",cs.LG,"stat.ML, cs.AI, cs.LG",3,Machine Learning,"Machine Learning, Artificial Intelligence, Machine Learning",Philip S. Yu,"Vahid Noroozi, Sara Bahaadini, Samira Sheikhi, Nooshin Mojab, Philip S. Yu",5,http://arxiv.org/pdf/1912.13230v1,http://arxiv.org/abs/1912.13230v1,2019-12-31
 "Definitions and Semantic Simulations Based on Object-Oriented Analysis
   and Modeling","We have proposed going beyond traditional ontologies to use rich semantics
 implemented in programming languages for modeling. In this paper, we discuss
@@ -108,7 +108,7 @@ Regulation of MAS is almost correctly addressed, we propose the Regulation of
 ANN as Agent-based Training of a special type of regulated ANN that we call
 Institutional Neural Network. This paper introduces the former concept and
 provides $\mathcal{I}$, a language previously used to model and extend
-Electronic Institutions, as a means to implement and regulate DL.",cs.AI,"cs.MA, cs.LG, cs.AI, cs.PL, cs.LO",5,Artificial Intelligence,"Multiagent Systems, Machine Learning, Artificial Intelligence, Programming Languages, Logic in Computer Science",Andrés García-Camino,Andrés García-Camino,1,http://arxiv.org/pdf/1912.13122v1,http://arxiv.org/abs/1912.13122v1,2019-12-31
+Electronic Institutions, as a means to implement and regulate DL.",cs.AI,"cs.MA, cs.PL, cs.LO, cs.LG, cs.AI",5,Artificial Intelligence,"Multiagent Systems, Programming Languages, Logic in Computer Science, Machine Learning, Artificial Intelligence",Andrés García-Camino,Andrés García-Camino,1,http://arxiv.org/pdf/1912.13122v1,http://arxiv.org/abs/1912.13122v1,2019-12-31
 Side-Tuning: Network Adaptation via Additive Side Networks,"When training a neural network for a desired task, one may prefer to adapt a
 pre-trained network rather than start with a randomly initialized one -- due to
 lacking enough training data, performing lifelong learning where the system has
@@ -128,7 +128,7 @@ lifelong learning. We demonstrate the performance of side-tuning under a
 diverse set of scenarios, including lifelong learning (iCIFAR, Taskonomy),
 reinforcement learning, imitation learning (visual navigation in Habitat), NLP
 question-answering (SQuAD v2), and single-task transfer learning (Taskonomy),
-with consistently promising results.",cs.LG,"cs.CV, cs.NE, cs.LG, cs.RO",4,Machine Learning,"Computer Vision and Pattern Recognition, Neural and Evolutionary Computing, Machine Learning, Robotics",Jitendra Malik,"Jeffrey O Zhang, Alexander Sax, Amir Zamir, Leonidas Guibas, Jitendra Malik",5,http://arxiv.org/pdf/1912.13503v1,http://arxiv.org/abs/1912.13503v1,2019-12-31
+with consistently promising results.",cs.LG,"cs.RO, cs.CV, cs.NE, cs.LG",4,Machine Learning,"Robotics, Computer Vision and Pattern Recognition, Neural and Evolutionary Computing, Machine Learning",Jitendra Malik,"Jeffrey O Zhang, Alexander Sax, Amir Zamir, Leonidas Guibas, Jitendra Malik",5,http://arxiv.org/pdf/1912.13503v1,http://arxiv.org/abs/1912.13503v1,2019-12-31
 "OneGAN: Simultaneous Unsupervised Learning of Conditional Image
   Generation, Foreground Segmentation, and Fine-Grained Clustering","We present a method for simultaneously learning, in an unsupervised manner,
 (i) a conditional image generator, (ii) foreground extraction and segmentation,
@@ -155,7 +155,7 @@ analytic computation, which is able to evaluate any kind of grasp poses without
 exhausted labeling pose ground-truth. We conduct extensive experiments to show
 that our dataset and evaluation system can align well with real-world
 experiments. Our dataset, source code and models will be made publicly
-available.",cs.CV,"cs.CV, cs.RO",2,Computer Vision and Pattern Recognition,"Computer Vision and Pattern Recognition, Robotics",Cewu Lu,"Hao-Shu Fang, Chenxi Wang, Minghao Gou, Cewu Lu",4,http://arxiv.org/pdf/1912.13470v1,http://arxiv.org/abs/1912.13470v1,2019-12-31
+available.",cs.CV,"cs.RO, cs.CV",2,Computer Vision and Pattern Recognition,"Robotics, Computer Vision and Pattern Recognition",Cewu Lu,"Hao-Shu Fang, Chenxi Wang, Minghao Gou, Cewu Lu",4,http://arxiv.org/pdf/1912.13470v1,http://arxiv.org/abs/1912.13470v1,2019-12-31
 Face X-ray for More General Face Forgery Detection,"In this paper we propose a novel image representation called face X-ray for
 detecting forgery in face images. The face X-ray of an input face image is a
 greyscale image that reveals whether the input image can be decomposed into the
@@ -199,7 +199,7 @@ experiment SOTA methods on your custom dataset (which should contain landmark
 annotation). In this paper, we present mixed-methods aiming at bio-medical
 imaging and experimental result on CIMA dataset. However, any other methods for
 other domain can be added or costume dataset to be used.
-https://borda.github.io/BIRL",cs.CV,"cs.CV, cs.PF, eess.IV",3,Computer Vision and Pattern Recognition,"Computer Vision and Pattern Recognition, Performance, Image and Video Processing",Jiri Borovec,Jiri Borovec,1,http://arxiv.org/pdf/1912.13452v1,http://arxiv.org/abs/1912.13452v1,2019-12-31
+https://borda.github.io/BIRL",cs.CV,"cs.PF, eess.IV, cs.CV",3,Computer Vision and Pattern Recognition,"Performance, Image and Video Processing, Computer Vision and Pattern Recognition",Jiri Borovec,Jiri Borovec,1,http://arxiv.org/pdf/1912.13452v1,http://arxiv.org/abs/1912.13452v1,2019-12-31
 Learning Wavefront Coding for Extended Depth of Field Imaging,"The depth of field constitutes an important quality factor of imaging systems
 that highly affects the content of the acquired spatial information in the
 captured images. Extended depth of field (EDoF) imaging is a challenging
@@ -215,7 +215,7 @@ analytical expression for the search space of the DOE, which helps in the
 convergence of the end-to-end network. We achieve superior EDoF imaging
 performance compared to state of the art, where we demonstrate results with
 minimal artifacts in various scenarios, including deep 3D scenes and broadband
-imaging.",eess.IV,"cs.CV, eess.IV, physics.optics",3,Image and Video Processing,"Computer Vision and Pattern Recognition, Image and Video Processing, Optics",Atanas Gotchev,"Ugur Akpinar, Erdem Sahin, Atanas Gotchev",3,http://arxiv.org/pdf/1912.13423v1,http://arxiv.org/abs/1912.13423v1,2019-12-31
+imaging.",eess.IV,"eess.IV, cs.CV, physics.optics",3,Image and Video Processing,"Image and Video Processing, Computer Vision and Pattern Recognition, Optics",Atanas Gotchev,"Ugur Akpinar, Erdem Sahin, Atanas Gotchev",3,http://arxiv.org/pdf/1912.13423v1,http://arxiv.org/abs/1912.13423v1,2019-12-31
 Morphology-Agnostic Visual Robotic Control,"Existing approaches for visuomotor robotic control typically require
 characterizing the robot in advance by calibrating the camera or performing
 system identification. We propose MAVRIC, an approach that works with minimal
@@ -228,7 +228,7 @@ visual servoing. MAVRIC can control robots with imprecise actuation, no
 proprioceptive feedback, unknown morphologies including novel tools, unknown
 camera poses, and even unsteady handheld cameras. We demonstrate our method on
 visually-guided 3D point reaching, trajectory following, and robot-to-robot
-imitation.",cs.RO,"cs.CV, cs.RO",2,Robotics,"Computer Vision and Pattern Recognition, Robotics",Sergey Levine,"Brian Yang, Dinesh Jayaraman, Glen Berseth, Alexei Efros, Sergey Levine",5,http://arxiv.org/pdf/1912.13360v1,http://arxiv.org/abs/1912.13360v1,2019-12-31
+imitation.",cs.RO,"cs.RO, cs.CV",2,Robotics,"Robotics, Computer Vision and Pattern Recognition",Sergey Levine,"Brian Yang, Dinesh Jayaraman, Glen Berseth, Alexei Efros, Sergey Levine",5,http://arxiv.org/pdf/1912.13360v1,http://arxiv.org/abs/1912.13360v1,2019-12-31
 Learning 3D Human Shape and Pose from Dense Body Parts,"Reconstructing 3D human shape and pose from a monocular image is challenging
 despite the promising results achieved by the most recent learning-based
 methods. The commonly occurred misalignment comes from the facts that the
@@ -278,7 +278,7 @@ are fed into the consensus module to produce the final volumetric segmentation
 of nodule. The proposed approach has been rigorously evaluated on the LIDC
 dataset, which is the largest publicly available dataset. The result suggests
 that the approach is significantly robust and accurate as compared to the
-previous state of the art techniques.",eess.IV,"stat.ML, cs.CV, eess.IV, cs.LG",4,Image and Video Processing,"Machine Learning, Computer Vision and Pattern Recognition, Image and Video Processing, Machine Learning",Byung IlLee,"Muhammad Usman, Byoung-Dai Lee, Shi Sub Byon, Sung Hyun Kim, Byung IlLee",5,http://arxiv.org/pdf/1912.13335v1,http://arxiv.org/abs/1912.13335v1,2019-12-31
+previous state of the art techniques.",eess.IV,"stat.ML, eess.IV, cs.CV, cs.LG",4,Image and Video Processing,"Machine Learning, Image and Video Processing, Computer Vision and Pattern Recognition, Machine Learning",Byung IlLee,"Muhammad Usman, Byoung-Dai Lee, Shi Sub Byon, Sung Hyun Kim, Byung IlLee",5,http://arxiv.org/pdf/1912.13335v1,http://arxiv.org/abs/1912.13335v1,2019-12-31
 "Microlens array grid estimation, light field decoding, and calibration","We quantitatively investigate multiple algorithms for microlens array grid
 estimation for microlens array-based light field cameras. Explicitly taking
 into account natural and mechanical vignetting effects, we propose a new method
@@ -290,7 +290,7 @@ white images, we thoroughly compare the performance of the different estimation
 algorithms. As an example, we apply our results to the decoding and calibration
 of light fields taken with a Lytro Illum camera. We observe that decoding as
 well as calibration benefit from a more accurate, vignetting-aware grid
-estimation, especially in peripheral subapertures of the light field.",eess.IV,"cs.CV, eess.IV",2,Image and Video Processing,"Computer Vision and Pattern Recognition, Image and Video Processing",Fernando Puente León,"Maximilian Schambach, Fernando Puente León",2,http://arxiv.org/pdf/1912.13298v1,http://arxiv.org/abs/1912.13298v1,2019-12-31
+estimation, especially in peripheral subapertures of the light field.",eess.IV,"eess.IV, cs.CV",2,Image and Video Processing,"Image and Video Processing, Computer Vision and Pattern Recognition",Fernando Puente León,"Maximilian Schambach, Fernando Puente León",2,http://arxiv.org/pdf/1912.13298v1,http://arxiv.org/abs/1912.13298v1,2019-12-31
 "Automatic segmentation and determining radiodensity of the liver in a
   large-scale CT database","This study proposes an automatic technique for liver segmentation in computed
 tomography (CT) images. Localization of the liver volume is based on the
@@ -303,7 +303,7 @@ Despite the decrease in accuracy, the technique is applicable to CT volumes
 with a partially visible region of the liver. The technique can be used to
 process CT images obtained in various patient positions in a wide range of
 exposition parameters. It is capable in dealing with low dose CT scans in real
-large-scale medical database with over 1 million of studies.",eess.IV,"cs.CV, eess.IV, physics.med-ph",3,Image and Video Processing,"Computer Vision and Pattern Recognition, Image and Video Processing, Medical Physics",S. P. Morozov,"N. S. Kulberg, A. B. Elizarov, V. P. Novik, V. A. Gombolevsky, A. P. Gonchar, A. L. Alliua, V. Yu. Bosin, A. V. Vladzymyrsky, S. P. Morozov",9,http://arxiv.org/pdf/1912.13290v1,http://arxiv.org/abs/1912.13290v1,2019-12-31
+large-scale medical database with over 1 million of studies.",eess.IV,"eess.IV, cs.CV, physics.med-ph",3,Image and Video Processing,"Image and Video Processing, Computer Vision and Pattern Recognition, Medical Physics",S. P. Morozov,"N. S. Kulberg, A. B. Elizarov, V. P. Novik, V. A. Gombolevsky, A. P. Gonchar, A. L. Alliua, V. Yu. Bosin, A. V. Vladzymyrsky, S. P. Morozov",9,http://arxiv.org/pdf/1912.13290v1,http://arxiv.org/abs/1912.13290v1,2019-12-31
 Fungal architecture,"As one of the primary consumers of environmental resource, the building
 industry faces unprecedented challenges in needing to reduce the environmental
 impact of current consumption practices. This applies to both the construction
@@ -341,7 +341,7 @@ A frequency-domain analysis of inexact gradient descent,"We study robustness pro
 convex functions, as well as for the larger class of functions with
 sector-bounded gradients, under a relative error model. Proofs of the
 corresponding convergence rates are based on frequency-domain criteria for the
-stability of nonlinear systems perturbed by additive noise.",math.OC,"cs.NA, math.NA, cs.LG, cs.SY, math.OC, eess.SY",6,Optimization and Control,"Numerical Analysis, Numerical Analysis, Machine Learning, Systems and Control, Optimization and Control",Oran Gannot,Oran Gannot,1,http://arxiv.org/pdf/1912.13494v1,http://arxiv.org/abs/1912.13494v1,2019-12-31
+stability of nonlinear systems perturbed by additive noise.",math.OC,"eess.SY, cs.LG, cs.NA, math.NA, math.OC, cs.SY",6,Optimization and Control,"Machine Learning, Numerical Analysis, Numerical Analysis, Optimization and Control, Systems and Control",Oran Gannot,Oran Gannot,1,http://arxiv.org/pdf/1912.13494v1,http://arxiv.org/abs/1912.13494v1,2019-12-31
 "On the Difference Between the Information Bottleneck and the Deep
   Information Bottleneck","Combining the Information Bottleneck model with deep learning by replacing
 mutual information terms with deep neural nets has proved successful in areas
@@ -358,7 +358,7 @@ DVIB and cognate models in practice and of two terms measuring how much the
 former requirement $T-X-Y$ is violated. Finally, we propose to interpret the
 family of information bottleneck models as directed graphical models and show
 that in this framework the original and deep information bottlenecks are
-special cases of a fundamental IB model.",cs.LG,"stat.ML, math.IT, cs.IT, cs.LG",4,Machine Learning,"Machine Learning, Information Theory, Information Theory, Machine Learning",Volker Roth,"Aleksander Wieczorek, Volker Roth",2,http://arxiv.org/pdf/1912.13480v1,http://arxiv.org/abs/1912.13480v1,2019-12-31
+special cases of a fundamental IB model.",cs.LG,"cs.IT, math.IT, stat.ML, cs.LG",4,Machine Learning,"Information Theory, Information Theory, Machine Learning, Machine Learning",Volker Roth,"Aleksander Wieczorek, Volker Roth",2,http://arxiv.org/pdf/1912.13480v1,http://arxiv.org/abs/1912.13480v1,2019-12-31
 "Revisiting Landscape Analysis in Deep Neural Networks: Eliminating
   Decreasing Paths to Infinity","Traditional landscape analysis of deep neural networks aims to show that no
 sub-optimal local minima exist in some appropriate sense. From this, one may be
@@ -411,7 +411,7 @@ convenient results to streamline probabilistic analysis. The new expressions
 describe the typical sizes and tails of random variables, allowing for simple
 operations without heavy use of inessential constants. They bridge classical
 asymptotic notations and modern non-asymptotic tail bounds together. Examples
-of different kinds demonstrate their efficacy.",math.ST,"math.ST, cs.IT, stat.TH, cs.LG, 62-00, math.PR, stat.ML, math.IT",8,Statistics Theory,"Statistics Theory, Information Theory, Statistics Theory, Machine Learning, Probability, Machine Learning, Information Theory",Kaizheng Wang,Kaizheng Wang,1,http://arxiv.org/pdf/1912.13463v1,http://arxiv.org/abs/1912.13463v1,2019-12-31
+of different kinds demonstrate their efficacy.",math.ST,"62-00, math.ST, cs.LG, math.IT, stat.ML, stat.TH, cs.IT, math.PR",8,Statistics Theory,"Statistics Theory, Machine Learning, Information Theory, Machine Learning, Statistics Theory, Information Theory, Probability",Kaizheng Wang,Kaizheng Wang,1,http://arxiv.org/pdf/1912.13463v1,http://arxiv.org/abs/1912.13463v1,2019-12-31
 Robust Aggregation for Federated Learning,"We present a robust aggregation approach to make federated learning robust to
 settings when a fraction of the devices may be sending corrupted updates to the
 server. The proposed approach relies on a robust secure aggregation oracle
@@ -423,7 +423,7 @@ with linear models and deep networks for two tasks in computer vision and
 natural language processing. The robust aggregation approach is agnostic to the
 level of corruption; it outperforms the classical aggregation approach in terms
 of robustness when the level of corruption is high, while being competitive in
-the regime of low corruption.",stat.ML,"stat.ML, cs.LG, cs.CR",3,Machine Learning,"Machine Learning, Machine Learning, Cryptography and Security",Zaid Harchaoui,"Krishna Pillutla, Sham M. Kakade, Zaid Harchaoui",3,http://arxiv.org/pdf/1912.13445v1,http://arxiv.org/abs/1912.13445v1,2019-12-31
+the regime of low corruption.",stat.ML,"stat.ML, cs.CR, cs.LG",3,Machine Learning,"Machine Learning, Cryptography and Security, Machine Learning",Zaid Harchaoui,"Krishna Pillutla, Sham M. Kakade, Zaid Harchaoui",3,http://arxiv.org/pdf/1912.13445v1,http://arxiv.org/abs/1912.13445v1,2019-12-31
 Approximate Inference for Fully Bayesian Gaussian Process Regression,"Learning in Gaussian Process models occurs through the adaptation of
 hyperparameters of the mean and the covariance function. The classical approach
 entails maximizing the marginal likelihood yielding fixed point estimates (an
@@ -513,7 +513,7 @@ our qualitative analysis shows that participants valued explanations and
 specific conditions, and did not value filler sentences or speculations. Our
 work sheds light on the importance of navigational cues, and our findings can
 be used to guide future research to find the best combination of techniques to
-identify such cues.",cs.SE,"cs.IR, cs.CL, cs.SE",3,Software Engineering,"Information Retrieval, Computation and Language, Software Engineering",Christoph Treude,"Sarah Nadi, Christoph Treude",2,http://arxiv.org/pdf/1912.13455v1,http://arxiv.org/abs/1912.13455v1,2019-12-31
+identify such cues.",cs.SE,"cs.IR, cs.SE, cs.CL",3,Software Engineering,"Information Retrieval, Software Engineering, Computation and Language",Christoph Treude,"Sarah Nadi, Christoph Treude",2,http://arxiv.org/pdf/1912.13455v1,http://arxiv.org/abs/1912.13455v1,2019-12-31
 Building Confidence in Scientific Computing Software Via Assurance Cases,"Assurance cases provide an organized and explicit argument for correctness.
 They can dramatically improve the certification of Scientific Computing
 Software (SCS). Assurance cases have already been effectively used for safety
@@ -543,7 +543,7 @@ normal distribution. Such a model is called singular and it is known that Real
 Log Canonical Threshold (RLCT) is equal to the coefficient of the
 asymptotically main term of the Bayesian generalization error. In this paper,
 we derive RLCT of a simplex Vandermonde matrix type singularity which is equal
-to that of a Poisson mixture in general cases.",math.ST,"math.ST, 62F15, stat.TH",3,Statistics Theory,"Statistics Theory, Statistics Theory",Sumio Watanabe,"Kenichiro Sato, Sumio Watanabe",2,http://arxiv.org/pdf/1912.13289v1,http://arxiv.org/abs/1912.13289v1,2019-12-31
+to that of a Poisson mixture in general cases.",math.ST,"62F15, math.ST, stat.TH",3,Statistics Theory,"Statistics Theory, Statistics Theory",Sumio Watanabe,"Kenichiro Sato, Sumio Watanabe",2,http://arxiv.org/pdf/1912.13289v1,http://arxiv.org/abs/1912.13289v1,2019-12-31
 On Testing for Biases in Peer Review,"We consider the issue of biases in scholarly research, specifically, in peer
 review. There is a long standing debate on whether exposing author identities
 to reviewers induces biases against certain groups, and our focus is on
@@ -595,7 +595,7 @@ interactions. In particular, the deep neural networks (DNNs) built directly in
 the local configuration space (therefore no hand-crafted features) are employed
 to model the effective Hamiltonian. The results demonstrate that neural
 networks are promising for the modeling of effective Hamiltonian due to its
-excellent representation power.",cond-mat.mtrl-sci,"cond-mat.mtrl-sci, physics.comp-ph",2,Materials Science,"Materials Science, Computational Physics",Yang Wang,"Xianglin Liu, Jiaxin Zhang, Markus Eisenbach, Yang Wang",4,http://arxiv.org/pdf/1912.13460v1,http://arxiv.org/abs/1912.13460v1,2019-12-31
+excellent representation power.",cond-mat.mtrl-sci,"physics.comp-ph, cond-mat.mtrl-sci",2,Materials Science,"Computational Physics, Materials Science",Yang Wang,"Xianglin Liu, Jiaxin Zhang, Markus Eisenbach, Yang Wang",4,http://arxiv.org/pdf/1912.13460v1,http://arxiv.org/abs/1912.13460v1,2019-12-31
 Machine-Learning X-ray Absorption Spectra to Quantitative Accuracy,"The advent of massive data repositories has propelled machine learning
 techniques to the front lines of many scientific fields, and exploring new
 frontiers by leveraging the predictive power of machine learning will greatly
@@ -606,7 +606,7 @@ nearly all the prominent peaks, with 90% of the predicted peak locations within
 1 eV of the ground truth. Our study demonstrates that machine learning models
 can achieve practically the same accuracy as first-principles calculations in
 predicting complex physical quantities, such as spectral functions, but at a
-fraction of the cost.",cond-mat.mtrl-sci,"cond-mat.mtrl-sci, physics.comp-ph",2,Materials Science,"Materials Science, Computational Physics",Shinjae Yoo,"Matthew R. Carbone, Mehmet Topsakal, Deyu Lu, Shinjae Yoo",4,http://arxiv.org/pdf/1912.13428v1,http://arxiv.org/abs/1912.13428v1,2019-12-31
+fraction of the cost.",cond-mat.mtrl-sci,"physics.comp-ph, cond-mat.mtrl-sci",2,Materials Science,"Computational Physics, Materials Science",Shinjae Yoo,"Matthew R. Carbone, Mehmet Topsakal, Deyu Lu, Shinjae Yoo",4,http://arxiv.org/pdf/1912.13428v1,http://arxiv.org/abs/1912.13428v1,2019-12-31
 ELSI -- An Open Infrastructure for Electronic Structure Solvers,"Routine applications of electronic structure theory to molecules and periodic
 systems need to compute the electron density from given Hamiltonian and, in
 case of non-orthogonal basis sets, overlap matrices. System sizes can range
@@ -632,7 +632,7 @@ identify factors that strongly affect the efficiency of the solvers, and
 propose a decision layer that assists with the solver selection process.
 Finally, we describe a reverse communication interface encoding matrix-free
 iterative solver strategies that are amenable, e.g., for use with planewave
-basis sets.",physics.comp-ph,"cond-mat.mtrl-sci, physics.comp-ph",2,Computational Physics,"Materials Science, Computational Physics",Volker Blum,"Victor Wen-zhe Yu, Carmen Campos, William Dawson, Alberto García, Ville Havu, Ben Hourahine, William P Huhn, Mathias Jacquelin, Weile Jia, Murat Keçeli, Raul Laasner, Yingzhou Li, Lin Lin, Jianfeng Lu, Jonathan Moussa, Jose E Roman, Álvaro Vázquez-Mayagoitia, Chao Yang, Volker Blum",19,http://arxiv.org/pdf/1912.13403v1,http://arxiv.org/abs/1912.13403v1,2019-12-31
+basis sets.",physics.comp-ph,"physics.comp-ph, cond-mat.mtrl-sci",2,Computational Physics,"Computational Physics, Materials Science",Volker Blum,"Victor Wen-zhe Yu, Carmen Campos, William Dawson, Alberto García, Ville Havu, Ben Hourahine, William P Huhn, Mathias Jacquelin, Weile Jia, Murat Keçeli, Raul Laasner, Yingzhou Li, Lin Lin, Jianfeng Lu, Jonathan Moussa, Jose E Roman, Álvaro Vázquez-Mayagoitia, Chao Yang, Volker Blum",19,http://arxiv.org/pdf/1912.13403v1,http://arxiv.org/abs/1912.13403v1,2019-12-31
 Koopmans Meets Bethe-Salpeter: Excitonic Optical Spectra without GW,"The Bethe-Salpeter Equation (BSE) can be applied to compute from
 first-principles optical spectra that include the effects of screened
 electron-hole interactions. As input, BSE calculations require single-particle
@@ -651,7 +651,7 @@ simulations carried out at the TD-DFT or $G_{0}W_{0}$-\text{BSE} level.
 Conveniently, the new framework reduces the parameter space controlling the
 accuracy of the calculation, thereby simplifying the simulation of
 charge-neutral excitations, offering the potential to expand the applicability
-of first-principles spectroscopies to larger systems of applied interest.",cond-mat.mtrl-sci,"cond-mat.mtrl-sci, physics.comp-ph",2,Materials Science,"Materials Science, Computational Physics",Paolo Umari,"Joshua Elliott, Nicola Colonna, Margherita Marsili, Nicola Marzari, Paolo Umari",5,http://arxiv.org/pdf/1912.13350v1,http://arxiv.org/abs/1912.13350v1,2019-12-31
+of first-principles spectroscopies to larger systems of applied interest.",cond-mat.mtrl-sci,"physics.comp-ph, cond-mat.mtrl-sci",2,Materials Science,"Computational Physics, Materials Science",Paolo Umari,"Joshua Elliott, Nicola Colonna, Margherita Marsili, Nicola Marzari, Paolo Umari",5,http://arxiv.org/pdf/1912.13350v1,http://arxiv.org/abs/1912.13350v1,2019-12-31
 Quantum annealing approach to Ionic Diffusion in Solid,"We developed a framework to evaluate a key quantity to describe the ionic
 diffusion in solids, the correlation factor, for which we can apply the quantum
 annealing computation to get rid of the current limitation for the evaluation
@@ -688,7 +688,7 @@ meteoroids after they undergo a disruption episode) in the size range from 10-2
 m to 1 m. Our model uses the simulation of a spherical body in the continuum
 flow at 70 and 80 km altitude to approximate the behaviour of a small meteoroid
 capable of producing NO. The results presented in this exploratory study are in
-good agreement with previous studies.",astro-ph.EP,"astro-ph.EP, physics.comp-ph",2,Earth and Planetary Astrophysics,"Earth and Planetary Astrophysics, Computational Physics",Reynold E. Silber,"Mihai L. Niculescu, Elizabeth A. Silber, Reynold E. Silber",3,http://arxiv.org/pdf/1912.13130v1,http://arxiv.org/abs/1912.13130v1,2019-12-31
+good agreement with previous studies.",astro-ph.EP,"physics.comp-ph, astro-ph.EP",2,Earth and Planetary Astrophysics,"Computational Physics, Earth and Planetary Astrophysics",Reynold E. Silber,"Mihai L. Niculescu, Elizabeth A. Silber, Reynold E. Silber",3,http://arxiv.org/pdf/1912.13130v1,http://arxiv.org/abs/1912.13130v1,2019-12-31
 "The brevity law as a scaling law, and a possible origin of Zipf's law
   for word frequencies","An important body of quantitative linguistics is constituted by a series of
 statistical laws about language usage. Despite the importance of these
@@ -709,7 +709,7 @@ scales as an inverse power $\delta\simeq 2.8$ of length, which implies the
 fulfilment of a scaling law analogous to those found in the thermodynamics of
 critical phenomena. As a by-product, we find a possible model-free explanation
 for the origin of Zipf's law, which should arise as a mixture of conditional
-frequency distributions governed by the crossover length-dependent frequency.",physics.soc-ph,"physics.data-an, physics.soc-ph, nlin.AO",3,Physics and Society,"Data Analysis, Statistics and Probability, Physics and Society, Adaptation and Self-Organizing Systems",Isabel Serra,"Alvaro Corral, Isabel Serra",2,http://arxiv.org/pdf/1912.13467v1,http://arxiv.org/abs/1912.13467v1,2019-12-31
+frequency distributions governed by the crossover length-dependent frequency.",physics.soc-ph,"nlin.AO, physics.soc-ph, physics.data-an",3,Physics and Society,"Adaptation and Self-Organizing Systems, Physics and Society, Data Analysis, Statistics and Probability",Isabel Serra,"Alvaro Corral, Isabel Serra",2,http://arxiv.org/pdf/1912.13467v1,http://arxiv.org/abs/1912.13467v1,2019-12-31
 "Domain-topic models with chained dimensions: modeling the evolution of a
   major oncology conference (1995-2017)","In this paper we introduce a novel approach for the computational analysis of
 research activities and their dynamics. Named SASHIMI (Symmetrical And
@@ -727,7 +727,7 @@ the empirical analysis of an original dataset, namely the 1995-2017 collection
 of abstracts presented at ASCO, the largest annual oncology research
 conference. We show that SASHIMI is able to detect the presence of significant
 temporal patterns and to identify the major thematic transformations of
-oncology that underlie these patterns.",cs.DL,"physics.data-an, physics.soc-ph, cs.DL",3,Digital Libraries,"Data Analysis, Statistics and Probability, Physics and Society, Digital Libraries",Alberto Cambrosio,"Alexandre Hannud Abdo, Jean-Philippe Cointet, Pascale Bourret, Alberto Cambrosio",4,http://arxiv.org/pdf/1912.13349v1,http://arxiv.org/abs/1912.13349v1,2019-12-31
+oncology that underlie these patterns.",cs.DL,"physics.soc-ph, physics.data-an, cs.DL",3,Digital Libraries,"Physics and Society, Data Analysis, Statistics and Probability, Digital Libraries",Alberto Cambrosio,"Alexandre Hannud Abdo, Jean-Philippe Cointet, Pascale Bourret, Alberto Cambrosio",4,http://arxiv.org/pdf/1912.13349v1,http://arxiv.org/abs/1912.13349v1,2019-12-31
 "Optimal evolutionary control for artificial selection on molecular
   phenotypes","Controlling an evolving population is an important task in modern molecular
 genetics, including in directed evolution to improve the activity of molecules
@@ -765,7 +765,7 @@ LinearPartition is 256x faster than Vienna RNAfold for a sequence with length
 Interestingly, although LinearPartition is approximate, it runs in linear time
 without sacrificing accuracy when base pair probabilities are used to assemble
 structures, and even leads to a small accuracy improvement on longer families
-(16S and 23S rRNA).",q-bio.BM,"q-bio.QM, physics.bio-ph, cs.DS, q-bio.BM",4,Biomolecules,"Quantitative Methods, Biological Physics, Data Structures and Algorithms, Biomolecules",Liang Huang,"He Zhang, Liang Zhang, David H. Mathews, Liang Huang",4,http://arxiv.org/pdf/1912.13190v1,http://arxiv.org/abs/1912.13190v1,2019-12-31
+(16S and 23S rRNA).",q-bio.BM,"cs.DS, physics.bio-ph, q-bio.BM, q-bio.QM",4,Biomolecules,"Data Structures and Algorithms, Biological Physics, Biomolecules, Quantitative Methods",Liang Huang,"He Zhang, Liang Zhang, David H. Mathews, Liang Huang",4,http://arxiv.org/pdf/1912.13190v1,http://arxiv.org/abs/1912.13190v1,2019-12-31
 Driver fatigue EEG signals detection by using robust univariate analysis,"Driver fatigue is a major cause of traffic accidents and the
 electroencephalogram (EEG) is considered one of the most reliable predictors of
 fatigue. This paper proposes a novel, simple and fast method for driver fatigue
@@ -800,7 +800,7 @@ optimisation problem and/or a very large linear system to solve (due to
 inclusion of time and space dimensions). Therefore, the second part of this
 article aims to review advances and challenges, in particular from the
 numerical linear algebra perspective, within the various data assimilation
-approaches.",math.NA,"cs.NA, math.NA, stat.AP, 62F15, 49N05, 49J21, 15A29, 65F08, 65F10, 65F20, stat.CO",5,Numerical Analysis,"Numerical Analysis, Numerical Analysis, Applications, Computation",Melina A. Freitag,Melina A. Freitag,1,http://arxiv.org/pdf/1912.13336v1,http://arxiv.org/abs/1912.13336v1,2019-12-31
+approaches.",math.NA,"stat.CO, cs.NA, 62F15, 49N05, 49J21, 15A29, 65F08, 65F10, 65F20, stat.AP, math.NA",5,Numerical Analysis,"Computation, Numerical Analysis, Applications, Numerical Analysis",Melina A. Freitag,Melina A. Freitag,1,http://arxiv.org/pdf/1912.13336v1,http://arxiv.org/abs/1912.13336v1,2019-12-31
 Statistical Models in Forensic Voice Comparison,"This chapter describes a number of signal-processing and statistical-modeling
 techniques that are commonly used to calculate likelihood ratios in
 human-supervised automatic approaches to forensic voice comparison. Techniques
@@ -819,7 +819,7 @@ likelihood-ratio framework for the evaluation of forensic evidence is assumed.
 It is hoped that the material presented here will be of value to students of
 forensic voice comparison and to researchers interested in learning about
 statistical modeling techniques that could potentially also be applied to data
-from other branches of forensic science.",stat.AP,"cs.SD, eess.AS, stat.AP",3,Applications,"Sound, Audio and Speech Processing, Applications",Alicia Lozano-Díez,"Geoffrey Stewart Morrison, Ewald Enzinger, Daniel Ramos, Joaquín González-Rodríguez, Alicia Lozano-Díez",5,http://arxiv.org/pdf/1912.13242v1,http://arxiv.org/abs/1912.13242v1,2019-12-31
+from other branches of forensic science.",stat.AP,"eess.AS, cs.SD, stat.AP",3,Applications,"Audio and Speech Processing, Sound, Applications",Alicia Lozano-Díez,"Geoffrey Stewart Morrison, Ewald Enzinger, Daniel Ramos, Joaquín González-Rodríguez, Alicia Lozano-Díez",5,http://arxiv.org/pdf/1912.13242v1,http://arxiv.org/abs/1912.13242v1,2019-12-31
 Schrödinger Bridge Samplers,"Consider a reference Markov process with initial distribution $\pi_{0}$ and
 transition kernels $\{M_{t}\}_{t\in[1:T]}$, for some $T\in\mathbb{N}$. Assume
 that you are given distribution $\pi_{T}$, which is not equal to the marginal
@@ -837,7 +837,7 @@ obtain a process whose marginal distribution at time $T$ becomes closer to
 $\pi_T = \pi$, via regression-based approximations of the corresponding
 iterative proportional fitting recursion. We report preliminary experiments and
 make connections with other problems arising in the optimal transport, optimal
-control and physics literatures.",stat.CO,"stat.ML, stat.CO",2,Computation,"Machine Learning, Computation",Pierre E. Jacob,"Espen Bernton, Jeremy Heng, Arnaud Doucet, Pierre E. Jacob",4,http://arxiv.org/pdf/1912.13170v1,http://arxiv.org/abs/1912.13170v1,2019-12-31
+control and physics literatures.",stat.CO,"stat.CO, stat.ML",2,Computation,"Computation, Machine Learning",Pierre E. Jacob,"Espen Bernton, Jeremy Heng, Arnaud Doucet, Pierre E. Jacob",4,http://arxiv.org/pdf/1912.13170v1,http://arxiv.org/abs/1912.13170v1,2019-12-31
 "Parallel cross-validation: a scalable fitting method for Gaussian
   process models","Gaussian process (GP) models are widely used to analyze spatially referenced
 data and to predict values at locations without observations. In contrast to
@@ -870,7 +870,7 @@ development of sparse reference models that preserve features such as mean
 degree scaling. In this paper, we generalize recent work on the
 micro-foundations of such reference models to the case of sparse directed
 graphs with non-vanishing reciprocity, providing a dynamic process
-interpretation of the emergence of stable macroscopic behavior.",stat.ME,"stat.ME, cs.SI",2,Methodology,"Methodology, Social and Information Networks",Carter T. Butts,Carter T. Butts,1,http://arxiv.org/pdf/1912.13144v1,http://arxiv.org/abs/1912.13144v1,2019-12-31
+interpretation of the emergence of stable macroscopic behavior.",stat.ME,"cs.SI, stat.ME",2,Methodology,"Social and Information Networks, Methodology",Carter T. Butts,Carter T. Butts,1,http://arxiv.org/pdf/1912.13144v1,http://arxiv.org/abs/1912.13144v1,2019-12-31
 Prediction in the Presence of Missing Covariates,"In many applied fields incomplete covariate vectors are commonly encountered.
 It is well known that this can be problematic when making inference on model
 parameters, but its impact on prediction performance is less understood. We
