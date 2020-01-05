@@ -1,100 +1,45 @@
-[2020-01-05 16:09:49,461] INFO - prefect.FlowRunner | Beginning Flow run for 'Build Arxiv'
-[2020-01-05 16:09:49,461] INFO - prefect.FlowRunner | Starting flow run.
-[2020-01-05 16:09:49,479] INFO - prefect.TaskRunner | Task 'Constant[list]': Starting task run...
-[2020-01-05 16:09:49,479] WARNING - prefect.TaskRunner | Task 'Constant[list]': can't use cache because it is now invalid
-[2020-01-05 16:09:49,480] INFO - prefect.TaskRunner | Task 'Constant[list]': finished task run for task with final state: 'Success'
-[2020-01-05 16:09:49,480] INFO - prefect.TaskRunner | Task 'Constant[dict]': Starting task run...
-[2020-01-05 16:09:49,480] WARNING - prefect.TaskRunner | Task 'Constant[dict]': can't use cache because it is now invalid
-[2020-01-05 16:09:49,481] INFO - prefect.TaskRunner | Task 'Constant[dict]': finished task run for task with final state: 'Success'
-[2020-01-05 16:09:49,481] INFO - prefect.TaskRunner | Task 'df_get_arxiv': Starting task run...
-[2020-01-05 16:09:49,481] WARNING - prefect.TaskRunner | Task 'df_get_arxiv': can't use cache because it is now invalid
-[2020-01-05 16:10:03,452] INFO - prefect.TaskRunner | Task 'df_get_arxiv': finished task run for task with final state: 'Success'
-[2020-01-05 16:10:03,452] INFO - prefect.TaskRunner | Task 'determine_filter_date': Starting task run...
-[2020-01-05 16:10:03,452] WARNING - prefect.TaskRunner | Task 'determine_filter_date': can't use cache because it is now invalid
-[2020-01-05 16:10:03,453] INFO - prefect.TaskRunner | Task 'determine_filter_date': finished task run for task with final state: 'Success'
-[2020-01-05 16:10:03,454] INFO - prefect.TaskRunner | Task 'filter_df_arxiv': Starting task run...
-[2020-01-05 16:10:03,454] WARNING - prefect.TaskRunner | Task 'filter_df_arxiv': can't use cache because it is now invalid
-[2020-01-05 16:10:03,459] INFO - prefect.TaskRunner | Task 'filter_df_arxiv': finished task run for task with final state: 'Success'
-[2020-01-05 16:10:03,459] INFO - prefect.TaskRunner | Task 'Constant[str]': Starting task run...
-[2020-01-05 16:10:03,460] WARNING - prefect.TaskRunner | Task 'Constant[str]': can't use cache because it is now invalid
-[2020-01-05 16:10:03,460] INFO - prefect.TaskRunner | Task 'Constant[str]': finished task run for task with final state: 'Success'
-[2020-01-05 16:10:03,461] INFO - prefect.TaskRunner | Task 'create_dir_post': Starting task run...
-[2020-01-05 16:10:03,461] WARNING - prefect.TaskRunner | Task 'create_dir_post': can't use cache because it is now invalid
-[2020-01-05 16:10:03,462] INFO - prefect.TaskRunner | Task 'create_dir_post': finished task run for task with final state: 'Success'
-[2020-01-05 16:10:03,462] INFO - prefect.TaskRunner | Task 'copy_rmd_template': Starting task run...
-[2020-01-05 16:10:03,462] WARNING - prefect.TaskRunner | Task 'copy_rmd_template': can't use cache because it is now invalid
-[2020-01-05 16:10:03,465] INFO - prefect.TaskRunner | Task 'copy_rmd_template': finished task run for task with final state: 'Success'
-[2020-01-05 16:10:03,465] INFO - prefect.TaskRunner | Task 'write_df_to_csv': Starting task run...
-[2020-01-05 16:10:03,466] WARNING - prefect.TaskRunner | Task 'write_df_to_csv': can't use cache because it is now invalid
-[2020-01-05 16:10:03,471] INFO - prefect.TaskRunner | Task 'write_df_to_csv': finished task run for task with final state: 'Success'
-[2020-01-05 16:10:03,471] INFO - prefect.TaskRunner | Task 'knit_rmd_to_html': Starting task run...
-[2020-01-05 16:10:03,472] WARNING - prefect.TaskRunner | Task 'knit_rmd_to_html': can't use cache because it is now invalid
+[2020-01-05 20:36:56,210] INFO - prefect.FlowRunner | Beginning Flow run for 'Build Arxiv'
+[2020-01-05 20:36:56,211] INFO - prefect.FlowRunner | Starting flow run.
+[2020-01-05 20:36:56,269] INFO - prefect.TaskRunner | Task 'Constant[list]': Starting task run...
+[2020-01-05 20:36:56,270] WARNING - prefect.TaskRunner | Task 'Constant[list]': can't use cache because it is now invalid
+[2020-01-05 20:36:56,273] INFO - prefect.TaskRunner | Task 'Constant[list]': finished task run for task with final state: 'Success'
+[2020-01-05 20:36:56,274] INFO - prefect.TaskRunner | Task 'Constant[dict]': Starting task run...
+[2020-01-05 20:36:56,274] WARNING - prefect.TaskRunner | Task 'Constant[dict]': can't use cache because it is now invalid
+[2020-01-05 20:36:56,277] INFO - prefect.TaskRunner | Task 'Constant[dict]': finished task run for task with final state: 'Success'
+[2020-01-05 20:36:56,278] INFO - prefect.TaskRunner | Task 'df_get_arxiv': Starting task run...
+[2020-01-05 20:36:56,278] WARNING - prefect.TaskRunner | Task 'df_get_arxiv': can't use cache because it is now invalid
+[2020-01-05 20:37:08,841] INFO - prefect.TaskRunner | Task 'df_get_arxiv': finished task run for task with final state: 'Success'
+[2020-01-05 20:37:08,842] INFO - prefect.TaskRunner | Task 'determine_filter_date': Starting task run...
+[2020-01-05 20:37:08,842] WARNING - prefect.TaskRunner | Task 'determine_filter_date': can't use cache because it is now invalid
+[2020-01-05 20:37:08,843] INFO - prefect.TaskRunner | Task 'determine_filter_date': finished task run for task with final state: 'Success'
+[2020-01-05 20:37:08,843] INFO - prefect.TaskRunner | Task 'filter_df_arxiv': Starting task run...
+[2020-01-05 20:37:08,843] WARNING - prefect.TaskRunner | Task 'filter_df_arxiv': can't use cache because it is now invalid
+[2020-01-05 20:37:08,848] INFO - prefect.TaskRunner | Task 'filter_df_arxiv': finished task run for task with final state: 'Success'
+[2020-01-05 20:37:08,849] INFO - prefect.TaskRunner | Task 'Constant[str]': Starting task run...
+[2020-01-05 20:37:08,850] WARNING - prefect.TaskRunner | Task 'Constant[str]': can't use cache because it is now invalid
+[2020-01-05 20:37:08,851] INFO - prefect.TaskRunner | Task 'Constant[str]': finished task run for task with final state: 'Success'
+[2020-01-05 20:37:08,851] INFO - prefect.TaskRunner | Task 'create_dir_post': Starting task run...
+[2020-01-05 20:37:08,851] WARNING - prefect.TaskRunner | Task 'create_dir_post': can't use cache because it is now invalid
+[2020-01-05 20:37:08,852] INFO - prefect.TaskRunner | Task 'create_dir_post': finished task run for task with final state: 'Success'
+[2020-01-05 20:37:08,852] INFO - prefect.TaskRunner | Task 'copy_rmd_template': Starting task run...
+[2020-01-05 20:37:08,853] WARNING - prefect.TaskRunner | Task 'copy_rmd_template': can't use cache because it is now invalid
+[2020-01-05 20:37:08,856] INFO - prefect.TaskRunner | Task 'copy_rmd_template': finished task run for task with final state: 'Success'
+[2020-01-05 20:37:08,856] INFO - prefect.TaskRunner | Task 'write_df_to_csv': Starting task run...
+[2020-01-05 20:37:08,856] WARNING - prefect.TaskRunner | Task 'write_df_to_csv': can't use cache because it is now invalid
+[2020-01-05 20:37:08,862] INFO - prefect.TaskRunner | Task 'write_df_to_csv': finished task run for task with final state: 'Success'
+[2020-01-05 20:37:08,862] INFO - prefect.TaskRunner | Task 'knit_rmd_to_html': Starting task run...
+[2020-01-05 20:37:08,863] WARNING - prefect.TaskRunner | Task 'knit_rmd_to_html': can't use cache because it is now invalid
 sh: Rscript: command not found
-[2020-01-05 16:10:03,480] INFO - prefect.TaskRunner | Task 'knit_rmd_to_html': finished task run for task with final state: 'Success'
-[2020-01-05 16:10:03,480] INFO - prefect.TaskRunner | Task 'Constant[str]': Starting task run...
-[2020-01-05 16:10:03,480] WARNING - prefect.TaskRunner | Task 'Constant[str]': can't use cache because it is now invalid
-[2020-01-05 16:10:03,481] INFO - prefect.TaskRunner | Task 'Constant[str]': finished task run for task with final state: 'Success'
-[2020-01-05 16:10:03,481] INFO - prefect.TaskRunner | Task 'replace_rmd_template_metadata': Starting task run...
-[2020-01-05 16:10:03,481] WARNING - prefect.TaskRunner | Task 'replace_rmd_template_metadata': can't use cache because it is now invalid
-[2020-01-05 16:10:03,482] INFO - prefect.TaskRunner | Unexpected error: FileNotFoundError(2, 'No such file or directory')
-[2020-01-05 16:10:03,482] INFO - prefect.TaskRunner | Task 'replace_rmd_template_metadata': finished task run for task with final state: 'Retrying'
-[2020-01-05 16:10:03,483] INFO - prefect.TaskRunner | Task 'knit_rmd_to_html': Starting task run...
-[2020-01-05 16:10:03,483] INFO - prefect.TaskRunner | Task 'knit_rmd_to_html': finished task run for task with final state: 'Pending'
-[2020-01-05 16:10:03,483] INFO - prefect.TaskRunner | Task 'git_commit_push': Starting task run...
-[2020-01-05 16:10:03,484] INFO - prefect.TaskRunner | Task 'git_commit_push': finished task run for task with final state: 'Pending'
-[2020-01-05 16:10:03,484] INFO - prefect.TaskRunner | Task 'Constant[str]': Starting task run...
-[2020-01-05 16:10:03,484] WARNING - prefect.TaskRunner | Task 'Constant[str]': can't use cache because it is now invalid
-[2020-01-05 16:10:03,485] INFO - prefect.TaskRunner | Task 'Constant[str]': finished task run for task with final state: 'Success'
-[2020-01-05 16:10:03,485] INFO - prefect.TaskRunner | Task 'create_tweet': Starting task run...
-[2020-01-05 16:10:03,485] INFO - prefect.TaskRunner | Task 'create_tweet': finished task run for task with final state: 'Pending'
-[2020-01-05 16:10:03,486] INFO - prefect.TaskRunner | Task 'tweet_bryan': Starting task run...
-[2020-01-05 16:10:03,486] INFO - prefect.TaskRunner | Task 'tweet_bryan': finished task run for task with final state: 'Pending'
-[2020-01-05 16:10:03,486] INFO - prefect.TaskRunner | Task 'tweet_world': Starting task run...
-[2020-01-05 16:10:03,486] INFO - prefect.TaskRunner | Task 'tweet_world': finished task run for task with final state: 'Pending'
-[2020-01-05 16:10:03,487] INFO - prefect.FlowRunner | Flow run RUNNING: terminal tasks are incomplete.
-[2020-01-05 16:10:03,488] INFO - prefect.Flow | Waiting for next available Task run at 2020-01-05T16:20:03.482558+00:00
-[2020-01-05 18:07:48,264] INFO - prefect.FlowRunner | Beginning Flow run for 'Build Arxiv'
-[2020-01-05 18:07:48,273] INFO - prefect.TaskRunner | Task 'replace_rmd_template_metadata': Starting task run...
-[2020-01-05 18:07:48,273] WARNING - prefect.TaskRunner | Task 'replace_rmd_template_metadata': can't use cache because it is now invalid
-[2020-01-05 18:07:48,283] INFO - prefect.TaskRunner | Task 'replace_rmd_template_metadata': finished task run for task with final state: 'Success'
-[2020-01-05 18:07:48,283] INFO - prefect.TaskRunner | Task 'knit_rmd_to_html': Starting task run...
-[2020-01-05 18:07:48,283] WARNING - prefect.TaskRunner | Task 'knit_rmd_to_html': can't use cache because it is now invalid
+[2020-01-05 20:37:08,870] INFO - prefect.TaskRunner | Task 'knit_rmd_to_html': finished task run for task with final state: 'Success'
+[2020-01-05 20:37:08,870] INFO - prefect.TaskRunner | Task 'Constant[str]': Starting task run...
+[2020-01-05 20:37:08,870] WARNING - prefect.TaskRunner | Task 'Constant[str]': can't use cache because it is now invalid
+[2020-01-05 20:37:08,871] INFO - prefect.TaskRunner | Task 'Constant[str]': finished task run for task with final state: 'Success'
+[2020-01-05 20:37:08,871] INFO - prefect.TaskRunner | Task 'replace_rmd_template_metadata': Starting task run...
+[2020-01-05 20:37:08,872] WARNING - prefect.TaskRunner | Task 'replace_rmd_template_metadata': can't use cache because it is now invalid
+[2020-01-05 20:37:08,877] INFO - prefect.TaskRunner | Task 'replace_rmd_template_metadata': finished task run for task with final state: 'Success'
+[2020-01-05 20:37:08,877] INFO - prefect.TaskRunner | Task 'knit_rmd_to_html': Starting task run...
+[2020-01-05 20:37:08,878] WARNING - prefect.TaskRunner | Task 'knit_rmd_to_html': can't use cache because it is now invalid
 sh: Rscript: command not found
-[2020-01-05 18:07:48,294] INFO - prefect.TaskRunner | Task 'knit_rmd_to_html': finished task run for task with final state: 'Success'
-[2020-01-05 18:07:48,294] INFO - prefect.TaskRunner | Task 'git_commit_push': Starting task run...
-[2020-01-05 18:07:48,295] WARNING - prefect.TaskRunner | Task 'git_commit_push': can't use cache because it is now invalid
-[2020-01-05 16:48:18,156] INFO - prefect.TaskRunner | Task 'git_commit_push': finished task run for task with final state: 'Success'
-[2020-01-05 16:48:18,157] INFO - prefect.TaskRunner | Task 'create_tweet': Starting task run...
-[2020-01-05 16:48:18,158] WARNING - prefect.TaskRunner | Task 'create_tweet': can't use cache because it is now invalid
-[2020-01-05 16:48:18,160] INFO - prefect.TaskRunner | Task 'create_tweet': finished task run for task with final state: 'Success'
-[2020-01-05 16:48:18,161] INFO - prefect.TaskRunner | Task 'tweet_world': Starting task run...
-[2020-01-05 16:48:18,161] WARNING - prefect.TaskRunner | Task 'tweet_world': can't use cache because it is now invalid
-[2020-01-05 16:48:20,148] INFO - prefect.TaskRunner | Unexpected error: TweepError([{'code': 187, 'message': 'Status is a duplicate.'}])
-[2020-01-05 16:48:20,148] INFO - prefect.TaskRunner | Task 'tweet_world': finished task run for task with final state: 'Failed'
-[2020-01-05 16:48:20,149] INFO - prefect.TaskRunner | Task 'tweet_bryan': Starting task run...
-[2020-01-05 16:48:20,149] WARNING - prefect.TaskRunner | Task 'tweet_bryan': can't use cache because it is now invalid
-[2020-01-05 16:48:20,411] INFO - prefect.TaskRunner | Task 'tweet_bryan': finished task run for task with final state: 'Success'
-[2020-01-05 16:48:20,416] INFO - prefect.FlowRunner | Flow run FAILED: some reference tasks failed.
-Traceback (most recent call last):
-  File "/Users/bryanwhiting/venvs/py37/lib/python3.7/site-packages/graphviz/backend.py", line 159, in run
-    proc = subprocess.Popen(cmd, startupinfo=get_startupinfo(), **kwargs)
-  File "/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/subprocess.py", line 800, in __init__
-    restore_signals, start_new_session)
-  File "/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/subprocess.py", line 1551, in _execute_child
-    raise child_exception_type(errno_num, err_msg, err_filename)
-FileNotFoundError: [Errno 2] No such file or directory: 'dot': 'dot'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/Users/bryanwhiting/github/ds-arxiv/python/main.py", line 284, in <module>
-    flow.visualize(flow_state=state, filename=fp_pdf)
-  File "/Users/bryanwhiting/venvs/py37/lib/python3.7/site-packages/prefect/core/flow.py", line 1114, in visualize
-    graph.render(filename, view=False)
-  File "/Users/bryanwhiting/venvs/py37/lib/python3.7/site-packages/graphviz/files.py", line 209, in render
-    quiet=quiet)
-  File "/Users/bryanwhiting/venvs/py37/lib/python3.7/site-packages/graphviz/backend.py", line 206, in render
-    run(cmd, capture_output=True, cwd=cwd, check=True, quiet=quiet)
-  File "/Users/bryanwhiting/venvs/py37/lib/python3.7/site-packages/graphviz/backend.py", line 162, in run
-    raise ExecutableNotFound(cmd)
-graphviz.backend.ExecutableNotFound: failed to execute ['dot', '-Tpdf', '-O', 'state-viz.dot'], make sure the Graphviz executables are on your systems' PATH
+[2020-01-05 20:37:08,881] INFO - prefect.TaskRunner | Task 'knit_rmd_to_html': finished task run for task with final state: 'Success'
+[2020-01-05 20:37:08,881] INFO - prefect.TaskRunner | Task 'git_commit_push': Starting task run...
+[2020-01-05 20:37:08,882] WARNING - prefect.TaskRunner | Task 'git_commit_push': can't use cache because it is now invalid
