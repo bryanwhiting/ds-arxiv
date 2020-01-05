@@ -189,7 +189,7 @@ def read_file(filename):
         text = f.read()
     return text
 
-@task
+@task(max_retries=3, retry_delay=datetime.timedelta(minutes=10))
 def replace_rmd_template_metadata(dir_post, fp_post, date_today, date_query):
     """After R Markdown is compiled, tweet.txt is created. This pulls that tweet and 
     replaces the XXDESCRIPTIONXX in the template
@@ -280,7 +280,7 @@ if __name__ == '__main__':
 
     # flow.visualize()    
     state = flow.run()
-    fp_pdf = os.path.expanduser('~/github/ds-arxiv/python/state-viz.pdf')
+    fp_pdf = os.path.expanduser('~/github/ds-arxiv/python/state-viz')
     flow.visualize(flow_state=state, filename=fp_pdf)
 
     # TO debug: 
