@@ -59,7 +59,7 @@
 				<key>ActionParameters</key>
 				<dict>
 					<key>COMMAND_STRING</key>
-					<string>/Users/bryanwhiting/venvs/py37/bin/python3 /Users/bryanwhiting/github/ds-arxiv/python/main.py</string>
+					<string>/Users/bryanwhiting/venvs/py37/bin/python3 /Users/bryanwhiting/github/ds-arxiv/python/main.py | tee /Users/bryanwhiting/github/ds-arxiv/python/run.log</string>
 					<key>CheckedForUserDefaultShell</key>
 					<true/>
 					<key>inputMethod</key>
