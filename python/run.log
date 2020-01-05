@@ -1,0 +1,92 @@
+  |                                                                              |                                                                      |   0%  |                                                                              |......                                                                |   8%
+  ordinary text without R code
+
+  |                                                                              |............                                                          |  17%
+label: setup (with options) 
+List of 1
+ $ include: logi FALSE
+
+  |                                                                              |..................                                                    |  25%
+  ordinary text without R code
+
+  |                                                                              |.......................                                               |  33%
+label: summary-table-with-counts (with options) 
+List of 1
+ $ fig.cap: chr "Breakdown of arXiv categories by Primary Tag"
+
+  |                                                                              |.............................                                         |  42%
+  ordinary text without R code
+
+  |                                                                              |...................................                                   |  50%
+label: save-summary
+  |                                                                              |.........................................                             |  58%
+  ordinary text without R code
+
+  |                                                                              |...............................................                       |  67%
+label: make-twitter
+  |                                                                              |....................................................                  |  75%
+  ordinary text without R code
+
+  |                                                                              |..........................................................            |  83%
+label: list-ds-articles (with options) 
+List of 2
+ $ results: chr "asis"
+ $ layout : chr "l-screen-inset"
+
+  |                                                                              |................................................................      |  92%
+  ordinary text without R code
+
+  |                                                                              |......................................................................| 100%
+label: list-primary-tags (with options) 
+List of 2
+ $ layout : chr "l-page"
+ $ results: chr "asis"
+
+
+/usr/local/bin/pandoc +RTS -K512m -RTS news.utf8.md --to html5 --from markdown+autolink_bare_uris+tex_math_single_backslash --output news.html --email-obfuscation none --standalone --table-of-contents --toc-depth 3 --no-highlight --template /Library/Frameworks/R.framework/Versions/3.5/Resources/library/distill/rmarkdown/templates/distill_article/resources/default.html --lua-filter /Library/Frameworks/R.framework/Versions/3.5/Resources/library/distill/rmarkdown/templates/distill_article/resources/distill.lua '--metadata=link-citations:true' --include-in-header /var/folders/nc/5w65ldln50bbz6k62c04rvp80000gn/T//RtmpGdxp11/filebef08edea58html --include-in-header /var/folders/nc/5w65ldln50bbz6k62c04rvp80000gn/T//RtmpGdxp11/filebef07887840ahtml --include-in-header /var/folders/nc/5w65ldln50bbz6k62c04rvp80000gn/T//RtmpGdxp11/filebef03bb43bfchtml --include-in-header /var/folders/nc/5w65ldln50bbz6k62c04rvp80000gn/T//RtmpGdxp11/filebef035ce3c03html --include-in-header /var/folders/nc/5w65ldln50bbz6k62c04rvp80000gn/T//RtmpGdxp11/filebef076c6048dhtml --include-before-body /var/folders/nc/5w65ldln50bbz6k62c04rvp80000gn/T//RtmpGdxp11/filebef0425501e6html --include-before-body /var/folders/nc/5w65ldln50bbz6k62c04rvp80000gn/T//RtmpGdxp11/filebef05aefc50fhtml --include-before-body /var/folders/nc/5w65ldln50bbz6k62c04rvp80000gn/T//RtmpGdxp11/filebef033728a6dhtml --include-after-body /var/folders/nc/5w65ldln50bbz6k62c04rvp80000gn/T//RtmpGdxp11/filebef024de147ehtml --include-after-body /var/folders/nc/5w65ldln50bbz6k62c04rvp80000gn/T//RtmpGdxp11/filebef070136f1ahtml --include-after-body /var/folders/nc/5w65ldln50bbz6k62c04rvp80000gn/T//RtmpGdxp11/filebef0be34d72html --include-in-header /var/folders/nc/5w65ldln50bbz6k62c04rvp80000gn/T//RtmpGdxp11/rmarkdown-strbef077f17d76.html --mathjax --variable 'mathjax-url:https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML' --lua-filter /Library/Frameworks/R.framework/Versions/3.5/Resources/library/rmarkdown/rmd/lua/pagebreak.lua --lua-filter /Library/Frameworks/R.framework/Versions/3.5/Resources/library/rmarkdown/rmd/lua/latex-div.lua --include-in-header /var/folders/nc/5w65ldln50bbz6k62c04rvp80000gn/T//RtmpGdxp11/filebef0f640b7fhtml 
+  |                                                                              |                                                                      |   0%  |                                                                              |......                                                                |   8%
+  ordinary text without R code
+
+  |                                                                              |............                                                          |  17%
+label: setup (with options) 
+List of 1
+ $ include: logi FALSE
+
+  |                                                                              |..................                                                    |  25%
+  ordinary text without R code
+
+  |                                                                              |.......................                                               |  33%
+label: summary-table-with-counts (with options) 
+List of 1
+ $ fig.cap: chr "Breakdown of arXiv categories by Primary Tag"
+
+  |                                                                              |.............................                                         |  42%
+  ordinary text without R code
+
+  |                                                                              |...................................                                   |  50%
+label: save-summary
+  |                                                                              |.........................................                             |  58%
+  ordinary text without R code
+
+  |                                                                              |...............................................                       |  67%
+label: make-twitter
+  |                                                                              |....................................................                  |  75%
+  ordinary text without R code
+
+  |                                                                              |..........................................................            |  83%
+label: list-ds-articles (with options) 
+List of 2
+ $ results: chr "asis"
+ $ layout : chr "l-screen-inset"
+
+  |                                                                              |................................................................      |  92%
+  ordinary text without R code
+
+  |                                                                              |......................................................................| 100%
+label: list-primary-tags (with options) 
+List of 2
+ $ layout : chr "l-page"
+ $ results: chr "asis"
+
+
+/usr/local/bin/pandoc +RTS -K512m -RTS news.utf8.md --to html5 --from markdown+autolink_bare_uris+tex_math_single_backslash --output news.html --email-obfuscation none --standalone --table-of-contents --toc-depth 3 --no-highlight --template /Library/Frameworks/R.framework/Versions/3.5/Resources/library/distill/rmarkdown/templates/distill_article/resources/default.html --lua-filter /Library/Frameworks/R.framework/Versions/3.5/Resources/library/distill/rmarkdown/templates/distill_article/resources/distill.lua '--metadata=link-citations:true' --include-in-header /var/folders/nc/5w65ldln50bbz6k62c04rvp80000gn/T//RtmpylI3Fd/filebf014f401243html --include-in-header /var/folders/nc/5w65ldln50bbz6k62c04rvp80000gn/T//RtmpylI3Fd/filebf01398ed112html --include-in-header /var/folders/nc/5w65ldln50bbz6k62c04rvp80000gn/T//RtmpylI3Fd/filebf01776f155ahtml --include-in-header /var/folders/nc/5w65ldln50bbz6k62c04rvp80000gn/T//RtmpylI3Fd/filebf011de304f8html --include-in-header /var/folders/nc/5w65ldln50bbz6k62c04rvp80000gn/T//RtmpylI3Fd/filebf01235b451chtml --include-before-body /var/folders/nc/5w65ldln50bbz6k62c04rvp80000gn/T//RtmpylI3Fd/filebf013d164366html --include-before-body /var/folders/nc/5w65ldln50bbz6k62c04rvp80000gn/T//RtmpylI3Fd/filebf01a2fcdfhtml --include-before-body /var/folders/nc/5w65ldln50bbz6k62c04rvp80000gn/T//RtmpylI3Fd/filebf014c8794cchtml --include-after-body /var/folders/nc/5w65ldln50bbz6k62c04rvp80000gn/T//RtmpylI3Fd/filebf01593a0454html --include-after-body /var/folders/nc/5w65ldln50bbz6k62c04rvp80000gn/T//RtmpylI3Fd/filebf016ff2548fhtml --include-after-body /var/folders/nc/5w65ldln50bbz6k62c04rvp80000gn/T//RtmpylI3Fd/filebf01e8db1b4html --include-in-header /var/folders/nc/5w65ldln50bbz6k62c04rvp80000gn/T//RtmpylI3Fd/rmarkdown-strbf01788da7e2.html --mathjax --variable 'mathjax-url:https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML' --lua-filter /Library/Frameworks/R.framework/Versions/3.5/Resources/library/rmarkdown/rmd/lua/pagebreak.lua --lua-filter /Library/Frameworks/R.framework/Versions/3.5/Resources/library/rmarkdown/rmd/lua/latex-div.lua --include-in-header /var/folders/nc/5w65ldln50bbz6k62c04rvp80000gn/T//RtmpylI3Fd/filebf011c092443html 
