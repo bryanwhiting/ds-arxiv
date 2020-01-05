@@ -280,7 +280,7 @@ if __name__ == '__main__':
 
     # flow.visualize()    
     state = flow.run()
-    fp_pdf = os.path.expanduser('~/github/ds-arxiv/python/state-viz')
+    fp_pdf = os.path.expanduser('~/github/ds-arxiv/python/state-viz.dot')
     flow.visualize(flow_state=state, filename=fp_pdf)
 
     # TO debug: 

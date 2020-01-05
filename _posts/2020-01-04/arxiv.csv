@@ -15,7 +15,7 @@ preferences via network distillation. This approach enables us to distill a
 robust task reward (addressing reward ambiguity) and to model each strategy's
 objective (handling heterogeneity). We demonstrate our algorithm can better
 recover task reward and strategy rewards and imitate the strategies in two
-simulated tasks and a real-world table tennis task.",cs.LG,"cs.LG, cs.RO, cs.AI, stat.ML",4,Machine Learning,"Machine Learning, Robotics, Artificial Intelligence, Machine Learning",Matthew Gombolay,"Letian Chen, Rohan Paleja, Muyleng Ghuy, Matthew Gombolay",4,http://arxiv.org/pdf/2001.00503v1,http://arxiv.org/abs/2001.00503v1,2020-01-02
+simulated tasks and a real-world table tennis task.",cs.LG,"cs.RO, stat.ML, cs.AI, cs.LG",4,Machine Learning,"Robotics, Machine Learning, Artificial Intelligence, Machine Learning",Matthew Gombolay,"Letian Chen, Rohan Paleja, Muyleng Ghuy, Matthew Gombolay",4,http://arxiv.org/pdf/2001.00503v1,http://arxiv.org/abs/2001.00503v1,2020-01-02
 Informal Data Transformation Considered Harmful,"In this paper we take the common position that AI systems are limited more by
 the integrity of the data they are learning from than the sophistication of
 their algorithms, and we take the uncommon position that the solution to
@@ -26,7 +26,7 @@ cleaning data), but rather to formally and automatically guarantee that data
 integrity is preserved as it transformed (migrated, integrated, composed,
 queried, viewed, etc) throughout the enterprise, so that data and programs that
 depend on that data need not constantly be re-validated for every particular
-use.",cs.DB,"cs.DB, cs.AI",2,Databases,"Databases, Artificial Intelligence",Ryan Wisnesky,"Eric Daimler, Ryan Wisnesky",2,http://arxiv.org/pdf/2001.00338v1,http://arxiv.org/abs/2001.00338v1,2020-01-02
+use.",cs.DB,"cs.AI, cs.DB",2,Databases,"Artificial Intelligence, Databases",Ryan Wisnesky,"Eric Daimler, Ryan Wisnesky",2,http://arxiv.org/pdf/2001.00338v1,http://arxiv.org/abs/2001.00338v1,2020-01-02
 On Consequentialism and Fairness,"Recent work on fairness in machine learning has primarily emphasized how to
 define, quantify, and encourage ""fair"" outcomes. Less attention has been paid,
 however, to the ethical foundations which underlie such efforts. Among the
@@ -43,7 +43,7 @@ paper we provide a consequentialist critique of common definitions of fairness
 within machine learning, as well as a machine learning perspective on
 consequentialism. We conclude with a broader discussion of the issues of
 learning and randomization, which have important implications for the ethics of
-automated decision making systems.",cs.AI,"cs.LG, cs.CY, cs.AI, stat.ML",4,Artificial Intelligence,"Machine Learning, Computers and Society, Artificial Intelligence, Machine Learning",Noah A. Smith,"Dallas Card, Noah A. Smith",2,http://arxiv.org/pdf/2001.00329v1,http://arxiv.org/abs/2001.00329v1,2020-01-02
+automated decision making systems.",cs.AI,"cs.CY, stat.ML, cs.AI, cs.LG",4,Artificial Intelligence,"Computers and Society, Machine Learning, Artificial Intelligence, Machine Learning",Noah A. Smith,"Dallas Card, Noah A. Smith",2,http://arxiv.org/pdf/2001.00329v1,http://arxiv.org/abs/2001.00329v1,2020-01-02
 PrivacyNet: Semi-Adversarial Networks for Multi-attribute Face Privacy,"In recent years, the utilization of biometric information has become more and
 more common for various forms of identity verification and user authentication.
 However, as a consequence of the widespread use and storage of biometric
@@ -60,7 +60,7 @@ capable of perturbing different sources of soft biometric information reliably
 and simultaneously, it also allows users to choose to obfuscate specific
 attributes, while preserving others. The results from extensive experiments on
 five independent face image databases demonstrate the efficacy of our proposed
-model in imparting selective multi-attribute privacy to face images.",cs.CV,"cs.LG, cs.CV",2,Computer Vision and Pattern Recognition,"Machine Learning, Computer Vision and Pattern Recognition",Arun Ross,"Vahid Mirjalili, Sebastian Raschka, Arun Ross",3,http://arxiv.org/pdf/2001.00561v1,http://arxiv.org/abs/2001.00561v1,2020-01-02
+model in imparting selective multi-attribute privacy to face images.",cs.CV,"cs.CV, cs.LG",2,Computer Vision and Pattern Recognition,"Computer Vision and Pattern Recognition, Machine Learning",Arun Ross,"Vahid Mirjalili, Sebastian Raschka, Arun Ross",3,http://arxiv.org/pdf/2001.00561v1,http://arxiv.org/abs/2001.00561v1,2020-01-02
 Physically Plausible Spectral Reconstruction from RGB Images,"Recently Convolutional Neural Networks (CNN) have been used to reconstruct
 hyperspectral information from RGB images. Moreover, this spectral
 reconstruction problem (SR) can often be solved with good (low) error. However,
@@ -75,7 +75,7 @@ plausibility is enforced and the problem resulting from changing exposures is
 mitigated. Our SR solution improves the state-of-the-art spectral recovery
 performance under varying exposure conditions while simultaneously ensuring
 physical plausibility (the recovered spectra reintegrate to the input RGBs
-exactly).",eess.IV,"cs.CV, eess.IV",2,Image and Video Processing,"Computer Vision and Pattern Recognition, Image and Video Processing",Graham D. Finlayson,"Yi-Tun Lin, Graham D. Finlayson",2,http://arxiv.org/pdf/2001.00558v1,http://arxiv.org/abs/2001.00558v1,2020-01-02
+exactly).",eess.IV,"eess.IV, cs.CV",2,Image and Video Processing,"Image and Video Processing, Computer Vision and Pattern Recognition",Graham D. Finlayson,"Yi-Tun Lin, Graham D. Finlayson",2,http://arxiv.org/pdf/2001.00558v1,http://arxiv.org/abs/2001.00558v1,2020-01-02
 Lightweight Residual Densely Connected Convolutional Neural Network,"Extremely efficient convolutional neural network architectures are one of the
 most important requirements for limited computing power devices (such as
 embedded and mobile devices). Recently, some architectures have been proposed
@@ -93,7 +93,7 @@ MNIST, Fashion MNIST, SVHN, CIFAR-10, and CIFAR-100. It achieves
 state-of-the-art results on the Fashion MNIST dataset and reasonable results on
 the others. The obtained results show that the proposed model is superior to
 efficient models such as the SqueezNet and is also comparable with the
-state-of-the-art efficient models such as CondenseNet and ShuffleNet.",cs.CV,"cs.LG, cs.CV",2,Computer Vision and Pattern Recognition,"Machine Learning, Computer Vision and Pattern Recognition",Shohreh Kasaei,"Fahimeh Fooladgar, Shohreh Kasaei",2,http://arxiv.org/pdf/2001.00526v1,http://arxiv.org/abs/2001.00526v1,2020-01-02
+state-of-the-art efficient models such as CondenseNet and ShuffleNet.",cs.CV,"cs.CV, cs.LG",2,Computer Vision and Pattern Recognition,"Computer Vision and Pattern Recognition, Machine Learning",Shohreh Kasaei,"Fahimeh Fooladgar, Shohreh Kasaei",2,http://arxiv.org/pdf/2001.00526v1,http://arxiv.org/abs/2001.00526v1,2020-01-02
 "Using CNNs For Users Segmentation In Video See-Through Augmented
   Virtuality","In this paper, we present preliminary results on the use of deep learning
 techniques to integrate the users self-body and other participants into a
@@ -105,7 +105,7 @@ time semantic segmentation of users bodies in the stereoscopic RGB video
 streams acquired from the perspective of the user. We describe design issues as
 well as implementation details of the system and demonstrate the feasibility of
 using such neural networks for merging users bodies in an augmented virtuality
-simulation.",cs.CV,"I.2.10; I.3.7, cs.CV, I.2.10, I.3.7",3,Computer Vision and Pattern Recognition,Computer Vision and Pattern Recognition,Lionel Dominjon,"Pierre-Olivier Pigny, Lionel Dominjon",2,http://arxiv.org/pdf/2001.00487v1,http://arxiv.org/abs/2001.00487v1,2020-01-02
+simulation.",cs.CV,"cs.CV, I.2.10; I.3.7, I.2.10, I.3.7",3,Computer Vision and Pattern Recognition,Computer Vision and Pattern Recognition,Lionel Dominjon,"Pierre-Olivier Pigny, Lionel Dominjon",2,http://arxiv.org/pdf/2001.00487v1,http://arxiv.org/abs/2001.00487v1,2020-01-02
 "Kalman Filtering and Expectation Maximization for Multitemporal Spectral
   Unmixing","The recent evolution of hyperspectral imaging technology and the
 proliferation of new emerging applications presses for the processing of
@@ -118,7 +118,7 @@ variability coefficients. Moreover, by assuming that the temporal variability
 of the abundances is small over short intervals, an efficient implementation of
 the expectation maximization (EM) algorithm is employed to estimate the
 abundances and the other model parameters. Simulation results indicate that the
-proposed strategy outperforms state-of-the-art multitemporal SU algorithms.",eess.IV,"cs.CV, eess.IV",2,Image and Video Processing,"Computer Vision and Pattern Recognition, Image and Video Processing",Cédric Richard,"Ricardo Augusto Borsoi, Tales Imbiriba, Pau Closas, José Carlos Moreira Bermudez, Cédric Richard",5,http://arxiv.org/pdf/2001.00425v1,http://arxiv.org/abs/2001.00425v1,2020-01-02
+proposed strategy outperforms state-of-the-art multitemporal SU algorithms.",eess.IV,"eess.IV, cs.CV",2,Image and Video Processing,"Image and Video Processing, Computer Vision and Pattern Recognition",Cédric Richard,"Ricardo Augusto Borsoi, Tales Imbiriba, Pau Closas, José Carlos Moreira Bermudez, Cédric Richard",5,http://arxiv.org/pdf/2001.00425v1,http://arxiv.org/abs/2001.00425v1,2020-01-02
 Restricting the Flow: Information Bottlenecks for Attribution,"Attribution methods provide insights into the decision-making of machine
 learning models like artificial neural networks. For a given input sample, they
 assign a relevance score to each individual input variable, such as the pixels
@@ -130,7 +130,7 @@ metrics on VGG-16 and ResNet-50, and find that our methods outperform all
 baselines in five out of six settings. The method's information-theoretic
 foundation provides an absolute frame of reference for attribution values
 (bits) and a guarantee that regions scored close to zero are not necessary for
-the network's decision.",stat.ML,"cs.LG, cs.CV, stat.ML",3,Machine Learning,"Machine Learning, Computer Vision and Pattern Recognition, Machine Learning",Tim Landgraf,"Karl Schulz, Leon Sixt, Federico Tombari, Tim Landgraf",4,http://arxiv.org/pdf/2001.00396v1,http://arxiv.org/abs/2001.00396v1,2020-01-02
+the network's decision.",stat.ML,"cs.CV, stat.ML, cs.LG",3,Machine Learning,"Computer Vision and Pattern Recognition, Machine Learning, Machine Learning",Tim Landgraf,"Karl Schulz, Leon Sixt, Federico Tombari, Tim Landgraf",4,http://arxiv.org/pdf/2001.00396v1,http://arxiv.org/abs/2001.00396v1,2020-01-02
 "Butterfly detection and classification based on integrated YOLO
   algorithm","Insects are abundant species on the earth, and the task of identification and
 identification of insects is complex and arduous. How to apply artificial
@@ -161,7 +161,7 @@ information. Third, we show that it is possible to apply different kernel
 functions on different data modes. In principle, our method tensorizes the
 standard SVM on its input structure and kernel mapping scheme. Extensive
 experiments are performed on real-world tensor data, which demonstrates the
-superiority of the proposed scheme under few-sample high-dimensional inputs.",cs.LG,"cs.LG, cs.CV, stat.ML",3,Machine Learning,"Machine Learning, Computer Vision and Pattern Recognition, Machine Learning",Ngai Wong,"Cong Chen, Kim Batselier, Wenjian Yu, Ngai Wong",4,http://arxiv.org/pdf/2001.00360v1,http://arxiv.org/abs/2001.00360v1,2020-01-02
+superiority of the proposed scheme under few-sample high-dimensional inputs.",cs.LG,"cs.CV, stat.ML, cs.LG",3,Machine Learning,"Computer Vision and Pattern Recognition, Machine Learning, Machine Learning",Ngai Wong,"Cong Chen, Kim Batselier, Wenjian Yu, Ngai Wong",4,http://arxiv.org/pdf/2001.00360v1,http://arxiv.org/abs/2001.00360v1,2020-01-02
 "First image then video: A two-stage network for spatiotemporal video
   denoising","Video denoising is to remove noise from noise-corrupted data, thus recovering
 true signals via spatiotemporal processing. Existing approaches for
@@ -195,7 +195,7 @@ replacing the binarized metal trace with the metal mask projection such that
 the geometry information of metal implants is encoded. Extensive experiments on
 simulated datasets and expert evaluations on clinical images demonstrate that
 our network called DuDoNet++ yields anatomically more precise artifact-reduced
-images than DuDoNet, especially when the metallic objects are large.",eess.IV,"cs.CV, eess.IV",2,Image and Video Processing,"Computer Vision and Pattern Recognition, Image and Video Processing",S. Kevin Zhou,"Yuanyuan Lyu, Wei-An Lin, Jingjing Lu, S. Kevin Zhou",4,http://arxiv.org/pdf/2001.00340v1,http://arxiv.org/abs/2001.00340v1,2020-01-02
+images than DuDoNet, especially when the metallic objects are large.",eess.IV,"eess.IV, cs.CV",2,Image and Video Processing,"Image and Video Processing, Computer Vision and Pattern Recognition",S. Kevin Zhou,"Yuanyuan Lyu, Wei-An Lin, Jingjing Lu, S. Kevin Zhou",4,http://arxiv.org/pdf/2001.00340v1,http://arxiv.org/abs/2001.00340v1,2020-01-02
 "Joint Unsupervised Learning for the Vertebra Segmentation, Artifact
   Reduction and Modality Translation of CBCT Images","We investigate the unsupervised learning of the vertebra segmentation,
 artifact reduction and modality translation of CBCT images. To this end, we
@@ -214,7 +214,7 @@ anatomically identical) groundtruth data. Extensive experiments on clinical
 CBCT and CT datasets show that the proposed approach performs significantly
 better than other state-of-the-art unsupervised methods trained independently
 for each task and, remarkably, the proposed approach achieves a dice
-coefficient of 0.879 for unsupervised CBCT vertebra segmentation.",eess.IV,"cs.CV, eess.IV",2,Image and Video Processing,"Computer Vision and Pattern Recognition, Image and Video Processing",S. Kevin Zhou,"Yuanyuan Lyu, Haofu Liao, Heqin Zhu, S. Kevin Zhou",4,http://arxiv.org/pdf/2001.00339v1,http://arxiv.org/abs/2001.00339v1,2020-01-02
+coefficient of 0.879 for unsupervised CBCT vertebra segmentation.",eess.IV,"eess.IV, cs.CV",2,Image and Video Processing,"Image and Video Processing, Computer Vision and Pattern Recognition",S. Kevin Zhou,"Yuanyuan Lyu, Haofu Liao, Heqin Zhu, S. Kevin Zhou",4,http://arxiv.org/pdf/2001.00339v1,http://arxiv.org/abs/2001.00339v1,2020-01-02
 Robust Marine Buoy Placement for Ship Detection Using Dropout K-Means,"Marine buoys aid in the battle against Illegal, Unreported and Unregulated
 (IUU) fishing by detecting fishing vessels in their vicinity. Marine buoys,
 however, may be disrupted by natural causes and buoy vandalism. To minimize the
@@ -227,7 +227,7 @@ data, then compared the ship detection probability of dropout k-means to
 classic k-means and dropout k-median to classic k-median, taking into account
 that the current sensor detection radius is 10km. With 5 buoys, the buoy
 arrangement computed by classic k-means, dropout k-means, classic k-median and
-dropout k-median have ship detection probabilities of 38%, 45%, 48% and 52%.",cs.LG,"cs.LG, stat.ML",2,Machine Learning,"Machine Learning, Machine Learning",Vahid Tarokh,"Yuting Ng, João M. Pereira, Denis Garagic, Vahid Tarokh",4,http://arxiv.org/pdf/2001.00564v1,http://arxiv.org/abs/2001.00564v1,2020-01-02
+dropout k-median have ship detection probabilities of 38%, 45%, 48% and 52%.",cs.LG,"stat.ML, cs.LG",2,Machine Learning,"Machine Learning, Machine Learning",Vahid Tarokh,"Yuting Ng, João M. Pereira, Denis Garagic, Vahid Tarokh",4,http://arxiv.org/pdf/2001.00564v1,http://arxiv.org/abs/2001.00564v1,2020-01-02
 "A Deep Structural Model for Analyzing Correlated Multivariate Time
   Series","Multivariate time series are routinely encountered in real-world
 applications, and in many cases, these time series are strongly correlated. In
@@ -245,7 +245,7 @@ encoding the event dates. We compare our model with several state-of-the-art
 methods through a comprehensive set of experiments on a variety of time series
 data sets, such as forecasts of Amazon AWS Simple Storage Service (S3) and
 Elastic Compute Cloud (EC2) billings, and the closing prices for corporate
-stocks in the same category.",stat.ML,"cs.LG, stat.ML",2,Machine Learning,"Machine Learning, Machine Learning",Sungyong Seo,"Changwei Hu, Yifan Hu, Sungyong Seo",3,http://arxiv.org/pdf/2001.00559v1,http://arxiv.org/abs/2001.00559v1,2020-01-02
+stocks in the same category.",stat.ML,"stat.ML, cs.LG",2,Machine Learning,"Machine Learning, Machine Learning",Sungyong Seo,"Changwei Hu, Yifan Hu, Sungyong Seo",3,http://arxiv.org/pdf/2001.00559v1,http://arxiv.org/abs/2001.00559v1,2020-01-02
 "Cost-Function-Dependent Barren Plateaus in Shallow Quantum Neural
   Networks","Variational quantum algorithms (VQAs) optimize the parameters
 $\boldsymbol{\theta}$ of a quantum neural network $V(\boldsymbol{\theta})$ to
@@ -260,7 +260,7 @@ defining $C$ with local observables leads to a polynomially vanishing gradient,
 so long as the depth of $V(\boldsymbol{\theta})$ is $\mathcal{O}(\log n)$.
 Taken together, our results establish a precise connection between locality and
 trainability. Finally, we illustrate these ideas with large-scale simulations,
-up to 100 qubits, of a particular VQA known as quantum autoencoders.",quant-ph,"cs.LG, quant-ph",2,Quantum Physics,"Machine Learning, Quantum Physics",Patrick J. Coles,"M. Cerezo, Akira Sone, Tyler Volkoff, Lukasz Cincio, Patrick J. Coles",5,http://arxiv.org/pdf/2001.00550v1,http://arxiv.org/abs/2001.00550v1,2020-01-02
+up to 100 qubits, of a particular VQA known as quantum autoencoders.",quant-ph,"quant-ph, cs.LG",2,Quantum Physics,"Quantum Physics, Machine Learning",Patrick J. Coles,"M. Cerezo, Akira Sone, Tyler Volkoff, Lukasz Cincio, Patrick J. Coles",5,http://arxiv.org/pdf/2001.00550v1,http://arxiv.org/abs/2001.00550v1,2020-01-02
 Adversarial Policies in Learning Systems with Malicious Experts,"We consider a learning system based on the conventional multiplicative weight
 (MW) rule that combines experts' advice to predict a sequence of true outcomes.
 It is assumed that one of the experts is malicious and aims to impose the
@@ -277,7 +277,7 @@ online setting where the malicious expert can adaptively make its decisions, we
 show that the optimal online policy can be efficiently computed by solving a
 dynamic program in $O(N^2)$. Our results provide a new direction for
 vulnerability assessment of commonly used learning algorithms to adversarial
-attacks where the threat is an integral part of the system.",cs.LG,"cs.LG, cs.CR, stat.ML, cs.MA",4,Machine Learning,"Machine Learning, Cryptography and Security, Machine Learning, Multiagent Systems",H. Vincent Poor,"S. Rasoul Etesami, Negar Kiyavash, H. Vincent Poor",3,http://arxiv.org/pdf/2001.00543v1,http://arxiv.org/abs/2001.00543v1,2020-01-02
+attacks where the threat is an integral part of the system.",cs.LG,"stat.ML, cs.MA, cs.LG, cs.CR",4,Machine Learning,"Machine Learning, Multiagent Systems, Machine Learning, Cryptography and Security",H. Vincent Poor,"S. Rasoul Etesami, Negar Kiyavash, H. Vincent Poor",3,http://arxiv.org/pdf/2001.00543v1,http://arxiv.org/abs/2001.00543v1,2020-01-02
 Non-Parametric Learning of Gaifman Models,"We consider the problem of structure learning for Gaifman models and learn
 relational features that can be used to derive feature representations from a
 knowledge base. These relational features are first-order rules that are then
@@ -285,7 +285,7 @@ partially grounded and counted over local neighborhoods of a Gaifman model to
 obtain the feature representations. We propose a method for learning these
 relational features for a Gaifman model by using relational tree distances. Our
 empirical evaluation on real data sets demonstrates the superiority of our
-approach over classical rule-learning.",cs.LG,"cs.LG, stat.ML",2,Machine Learning,"Machine Learning, Machine Learning",Sriraam Natarajan,"Devendra Singh Dhami, Siwen Yen, Gautam Kunapuli, Sriraam Natarajan",4,http://arxiv.org/pdf/2001.00528v1,http://arxiv.org/abs/2001.00528v1,2020-01-02
+approach over classical rule-learning.",cs.LG,"stat.ML, cs.LG",2,Machine Learning,"Machine Learning, Machine Learning",Sriraam Natarajan,"Devendra Singh Dhami, Siwen Yen, Gautam Kunapuli, Sriraam Natarajan",4,http://arxiv.org/pdf/2001.00528v1,http://arxiv.org/abs/2001.00528v1,2020-01-02
 "Reject Illegal Inputs with Generative Classifier Derived from Any
   Discriminative Classifier","Generative classifiers have been shown promising to detect illegal inputs
 including adversarial examples and out-of-distribution samples. Supervised Deep
@@ -304,13 +304,13 @@ rejected without predictions. Experiments on illegal inputs, including
 adversarial examples, samples with common corruptions, and
 out-of-distribution~(OOD) samples show that allowed to reject a portion of test
 samples, SDIM-\emph{logit} significantly improves the performance on the left
-test sets.",cs.LG,"cs.LG, stat.ML",2,Machine Learning,"Machine Learning, Machine Learning",Xin Wang,Xin Wang,1,http://arxiv.org/pdf/2001.00483v1,http://arxiv.org/abs/2001.00483v1,2020-01-02
+test sets.",cs.LG,"stat.ML, cs.LG",2,Machine Learning,"Machine Learning, Machine Learning",Xin Wang,Xin Wang,1,http://arxiv.org/pdf/2001.00483v1,http://arxiv.org/abs/2001.00483v1,2020-01-02
 Thresholds of descending algorithms in inference problems,"We review recent works on analyzing the dynamics of gradient-based algorithms
 in a prototypical statistical inference problem. Using methods and insights
 from the physics of glassy systems, these works showed how to understand
 quantitatively and qualitatively the performance of gradient-based algorithms.
 Here we review the key results and their interpretation in non-technical terms
-accessible to a wide audience of physicists in the context of related works.",cs.LG,"cs.LG, cond-mat.dis-nn, stat.ML",3,Machine Learning,"Machine Learning, Disordered Systems and Neural Networks, Machine Learning",Lenka Zdeborova,"Stefano Sarao Mannelli, Lenka Zdeborova",2,http://arxiv.org/pdf/2001.00479v1,http://arxiv.org/abs/2001.00479v1,2020-01-02
+accessible to a wide audience of physicists in the context of related works.",cs.LG,"stat.ML, cs.LG, cond-mat.dis-nn",3,Machine Learning,"Machine Learning, Machine Learning, Disordered Systems and Neural Networks",Lenka Zdeborova,"Stefano Sarao Mannelli, Lenka Zdeborova",2,http://arxiv.org/pdf/2001.00479v1,http://arxiv.org/abs/2001.00479v1,2020-01-02
 Reasoning on Knowledge Graphs with Debate Dynamics,"We propose a novel method for automatic reasoning on knowledge graphs based
 on debate dynamics. The main idea is to frame the task of triple classification
 as a debate game between two reinforcement learning agents which extract
@@ -326,7 +326,7 @@ predictive accuracy, we benchmark our method on the triple classification and
 link prediction task. Thereby, we find that our method outperforms several
 baselines on the benchmark datasets FB15k-237, WN18RR, and Hetionet. We also
 conduct a survey and find that the extracted arguments are informative for
-users.",cs.LG,"cs.LG, stat.ML",2,Machine Learning,"Machine Learning, Machine Learning",Volker Tresp,"Marcel Hildebrandt, Jorge Andres Quintero Serna, Yunpu Ma, Martin Ringsquandl, Mitchell Joblin, Volker Tresp",6,http://arxiv.org/pdf/2001.00461v1,http://arxiv.org/abs/2001.00461v1,2020-01-02
+users.",cs.LG,"stat.ML, cs.LG",2,Machine Learning,"Machine Learning, Machine Learning",Volker Tresp,"Marcel Hildebrandt, Jorge Andres Quintero Serna, Yunpu Ma, Martin Ringsquandl, Mitchell Joblin, Volker Tresp",6,http://arxiv.org/pdf/2001.00461v1,http://arxiv.org/abs/2001.00461v1,2020-01-02
 Dataset of Video Game Development Problems,"Different from traditional software development, there is little information
 about the software-engineering process and techniques in video-game
 development. One popular way to share knowledge among the video-game
@@ -349,7 +349,7 @@ to derive consistent predictors in non-stationary time series. In contrast to
 the currently available methods for this problem the predictor developed here
 does not rely on fitting an autoregressive model and does not require a
 vanishing trend. The finite sample properties of the new methodology are
-illustrated by means of a simulation study and a financial indices study.",stat.ME,"econ.EM, stat.ME",2,Methodology,"Econometrics, Methodology",Weichi Wu,"Holger Dette, Weichi Wu",2,http://arxiv.org/pdf/2001.00419v1,http://arxiv.org/abs/2001.00419v1,2020-01-02
+illustrated by means of a simulation study and a financial indices study.",stat.ME,"stat.ME, econ.EM",2,Methodology,"Methodology, Econometrics",Weichi Wu,"Holger Dette, Weichi Wu",2,http://arxiv.org/pdf/2001.00419v1,http://arxiv.org/abs/2001.00419v1,2020-01-02
 "On the Distribution of an Arbitrary Subset of the Eigenvalues for some
   Finite Dimensional Random Matrices","We present some new results on the joint distribution of an arbitrary subset
 of the ordered eigenvalues of complex Wishart, double Wishart, and Gaussian
@@ -449,7 +449,7 @@ associated with prostate cancer diagnosis and treatment in younger men and
 overestimates it in the very old. We surmise that in younger men
 treatment-related deaths are incompletely captured in recorded prostate cancer
 mortality, while in older men the diagnosis ""sticks""-- once diagnosed, they are
-more likely to be said to have died from the disease.",q-bio.PE,"q-bio.PE, q-bio.QM",2,Populations and Evolution,"Populations and Evolution, Quantitative Methods",Elliott S. Fisher,"H. Gilbert Welch, Michael J. Barry, William C Black, Yunjie Song, Elliott S. Fisher",5,http://arxiv.org/pdf/2001.00492v1,http://arxiv.org/abs/2001.00492v1,2020-01-02
+more likely to be said to have died from the disease.",q-bio.PE,"q-bio.QM, q-bio.PE",2,Populations and Evolution,"Quantitative Methods, Populations and Evolution",Elliott S. Fisher,"H. Gilbert Welch, Michael J. Barry, William C Black, Yunjie Song, Elliott S. Fisher",5,http://arxiv.org/pdf/2001.00492v1,http://arxiv.org/abs/2001.00492v1,2020-01-02
 "On the modelling, linear stability, and numerical simulation for
   advection-diffusion-reaction in poroelastic media","We perform the linear growth analysis for a new PDE-based model for
 poromechanical processes (formulated in mixed form using the solid deformation,
@@ -566,7 +566,7 @@ its proper recovery of them. We apply it to Gemini Planet Imager (GPI) K1-band
 observations of the debris disk surrounding HR 4796A, finding a tentative trend
 that the dust is more forward scattering as the wavelength increases. We expect
 DI-sNMF to be applicable to other general scenarios where the separation of
-signals is needed.",astro-ph.IM,"astro-ph.EP, astro-ph.IM, astro-ph.SR, stat.ML",4,Instrumentation and Methods for Astrophysics,"Earth and Planetary Astrophysics, Instrumentation and Methods for Astrophysics, Solar and Stellar Astrophysics, Machine Learning",Marshall D. Perrin,"Bin Ren, Laurent Pueyo, Christine Chen, Élodie Choquet, John H. Debes, Gaspard Duchêne, François Ménard, Marshall D. Perrin",8,http://arxiv.org/pdf/2001.00563v1,http://arxiv.org/abs/2001.00563v1,2020-01-02
+signals is needed.",astro-ph.IM,"stat.ML, astro-ph.EP, astro-ph.IM, astro-ph.SR",4,Instrumentation and Methods for Astrophysics,"Machine Learning, Earth and Planetary Astrophysics, Instrumentation and Methods for Astrophysics, Solar and Stellar Astrophysics",Marshall D. Perrin,"Bin Ren, Laurent Pueyo, Christine Chen, Élodie Choquet, John H. Debes, Gaspard Duchêne, François Ménard, Marshall D. Perrin",8,http://arxiv.org/pdf/2001.00563v1,http://arxiv.org/abs/2001.00563v1,2020-01-02
 "Continuous-Discrete Reinforcement Learning for Hybrid Control in
   Robotics","Many real-world control problems involve both discrete decision variables -
 such as the choice of control modes, gear switching or digital outputs - as
@@ -585,7 +585,7 @@ learning problems. We then show, both in simulation and on robotic hardware,
 the benefits of removing possibly imperfect expert-designed heuristics. Lastly,
 hybrid reinforcement learning encourages us to rethink problem definitions. We
 propose reformulating control problems, e.g. by adding meta actions, to improve
-exploration or reduce mechanical wear and tear.",cs.LG,"cs.LG, cs.RO, stat.ML",3,Machine Learning,"Machine Learning, Robotics, Machine Learning",Martin Riedmiller,"Michael Neunert, Abbas Abdolmaleki, Markus Wulfmeier, Thomas Lampe, Jost Tobias Springenberg, Roland Hafner, Francesco Romano, Jonas Buchli, Nicolas Heess, Martin Riedmiller",10,http://arxiv.org/pdf/2001.00449v1,http://arxiv.org/abs/2001.00449v1,2020-01-02
+exploration or reduce mechanical wear and tear.",cs.LG,"cs.RO, stat.ML, cs.LG",3,Machine Learning,"Robotics, Machine Learning, Machine Learning",Martin Riedmiller,"Michael Neunert, Abbas Abdolmaleki, Markus Wulfmeier, Thomas Lampe, Jost Tobias Springenberg, Roland Hafner, Francesco Romano, Jonas Buchli, Nicolas Heess, Martin Riedmiller",10,http://arxiv.org/pdf/2001.00449v1,http://arxiv.org/abs/2001.00449v1,2020-01-02
 "Inter- and Intra-domain Knowledge Transfer for Related Tasks in Deep
   Character Recognition","Pre-training a deep neural network on the ImageNet dataset is a common
 practice for training deep learning models, and generally yields improved
@@ -599,4 +599,4 @@ and features and analyse their behaviour. Our results demonstrate that no
 significant advantage is gained by using a transfer learning approach over a
 traditional machine learning approach for our character recognition tasks. This
 suggests that using transfer learning does not necessarily presuppose a better
-performing model in all cases.",cs.LG,"cs.LG, stat.ML",2,Machine Learning,"Machine Learning, Machine Learning",Terence van Zyl,"Nishai Kooverjee, Steven James, Terence van Zyl",3,http://arxiv.org/pdf/2001.00448v1,http://arxiv.org/abs/2001.00448v1,2020-01-02
+performing model in all cases.",cs.LG,"stat.ML, cs.LG",2,Machine Learning,"Machine Learning, Machine Learning",Terence van Zyl,"Nishai Kooverjee, Steven James, Terence van Zyl",3,http://arxiv.org/pdf/2001.00448v1,http://arxiv.org/abs/2001.00448v1,2020-01-02
