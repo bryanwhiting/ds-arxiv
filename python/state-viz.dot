@@ -1,0 +1,47 @@
+digraph {
+	4707817040 [label=knit_rmd_to_html color="#ff513180" colorscheme=svg shape=ellipse style=filled]
+	4707818064 [label=tweet_bryan color="#ff513180" colorscheme=svg shape=ellipse style=filled]
+	4707818256 [label=tweet_world color="#ff513180" colorscheme=svg shape=ellipse style=filled]
+	4707817680 [label="Constant[str]" color="#28a74580" colorscheme=svg shape=ellipse style=filled]
+	4707817360 [label=git_commit_push color="#ff513180" colorscheme=svg shape=ellipse style=filled]
+	4707816400 [label=replace_rmd_template_metadata color="#eb000080" colorscheme=svg shape=ellipse style=filled]
+	4707777424 [label=df_get_arxiv color="#28a74580" colorscheme=svg shape=ellipse style=filled]
+	4707777616 [label=determine_filter_date color="#28a74580" colorscheme=svg shape=ellipse style=filled]
+	4707777104 [label="Constant[list]" color="#28a74580" colorscheme=svg shape=ellipse style=filled]
+	4707778192 [label=filter_df_arxiv color="#28a74580" colorscheme=svg shape=ellipse style=filled]
+	4707777232 [label="Constant[dict]" color="#28a74580" colorscheme=svg shape=ellipse style=filled]
+	4707778320 [label=create_dir_post color="#28a74580" colorscheme=svg shape=ellipse style=filled]
+	4707815824 [label="Constant[str]" color="#28a74580" colorscheme=svg shape=ellipse style=filled]
+	4707815568 [label=write_df_to_csv color="#28a74580" colorscheme=svg shape=ellipse style=filled]
+	4707815952 [label=copy_rmd_template color="#28a74580" colorscheme=svg shape=ellipse style=filled]
+	4707816144 [label=knit_rmd_to_html color="#28a74580" colorscheme=svg shape=ellipse style=filled]
+	4707816464 [label="Constant[str]" color="#28a74580" colorscheme=svg shape=ellipse style=filled]
+	4707817616 [label=create_tweet color="#ff513180" colorscheme=svg shape=ellipse style=filled]
+	4707777616 -> 4707817616 [label=date_query]
+	4707815824 -> 4707778320 [label=date_published]
+	4707777616 -> 4707778192 [label=filter_to_date]
+	4707817616 -> 4707818256 [label=tweet]
+	4707815952 -> 4707816144 [label=fp_post]
+	4707815952 -> 4707816400 [label=fp_post]
+	4707815952 -> 4707817040 [label=fp_post]
+	4707778320 -> 4707815568 [label=dir_post]
+	4707777104 -> 4707777424 [label=arx_list]
+	4707778320 -> 4707815952 [label=dir_post]
+	4707815568 -> 4707816144
+	4707817040 -> 4707817360
+	4707778320 -> 4707817616 [label=dir_post]
+	4707778192 -> 4707815568 [label=df]
+	4707777424 -> 4707778192 [label=df]
+	4707777616 -> 4707816400 [label=date_query]
+	4707817680 -> 4707817616 [label=date_published]
+	4707777232 -> 4707777424 [label=arx_dict]
+	4707817616 -> 4707818064 [label=tweet]
+	4707778320 -> 4707816400 [label=dir_post]
+	4707778192 -> 4707778320
+	4707816144 -> 4707816400
+	4707816144 -> 4707817040
+	4707816400 -> 4707817040
+	4707817360 -> 4707817616
+	4707816464 -> 4707816400 [label=date_today]
+	4707777424 -> 4707777616 [label=df]
+}

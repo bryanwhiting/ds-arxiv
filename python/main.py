@@ -189,7 +189,7 @@ def read_file(filename):
         text = f.read()
     return text
 
-@task(max_retries=3, retry_delay=datetime.timedelta(minutes=10))
+@task(max_retries=3, retry_delay=timedelta(minutes=10))
 def replace_rmd_template_metadata(dir_post, fp_post, date_today, date_query):
     """After R Markdown is compiled, tweet.txt is created. This pulls that tweet and 
     replaces the XXDESCRIPTIONXX in the template

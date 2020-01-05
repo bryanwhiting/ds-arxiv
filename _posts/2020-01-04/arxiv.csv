@@ -1,0 +1,602 @@
+title,summary,primary_tag,tags,n_tags,primary_category,categories,author,authors,n_authors,url_pdf,url_href,date
+"Joint Goal and Strategy Inference across Heterogeneous Demonstrators via
+  Reward Network Distillation","Reinforcement learning (RL) has achieved tremendous success as a general
+framework for learning how to make decisions. However, this success relies on
+the interactive hand-tuning of a reward function by RL experts. On the other
+hand, inverse reinforcement learning (IRL) seeks to learn a reward function
+from readily-obtained human demonstrations. Yet, IRL suffers from two major
+limitations: 1) reward ambiguity - there are an infinite number of possible
+reward functions that could explain an expert's demonstration and 2)
+heterogeneity - human experts adopt varying strategies and preferences, which
+makes learning from multiple demonstrators difficult due to the common
+assumption that demonstrators seeks to maximize the same reward. In this work,
+we propose a method to jointly infer a task goal and humans' strategic
+preferences via network distillation. This approach enables us to distill a
+robust task reward (addressing reward ambiguity) and to model each strategy's
+objective (handling heterogeneity). We demonstrate our algorithm can better
+recover task reward and strategy rewards and imitate the strategies in two
+simulated tasks and a real-world table tennis task.",cs.LG,"stat.ML, cs.RO, cs.AI, cs.LG",4,Machine Learning,"Machine Learning, Robotics, Artificial Intelligence, Machine Learning",Matthew Gombolay,"Letian Chen, Rohan Paleja, Muyleng Ghuy, Matthew Gombolay",4,http://arxiv.org/pdf/2001.00503v1,http://arxiv.org/abs/2001.00503v1,2020-01-02
+Informal Data Transformation Considered Harmful,"In this paper we take the common position that AI systems are limited more by
+the integrity of the data they are learning from than the sophistication of
+their algorithms, and we take the uncommon position that the solution to
+achieving better data integrity in the enterprise is not to clean and validate
+data ex-post-facto whenever needed (the so-called data lake approach to data
+management, which can lead to data scientists spending 80% of their time
+cleaning data), but rather to formally and automatically guarantee that data
+integrity is preserved as it transformed (migrated, integrated, composed,
+queried, viewed, etc) throughout the enterprise, so that data and programs that
+depend on that data need not constantly be re-validated for every particular
+use.",cs.DB,"cs.DB, cs.AI",2,Databases,"Databases, Artificial Intelligence",Ryan Wisnesky,"Eric Daimler, Ryan Wisnesky",2,http://arxiv.org/pdf/2001.00338v1,http://arxiv.org/abs/2001.00338v1,2020-01-02
+On Consequentialism and Fairness,"Recent work on fairness in machine learning has primarily emphasized how to
+define, quantify, and encourage ""fair"" outcomes. Less attention has been paid,
+however, to the ethical foundations which underlie such efforts. Among the
+ethical perspectives that should be taken into consideration is
+consequentialism, the position that, roughly speaking, outcomes are all that
+matter. Although consequentialism is not free from difficulties, and although
+it does not necessarily provide a tractable way of choosing actions (because of
+the combined problems of uncertainty, subjectivity, and aggregation), it
+nevertheless provides a powerful foundation from which to critique the existing
+literature on machine learning fairness. Moreover, it brings to the fore some
+of the tradeoffs involved, including the problem of who counts, the pros and
+cons of using a policy, and the relative value of the distant future. In this
+paper we provide a consequentialist critique of common definitions of fairness
+within machine learning, as well as a machine learning perspective on
+consequentialism. We conclude with a broader discussion of the issues of
+learning and randomization, which have important implications for the ethics of
+automated decision making systems.",cs.AI,"cs.CY, stat.ML, cs.AI, cs.LG",4,Artificial Intelligence,"Computers and Society, Machine Learning, Artificial Intelligence, Machine Learning",Noah A. Smith,"Dallas Card, Noah A. Smith",2,http://arxiv.org/pdf/2001.00329v1,http://arxiv.org/abs/2001.00329v1,2020-01-02
+PrivacyNet: Semi-Adversarial Networks for Multi-attribute Face Privacy,"In recent years, the utilization of biometric information has become more and
+more common for various forms of identity verification and user authentication.
+However, as a consequence of the widespread use and storage of biometric
+information, concerns regarding sensitive information leakage and the
+protection of users' privacy have been raised. Recent research efforts targeted
+these concerns by proposing the Semi-Adversarial Networks (SAN) framework for
+imparting gender privacy to face images. The objective of SAN is to perturb
+face image data such that it cannot be reliably used by a gender classifier but
+can still be used by a face matcher for matching purposes. In this work, we
+propose a novel Generative Adversarial Networks-based SAN model, PrivacyNet,
+that is capable of imparting selective soft biometric privacy to multiple
+soft-biometric attributes such as gender, age, and race. While PrivacyNet is
+capable of perturbing different sources of soft biometric information reliably
+and simultaneously, it also allows users to choose to obfuscate specific
+attributes, while preserving others. The results from extensive experiments on
+five independent face image databases demonstrate the efficacy of our proposed
+model in imparting selective multi-attribute privacy to face images.",cs.CV,"cs.CV, cs.LG",2,Computer Vision and Pattern Recognition,"Computer Vision and Pattern Recognition, Machine Learning",Arun Ross,"Vahid Mirjalili, Sebastian Raschka, Arun Ross",3,http://arxiv.org/pdf/2001.00561v1,http://arxiv.org/abs/2001.00561v1,2020-01-02
+Physically Plausible Spectral Reconstruction from RGB Images,"Recently Convolutional Neural Networks (CNN) have been used to reconstruct
+hyperspectral information from RGB images. Moreover, this spectral
+reconstruction problem (SR) can often be solved with good (low) error. However,
+these methods are not physically plausible: that is when the recovered spectra
+are reintegrated with the underlying camera sensitivities, the resulting
+predicted RGB is not the same as the actual RGB, and sometimes this discrepancy
+can be large. The problem is further compounded by exposure change. Indeed,
+most learning-based SR models train for a fixed exposure setting and we show
+that this can result in poor performance when exposure varies.
+  In this paper we show how CNN learning can be extended so that physical
+plausibility is enforced and the problem resulting from changing exposures is
+mitigated. Our SR solution improves the state-of-the-art spectral recovery
+performance under varying exposure conditions while simultaneously ensuring
+physical plausibility (the recovered spectra reintegrate to the input RGBs
+exactly).",eess.IV,"cs.CV, eess.IV",2,Image and Video Processing,"Computer Vision and Pattern Recognition, Image and Video Processing",Graham D. Finlayson,"Yi-Tun Lin, Graham D. Finlayson",2,http://arxiv.org/pdf/2001.00558v1,http://arxiv.org/abs/2001.00558v1,2020-01-02
+Lightweight Residual Densely Connected Convolutional Neural Network,"Extremely efficient convolutional neural network architectures are one of the
+most important requirements for limited computing power devices (such as
+embedded and mobile devices). Recently, some architectures have been proposed
+to overcome this limitation by considering specific hardware-software
+equipment. In this paper, the residual densely connected blocks are proposed to
+guaranty the deep supervision, efficient gradient flow, and feature reuse
+abilities of convolutional neural network. The proposed method decreases the
+cost of training and inference processes without using any special
+hardware-software equipment by just reducing the number of parameters and
+computational operations while achieving a feasible accuracy. Extensive
+experimental results demonstrate that the proposed architecture is more
+efficient than the AlexNet and VGGNet in terms of model size, required
+parameters, and even accuracy. The proposed model is evaluated on the ImageNet,
+MNIST, Fashion MNIST, SVHN, CIFAR-10, and CIFAR-100. It achieves
+state-of-the-art results on the Fashion MNIST dataset and reasonable results on
+the others. The obtained results show that the proposed model is superior to
+efficient models such as the SqueezNet and is also comparable with the
+state-of-the-art efficient models such as CondenseNet and ShuffleNet.",cs.CV,"cs.CV, cs.LG",2,Computer Vision and Pattern Recognition,"Computer Vision and Pattern Recognition, Machine Learning",Shohreh Kasaei,"Fahimeh Fooladgar, Shohreh Kasaei",2,http://arxiv.org/pdf/2001.00526v1,http://arxiv.org/abs/2001.00526v1,2020-01-02
+"Using CNNs For Users Segmentation In Video See-Through Augmented
+  Virtuality","In this paper, we present preliminary results on the use of deep learning
+techniques to integrate the users self-body and other participants into a
+head-mounted video see-through augmented virtuality scenario. It has been
+previously shown that seeing users bodies in such simulations may improve the
+feeling of both self and social presence in the virtual environment, as well as
+user performance. We propose to use a convolutional neural network for real
+time semantic segmentation of users bodies in the stereoscopic RGB video
+streams acquired from the perspective of the user. We describe design issues as
+well as implementation details of the system and demonstrate the feasibility of
+using such neural networks for merging users bodies in an augmented virtuality
+simulation.",cs.CV,"cs.CV, I.2.10; I.3.7, I.2.10, I.3.7",3,Computer Vision and Pattern Recognition,Computer Vision and Pattern Recognition,Lionel Dominjon,"Pierre-Olivier Pigny, Lionel Dominjon",2,http://arxiv.org/pdf/2001.00487v1,http://arxiv.org/abs/2001.00487v1,2020-01-02
+"Kalman Filtering and Expectation Maximization for Multitemporal Spectral
+  Unmixing","The recent evolution of hyperspectral imaging technology and the
+proliferation of new emerging applications presses for the processing of
+multiple temporal hyperspectral images. In this work, we propose a novel
+spectral unmixing (SU) strategy using physically motivated parametric endmember
+representations to account for temporal spectral variability. By representing
+the multitemporal mixing process using a state-space formulation, we are able
+to exploit the Bayesian filtering machinery to estimate the endmember
+variability coefficients. Moreover, by assuming that the temporal variability
+of the abundances is small over short intervals, an efficient implementation of
+the expectation maximization (EM) algorithm is employed to estimate the
+abundances and the other model parameters. Simulation results indicate that the
+proposed strategy outperforms state-of-the-art multitemporal SU algorithms.",eess.IV,"cs.CV, eess.IV",2,Image and Video Processing,"Computer Vision and Pattern Recognition, Image and Video Processing",Cédric Richard,"Ricardo Augusto Borsoi, Tales Imbiriba, Pau Closas, José Carlos Moreira Bermudez, Cédric Richard",5,http://arxiv.org/pdf/2001.00425v1,http://arxiv.org/abs/2001.00425v1,2020-01-02
+Restricting the Flow: Information Bottlenecks for Attribution,"Attribution methods provide insights into the decision-making of machine
+learning models like artificial neural networks. For a given input sample, they
+assign a relevance score to each individual input variable, such as the pixels
+of an image. In this work we adapt the information bottleneck concept for
+attribution. By adding noise to intermediate feature maps we restrict the flow
+of information and can quantify (in bits) how much information image regions
+provide. We compare our method against ten baselines using three different
+metrics on VGG-16 and ResNet-50, and find that our methods outperform all
+baselines in five out of six settings. The method's information-theoretic
+foundation provides an absolute frame of reference for attribution values
+(bits) and a guarantee that regions scored close to zero are not necessary for
+the network's decision.",stat.ML,"cs.CV, stat.ML, cs.LG",3,Machine Learning,"Computer Vision and Pattern Recognition, Machine Learning, Machine Learning",Tim Landgraf,"Karl Schulz, Leon Sixt, Federico Tombari, Tim Landgraf",4,http://arxiv.org/pdf/2001.00396v1,http://arxiv.org/abs/2001.00396v1,2020-01-02
+"Butterfly detection and classification based on integrated YOLO
+  algorithm","Insects are abundant species on the earth, and the task of identification and
+identification of insects is complex and arduous. How to apply artificial
+intelligence technology and digital image processing methods to automatic
+identification of insect species is a hot issue in current research. In this
+paper, the problem of automatic detection and classification recognition of
+butterfly photographs is studied, and a method of bio-labeling suitable for
+butterfly classification is proposed. On the basis of YOLO algorithm, by
+synthesizing the results of YOLO models with different training mechanisms, a
+butterfly automatic detection and classification recognition algorithm based on
+YOLO algorithm is proposed. It greatly improves the generalization ability of
+YOLO algorithm and makes it have better ability to solve small sample problems.
+The experimental results show that the proposed annotation method and
+integrated YOLO algorithm have high accuracy and recognition rate in butterfly
+automatic detection and recognition.",cs.CV,cs.CV,1,Computer Vision and Pattern Recognition,Computer Vision and Pattern Recognition,Jingyu Hao,"Bohan Liang, Shangxi Wu, Kaiyuan Xu, Jingyu Hao",4,http://arxiv.org/pdf/2001.00361v1,http://arxiv.org/abs/2001.00361v1,2020-01-02
+Kernelized Support Tensor Train Machines,"Tensor, a multi-dimensional data structure, has been exploited recently in
+the machine learning community. Traditional machine learning approaches are
+vector- or matrix-based, and cannot handle tensorial data directly. In this
+paper, we propose a tensor train (TT)-based kernel technique for the first
+time, and apply it to the conventional support vector machine (SVM) for image
+classification. Specifically, we propose a kernelized support tensor train
+machine that accepts tensorial input and preserves the intrinsic kernel
+property. The main contributions are threefold. First, we propose a TT-based
+feature mapping procedure that maintains the TT structure in the feature space.
+Second, we demonstrate two ways to construct the TT-based kernel function while
+considering consistency with the TT inner product and preservation of
+information. Third, we show that it is possible to apply different kernel
+functions on different data modes. In principle, our method tensorizes the
+standard SVM on its input structure and kernel mapping scheme. Extensive
+experiments are performed on real-world tensor data, which demonstrates the
+superiority of the proposed scheme under few-sample high-dimensional inputs.",cs.LG,"cs.CV, stat.ML, cs.LG",3,Machine Learning,"Computer Vision and Pattern Recognition, Machine Learning, Machine Learning",Ngai Wong,"Cong Chen, Kim Batselier, Wenjian Yu, Ngai Wong",4,http://arxiv.org/pdf/2001.00360v1,http://arxiv.org/abs/2001.00360v1,2020-01-02
+"First image then video: A two-stage network for spatiotemporal video
+  denoising","Video denoising is to remove noise from noise-corrupted data, thus recovering
+true signals via spatiotemporal processing. Existing approaches for
+spatiotemporal video denoising tend to suffer from motion blur artifacts, that
+is, the boundary of a moving object tends to appear blurry especially when the
+object undergoes a fast motion, causing optical flow calculation to break down.
+In this paper, we address this challenge by designing a first-image-then-video
+two-stage denoising neural network, consisting of an image denoising module for
+spatially reducing intra-frame noise followed by a regular spatiotemporal video
+denoising module. The intuition is simple yet powerful and effective: the first
+stage of image denoising effectively reduces the noise level and, therefore,
+allows the second stage of spatiotemporal denoising for better modeling and
+learning everywhere, including along the moving object boundaries. This
+two-stage network, when trained in an end-to-end fashion, yields the
+state-of-the-art performances on the video denoising benchmark Vimeo90K dataset
+in terms of both denoising quality and computation. It also enables an
+unsupervised approach that achieves comparable performance to existing
+supervised approaches.",cs.CV,cs.CV,1,Computer Vision and Pattern Recognition,Computer Vision and Pattern Recognition,Zhiwei Cheng,"Ce Wang, S. Kevin Zhou, Zhiwei Cheng",3,http://arxiv.org/pdf/2001.00346v1,http://arxiv.org/abs/2001.00346v1,2020-01-02
+DuDoNet++: Encoding mask projection to reduce CT metal artifacts,"CT metal artifact reduction (MAR) is a notoriously challenging task because
+the artifacts are structured and non-local in the image domain. However, they
+are inherently local in the sinogram domain. DuDoNet is the state-of-the-art
+MAR algorithm which exploits the latter characteristic by learning to reduce
+artifacts in the sinogram and image domain jointly. By design, DuDoNet treats
+the metal-affected regions in sinogram as missing and replaces them with the
+surrogate data generated by a neural network. Since fine-grained details within
+the metal-affected regions are completely ignored, the artifact-reduced CT
+images by DuDoNet tend to be over-smoothed and distorted. In this work, we
+investigate the issue by theoretical derivation. We propose to address the
+problem by (1) retaining the metal-affected regions in sinogram and (2)
+replacing the binarized metal trace with the metal mask projection such that
+the geometry information of metal implants is encoded. Extensive experiments on
+simulated datasets and expert evaluations on clinical images demonstrate that
+our network called DuDoNet++ yields anatomically more precise artifact-reduced
+images than DuDoNet, especially when the metallic objects are large.",eess.IV,"cs.CV, eess.IV",2,Image and Video Processing,"Computer Vision and Pattern Recognition, Image and Video Processing",S. Kevin Zhou,"Yuanyuan Lyu, Wei-An Lin, Jingjing Lu, S. Kevin Zhou",4,http://arxiv.org/pdf/2001.00340v1,http://arxiv.org/abs/2001.00340v1,2020-01-02
+"Joint Unsupervised Learning for the Vertebra Segmentation, Artifact
+  Reduction and Modality Translation of CBCT Images","We investigate the unsupervised learning of the vertebra segmentation,
+artifact reduction and modality translation of CBCT images. To this end, we
+formulate this problem under a unified framework that jointly addresses these
+three tasks and intensively leverages the knowledge sharing. The unsupervised
+learning of this framework is enabled by 1) a novel shape-aware artifact
+disentanglement network that supports different forms of image synthesis and
+vertebra segmentation and 2) a deliberate fusion of knowledge from an
+independent CT dataset. Specifically, the proposed framework takes a random
+pair of CBCT and CT images as the input, and manipulates the synthesis and
+segmentation via different combinations of the decodings of the disentangled
+latent codes. Then, by discovering various forms of consistencies between the
+synthesized images and segmented , the learning is achieved via self-learning
+from the given CBCT and CT images obviating the need for the paired (i.e.,
+anatomically identical) groundtruth data. Extensive experiments on clinical
+CBCT and CT datasets show that the proposed approach performs significantly
+better than other state-of-the-art unsupervised methods trained independently
+for each task and, remarkably, the proposed approach achieves a dice
+coefficient of 0.879 for unsupervised CBCT vertebra segmentation.",eess.IV,"cs.CV, eess.IV",2,Image and Video Processing,"Computer Vision and Pattern Recognition, Image and Video Processing",S. Kevin Zhou,"Yuanyuan Lyu, Haofu Liao, Heqin Zhu, S. Kevin Zhou",4,http://arxiv.org/pdf/2001.00339v1,http://arxiv.org/abs/2001.00339v1,2020-01-02
+Robust Marine Buoy Placement for Ship Detection Using Dropout K-Means,"Marine buoys aid in the battle against Illegal, Unreported and Unregulated
+(IUU) fishing by detecting fishing vessels in their vicinity. Marine buoys,
+however, may be disrupted by natural causes and buoy vandalism. To minimize the
+effects of buoy disruption on a buoy network, we propose a more robust buoy
+placement using dropout k-means and dropout k-median.
+  We apply dropout k-means and dropout k-median to determine locations for
+deploying marine buoys in the Gabonese waters near West Africa. We simulated
+the passage of ships using historical Automatic Identification System (AIS)
+data, then compared the ship detection probability of dropout k-means to
+classic k-means and dropout k-median to classic k-median, taking into account
+that the current sensor detection radius is 10km. With 5 buoys, the buoy
+arrangement computed by classic k-means, dropout k-means, classic k-median and
+dropout k-median have ship detection probabilities of 38%, 45%, 48% and 52%.",cs.LG,"stat.ML, cs.LG",2,Machine Learning,"Machine Learning, Machine Learning",Vahid Tarokh,"Yuting Ng, João M. Pereira, Denis Garagic, Vahid Tarokh",4,http://arxiv.org/pdf/2001.00564v1,http://arxiv.org/abs/2001.00564v1,2020-01-02
+"A Deep Structural Model for Analyzing Correlated Multivariate Time
+  Series","Multivariate time series are routinely encountered in real-world
+applications, and in many cases, these time series are strongly correlated. In
+this paper, we present a deep learning structural time series model which can
+(i) handle correlated multivariate time series input, and (ii) forecast the
+targeted temporal sequence by explicitly learning/extracting the trend,
+seasonality, and event components. The trend is learned via a 1D and 2D
+temporal CNN and LSTM hierarchical neural net. The CNN-LSTM architecture can
+(i) seamlessly leverage the dependency among multiple correlated time series in
+a natural way, (ii) extract the weighted differencing feature for better trend
+learning, and (iii) memorize the long-term sequential pattern. The seasonality
+component is approximated via a non-liner function of a set of Fourier terms,
+and the event components are learned by a simple linear function of regressor
+encoding the event dates. We compare our model with several state-of-the-art
+methods through a comprehensive set of experiments on a variety of time series
+data sets, such as forecasts of Amazon AWS Simple Storage Service (S3) and
+Elastic Compute Cloud (EC2) billings, and the closing prices for corporate
+stocks in the same category.",stat.ML,"stat.ML, cs.LG",2,Machine Learning,"Machine Learning, Machine Learning",Sungyong Seo,"Changwei Hu, Yifan Hu, Sungyong Seo",3,http://arxiv.org/pdf/2001.00559v1,http://arxiv.org/abs/2001.00559v1,2020-01-02
+"Cost-Function-Dependent Barren Plateaus in Shallow Quantum Neural
+  Networks","Variational quantum algorithms (VQAs) optimize the parameters
+$\boldsymbol{\theta}$ of a quantum neural network $V(\boldsymbol{\theta})$ to
+minimize a cost function $C$. While VQAs may enable practical applications of
+noisy quantum computers, they are nevertheless heuristic methods with unproven
+scaling. Here, we rigorously prove two results. Our first result states that
+defining $C$ in terms of global observables leads to an exponentially vanishing
+gradient (i.e., a barren plateau) even when $V(\boldsymbol{\theta})$ is
+shallow. This implies that several VQAs in the literature must revise their
+proposed cost functions. On the other hand, our second result states that
+defining $C$ with local observables leads to a polynomially vanishing gradient,
+so long as the depth of $V(\boldsymbol{\theta})$ is $\mathcal{O}(\log n)$.
+Taken together, our results establish a precise connection between locality and
+trainability. Finally, we illustrate these ideas with large-scale simulations,
+up to 100 qubits, of a particular VQA known as quantum autoencoders.",quant-ph,"quant-ph, cs.LG",2,Quantum Physics,"Quantum Physics, Machine Learning",Patrick J. Coles,"M. Cerezo, Akira Sone, Tyler Volkoff, Lukasz Cincio, Patrick J. Coles",5,http://arxiv.org/pdf/2001.00550v1,http://arxiv.org/abs/2001.00550v1,2020-01-02
+Adversarial Policies in Learning Systems with Malicious Experts,"We consider a learning system based on the conventional multiplicative weight
+(MW) rule that combines experts' advice to predict a sequence of true outcomes.
+It is assumed that one of the experts is malicious and aims to impose the
+maximum loss on the system. The loss of the system is naturally defined to be
+the aggregate absolute difference between the sequence of predicted outcomes
+and the true outcomes. We consider this problem under both offline and online
+settings. In the offline setting where the malicious expert must choose its
+entire sequence of decisions a priori, we show somewhat surprisingly that a
+simple greedy policy of always reporting false prediction is asymptotically
+optimal with an approximation ratio of $1+O(\sqrt{\frac{\ln N}{N}})$, where $N$
+is the total number of prediction stages. In particular, we describe a policy
+that closely resembles the structure of the optimal offline policy. For the
+online setting where the malicious expert can adaptively make its decisions, we
+show that the optimal online policy can be efficiently computed by solving a
+dynamic program in $O(N^2)$. Our results provide a new direction for
+vulnerability assessment of commonly used learning algorithms to adversarial
+attacks where the threat is an integral part of the system.",cs.LG,"cs.MA, stat.ML, cs.CR, cs.LG",4,Machine Learning,"Multiagent Systems, Machine Learning, Cryptography and Security, Machine Learning",H. Vincent Poor,"S. Rasoul Etesami, Negar Kiyavash, H. Vincent Poor",3,http://arxiv.org/pdf/2001.00543v1,http://arxiv.org/abs/2001.00543v1,2020-01-02
+Non-Parametric Learning of Gaifman Models,"We consider the problem of structure learning for Gaifman models and learn
+relational features that can be used to derive feature representations from a
+knowledge base. These relational features are first-order rules that are then
+partially grounded and counted over local neighborhoods of a Gaifman model to
+obtain the feature representations. We propose a method for learning these
+relational features for a Gaifman model by using relational tree distances. Our
+empirical evaluation on real data sets demonstrates the superiority of our
+approach over classical rule-learning.",cs.LG,"stat.ML, cs.LG",2,Machine Learning,"Machine Learning, Machine Learning",Sriraam Natarajan,"Devendra Singh Dhami, Siwen Yen, Gautam Kunapuli, Sriraam Natarajan",4,http://arxiv.org/pdf/2001.00528v1,http://arxiv.org/abs/2001.00528v1,2020-01-02
+"Reject Illegal Inputs with Generative Classifier Derived from Any
+  Discriminative Classifier","Generative classifiers have been shown promising to detect illegal inputs
+including adversarial examples and out-of-distribution samples. Supervised Deep
+Infomax~(SDIM) is a scalable end-to-end framework to learn generative
+classifiers. In this paper, we propose a modification of SDIM termed
+SDIM-\emph{logit}. Instead of training generative classifier from scratch,
+SDIM-\emph{logit} first takes as input the logits produced any given
+discriminative classifier, and generate logit representations; then a
+generative classifier is derived by imposing statistical constraints on logit
+representations. SDIM-\emph{logit} could inherit the performance of the
+discriminative classifier without loss. SDIM-\emph{logit} incurs a negligible
+number of additional parameters, and can be efficiently trained with base
+classifiers fixed. We perform \emph{classification with rejection}, where test
+samples whose class conditionals are smaller than pre-chosen thresholds will be
+rejected without predictions. Experiments on illegal inputs, including
+adversarial examples, samples with common corruptions, and
+out-of-distribution~(OOD) samples show that allowed to reject a portion of test
+samples, SDIM-\emph{logit} significantly improves the performance on the left
+test sets.",cs.LG,"stat.ML, cs.LG",2,Machine Learning,"Machine Learning, Machine Learning",Xin Wang,Xin Wang,1,http://arxiv.org/pdf/2001.00483v1,http://arxiv.org/abs/2001.00483v1,2020-01-02
+Thresholds of descending algorithms in inference problems,"We review recent works on analyzing the dynamics of gradient-based algorithms
+in a prototypical statistical inference problem. Using methods and insights
+from the physics of glassy systems, these works showed how to understand
+quantitatively and qualitatively the performance of gradient-based algorithms.
+Here we review the key results and their interpretation in non-technical terms
+accessible to a wide audience of physicists in the context of related works.",cs.LG,"cond-mat.dis-nn, stat.ML, cs.LG",3,Machine Learning,"Disordered Systems and Neural Networks, Machine Learning, Machine Learning",Lenka Zdeborova,"Stefano Sarao Mannelli, Lenka Zdeborova",2,http://arxiv.org/pdf/2001.00479v1,http://arxiv.org/abs/2001.00479v1,2020-01-02
+Reasoning on Knowledge Graphs with Debate Dynamics,"We propose a novel method for automatic reasoning on knowledge graphs based
+on debate dynamics. The main idea is to frame the task of triple classification
+as a debate game between two reinforcement learning agents which extract
+arguments -- paths in the knowledge graph -- with the goal to promote the fact
+being true (thesis) or the fact being false (antithesis), respectively. Based
+on these arguments, a binary classifier, called the judge, decides whether the
+fact is true or false. The two agents can be considered as sparse, adversarial
+feature generators that present interpretable evidence for either the thesis or
+the antithesis. In contrast to other black-box methods, the arguments allow
+users to get an understanding of the decision of the judge. Since the focus of
+this work is to create an explainable method that maintains a competitive
+predictive accuracy, we benchmark our method on the triple classification and
+link prediction task. Thereby, we find that our method outperforms several
+baselines on the benchmark datasets FB15k-237, WN18RR, and Hetionet. We also
+conduct a survey and find that the extracted arguments are informative for
+users.",cs.LG,"stat.ML, cs.LG",2,Machine Learning,"Machine Learning, Machine Learning",Volker Tresp,"Marcel Hildebrandt, Jorge Andres Quintero Serna, Yunpu Ma, Martin Ringsquandl, Mitchell Joblin, Volker Tresp",6,http://arxiv.org/pdf/2001.00461v1,http://arxiv.org/abs/2001.00461v1,2020-01-02
+Dataset of Video Game Development Problems,"Different from traditional software development, there is little information
+about the software-engineering process and techniques in video-game
+development. One popular way to share knowledge among the video-game
+developers' community is the publishing of postmortems, which are documents
+summarizing what happened during the video-game development project. However,
+these documents are written without formal structure and often providing
+disparate information. Through this paper, we provide developers and
+researchers with grounded dataset describing software-engineering problems in
+video-game development extracted from postmortems. We created the dataset using
+an iterative method through which we manually coded more than 200 postmortems
+spanning 20 years (1998 to 2018) and extracted 1,035 problems related to
+software engineering while maintaining traceability links to the postmortems.
+We grouped the problems in 20 different types. This dataset is useful to
+understand the problems faced by developers during video-game development,
+providing researchers and practitioners a starting point to study video-game
+development in the context of software engineering.",cs.SE,cs.SE,1,Software Engineering,Software Engineering,Yann-Gaël Guéhéneuc,"Cristiano Politowski, Fabio Petrillo, Gabriel Cavalheiro Ullmann, Josias de Andrade Werly, Yann-Gaël Guéhéneuc",5,http://arxiv.org/pdf/2001.00491v1,http://arxiv.org/abs/2001.00491v1,2020-01-02
+Prediction in locally stationary time series,"We develop an estimator for the high-dimensional covariance matrix of a
+locally stationary process with a smoothly varying trend and use this statistic
+to derive consistent predictors in non-stationary time series. In contrast to
+the currently available methods for this problem the predictor developed here
+does not rely on fitting an autoregressive model and does not require a
+vanishing trend. The finite sample properties of the new methodology are
+illustrated by means of a simulation study and a financial indices study.",stat.ME,"econ.EM, stat.ME",2,Methodology,"Econometrics, Methodology",Weichi Wu,"Holger Dette, Weichi Wu",2,http://arxiv.org/pdf/2001.00419v1,http://arxiv.org/abs/2001.00419v1,2020-01-02
+"On the Distribution of an Arbitrary Subset of the Eigenvalues for some
+  Finite Dimensional Random Matrices","We present some new results on the joint distribution of an arbitrary subset
+of the ordered eigenvalues of complex Wishart, double Wishart, and Gaussian
+hermitian random matrices of finite dimensions, using a tensor
+pseudo-determinant operator. Specifically, we derive compact expressions for
+the joint probability distribution function of the eigenvalues and the
+expectation of functions of the eigenvalues, including joint moments, for the
+case of both ordered and unordered eigenvalues.",math.ST,"stat.TH, cs.IT, math.IT, math.ST",4,Statistics Theory,"Statistics Theory, Information Theory, Information Theory, Statistics Theory",Alberto Zanella,"Marco Chiani, Alberto Zanella",2,http://arxiv.org/pdf/2001.00519v1,http://arxiv.org/abs/2001.00519v1,2020-01-02
+"Modified Pillai's trace statistics for two high-dimensional sample
+  covariance matrices","The goal of this study was to test the equality of two covariance matrices by
+using modified Pillai's trace statistics under a high-dimensional framework,
+i.e., the dimension and sample sizes go to infinity proportionally. In this
+paper, we introduce two modified Pillai's trace statistics and obtain their
+asymptotic distributions under the null hypothesis. The benefits of the
+proposed statistics include the following: (1) the sample size can be smaller
+than the dimensions; (2) the limiting distributions of the proposed statistics
+are universal; and (3) we do not restrict the structure of the population
+covariance matrices. The theoretical results are established under mild and
+practical assumptions, and their properties are demonstrated numerically by
+simulations and a real data analysis.",math.ST,"stat.TH, math.ST",2,Statistics Theory,"Statistics Theory, Statistics Theory",Zhidong Bai,"Qiuyan Zhang, Jiang Hu, Zhidong Bai",3,http://arxiv.org/pdf/2001.00397v1,http://arxiv.org/abs/2001.00397v1,2020-01-02
+"The Quest For Highly Accurate Excitation Energies: A Computational
+  Perspective","We provide an overview of the successive steps that made possible to obtain
+increasingly accurate excitation energies and properties with computational
+chemistry tools, eventually leading to chemically accurate vertical transition
+energies for small- and medium-size molecules. First, we describe the evolution
+of \textit{ab initio} state-of-the-art methods employed to define benchmark
+values, with originally Roos' CASPT2 method, and then third-order coupled
+cluster (CC3) methods as in the renowned Thiel set of vertical excitation
+energies described in a remarkable series of papers in the 2000's. More
+recently, this quest for highly accurate excitation energies was reinitiated
+thanks to the resurgence of selected configuration interaction (SCI) methods
+and their efficient parallel implementation. These methods have been able to
+routinely deliver highly accurate excitation energies for small molecules, as
+well as medium-size molecules with compact basis sets, for both single and
+double excitations. Second, we describe how these high-level methods and the
+creation of large, diverse, and accurate benchmark sets of excitation energies
+have allowed to assess fairly and accurately the performance of computationally
+lighter theoretical models (\eg, TD-DFT, BSE@\textit{GW}, ADC, EOM-CC, etc.)
+for different types of excited states ($\pi \rightarrow \pi^*$, $n \rightarrow
+\pi^*$, valence, Rydberg, singlet, triplet, double excitation, etc). We
+conclude this \textit{Perspective} by discussing the current potentiality of
+these methods from both an expert and a non-expert points of view, and what we
+believe could be the future theoretical and technological developments in the
+field.",physics.chem-ph,"cond-mat.str-el, cond-mat.other, physics.comp-ph, physics.chem-ph",4,Chemical Physics,"Strongly Correlated Electrons, Other Condensed Matter, Computational Physics, Chemical Physics",Denis Jacquemin,"Pierre-François Loos, Anthony Scemama, Denis Jacquemin",3,http://arxiv.org/pdf/2001.00416v1,http://arxiv.org/abs/2001.00416v1,2020-01-02
+The free and freer XY models,"We study two versions of the XY model where the spins but also the
+interaction topology is allowed to change. In the free XY model, the number of
+links is fixed, but their positions in the network are not. We also study a
+more relaxed version where even the number of links is allowed to vary, we call
+it the freer XY model. When the interaction networks are dense enough, both
+models have phase transitions visible both in spin configurations and the
+network structure. The low-temperature phase in the free XY model, is
+characterized by tightly connected clusters of spins pointing in the same
+direction, and isolated spins disconnected from the rest. For the freer XY
+model the low-temperature phase is almost completely connected. In both models,
+exponents describing the magnetic ordering are mostly consistent with values of
+the mean-field theory of the standard XY model.",physics.comp-ph,"cond-mat.dis-nn, physics.comp-ph",2,Computational Physics,"Disordered Systems and Neural Networks, Computational Physics",Yérali Gandica,"Petter Holme, Yérali Gandica",2,http://arxiv.org/pdf/2001.00379v1,http://arxiv.org/abs/2001.00379v1,2020-01-02
+"Estimation of roughness measurement bias originating from background
+  subtraction","When measuring the roughness of rough surfaces, the limited sizes of scanned
+areas lead to its systematic underestimation. Levelling by polynomials and
+other filtering used in real-world processing of atomic force microscopy data
+increases this bias considerably. Here a framework is developed providing
+explicit expressions for the bias of squared mean square roughness in the case
+of levelling by fitting a model background function using linear least squares.
+The framework is then applied to polynomial levelling, for both one-dimensional
+and two-dimensional data processing, and basic models of surface
+autocorrelation function, Gaussian and exponential. Several other common
+scenarios are covered as well, including median levelling, intermediate
+Gaussian--exponential autocorrelation model and frequency space filtering.
+Application of the results to other quantities, such as Rq, Sq, Ra and~Sa is
+discussed. The results are summarized in overview plots covering a range of
+autocorrelation functions and polynomial degrees, which allow graphical
+estimation of the bias.",physics.data-an,physics.data-an,1,"Data Analysis, Statistics and Probability","Data Analysis, Statistics and Probability",Miroslav Valtr,"David Nečas, Petr Klapetek, Miroslav Valtr",3,http://arxiv.org/pdf/2001.00433v1,http://arxiv.org/abs/2001.00433v1,2020-01-02
+"The Effect of Treatment-Related Deaths and ""Sticky"" Diagnoses on
+  Recorded Prostate Cancer Mortality","Background: Although recorded cancer mortality should include both deaths
+from cancer and deaths from cancer treatment, there is evidence suggesting that
+the measure may be incomplete. To investigate the completeness of recorded
+prostate cancer mortality, we compared other-cause (non-prostate cancer)
+mortality in men found and not found to have prostate cancer following a needle
+biopsy.
+  Methods: We linked Medicare claims data to SEER data to analyze survival in
+the population of men aged 65+ enrolled in Medicare who resided in a SEER area
+and received a needle biopsy in 1993-2001. We compared other-cause mortality in
+men found to have prostate cancer (n=53,462) to that in men not found to have
+prostate cancer (n=103,659).
+  Results: The age-race adjusted other-cause mortality rate was 471 per 10,000
+person-years in men found to have prostate cancer vs. 468 per 10,000 in men not
+found to have prostate cancer (RR = 1.01;95% CI:0.98-1.03). The effect was
+modified, however, by age. The RR declined in a stepwise fashion from 1.08 (95%
+CI:1.03-1.14) in men age 65-69 to 0.89 (95% CI:0.83-0.95) in men age 85 and
+older. If the excess (or deficit) in other-cause mortality were added to the
+recorded prostate cancer mortality, prostate cancer mortality would rise 23% in
+the youngest age group (from 90 to 111 per 10,000) and would fall 30% in the
+oldest age group (from 551 to 388 per 10,000).
+  Conclusion: Although recorded prostate cancer mortality appears to be an
+accurate measure overall, it systematically underestimates the mortality
+associated with prostate cancer diagnosis and treatment in younger men and
+overestimates it in the very old. We surmise that in younger men
+treatment-related deaths are incompletely captured in recorded prostate cancer
+mortality, while in older men the diagnosis ""sticks""-- once diagnosed, they are
+more likely to be said to have died from the disease.",q-bio.PE,"q-bio.PE, q-bio.QM",2,Populations and Evolution,"Populations and Evolution, Quantitative Methods",Elliott S. Fisher,"H. Gilbert Welch, Michael J. Barry, William C Black, Yunjie Song, Elliott S. Fisher",5,http://arxiv.org/pdf/2001.00492v1,http://arxiv.org/abs/2001.00492v1,2020-01-02
+"On the modelling, linear stability, and numerical simulation for
+  advection-diffusion-reaction in poroelastic media","We perform the linear growth analysis for a new PDE-based model for
+poromechanical processes (formulated in mixed form using the solid deformation,
+fluid pressure, and total pressure) interacting with diffusing and reacting
+solutes in the medium. We find parameter regions that lead to interesting
+behaviour of the coupled system. These mutual dependences between deformation
+and diffusive patterns are of substantial relevance in the study of
+morphoelastic changes in biomaterials. We provide a set of computational
+examples in 2D and 3D that can be used to form a better understanding on how,
+and up to which extent, the deformations of the porous structure dictate the
+generation and suppression of spatial patterning dynamics, also related to the
+onset of mechanochemical waves.",math.NA,"cs.NA, math.NA, q-bio.QM",3,Numerical Analysis,"Numerical Analysis, Numerical Analysis, Quantitative Methods",Ricardo Ruiz-Baier,"Nitesh Verma, Bryan Gomez-Vargas, Luis Miguel de Oliveira Vilaca, Sarvesh Kumar, Ricardo Ruiz-Baier",5,http://arxiv.org/pdf/2001.00370v1,http://arxiv.org/abs/2001.00370v1,2020-01-02
+"The Impact of the Choice of Risk and Dispersion Measure on
+  Procyclicality","Procyclicality of historical risk measure estimation means that one tends to
+over-estimate future risk when present realized volatility is high and vice
+versa under-estimate future risk when the realized volatility is low. Out of it
+different questions arise, relevant for applications and theory: What are the
+factors which affect the degree of procyclicality? More specifically, how does
+the choice of risk measure affect this? How does this behaviour vary with the
+choice of realized volatility estimator? How do different underlying model
+assumptions influence the pro-cyclical effect? In this paper we consider three
+different well-known risk measures (Value-at-Risk, Expected Shortfall,
+Expectile), the r-th absolute centred sample moment, for any integer $r>0$, as
+realized volatility estimator (this includes the sample variance and the sample
+mean absolute deviation around the sample mean) and two models (either an iid
+model or an augmented GARCH($p$,$q$) model). We show that the strength of
+procyclicality depends on these three factors, the choice of risk measure, the
+realized volatility estimator and the model considered. But, no matter the
+choices, the procyclicality will always be present.",q-fin.RM,"q-fin.RM, stat.AP",2,Risk Management,"Risk Management, Applications",Marie Kratz,"Marcel Bräutigam, Marie Kratz",2,http://arxiv.org/pdf/2001.00529v1,http://arxiv.org/abs/2001.00529v1,2020-01-02
+"CircSpaceTime: an R package for spatial and spatio-temporal modeling of
+  Circular data","CircSpaceTime is the only R package currently available that implements
+Bayesian models for spatial and spatio-temporal interpolation of circular data.
+Such data are often found in applications where, among the many, wind
+directions, animal movement directions, and wave directions are involved. To
+analyze such data we need models for observations at locations s and times t,
+as the so-called geostatistical models, providing structured dependence assumed
+to decay in distance and time. The approach we take begins with Gaussian
+processes defined for linear variables over space and time. Then, we use either
+wrapping or projection to obtain processes for circular data. The models are
+cast as hierarchical, with fitting and inference within a Bayesian framework.
+Altogether, this package implements work developed by a series of papers; the
+most relevant being Jona Lasinio, Gelfand, and Jona Lasinio (2012); Wang and
+Gelfand (2014); Mastrantonio, Jona Lasinio, and Gelfand (2016). All procedures
+are written using Rcpp. Estimates are obtained by MCMC allowing parallelized
+multiple chains run. The implementation of the proposed models is considerably
+improved on the simple routines adopted in the research papers. As original
+running examples, for the spatial and spatio-temporal settings, we use wind
+directions datasets over central Italy.",stat.AP,stat.AP,1,Applications,Applications,Gianluca Mastrantonio,"Giovanna Jona Lasinio, Mario Santoro, Gianluca Mastrantonio",3,http://arxiv.org/pdf/2001.00405v1,http://arxiv.org/abs/2001.00405v1,2020-01-02
+"Concentration of Benefit index: A threshold-free summary metric for
+  quantifying the capacity of covariates to yield efficient treatment rules","When data on treatment assignment, outcomes, and covariates from a randomized
+trial are available, a question of interest is to what extent covariates can be
+used to optimize treatment decisions. Statistical hypothesis testing of
+covariate-by-treatment interaction is ill-suited for this purpose. The
+application of decision theory results in treatment rules that compare the
+expected benefit of treatment given the patient's covariates against a
+treatment threshold. However, determining treatment threshold is often
+context-specific, and any given threshold might seem arbitrary when the overall
+capacity towards predicting treatment benefit is of concern. We propose the
+Concentration of Benefit index (Cb), a threshold-free metric that quantifies
+the combined performance of covariates towards finding individuals who will
+benefit the most from treatment. The construct of the proposed index is
+comparing expected treatment outcomes with and without knowledge of covariates
+when one of a two randomly selected patients are to be treated. We show that
+the resulting index can also be expressed in terms of the integrated efficiency
+of individualized treatment decision over the entire range of treatment
+thresholds. We propose parametric and semi-parametric estimators, the latter
+being suitable for out-of-sample validation and correction for optimism. We
+used data from a clinical trial to demonstrate the calculations in a
+step-by-step fashion, and have provided the R code for implementation
+(https://github.com/msadatsafavi/txBenefit). The proposed index has intuitive
+and theoretically sound interpretation and can be estimated with relative ease
+for a wide class of regression models. Beyond the conceptual developments,
+various aspects of estimation and inference for such a metric need to be
+pursued in future research.",stat.AP,"stat.ME, stat.AP",2,Applications,"Methodology, Applications",Paul Gustafson,"Mohsen Sadatsafavi, Mohammad Ali Mansournia, Paul Gustafson",3,http://arxiv.org/pdf/2001.00299v1,http://arxiv.org/abs/2001.00299v1,2020-01-02
+"Circular Regression Trees and Forests with an Application to
+  Probabilistic Wind Direction Forecasting","While circular data occur in a wide range of scientific fields, the
+methodology for distributional modeling and probabilistic forecasting of
+circular response variables is rather limited. Most of the existing methods are
+built on the framework of generalized linear and additive models, which are
+often challenging to optimize and to interpret. Therefore, we suggest circular
+regression trees and random forests as an intuitive alternative approach that
+is relatively easy to fit. Building on previous ideas for trees modeling
+circular means, we suggest a distributional approach for both trees and forests
+yielding probabilistic forecasts based on the von Mises distribution. The
+resulting tree-based models simplify the estimation process by using the
+available covariates for partitioning the data into sufficiently homogeneous
+subgroups so that a simple von Mises distribution without further covariates
+can be fitted to the circular response in each subgroup. These circular
+regression trees are straightforward to interpret, can capture nonlinear
+effects and interactions, and automatically select the relevant covariates that
+are associated with either location and/or scale changes in the von Mises
+distribution. Combining an ensemble of circular regression trees to a circular
+regression forest yields a local adaptive likelihood estimator for the von
+Mises distribution that can regularize and smooth the covariate effects. The
+new methods are evaluated in a case study on probabilistic wind direction
+forecasting at two Austrian airports, considering other common approaches as a
+benchmark.",stat.ME,stat.ME,1,Methodology,Methodology,Achim Zeileis,"Moritz N. Lang, Lisa Schlosser, Torsten Hothorn, Georg J. Mayr, Reto Stauffer, Achim Zeileis",6,http://arxiv.org/pdf/2001.00412v1,http://arxiv.org/abs/2001.00412v1,2020-01-02
+Using Data Imputation for Signal Separation in High Contrast Imaging,"To characterize circumstellar systems in high contrast imaging, the
+fundamental step is to construct a best point spread function (PSF) template
+for the non-circumstellar signals (i.e., star light and speckles) and separate
+it from the observation. With existing PSF construction methods, the
+circumstellar signals (e.g., planets, circumstellar disks) are unavoidably
+altered by over-fitting and/or self-subtraction, making forward modeling a
+necessity to recover these signals. We present a forward modeling--free
+solution to these problems with data imputation using sequential non-negative
+matrix factorization (DI-sNMF). DI-sNMF first converts this signal separation
+problem to a ""missing data"" problem in statistics by flagging the regions which
+host circumstellar signals as missing data, then attributes PSF signals to
+these regions. We mathematically prove it to have negligible alteration to
+circumstellar signals when the imputation region is relatively small, which
+thus enables precise measurement for these circumstellar objects. We apply it
+to simulated point source and circumstellar disk observations to demonstrate
+its proper recovery of them. We apply it to Gemini Planet Imager (GPI) K1-band
+observations of the debris disk surrounding HR 4796A, finding a tentative trend
+that the dust is more forward scattering as the wavelength increases. We expect
+DI-sNMF to be applicable to other general scenarios where the separation of
+signals is needed.",astro-ph.IM,"astro-ph.EP, stat.ML, astro-ph.IM, astro-ph.SR",4,Instrumentation and Methods for Astrophysics,"Earth and Planetary Astrophysics, Machine Learning, Instrumentation and Methods for Astrophysics, Solar and Stellar Astrophysics",Marshall D. Perrin,"Bin Ren, Laurent Pueyo, Christine Chen, Élodie Choquet, John H. Debes, Gaspard Duchêne, François Ménard, Marshall D. Perrin",8,http://arxiv.org/pdf/2001.00563v1,http://arxiv.org/abs/2001.00563v1,2020-01-02
+"Continuous-Discrete Reinforcement Learning for Hybrid Control in
+  Robotics","Many real-world control problems involve both discrete decision variables -
+such as the choice of control modes, gear switching or digital outputs - as
+well as continuous decision variables - such as velocity setpoints, control
+gains or analogue outputs. However, when defining the corresponding optimal
+control or reinforcement learning problem, it is commonly approximated with
+fully continuous or fully discrete action spaces. These simplifications aim at
+tailoring the problem to a particular algorithm or solver which may only
+support one type of action space. Alternatively, expert heuristics are used to
+remove discrete actions from an otherwise continuous space. In contrast, we
+propose to treat hybrid problems in their 'native' form by solving them with
+hybrid reinforcement learning, which optimizes for discrete and continuous
+actions simultaneously. In our experiments, we first demonstrate that the
+proposed approach efficiently solves such natively hybrid reinforcement
+learning problems. We then show, both in simulation and on robotic hardware,
+the benefits of removing possibly imperfect expert-designed heuristics. Lastly,
+hybrid reinforcement learning encourages us to rethink problem definitions. We
+propose reformulating control problems, e.g. by adding meta actions, to improve
+exploration or reduce mechanical wear and tear.",cs.LG,"stat.ML, cs.RO, cs.LG",3,Machine Learning,"Machine Learning, Robotics, Machine Learning",Martin Riedmiller,"Michael Neunert, Abbas Abdolmaleki, Markus Wulfmeier, Thomas Lampe, Jost Tobias Springenberg, Roland Hafner, Francesco Romano, Jonas Buchli, Nicolas Heess, Martin Riedmiller",10,http://arxiv.org/pdf/2001.00449v1,http://arxiv.org/abs/2001.00449v1,2020-01-02
+"Inter- and Intra-domain Knowledge Transfer for Related Tasks in Deep
+  Character Recognition","Pre-training a deep neural network on the ImageNet dataset is a common
+practice for training deep learning models, and generally yields improved
+performance and faster training times. The technique of pre-training on one
+task and then retraining on a new one is called transfer learning. In this
+paper we analyse the effectiveness of using deep transfer learning for
+character recognition tasks. We perform three sets of experiments with varying
+levels of similarity between source and target tasks to investigate the
+behaviour of different types of knowledge transfer. We transfer both parameters
+and features and analyse their behaviour. Our results demonstrate that no
+significant advantage is gained by using a transfer learning approach over a
+traditional machine learning approach for our character recognition tasks. This
+suggests that using transfer learning does not necessarily presuppose a better
+performing model in all cases.",cs.LG,"stat.ML, cs.LG",2,Machine Learning,"Machine Learning, Machine Learning",Terence van Zyl,"Nishai Kooverjee, Steven James, Terence van Zyl",3,http://arxiv.org/pdf/2001.00448v1,http://arxiv.org/abs/2001.00448v1,2020-01-02
