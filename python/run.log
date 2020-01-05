@@ -53,3 +53,13 @@ sh: Rscript: command not found
 [2020-01-05 16:10:03,486] INFO - prefect.TaskRunner | Task 'tweet_world': finished task run for task with final state: 'Pending'
 [2020-01-05 16:10:03,487] INFO - prefect.FlowRunner | Flow run RUNNING: terminal tasks are incomplete.
 [2020-01-05 16:10:03,488] INFO - prefect.Flow | Waiting for next available Task run at 2020-01-05T16:20:03.482558+00:00
+[2020-01-05 16:48:13,789] INFO - prefect.FlowRunner | Beginning Flow run for 'Build Arxiv'
+[2020-01-05 16:48:13,813] INFO - prefect.TaskRunner | Task 'replace_rmd_template_metadata': Starting task run...
+[2020-01-05 16:48:13,814] WARNING - prefect.TaskRunner | Task 'replace_rmd_template_metadata': can't use cache because it is now invalid
+[2020-01-05 16:48:13,827] INFO - prefect.TaskRunner | Task 'replace_rmd_template_metadata': finished task run for task with final state: 'Success'
+[2020-01-05 16:48:13,828] INFO - prefect.TaskRunner | Task 'knit_rmd_to_html': Starting task run...
+[2020-01-05 16:48:13,828] WARNING - prefect.TaskRunner | Task 'knit_rmd_to_html': can't use cache because it is now invalid
+sh: Rscript: command not found
+[2020-01-05 16:48:13,832] INFO - prefect.TaskRunner | Task 'knit_rmd_to_html': finished task run for task with final state: 'Success'
+[2020-01-05 16:48:13,832] INFO - prefect.TaskRunner | Task 'git_commit_push': Starting task run...
+[2020-01-05 16:48:13,833] WARNING - prefect.TaskRunner | Task 'git_commit_push': can't use cache because it is now invalid
