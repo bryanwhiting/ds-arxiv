@@ -1,5 +1,20 @@
 [
   {
+    "path": "posts/2020-01-05/",
+    "title": "Articles from 2020-01-02",
+    "description": "38 new data science research articles were published on 2020-01-02. 17 discussed machine learning.",
+    "author": [
+      {
+        "name": "Bryan Whiting",
+        "url": "https://www.bryanwhiting.com"
+      }
+    ],
+    "date": "2020-01-05",
+    "categories": [],
+    "preview": {},
+    "last_modified": "2020-01-05T11:11:03-05:00"
+  },
+  {
     "path": "posts/2020-01-04/",
     "title": "Articles from 2020-01-02",
     "description": "38 new data science research articles were published on 2020-01-02. 17 discussed machine learning.",
