@@ -15,7 +15,7 @@ preferences via network distillation. This approach enables us to distill a
 robust task reward (addressing reward ambiguity) and to model each strategy's
 objective (handling heterogeneity). We demonstrate our algorithm can better
 recover task reward and strategy rewards and imitate the strategies in two
-simulated tasks and a real-world table tennis task.",cs.LG,"cs.RO, cs.AI, stat.ML, cs.LG",4,Machine Learning,"Robotics, Artificial Intelligence, Machine Learning, Machine Learning",Matthew Gombolay,"Letian Chen, Rohan Paleja, Muyleng Ghuy, Matthew Gombolay",4,http://arxiv.org/pdf/2001.00503v1,http://arxiv.org/abs/2001.00503v1,2020-01-02
+simulated tasks and a real-world table tennis task.",cs.LG,"cs.RO, stat.ML, cs.LG, cs.AI",4,Machine Learning,"Robotics, Machine Learning, Machine Learning, Artificial Intelligence",Matthew Gombolay,"Letian Chen, Rohan Paleja, Muyleng Ghuy, Matthew Gombolay",4,http://arxiv.org/pdf/2001.00503v1,http://arxiv.org/abs/2001.00503v1,2020-01-02
 Informal Data Transformation Considered Harmful,"In this paper we take the common position that AI systems are limited more by
 the integrity of the data they are learning from than the sophistication of
 their algorithms, and we take the uncommon position that the solution to
@@ -43,7 +43,7 @@ paper we provide a consequentialist critique of common definitions of fairness
 within machine learning, as well as a machine learning perspective on
 consequentialism. We conclude with a broader discussion of the issues of
 learning and randomization, which have important implications for the ethics of
-automated decision making systems.",cs.AI,"cs.AI, stat.ML, cs.LG, cs.CY",4,Artificial Intelligence,"Artificial Intelligence, Machine Learning, Machine Learning, Computers and Society",Noah A. Smith,"Dallas Card, Noah A. Smith",2,http://arxiv.org/pdf/2001.00329v1,http://arxiv.org/abs/2001.00329v1,2020-01-02
+automated decision making systems.",cs.AI,"stat.ML, cs.CY, cs.LG, cs.AI",4,Artificial Intelligence,"Machine Learning, Computers and Society, Machine Learning, Artificial Intelligence",Noah A. Smith,"Dallas Card, Noah A. Smith",2,http://arxiv.org/pdf/2001.00329v1,http://arxiv.org/abs/2001.00329v1,2020-01-02
 PrivacyNet: Semi-Adversarial Networks for Multi-attribute Face Privacy,"In recent years, the utilization of biometric information has become more and
 more common for various forms of identity verification and user authentication.
 However, as a consequence of the widespread use and storage of biometric
@@ -60,7 +60,7 @@ capable of perturbing different sources of soft biometric information reliably
 and simultaneously, it also allows users to choose to obfuscate specific
 attributes, while preserving others. The results from extensive experiments on
 five independent face image databases demonstrate the efficacy of our proposed
-model in imparting selective multi-attribute privacy to face images.",cs.CV,"cs.CV, cs.LG",2,Computer Vision and Pattern Recognition,"Computer Vision and Pattern Recognition, Machine Learning",Arun Ross,"Vahid Mirjalili, Sebastian Raschka, Arun Ross",3,http://arxiv.org/pdf/2001.00561v1,http://arxiv.org/abs/2001.00561v1,2020-01-02
+model in imparting selective multi-attribute privacy to face images.",cs.CV,"cs.LG, cs.CV",2,Computer Vision and Pattern Recognition,"Machine Learning, Computer Vision and Pattern Recognition",Arun Ross,"Vahid Mirjalili, Sebastian Raschka, Arun Ross",3,http://arxiv.org/pdf/2001.00561v1,http://arxiv.org/abs/2001.00561v1,2020-01-02
 Physically Plausible Spectral Reconstruction from RGB Images,"Recently Convolutional Neural Networks (CNN) have been used to reconstruct
 hyperspectral information from RGB images. Moreover, this spectral
 reconstruction problem (SR) can often be solved with good (low) error. However,
@@ -93,7 +93,7 @@ MNIST, Fashion MNIST, SVHN, CIFAR-10, and CIFAR-100. It achieves
 state-of-the-art results on the Fashion MNIST dataset and reasonable results on
 the others. The obtained results show that the proposed model is superior to
 efficient models such as the SqueezNet and is also comparable with the
-state-of-the-art efficient models such as CondenseNet and ShuffleNet.",cs.CV,"cs.CV, cs.LG",2,Computer Vision and Pattern Recognition,"Computer Vision and Pattern Recognition, Machine Learning",Shohreh Kasaei,"Fahimeh Fooladgar, Shohreh Kasaei",2,http://arxiv.org/pdf/2001.00526v1,http://arxiv.org/abs/2001.00526v1,2020-01-02
+state-of-the-art efficient models such as CondenseNet and ShuffleNet.",cs.CV,"cs.LG, cs.CV",2,Computer Vision and Pattern Recognition,"Machine Learning, Computer Vision and Pattern Recognition",Shohreh Kasaei,"Fahimeh Fooladgar, Shohreh Kasaei",2,http://arxiv.org/pdf/2001.00526v1,http://arxiv.org/abs/2001.00526v1,2020-01-02
 "Using CNNs For Users Segmentation In Video See-Through Augmented
   Virtuality","In this paper, we present preliminary results on the use of deep learning
 techniques to integrate the users self-body and other participants into a
@@ -105,7 +105,7 @@ time semantic segmentation of users bodies in the stereoscopic RGB video
 streams acquired from the perspective of the user. We describe design issues as
 well as implementation details of the system and demonstrate the feasibility of
 using such neural networks for merging users bodies in an augmented virtuality
-simulation.",cs.CV,"cs.CV, I.2.10, I.3.7, I.2.10; I.3.7",3,Computer Vision and Pattern Recognition,Computer Vision and Pattern Recognition,Lionel Dominjon,"Pierre-Olivier Pigny, Lionel Dominjon",2,http://arxiv.org/pdf/2001.00487v1,http://arxiv.org/abs/2001.00487v1,2020-01-02
+simulation.",cs.CV,"I.2.10; I.3.7, cs.CV, I.2.10, I.3.7",3,Computer Vision and Pattern Recognition,Computer Vision and Pattern Recognition,Lionel Dominjon,"Pierre-Olivier Pigny, Lionel Dominjon",2,http://arxiv.org/pdf/2001.00487v1,http://arxiv.org/abs/2001.00487v1,2020-01-02
 "Kalman Filtering and Expectation Maximization for Multitemporal Spectral
   Unmixing","The recent evolution of hyperspectral imaging technology and the
 proliferation of new emerging applications presses for the processing of
@@ -130,7 +130,7 @@ metrics on VGG-16 and ResNet-50, and find that our methods outperform all
 baselines in five out of six settings. The method's information-theoretic
 foundation provides an absolute frame of reference for attribution values
 (bits) and a guarantee that regions scored close to zero are not necessary for
-the network's decision.",stat.ML,"cs.CV, stat.ML, cs.LG",3,Machine Learning,"Computer Vision and Pattern Recognition, Machine Learning, Machine Learning",Tim Landgraf,"Karl Schulz, Leon Sixt, Federico Tombari, Tim Landgraf",4,http://arxiv.org/pdf/2001.00396v1,http://arxiv.org/abs/2001.00396v1,2020-01-02
+the network's decision.",stat.ML,"stat.ML, cs.LG, cs.CV",3,Machine Learning,"Machine Learning, Machine Learning, Computer Vision and Pattern Recognition",Tim Landgraf,"Karl Schulz, Leon Sixt, Federico Tombari, Tim Landgraf",4,http://arxiv.org/pdf/2001.00396v1,http://arxiv.org/abs/2001.00396v1,2020-01-02
 "Butterfly detection and classification based on integrated YOLO
   algorithm","Insects are abundant species on the earth, and the task of identification and
 identification of insects is complex and arduous. How to apply artificial
@@ -161,7 +161,7 @@ information. Third, we show that it is possible to apply different kernel
 functions on different data modes. In principle, our method tensorizes the
 standard SVM on its input structure and kernel mapping scheme. Extensive
 experiments are performed on real-world tensor data, which demonstrates the
-superiority of the proposed scheme under few-sample high-dimensional inputs.",cs.LG,"cs.CV, stat.ML, cs.LG",3,Machine Learning,"Computer Vision and Pattern Recognition, Machine Learning, Machine Learning",Ngai Wong,"Cong Chen, Kim Batselier, Wenjian Yu, Ngai Wong",4,http://arxiv.org/pdf/2001.00360v1,http://arxiv.org/abs/2001.00360v1,2020-01-02
+superiority of the proposed scheme under few-sample high-dimensional inputs.",cs.LG,"stat.ML, cs.LG, cs.CV",3,Machine Learning,"Machine Learning, Machine Learning, Computer Vision and Pattern Recognition",Ngai Wong,"Cong Chen, Kim Batselier, Wenjian Yu, Ngai Wong",4,http://arxiv.org/pdf/2001.00360v1,http://arxiv.org/abs/2001.00360v1,2020-01-02
 "First image then video: A two-stage network for spatiotemporal video
   denoising","Video denoising is to remove noise from noise-corrupted data, thus recovering
 true signals via spatiotemporal processing. Existing approaches for
@@ -277,7 +277,7 @@ online setting where the malicious expert can adaptively make its decisions, we
 show that the optimal online policy can be efficiently computed by solving a
 dynamic program in $O(N^2)$. Our results provide a new direction for
 vulnerability assessment of commonly used learning algorithms to adversarial
-attacks where the threat is an integral part of the system.",cs.LG,"cs.CR, stat.ML, cs.LG, cs.MA",4,Machine Learning,"Cryptography and Security, Machine Learning, Machine Learning, Multiagent Systems",H. Vincent Poor,"S. Rasoul Etesami, Negar Kiyavash, H. Vincent Poor",3,http://arxiv.org/pdf/2001.00543v1,http://arxiv.org/abs/2001.00543v1,2020-01-02
+attacks where the threat is an integral part of the system.",cs.LG,"stat.ML, cs.LG, cs.MA, cs.CR",4,Machine Learning,"Machine Learning, Machine Learning, Multiagent Systems, Cryptography and Security",H. Vincent Poor,"S. Rasoul Etesami, Negar Kiyavash, H. Vincent Poor",3,http://arxiv.org/pdf/2001.00543v1,http://arxiv.org/abs/2001.00543v1,2020-01-02
 Non-Parametric Learning of Gaifman Models,"We consider the problem of structure learning for Gaifman models and learn
 relational features that can be used to derive feature representations from a
 knowledge base. These relational features are first-order rules that are then
@@ -310,7 +310,7 @@ in a prototypical statistical inference problem. Using methods and insights
 from the physics of glassy systems, these works showed how to understand
 quantitatively and qualitatively the performance of gradient-based algorithms.
 Here we review the key results and their interpretation in non-technical terms
-accessible to a wide audience of physicists in the context of related works.",cs.LG,"cond-mat.dis-nn, stat.ML, cs.LG",3,Machine Learning,"Disordered Systems and Neural Networks, Machine Learning, Machine Learning",Lenka Zdeborova,"Stefano Sarao Mannelli, Lenka Zdeborova",2,http://arxiv.org/pdf/2001.00479v1,http://arxiv.org/abs/2001.00479v1,2020-01-02
+accessible to a wide audience of physicists in the context of related works.",cs.LG,"stat.ML, cs.LG, cond-mat.dis-nn",3,Machine Learning,"Machine Learning, Machine Learning, Disordered Systems and Neural Networks",Lenka Zdeborova,"Stefano Sarao Mannelli, Lenka Zdeborova",2,http://arxiv.org/pdf/2001.00479v1,http://arxiv.org/abs/2001.00479v1,2020-01-02
 Reasoning on Knowledge Graphs with Debate Dynamics,"We propose a novel method for automatic reasoning on knowledge graphs based
 on debate dynamics. The main idea is to frame the task of triple classification
 as a debate game between two reinforcement learning agents which extract
@@ -349,7 +349,7 @@ to derive consistent predictors in non-stationary time series. In contrast to
 the currently available methods for this problem the predictor developed here
 does not rely on fitting an autoregressive model and does not require a
 vanishing trend. The finite sample properties of the new methodology are
-illustrated by means of a simulation study and a financial indices study.",stat.ME,"econ.EM, stat.ME",2,Methodology,"Econometrics, Methodology",Weichi Wu,"Holger Dette, Weichi Wu",2,http://arxiv.org/pdf/2001.00419v1,http://arxiv.org/abs/2001.00419v1,2020-01-02
+illustrated by means of a simulation study and a financial indices study.",stat.ME,"stat.ME, econ.EM",2,Methodology,"Methodology, Econometrics",Weichi Wu,"Holger Dette, Weichi Wu",2,http://arxiv.org/pdf/2001.00419v1,http://arxiv.org/abs/2001.00419v1,2020-01-02
 "On the Distribution of an Arbitrary Subset of the Eigenvalues for some
   Finite Dimensional Random Matrices","We present some new results on the joint distribution of an arbitrary subset
 of the ordered eigenvalues of complex Wishart, double Wishart, and Gaussian
@@ -357,7 +357,7 @@ hermitian random matrices of finite dimensions, using a tensor
 pseudo-determinant operator. Specifically, we derive compact expressions for
 the joint probability distribution function of the eigenvalues and the
 expectation of functions of the eigenvalues, including joint moments, for the
-case of both ordered and unordered eigenvalues.",math.ST,"math.ST, cs.IT, math.IT, stat.TH",4,Statistics Theory,"Statistics Theory, Information Theory, Information Theory, Statistics Theory",Alberto Zanella,"Marco Chiani, Alberto Zanella",2,http://arxiv.org/pdf/2001.00519v1,http://arxiv.org/abs/2001.00519v1,2020-01-02
+case of both ordered and unordered eigenvalues.",math.ST,"cs.IT, math.IT, stat.TH, math.ST",4,Statistics Theory,"Information Theory, Information Theory, Statistics Theory, Statistics Theory",Alberto Zanella,"Marco Chiani, Alberto Zanella",2,http://arxiv.org/pdf/2001.00519v1,http://arxiv.org/abs/2001.00519v1,2020-01-02
 "Modified Pillai's trace statistics for two high-dimensional sample
   covariance matrices","The goal of this study was to test the equality of two covariance matrices by
 using modified Pillai's trace statistics under a high-dimensional framework,
@@ -369,7 +369,7 @@ than the dimensions; (2) the limiting distributions of the proposed statistics
 are universal; and (3) we do not restrict the structure of the population
 covariance matrices. The theoretical results are established under mild and
 practical assumptions, and their properties are demonstrated numerically by
-simulations and a real data analysis.",math.ST,"math.ST, stat.TH",2,Statistics Theory,"Statistics Theory, Statistics Theory",Zhidong Bai,"Qiuyan Zhang, Jiang Hu, Zhidong Bai",3,http://arxiv.org/pdf/2001.00397v1,http://arxiv.org/abs/2001.00397v1,2020-01-02
+simulations and a real data analysis.",math.ST,"stat.TH, math.ST",2,Statistics Theory,"Statistics Theory, Statistics Theory",Zhidong Bai,"Qiuyan Zhang, Jiang Hu, Zhidong Bai",3,http://arxiv.org/pdf/2001.00397v1,http://arxiv.org/abs/2001.00397v1,2020-01-02
 "The Quest For Highly Accurate Excitation Energies: A Computational
   Perspective","We provide an overview of the successive steps that made possible to obtain
 increasingly accurate excitation energies and properties with computational
@@ -393,7 +393,7 @@ for different types of excited states ($\pi \rightarrow \pi^*$, $n \rightarrow
 conclude this \textit{Perspective} by discussing the current potentiality of
 these methods from both an expert and a non-expert points of view, and what we
 believe could be the future theoretical and technological developments in the
-field.",physics.chem-ph,"physics.chem-ph, cond-mat.other, physics.comp-ph, cond-mat.str-el",4,Chemical Physics,"Chemical Physics, Other Condensed Matter, Computational Physics, Strongly Correlated Electrons",Denis Jacquemin,"Pierre-François Loos, Anthony Scemama, Denis Jacquemin",3,http://arxiv.org/pdf/2001.00416v1,http://arxiv.org/abs/2001.00416v1,2020-01-02
+field.",physics.chem-ph,"physics.comp-ph, physics.chem-ph, cond-mat.other, cond-mat.str-el",4,Chemical Physics,"Computational Physics, Chemical Physics, Other Condensed Matter, Strongly Correlated Electrons",Denis Jacquemin,"Pierre-François Loos, Anthony Scemama, Denis Jacquemin",3,http://arxiv.org/pdf/2001.00416v1,http://arxiv.org/abs/2001.00416v1,2020-01-02
 The free and freer XY models,"We study two versions of the XY model where the spins but also the
 interaction topology is allowed to change. In the free XY model, the number of
 links is fixed, but their positions in the network are not. We also study a
@@ -405,7 +405,7 @@ characterized by tightly connected clusters of spins pointing in the same
 direction, and isolated spins disconnected from the rest. For the freer XY
 model the low-temperature phase is almost completely connected. In both models,
 exponents describing the magnetic ordering are mostly consistent with values of
-the mean-field theory of the standard XY model.",physics.comp-ph,"cond-mat.dis-nn, physics.comp-ph",2,Computational Physics,"Disordered Systems and Neural Networks, Computational Physics",Yérali Gandica,"Petter Holme, Yérali Gandica",2,http://arxiv.org/pdf/2001.00379v1,http://arxiv.org/abs/2001.00379v1,2020-01-02
+the mean-field theory of the standard XY model.",physics.comp-ph,"physics.comp-ph, cond-mat.dis-nn",2,Computational Physics,"Computational Physics, Disordered Systems and Neural Networks",Yérali Gandica,"Petter Holme, Yérali Gandica",2,http://arxiv.org/pdf/2001.00379v1,http://arxiv.org/abs/2001.00379v1,2020-01-02
 "Estimation of roughness measurement bias originating from background
   subtraction","When measuring the roughness of rough surfaces, the limited sizes of scanned
 areas lead to its systematic underestimation. Levelling by polynomials and
@@ -449,7 +449,7 @@ associated with prostate cancer diagnosis and treatment in younger men and
 overestimates it in the very old. We surmise that in younger men
 treatment-related deaths are incompletely captured in recorded prostate cancer
 mortality, while in older men the diagnosis ""sticks""-- once diagnosed, they are
-more likely to be said to have died from the disease.",q-bio.PE,"q-bio.PE, q-bio.QM",2,Populations and Evolution,"Populations and Evolution, Quantitative Methods",Elliott S. Fisher,"H. Gilbert Welch, Michael J. Barry, William C Black, Yunjie Song, Elliott S. Fisher",5,http://arxiv.org/pdf/2001.00492v1,http://arxiv.org/abs/2001.00492v1,2020-01-02
+more likely to be said to have died from the disease.",q-bio.PE,"q-bio.QM, q-bio.PE",2,Populations and Evolution,"Quantitative Methods, Populations and Evolution",Elliott S. Fisher,"H. Gilbert Welch, Michael J. Barry, William C Black, Yunjie Song, Elliott S. Fisher",5,http://arxiv.org/pdf/2001.00492v1,http://arxiv.org/abs/2001.00492v1,2020-01-02
 "On the modelling, linear stability, and numerical simulation for
   advection-diffusion-reaction in poroelastic media","We perform the linear growth analysis for a new PDE-based model for
 poromechanical processes (formulated in mixed form using the solid deformation,
@@ -461,7 +461,7 @@ morphoelastic changes in biomaterials. We provide a set of computational
 examples in 2D and 3D that can be used to form a better understanding on how,
 and up to which extent, the deformations of the porous structure dictate the
 generation and suppression of spatial patterning dynamics, also related to the
-onset of mechanochemical waves.",math.NA,"cs.NA, math.NA, q-bio.QM",3,Numerical Analysis,"Numerical Analysis, Numerical Analysis, Quantitative Methods",Ricardo Ruiz-Baier,"Nitesh Verma, Bryan Gomez-Vargas, Luis Miguel de Oliveira Vilaca, Sarvesh Kumar, Ricardo Ruiz-Baier",5,http://arxiv.org/pdf/2001.00370v1,http://arxiv.org/abs/2001.00370v1,2020-01-02
+onset of mechanochemical waves.",math.NA,"math.NA, q-bio.QM, cs.NA",3,Numerical Analysis,"Numerical Analysis, Quantitative Methods, Numerical Analysis",Ricardo Ruiz-Baier,"Nitesh Verma, Bryan Gomez-Vargas, Luis Miguel de Oliveira Vilaca, Sarvesh Kumar, Ricardo Ruiz-Baier",5,http://arxiv.org/pdf/2001.00370v1,http://arxiv.org/abs/2001.00370v1,2020-01-02
 "The Impact of the Choice of Risk and Dispersion Measure on
   Procyclicality","Procyclicality of historical risk measure estimation means that one tends to
 over-estimate future risk when present realized volatility is high and vice
@@ -478,7 +478,7 @@ mean absolute deviation around the sample mean) and two models (either an iid
 model or an augmented GARCH($p$,$q$) model). We show that the strength of
 procyclicality depends on these three factors, the choice of risk measure, the
 realized volatility estimator and the model considered. But, no matter the
-choices, the procyclicality will always be present.",q-fin.RM,"stat.AP, q-fin.RM",2,Risk Management,"Applications, Risk Management",Marie Kratz,"Marcel Bräutigam, Marie Kratz",2,http://arxiv.org/pdf/2001.00529v1,http://arxiv.org/abs/2001.00529v1,2020-01-02
+choices, the procyclicality will always be present.",q-fin.RM,"q-fin.RM, stat.AP",2,Risk Management,"Risk Management, Applications",Marie Kratz,"Marcel Bräutigam, Marie Kratz",2,http://arxiv.org/pdf/2001.00529v1,http://arxiv.org/abs/2001.00529v1,2020-01-02
 "CircSpaceTime: an R package for spatial and spatio-temporal modeling of
   Circular data","CircSpaceTime is the only R package currently available that implements
 Bayesian models for spatial and spatio-temporal interpolation of circular data.
@@ -566,7 +566,7 @@ its proper recovery of them. We apply it to Gemini Planet Imager (GPI) K1-band
 observations of the debris disk surrounding HR 4796A, finding a tentative trend
 that the dust is more forward scattering as the wavelength increases. We expect
 DI-sNMF to be applicable to other general scenarios where the separation of
-signals is needed.",astro-ph.IM,"astro-ph.IM, stat.ML, astro-ph.EP, astro-ph.SR",4,Instrumentation and Methods for Astrophysics,"Instrumentation and Methods for Astrophysics, Machine Learning, Earth and Planetary Astrophysics, Solar and Stellar Astrophysics",Marshall D. Perrin,"Bin Ren, Laurent Pueyo, Christine Chen, Élodie Choquet, John H. Debes, Gaspard Duchêne, François Ménard, Marshall D. Perrin",8,http://arxiv.org/pdf/2001.00563v1,http://arxiv.org/abs/2001.00563v1,2020-01-02
+signals is needed.",astro-ph.IM,"stat.ML, astro-ph.IM, astro-ph.SR, astro-ph.EP",4,Instrumentation and Methods for Astrophysics,"Machine Learning, Instrumentation and Methods for Astrophysics, Solar and Stellar Astrophysics, Earth and Planetary Astrophysics",Marshall D. Perrin,"Bin Ren, Laurent Pueyo, Christine Chen, Élodie Choquet, John H. Debes, Gaspard Duchêne, François Ménard, Marshall D. Perrin",8,http://arxiv.org/pdf/2001.00563v1,http://arxiv.org/abs/2001.00563v1,2020-01-02
 "Continuous-Discrete Reinforcement Learning for Hybrid Control in
   Robotics","Many real-world control problems involve both discrete decision variables -
 such as the choice of control modes, gear switching or digital outputs - as
