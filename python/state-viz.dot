@@ -1,47 +1,37 @@
 digraph {
-	4648257040 [label=knit_rmd_to_html color="#28a74580" colorscheme=svg shape=ellipse style=filled]
-	4648258064 [label=tweet_bryan color="#28a74580" colorscheme=svg shape=ellipse style=filled]
-	4648258256 [label=tweet_world color="#eb000080" colorscheme=svg shape=ellipse style=filled]
-	4648257360 [label=git_commit_push color="#28a74580" colorscheme=svg shape=ellipse style=filled]
-	4648256400 [label=replace_rmd_template_metadata color="#28a74580" colorscheme=svg shape=ellipse style=filled]
-	4648256464 [label="Constant[str]" color="#28a74580" colorscheme=svg shape=ellipse style=filled]
-	4648217296 [label=df_get_arxiv color="#28a74580" colorscheme=svg shape=ellipse style=filled]
-	4648217104 [label="Constant[dict]" color="#28a74580" colorscheme=svg shape=ellipse style=filled]
-	4648217808 [label=filter_df_arxiv color="#28a74580" colorscheme=svg shape=ellipse style=filled]
-	4648216976 [label="Constant[list]" color="#28a74580" colorscheme=svg shape=ellipse style=filled]
-	4648217552 [label=determine_filter_date color="#28a74580" colorscheme=svg shape=ellipse style=filled]
-	4648217936 [label=create_dir_post color="#28a74580" colorscheme=svg shape=ellipse style=filled]
-	4648218576 [label="Constant[str]" color="#28a74580" colorscheme=svg shape=ellipse style=filled]
-	4648255824 [label=write_df_to_csv color="#28a74580" colorscheme=svg shape=ellipse style=filled]
-	4648255952 [label=copy_rmd_template color="#28a74580" colorscheme=svg shape=ellipse style=filled]
-	4648256144 [label=knit_rmd_to_html color="#28a74580" colorscheme=svg shape=ellipse style=filled]
-	4648257616 [label=create_tweet color="#28a74580" colorscheme=svg shape=ellipse style=filled]
-	4648257680 [label="Constant[str]" color="#28a74580" colorscheme=svg shape=ellipse style=filled]
-	4648255952 -> 4648256144 [label=fp_post]
-	4648255952 -> 4648256400 [label=fp_post]
-	4648255952 -> 4648257040 [label=fp_post]
-	4648217936 -> 4648255952 [label=dir_post]
-	4648217936 -> 4648255824 [label=dir_post]
-	4648217936 -> 4648257616 [label=dir_post]
-	4648217552 -> 4648257616 [label=date_query]
-	4648257680 -> 4648257616 [label=date_published]
-	4648216976 -> 4648217296 [label=arx_list]
-	4648257616 -> 4648258256 [label=tweet]
-	4648255824 -> 4648256144
-	4648217104 -> 4648217296 [label=arx_dict]
-	4648257040 -> 4648257360
-	4648256464 -> 4648256400 [label=date_today]
-	4648217552 -> 4648217808 [label=filter_to_date]
-	4648217936 -> 4648256400 [label=dir_post]
-	4648217296 -> 4648217552 [label=df]
-	4648217296 -> 4648217808 [label=df]
-	4648217808 -> 4648255824 [label=df]
-	4648217552 -> 4648256400 [label=date_query]
-	4648218576 -> 4648217936 [label=date_published]
-	4648257616 -> 4648258064 [label=tweet]
-	4648217808 -> 4648217936
-	4648256144 -> 4648256400
-	4648256144 -> 4648257040
-	4648256400 -> 4648257040
-	4648257360 -> 4648257616
+	4631693840 [label=tweet_bryan color="#28a74580" colorscheme=svg shape=ellipse style=filled]
+	4631692944 [label=create_tweet color="#28a74580" colorscheme=svg shape=ellipse style=filled]
+	4631694096 [label=tweet_world color="#28a74580" colorscheme=svg shape=ellipse style=filled]
+	4631621520 [label=df_get_arxiv color="#28a74580" colorscheme=svg shape=ellipse style=filled]
+	4631667216 [label=create_dir_post color="#28a74580" colorscheme=svg shape=ellipse style=filled]
+	4631667728 [label=write_df_to_csv color="#28a74580" colorscheme=svg shape=ellipse style=filled]
+	4631621264 [label=filter_df_arxiv color="#28a74580" colorscheme=svg shape=ellipse style=filled]
+	4631621072 [label=determine_filter_date color="#28a74580" colorscheme=svg shape=ellipse style=filled]
+	4631668688 [label=copy_rmd_template color="#28a74580" colorscheme=svg shape=ellipse style=filled]
+	4631668944 [label=knit_rmd_to_html color="#28a74580" colorscheme=svg shape=ellipse style=filled]
+	4631669648 [label=replace_rmd_template_metadata color="#28a74580" colorscheme=svg shape=ellipse style=filled]
+	4631691408 [label=knit_rmd_to_html color="#28a74580" colorscheme=svg shape=ellipse style=filled]
+	4631692304 [label=git_commit_push color="#28a74580" colorscheme=svg shape=ellipse style=filled]
+	4631668688 -> 4631691408 [label=fp_post]
+	4631621520 -> 4631621264 [label=df]
+	4631667216 -> 4631667728 [label=dir_post]
+	4631667216 -> 4631669648 [label=dir_post]
+	4631667216 -> 4631692944 [label=dir_post]
+	4631667728 -> 4631668944
+	4631668944 -> 4631669648
+	4631668944 -> 4631691408
+	4631668688 -> 4631668944 [label=fp_post]
+	4631621072 -> 4631621264 [label=filter_to_date]
+	4631621520 -> 4631621072 [label=df]
+	4631621072 -> 4631669648 [label=date_query]
+	4631621072 -> 4631692944 [label=date_query]
+	4631667216 -> 4631668688 [label=dir_post]
+	4631621264 -> 4631667216
+	4631669648 -> 4631691408
+	4631691408 -> 4631692304
+	4631692304 -> 4631692944
+	4631692944 -> 4631693840 [label=tweet]
+	4631692944 -> 4631694096 [label=tweet]
+	4631668688 -> 4631669648 [label=fp_post]
+	4631621264 -> 4631667728 [label=df]
 }
