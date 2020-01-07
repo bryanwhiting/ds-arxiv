@@ -1,37 +1,39 @@
 digraph {
-	4524649168 [label=tweet_bryan color="#28a74580" colorscheme=svg shape=ellipse style=filled]
-	4524648272 [label=create_tweet color="#28a74580" colorscheme=svg shape=ellipse style=filled]
-	4524649424 [label=tweet_world color="#eb000080" colorscheme=svg shape=ellipse style=filled]
-	4524626064 [label=df_get_arxiv color="#28a74580" colorscheme=svg shape=ellipse style=filled]
-	4524627152 [label=write_df_to_csv color="#28a74580" colorscheme=svg shape=ellipse style=filled]
-	4524580432 [label=determine_filter_date color="#28a74580" colorscheme=svg shape=ellipse style=filled]
-	4524626000 [label=filter_df_arxiv color="#28a74580" colorscheme=svg shape=ellipse style=filled]
-	4524626640 [label=create_dir_post color="#28a74580" colorscheme=svg shape=ellipse style=filled]
-	4524628112 [label=copy_rmd_template color="#28a74580" colorscheme=svg shape=ellipse style=filled]
-	4524628368 [label=knit_rmd_to_html color="#28a74580" colorscheme=svg shape=ellipse style=filled]
-	4524629072 [label=replace_rmd_template_metadata color="#28a74580" colorscheme=svg shape=ellipse style=filled]
-	4524646736 [label=knit_rmd_to_html color="#28a74580" colorscheme=svg shape=ellipse style=filled]
-	4524647632 [label=git_commit_push color="#28a74580" colorscheme=svg shape=ellipse style=filled]
-	4524648272 -> 4524649168 [label=tweet]
-	4524648272 -> 4524649424 [label=tweet]
-	4524626000 -> 4524627152 [label=df]
-	4524628112 -> 4524629072 [label=fp_post]
-	4524628112 -> 4524646736 [label=fp_post]
-	4524627152 -> 4524628368
-	4524628368 -> 4524629072
-	4524628368 -> 4524646736
-	4524626640 -> 4524627152 [label=dir_post]
-	4524626640 -> 4524629072 [label=dir_post]
-	4524626640 -> 4524648272 [label=dir_post]
-	4524580432 -> 4524626000 [label=filter_to_date]
-	4524580432 -> 4524629072 [label=date_query]
-	4524580432 -> 4524648272 [label=date_query]
-	4524626064 -> 4524626000 [label=df]
-	4524626064 -> 4524580432 [label=df]
-	4524628112 -> 4524628368 [label=fp_post]
-	4524626000 -> 4524626640
-	4524629072 -> 4524646736
-	4524646736 -> 4524647632
-	4524647632 -> 4524648272
-	4524626640 -> 4524628112 [label=dir_post]
+	4533758608 [label=tweet_bryan color="#28a74580" colorscheme=svg shape=ellipse style=filled]
+	4533757712 [label=create_tweet color="#28a74580" colorscheme=svg shape=ellipse style=filled]
+	4533759248 [label=SlackTask color="#28a74580" colorscheme=svg shape=ellipse style=filled]
+	4533758864 [label=tweet_world color="#eb000080" colorscheme=svg shape=ellipse style=filled]
+	4533731408 [label=df_get_arxiv color="#28a74580" colorscheme=svg shape=ellipse style=filled]
+	4533677840 [label=filter_df_arxiv color="#28a74580" colorscheme=svg shape=ellipse style=filled]
+	4533677648 [label=determine_filter_date color="#28a74580" colorscheme=svg shape=ellipse style=filled]
+	4533731984 [label=create_dir_post color="#28a74580" colorscheme=svg shape=ellipse style=filled]
+	4533732496 [label=write_df_to_csv color="#28a74580" colorscheme=svg shape=ellipse style=filled]
+	4533733456 [label=copy_rmd_template color="#28a74580" colorscheme=svg shape=ellipse style=filled]
+	4533733712 [label=knit_rmd_to_html color="#28a74580" colorscheme=svg shape=ellipse style=filled]
+	4533734416 [label=replace_rmd_template_metadata color="#28a74580" colorscheme=svg shape=ellipse style=filled]
+	4533756176 [label=knit_rmd_to_html color="#28a74580" colorscheme=svg shape=ellipse style=filled]
+	4533757072 [label=git_commit_push color="#28a74580" colorscheme=svg shape=ellipse style=filled]
+	4533733456 -> 4533734416 [label=fp_post]
+	4533733456 -> 4533756176 [label=fp_post]
+	4533731984 -> 4533733456 [label=dir_post]
+	4533731408 -> 4533677840 [label=df]
+	4533757712 -> 4533758608 [label=tweet]
+	4533757712 -> 4533758864 [label=tweet]
+	4533732496 -> 4533733712
+	4533733712 -> 4533734416
+	4533733712 -> 4533756176
+	4533733456 -> 4533733712 [label=fp_post]
+	4533757712 -> 4533759248 [label=message]
+	4533731984 -> 4533732496 [label=dir_post]
+	4533731984 -> 4533734416 [label=dir_post]
+	4533731984 -> 4533757712 [label=dir_post]
+	4533677648 -> 4533734416 [label=date_query]
+	4533677648 -> 4533757712 [label=date_query]
+	4533731408 -> 4533677648 [label=df]
+	4533677840 -> 4533732496 [label=df]
+	4533677840 -> 4533731984
+	4533734416 -> 4533756176
+	4533756176 -> 4533757072
+	4533757072 -> 4533757712
+	4533677648 -> 4533677840 [label=filter_to_date]
 }
