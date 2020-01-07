@@ -4,6 +4,13 @@ TODO: Parse cs, stat, math, etc to have "domains"
 * Rank the author (with how many publications they have)
 * Provide links to topic-specific articles (not just subject)
 
+Prefect
+* Try caching
+* Figure out how to force a run even with a schedule
+* Try Slack notifications
+* Submit request for log write out
+* Submit request for launchd scheduling
+
 """
 
 import fileinput
@@ -17,6 +24,11 @@ from bs4 import BeautifulSoup
 from IPython.core.display import display, HTML
 import pandas as pd
 from prefect import task, Flow
+from prefect.schedules import Schedule
+from prefect.schedules.clocks import CronClock
+from prefect.tasks.core.constants import Constant
+from prefect.utilities.notifications import slack_notifier
+
 from datetime import datetime, timedelta, date
 
 import mypass
@@ -189,7 +201,7 @@ def read_file(filename):
         text = f.read()
     return text
 
-@task(max_retries=3, retry_delay=timedelta(minutes=10))
+@task(max_retries=3, retry_delay=timedelta(minutes=2))
 def replace_rmd_template_metadata(dir_post, fp_post, date_today, date_query):
     """After R Markdown is compiled, tweet.txt is created. This pulls that tweet and 
     replaces the XXDESCRIPTIONXX in the template
@@ -239,12 +251,28 @@ def tweet_world(tweet):
     api.update_status(tweet)
 
 if __name__ == '__main__':
-    from prefect.tasks.core.constants import Constant
     # Use Constant() to avoid prefect blowing up the DAG with the 
     # dicionary values: https://docs.prefect.io/core/tutorials/task-guide.html#adding-tasks-to-flows
 
+    # Cron clock generator: https://crontab-generator.org/
+    # 0 6 * * * means run every day at 6am
+    schedule = Schedule(clocks=[CronClock("0 6 * * *")])
+    # alternatively: crontab -l to list all crontabs, or see generator to generate the crontab
+    # there's also launchctl and using plist files.
+    # there's also using the calendar.
+    # View Python command with `ps`
+    # Rename `ps` command: https://stackoverflow.com/a/49097964/2138773
+    # https://github.com/dvarrazzo/py-setproctitle
+    from setproctitle import setproctitle
+    setproctitle('prefect: ds arxiv')
+
+    # Build a handler for slack
+    # https://docs.prefect.io/core/tutorials/slack-notifications.html#using-your-url-to-get-notifications
+    # You need to store the secrets in ~/.prefect/config.toml
+    slack_handler = slack_notifier(webhook_secret='SLACK_WEBHOOK_URL_DSARXIV')
+
     # using the Imperitive API: https://docs.prefect.io/core/concepts/flows.html#imperative-api
-    with Flow('Build Arxiv') as flow:
+    with Flow('Build Arxiv', state_handlers=[slack_handler]) as flow:
 
         # Dates
         date_today = datetime.now().strftime('%Y-%m-%d')
@@ -283,6 +311,8 @@ if __name__ == '__main__':
     fp_pdf = os.path.expanduser('~/github/ds-arxiv/python/state-viz.dot')
     flow.visualize(flow_state=state, filename=fp_pdf)
 
+
+# Todo: 
     # TO debug: 
     # put a breakpoint() in your functions above. you don't need the below.
     # state.result[df]

@@ -1,0 +1,2662 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+  <meta name="generator" content="distill" />
+
+  <style type="text/css">
+  /* Hide doc at startup (prevent jankiness while JS renders/transforms) */
+  body {
+    visibility: hidden;
+  }
+  </style>
+
+ <!--radix_placeholder_import_source-->
+ <!--/radix_placeholder_import_source-->
+
+  <!--radix_placeholder_meta_tags-->
+<title>The Data Science arXiv: Articles from 2020-01-06</title>
+
+<meta property="description" itemprop="description" content="52 new data science research articles were published on 2020-01-06. 20 discussed machine learning."/>
+
+<link rel="canonical" href="bryanwhiting.github.io/ds-arxiv/posts/2020-01-07/"/>
+
+<!--  https://schema.org/Article -->
+<meta property="article:published" itemprop="datePublished" content="2020-01-07"/>
+<meta property="article:created" itemprop="dateCreated" content="2020-01-07"/>
+<meta name="article:author" content="Bryan Whiting"/>
+
+<!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
+<meta property="og:title" content="The Data Science arXiv: Articles from 2020-01-06"/>
+<meta property="og:type" content="article"/>
+<meta property="og:description" content="52 new data science research articles were published on 2020-01-06. 20 discussed machine learning."/>
+<meta property="og:url" content="bryanwhiting.github.io/ds-arxiv/posts/2020-01-07/"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:site_name" content="The Data Science arXiv"/>
+
+<!--  https://dev.twitter.com/cards/types/summary -->
+<meta property="twitter:card" content="summary"/>
+<meta property="twitter:title" content="The Data Science arXiv: Articles from 2020-01-06"/>
+<meta property="twitter:description" content="52 new data science research articles were published on 2020-01-06. 20 discussed machine learning."/>
+<meta property="twitter:url" content="bryanwhiting.github.io/ds-arxiv/posts/2020-01-07/"/>
+
+<!--/radix_placeholder_meta_tags-->
+  <!--radix_placeholder_rmarkdown_metadata-->
+
+<script type="text/json" id="radix-rmarkdown-metadata">
+{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","date","author","output","canonical_url"]}},"value":[{"type":"character","attributes":{},"value":["Articles from 2020-01-06"]},{"type":"character","attributes":{},"value":["52 new data science research articles were published on 2020-01-06. 20 discussed machine learning."]},{"type":"character","attributes":{},"value":["2020-01-07"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url"]}},"value":[{"type":"character","attributes":{},"value":["Bryan Whiting"]},{"type":"character","attributes":{},"value":["https://www.bryanwhiting.com"]}]}]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained","toc"]}},"value":[{"type":"logical","attributes":{},"value":[false]},{"type":"logical","attributes":{},"value":[true]}]}]},{"type":"character","attributes":{},"value":["bryanwhiting.github.io/ds-arxiv/posts/2020-01-07/"]}]}
+</script>
+<!--/radix_placeholder_rmarkdown_metadata-->
+  
+  <script type="text/json" id="radix-resource-manifest">
+  {"type":"character","attributes":{},"value":["arxiv.csv","news_files/bowser-1.9.3/bowser.min.js","news_files/distill-2.2.21/template.v2.js","news_files/jquery-1.11.3/jquery.min.js","news_files/kePrint-0.0.1/kePrint.js","news_files/webcomponents-2.0.0/webcomponents.js","news.Rmd.bak","output_df_summary.Rda","tweet.txt"]}
+  </script>
+  <!--radix_placeholder_navigation_in_header-->
+
+<script type="application/javascript">
+
+  window.headroom_prevent_pin = false;
+
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+
+    // initialize headroom for banner
+    var header = $('header').get(0);
+    var headerHeight = header.offsetHeight;
+    var headroom = new Headroom(header, {
+      onPin : function() {
+        if (window.headroom_prevent_pin) {
+          window.headroom_prevent_pin = false;
+          headroom.unpin();
+        }
+      }
+    });
+    headroom.init();
+    if(window.location.hash)
+      headroom.unpin();
+    $(header).addClass('headroom--transition');
+
+    // offset scroll location for banner on hash change
+    // (see: https://github.com/WickyNilliams/headroom.js/issues/38)
+    window.addEventListener("hashchange", function(event) {
+      window.scrollTo(0, window.pageYOffset - (headerHeight + 25));
+    });
+
+    // responsive menu
+    $('.distill-site-header').each(function(i, val) {
+      var topnav = $(this);
+      var toggle = topnav.find('.nav-toggle');
+      toggle.on('click', function() {
+        topnav.toggleClass('responsive');
+      });
+    });
+
+    // nav dropdowns
+    $('.nav-dropbtn').click(function(e) {
+      $(this).next('.nav-dropdown-content').toggleClass('nav-dropdown-active');
+      $(this).parent().siblings('.nav-dropdown')
+         .children('.nav-dropdown-content').removeClass('nav-dropdown-active');
+    });
+    $("body").click(function(e){
+      $('.nav-dropdown-content').removeClass('nav-dropdown-active');
+    });
+    $(".nav-dropdown").click(function(e){
+      e.stopPropagation();
+    });
+  });
+</script>
+
+<style type="text/css">
+
+/* Theme (user-documented overrideables for nav appearance) */
+
+.distill-site-nav {
+  color: rgba(255, 255, 255, 0.8);
+  background-color: #455a64;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.distill-site-nav a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.distill-site-nav a:hover {
+  color: white;
+}
+
+@media print {
+  .distill-site-nav {
+    display: none;
+  }
+}
+
+.distill-site-header {
+
+}
+
+.distill-site-footer {
+
+}
+
+
+/* Site Header */
+
+.distill-site-header {
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 3;
+}
+
+.distill-site-header .nav-left {
+  display: inline-block;
+  margin-left: 8px;
+}
+
+@media screen and (max-width: 768px) {
+  .distill-site-header .nav-left {
+    margin-left: 0;
+  }
+}
+
+
+.distill-site-header .nav-right {
+  float: right;
+  margin-right: 8px;
+}
+
+.distill-site-header a,
+.distill-site-header .title {
+  display: inline-block;
+  text-align: center;
+  padding: 14px 10px 14px 10px;
+}
+
+.distill-site-header .title {
+  font-size: 18px;
+}
+
+.distill-site-header .logo {
+  padding: 0;
+}
+
+.distill-site-header .logo img {
+  display: none;
+  max-height: 20px;
+  width: auto;
+  margin-bottom: -4px;
+}
+
+.distill-site-header .nav-image img {
+  max-height: 18px;
+  width: auto;
+  display: inline-block;
+  margin-bottom: -3px;
+}
+
+
+
+@media screen and (min-width: 1000px) {
+  .distill-site-header .logo img {
+    display: inline-block;
+  }
+  .distill-site-header .nav-left {
+    margin-left: 20px;
+  }
+  .distill-site-header .nav-right {
+    margin-right: 20px;
+  }
+  .distill-site-header .title {
+    padding-left: 12px;
+  }
+}
+
+
+.distill-site-header .nav-toggle {
+  display: none;
+}
+
+.nav-dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.nav-dropdown .nav-dropbtn {
+  border: none;
+  outline: none;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 16px 10px;
+  background-color: transparent;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0;
+  margin-top: 1px;
+  z-index: 2;
+}
+
+.nav-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 200px;
+  border: 1px solid rgba(0,0,0,0.15);
+  border-radius: 4px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+  z-index: 1;
+  margin-top: 2px;
+  white-space: nowrap;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.nav-dropdown-content hr {
+  margin-top: 4px;
+  margin-bottom: 4px;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.nav-dropdown-active {
+  display: block;
+}
+
+.nav-dropdown-content a, .nav-dropdown-content .nav-dropdown-header {
+  color: black;
+  padding: 6px 24px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.nav-dropdown-content .nav-dropdown-header {
+  display: block;
+  padding: 5px 24px;
+  padding-bottom: 0;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #999999;
+  white-space: nowrap;
+}
+
+.nav-dropdown:hover .nav-dropbtn {
+  color: white;
+}
+
+.nav-dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.nav-right .nav-dropdown-content {
+  margin-left: -45%;
+  right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .distill-site-header a, .distill-site-header .nav-dropdown  {display: none;}
+  .distill-site-header a.nav-toggle {
+    float: right;
+    display: block;
+  }
+  .distill-site-header .title {
+    margin-left: 0;
+  }
+  .distill-site-header .nav-right {
+    margin-right: 0;
+  }
+  .distill-site-header {
+    overflow: hidden;
+  }
+  .nav-right .nav-dropdown-content {
+    margin-left: 0;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .distill-site-header.responsive {position: relative;}
+  .distill-site-header.responsive a.nav-toggle {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .distill-site-header.responsive a,
+  .distill-site-header.responsive .nav-dropdown {
+    display: block;
+    text-align: left;
+  }
+  .distill-site-header.responsive .nav-left,
+  .distill-site-header.responsive .nav-right {
+    width: 100%;
+  }
+  .distill-site-header.responsive .nav-dropdown {float: none;}
+  .distill-site-header.responsive .nav-dropdown-content {position: relative;}
+  .distill-site-header.responsive .nav-dropdown .nav-dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+/* Site Footer */
+
+.distill-site-footer {
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  z-index: 3;
+  margin-top: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+/* Headroom */
+
+d-title {
+  padding-top: 6rem;
+}
+
+@media print {
+  d-title {
+    padding-top: 4rem;
+  }
+}
+
+.headroom {
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.headroom--transition {
+  transition: all .4s ease-in-out;
+}
+
+.headroom--unpinned {
+  top: -100px;
+}
+
+.headroom--pinned {
+  top: 0;
+}
+
+</style>
+
+<link href="../../site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
+<link href="../../site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
+<script src="../../site_libs/headroom-0.9.4/headroom.min.js"></script>
+<!--/radix_placeholder_navigation_in_header-->
+  <!--radix_placeholder_distill-->
+
+<style type="text/css">
+
+body {
+  background-color: white;
+}
+
+.pandoc-table {
+  width: 100%;
+}
+
+.pandoc-table>caption {
+  margin-bottom: 10px;
+}
+
+.pandoc-table th:not([align]) {
+  text-align: left;
+}
+
+.pagedtable-footer {
+  font-size: 15px;
+}
+
+.html-widget {
+  margin-bottom: 2.0em;
+}
+
+.l-screen-inset {
+  padding-right: 16px;
+}
+
+.l-screen .caption {
+  margin-left: 10px;
+}
+
+.shaded {
+  background: rgb(247, 247, 247);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.shaded .html-widget {
+  margin-bottom: 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.shaded .shaded-content {
+  background: white;
+}
+
+.text-output {
+  margin-top: 0;
+  line-height: 1.5em;
+}
+
+.hidden {
+  display: none !important;
+}
+
+d-article {
+  padding-bottom: 30px;
+}
+
+d-appendix {
+  padding-top: 30px;
+}
+
+d-article>p>img {
+  width: 100%;
+}
+
+d-article iframe {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 2.0em;
+  width: 100%;
+}
+
+figure img.external {
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+  padding: 18px;
+  box-sizing: border-box;
+}
+
+/* CSS for table of contents */
+
+.d-toc {
+  color: rgba(0,0,0,0.8);
+  font-size: 0.8em;
+  line-height: 1em;
+}
+
+.d-toc-header {
+  font-size: 0.6rem;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 1.3em;
+}
+
+.d-toc a {
+  border-bottom: none;
+}
+
+.d-toc ul {
+  padding-left: 0;
+}
+
+.d-toc li>ul {
+  padding-top: 0.8em;
+  padding-left: 16px;
+  margin-bottom: 0.6em;
+}
+
+.d-toc ul,
+.d-toc li {
+  list-style-type: none;
+}
+
+.d-toc li {
+  margin-bottom: 0.9em;
+}
+
+.d-toc-separator {
+  margin-top: 20px;
+  margin-bottom: 2em;
+}
+
+.d-article-with-toc {
+  border-top: none;
+  padding-top: 0;
+}
+
+
+
+/* Tweak code blocks (note that this CSS is repeated above in an injection
+   into the d-code shadow dom) */
+
+d-code {
+  overflow-x: auto !important;
+}
+
+pre.d-code code.d-code {
+  padding-left: 10px;
+  font-size: 12px;
+  border-left: 2px solid rgba(0,0,0,0.1);
+}
+
+pre.text-output {
+
+  font-size: 12px;
+  color: black;
+  background: none;
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+@media(min-width: 768px) {
+
+d-code {
+  overflow-x: visible !important;
+}
+
+pre.d-code code.d-code  {
+    padding-left: 18px;
+    font-size: 14px;
+}
+pre.text-output {
+  font-size: 14px;
+}
+}
+
+/* Figure */
+
+.figure {
+  position: relative;
+  margin-bottom: 2.5em;
+  margin-top: 1.5em;
+}
+
+.figure img {
+  width: 100%;
+}
+
+.figure .caption {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 12px;
+  line-height: 1.5em;
+}
+
+.figure img.external {
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+  padding: 18px;
+  box-sizing: border-box;
+}
+
+.figure .caption a {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.figure .caption b,
+.figure .caption strong, {
+  font-weight: 600;
+  color: rgba(0, 0, 0, 1.0);
+}
+
+
+
+/* Tweak 1000px media break to show more text */
+
+@media(min-width: 1000px) {
+  .base-grid,
+  distill-header,
+  d-title,
+  d-abstract,
+  d-article,
+  d-appendix,
+  distill-appendix,
+  d-byline,
+  d-footnote-list,
+  d-citation-list,
+  distill-footer {
+    grid-template-columns: [screen-start] 1fr [page-start kicker-start] 80px [middle-start] 50px [text-start kicker-end] 65px 65px 65px 65px 65px 65px 65px 65px [text-end gutter-start] 65px [middle-end] 65px [page-end gutter-end] 1fr [screen-end];
+    grid-column-gap: 16px;
+  }
+
+  .grid {
+    grid-column-gap: 16px;
+  }
+
+  d-article {
+    font-size: 1.06rem;
+    line-height: 1.7em;
+  }
+  figure .caption, .figure .caption, figure figcaption {
+    font-size: 13px;
+  }
+}
+
+@media(min-width: 1180px) {
+  .base-grid,
+  distill-header,
+  d-title,
+  d-abstract,
+  d-article,
+  d-appendix,
+  distill-appendix,
+  d-byline,
+  d-footnote-list,
+  d-citation-list,
+  distill-footer {
+    grid-template-columns: [screen-start] 1fr [page-start kicker-start] 60px [middle-start] 60px [text-start kicker-end] 60px 60px 60px 60px 60px 60px 60px 60px [text-end gutter-start] 60px [middle-end] 60px [page-end gutter-end] 1fr [screen-end];
+    grid-column-gap: 32px;
+  }
+
+  .grid {
+    grid-column-gap: 32px;
+  }
+}
+
+
+/* Get the citation styles for the appendix (not auto-injected on render since
+   we do our own rendering of the citation appendix) */
+
+d-appendix .citation-appendix,
+.d-appendix .citation-appendix {
+  font-size: 11px;
+  line-height: 15px;
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  padding-left: 18px;
+  border: 1px solid rgba(0,0,0,0.1);
+  background: rgba(0, 0, 0, 0.02);
+  padding: 10px 18px;
+  border-radius: 3px;
+  color: rgba(150, 150, 150, 1);
+  overflow: hidden;
+  margin-top: -12px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+
+/* Social footer */
+
+.social_footer {
+  margin-top: 30px;
+  margin-bottom: 0;
+  color: rgba(0,0,0,0.67);
+}
+
+.disqus-comments {
+  margin-right: 30px;
+}
+
+.disqus-comment-count {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+#disqus_thread {
+  margin-top: 30px;
+}
+
+.article-sharing a {
+  border-bottom: none;
+  margin-right: 8px;
+}
+
+.article-sharing a:hover {
+  border-bottom: none;
+}
+
+.sidebar-section.subscribe {
+  font-size: 12px;
+  line-height: 1.6em;
+}
+
+.subscribe p {
+  margin-bottom: 0.5em;
+}
+
+
+.article-footer .subscribe {
+  font-size: 15px;
+  margin-top: 45px;
+}
+
+
+/* Improve display for browsers without grid (IE/Edge <= 15) */
+
+.downlevel {
+  line-height: 1.6em;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
+}
+
+.downlevel .d-title {
+  padding-top: 6rem;
+  padding-bottom: 1.5rem;
+}
+
+.downlevel .d-title h1 {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1.1em;
+  margin: 0 0 0.5rem;
+}
+
+.downlevel .d-title p {
+  font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 1.55em;
+  margin-top: 0;
+}
+
+.downlevel .d-byline {
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+  font-size: 0.8rem;
+  line-height: 1.8em;
+}
+
+.downlevel .section-separator {
+  border: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.downlevel .d-article {
+  font-size: 1.06rem;
+  line-height: 1.7em;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+
+.downlevel .d-appendix {
+  padding-left: 0;
+  padding-right: 0;
+  max-width: none;
+  font-size: 0.8em;
+  line-height: 1.7em;
+  margin-bottom: 0;
+  color: rgba(0,0,0,0.5);
+  padding-top: 40px;
+  padding-bottom: 48px;
+}
+
+.downlevel .footnotes ol {
+  padding-left: 13px;
+}
+
+.downlevel .base-grid,
+.downlevel .distill-header,
+.downlevel .d-title,
+.downlevel .d-abstract,
+.downlevel .d-article,
+.downlevel .d-appendix,
+.downlevel .distill-appendix,
+.downlevel .d-byline,
+.downlevel .d-footnote-list,
+.downlevel .d-citation-list,
+.downlevel .distill-footer,
+.downlevel .appendix-bottom,
+.downlevel .posts-container {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+@media(min-width: 768px) {
+  .downlevel .base-grid,
+  .downlevel .distill-header,
+  .downlevel .d-title,
+  .downlevel .d-abstract,
+  .downlevel .d-article,
+  .downlevel .d-appendix,
+  .downlevel .distill-appendix,
+  .downlevel .d-byline,
+  .downlevel .d-footnote-list,
+  .downlevel .d-citation-list,
+  .downlevel .distill-footer,
+  .downlevel .appendix-bottom,
+  .downlevel .posts-container {
+  padding-left: 150px;
+  padding-right: 150px;
+  max-width: 900px;
+}
+}
+
+.downlevel pre code {
+  display: block;
+  border-left: 2px solid rgba(0, 0, 0, .1);
+  padding: 0 0 0 20px;
+  font-size: 14px;
+}
+
+.downlevel code, .downlevel pre {
+  color: black;
+  background: none;
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+</style>
+
+<script type="application/javascript">
+
+function is_downlevel_browser() {
+  if (bowser.isUnsupportedBrowser({ msie: "12", msedge: "16"},
+                                 window.navigator.userAgent)) {
+    return true;
+  } else {
+    return window.load_distill_framework === undefined;
+  }
+}
+
+// show body when load is complete
+function on_load_complete() {
+
+  // set body to visible
+  document.body.style.visibility = 'visible';
+
+  // force redraw for leaflet widgets
+  if (window.HTMLWidgets) {
+    var maps = window.HTMLWidgets.findAll(".leaflet");
+    $.each(maps, function(i, el) {
+      var map = this.getMap();
+      map.invalidateSize();
+      map.eachLayer(function(layer) {
+        if (layer instanceof L.TileLayer)
+          layer.redraw();
+      });
+    });
+  }
+
+  // trigger 'shown' so htmlwidgets resize
+  $('d-article').trigger('shown');
+}
+
+function init_distill() {
+
+  init_common();
+
+  // create front matter
+  var front_matter = $('<d-front-matter></d-front-matter>');
+  $('#distill-front-matter').wrap(front_matter);
+
+  // create d-title
+  $('.d-title').changeElementType('d-title');
+
+  // create d-byline
+  var byline = $('<d-byline></d-byline>');
+  $('.d-byline').replaceWith(byline);
+
+  // create d-article
+  var article = $('<d-article></d-article>');
+  $('.d-article').wrap(article).children().unwrap();
+
+  // move posts container into article
+  $('.posts-container').appendTo($('d-article'));
+
+  // create d-appendix
+  $('.d-appendix').changeElementType('d-appendix');
+
+  // create d-bibliography
+  var bibliography = $('<d-bibliography></d-bibliography>');
+  $('#distill-bibliography').wrap(bibliography);
+
+  // flag indicating that we have appendix items
+  var appendix = $('.appendix-bottom').children('h3').length > 0;
+
+  // replace citations with <d-cite>
+  $('.citation').each(function(i, val) {
+    appendix = true;
+    var cites = $(this).attr('data-cites').split(" ");
+    var dt_cite = $('<d-cite></d-cite>');
+    dt_cite.attr('key', cites.join());
+    $(this).replaceWith(dt_cite);
+  });
+  // remove refs
+  $('#refs').remove();
+
+  // replace footnotes with <d-footnote>
+  $('.footnote-ref').each(function(i, val) {
+    appendix = true;
+    var href = $(this).attr('href');
+    var id = href.replace('#', '');
+    var fn = $('#' + id);
+    var fn_p = $('#' + id + '>p');
+    fn_p.find('.footnote-back').remove();
+    var text = fn_p.html();
+    var dtfn = $('<d-footnote></d-footnote>');
+    dtfn.html(text);
+    $(this).replaceWith(dtfn);
+  });
+  // remove footnotes
+  $('.footnotes').remove();
+
+  $('h1.appendix, h2.appendix').each(function(i, val) {
+    $(this).changeElementType('h3');
+  });
+  $('h3.appendix').each(function(i, val) {
+    var id = $(this).attr('id');
+    $('.d-toc a[href="#' + id + '"]').parent().remove();
+    appendix = true;
+    $(this).nextUntil($('h1, h2, h3')).addBack().appendTo($('d-appendix'));
+  });
+
+  // show d-appendix if we have appendix content
+  $("d-appendix").css('display', appendix ? 'grid' : 'none');
+
+  // replace code blocks with d-code
+  $('pre>code').each(function(i, val) {
+    var code = $(this);
+    var pre = code.parent();
+    var clz = "";
+    var language = pre.attr('class');
+    if (language) {
+      // map unknown languages to "clike" (without this they just dissapear)
+      if ($.inArray(language, ["bash", "clike", "css", "go", "html",
+                               "javascript", "js", "julia", "lua", "markdown",
+                               "markup", "mathml", "python", "svg", "xml"]) == -1)
+        language = "clike";
+      language = ' language="' + language + '"';
+      var dt_code = $('<d-code block' + language + clz + '></d-code>');
+      dt_code.text(code.text());
+      pre.replaceWith(dt_code);
+    } else {
+      code.addClass('text-output').unwrap().changeElementType('pre');
+    }
+  });
+
+  // localize layout chunks to just output
+  $('.layout-chunk').each(function(i, val) {
+
+    // capture layout
+    var layout = $(this).attr('data-layout');
+
+    // apply layout to markdown level block elements
+    var elements = $(this).children().not('d-code, pre.text-output, script');
+    elements.each(function(i, el) {
+      var layout_div = $('<div class="' + layout + '"></div>');
+      if (layout_div.hasClass('shaded')) {
+        var shaded_content = $('<div class="shaded-content"></div>');
+        $(this).wrap(shaded_content);
+        $(this).parent().wrap(layout_div);
+      } else {
+        $(this).wrap(layout_div);
+      }
+    });
+
+
+    // unwrap the layout-chunk div
+    $(this).children().unwrap();
+  });
+
+  // load distill framework
+  load_distill_framework();
+
+  // wait for window.distillRunlevel == 4 to do post processing
+  function distill_post_process() {
+
+    if (!window.distillRunlevel || window.distillRunlevel < 4)
+      return;
+
+    // hide author/affiliations entirely if we have no authors
+    var front_matter = JSON.parse($("#distill-front-matter").html());
+    var have_authors = front_matter.authors && front_matter.authors.length > 0;
+    if (!have_authors)
+      $('d-byline').addClass('hidden');
+
+    // table of contents
+    if (have_authors) // adjust border if we are in authors
+      $('.d-toc').parent().addClass('d-article-with-toc');
+
+    // strip links that point to #
+    $('.authors-affiliations').find('a[href="#"]').removeAttr('href');
+
+    // hide elements of author/affiliations grid that have no value
+    function hide_byline_column(caption) {
+      $('d-byline').find('h3:contains("' + caption + '")').parent().css('visibility', 'hidden');
+    }
+
+    // affiliations
+    var have_affiliations = false;
+    for (var i = 0; i<front_matter.authors.length; ++i) {
+      var author = front_matter.authors[i];
+      if (author.affiliation !== "&nbsp;") {
+        have_affiliations = true;
+        break;
+      }
+    }
+    if (!have_affiliations)
+      $('d-byline').find('h3:contains("Affiliations")').css('visibility', 'hidden');
+
+    // published date
+    if (!front_matter.publishedDate)
+      hide_byline_column("Published");
+
+    // document object identifier
+    var doi = $('d-byline').find('h3:contains("DOI")');
+    var doi_p = doi.next().empty();
+    if (!front_matter.doi) {
+      // if we have a citation and valid citationText then link to that
+      if ($('#citation').length > 0 && front_matter.citationText) {
+        doi.html('Citation');
+        $('<a href="#citation"></a>')
+          .text(front_matter.citationText)
+          .appendTo(doi_p);
+      } else {
+        hide_byline_column("DOI");
+      }
+    } else {
+      $('<a></a>')
+         .attr('href', "https://doi.org/" + front_matter.doi)
+         .html(front_matter.doi)
+         .appendTo(doi_p);
+    }
+
+     // change plural form of authors/affiliations
+    if (front_matter.authors.length === 1) {
+      var grid = $('.authors-affiliations');
+      grid.children('h3:contains("Authors")').text('Author');
+      grid.children('h3:contains("Affiliations")').text('Affiliation');
+    }
+
+    // inject pre code styles (can't do this with a global stylesheet b/c a shadow root is used)
+    $('d-code').each(function(i, val) {
+      var style = document.createElement('style');
+      style.innerHTML = 'pre code { padding-left: 10px; font-size: 12px; border-left: 2px solid rgba(0,0,0,0.1); } ' +
+                        '@media(min-width: 768px) { pre code { padding-left: 18px; font-size: 14px; } }';
+      if (this.shadowRoot)
+        this.shadowRoot.appendChild(style);
+    });
+
+    // move appendix-bottom entries to the bottom
+    $('.appendix-bottom').appendTo('d-appendix').children().unwrap();
+    $('.appendix-bottom').remove();
+
+    // clear polling timer
+    clearInterval(tid);
+
+    // show body now that everything is ready
+    on_load_complete();
+  }
+
+  var tid = setInterval(distill_post_process, 50);
+  distill_post_process();
+
+}
+
+function init_downlevel() {
+
+  init_common();
+
+   // insert hr after d-title
+  $('.d-title').after($('<hr class="section-separator"/>'));
+
+  // check if we have authors
+  var front_matter = JSON.parse($("#distill-front-matter").html());
+  var have_authors = front_matter.authors && front_matter.authors.length > 0;
+
+  // manage byline/border
+  if (!have_authors)
+    $('.d-byline').remove();
+  $('.d-byline').after($('<hr class="section-separator"/>'));
+  $('.d-byline a').remove();
+
+  // remove toc
+  $('.d-toc-header').remove();
+  $('.d-toc').remove();
+  $('.d-toc-separator').remove();
+
+  // move appendix elements
+  $('h1.appendix, h2.appendix').each(function(i, val) {
+    $(this).changeElementType('h3');
+  });
+  $('h3.appendix').each(function(i, val) {
+    $(this).nextUntil($('h1, h2, h3')).addBack().appendTo($('.d-appendix'));
+  });
+
+
+  // inject headers into references and footnotes
+  var refs_header = $('<h3></h3>');
+  refs_header.text('References');
+  $('#refs').prepend(refs_header);
+
+  var footnotes_header = $('<h3></h3');
+  footnotes_header.text('Footnotes');
+  $('.footnotes').children('hr').first().replaceWith(footnotes_header);
+
+  // move appendix-bottom entries to the bottom
+  $('.appendix-bottom').appendTo('.d-appendix').children().unwrap();
+  $('.appendix-bottom').remove();
+
+  // remove appendix if it's empty
+  if ($('.d-appendix').children().length === 0)
+    $('.d-appendix').remove();
+
+  // prepend separator above appendix
+  $('.d-appendix').before($('<hr class="section-separator" style="clear: both"/>'));
+
+  // trim code
+  $('pre>code').each(function(i, val) {
+    $(this).html($.trim($(this).html()));
+  });
+
+  // move posts-container right before article
+  $('.posts-container').insertBefore($('.d-article'));
+
+  $('body').addClass('downlevel');
+
+  on_load_complete();
+}
+
+
+function init_common() {
+
+  // jquery plugin to change element types
+  (function($) {
+    $.fn.changeElementType = function(newType) {
+      var attrs = {};
+
+      $.each(this[0].attributes, function(idx, attr) {
+        attrs[attr.nodeName] = attr.nodeValue;
+      });
+
+      this.replaceWith(function() {
+        return $("<" + newType + "/>", attrs).append($(this).contents());
+      });
+    };
+  })(jQuery);
+
+  // prevent underline for linked images
+  $('a > img').parent().css({'border-bottom' : 'none'});
+
+  // mark non-body figures created by knitr chunks as 100% width
+  $('.layout-chunk').each(function(i, val) {
+    var figures = $(this).find('img, .html-widget');
+    if ($(this).attr('data-layout') !== "l-body") {
+      figures.css('width', '100%');
+    } else {
+      figures.css('max-width', '100%');
+      figures.filter("[width]").each(function(i, val) {
+        var fig = $(this);
+        fig.css('width', fig.attr('width') + 'px');
+      });
+
+    }
+  });
+
+  // auto-append index.html to post-preview links in file: protocol
+  // and in rstudio ide preview
+  $('.post-preview').each(function(i, val) {
+    if (window.location.protocol === "file:")
+      $(this).attr('href', $(this).attr('href') + "index.html");
+  });
+
+  // get rid of index.html references in header
+  if (window.location.protocol !== "file:") {
+    $('.distill-site-header a[href]').each(function(i,val) {
+      $(this).attr('href', $(this).attr('href').replace("index.html", "./"));
+    });
+  }
+
+  // add class to pandoc style tables
+  $('tr.header').parent('thead').parent('table').addClass('pandoc-table');
+  $('.kable-table').children('table').addClass('pandoc-table');
+
+  // add figcaption style to table captions
+  $('caption').parent('table').addClass("figcaption");
+
+  // initialize posts list
+  if (window.init_posts_list)
+    window.init_posts_list();
+
+  // implmement disqus comment link
+  $('.disqus-comment-count').click(function() {
+    window.headroom_prevent_pin = true;
+    $('#disqus_thread').toggleClass('hidden');
+    if (!$('#disqus_thread').hasClass('hidden')) {
+      var offset = $(this).offset();
+      $(window).resize();
+      $('html, body').animate({
+        scrollTop: offset.top - 35
+      });
+    }
+  });
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  if (is_downlevel_browser())
+    init_downlevel();
+  else
+    window.addEventListener('WebComponentsReady', init_distill);
+});
+
+</script>
+
+<!--/radix_placeholder_distill-->
+  <script src="../../site_libs/kePrint-0.0.1/kePrint.js"></script>
+  <script src="../../site_libs/jquery-1.11.3/jquery.min.js"></script>
+  <script src="../../site_libs/bowser-1.9.3/bowser.min.js"></script>
+  <script src="../../site_libs/webcomponents-2.0.0/webcomponents.js"></script>
+  <script src="../../site_libs/distill-2.2.21/template.v2.js"></script>
+  <!--radix_placeholder_site_in_header-->
+<style type="text/css">
+.distill-site-nav {
+  color: rgba(255, 255, 255, 0.8);
+  background-color: #455a64;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.distill-site-nav a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.distill-site-nav a:hover {
+  color: white;
+}
+
+.distill-site-header {
+}
+
+.distill-site-footer {
+}
+
+@media print {
+  .distill-site-nav {
+    display: none;
+  }
+}
+
+a {
+  color: #d9230f;
+  text-decoration: none;
+}
+</style>
+<!--/radix_placeholder_site_in_header-->
+
+
+</head>
+
+<body>
+
+<!--radix_placeholder_front_matter-->
+
+<script id="distill-front-matter" type="text/json">
+{"title":"Articles from 2020-01-06","description":"52 new data science research articles were published on 2020-01-06. 20 discussed machine learning.","authors":[{"author":"Bryan Whiting","authorURL":"https://www.bryanwhiting.com","affiliation":"&nbsp;","affiliationURL":"#"}],"publishedDate":"2020-01-07T00:00:00.000-05:00","citationText":"Whiting, 2020"}
+</script>
+
+<!--/radix_placeholder_front_matter-->
+<!--radix_placeholder_navigation_before_body-->
+<header class="header header--fixed" role="banner">
+<nav class="distill-site-nav distill-site-header">
+<div class="nav-left">
+<a href="../../index.html" class="title">The Data Science arXiv</a>
+</div>
+<div class="nav-right">
+<a href="../../index.html">Home</a>
+<a href="../../about.html">About</a>
+<a href="https://github.com/bryanwhiting/ds-arxiv">GitHub</a>
+<a href="../../index.xml">
+<i class="fa fa-rss"></i>
+</a>
+<a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
+</div>
+</nav>
+</header>
+<!--/radix_placeholder_navigation_before_body-->
+<!--radix_placeholder_site_before_body-->
+<!--/radix_placeholder_site_before_body-->
+
+<div class="d-title">
+<h1>Articles from 2020-01-06</h1>
+<p>52 new data science research articles were published on 2020-01-06. 20 discussed machine learning.</p>
+</div>
+
+<div class="d-byline">
+  Bryan Whiting <a href="https://www.bryanwhiting.com" class="uri">https://www.bryanwhiting.com</a> 
+  
+<br/>2020-01-07
+</div>
+
+<div class="d-article">
+<h3 class="d-toc-header">Table of Contents</h3>
+<nav class="d-toc" id="TOC">
+<ul>
+<li><a href="#breakdown-of-arxiv-publication-counts">Breakdown of arXiv Publication Counts</a></li>
+<li><a href="#articles-for-statitstics-machine-learning-econonmetrics-and-finance">Articles for Statitstics, Machine Learning Econonmetrics, and Finance</a><ul>
+<li><a href="#new">: 3 new</a></li>
+<li><a href="#machine-learning--stat-ml-">Machine Learning (stat.ML): 14 new</a></li>
+<li><a href="#machine-learning--cs-lg-">Machine Learning (cs.LG): 18 new</a></li>
+<li><a href="#statistical-finance--q-fin-st-">Statistical Finance (q-fin.ST): 1 new</a></li>
+</ul></li>
+<li><a href="#data-science-arxiv-by-primary-tag">Data Science arXiv by Primary Tag</a><ul>
+<li><a href="#computer-science">Computer Science</a></li>
+<li><a href="#statistics">Statistics</a></li>
+<li><a href="#elec.-eng.-and-systems-science">Elec. Eng. and Systems Science</a></li>
+<li><a href="#physics">Physics</a></li>
+<li><a href="#condensed-matter">Condensed Matter</a></li>
+<li><a href="#mathematics">Mathematics</a></li>
+<li><a href="#quantitative-finance">Quantitative Finance</a></li>
+<li><a href="#other">Other</a></li>
+</ul></li>
+</ul>
+</nav>
+<hr class="d-toc-separator"/>
+<h2 id="breakdown-of-arxiv-publication-counts">Breakdown of arXiv Publication Counts</h2>
+<p>Yesterday’s counts of submitted papers on www.arxiv.org grouped by primary subject. Click the links in the table to be re-directed to the abstracts below. The links under <code>Subject</code> will redirect you to abstracts with the primary subject (there can only be one primary subject on arXiv). The links under <code>Category</code> will redirect you to all publications yesterday with a given tag (primary or secondary).</p>
+<div class="layout-chunk" data-layout="l-body">
+<table class="table table-striped" style="margin-left: auto; margin-right: auto;">
+<caption>
+<span id="tab:summary-table-with-counts">Table 1: </span>Number of articles by subject and primary category. Colored titles represent hyperlinks that take you below to abstracts. Key - Subject: Computer Science (5) means there were 5 articles with primary tag CS. Category: Machine Learning (cs.LG) N = 8 (16) means there were 8 primary articles with the (cs.LG) tag but 16 articles had it as a secondary tag, so there should be 24 in total. Click this link to be taken to all 24. Only select categories are highlighted because they are of particular interest to applied data scientists.
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+Subject
+</th>
+<th style="text-align:left;">
+Category
+</th>
+<th style="text-align:left;">
+N
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;font-weight: bold;vertical-align: top !important;" rowspan="10">
+<a href="#computer-science" style=" font-weight: bold;    color: #d9230f !important;">Computer Science (29)</a>
+</td>
+<td style="text-align:left;">
+Computer Vision and Pattern Recognition (cs.CV)
+</td>
+<td style="text-align:left;">
+9 (2)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="#machine-learning--cs-lg-" style=" font-weight: bold;    color: #d9230f !important;">Machine Learning (cs.LG)</a>
+</td>
+<td style="text-align:left;">
+6 (12)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Software Engineering (cs.SE)
+</td>
+<td style="text-align:left;">
+5
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Artificial Intelligence (cs.AI)
+</td>
+<td style="text-align:left;">
+2 (2)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Neural and Evolutionary Computing (cs.NE)
+</td>
+<td style="text-align:left;">
+2
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Computers and Society (cs.CY)
+</td>
+<td style="text-align:left;">
+1 (1)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Robotics (cs.RO)
+</td>
+<td style="text-align:left;">
+1 (1)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Cryptography and Security (cs.CR)
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Data Structures and Algorithms (cs.DS)
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Information Retrieval (cs.IR)
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;font-weight: bold;vertical-align: top !important;" rowspan="3">
+<a href="#statistics" style=" font-weight: bold;    color: #d9230f !important;">Statistics (9)</a>
+</td>
+<td style="text-align:left;">
+Methodology (stat.ME)
+</td>
+<td style="text-align:left;">
+4
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Computation (stat.CO)
+</td>
+<td style="text-align:left;">
+3
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="#machine-learning--stat-ml-" style=" font-weight: bold;    color: #d9230f !important;">Machine Learning (stat.ML)</a>
+</td>
+<td style="text-align:left;">
+2 (12)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;font-weight: bold;vertical-align: top !important;" rowspan="2">
+<a href="#elec.-eng.%20and%20systems%20science" style=" font-weight: bold;    color: #d9230f !important;">Elec. Eng. and Systems Science (4)</a>
+</td>
+<td style="text-align:left;">
+Image and Video Processing (eess.IV)
+</td>
+<td style="text-align:left;">
+2 (4)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Audio and Speech Processing (eess.AS)
+</td>
+<td style="text-align:left;">
+2
+</td>
+</tr>
+<tr>
+<td style="text-align:left;font-weight: bold;vertical-align: top !important;" rowspan="2">
+<a href="#physics" style=" font-weight: bold;    color: #d9230f !important;">Physics (3)</a>
+</td>
+<td style="text-align:left;">
+Computational Physics (physics.comp-ph)
+</td>
+<td style="text-align:left;">
+2 (2)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Data Analysis, Statistics and Probability (physics.data-an)
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;font-weight: bold;">
+<a href="#condensed-matter" style=" font-weight: bold;    color: #d9230f !important;">Condensed Matter (2)</a>
+</td>
+<td style="text-align:left;">
+Mesoscale and Nanoscale Physics (cond-mat.mes-hall)
+</td>
+<td style="text-align:left;">
+2
+</td>
+</tr>
+<tr>
+<td style="text-align:left;font-weight: bold;">
+<a href="#mathematics" style=" font-weight: bold;    color: #d9230f !important;">Mathematics (2)</a>
+</td>
+<td style="text-align:left;">
+Statistics Theory (math.ST)
+</td>
+<td style="text-align:left;">
+2
+</td>
+</tr>
+<tr>
+<td style="text-align:left;font-weight: bold;vertical-align: top !important;" rowspan="2">
+<a href="#quantitative-finance" style=" font-weight: bold;    color: #d9230f !important;">Quantitative Finance (2)</a>
+</td>
+<td style="text-align:left;">
+Portfolio Management (q-fin.PM)
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="#statistical-finance--q-fin-st-" style=" font-weight: bold;    color: #d9230f !important;">Statistical Finance (q-fin.ST)</a>
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;font-weight: bold;">
+<a href="#other" style=" font-weight: bold;    color: #d9230f !important;">Other (1)</a>
+</td>
+<td style="text-align:left;">
+Instrumentation and Methods for Astrophysics (astro-ph.IM)
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+
+</div>
+<div class="layout-chunk" data-layout="l-body">
+
+</div>
+<h2 id="articles-for-statitstics-machine-learning-econonmetrics-and-finance">Articles for Statitstics, Machine Learning Econonmetrics, and Finance</h2>
+<p>This section contains all articles with any tag of <code>stat.AP</code>, <code>stat.co</code>, <code>stat.ML</code>, <code>cs.LG</code>, <code>q-fin.ST</code>, <code>q-fin.EC</code>, or <code>econ-EM</code>. Only the first two sentences are shown - click the links for more detail.</p>
+<div class="layout-chunk" data-layout="l-screen-inset">
+
+<h3 id="new">: 3 new</h3>
+<table class="table table-striped table-condensed" style="margin-left: auto; margin-right: auto;">
+<tbody>
+<tr grouplength="3">
+<td colspan="1" style="background-color: #666; color: #fff;">
+<strong>NA</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01676v1" style="color: #d9230f">A Spectral Hidden Markov Model for Nonstationary Oscillatory Processes</a></b><br><em>Methodology, Applications</em>. 4 authors. <a href="http://arxiv.org/pdf/2001.01676v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>We propose to model time-varying periodic and oscillatory processes by means of a hidden Markov model where the states are defined through the spectral properties of a periodic regime. The number of states is unknown along with the relevant periodicities, the role and number of which may vary across states. …</summary><br> We address this inference problem by a Bayesian nonparametric hidden Markov model assuming a sticky hierarchical Dirichlet process for the switching dynamics between different states while the periodicities characterizing each state are explored by means of a trans-dimensional Markov chain Monte Carlo sampling step. We develop the full Bayesian inference algorithm and illustrate the use of our proposed methodology for different simulation studies as well as an application related to respiratory research which focuses on the detection of apnea instances in human breathing traces.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01702v1" style="color: #d9230f">Discrete event simulation of point processes: A computational complexity analysis on sparse graphs</a></b><br><em>Computation, Applications</em>. 3 authors. <a href="http://arxiv.org/pdf/2001.01702v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>We derive new discrete event simulation algorithms for marked time point processes. The main idea is to couple a special structure, namely the associated local independence graph, as defined by Didelez arXiv:0710. …</summary><br>5874, with the activity tracking algorithm arXiv:arch-ive/190102412629 for achieving high performance asynchronous simulations. With respect to classical algorithm, this allows reducing drastically the computational complexity, especially when the graph is sparse.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01372v1" style="color: #d9230f">Applying Information Theory to Design Optimal Filters for Photometric Redshifts</a></b><br><em>Information Theory, Applications, Instrumentation and Methods for Astrophysics, Information Theory</em>. 3 authors. <a href="http://arxiv.org/pdf/2001.01372v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>In this paper we apply ideas from information theory to create a method for the design of optimal filters for photometric redshift estimation. We show the method applied to a series of simple example filters in order to motivate an intuition for how photometric redshift estimators respond to the properties of photometric passbands. …</summary><br> We then design a realistic set of six filters covering optical wavelengths that optimize photometric redshifts for <span class="math inline">\(z &amp;lt;= 2.3\)</span> and <span class="math inline">\(i &amp;lt; 25.3\)</span>. We create a simulated catalog for these optimal filters and use our filters with a photometric redshift estimation code to show that we can improve the standard deviation of the photometric redshift error by 7.1% overall and improve outliers 9.9% over the standard filters proposed for the Large Synoptic Survey Telescope (LSST). We compare features of our optimal filters to LSST and find that the LSST filters incorporate key features for optimal photometric redshift estimation. Finally, we describe how information theory can be applied to a range of optimization problems in astronomy.
+</details>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="machine-learning--stat-ml-">Machine Learning (stat.ML): 14 new</h3>
+<table class="table table-striped table-condensed" style="margin-left: auto; margin-right: auto;">
+<tbody>
+<tr grouplength="14">
+<td colspan="1" style="background-color: #666; color: #fff;">
+<strong>Machine Learning (stat.ML)</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01707v1" style="color: #d9230f">Meta-modal Information Flow: A Method for Capturing Multimodal Modular Disconnectivity in Schizophrenia</a></b><br><em>Image and Video Processing, Machine Learning, Machine Learning</em>. 16 authors. <a href="http://arxiv.org/pdf/2001.01707v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Objective: Multimodal measurements of the same phenomena provide complementary information and highlight different perspectives, albeit each with their own limitations. A focus on a single modality may lead to incorrect inferences, which is especially important when a studied phenomenon is a disease. …</summary><br> In this paper, we introduce a method that takes advantage of multimodal data in addressing the hypotheses of disconnectivity and dysfunction within schizophrenia (SZ). Methods: We start with estimating and visualizing links within and among extracted multimodal data features using a Gaussian graphical model (GGM). We then propose a modularity-based method that can be applied to the GGM to identify links that are associated with mental illness across a multimodal data set. Through simulation and real data, we show our approach reveals important information about disease-related network disruptions that are missed with a focus on a single modality. We use functional MRI (fMRI), diffusion MRI (dMRI), and structural MRI (sMRI) to compute the fractional amplitude of low frequency fluctuations (fALFF), fractional anisotropy (FA), and gray matter (GM) concentration maps. These three modalities are analyzed using our modularity method. Results: Our results show missing links that are only captured by the cross-modal information that may play an important role in disconnectivity between the components. Conclusion: We identified multimodal (fALFF, FA and GM) disconnectivity in the default mode network area in patients with SZ, which would not have been detectable in a single modality. Significance: The proposed approach provides an important new tool for capturing information that is distributed among multiple imaging modalities.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01699v1" style="color: #d9230f">Development, Demonstration, and Validation of Data-driven Compact Diode Models for Circuit Simulation and Analysis</a></b><br><em>Machine Learning, Computational Engineering, Finance, and Science, Machine Learning</em>. 8 authors. <a href="http://arxiv.org/pdf/2001.01699v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Compact semiconductor device models are essential for efficiently designing and analyzing large circuits. However, traditional compact model development requires a large amount of manual effort and can span many years. …</summary><br> Moreover, inclusion of new physics (eg, radiation effects) into an existing compact model is not trivial and may require redevelopment from scratch. Machine Learning (ML) techniques have the potential to automate and significantly speed up the development of compact models. In addition, ML provides a range of modeling options that can be used to develop hierarchies of compact models tailored to specific circuit design stages. In this paper, we explore three such options: (1) table-based interpolation, (2)Generalized Moving Least-Squares, and (3) feed-forward Deep Neural Networks, to develop compact models for a p-n junction diode. We evaluate the performance of these “data-driven” compact models by (1) comparing their voltage-current characteristics against laboratory data, and (2) building a bridge rectifier circuit using these devices, predicting the circuit’s behavior using SPICE-like circuit simulations, and then comparing these predictions against laboratory measurements of the same circuit.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01578v1" style="color: #d9230f">Dissecting Catastrophic Forgetting in Continual Learning by Deep Visualization</a></b><br><em>Machine Learning, Machine Learning</em>. 6 authors. <a href="http://arxiv.org/pdf/2001.01578v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Interpreting the behaviors of Deep Neural Networks (usually considered as a black box) is critical especially when they are now being widely adopted over diverse aspects of human life. Taking the advancements from Explainable Artificial Intelligent, this paper proposes a novel technique called Auto DeepVis to dissect catastrophic forgetting in continual learning. …</summary><br> A new method to deal with catastrophic forgetting named critical freezing is also introduced upon investigating the dilemma by Auto DeepVis. Experiments on a captioning model meticulously present how catastrophic forgetting happens, particularly showing which components are forgetting or changing. The effectiveness of our technique is then assessed; and more precisely, critical freezing claims the best performance on both previous and coming tasks over baselines, proving the capability of the investigation. Our techniques could not only be supplementary to existing solutions for completely eradicating catastrophic forgetting for life-long learning but also explainable.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01432v1" style="color: #d9230f">Deep Learning-Based Solvability of Underdetermined Inverse Problems in Medical Imaging</a></b><br><em>Image and Video Processing, Machine Learning, Machine Learning</em>. 5 authors. <a href="http://arxiv.org/pdf/2001.01432v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Recently, with the significant developments in deep learning techniques, solving underdetermined inverse problems has become one of the major concerns in the medical imaging domain. Typical examples include undersampled magnetic resonance imaging, interior tomography, and sparse-view computed tomography, where deep learning techniques have achieved excellent performances. …</summary><br> Although deep learning methods appear to overcome the limitations of existing mathematical methods when handling various underdetermined problems, there is a lack of rigorous mathematical foundations that would allow us to elucidate the reasons for the remarkable performance of deep learning methods. This study focuses on learning the causal relationship regarding the structure of the training data suitable for deep learning, to solve highly underdetermined inverse problems. We observe that a majority of the problems of solving underdetermined linear systems in medical imaging are highly non-linear. Furthermore, we analyze if a desired reconstruction map can be learnable from the training data and underdetermined system.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01383v1" style="color: #d9230f">A Block-based Generative Model for Attributed Networks Embedding</a></b><br><em>Machine Learning, Machine Learning</em>. 5 authors. <a href="http://arxiv.org/pdf/2001.01383v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Attributed network embedding has attracted plenty of interests in recent years. It aims to learn task-independent, low-dimension, and continuous vectors for nodes preserving both topology and attribute information. …</summary><br> Most existing methods, such as GCN and its variations, mainly focus on the local information, i.e., the attributes of the neighbors. Thus, they have been well studied for assortative networks but ignored disassortative networks, which are common in real scenes. To address this issue, we propose a block-based generative model for attributed network embedding on a probability perspective inspired by the stochastic block model (SBM). Specifically, the nodes are assigned to several blocks wherein the nodes in the same block share the similar link patterns. These patterns can define assortative networks containing communities or disassortative networks with the multipartite, hub, or any hybrid structures. Concerning the attribute information, we assume that each node has a hidden embedding related to its assigned block, and then we use a neural network to characterize the nonlinearity between the node embedding and its attribute. We perform extensive experiments on real-world and synthetic attributed networks, and the experimental results show that our proposed method remarkably outperforms state-of-the-art embedding methods for both clustering and classification tasks, especially on disassortative networks.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01666v1" style="color: #d9230f">MREC: a fast and versatile framework for aligning and matching data with applications to single cell molecular data</a></b><br><em>Genomics, Machine Learning, Machine Learning</em>. 5 authors. <a href="http://arxiv.org/pdf/2001.01666v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Comparing and aligning large datasets is a pervasive problem occurring across many different knowledge domains. We introduce and study MREC, a recursive decomposition algorithm for computing matchings between data sets. …</summary><br> The basic idea is to partition the data, match the partitions, and then recursively match the points within each pair of identified partitions. The matching itself is done using black box matching procedures that are too expensive to run on the entire data set. Using an absolute measure of the quality of a matching, the framework supports optimization over parameters including partitioning procedures and matching algorithms. By design, MREC can be applied to extremely large data sets. We analyze the procedure to describe when we can expect it to work well and demonstrate its flexibility and power by applying it to a number of alignment problems arising in the analysis of single cell molecular data.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01523v1" style="color: #d9230f">Think Locally, Act Globally: Federated Learning with Local and Global Representations</a></b><br><em>Machine Learning, Distributed, Parallel, and Cluster Computing, Machine Learning</em>. 5 authors. <a href="http://arxiv.org/pdf/2001.01523v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Federated learning is an emerging research paradigm to train models on private data distributed over multiple devices. A key challenge involves keeping private all the data on each device and training a global model only by communicating parameters and updates. …</summary><br> Overcoming this problem relies on the global model being sufficiently compact so that the parameters can be efficiently sent over communication channels such as wireless internet. Given the recent trend towards building deeper and larger neural networks, deploying such models in federated settings on real-world tasks is becoming increasingly difficult. To this end, we propose to augment federated learning with local representation learning on each device to learn useful and compact features from raw data. As a result, the global model can be smaller since it only operates on higher-level local representations. We show that our proposed method achieves superior or competitive results when compared to traditional federated approaches on a suite of publicly available real-world datasets spanning image recognition (MNIST, CIFAR) and multimodal learning (VQA). Our choice of local representation learning also reduces the number of parameters and updates that need to be communicated to and from the global model, thereby reducing the bottleneck in terms of communication cost. Finally, we show that our local models provide flexibility in dealing with online heterogeneous data and can be easily modified to learn fair representations that obfuscate protected attributes such as race, age, and gender, a feature crucial to preserving the privacy of on-device data.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01612v1" style="color: #d9230f">A Note on Portfolio Optimization with Quadratic Transaction Costs</a></b><br><em>Portfolio Management, Computational Finance, Machine Learning</em>. 4 authors. <a href="http://arxiv.org/pdf/2001.01612v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>In this short note, we consider mean-variance optimized portfolios with transaction costs. We show that introducing quadratic transaction costs makes the optimization problem more difficult than using linear transaction costs. …</summary><br> The reason lies in the specification of the budget constraint, which is no longer linear. We provide numerical algorithms for solving this issue and illustrate how transaction costs may considerably impact the expected returns of optimized portfolios.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01520v1" style="color: #d9230f">Combining data assimilation and machine learning to emulate a dynamical model from sparse and noisy observations: a case study with the Lorenz 96 model</a></b><br><em>Atmospheric and Oceanic Physics, Machine Learning, Machine Learning</em>. 4 authors. <a href="http://arxiv.org/pdf/2001.01520v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>A novel method, based on the combination of data assimilation and machine learning is introduced. The new hybrid approach is designed for a two-fold scope: (i) emulating hidden, possibly chaotic, dynamics and (ii) predicting their future states. …</summary><br> The method consists in applying iteratively a data assimilation step, here an ensemble Kalman filter, and a neural network. Data assimilation is used to optimally combine a surrogate model with sparse noisy data. The output analysis is spatially complete and is used as a training set by the neural network to update the surrogate model. The two steps are then repeated iteratively. Numerical experiments have been carried out using the chaotic 40-variables Lorenz 96 model, proving both convergence and statistical skills of the proposed hybrid approach. The surrogate model shows short-term forecast skills up to two Lyapunov times, the retrieval of positive Lyapunov exponents as well as the more energetic frequencies of the power density spectrum. The sensitivity of the method to critical setup parameters is also presented: forecast skills decrease smoothly with increased observational noise but drops abruptly if less than half of the model domain is observed. The successful synergy between data assimilation and machine learning, proven here with a low-dimensional system, encourages further investigation of such hybrids with more sophisticated dynamics.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01620v1" style="color: #d9230f">Optimal Options for Multi-Task Reinforcement Learning Under Time Constraints</a></b><br><em>Machine Learning, Machine Learning, Artificial Intelligence</em>. 3 authors. <a href="http://arxiv.org/pdf/2001.01620v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Reinforcement learning can greatly benefit from the use of options as a way of encoding recurring behaviours and to foster exploration. An important open problem is how can an agent autonomously learn useful options when solving particular distributions of related tasks. …</summary><br> We investigate some of the conditions that influence optimality of options, in settings where agents have a limited time budget for learning each task and the task distribution might involve problems with different levels of similarity. We directly search for optimal option sets and show that the discovered options significantly differ depending on factors such as the available learning time budget and that the found options outperform popular option-generation heuristics.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01536v1" style="color: #d9230f">Learning From Multiple Experts: Self-paced Knowledge Distillation for Long-tailed Classification</a></b><br><em>Computer Vision and Pattern Recognition, Machine Learning, Machine Learning</em>. 2 authors. <a href="http://arxiv.org/pdf/2001.01536v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>In real-world scenarios, data tends to exhibit a long-tailed, imbalanced distribution. Developing algorithms to deal with such long-tailed distribution thus becomes indispensable in practical applications. …</summary><br> In this paper, we propose a novel self-paced knowledge distillation framework, termed Learning From Multiple Experts (LFME). Our method is inspired by the observation that deep Convolutional Neural Networks (CNNs) trained on less imbalanced subsets of the entire long-tailed distribution often yield better performances than their jointly-trained counterparts. We refer to these models as <code>Expert Models', and the proposed LFME framework aggregates the knowledge from multiple</code>Experts’ to learn a unified student model. Specifically, the proposed framework involves two levels of self-paced learning schedules: Self-paced Expert Selection and Self-paced Instance Selection, so that the knowledge is adaptively transferred from multiple <code>Experts' to the</code>Student’. In order to verify the effectiveness of our proposed framework, we conduct extensive experiments on two long-tailed benchmark classification datasets. The experimental results demonstrate that our method is able to achieve superior performances compared to the state-of-the-art methods. We also show that our method can be easily plugged into state-of-the-art long-tailed classification algorithms for further improvements.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01669v1" style="color: #d9230f">Topic Extraction of Crawled Documents Collection using Correlated Topic Model in MapReduce Framework</a></b><br><em>Information Retrieval, Machine Learning, Computation and Language, Machine Learning</em>. 2 authors. <a href="http://arxiv.org/pdf/2001.01669v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>The tremendous increase in the amount of available research documents impels researchers to propose topic models to extract the latent semantic themes of a documents collection. However, how to extract the hidden topics of the documents collection has become a crucial task for many topic model applications. …</summary><br> Moreover, conventional topic modeling approaches suffer from the scalability problem when the size of documents collection increases. In this paper, the Correlated Topic Model with variational Expectation-Maximization algorithm is implemented in MapReduce framework to solve the scalability problem. The proposed approach utilizes the dataset crawled from the public digital library. In addition, the full-texts of the crawled documents are analysed to enhance the accuracy of MapReduce CTM. The experiments are conducted to demonstrate the performance of the proposed algorithm. From the evaluation, the proposed approach has a comparable performance in terms of topic coherences with LDA implemented in MapReduce framework.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01618v1" style="color: #d9230f">ARA : Aggregated RAPPOR and Analysis for Centralized Differential Privacy</a></b><br><em>Machine Learning, Machine Learning, Cryptography and Security</em>. 2 authors. <a href="http://arxiv.org/pdf/2001.01618v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Differential privacy(DP) has now become a standard in case of sensitive statistical data analysis. The two main approaches in DP is local and central. …</summary><br> Both the approaches have a clear gap in terms of data storing,amount of data to be analyzed, analysis, speed etc. Local wins on the speed. We have tested the state of the art standard RAPPOR which is a local approach and supported this gap. Our work completely focuses on that part too. Here, we propose a model which initially collects RAPPOR reports from multiple clients which are then pushed to a Tf-Idf estimation model. The Tf-Idf estimation model then estimates the reports on the basis of the occurrence of “on bit” in a particular position and its contribution to that position. Thus it generates a centralized differential privacy analysis from multiple clients. Our model successfully and efficiently analyzed the major truth value every time.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01532v1" style="color: #d9230f">Estimation of the spatial weighting matrix for regular lattice data – An adaptive lasso approach with cross-sectional resampling</a></b><br><em>Computation, Machine Learning</em>. 2 authors. <a href="http://arxiv.org/pdf/2001.01532v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Spatial econometric research typically relies on the assumption that the spatial dependence structure is known in advance and is represented by a deterministic spatial weights matrix. Contrary to classical approaches, we investigate the estimation of sparse spatial dependence structures for regular lattice data. …</summary><br> In particular, an adaptive least absolute shrinkage and selection operator (lasso) is used to select and estimate the individual connections of the spatial weights matrix. To recover the spatial dependence structure, we propose cross-sectional resampling, assuming that the random process is exchangeable. The estimation procedure is based on a two-step approach to circumvent simultaneity issues that typically arise from endogenous spatial autoregressive dependencies. The two-step adaptive lasso approach with cross-sectional resampling is verified using Monte Carlo simulations. Eventually, we apply the procedure to model nitrogen dioxide (<span class="math inline">\(\mathrm{NO_2}\)</span>) concentrations and show that estimating the spatial dependence structure contrary to using prespecified weights matrices improves the prediction accuracy considerably.
+</details>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="machine-learning--cs-lg-">Machine Learning (cs.LG): 18 new</h3>
+<table class="table table-striped table-condensed" style="margin-left: auto; margin-right: auto;">
+<tbody>
+<tr grouplength="18">
+<td colspan="1" style="background-color: #666; color: #fff;">
+<strong>Machine Learning (cs.LG)</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01707v1" style="color: #d9230f">Meta-modal Information Flow: A Method for Capturing Multimodal Modular Disconnectivity in Schizophrenia</a></b><br><em>Image and Video Processing, Machine Learning, Machine Learning</em>. 16 authors. <a href="http://arxiv.org/pdf/2001.01707v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Objective: Multimodal measurements of the same phenomena provide complementary information and highlight different perspectives, albeit each with their own limitations. A focus on a single modality may lead to incorrect inferences, which is especially important when a studied phenomenon is a disease. …</summary><br> In this paper, we introduce a method that takes advantage of multimodal data in addressing the hypotheses of disconnectivity and dysfunction within schizophrenia (SZ). Methods: We start with estimating and visualizing links within and among extracted multimodal data features using a Gaussian graphical model (GGM). We then propose a modularity-based method that can be applied to the GGM to identify links that are associated with mental illness across a multimodal data set. Through simulation and real data, we show our approach reveals important information about disease-related network disruptions that are missed with a focus on a single modality. We use functional MRI (fMRI), diffusion MRI (dMRI), and structural MRI (sMRI) to compute the fractional amplitude of low frequency fluctuations (fALFF), fractional anisotropy (FA), and gray matter (GM) concentration maps. These three modalities are analyzed using our modularity method. Results: Our results show missing links that are only captured by the cross-modal information that may play an important role in disconnectivity between the components. Conclusion: We identified multimodal (fALFF, FA and GM) disconnectivity in the default mode network area in patients with SZ, which would not have been detectable in a single modality. Significance: The proposed approach provides an important new tool for capturing information that is distributed among multiple imaging modalities.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01599v1" style="color: #d9230f">Multi-scale domain-adversarial multiple-instance CNN for cancer subtype classification with non-annotated histopathological images</a></b><br><em>Computer Vision and Pattern Recognition, Image and Video Processing, Machine Learning</em>. 10 authors. <a href="http://arxiv.org/pdf/2001.01599v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>We propose a new method for cancer subtype classification from histopathological images, which can automatically detect tumor-specific features in a given whole slide image (WSI). The cancer subtype should be classified by referring to a WSI, i. …</summary><br>e., a large size image (typically 40,000x40,000 pixels) of an entire pathological tissue slide, which consists of cancer and non-cancer portions. One difficulty for constructing cancer subtype classifiers comes from the high cost needed for annotating WSIs; without annotation, we have to construct the tumor region detector without knowing true labels. Furthermore, both global and local image features must be extracted from the WSI by changing the magnifications of the image. In addition, the image features should be stably detected against the variety/difference of staining among the hospitals/specimen. In this paper, we develop a new CNN-based cancer subtype classification method by effectively combining multiple-instance, domain adversarial, and multi-scale learning frameworks that can overcome these practical difficulties. When the proposed method was applied to malignant lymphoma subtype classifications of 196 cases collected from multiple hospitals, the classification performance was significantly better than the standard CNN or other conventional methods, and the accuracy was favorably compared to that of standard pathologists. In addition, we confirmed by immunostaining and expert pathologist’s visual inspections that the tumor regions were correctly detected.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01699v1" style="color: #d9230f">Development, Demonstration, and Validation of Data-driven Compact Diode Models for Circuit Simulation and Analysis</a></b><br><em>Machine Learning, Computational Engineering, Finance, and Science, Machine Learning</em>. 8 authors. <a href="http://arxiv.org/pdf/2001.01699v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Compact semiconductor device models are essential for efficiently designing and analyzing large circuits. However, traditional compact model development requires a large amount of manual effort and can span many years. …</summary><br> Moreover, inclusion of new physics (eg, radiation effects) into an existing compact model is not trivial and may require redevelopment from scratch. Machine Learning (ML) techniques have the potential to automate and significantly speed up the development of compact models. In addition, ML provides a range of modeling options that can be used to develop hierarchies of compact models tailored to specific circuit design stages. In this paper, we explore three such options: (1) table-based interpolation, (2)Generalized Moving Least-Squares, and (3) feed-forward Deep Neural Networks, to develop compact models for a p-n junction diode. We evaluate the performance of these “data-driven” compact models by (1) comparing their voltage-current characteristics against laboratory data, and (2) building a bridge rectifier circuit using these devices, predicting the circuit’s behavior using SPICE-like circuit simulations, and then comparing these predictions against laboratory measurements of the same circuit.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01578v1" style="color: #d9230f">Dissecting Catastrophic Forgetting in Continual Learning by Deep Visualization</a></b><br><em>Machine Learning, Machine Learning</em>. 6 authors. <a href="http://arxiv.org/pdf/2001.01578v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Interpreting the behaviors of Deep Neural Networks (usually considered as a black box) is critical especially when they are now being widely adopted over diverse aspects of human life. Taking the advancements from Explainable Artificial Intelligent, this paper proposes a novel technique called Auto DeepVis to dissect catastrophic forgetting in continual learning. …</summary><br> A new method to deal with catastrophic forgetting named critical freezing is also introduced upon investigating the dilemma by Auto DeepVis. Experiments on a captioning model meticulously present how catastrophic forgetting happens, particularly showing which components are forgetting or changing. The effectiveness of our technique is then assessed; and more precisely, critical freezing claims the best performance on both previous and coming tasks over baselines, proving the capability of the investigation. Our techniques could not only be supplementary to existing solutions for completely eradicating catastrophic forgetting for life-long learning but also explainable.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01469v1" style="color: #d9230f">TableNet: Deep Learning model for end-to-end Table detection and Tabular data extraction from Scanned Document Images</a></b><br><em>Computer Vision and Pattern Recognition, Image and Video Processing, Machine Learning</em>. 5 authors. <a href="http://arxiv.org/pdf/2001.01469v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>With the widespread use of mobile phones and scanners to photograph and upload documents, the need for extracting the information trapped in unstructured document images such as retail receipts, insurance claim forms and financial invoices is becoming more acute. A major hurdle to this objective is that these images often contain information in the form of tables and extracting data from tabular sub-images presents a unique set of challenges. …</summary><br> This includes accurate detection of the tabular region within an image, and subsequently detecting and extracting information from the rows and columns of the detected table. While some progress has been made in table detection, extracting the table contents is still a challenge since this involves more fine grained table structure(rows &amp; columns) recognition. Prior approaches have attempted to solve the table detection and structure recognition problems independently using two separate models. In this paper, we propose TableNet: a novel end-to-end deep learning model for both table detection and structure recognition. The model exploits the interdependence between the twin tasks of table detection and table structure recognition to segment out the table and column regions. This is followed by semantic rule-based row extraction from the identified tabular sub-regions. The proposed model and extraction approach was evaluated on the publicly available ICDAR 2013 and Marmot Table datasets obtaining state of the art results. Additionally, we demonstrate that feeding additional semantic features further improves model performance and that the model exhibits transfer learning across datasets. Another contribution of this paper is to provide additional table structure annotations for the Marmot data, which currently only has annotations for table detection.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01432v1" style="color: #d9230f">Deep Learning-Based Solvability of Underdetermined Inverse Problems in Medical Imaging</a></b><br><em>Image and Video Processing, Machine Learning, Machine Learning</em>. 5 authors. <a href="http://arxiv.org/pdf/2001.01432v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Recently, with the significant developments in deep learning techniques, solving underdetermined inverse problems has become one of the major concerns in the medical imaging domain. Typical examples include undersampled magnetic resonance imaging, interior tomography, and sparse-view computed tomography, where deep learning techniques have achieved excellent performances. …</summary><br> Although deep learning methods appear to overcome the limitations of existing mathematical methods when handling various underdetermined problems, there is a lack of rigorous mathematical foundations that would allow us to elucidate the reasons for the remarkable performance of deep learning methods. This study focuses on learning the causal relationship regarding the structure of the training data suitable for deep learning, to solve highly underdetermined inverse problems. We observe that a majority of the problems of solving underdetermined linear systems in medical imaging are highly non-linear. Furthermore, we analyze if a desired reconstruction map can be learnable from the training data and underdetermined system.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01383v1" style="color: #d9230f">A Block-based Generative Model for Attributed Networks Embedding</a></b><br><em>Machine Learning, Machine Learning</em>. 5 authors. <a href="http://arxiv.org/pdf/2001.01383v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Attributed network embedding has attracted plenty of interests in recent years. It aims to learn task-independent, low-dimension, and continuous vectors for nodes preserving both topology and attribute information. …</summary><br> Most existing methods, such as GCN and its variations, mainly focus on the local information, i.e., the attributes of the neighbors. Thus, they have been well studied for assortative networks but ignored disassortative networks, which are common in real scenes. To address this issue, we propose a block-based generative model for attributed network embedding on a probability perspective inspired by the stochastic block model (SBM). Specifically, the nodes are assigned to several blocks wherein the nodes in the same block share the similar link patterns. These patterns can define assortative networks containing communities or disassortative networks with the multipartite, hub, or any hybrid structures. Concerning the attribute information, we assume that each node has a hidden embedding related to its assigned block, and then we use a neural network to characterize the nonlinearity between the node embedding and its attribute. We perform extensive experiments on real-world and synthetic attributed networks, and the experimental results show that our proposed method remarkably outperforms state-of-the-art embedding methods for both clustering and classification tasks, especially on disassortative networks.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01377v1" style="color: #d9230f">High-speed Autonomous Drifting with Deep Reinforcement Learning</a></b><br><em>Robotics, Systems and Control, Machine Learning</em>. 5 authors. <a href="http://arxiv.org/pdf/2001.01377v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Drifting is a complicated task for autonomous vehicle control. Most traditional methods in this area are based on motion equations derived by the understanding of vehicle dynamics, which is difficult to be modeled precisely. …</summary><br> We propose a robust drift controller without explicit motion equations, which is based on the latest model-free deep reinforcement learning algorithm soft actor-critic. The drift control problem is formulated as a trajectory following task, where the errorbased state and reward are designed. After being trained on tracks with different levels of difficulty, our controller is capable of making the vehicle drift through various sharp corners quickly and stably in the unseen map. The proposed controller is further shown to have excellent generalization ability, which can directly handle unseen vehicle types with different physical properties, such as mass, tire friction, etc.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01666v1" style="color: #d9230f">MREC: a fast and versatile framework for aligning and matching data with applications to single cell molecular data</a></b><br><em>Genomics, Machine Learning, Machine Learning</em>. 5 authors. <a href="http://arxiv.org/pdf/2001.01666v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Comparing and aligning large datasets is a pervasive problem occurring across many different knowledge domains. We introduce and study MREC, a recursive decomposition algorithm for computing matchings between data sets. …</summary><br> The basic idea is to partition the data, match the partitions, and then recursively match the points within each pair of identified partitions. The matching itself is done using black box matching procedures that are too expensive to run on the entire data set. Using an absolute measure of the quality of a matching, the framework supports optimization over parameters including partitioning procedures and matching algorithms. By design, MREC can be applied to extremely large data sets. We analyze the procedure to describe when we can expect it to work well and demonstrate its flexibility and power by applying it to a number of alignment problems arising in the analysis of single cell molecular data.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01523v1" style="color: #d9230f">Think Locally, Act Globally: Federated Learning with Local and Global Representations</a></b><br><em>Machine Learning, Distributed, Parallel, and Cluster Computing, Machine Learning</em>. 5 authors. <a href="http://arxiv.org/pdf/2001.01523v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Federated learning is an emerging research paradigm to train models on private data distributed over multiple devices. A key challenge involves keeping private all the data on each device and training a global model only by communicating parameters and updates. …</summary><br> Overcoming this problem relies on the global model being sufficiently compact so that the parameters can be efficiently sent over communication channels such as wireless internet. Given the recent trend towards building deeper and larger neural networks, deploying such models in federated settings on real-world tasks is becoming increasingly difficult. To this end, we propose to augment federated learning with local representation learning on each device to learn useful and compact features from raw data. As a result, the global model can be smaller since it only operates on higher-level local representations. We show that our proposed method achieves superior or competitive results when compared to traditional federated approaches on a suite of publicly available real-world datasets spanning image recognition (MNIST, CIFAR) and multimodal learning (VQA). Our choice of local representation learning also reduces the number of parameters and updates that need to be communicated to and from the global model, thereby reducing the bottleneck in terms of communication cost. Finally, we show that our local models provide flexibility in dealing with online heterogeneous data and can be easily modified to learn fair representations that obfuscate protected attributes such as race, age, and gender, a feature crucial to preserving the privacy of on-device data.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01613v1" style="color: #d9230f">Chained Representation Cycling: Learning to Estimate 3D Human Pose and Shape by Cycling Between Representations</a></b><br><em>Computer Vision and Pattern Recognition, Machine Learning</em>. 4 authors. <a href="http://arxiv.org/pdf/2001.01613v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>The goal of many computer vision systems is to transform image pixels into 3D representations. Recent popular models use neural networks to regress directly from pixels to 3D object parameters. …</summary><br> Such an approach works well when supervision is available, but in problems like human pose and shape estimation, it is difficult to obtain natural images with 3D ground truth. To go one step further, we propose a new architecture that facilitates unsupervised, or lightly supervised, learning. The idea is to break the problem into a series of transformations between increasingly abstract representations. Each step involves a cycle designed to be learnable without annotated training data, and the chain of cycles delivers the final solution. Specifically, we use 2D body part segments as an intermediate representation that contains enough information to be lifted to 3D, and at the same time is simple enough to be learned in an unsupervised way. We demonstrate the method by learning 3D human pose and shape from un-paired and un-annotated images. We also explore varying amounts of paired data and show that cycling greatly alleviates the need for paired data. While we present results for modeling humans, our formulation is general and can be applied to other vision problems.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01697v1" style="color: #d9230f">Social Media Attributions in the Context of Water Crisis</a></b><br><em>Machine Learning, Computers and Society</em>. 4 authors. <a href="http://arxiv.org/pdf/2001.01697v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Attribution of natural disasters/collective misfortune is a widely-studied political science problem. However, such studies are typically survey-centric or rely on a handful of experts to weigh in on the matter. …</summary><br> In this paper, we explore how can we use social media data and an AI-driven approach to complement traditional surveys and automatically extract attribution factors. We focus on the most-recent Chennai water crisis which started off as a regional issue but rapidly escalated into a discussion topic with global importance following alarming water-crisis statistics. Specifically, we present a novel prediction task of attribution tie detection which identifies the factors held responsible for the crisis (e.g., poor city planning, exploding population etc.). On a challenging data set constructed from YouTube comments (72,098 comments posted by 43,859 users on 623 relevant videos to the crisis), we present a neural classifier to extract attribution ties that achieved a reasonable performance (Accuracy: 81.34% on attribution detection and 71.19% on attribution resolution).
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01520v1" style="color: #d9230f">Combining data assimilation and machine learning to emulate a dynamical model from sparse and noisy observations: a case study with the Lorenz 96 model</a></b><br><em>Atmospheric and Oceanic Physics, Machine Learning, Machine Learning</em>. 4 authors. <a href="http://arxiv.org/pdf/2001.01520v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>A novel method, based on the combination of data assimilation and machine learning is introduced. The new hybrid approach is designed for a two-fold scope: (i) emulating hidden, possibly chaotic, dynamics and (ii) predicting their future states. …</summary><br> The method consists in applying iteratively a data assimilation step, here an ensemble Kalman filter, and a neural network. Data assimilation is used to optimally combine a surrogate model with sparse noisy data. The output analysis is spatially complete and is used as a training set by the neural network to update the surrogate model. The two steps are then repeated iteratively. Numerical experiments have been carried out using the chaotic 40-variables Lorenz 96 model, proving both convergence and statistical skills of the proposed hybrid approach. The surrogate model shows short-term forecast skills up to two Lyapunov times, the retrieval of positive Lyapunov exponents as well as the more energetic frequencies of the power density spectrum. The sensitivity of the method to critical setup parameters is also presented: forecast skills decrease smoothly with increased observational noise but drops abruptly if less than half of the model domain is observed. The successful synergy between data assimilation and machine learning, proven here with a low-dimensional system, encourages further investigation of such hybrids with more sophisticated dynamics.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01620v1" style="color: #d9230f">Optimal Options for Multi-Task Reinforcement Learning Under Time Constraints</a></b><br><em>Machine Learning, Machine Learning, Artificial Intelligence</em>. 3 authors. <a href="http://arxiv.org/pdf/2001.01620v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Reinforcement learning can greatly benefit from the use of options as a way of encoding recurring behaviours and to foster exploration. An important open problem is how can an agent autonomously learn useful options when solving particular distributions of related tasks. …</summary><br> We investigate some of the conditions that influence optimality of options, in settings where agents have a limited time budget for learning each task and the task distribution might involve problems with different levels of similarity. We directly search for optimal option sets and show that the discovered options significantly differ depending on factors such as the available learning time budget and that the found options outperform popular option-generation heuristics.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01536v1" style="color: #d9230f">Learning From Multiple Experts: Self-paced Knowledge Distillation for Long-tailed Classification</a></b><br><em>Computer Vision and Pattern Recognition, Machine Learning, Machine Learning</em>. 2 authors. <a href="http://arxiv.org/pdf/2001.01536v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>In real-world scenarios, data tends to exhibit a long-tailed, imbalanced distribution. Developing algorithms to deal with such long-tailed distribution thus becomes indispensable in practical applications. …</summary><br> In this paper, we propose a novel self-paced knowledge distillation framework, termed Learning From Multiple Experts (LFME). Our method is inspired by the observation that deep Convolutional Neural Networks (CNNs) trained on less imbalanced subsets of the entire long-tailed distribution often yield better performances than their jointly-trained counterparts. We refer to these models as <code>Expert Models', and the proposed LFME framework aggregates the knowledge from multiple</code>Experts’ to learn a unified student model. Specifically, the proposed framework involves two levels of self-paced learning schedules: Self-paced Expert Selection and Self-paced Instance Selection, so that the knowledge is adaptively transferred from multiple <code>Experts' to the</code>Student’. In order to verify the effectiveness of our proposed framework, we conduct extensive experiments on two long-tailed benchmark classification datasets. The experimental results demonstrate that our method is able to achieve superior performances compared to the state-of-the-art methods. We also show that our method can be easily plugged into state-of-the-art long-tailed classification algorithms for further improvements.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01678v1" style="color: #d9230f">How neural networks find generalizable solutions: Self-tuned annealing in deep learning</a></b><br><em>Adaptation and Self-Organizing Systems, Data Analysis, Statistics and Probability, Machine Learning, Statistical Mechanics</em>. 2 authors. <a href="http://arxiv.org/pdf/2001.01678v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Despite the tremendous success of Stochastic Gradient Descent (SGD) algorithm in deep learning, little is known about how SGD finds generalizable solutions in the high-dimensional weight space. By analyzing the learning dynamics and loss function landscape, we discover a robust inverse relation between the weight variance and the landscape flatness (inverse of curvature) for all SGD-based learning algorithms. …</summary><br> To explain the inverse variance-flatness relation, we develop a random landscape theory, which shows that the SGD noise strength (effective temperature) depends inversely on the landscape flatness. Our study indicates that SGD attains a self-tuned landscape-dependent annealing strategy to find generalizable solutions at the flat minima of the landscape. Finally, we demonstrate how these new theoretical insights lead to more efficient algorithms, e.g., for avoiding catastrophic forgetting.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01669v1" style="color: #d9230f">Topic Extraction of Crawled Documents Collection using Correlated Topic Model in MapReduce Framework</a></b><br><em>Information Retrieval, Machine Learning, Computation and Language, Machine Learning</em>. 2 authors. <a href="http://arxiv.org/pdf/2001.01669v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>The tremendous increase in the amount of available research documents impels researchers to propose topic models to extract the latent semantic themes of a documents collection. However, how to extract the hidden topics of the documents collection has become a crucial task for many topic model applications. …</summary><br> Moreover, conventional topic modeling approaches suffer from the scalability problem when the size of documents collection increases. In this paper, the Correlated Topic Model with variational Expectation-Maximization algorithm is implemented in MapReduce framework to solve the scalability problem. The proposed approach utilizes the dataset crawled from the public digital library. In addition, the full-texts of the crawled documents are analysed to enhance the accuracy of MapReduce CTM. The experiments are conducted to demonstrate the performance of the proposed algorithm. From the evaluation, the proposed approach has a comparable performance in terms of topic coherences with LDA implemented in MapReduce framework.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01618v1" style="color: #d9230f">ARA : Aggregated RAPPOR and Analysis for Centralized Differential Privacy</a></b><br><em>Machine Learning, Machine Learning, Cryptography and Security</em>. 2 authors. <a href="http://arxiv.org/pdf/2001.01618v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Differential privacy(DP) has now become a standard in case of sensitive statistical data analysis. The two main approaches in DP is local and central. …</summary><br> Both the approaches have a clear gap in terms of data storing,amount of data to be analyzed, analysis, speed etc. Local wins on the speed. We have tested the state of the art standard RAPPOR which is a local approach and supported this gap. Our work completely focuses on that part too. Here, we propose a model which initially collects RAPPOR reports from multiple clients which are then pushed to a Tf-Idf estimation model. The Tf-Idf estimation model then estimates the reports on the basis of the occurrence of “on bit” in a particular position and its contribution to that position. Thus it generates a centralized differential privacy analysis from multiple clients. Our model successfully and efficiently analyzed the major truth value every time.
+</details>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="statistical-finance--q-fin-st-">Statistical Finance (q-fin.ST): 1 new</h3>
+<table class="table table-striped table-condensed" style="margin-left: auto; margin-right: auto;">
+<tbody>
+<tr grouplength="1">
+<td colspan="1" style="background-color: #666; color: #fff;">
+<strong>Statistical Finance (q-fin.ST)</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01518v1" style="color: #d9230f">Disentangling shock diffusion on complex networks: Identification through graph planarity</a></b><br><em>Statistical Finance</em>. 3 authors. <a href="http://arxiv.org/pdf/2001.01518v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Large scale networks delineating collective dynamics often exhibit cascading failures across nodes leading to a system-wide collapse. Prominent examples of such phenomena would include collapse on financial and economic networks. …</summary><br> Intertwined nature of the dynamics of nodes in such network makes it difficult to disentangle the source and destination of a shock that percolates through the network, a property known as reflexivity. In this article, a novel methodology is proposed which combines vector autoregression model with an unique identification restrictions obtained from the topological structure of the network to uniquely characterize cascades. In particular, we show that planarity of the network allows us to statistically estimate a dynamical process consistent with the observed network and thereby uniquely identify a path for shock propagation from any chosen epicenter to all other nodes in the network. We analyze the distress propagation mechanism in closed loops giving rise to a detailed picture of the effect of feedback loops in transmitting shocks. We show usefulness and applications of the algorithm in two networks with dynamics at different time-scales: worldwide GDP growth network and stock network. In both cases, we observe that the model predicts the impact of the shocks emanating from the US would be concentrated within the cluster of developed countries and the developing countries show very muted response, which is consistent with empirical observations over the past decade.
+</details>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="data-science-arxiv-by-primary-tag">Data Science arXiv by Primary Tag</h2>
+<p>The tables below show abstracts organized by category with hyperlinks back to the arXiv site.</p>
+<div class="layout-chunk" data-layout="l-page">
+
+<h3 id="computer-science">Computer Science</h3>
+<table class="table table-striped table-condensed" style="margin-left: auto; margin-right: auto;">
+<tbody>
+<tr grouplength="9">
+<td colspan="1" style="background-color: #666; color: #fff;">
+<strong>Computer Vision and Pattern Recognition (cs.CV)</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01707v1" style="color: #d9230f">Meta-modal Information Flow: A Method for Capturing Multimodal Modular Disconnectivity in Schizophrenia</a></b><br><em>Image and Video Processing, Machine Learning, Machine Learning</em>. 16 authors. <a href="http://arxiv.org/pdf/2001.01707v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Objective: Multimodal measurements of the same phenomena provide complementary information and highlight different perspectives, albeit each with their own limitations. A focus on a single modality may lead to incorrect inferences, which is especially important when a studied phenomenon is a disease. …</summary><br> In this paper, we introduce a method that takes advantage of multimodal data in addressing the hypotheses of disconnectivity and dysfunction within schizophrenia (SZ). Methods: We start with estimating and visualizing links within and among extracted multimodal data features using a Gaussian graphical model (GGM). We then propose a modularity-based method that can be applied to the GGM to identify links that are associated with mental illness across a multimodal data set. Through simulation and real data, we show our approach reveals important information about disease-related network disruptions that are missed with a focus on a single modality. We use functional MRI (fMRI), diffusion MRI (dMRI), and structural MRI (sMRI) to compute the fractional amplitude of low frequency fluctuations (fALFF), fractional anisotropy (FA), and gray matter (GM) concentration maps. These three modalities are analyzed using our modularity method. Results: Our results show missing links that are only captured by the cross-modal information that may play an important role in disconnectivity between the components. Conclusion: We identified multimodal (fALFF, FA and GM) disconnectivity in the default mode network area in patients with SZ, which would not have been detectable in a single modality. Significance: The proposed approach provides an important new tool for capturing information that is distributed among multiple imaging modalities.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01599v1" style="color: #d9230f">Multi-scale domain-adversarial multiple-instance CNN for cancer subtype classification with non-annotated histopathological images</a></b><br><em>Computer Vision and Pattern Recognition, Image and Video Processing, Machine Learning</em>. 10 authors. <a href="http://arxiv.org/pdf/2001.01599v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>We propose a new method for cancer subtype classification from histopathological images, which can automatically detect tumor-specific features in a given whole slide image (WSI). The cancer subtype should be classified by referring to a WSI, i. …</summary><br>e., a large size image (typically 40,000x40,000 pixels) of an entire pathological tissue slide, which consists of cancer and non-cancer portions. One difficulty for constructing cancer subtype classifiers comes from the high cost needed for annotating WSIs; without annotation, we have to construct the tumor region detector without knowing true labels. Furthermore, both global and local image features must be extracted from the WSI by changing the magnifications of the image. In addition, the image features should be stably detected against the variety/difference of staining among the hospitals/specimen. In this paper, we develop a new CNN-based cancer subtype classification method by effectively combining multiple-instance, domain adversarial, and multi-scale learning frameworks that can overcome these practical difficulties. When the proposed method was applied to malignant lymphoma subtype classifications of 196 cases collected from multiple hospitals, the classification performance was significantly better than the standard CNN or other conventional methods, and the accuracy was favorably compared to that of standard pathologists. In addition, we confirmed by immunostaining and expert pathologist’s visual inspections that the tumor regions were correctly detected.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01699v1" style="color: #d9230f">Development, Demonstration, and Validation of Data-driven Compact Diode Models for Circuit Simulation and Analysis</a></b><br><em>Machine Learning, Computational Engineering, Finance, and Science, Machine Learning</em>. 8 authors. <a href="http://arxiv.org/pdf/2001.01699v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Compact semiconductor device models are essential for efficiently designing and analyzing large circuits. However, traditional compact model development requires a large amount of manual effort and can span many years. …</summary><br> Moreover, inclusion of new physics (eg, radiation effects) into an existing compact model is not trivial and may require redevelopment from scratch. Machine Learning (ML) techniques have the potential to automate and significantly speed up the development of compact models. In addition, ML provides a range of modeling options that can be used to develop hierarchies of compact models tailored to specific circuit design stages. In this paper, we explore three such options: (1) table-based interpolation, (2)Generalized Moving Least-Squares, and (3) feed-forward Deep Neural Networks, to develop compact models for a p-n junction diode. We evaluate the performance of these “data-driven” compact models by (1) comparing their voltage-current characteristics against laboratory data, and (2) building a bridge rectifier circuit using these devices, predicting the circuit’s behavior using SPICE-like circuit simulations, and then comparing these predictions against laboratory measurements of the same circuit.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01578v1" style="color: #d9230f">Dissecting Catastrophic Forgetting in Continual Learning by Deep Visualization</a></b><br><em>Machine Learning, Machine Learning</em>. 6 authors. <a href="http://arxiv.org/pdf/2001.01578v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Interpreting the behaviors of Deep Neural Networks (usually considered as a black box) is critical especially when they are now being widely adopted over diverse aspects of human life. Taking the advancements from Explainable Artificial Intelligent, this paper proposes a novel technique called Auto DeepVis to dissect catastrophic forgetting in continual learning. …</summary><br> A new method to deal with catastrophic forgetting named critical freezing is also introduced upon investigating the dilemma by Auto DeepVis. Experiments on a captioning model meticulously present how catastrophic forgetting happens, particularly showing which components are forgetting or changing. The effectiveness of our technique is then assessed; and more precisely, critical freezing claims the best performance on both previous and coming tasks over baselines, proving the capability of the investigation. Our techniques could not only be supplementary to existing solutions for completely eradicating catastrophic forgetting for life-long learning but also explainable.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01469v1" style="color: #d9230f">TableNet: Deep Learning model for end-to-end Table detection and Tabular data extraction from Scanned Document Images</a></b><br><em>Computer Vision and Pattern Recognition, Image and Video Processing, Machine Learning</em>. 5 authors. <a href="http://arxiv.org/pdf/2001.01469v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>With the widespread use of mobile phones and scanners to photograph and upload documents, the need for extracting the information trapped in unstructured document images such as retail receipts, insurance claim forms and financial invoices is becoming more acute. A major hurdle to this objective is that these images often contain information in the form of tables and extracting data from tabular sub-images presents a unique set of challenges. …</summary><br> This includes accurate detection of the tabular region within an image, and subsequently detecting and extracting information from the rows and columns of the detected table. While some progress has been made in table detection, extracting the table contents is still a challenge since this involves more fine grained table structure(rows &amp; columns) recognition. Prior approaches have attempted to solve the table detection and structure recognition problems independently using two separate models. In this paper, we propose TableNet: a novel end-to-end deep learning model for both table detection and structure recognition. The model exploits the interdependence between the twin tasks of table detection and table structure recognition to segment out the table and column regions. This is followed by semantic rule-based row extraction from the identified tabular sub-regions. The proposed model and extraction approach was evaluated on the publicly available ICDAR 2013 and Marmot Table datasets obtaining state of the art results. Additionally, we demonstrate that feeding additional semantic features further improves model performance and that the model exhibits transfer learning across datasets. Another contribution of this paper is to provide additional table structure annotations for the Marmot data, which currently only has annotations for table detection.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01383v1" style="color: #d9230f">A Block-based Generative Model for Attributed Networks Embedding</a></b><br><em>Machine Learning, Machine Learning</em>. 5 authors. <a href="http://arxiv.org/pdf/2001.01383v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Attributed network embedding has attracted plenty of interests in recent years. It aims to learn task-independent, low-dimension, and continuous vectors for nodes preserving both topology and attribute information. …</summary><br> Most existing methods, such as GCN and its variations, mainly focus on the local information, i.e., the attributes of the neighbors. Thus, they have been well studied for assortative networks but ignored disassortative networks, which are common in real scenes. To address this issue, we propose a block-based generative model for attributed network embedding on a probability perspective inspired by the stochastic block model (SBM). Specifically, the nodes are assigned to several blocks wherein the nodes in the same block share the similar link patterns. These patterns can define assortative networks containing communities or disassortative networks with the multipartite, hub, or any hybrid structures. Concerning the attribute information, we assume that each node has a hidden embedding related to its assigned block, and then we use a neural network to characterize the nonlinearity between the node embedding and its attribute. We perform extensive experiments on real-world and synthetic attributed networks, and the experimental results show that our proposed method remarkably outperforms state-of-the-art embedding methods for both clustering and classification tasks, especially on disassortative networks.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01377v1" style="color: #d9230f">High-speed Autonomous Drifting with Deep Reinforcement Learning</a></b><br><em>Robotics, Systems and Control, Machine Learning</em>. 5 authors. <a href="http://arxiv.org/pdf/2001.01377v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Drifting is a complicated task for autonomous vehicle control. Most traditional methods in this area are based on motion equations derived by the understanding of vehicle dynamics, which is difficult to be modeled precisely. …</summary><br> We propose a robust drift controller without explicit motion equations, which is based on the latest model-free deep reinforcement learning algorithm soft actor-critic. The drift control problem is formulated as a trajectory following task, where the errorbased state and reward are designed. After being trained on tracks with different levels of difficulty, our controller is capable of making the vehicle drift through various sharp corners quickly and stably in the unseen map. The proposed controller is further shown to have excellent generalization ability, which can directly handle unseen vehicle types with different physical properties, such as mass, tire friction, etc.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01629v1" style="color: #d9230f">Deep Snake for Real-Time Instance Segmentation</a></b><br><em>Computer Vision and Pattern Recognition</em>. 5 authors. <a href="http://arxiv.org/pdf/2001.01629v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>This paper introduces a novel contour-based approach named deep snake for real-time instance segmentation. Unlike some recent methods that directly regress the coordinates of the object boundary points from an image, deep snake uses a neural network to iteratively deform an initial contour to the object boundary, which implements the classic idea of snake algorithms with a learning-based approach. …</summary><br> For structured feature learning on the contour, we propose to use circular convolution in deep snake, which better exploits the cycle-graph structure of a contour compared against generic graph convolution. Based on deep snake, we develop a two-stage pipeline for instance segmentation: initial contour proposal and contour deformation, which can handle errors in initial object localization. Experiments show that the proposed approach achieves state-of-the-art performances on the Cityscapes, Kins and Sbd datasets while being efficient for real-time instance segmentation, 32.3 fps for 512$$512 images on a 1080Ti GPU. The code will be available at <a href="https://github.com/zju3dv/snake/" class="uri">https://github.com/zju3dv/snake/</a>.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01382v1" style="color: #d9230f">Thermal coupling and effect of subharmonic synchronization in a system of two VO2 based oscillators</a></b><br><em>Emerging Technologies, Neural and Evolutionary Computing</em>. 5 authors. <a href="http://arxiv.org/pdf/2001.01382v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>We explore a prototype of an oscillatory neural network (ONN) based on vanadium dioxide switching devices. The model system under study represents two oscillators based on thermally coupled VO2 switches. …</summary><br> Numerical simulation shows that the effective action radius RTC of coupling depends both on the total energy released during switching and on the average power. It is experimentally and numerically proved that the temperature change dT commences almost synchronously with the released power peak and T-coupling reveals itself up to a frequency of about 10 kHz. For the studied switching structure configuration, the RTC value varies over a wide range from 4 to 45 mkm, depending on the external circuit capacitance C and resistance Ri, but the variation of Ri is more promising from the practical viewpoint. In the case of a “weak” coupling, synchronization is accompanied by attraction effect and decrease of the main spectra harmonics width. In the case of a “strong” coupling, the number of effects increases, synchronization can occur on subharmonics resulting in multilevel stable synchronization of two oscillators. An advanced algorithm for synchronization efficiency and subharmonic ratio calculation is proposed. It is shown that of the two oscillators the leading one is that with a higher main frequency, and, in addition, the frequency stabilization effect is observed. Also, in the case of a strong thermal coupling, the limit of the supply current parameters, for which the oscillations exist, expands by ~ 10 %. The obtained results have a universal character and open up a new kind of coupling in ONNs, namely, T-coupling, which allows for easy transition from 2D to 3D integration. The effect of subharmonic synchronization hold promise for application in classification and pattern recognition.
+</details>
+</td>
+</tr>
+<tr grouplength="6">
+<td colspan="1" style="background-color: #666; color: #fff;">
+<strong>Machine Learning (cs.LG)</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01606v1" style="color: #d9230f">The SmartSHARK Ecosystem for Software Repository Mining</a></b><br><em>Software Engineering</em>. 5 authors. <a href="http://arxiv.org/pdf/2001.01606v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Software repository mining is the foundation for many empirical software engineering studies. The collection and analysis of detailed data can be challenging, especially if data shall be shared to enable replicable research and open science practices. …</summary><br> SmartSHARK is an ecosystem that supports replicable and reproducible research based on software repository mining.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01523v1" style="color: #d9230f">Think Locally, Act Globally: Federated Learning with Local and Global Representations</a></b><br><em>Machine Learning, Distributed, Parallel, and Cluster Computing, Machine Learning</em>. 5 authors. <a href="http://arxiv.org/pdf/2001.01523v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Federated learning is an emerging research paradigm to train models on private data distributed over multiple devices. A key challenge involves keeping private all the data on each device and training a global model only by communicating parameters and updates. …</summary><br> Overcoming this problem relies on the global model being sufficiently compact so that the parameters can be efficiently sent over communication channels such as wireless internet. Given the recent trend towards building deeper and larger neural networks, deploying such models in federated settings on real-world tasks is becoming increasingly difficult. To this end, we propose to augment federated learning with local representation learning on each device to learn useful and compact features from raw data. As a result, the global model can be smaller since it only operates on higher-level local representations. We show that our proposed method achieves superior or competitive results when compared to traditional federated approaches on a suite of publicly available real-world datasets spanning image recognition (MNIST, CIFAR) and multimodal learning (VQA). Our choice of local representation learning also reduces the number of parameters and updates that need to be communicated to and from the global model, thereby reducing the bottleneck in terms of communication cost. Finally, we show that our local models provide flexibility in dealing with online heterogeneous data and can be easily modified to learn fair representations that obfuscate protected attributes such as race, age, and gender, a feature crucial to preserving the privacy of on-device data.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01416v1" style="color: #d9230f">Frequency Fitness Assignment: Making Optimization Algorithms Invariant under Bijective Transformations of the Objective Function</a></b><br><em>Combinatorics, Neural and Evolutionary Computing, Artificial Intelligence</em>. 4 authors. <a href="http://arxiv.org/pdf/2001.01416v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Under Frequency Fitness Assignment (FFA), the fitness corresponding to an objective value is its encounter frequency in fitness assignment steps and is subject to minimization. FFA renders optimization processes invariant under bijective transformations of the objective function. …</summary><br> This is the strongest invariance property of any optimization procedure to our knowledge. On TwoMax, Jump, and Trap functions of scale s, a (1+1)-EA with standard mutation at rate 1/s can have expected running times exponential in s. In our experiments, a (1+1)-FEA, the same algorithm but using FFA, exhibits mean running times quadratic in s. Since Jump and Trap are bijective transformations of OneMax, it behaves identical on all three. On the LeadingOnes and Plateau problems, it seems to be slower than the (1+1)-EA by a factor linear in s. The (1+1)-FEA performs much better than the (1+1)-EA on W-Model and MaxSat instances. Due to the bijection invariance, the behavior of an optimization algorithm using FFA does not change when the objective values are encrypted. We verify this by applying the Md5 checksum computation as transformation to some of the above problems and yield the same behaviors. Finally, FFA can improve the performance of a Memetic Algorithm for Job Shop Scheduling.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01391v1" style="color: #d9230f">A Rule-Based Model for Victim Prediction</a></b><br><em>Computers and Society, Artificial Intelligence</em>. 4 authors. <a href="http://arxiv.org/pdf/2001.01391v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>In this paper, we proposed a novel automated model, called Vulnerability Index for Population at Risk (VIPAR) scores, to identify rare populations for their future shooting victimizations. Likewise, the focused deterrence approach identifies vulnerable individuals and offers certain types of treatments (e. …</summary><br>g., outreach services) to prevent violence in communities. The proposed rule-based engine model is the first AI-based model for victim prediction. This paper aims to compare the list of focused deterrence strategy with the VIPAR score list regarding their predictive power for the future shooting victimizations. Drawing on the criminological studies, the model uses age, past criminal history, and peer influence as the main predictors of future violence. Social network analysis is employed to measure the influence of peers on the outcome variable. The model also uses logistic regression analysis to verify the variable selections. Our empirical results show that VIPAR scores predict 25.8% of future shooting victims and 32.2% of future shooting suspects, whereas focused deterrence list predicts 13% of future shooting victims and 9.4% of future shooting suspects. The model outperforms the intelligence list of focused deterrence policies in predicting the future fatal and non-fatal shootings. Furthermore, we discuss the concerns about the presumption of innocence right.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01613v1" style="color: #d9230f">Chained Representation Cycling: Learning to Estimate 3D Human Pose and Shape by Cycling Between Representations</a></b><br><em>Computer Vision and Pattern Recognition, Machine Learning</em>. 4 authors. <a href="http://arxiv.org/pdf/2001.01613v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>The goal of many computer vision systems is to transform image pixels into 3D representations. Recent popular models use neural networks to regress directly from pixels to 3D object parameters. …</summary><br> Such an approach works well when supervision is available, but in problems like human pose and shape estimation, it is difficult to obtain natural images with 3D ground truth. To go one step further, we propose a new architecture that facilitates unsupervised, or lightly supervised, learning. The idea is to break the problem into a series of transformations between increasingly abstract representations. Each step involves a cycle designed to be learnable without annotated training data, and the chain of cycles delivers the final solution. Specifically, we use 2D body part segments as an intermediate representation that contains enough information to be lifted to 3D, and at the same time is simple enough to be learned in an unsupervised way. We demonstrate the method by learning 3D human pose and shape from un-paired and un-annotated images. We also explore varying amounts of paired data and show that cycling greatly alleviates the need for paired data. While we present results for modeling humans, our formulation is general and can be applied to other vision problems.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01697v1" style="color: #d9230f">Social Media Attributions in the Context of Water Crisis</a></b><br><em>Machine Learning, Computers and Society</em>. 4 authors. <a href="http://arxiv.org/pdf/2001.01697v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Attribution of natural disasters/collective misfortune is a widely-studied political science problem. However, such studies are typically survey-centric or rely on a handful of experts to weigh in on the matter. …</summary><br> In this paper, we explore how can we use social media data and an AI-driven approach to complement traditional surveys and automatically extract attribution factors. We focus on the most-recent Chennai water crisis which started off as a regional issue but rapidly escalated into a discussion topic with global importance following alarming water-crisis statistics. Specifically, we present a novel prediction task of attribution tie detection which identifies the factors held responsible for the crisis (e.g., poor city planning, exploding population etc.). On a challenging data set constructed from YouTube comments (72,098 comments posted by 43,859 users on 623 relevant videos to the crisis), we present a neural classifier to extract attribution ties that achieved a reasonable performance (Accuracy: 81.34% on attribution detection and 71.19% on attribution resolution).
+</details>
+</td>
+</tr>
+<tr grouplength="5">
+<td colspan="1" style="background-color: #666; color: #fff;">
+<strong>Software Engineering (cs.SE)</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01620v1" style="color: #d9230f">Optimal Options for Multi-Task Reinforcement Learning Under Time Constraints</a></b><br><em>Machine Learning, Machine Learning, Artificial Intelligence</em>. 3 authors. <a href="http://arxiv.org/pdf/2001.01620v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Reinforcement learning can greatly benefit from the use of options as a way of encoding recurring behaviours and to foster exploration. An important open problem is how can an agent autonomously learn useful options when solving particular distributions of related tasks. …</summary><br> We investigate some of the conditions that influence optimality of options, in settings where agents have a limited time budget for learning each task and the task distribution might involve problems with different levels of similarity. We directly search for optimal option sets and show that the discovered options significantly differ depending on factors such as the available learning time budget and that the found options outperform popular option-generation heuristics.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01577v1" style="color: #d9230f">Learning Reusable Options for Multi-Task Reinforcement Learning</a></b><br><em>Artificial Intelligence</em>. 3 authors. <a href="http://arxiv.org/pdf/2001.01577v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Reinforcement learning (RL) has become an increasingly active area of research in recent years. Although there are many algorithms that allow an agent to solve tasks efficiently, they often ignore the possibility that prior experience related to the task at hand might be available. …</summary><br> For many practical applications, it might be unfeasible for an agent to learn how to solve a task from scratch, given that it is generally a computationally expensive process; however, prior experience could be leveraged to make these problems tractable in practice. In this paper, we propose a framework for exploiting existing experience by learning reusable options. We show that after an agent learns policies for solving a small number of problems, we are able to use the trajectories generated from those policies to learn reusable options that allow an agent to quickly learn how to solve novel and related problems.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01600v1" style="color: #d9230f">Few-shot Learning with Multi-scale Self-supervision</a></b><br><em>Computer Vision and Pattern Recognition</em>. 3 authors. <a href="http://arxiv.org/pdf/2001.01600v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Learning concepts from the limited number of datapoints is a challenging task usually addressed by the so-called one- or few-shot learning. Recently, an application of second-order pooling in few-shot learning demonstrated its superior performance due to the aggregation step handling varying image resolutions without the need of modifying CNNs to fit to specific image sizes, yet capturing highly descriptive co-occurrences. …</summary><br> However, using a single resolution per image (even if the resolution varies across a dataset) is suboptimal as the importance of image contents varies across the coarse-to-fine levels depending on the object and its class label e. g., generic objects and scenes rely on their global appearance while fine-grained objects rely more on their localized texture patterns. Multi-scale representations are popular in image deblurring, super-resolution and image recognition but they have not been investigated in few-shot learning due to its relational nature complicating the use of standard techniques. In this paper, we propose a novel multi-scale relation network based on the properties of second-order pooling to estimate image relations in few-shot setting. To optimize the model, we leverage a scale selector to re-weight scale-wise representations based on their second-order features. Furthermore, we propose to a apply self-supervised scale prediction. Specifically, we leverage an extra discriminator to predict the scale labels and the scale discrepancy between pairs of images. Our model achieves state-of-the-art results on standard few-shot learning datasets.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01526v1" style="color: #d9230f">Mutual Mean-Teaching: Pseudo Label Refinery for Unsupervised Domain Adaptation on Person Re-identification</a></b><br><em>Computer Vision and Pattern Recognition</em>. 3 authors. <a href="http://arxiv.org/pdf/2001.01526v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Person re-identification (re-ID) aims at identifying the same persons’ images across different cameras. However, domain diversities between different datasets pose an evident challenge for adapting the re-ID model trained on one dataset to another one. …</summary><br> State-of-the-art unsupervised domain adaptation methods for person re-ID transferred the learned knowledge from the source domain by optimizing with pseudo labels created by clustering algorithms on the target domain. Although they achieved state-of-the-art performances, the inevitable label noise caused by the clustering procedure was ignored. Such noisy pseudo labels substantially hinders the model’s capability on further improving feature representations on the target domain. In order to mitigate the effects of noisy pseudo labels, we propose to softly refine the pseudo labels in the target domain by proposing an unsupervised framework, Mutual Mean-Teaching (MMT), to learn better features from the target domain via off-line refined hard pseudo labels and on-line refined soft pseudo labels in an alternative training manner. In addition, the common practice is to adopt both the classification loss and the triplet loss jointly for achieving optimal performances in person re-ID models. However, conventional triplet loss cannot work with softly refined labels. To solve this problem, a novel soft softmax-triplet loss is proposed to support learning with soft pseudo triplet labels for achieving the optimal domain adaptation performance. The proposed MMT framework achieves considerable improvements of 14.4%, 18.2%, 13.1% and 16.4% mAP on Market-to-Duke, Duke-to-Market, Market-to-MSMT and Duke-to-MSMT unsupervised domain adaptation tasks. Code is available at <a href="https://github.com/yxgeee/MMT" class="uri">https://github.com/yxgeee/MMT</a>.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01506v1" style="color: #d9230f">Deceiving Image-to-Image Translation Networks for Autonomous Driving with Adversarial Perturbations</a></b><br><em>Computer Vision and Pattern Recognition, Robotics, Image and Video Processing</em>. 3 authors. <a href="http://arxiv.org/pdf/2001.01506v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Deep neural networks (DNNs) have achieved impressive performance on handling computer vision problems, however, it has been found that DNNs are vulnerable to adversarial examples. For such reason, adversarial perturbations have been recently studied in several respects. …</summary><br> However, most previous works have focused on image classification tasks, and it has never been studied regarding adversarial perturbations on Image-to-image (Im2Im) translation tasks, showing great success in handling paired and/or unpaired mapping problems in the field of autonomous driving and robotics. This paper examines different types of adversarial perturbations that can fool Im2Im frameworks for autonomous driving purpose. We propose both quasi-physical and digital adversarial perturbations that can make Im2Im models yield unexpected results. We then empirically analyze these perturbations and show that they generalize well under both paired for image synthesis and unpaired settings for style transfer. We also validate that there exist some perturbation thresholds over which the Im2Im mapping is disrupted or impossible. The existence of these perturbations reveals that there exist crucial weaknesses in Im2Im models. Lastly, we show that our methods illustrate how perturbations affect the quality of outputs, pioneering the improvement of the robustness of current SOTA networks for autonomous driving.
+</details>
+</td>
+</tr>
+<tr grouplength="2">
+<td colspan="1" style="background-color: #666; color: #fff;">
+<strong>Artificial Intelligence (cs.AI)</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01598v1" style="color: #d9230f">Why and How to Balance Alignment and Diversity of Requirements Engineering Practices in Automotive</a></b><br><em>Software Engineering</em>. 3 authors. <a href="http://arxiv.org/pdf/2001.01598v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>In large-scale automotive companies, various requirements engineering (RE) practices are used across teams. RE practices manifest in Requirements Information Models (RIM) that define what concepts and information should be captured for requirements. …</summary><br> Collaboration of practitioners from different parts of an organization is required to define a suitable RIM that balances support for diverse practices in individual teams with the alignment needed for a shared view and team support on system level. There exists no guidance for this challenging task. This paper presents a mixed methods study to examine the role of RIMs in balancing alignment and diversity of RE practices in four automotive companies. Our analysis is based on data from systems engineering tools, 11 semi-structured interviews, and a survey to validate findings and suggestions. We found that balancing alignment and diversity of RE practices is important to consider when defining RIMs. We further investigated enablers for this balance and actions that practitioners take to achieve it. From these factors, we derived and evaluated recommendations for managing RIMs in practice that take into account the lifecycle of requirements and allow for diverse practices across sub-disciplines in early development, while enforcing alignment of requirements that are close to release.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01477v1" style="color: #d9230f">Using CEF Digital Service Infrastructures in the Smart4Health Project for the Exchange of Electronic Health Records</a></b><br><em>Software Engineering</em>. 3 authors. <a href="http://arxiv.org/pdf/2001.01477v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>The Smart4Health (S4H) software application will empower EU citizens to manage, analyze, and exchange their aggregated electronic health data. In order to provide such a service, basic features are needed to ensure usability, reliability, and trust. …</summary><br> The CEF building blocks implement such functionalities while complying with EU regulations. This report examines the current status and applicability of the CEF building blocks for the envisioned S4H software application. The major findings of the report are that (1) most CEF building blocks are currently not ready to be applied without further implementation efforts and (2) the S4H-specific use cases and user needs, to which the single CEF building blocks correspond, must be clarified. Open questions raised in this report need to be answered before a clear analysis can be made. Moreover, the functionalities of CEF building blocks aim at the matured product, while for the first version of the S4H software application basic implementations suffice. Still, concepts need to be elaborated of how the sample implementation of CEF building blocks or suitable alternative applications can be included into the system at a later point.
+</details>
+</td>
+</tr>
+<tr grouplength="2">
+<td colspan="1" style="background-color: #666; color: #fff;">
+<strong>Neural and Evolutionary Computing (cs.NE)</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01424v1" style="color: #d9230f">Cross-Dataset Design Discussion Mining</a></b><br><em>Software Engineering</em>. 3 authors. <a href="http://arxiv.org/pdf/2001.01424v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Being able to identify software discussions that are primarily about design, which we call design mining, can improve documentation and maintenance of software systems. Existing design mining approaches have good classification performance using natural language processing (NLP) techniques, but the conclusion stability of these approaches is generally poor. …</summary><br> A classifier trained on a given dataset of software projects has so far not worked well on different artifacts or different datasets. In this study, we replicate and synthesize these earlier results in a meta-analysis. We then apply recent work in transfer learning for NLP to the problem of design mining. However, for our datasets, these deep transfer learning classifiers perform no better than less complex classifiers. We conclude by discussing some reasons behind the transfer learning approach to design mining.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01536v1" style="color: #d9230f">Learning From Multiple Experts: Self-paced Knowledge Distillation for Long-tailed Classification</a></b><br><em>Computer Vision and Pattern Recognition, Machine Learning, Machine Learning</em>. 2 authors. <a href="http://arxiv.org/pdf/2001.01536v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>In real-world scenarios, data tends to exhibit a long-tailed, imbalanced distribution. Developing algorithms to deal with such long-tailed distribution thus becomes indispensable in practical applications. …</summary><br> In this paper, we propose a novel self-paced knowledge distillation framework, termed Learning From Multiple Experts (LFME). Our method is inspired by the observation that deep Convolutional Neural Networks (CNNs) trained on less imbalanced subsets of the entire long-tailed distribution often yield better performances than their jointly-trained counterparts. We refer to these models as <code>Expert Models', and the proposed LFME framework aggregates the knowledge from multiple</code>Experts’ to learn a unified student model. Specifically, the proposed framework involves two levels of self-paced learning schedules: Self-paced Expert Selection and Self-paced Instance Selection, so that the knowledge is adaptively transferred from multiple <code>Experts' to the</code>Student’. In order to verify the effectiveness of our proposed framework, we conduct extensive experiments on two long-tailed benchmark classification datasets. The experimental results demonstrate that our method is able to achieve superior performances compared to the state-of-the-art methods. We also show that our method can be easily plugged into state-of-the-art long-tailed classification algorithms for further improvements.
+</details>
+</td>
+</tr>
+<tr grouplength="1">
+<td colspan="1" style="background-color: #666; color: #fff;">
+<strong>Computers and Society (cs.CY)</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01661v1" style="color: #d9230f">A Hybrid Approach to Temporal Pattern Matching</a></b><br><em>Computer Vision and Pattern Recognition, Data Structures and Algorithms</em>. 2 authors. <a href="http://arxiv.org/pdf/2001.01661v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>The primary objective of graph pattern matching is to find all appearances of an input graph pattern query in a large data graph. Such appearances are called matches. …</summary><br> In this paper, we are interested in finding matches of interaction patterns in temporal graphs. To this end, we propose a hybrid approach that achieves effective filtering of potential matches based both on structure and time. Our approach exploits a graph representation where edges are ordered by time. We present experiments with real datasets that illustrate the efficiency of our approach.
+</details>
+</td>
+</tr>
+<tr grouplength="1">
+<td colspan="1" style="background-color: #666; color: #fff;">
+<strong>Cryptography and Security (cs.CR)</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01669v1" style="color: #d9230f">Topic Extraction of Crawled Documents Collection using Correlated Topic Model in MapReduce Framework</a></b><br><em>Information Retrieval, Machine Learning, Computation and Language, Machine Learning</em>. 2 authors. <a href="http://arxiv.org/pdf/2001.01669v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>The tremendous increase in the amount of available research documents impels researchers to propose topic models to extract the latent semantic themes of a documents collection. However, how to extract the hidden topics of the documents collection has become a crucial task for many topic model applications. …</summary><br> Moreover, conventional topic modeling approaches suffer from the scalability problem when the size of documents collection increases. In this paper, the Correlated Topic Model with variational Expectation-Maximization algorithm is implemented in MapReduce framework to solve the scalability problem. The proposed approach utilizes the dataset crawled from the public digital library. In addition, the full-texts of the crawled documents are analysed to enhance the accuracy of MapReduce CTM. The experiments are conducted to demonstrate the performance of the proposed algorithm. From the evaluation, the proposed approach has a comparable performance in terms of topic coherences with LDA implemented in MapReduce framework.
+</details>
+</td>
+</tr>
+<tr grouplength="1">
+<td colspan="1" style="background-color: #666; color: #fff;">
+<strong>Data Structures and Algorithms (cs.DS)</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01618v1" style="color: #d9230f">ARA : Aggregated RAPPOR and Analysis for Centralized Differential Privacy</a></b><br><em>Machine Learning, Machine Learning, Cryptography and Security</em>. 2 authors. <a href="http://arxiv.org/pdf/2001.01618v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Differential privacy(DP) has now become a standard in case of sensitive statistical data analysis. The two main approaches in DP is local and central. …</summary><br> Both the approaches have a clear gap in terms of data storing,amount of data to be analyzed, analysis, speed etc. Local wins on the speed. We have tested the state of the art standard RAPPOR which is a local approach and supported this gap. Our work completely focuses on that part too. Here, we propose a model which initially collects RAPPOR reports from multiple clients which are then pushed to a Tf-Idf estimation model. The Tf-Idf estimation model then estimates the reports on the basis of the occurrence of “on bit” in a particular position and its contribution to that position. Thus it generates a centralized differential privacy analysis from multiple clients. Our model successfully and efficiently analyzed the major truth value every time.
+</details>
+</td>
+</tr>
+<tr grouplength="1">
+<td colspan="1" style="background-color: #666; color: #fff;">
+<strong>Information Retrieval (cs.IR)</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01442v1" style="color: #d9230f">Runtime Verification of Linux Kernel Security Module</a></b><br><em>Software Engineering, Operating Systems</em>. 2 authors. <a href="http://arxiv.org/pdf/2001.01442v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>The Linux kernel is one of the most important Free/Libre Open Source Software (FLOSS) projects. It is installed on billions of devices all over the world, which process various sensitive, confidential or simply private data. …</summary><br> It is crucial to establish and prove its security properties. This work-in-progress paper presents a method to verify the Linux kernel for conformance with an abstract security policy model written in the Event-B specification language. The method is based on system call tracing and aims at checking that the results of system call execution do not lead to accesses that violate security policy requirements. As a basis for it, we use an additional Event-B specification of the Linux system call interface that is formally proved to satisfy all the requirements of the security policy model. In order to perform the conformance checks we use it to reproduce intercepted system calls and verify accesses.
+</details>
+</td>
+</tr>
+<tr grouplength="1">
+<td colspan="1" style="background-color: #666; color: #fff;">
+<strong>Robotics (cs.RO)</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01456v1" style="color: #d9230f">Facial Emotions Recognition using Convolutional Neural Net</a></b><br><em>Computer Vision and Pattern Recognition</em>. 1 authors. <a href="http://arxiv.org/pdf/2001.01456v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Human beings displays their emotions using facial expressions. For human it is very easy to recognize those emotions but for computer it is very challenging. …</summary><br> Facial expressions vary from person to person. Brightness, contrast and resolution of every random image is different. This is why recognizing facial expression is very difficult. The facial expression recognition is an active research area. In this project, we worked on recognition of seven basic human emotions. These emotions are angry, disgust, fear, happy, sad, surprise and neutral. Every image was first passed through face detection algorithm to include it in train dataset. As CNN requires large amount of data so we duplicated our data using various filter on each image. The system is trained using CNN architecture. Preprocessed images of size 80*100 is passed as input to the first layer of CNN. Three convolutional layers were used, each of which was followed by a pooling layer and then three dense layers. The dropout rate for dense layer was 20%. The model was trained by combination of two publicly available datasets JAFFED and KDEF. 90% of the data was used for training while 10% was used for testing. We achieved maximum accuracy of 78% using combined dataset.
+</details>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="statistics">Statistics</h3>
+<table class="table table-striped table-condensed" style="margin-left: auto; margin-right: auto;">
+<tbody>
+<tr grouplength="4">
+<td colspan="1" style="background-color: #666; color: #fff;">
+<strong>Methodology (stat.ME)</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01666v1" style="color: #d9230f">MREC: a fast and versatile framework for aligning and matching data with applications to single cell molecular data</a></b><br><em>Genomics, Machine Learning, Machine Learning</em>. 5 authors. <a href="http://arxiv.org/pdf/2001.01666v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Comparing and aligning large datasets is a pervasive problem occurring across many different knowledge domains. We introduce and study MREC, a recursive decomposition algorithm for computing matchings between data sets. …</summary><br> The basic idea is to partition the data, match the partitions, and then recursively match the points within each pair of identified partitions. The matching itself is done using black box matching procedures that are too expensive to run on the entire data set. Using an absolute measure of the quality of a matching, the framework supports optimization over parameters including partitioning procedures and matching algorithms. By design, MREC can be applied to extremely large data sets. We analyze the procedure to describe when we can expect it to work well and demonstrate its flexibility and power by applying it to a number of alignment problems arising in the analysis of single cell molecular data.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01676v1" style="color: #d9230f">A Spectral Hidden Markov Model for Nonstationary Oscillatory Processes</a></b><br><em>Methodology, Applications</em>. 4 authors. <a href="http://arxiv.org/pdf/2001.01676v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>We propose to model time-varying periodic and oscillatory processes by means of a hidden Markov model where the states are defined through the spectral properties of a periodic regime. The number of states is unknown along with the relevant periodicities, the role and number of which may vary across states. …</summary><br> We address this inference problem by a Bayesian nonparametric hidden Markov model assuming a sticky hierarchical Dirichlet process for the switching dynamics between different states while the periodicities characterizing each state are explored by means of a trans-dimensional Markov chain Monte Carlo sampling step. We develop the full Bayesian inference algorithm and illustrate the use of our proposed methodology for different simulation studies as well as an application related to respiratory research which focuses on the detection of apnea instances in human breathing traces.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01520v1" style="color: #d9230f">Combining data assimilation and machine learning to emulate a dynamical model from sparse and noisy observations: a case study with the Lorenz 96 model</a></b><br><em>Atmospheric and Oceanic Physics, Machine Learning, Machine Learning</em>. 4 authors. <a href="http://arxiv.org/pdf/2001.01520v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>A novel method, based on the combination of data assimilation and machine learning is introduced. The new hybrid approach is designed for a two-fold scope: (i) emulating hidden, possibly chaotic, dynamics and (ii) predicting their future states. …</summary><br> The method consists in applying iteratively a data assimilation step, here an ensemble Kalman filter, and a neural network. Data assimilation is used to optimally combine a surrogate model with sparse noisy data. The output analysis is spatially complete and is used as a training set by the neural network to update the surrogate model. The two steps are then repeated iteratively. Numerical experiments have been carried out using the chaotic 40-variables Lorenz 96 model, proving both convergence and statistical skills of the proposed hybrid approach. The surrogate model shows short-term forecast skills up to two Lyapunov times, the retrieval of positive Lyapunov exponents as well as the more energetic frequencies of the power density spectrum. The sensitivity of the method to critical setup parameters is also presented: forecast skills decrease smoothly with increased observational noise but drops abruptly if less than half of the model domain is observed. The successful synergy between data assimilation and machine learning, proven here with a low-dimensional system, encourages further investigation of such hybrids with more sophisticated dynamics.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01702v1" style="color: #d9230f">Discrete event simulation of point processes: A computational complexity analysis on sparse graphs</a></b><br><em>Computation, Applications</em>. 3 authors. <a href="http://arxiv.org/pdf/2001.01702v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>We derive new discrete event simulation algorithms for marked time point processes. The main idea is to couple a special structure, namely the associated local independence graph, as defined by Didelez arXiv:0710. …</summary><br>5874, with the activity tracking algorithm arXiv:arch-ive/190102412629 for achieving high performance asynchronous simulations. With respect to classical algorithm, this allows reducing drastically the computational complexity, especially when the graph is sparse.
+</details>
+</td>
+</tr>
+<tr grouplength="3">
+<td colspan="1" style="background-color: #666; color: #fff;">
+<strong>Computation (stat.CO)</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01373v1" style="color: #d9230f">Bayesian inference of Stochastic reaction networks using Multifidelity Sequential Tempered Markov Chain Monte Carlo</a></b><br><em>Computation</em>. 3 authors. <a href="http://arxiv.org/pdf/2001.01373v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Stochastic reaction network models are often used to explain and predict the dynamics of gene regulation in single cells. These models usually involve several parameters, such as the kinetic rates of chemical reactions, that are not directly measurable and must be inferred from experimental data. …</summary><br> Bayesian inference provides a rigorous probabilistic framework for identifying these parameters by finding a posterior parameter distribution that captures their uncertainty. Traditional computational methods for solving inference problems such as Markov Chain Monte Carlo methods based on classical Metropolis-Hastings algorithm involve numerous serial evaluations of the likelihood function, which in turn requires expensive forward solutions of the chemical master equation (CME). We propose an alternative approach based on a multifidelity extension of the Sequential Tempered Markov Chain Monte Carlo (ST-MCMC) sampler. This algorithm is built upon Sequential Monte Carlo and solves the Bayesian inference problem by decomposing it into a sequence of efficiently solved subproblems that gradually increase model fidelity and the influence of the observed data. We reformulate the finite state projection (FSP) algorithm, a well-known method for solving the CME, to produce a hierarchy of surrogate master equations to be used in this multifidelity scheme. To determine the appropriate fidelity, we introduce a novel information-theoretic criteria that seeks to extract the most information about the ultimate Bayesian posterior from each model in the hierarchy without inducing significant bias. This novel sampling scheme is tested with high performance computing resources using biologically relevant problems.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01541v1" style="color: #d9230f">Closed testing with Globaltest with applications on metabolomics data</a></b><br><em>Methodology</em>. 3 authors. <a href="http://arxiv.org/pdf/2001.01541v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>We derive a shortcut for closed testing with Globaltest, which is powerful for pathway analysis, especially in the presence of many weak features. The shortcut strongly controls the family-wise error rate over all possible feature sets. …</summary><br> We present our shortcut in two ways: the single-step shortcut and the iterative shortcut by embedding the single-step shortcut in branch and bound algorithm. The iterative shortcut is asymptotically equivalent to the full closed testing procedure but can be stopped at any point without sacrificing family-wise error rate control. The shortcut improves the scale of the full closed testing from 20 around features before to hundreds. It is post hoc, i.e. allowing feature sets to be chosen after seeing the data, without compromising error rate control. The procedure is illustrated on metabolomics data.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01466v1" style="color: #d9230f">Permutation testing in high-dimensional linear models: an empirical investigation</a></b><br><em>Methodology</em>. 3 authors. <a href="http://arxiv.org/pdf/2001.01466v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Permutation testing in linear models, where the number of nuisance coefficients is smaller than the sample size, is a well-studied topic. The common approach of such tests is to permute residuals after regressing on the nuisance covariates. …</summary><br> Permutation-based tests are valuable in particular because they can be highly robust to violations of the standard linear model, such as non-normality and heteroscedasticity. Moreover, in some cases they can be combined with existing, powerful permutation-based multiple testing methods. Here, we propose permutation tests for models where the number of nuisance coefficients exceeds the sample size. The performance of the novel tests is investigated with simulations. In a wide range of simulation scenarios our proposed permutation methods provided appropriate type I error rate control, unlike some competing tests, while having good power.
+</details>
+</td>
+</tr>
+<tr grouplength="2">
+<td colspan="1" style="background-color: #666; color: #fff;">
+<strong>Machine Learning (stat.ML)</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01434v1" style="color: #d9230f">Scalable Estimation and Inference with Large-scale or Online Survival Data</a></b><br><em>Methodology</em>. 3 authors. <a href="http://arxiv.org/pdf/2001.01434v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>With the rapid development of data collection and aggregation technologies in many scientific disciplines, it is becoming increasingly ubiquitous to conduct large-scale or online regression to analyze real-world data and unveil real-world evidence. In such applications, it is often numerically challenging or sometimes infeasible to store the entire dataset in memory. …</summary><br> Consequently, classical batch-based estimation methods that involve the entire dataset are less attractive or no longer applicable. Instead, recursive estimation methods such as stochastic gradient descent that process data points sequentially are more appealing, exhibiting both numerical convenience and memory efficiency. In this paper, for scalable estimation of large or online survival data, we propose a stochastic gradient descent method which recursively updates the estimates in an online manner as data points arrive sequentially in streams. Theoretical results such as asymptotic normality and estimation efficiency are established to justify its validity. Furthermore, to quantify the uncertainty associated with the proposed stochastic gradient descent estimator and facilitate statistical inference, we develop a scalable resampling strategy that specifically caters to the large-scale or online setting. Simulation studies and a real data application are also provided to assess its performance and illustrate its practical utility.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01532v1" style="color: #d9230f">Estimation of the spatial weighting matrix for regular lattice data – An adaptive lasso approach with cross-sectional resampling</a></b><br><em>Computation, Machine Learning</em>. 2 authors. <a href="http://arxiv.org/pdf/2001.01532v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Spatial econometric research typically relies on the assumption that the spatial dependence structure is known in advance and is represented by a deterministic spatial weights matrix. Contrary to classical approaches, we investigate the estimation of sparse spatial dependence structures for regular lattice data. …</summary><br> In particular, an adaptive least absolute shrinkage and selection operator (lasso) is used to select and estimate the individual connections of the spatial weights matrix. To recover the spatial dependence structure, we propose cross-sectional resampling, assuming that the random process is exchangeable. The estimation procedure is based on a two-step approach to circumvent simultaneity issues that typically arise from endogenous spatial autoregressive dependencies. The two-step adaptive lasso approach with cross-sectional resampling is verified using Monte Carlo simulations. Eventually, we apply the procedure to model nitrogen dioxide (<span class="math inline">\(\mathrm{NO_2}\)</span>) concentrations and show that estimating the spatial dependence structure contrary to using prespecified weights matrices improves the prediction accuracy considerably.
+</details>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="elec.-eng.-and-systems-science">Elec. Eng. and Systems Science</h3>
+<table class="table table-striped table-condensed" style="margin-left: auto; margin-right: auto;">
+<tbody>
+<tr grouplength="2">
+<td colspan="1" style="background-color: #666; color: #fff;">
+<strong>Audio and Speech Processing (eess.AS)</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01656v1" style="color: #d9230f">Audio-visual Recognition of Overlapped speech for the LRS2 dataset</a></b><br><em>Sound, Audio and Speech Processing</em>. 10 authors. <a href="http://arxiv.org/pdf/2001.01656v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Automatic recognition of overlapped speech remains a highly challenging task to date. Motivated by the bimodal nature of human speech perception, this paper investigates the use of audio-visual technologies for overlapped speech recognition. …</summary><br> Three issues associated with the construction of audio-visual speech recognition (AVSR) systems are addressed. First, the basic architecture designs i.e. end-to-end and hybrid of AVSR systems are investigated. Second, purposefully designed modality fusion gates are used to robustly integrate the audio and visual features. Third, in contrast to a traditional pipelined architecture containing explicit speech separation and recognition components, a streamlined and integrated AVSR system optimized consistently using the lattice-free MMI (LF-MMI) discriminative criterion is also proposed. The proposed LF-MMI time-delay neural network (TDNN) system establishes the state-of-the-art for the LRS2 dataset. Experiments on overlapped speech simulated from the LRS2 dataset suggest the proposed AVSR system outperformed the audio only baseline LF-MMI DNN system by up to 29.98% absolute in word error rate (WER) reduction, and produced recognition performance comparable to a more complex pipelined system. Consistent performance improvements of 4.89% absolute in WER reduction over the baseline AVSR system using feature fusion are also obtained.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01538v1" style="color: #d9230f">Speech Enhancement based on Denoising Autoencoder with Multi-branched Encoders</a></b><br><em>Sound, Audio and Speech Processing</em>. 7 authors. <a href="http://arxiv.org/pdf/2001.01538v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Deep learning-based models have greatly advanced the performance of speech enhancement (SE) systems. However, two problems remain unsolved, which are closely related to model generalizability to noisy conditions: (1) mismatched noisy condition during testing, i. …</summary><br>e., the performance is generally sub-optimal when models are tested with unseen noise types that are not involved in the training data; (2) local focus on specific noisy conditions, i.e., models trained using multiple types of noises cannot optimally remove a specific noise type even though the noise type has been involved in the training data. These problems are common in real applications. In this paper, we propose a novel denoising autoencoder with a multi-branched encoder (termed DAEME) model to deal with these two problems. In the DAEME model, two stages are involved: offline and online. In the offline stage, we build multiple component models to form a multi-branched encoder based on a dynamically-sized decision tree(DSDT). The DSDT is built based on a prior knowledge of speech and noisy conditions (the speaker, environment, and signal factors are considered in this paper), where each component of the multi-branched encoder performs a particular mapping from noisy to clean speech along the branch in the DSDT. Finally, a decoder is trained on top of the multi-branched encoder. In the online stage, noisy speech is first processed by the tree and fed to each component model. The multiple outputs from these models are then integrated into the decoder to determine the final enhanced speech. Experimental results show that DAEME is superior to several baseline models in terms of objective evaluation metrics and the quality of subjective human listening tests.
+</details>
+</td>
+</tr>
+<tr grouplength="2">
+<td colspan="1" style="background-color: #666; color: #fff;">
+<strong>Image and Video Processing (eess.IV)</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01432v1" style="color: #d9230f">Deep Learning-Based Solvability of Underdetermined Inverse Problems in Medical Imaging</a></b><br><em>Image and Video Processing, Machine Learning, Machine Learning</em>. 5 authors. <a href="http://arxiv.org/pdf/2001.01432v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Recently, with the significant developments in deep learning techniques, solving underdetermined inverse problems has become one of the major concerns in the medical imaging domain. Typical examples include undersampled magnetic resonance imaging, interior tomography, and sparse-view computed tomography, where deep learning techniques have achieved excellent performances. …</summary><br> Although deep learning methods appear to overcome the limitations of existing mathematical methods when handling various underdetermined problems, there is a lack of rigorous mathematical foundations that would allow us to elucidate the reasons for the remarkable performance of deep learning methods. This study focuses on learning the causal relationship regarding the structure of the training data suitable for deep learning, to solve highly underdetermined inverse problems. We observe that a majority of the problems of solving underdetermined linear systems in medical imaging are highly non-linear. Furthermore, we analyze if a desired reconstruction map can be learnable from the training data and underdetermined system.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01547v1" style="color: #d9230f">Hyperspectral Super-Resolution via Coupled Tensor Ring Factorization</a></b><br><em>Computer Vision and Pattern Recognition, Image and Video Processing</em>. 5 authors. <a href="http://arxiv.org/pdf/2001.01547v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Hyperspectral super-resolution (HSR) fuses a low-resolution hyperspectral image (HSI) and a high-resolution multispectral image (MSI) to obtain a high-resolution HSI (HR-HSI). In this paper, we propose a new model, named coupled tensor ring factorization (CTRF), for HSR. …</summary><br> The proposed CTRF approach simultaneously learns high spectral resolution core tensor from the HSI and high spatial resolution core tensors from the MSI, and reconstructs the HR-HSI via tensor ring (TR) representation (Figure~). The CTRF model can separately exploit the low-rank property of each class (Section ), which has been never explored in the previous coupled tensor model. Meanwhile, it inherits the simple representation of coupled matrix/CP factorization and flexible low-rank exploration of coupled Tucker factorization. Guided by Theorem~, we further propose a spectral nuclear norm regularization to explore the global spectral low-rank property. The experiments have demonstrated the advantage of the proposed nuclear norm regularized CTRF (NCTRF) as compared to previous matrix/tensor and deep learning methods.
+</details>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="physics">Physics</h3>
+<table class="table table-striped table-condensed" style="margin-left: auto; margin-right: auto;">
+<tbody>
+<tr grouplength="2">
+<td colspan="1" style="background-color: #666; color: #fff;">
+<strong>Computational Physics (physics.comp-ph)</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01488v1" style="color: #d9230f">Ab initio study on Quasi-Binary Acetonitriletriide Sr<span class="math inline">\(_3\)</span>[C<span class="math inline">\(_2\)</span>N]<span class="math inline">\(_2\)</span></a></b><br><em>Computational Physics</em>. 6 authors. <a href="http://arxiv.org/pdf/2001.01488v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>We report using density functional theory (DFT), the ground-state properties of the recently synthesized and characterized Sr<span class="math inline">\(_3\)</span>[C<span class="math inline">\(_2\)</span>N]<span class="math inline">\(_2\)</span> crystal. The nearly colorless, centrosymmetric Sr<span class="math inline">\(_3\)</span>[C<span class="math inline">\(_2\)</span>N]<span class="math inline">\(_2\)</span> crystallizes in a monoclinic unit cell with a <span class="math inline">\(P2_1/c\)</span> space group (No. …</summary><br>14) and many of its properties remain unknown basing on the fact that it’s a latecomer in the field. The goal of this study is to fill this information gap through a theoretical prediction. The calculated structural properties were comparable to those obtained by an experimental group led by Clark and co-workers thus giving us extra confidence in the accuracy of our DFT computations on Sr<span class="math inline">\(_3\)</span>[C<span class="math inline">\(_2\)</span>N]<span class="math inline">\(_2\)</span>. We employed the same approach in calculating mechanical and dynamical stabilities together with the electronic density of states of Sr<span class="math inline">\(_3\)</span>[C<span class="math inline">\(_2\)</span>N]<span class="math inline">\(_2\)</span>. No imaginary phonon modes were observed and thus implying dynamical stability. The thirteen elastic constants calculated passed the stability criteria of a monoclinic system. From the computed Poisson’s ratio (<span class="math inline">\(\eta\)</span>=0.27) and G/B=0.54, our calculations predict Sr<span class="math inline">\(_3\)</span>[C<span class="math inline">\(_2\)</span>N]<span class="math inline">\(_2\)</span> being brittle and not able to withstand high-pressure applications. To analyze the chemical bonding mechanism, the corresponding total density of states (TDOS) and partial DOS were plotted. The top of the valence band (VB) mainly consists of C 2p states N 2p, N 2s and a slight admixture of Sr 5s states. The bottom of the conduction band (CB) shows a strong hybridization between C 2p, N 2p, N 2s, and Sr 5s states, yielding a bandwidth of 7.18 eV in the entire conduction band. We were able to obtain a tunable electronic gap of 2.65 eV in Sr<span class="math inline">\(_3\)</span>[C<span class="math inline">\(_2\)</span>N]<span class="math inline">\(_2\)</span>. The authors herein note that Sr<span class="math inline">\(_3\)</span>[C<span class="math inline">\(_2\)</span>N]<span class="math inline">\(_2\)</span> falls in an unknown family of pseudonitrides that may possess novel physical and chemical properties.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01609v1" style="color: #d9230f">Performance of parallel-in-time integration for Rayleigh Bénard Convection</a></b><br><em>Computational Physics</em>. 5 authors. <a href="http://arxiv.org/pdf/2001.01609v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Rayleigh-B'enard convection (RBC) is a fundamental problem of fluid dynamics, with many applications to geophysical, astrophysical, and industrial flows. Understanding RBC at parameter regimes of interest requires complex physical or numerical experiments. …</summary><br> Numerical simulations require large amounts of computational resources; in order to more efficiently use the large numbers of processors now available in large high performance computing clusters, novel parallelisation strategies are required. To this end, we investigate the performance of the parallel-in-time algorithm Parareal when used in numerical simulations of RBC. We present the first parallel-in-time speedups for RBC simulations at finite Prandtl number. We also investigate the problem of convergence of Parareal with respect to to statistical numerical quantities, such as the Nusselt number, and discuss the importance of reliable online stopping criteria in these cases.
+</details>
+</td>
+</tr>
+<tr grouplength="1">
+<td colspan="1" style="background-color: #666; color: #fff;">
+<strong>Data Analysis, Statistics and Probability (physics.data-an)</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01678v1" style="color: #d9230f">How neural networks find generalizable solutions: Self-tuned annealing in deep learning</a></b><br><em>Adaptation and Self-Organizing Systems, Data Analysis, Statistics and Probability, Machine Learning, Statistical Mechanics</em>. 2 authors. <a href="http://arxiv.org/pdf/2001.01678v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Despite the tremendous success of Stochastic Gradient Descent (SGD) algorithm in deep learning, little is known about how SGD finds generalizable solutions in the high-dimensional weight space. By analyzing the learning dynamics and loss function landscape, we discover a robust inverse relation between the weight variance and the landscape flatness (inverse of curvature) for all SGD-based learning algorithms. …</summary><br> To explain the inverse variance-flatness relation, we develop a random landscape theory, which shows that the SGD noise strength (effective temperature) depends inversely on the landscape flatness. Our study indicates that SGD attains a self-tuned landscape-dependent annealing strategy to find generalizable solutions at the flat minima of the landscape. Finally, we demonstrate how these new theoretical insights lead to more efficient algorithms, e.g., for avoiding catastrophic forgetting.
+</details>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="condensed-matter">Condensed Matter</h3>
+<table class="table table-striped table-condensed" style="margin-left: auto; margin-right: auto;">
+<tbody>
+<tr grouplength="2">
+<td colspan="1" style="background-color: #666; color: #fff;">
+<strong>Mesoscale and Nanoscale Physics (cond-mat.mes-hall)</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01400v1" style="color: #d9230f">Model Predictive Control for Finite Input Systems using the D-Wave Quantum Annealer</a></b><br><em>Mesoscale and Nanoscale Physics, Quantum Physics, Systems and Control, Computational Physics, Emerging Technologies</em>. 2 authors. <a href="http://arxiv.org/pdf/2001.01400v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>The D-Wave quantum annealer has emerged as a novel computational architecture that is attracting significant interest, but there have been only a few practical algorithms exploiting the power of quantum annealers. Here we present a model predictive control (MPC) algorithm using a quantum annealer for a system allowing a finite number of input values. …</summary><br> Such an MPC problem is classified as a non-deterministic polynomial-time-hard combinatorial problem, and thus real-time sequential optimization is difficult to obtain with conventional computational systems. We circumvent this difficulty by converting the original MPC problem into a quadratic unconstrained binary optimization problem, which is then solved by the D-Wave quantum annealer. Two practical applications, namely stabilization of a spring-mass-damper system and dynamic audio quantization, are demonstrated. For both, the D-Wave method exhibits better performance than the classical simulated annealing method. Our results suggest new applications of quantum annealers in the direction of dynamic control problems.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01711v1" style="color: #d9230f">Unsupervised machine learning and band topology</a></b><br><em>Computational Physics, Strongly Correlated Electrons, Mesoscale and Nanoscale Physics</em>. 2 authors. <a href="http://arxiv.org/pdf/2001.01711v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>The study of topological bandstructures is an active area of research in condensed matter physics and beyond. Here, we combine recent progress in this field with developments in machine-learning, another rising topic of interest. …</summary><br> Specifically, we introduce an unsupervised machine-learning approach that searches for and retrieves paths of adiabatic deformations between Hamiltonians, thereby clustering them according to their topological properties. The algorithm is general as it does not rely on a specific parameterization of the Hamiltonian and is readily applicable to any symmetry class. We demonstrate the approach using several different models in both one and two spatial dimensions and for different symmetry classes with and without crystalline symmetries. Accordingly, it is also shown how trivial and topological phases can be diagnosed upon comparing with a generally designated set of trivial atomic insulators.
+</details>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="mathematics">Mathematics</h3>
+<table class="table table-striped table-condensed" style="margin-left: auto; margin-right: auto;">
+<tbody>
+<tr grouplength="2">
+<td colspan="1" style="background-color: #666; color: #fff;">
+<strong>Statistics Theory (math.ST)</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01700v1" style="color: #d9230f">Gradient descent algorithms for Bures-Wasserstein barycenters</a></b><br><em>Statistics Theory, Statistics Theory</em>. 4 authors. <a href="http://arxiv.org/pdf/2001.01700v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>We study first order methods to compute the barycenter of a probability distribution over the Bures-Wasserstein manifold. We derive global rates of convergence for both gradient descent and stochastic gradient descent despite the fact that the barycenter functional is not geodesically convex. …</summary><br> Our analysis overcomes this technical hurdle by developing a Polyak-Lojasiewicz (PL) inequality, which is built using tools from optimal transport and metric geometry.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01412v1" style="color: #d9230f">Maximum Likelihood Estimation of Stochastic Differential Equations with Random Effects Driven by Fractional Brownian Motion</a></b><br><em>Dynamical Systems, Statistics Theory, Statistics Theory</em>. 4 authors. <a href="http://arxiv.org/pdf/2001.01412v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Stochastic differential equations and stochastic dynamics are good models to describe stochastic phenomena in real world. In this paper, we study N independent stochastic processes Xi(t) with real entries and the processes are determined by the stochastic differential equations with drift term relying on some random effects. …</summary><br> We obtain the Girsanov-type formula of the stochastic differential equation driven by Fractional Brownian Motion through kernel transformation. Under some assumptions of the random effect, we estimate the parameter estimators by the maximum likelihood estimation and give some numerical simulations for the discrete observations. Results show that for the different H, the parameter estimator is closer to the true value as the amount of data increases.
+</details>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="quantitative-finance">Quantitative Finance</h3>
+<table class="table table-striped table-condensed" style="margin-left: auto; margin-right: auto;">
+<tbody>
+<tr grouplength="1">
+<td colspan="1" style="background-color: #666; color: #fff;">
+<strong>Portfolio Management (q-fin.PM)</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01612v1" style="color: #d9230f">A Note on Portfolio Optimization with Quadratic Transaction Costs</a></b><br><em>Portfolio Management, Computational Finance, Machine Learning</em>. 4 authors. <a href="http://arxiv.org/pdf/2001.01612v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>In this short note, we consider mean-variance optimized portfolios with transaction costs. We show that introducing quadratic transaction costs makes the optimization problem more difficult than using linear transaction costs. …</summary><br> The reason lies in the specification of the budget constraint, which is no longer linear. We provide numerical algorithms for solving this issue and illustrate how transaction costs may considerably impact the expected returns of optimized portfolios.
+</details>
+</td>
+</tr>
+<tr grouplength="1">
+<td colspan="1" style="background-color: #666; color: #fff;">
+<strong>Statistical Finance (q-fin.ST)</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01518v1" style="color: #d9230f">Disentangling shock diffusion on complex networks: Identification through graph planarity</a></b><br><em>Statistical Finance</em>. 3 authors. <a href="http://arxiv.org/pdf/2001.01518v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Large scale networks delineating collective dynamics often exhibit cascading failures across nodes leading to a system-wide collapse. Prominent examples of such phenomena would include collapse on financial and economic networks. …</summary><br> Intertwined nature of the dynamics of nodes in such network makes it difficult to disentangle the source and destination of a shock that percolates through the network, a property known as reflexivity. In this article, a novel methodology is proposed which combines vector autoregression model with an unique identification restrictions obtained from the topological structure of the network to uniquely characterize cascades. In particular, we show that planarity of the network allows us to statistically estimate a dynamical process consistent with the observed network and thereby uniquely identify a path for shock propagation from any chosen epicenter to all other nodes in the network. We analyze the distress propagation mechanism in closed loops giving rise to a detailed picture of the effect of feedback loops in transmitting shocks. We show usefulness and applications of the algorithm in two networks with dynamics at different time-scales: worldwide GDP growth network and stock network. In both cases, we observe that the model predicts the impact of the shocks emanating from the US would be concentrated within the cluster of developed countries and the developing countries show very muted response, which is consistent with empirical observations over the past decade.
+</details>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="other">Other</h3>
+<table class="table table-striped table-condensed" style="margin-left: auto; margin-right: auto;">
+<tbody>
+<tr grouplength="1">
+<td colspan="1" style="background-color: #666; color: #fff;">
+<strong>Instrumentation and Methods for Astrophysics (astro-ph.IM)</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01372v1" style="color: #d9230f">Applying Information Theory to Design Optimal Filters for Photometric Redshifts</a></b><br><em>Information Theory, Applications, Instrumentation and Methods for Astrophysics, Information Theory</em>. 3 authors. <a href="http://arxiv.org/pdf/2001.01372v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>In this paper we apply ideas from information theory to create a method for the design of optimal filters for photometric redshift estimation. We show the method applied to a series of simple example filters in order to motivate an intuition for how photometric redshift estimators respond to the properties of photometric passbands. …</summary><br> We then design a realistic set of six filters covering optical wavelengths that optimize photometric redshifts for <span class="math inline">\(z &amp;lt;= 2.3\)</span> and <span class="math inline">\(i &amp;lt; 25.3\)</span>. We create a simulated catalog for these optimal filters and use our filters with a photometric redshift estimation code to show that we can improve the standard deviation of the photometric redshift error by 7.1% overall and improve outliers 9.9% over the standard filters proposed for the Large Synoptic Survey Telescope (LSST). We compare features of our optimal filters to LSST and find that the LSST filters incorporate key features for optimal photometric redshift estimation. Finally, we describe how information theory can be applied to a range of optimization problems in astronomy.
+</details>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!--radix_placeholder_article_footer-->
+<div class="article-footer">
+  <p class="social_footer">
+    <span class="disqus-comments">
+      <i class="fas fa-comments"></i>
+      &nbsp;
+      <span class="disqus-comment-count" data-disqus-identifier="posts/2020-01-07/">Comment on this article</span>
+    </span>
+    <span class="article-sharing">
+      Share: &nbsp;
+      <a href="https://twitter.com/share?text=Articles%20from%202020-01-06&amp;url=bryanwhiting.github.io%2Fds-arxiv%2Fposts%2F2020-01-07%2F">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=bryanwhiting.github.io%2Fds-arxiv%2Fposts%2F2020-01-07%2F&amp;title=Articles%20from%202020-01-06">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </span>
+  </p>
+  <script id="dsq-count-scr" src="https://dsarxiv.disqus.com/count.js" async></script>
+  <div id="disqus_thread"></div>
+  <script>
+var disqus_config = function () {
+  this.page.url = 'bryanwhiting.github.io/ds-arxiv/posts/2020-01-07/';
+  this.page.identifier = 'posts/2020-01-07/';
+};
+(function() {
+  var d = document, s = d.createElement('script');
+  s.src = 'https://dsarxiv.disqus.com/embed.js';
+  s.setAttribute('data-timestamp', +new Date());
+  (d.head || d.body).appendChild(s);
+})();
+</script>
+</div>
+<!--/radix_placeholder_article_footer-->
+</div>
+
+<div class="d-appendix">
+</div>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+<!--radix_placeholder_site_after_body-->
+<!--/radix_placeholder_site_after_body-->
+<!--radix_placeholder_appendices-->
+<div class="appendix-bottom"></div>
+<!--/radix_placeholder_appendices-->
+<!--radix_placeholder_navigation_after_body-->
+<!--/radix_placeholder_navigation_after_body-->
+
+</body>
+
+</html>
