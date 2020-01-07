@@ -7,10 +7,11 @@ TODO: Parse cs, stat, math, etc to have "domains"
 Prefect
 * Try caching
 * Figure out how to force a run even with a schedule
-* Try Slack notifications
 * Submit request for log write out
 * Submit request for launchd scheduling
 
+DONE:
+* Try Slack notifications
 """
 
 import fileinput
@@ -29,6 +30,8 @@ from prefect.schedules.clocks import CronClock
 from prefect.tasks.core.constants import Constant
 from prefect.utilities.notifications import slack_notifier
 from prefect.tasks.notifications.slack_task import SlackTask
+from prefect.engine.result_handlers import LocalResultHandler
+
 
 from datetime import datetime, timedelta, date
 
@@ -113,7 +116,9 @@ def parse_arxiv_post(post, arx_dict):
         'date': post['published']
     })
 
-@task
+# Checkpointing
+# @task
+@task(checkpoint=True, result_handler=LocalResultHandler(dir="~/.prefect"))
 def df_get_arxiv(
     arx_list, 
     arx_dict, 
