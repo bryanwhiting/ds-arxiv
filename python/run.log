@@ -70,3 +70,10 @@ FileNotFoundError: [Errno 2] No such file or directory: '/Users/bryanwhiting/git
 [2020-01-07 14:10:25,922] INFO - prefect.TaskRunner | Task 'tweet_bryan': finished task run for task with final state: 'Pending'
 [2020-01-07 14:10:25,923] INFO - prefect.FlowRunner | Flow run RUNNING: terminal tasks are incomplete.
 [2020-01-07 14:10:25,924] INFO - prefect.Flow: Build Arxiv | Waiting for next available Task run at 2020-01-07T14:20:25.827532+00:00
+[2020-01-07 14:20:25,862] INFO - prefect.FlowRunner | Beginning Flow run for 'Build Arxiv'
+[2020-01-07 14:20:25,885] INFO - prefect.TaskRunner | Task 'replace_rmd_template_metadata': Starting task run...
+[2020-01-07 14:20:25,898] INFO - prefect.TaskRunner | Task 'replace_rmd_template_metadata': finished task run for task with final state: 'Success'
+[2020-01-07 14:20:25,908] INFO - prefect.TaskRunner | Task 'knit_rmd_to_html': Starting task run...
+sh: Rscript: command not found
+[2020-01-07 14:20:25,922] INFO - prefect.TaskRunner | Task 'knit_rmd_to_html': finished task run for task with final state: 'Success'
+[2020-01-07 14:20:25,929] INFO - prefect.TaskRunner | Task 'git_commit_push': Starting task run...
