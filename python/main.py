@@ -28,6 +28,7 @@ from prefect.schedules import Schedule
 from prefect.schedules.clocks import CronClock
 from prefect.tasks.core.constants import Constant
 from prefect.utilities.notifications import slack_notifier
+from prefect.tasks.notifications.slack_task import SlackTask
 
 from datetime import datetime, timedelta, date
 
@@ -269,7 +270,10 @@ if __name__ == '__main__':
     # Build a handler for slack
     # https://docs.prefect.io/core/tutorials/slack-notifications.html#using-your-url-to-get-notifications
     # You need to store the secrets in ~/.prefect/config.toml
+    # Visit slack: https://app.slack.com/client/T04SR64EX/CS0P8PVKM
     slack_handler = slack_notifier(webhook_secret='SLACK_WEBHOOK_URL_DSARXIV')
+    slack_message = SlackTask(webhook_secret='SLACK_WEBHOOK_URL_DSARXIV')
+
 
     # using the Imperitive API: https://docs.prefect.io/core/concepts/flows.html#imperative-api
     with Flow('Build Arxiv', state_handlers=[slack_handler]) as flow:
@@ -300,11 +304,13 @@ if __name__ == '__main__':
         gcp = git_commit_push()
         gcp.set_dependencies(upstream_tasks=[knit2])
 
-        # Send tweets
+        # Send tweets and slack messages
         tweet = create_tweet(dir_post, date_published=date_today, date_query=filter_to_date)
         tweet.set_dependencies(upstream_tasks=[gcp])
         tweet_b = tweet_bryan(tweet=tweet)
         tweet_w = tweet_world(tweet=tweet)
+        slack_mess = slack_message(message=tweet)
+
 
     # flow.visualize()    
     state = flow.run()

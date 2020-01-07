@@ -77,3 +77,44 @@ FileNotFoundError: [Errno 2] No such file or directory: '/Users/bryanwhiting/git
 sh: Rscript: command not found
 [2020-01-07 14:20:25,922] INFO - prefect.TaskRunner | Task 'knit_rmd_to_html': finished task run for task with final state: 'Success'
 [2020-01-07 14:20:25,929] INFO - prefect.TaskRunner | Task 'git_commit_push': Starting task run...
+[2020-01-07 14:20:28,965] INFO - prefect.TaskRunner | Task 'git_commit_push': finished task run for task with final state: 'Success'
+[2020-01-07 14:20:28,974] INFO - prefect.TaskRunner | Task 'create_tweet': Starting task run...
+[2020-01-07 14:20:28,978] INFO - prefect.TaskRunner | Task 'create_tweet': finished task run for task with final state: 'Success'
+[2020-01-07 14:20:28,985] INFO - prefect.TaskRunner | Task 'tweet_world': Starting task run...
+[2020-01-07 14:20:29,183] ERROR - prefect.TaskRunner | Unexpected error: TweepError([{'code': 187, 'message': 'Status is a duplicate.'}])
+Traceback (most recent call last):
+  File "/Users/bryanwhiting/venvs/py37/lib/python3.7/site-packages/prefect/engine/runner.py", line 48, in inner
+    new_state = method(self, state, *args, **kwargs)
+  File "/Users/bryanwhiting/venvs/py37/lib/python3.7/site-packages/prefect/engine/task_runner.py", line 870, in get_task_run_state
+    self.task.run, timeout=self.task.timeout, **raw_inputs
+  File "/Users/bryanwhiting/venvs/py37/lib/python3.7/site-packages/prefect/utilities/executors.py", line 250, in timeout_handler
+    return fn(*args, **kwargs)
+  File "/Users/bryanwhiting/github/ds-arxiv/python/main.py", line 251, in tweet_world
+    api.update_status(tweet)
+  File "/Users/bryanwhiting/venvs/py37/lib/python3.7/site-packages/tweepy/api.py", line 193, in update_status
+    )(post_data=post_data, *args, **kwargs)
+  File "/Users/bryanwhiting/venvs/py37/lib/python3.7/site-packages/tweepy/binder.py", line 250, in _call
+    return method.execute()
+  File "/Users/bryanwhiting/venvs/py37/lib/python3.7/site-packages/tweepy/binder.py", line 233, in execute
+    raise TweepError(error_msg, resp, api_code=api_error_code)
+tweepy.error.TweepError: [{'code': 187, 'message': 'Status is a duplicate.'}]
+[2020-01-07 14:20:29,195] INFO - prefect.TaskRunner | Task 'tweet_world': finished task run for task with final state: 'Failed'
+[2020-01-07 14:20:29,204] INFO - prefect.TaskRunner | Task 'tweet_bryan': Starting task run...
+[2020-01-07 14:20:29,438] INFO - prefect.TaskRunner | Task 'tweet_bryan': finished task run for task with final state: 'Success'
+[2020-01-07 14:20:29,440] INFO - prefect.FlowRunner | Flow run FAILED: some reference tasks failed.
+Traceback (most recent call last):
+  File "/Users/bryanwhiting/github/ds-arxiv/python/main.py", line 307, in <module>
+    tweet_w = tweet_world(tweet=tweet)
+  File "/Users/bryanwhiting/venvs/py37/lib/python3.7/site-packages/prefect/core/flow.py", line 1154, in visualize
+    graph.render(filename, view=False)
+  File "/Users/bryanwhiting/venvs/py37/lib/python3.7/site-packages/graphviz/files.py", line 209, in render
+    quiet=quiet)
+  File "/Users/bryanwhiting/venvs/py37/lib/python3.7/site-packages/graphviz/backend.py", line 206, in render
+    run(cmd, capture_output=True, cwd=cwd, check=True, quiet=quiet)
+  File "/Users/bryanwhiting/venvs/py37/lib/python3.7/site-packages/graphviz/backend.py", line 159, in run
+    proc = subprocess.Popen(cmd, startupinfo=get_startupinfo(), **kwargs)
+  File "/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/subprocess.py", line 800, in __init__
+    restore_signals, start_new_session)
+  File "/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/subprocess.py", line 1551, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+NotADirectoryError: [Errno 20] Not a directory: 'dot'

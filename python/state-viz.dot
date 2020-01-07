@@ -1,37 +1,37 @@
 digraph {
-	4588784144 [label=tweet_bryan color="#28a74580" colorscheme=svg shape=ellipse style=filled]
-	4588783248 [label=create_tweet color="#28a74580" colorscheme=svg shape=ellipse style=filled]
-	4588784400 [label=tweet_world color="#eb000080" colorscheme=svg shape=ellipse style=filled]
-	4588703632 [label=df_get_arxiv color="#28a74580" colorscheme=svg shape=ellipse style=filled]
-	4588757520 [label=create_dir_post color="#28a74580" colorscheme=svg shape=ellipse style=filled]
-	4588703376 [label=filter_df_arxiv color="#28a74580" colorscheme=svg shape=ellipse style=filled]
-	4588758032 [label=write_df_to_csv color="#28a74580" colorscheme=svg shape=ellipse style=filled]
-	4588703184 [label=determine_filter_date color="#28a74580" colorscheme=svg shape=ellipse style=filled]
-	4588758992 [label=copy_rmd_template color="#28a74580" colorscheme=svg shape=ellipse style=filled]
-	4588759248 [label=knit_rmd_to_html color="#28a74580" colorscheme=svg shape=ellipse style=filled]
-	4588759952 [label=replace_rmd_template_metadata color="#28a74580" colorscheme=svg shape=ellipse style=filled]
-	4588781712 [label=knit_rmd_to_html color="#28a74580" colorscheme=svg shape=ellipse style=filled]
-	4588782608 [label=git_commit_push color="#28a74580" colorscheme=svg shape=ellipse style=filled]
-	4588783248 -> 4588784144 [label=tweet]
-	4588783248 -> 4588784400 [label=tweet]
-	4588703632 -> 4588703376 [label=df]
-	4588703376 -> 4588758032 [label=df]
-	4588758992 -> 4588781712 [label=fp_post]
-	4588758992 -> 4588759952 [label=fp_post]
-	4588758032 -> 4588759248
-	4588703184 -> 4588783248 [label=date_query]
-	4588703184 -> 4588759952 [label=date_query]
-	4588759248 -> 4588759952
-	4588759248 -> 4588781712
-	4588757520 -> 4588758032 [label=dir_post]
-	4588757520 -> 4588759952 [label=dir_post]
-	4588757520 -> 4588783248 [label=dir_post]
-	4588703632 -> 4588703184 [label=df]
-	4588758992 -> 4588759248 [label=fp_post]
-	4588759952 -> 4588781712
-	4588703376 -> 4588757520
-	4588781712 -> 4588782608
-	4588782608 -> 4588783248
-	4588757520 -> 4588758992 [label=dir_post]
-	4588703184 -> 4588703376 [label=filter_to_date]
+	4524649168 [label=tweet_bryan color="#28a74580" colorscheme=svg shape=ellipse style=filled]
+	4524648272 [label=create_tweet color="#28a74580" colorscheme=svg shape=ellipse style=filled]
+	4524649424 [label=tweet_world color="#eb000080" colorscheme=svg shape=ellipse style=filled]
+	4524626064 [label=df_get_arxiv color="#28a74580" colorscheme=svg shape=ellipse style=filled]
+	4524627152 [label=write_df_to_csv color="#28a74580" colorscheme=svg shape=ellipse style=filled]
+	4524580432 [label=determine_filter_date color="#28a74580" colorscheme=svg shape=ellipse style=filled]
+	4524626000 [label=filter_df_arxiv color="#28a74580" colorscheme=svg shape=ellipse style=filled]
+	4524626640 [label=create_dir_post color="#28a74580" colorscheme=svg shape=ellipse style=filled]
+	4524628112 [label=copy_rmd_template color="#28a74580" colorscheme=svg shape=ellipse style=filled]
+	4524628368 [label=knit_rmd_to_html color="#28a74580" colorscheme=svg shape=ellipse style=filled]
+	4524629072 [label=replace_rmd_template_metadata color="#28a74580" colorscheme=svg shape=ellipse style=filled]
+	4524646736 [label=knit_rmd_to_html color="#28a74580" colorscheme=svg shape=ellipse style=filled]
+	4524647632 [label=git_commit_push color="#28a74580" colorscheme=svg shape=ellipse style=filled]
+	4524648272 -> 4524649168 [label=tweet]
+	4524648272 -> 4524649424 [label=tweet]
+	4524626000 -> 4524627152 [label=df]
+	4524628112 -> 4524629072 [label=fp_post]
+	4524628112 -> 4524646736 [label=fp_post]
+	4524627152 -> 4524628368
+	4524628368 -> 4524629072
+	4524628368 -> 4524646736
+	4524626640 -> 4524627152 [label=dir_post]
+	4524626640 -> 4524629072 [label=dir_post]
+	4524626640 -> 4524648272 [label=dir_post]
+	4524580432 -> 4524626000 [label=filter_to_date]
+	4524580432 -> 4524629072 [label=date_query]
+	4524580432 -> 4524648272 [label=date_query]
+	4524626064 -> 4524626000 [label=df]
+	4524626064 -> 4524580432 [label=df]
+	4524628112 -> 4524628368 [label=fp_post]
+	4524626000 -> 4524626640
+	4524629072 -> 4524646736
+	4524646736 -> 4524647632
+	4524647632 -> 4524648272
+	4524626640 -> 4524628112 [label=dir_post]
 }
