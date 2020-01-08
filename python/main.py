@@ -32,7 +32,6 @@ from prefect.utilities.notifications import slack_notifier
 from prefect.tasks.notifications.slack_task import SlackTask
 from prefect.engine.result_handlers import LocalResultHandler
 
-
 from datetime import datetime, timedelta, date
 
 import mypass
@@ -118,7 +117,7 @@ def parse_arxiv_post(post, arx_dict):
 
 # Checkpointing
 # @task
-@task(checkpoint=True, result_handler=LocalResultHandler(dir="~/.prefect"))
+@task(checkpoint=True, result_handler=LocalResultHandler(dir="~/.prefect/2019-01-07"))
 def df_get_arxiv(
     arx_list, 
     arx_dict, 

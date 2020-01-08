@@ -28,7 +28,7 @@ a limited time budget for learning each task and the task distribution might
 involve problems with different levels of similarity. We directly search for
 optimal option sets and show that the discovered options significantly differ
 depending on factors such as the available learning time budget and that the
-found options outperform popular option-generation heuristics.",cs.LG,"cs.LG, cs.AI, stat.ML",3,Machine Learning,"Machine Learning, Artificial Intelligence, Machine Learning",Gianluca Baldassarre,"Manuel Del Verme, Bruno Castro da Silva, Gianluca Baldassarre",3,http://arxiv.org/pdf/2001.01620v1,http://arxiv.org/abs/2001.01620v1,2020-01-06
+found options outperform popular option-generation heuristics.",cs.LG,"cs.AI, cs.LG, stat.ML",3,Machine Learning,"Artificial Intelligence, Machine Learning, Machine Learning",Gianluca Baldassarre,"Manuel Del Verme, Bruno Castro da Silva, Gianluca Baldassarre",3,http://arxiv.org/pdf/2001.01620v1,http://arxiv.org/abs/2001.01620v1,2020-01-06
 Learning Reusable Options for Multi-Task Reinforcement Learning,"Reinforcement learning (RL) has become an increasingly active area of
 research in recent years. Although there are many algorithms that allow an
 agent to solve tasks efficiently, they often ignore the possibility that prior
@@ -84,7 +84,7 @@ benchmark classification datasets. The experimental results demonstrate that
 our method is able to achieve superior performances compared to the
 state-of-the-art methods. We also show that our method can be easily plugged
 into state-of-the-art long-tailed classification algorithms for further
-improvements.",cs.CV,"cs.LG, cs.CV, stat.ML",3,Computer Vision and Pattern Recognition,"Machine Learning, Computer Vision and Pattern Recognition, Machine Learning",Guiguang Ding,"Liuyu Xiang, Guiguang Ding",2,http://arxiv.org/pdf/2001.01536v1,http://arxiv.org/abs/2001.01536v1,2020-01-06
+improvements.",cs.CV,"cs.CV, cs.LG, stat.ML",3,Computer Vision and Pattern Recognition,"Computer Vision and Pattern Recognition, Machine Learning, Machine Learning",Guiguang Ding,"Liuyu Xiang, Guiguang Ding",2,http://arxiv.org/pdf/2001.01536v1,http://arxiv.org/abs/2001.01536v1,2020-01-06
 "TableNet: Deep Learning model for end-to-end Table detection and Tabular
   data extraction from Scanned Document Images","With the widespread use of mobile phones and scanners to photograph and
 upload documents, the need for extracting the information trapped in
@@ -109,7 +109,7 @@ obtaining state of the art results. Additionally, we demonstrate that feeding
 additional semantic features further improves model performance and that the
 model exhibits transfer learning across datasets. Another contribution of this
 paper is to provide additional table structure annotations for the Marmot data,
-which currently only has annotations for table detection.",cs.CV,"eess.IV, cs.LG, cs.CV",3,Computer Vision and Pattern Recognition,"Image and Video Processing, Machine Learning, Computer Vision and Pattern Recognition",Lovekesh Vig,"Shubham Paliwal, Vishwanath D, Rohit Rahul, Monika Sharma, Lovekesh Vig",5,http://arxiv.org/pdf/2001.01469v1,http://arxiv.org/abs/2001.01469v1,2020-01-06
+which currently only has annotations for table detection.",cs.CV,"cs.CV, cs.LG, eess.IV",3,Computer Vision and Pattern Recognition,"Computer Vision and Pattern Recognition, Machine Learning, Image and Video Processing",Lovekesh Vig,"Shubham Paliwal, Vishwanath D, Rohit Rahul, Monika Sharma, Lovekesh Vig",5,http://arxiv.org/pdf/2001.01469v1,http://arxiv.org/abs/2001.01469v1,2020-01-06
 "Deep Learning-Based Solvability of Underdetermined Inverse Problems in
   Medical Imaging","Recently, with the significant developments in deep learning techniques,
 solving underdetermined inverse problems has become one of the major concerns
@@ -125,7 +125,7 @@ training data suitable for deep learning, to solve highly underdetermined
 inverse problems. We observe that a majority of the problems of solving
 underdetermined linear systems in medical imaging are highly non-linear.
 Furthermore, we analyze if a desired reconstruction map can be learnable from
-the training data and underdetermined system.",eess.IV,"eess.IV, cs.LG, stat.ML",3,Image and Video Processing,"Image and Video Processing, Machine Learning, Machine Learning",Jin Keun Seo,"Chang Min Hyun, Seong Hyeon Baek, Mingyu Lee, Sung Min Lee, Jin Keun Seo",5,http://arxiv.org/pdf/2001.01432v1,http://arxiv.org/abs/2001.01432v1,2020-01-06
+the training data and underdetermined system.",eess.IV,"cs.LG, stat.ML, eess.IV",3,Image and Video Processing,"Machine Learning, Machine Learning, Image and Video Processing",Jin Keun Seo,"Chang Min Hyun, Seong Hyeon Baek, Mingyu Lee, Sung Min Lee, Jin Keun Seo",5,http://arxiv.org/pdf/2001.01432v2,http://arxiv.org/abs/2001.01432v2,2020-01-06
 "Frequency Fitness Assignment: Making Optimization Algorithms Invariant
   under Bijective Transformations of the Objective Function","Under Frequency Fitness Assignment (FFA), the fitness corresponding to an
 objective value is its encounter frequency in fitness assignment steps and is
@@ -143,7 +143,7 @@ the bijection invariance, the behavior of an optimization algorithm using FFA
 does not change when the objective values are encrypted. We verify this by
 applying the Md5 checksum computation as transformation to some of the above
 problems and yield the same behaviors. Finally, FFA can improve the performance
-of a Memetic Algorithm for Job Shop Scheduling.",cs.NE,"cs.NE, F.2.2; G.3; G.2.1; G.2.3; B.2.2, cs.AI, math.CO",4,Neural and Evolutionary Computing,"Neural and Evolutionary Computing, Artificial Intelligence, Combinatorics",Yan Chen,"Thomas Weise, Zhize Wu, Xinlu Li, Yan Chen",4,http://arxiv.org/pdf/2001.01416v1,http://arxiv.org/abs/2001.01416v1,2020-01-06
+of a Memetic Algorithm for Job Shop Scheduling.",cs.NE,"math.CO, F.2.2, G.3, G.2.1, G.2.3, B.2.2, cs.NE, cs.AI, F.2.2; G.3; G.2.1; G.2.3; B.2.2",5,Neural and Evolutionary Computing,"Combinatorics, Neural and Evolutionary Computing, Artificial Intelligence",Yan Chen,"Thomas Weise, Zhize Wu, Xinlu Li, Yan Chen",4,http://arxiv.org/pdf/2001.01416v2,http://arxiv.org/abs/2001.01416v2,2020-01-06
 A Rule-Based Model for Victim Prediction,"In this paper, we proposed a novel automated model, called Vulnerability
 Index for Population at Risk (VIPAR) scores, to identify rare populations for
 their future shooting victimizations. Likewise, the focused deterrence approach
@@ -162,7 +162,7 @@ focused deterrence list predicts 13% of future shooting victims and 9.4% of
 future shooting suspects. The model outperforms the intelligence list of
 focused deterrence policies in predicting the future fatal and non-fatal
 shootings. Furthermore, we discuss the concerns about the presumption of
-innocence right.",cs.AI,"cs.CY, cs.AI",2,Artificial Intelligence,"Computers and Society, Artificial Intelligence",Chengcheng Li,"Murat Ozer, Nelly Elsayed, Said Varlioglu, Chengcheng Li",4,http://arxiv.org/pdf/2001.01391v1,http://arxiv.org/abs/2001.01391v1,2020-01-06
+innocence right.",cs.AI,"cs.AI, cs.CY",2,Artificial Intelligence,"Artificial Intelligence, Computers and Society",Chengcheng Li,"Murat Ozer, Nelly Elsayed, Said Varlioglu, Chengcheng Li",4,http://arxiv.org/pdf/2001.01391v1,http://arxiv.org/abs/2001.01391v1,2020-01-06
 A Block-based Generative Model for Attributed Networks Embedding,"Attributed network embedding has attracted plenty of interests in recent
 years. It aims to learn task-independent, low-dimension, and continuous vectors
 for nodes preserving both topology and attribute information. Most existing
@@ -193,7 +193,7 @@ on tracks with different levels of difficulty, our controller is capable of
 making the vehicle drift through various sharp corners quickly and stably in
 the unseen map. The proposed controller is further shown to have excellent
 generalization ability, which can directly handle unseen vehicle types with
-different physical properties, such as mass, tire friction, etc.",cs.RO,"cs.SY, cs.LG, cs.RO, eess.SY",4,Robotics,"Systems and Control, Machine Learning, Robotics",Ming Liu,"Peide Cai, Xiaodong Mei, Lei Tai, Yuxiang Sun, Ming Liu",5,http://arxiv.org/pdf/2001.01377v1,http://arxiv.org/abs/2001.01377v1,2020-01-06
+different physical properties, such as mass, tire friction, etc.",cs.RO,"cs.RO, cs.LG, cs.SY, eess.SY",4,Robotics,"Robotics, Machine Learning, Systems and Control",Ming Liu,"Peide Cai, Xiaodong Mei, Lei Tai, Yuxiang Sun, Ming Liu",5,http://arxiv.org/pdf/2001.01377v1,http://arxiv.org/abs/2001.01377v1,2020-01-06
 A Hybrid Approach to Temporal Pattern Matching,"The primary objective of graph pattern matching is to find all appearances of
 an input graph pattern query in a large data graph. Such appearances are called
 matches. In this paper, we are interested in finding matches of interaction
@@ -201,7 +201,7 @@ patterns in temporal graphs. To this end, we propose a hybrid approach that
 achieves effective filtering of potential matches based both on structure and
 time. Our approach exploits a graph representation where edges are ordered by
 time. We present experiments with real datasets that illustrate the efficiency
-of our approach.",cs.DS,"cs.DS, cs.CV",2,Data Structures and Algorithms,"Data Structures and Algorithms, Computer Vision and Pattern Recognition",Evaggelia Pitoura,"Konstantinos Semertzidis, Evaggelia Pitoura",2,http://arxiv.org/pdf/2001.01661v1,http://arxiv.org/abs/2001.01661v1,2020-01-06
+of our approach.",cs.DS,"cs.CV, cs.DS",2,Data Structures and Algorithms,"Computer Vision and Pattern Recognition, Data Structures and Algorithms",Evaggelia Pitoura,"Konstantinos Semertzidis, Evaggelia Pitoura",2,http://arxiv.org/pdf/2001.01661v1,http://arxiv.org/abs/2001.01661v1,2020-01-06
 Deep Snake for Real-Time Instance Segmentation,"This paper introduces a novel contour-based approach named deep snake for
 real-time instance segmentation. Unlike some recent methods that directly
 regress the coordinates of the object boundary points from an image, deep snake
@@ -234,7 +234,7 @@ learned in an unsupervised way. We demonstrate the method by learning 3D human
 pose and shape from un-paired and un-annotated images. We also explore varying
 amounts of paired data and show that cycling greatly alleviates the need for
 paired data. While we present results for modeling humans, our formulation is
-general and can be applied to other vision problems.",cs.CV,"cs.LG, cs.CV",2,Computer Vision and Pattern Recognition,"Machine Learning, Computer Vision and Pattern Recognition",Konrad Schindler,"Nadine Rueegg, Christoph Lassner, Michael J. Black, Konrad Schindler",4,http://arxiv.org/pdf/2001.01613v1,http://arxiv.org/abs/2001.01613v1,2020-01-06
+general and can be applied to other vision problems.",cs.CV,"cs.CV, cs.LG",2,Computer Vision and Pattern Recognition,"Computer Vision and Pattern Recognition, Machine Learning",Konrad Schindler,"Nadine Rueegg, Christoph Lassner, Michael J. Black, Konrad Schindler",4,http://arxiv.org/pdf/2001.01613v1,http://arxiv.org/abs/2001.01613v1,2020-01-06
 Few-shot Learning with Multi-scale Self-supervision,"Learning concepts from the limited number of datapoints is a challenging task
 usually addressed by the so-called one- or few-shot learning. Recently, an
 application of second-order pooling in few-shot learning demonstrated its
@@ -277,7 +277,7 @@ multiple hospitals, the classification performance was significantly better
 than the standard CNN or other conventional methods, and the accuracy was
 favorably compared to that of standard pathologists. In addition, we confirmed
 by immunostaining and expert pathologist's visual inspections that the tumor
-regions were correctly detected.",cs.CV,"eess.IV, cs.LG, cs.CV, I.2.1; I.5.4",4,Computer Vision and Pattern Recognition,"Image and Video Processing, Machine Learning, Computer Vision and Pattern Recognition",Ichiro Takeuchi,"Noriaki Hashimoto, Daisuke Fukushima, Ryoichi Koga, Yusuke Takagi, Kaho Ko, Kei Kohno, Masato Nakaguro, Shigeo Nakamura, Hidekata Hontani, Ichiro Takeuchi",10,http://arxiv.org/pdf/2001.01599v1,http://arxiv.org/abs/2001.01599v1,2020-01-06
+regions were correctly detected.",cs.CV,"cs.CV, cs.LG, eess.IV, I.2.1; I.5.4",4,Computer Vision and Pattern Recognition,"Computer Vision and Pattern Recognition, Machine Learning, Image and Video Processing",Ichiro Takeuchi,"Noriaki Hashimoto, Daisuke Fukushima, Ryoichi Koga, Yusuke Takagi, Kaho Ko, Kei Kohno, Masato Nakaguro, Shigeo Nakamura, Hidekata Hontani, Ichiro Takeuchi",10,http://arxiv.org/pdf/2001.01599v1,http://arxiv.org/abs/2001.01599v1,2020-01-06
 Hyperspectral Super-Resolution via Coupled Tensor Ring Factorization,"Hyperspectral super-resolution (HSR) fuses a low-resolution hyperspectral
 image (HSI) and a high-resolution multispectral image (MSI) to obtain a
 high-resolution HSI (HR-HSI). In this paper, we propose a new model, named
@@ -294,7 +294,7 @@ factorization.
 regularization to explore the global spectral low-rank property.
   The experiments have demonstrated the advantage of the proposed nuclear norm
 regularized CTRF (NCTRF) as compared to previous matrix/tensor and deep
-learning methods.",eess.IV,"eess.IV, cs.CV",2,Image and Video Processing,"Image and Video Processing, Computer Vision and Pattern Recognition",Qibin Zhao,"Wei He, Yong Chen, Naoto Yokoya, Chao Li, Qibin Zhao",5,http://arxiv.org/pdf/2001.01547v1,http://arxiv.org/abs/2001.01547v1,2020-01-06
+learning methods.",eess.IV,"cs.CV, eess.IV",2,Image and Video Processing,"Computer Vision and Pattern Recognition, Image and Video Processing",Qibin Zhao,"Wei He, Yong Chen, Naoto Yokoya, Chao Li, Qibin Zhao",5,http://arxiv.org/pdf/2001.01547v1,http://arxiv.org/abs/2001.01547v1,2020-01-06
 "Mutual Mean-Teaching: Pseudo Label Refinery for Unsupervised Domain
   Adaptation on Person Re-identification","Person re-identification (re-ID) aims at identifying the same persons' images
 across different cameras. However, domain diversities between different
@@ -339,7 +339,7 @@ mapping is disrupted or impossible. The existence of these perturbations
 reveals that there exist crucial weaknesses in Im2Im models. Lastly, we show
 that our methods illustrate how perturbations affect the quality of outputs,
 pioneering the improvement of the robustness of current SOTA networks for
-autonomous driving.",cs.CV,"eess.IV, cs.CV, cs.RO",3,Computer Vision and Pattern Recognition,"Image and Video Processing, Computer Vision and Pattern Recognition, Robotics",Kuk-Jin Yoon,"Lin Wang, Wonjune Cho, Kuk-Jin Yoon",3,http://arxiv.org/pdf/2001.01506v1,http://arxiv.org/abs/2001.01506v1,2020-01-06
+autonomous driving.",cs.CV,"cs.CV, cs.RO, eess.IV",3,Computer Vision and Pattern Recognition,"Computer Vision and Pattern Recognition, Robotics, Image and Video Processing",Kuk-Jin Yoon,"Lin Wang, Wonjune Cho, Kuk-Jin Yoon",3,http://arxiv.org/pdf/2001.01506v1,http://arxiv.org/abs/2001.01506v1,2020-01-06
 Facial Emotions Recognition using Convolutional Neural Net,"Human beings displays their emotions using facial expressions. For human it
 is very easy to recognize those emotions but for computer it is very
 challenging. Facial expressions vary from person to person. Brightness,
@@ -372,7 +372,7 @@ applications, namely stabilization of a spring-mass-damper system and dynamic
 audio quantization, are demonstrated. For both, the D-Wave method exhibits
 better performance than the classical simulated annealing method. Our results
 suggest new applications of quantum annealers in the direction of dynamic
-control problems.",cond-mat.mes-hall,"cond-mat.mes-hall, quant-ph, physics.comp-ph, cs.ET, eess.SY, cs.SY",6,Mesoscale and Nanoscale Physics,"Mesoscale and Nanoscale Physics, Quantum Physics, Computational Physics, Emerging Technologies, Systems and Control",Hiroaki Yoshida,"Daisuke Inoue, Hiroaki Yoshida",2,http://arxiv.org/pdf/2001.01400v1,http://arxiv.org/abs/2001.01400v1,2020-01-06
+control problems.",cond-mat.mes-hall,"eess.SY, physics.comp-ph, cond-mat.mes-hall, quant-ph, cs.ET, cs.SY",6,Mesoscale and Nanoscale Physics,"Computational Physics, Mesoscale and Nanoscale Physics, Quantum Physics, Emerging Technologies, Systems and Control",Hiroaki Yoshida,"Daisuke Inoue, Hiroaki Yoshida",2,http://arxiv.org/pdf/2001.01400v1,http://arxiv.org/abs/2001.01400v1,2020-01-06
 "Thermal coupling and effect of subharmonic synchronization in a system
   of two VO2 based oscillators","We explore a prototype of an oscillatory neural network (ONN) based on
 vanadium dioxide switching devices. The model system under study represents two
@@ -397,7 +397,7 @@ parameters, for which the oscillations exist, expands by ~ 10 %. The obtained
 results have a universal character and open up a new kind of coupling in ONNs,
 namely, T-coupling, which allows for easy transition from 2D to 3D integration.
 The effect of subharmonic synchronization hold promise for application in
-classification and pattern recognition.",cs.NE,"cs.NE, cs.ET",2,Neural and Evolutionary Computing,"Neural and Evolutionary Computing, Emerging Technologies",Alexander Pergament,"Andrei Velichko, Maksim Belyaev, Vadim Putrolaynen, Valentin Perminov, Alexander Pergament",5,http://arxiv.org/pdf/2001.01382v1,http://arxiv.org/abs/2001.01382v1,2020-01-06
+classification and pattern recognition.",cs.NE,"cs.ET, cs.NE",2,Neural and Evolutionary Computing,"Emerging Technologies, Neural and Evolutionary Computing",Alexander Pergament,"Andrei Velichko, Maksim Belyaev, Vadim Putrolaynen, Valentin Perminov, Alexander Pergament",5,http://arxiv.org/pdf/2001.01382v1,http://arxiv.org/abs/2001.01382v1,2020-01-06
 "Meta-modal Information Flow: A Method for Capturing Multimodal Modular
   Disconnectivity in Schizophrenia","Objective: Multimodal measurements of the same phenomena provide
 complementary information and highlight different perspectives, albeit each
@@ -422,7 +422,7 @@ Conclusion: We identified multimodal (fALFF, FA and GM) disconnectivity in the
 default mode network area in patients with SZ, which would not have been
 detectable in a single modality. Significance: The proposed approach provides
 an important new tool for capturing information that is distributed among
-multiple imaging modalities.",cs.LG,"eess.IV, cs.LG, stat.ML",3,Machine Learning,"Image and Video Processing, Machine Learning, Machine Learning",Vince D. Calhoun,"Haleh Falakshahi, Victor M. Vergara, Jingyu Liu, Daniel H. Mathalon, Judith M. Ford, James Voyvodic, Bryon A. Mueller, Aysenil Belger, Sarah McEwen, Steven G. Potkin, Adrian Preda, Hooman Rokham, Jing Sui, Jessica A. Turner, Sergey Plis, Vince D. Calhoun",16,http://arxiv.org/pdf/2001.01707v1,http://arxiv.org/abs/2001.01707v1,2020-01-06
+multiple imaging modalities.",cs.LG,"cs.LG, stat.ML, eess.IV",3,Machine Learning,"Machine Learning, Machine Learning, Image and Video Processing",Vince D. Calhoun,"Haleh Falakshahi, Victor M. Vergara, Jingyu Liu, Daniel H. Mathalon, Judith M. Ford, James Voyvodic, Bryon A. Mueller, Aysenil Belger, Sarah McEwen, Steven G. Potkin, Adrian Preda, Hooman Rokham, Jing Sui, Jessica A. Turner, Sergey Plis, Vince D. Calhoun",16,http://arxiv.org/pdf/2001.01707v1,http://arxiv.org/abs/2001.01707v1,2020-01-06
 "Development, Demonstration, and Validation of Data-driven Compact Diode
   Models for Circuit Simulation and Analysis","Compact semiconductor device models are essential for efficiently designing
 and analyzing large circuits. However, traditional compact model development
@@ -439,7 +439,7 @@ diode. We evaluate the performance of these ""data-driven"" compact models by (1
 comparing their voltage-current characteristics against laboratory data, and
 (2) building a bridge rectifier circuit using these devices, predicting the
 circuit's behavior using SPICE-like circuit simulations, and then comparing
-these predictions against laboratory measurements of the same circuit.",cs.LG,"cs.CE, J.2, J.6, I.6, J.2; J.6; I.6, cs.LG, stat.ML",5,Machine Learning,"Computational Engineering, Finance, and Science, Machine Learning, Machine Learning",E. Keiter,"K. Aadithya, P. Kuberry, B. Paskaleva, P. Bochev, K. Leeson, A. Mar, T. Mei, E. Keiter",8,http://arxiv.org/pdf/2001.01699v1,http://arxiv.org/abs/2001.01699v1,2020-01-06
+these predictions against laboratory measurements of the same circuit.",cs.LG,"cs.CE, cs.LG, stat.ML, J.2, J.6, I.6, J.2; J.6; I.6",5,Machine Learning,"Computational Engineering, Finance, and Science, Machine Learning, Machine Learning",E. Keiter,"K. Aadithya, P. Kuberry, B. Paskaleva, P. Bochev, K. Leeson, A. Mar, T. Mei, E. Keiter",8,http://arxiv.org/pdf/2001.01699v1,http://arxiv.org/abs/2001.01699v1,2020-01-06
 Social Media Attributions in the Context of Water Crisis,"Attribution of natural disasters/collective misfortune is a widely-studied
 political science problem. However, such studies are typically survey-centric
 or rely on a handful of experts to weigh in on the matter. In this paper, we
@@ -467,7 +467,7 @@ strength (effective temperature) depends inversely on the landscape flatness.
 Our study indicates that SGD attains a self-tuned landscape-dependent annealing
 strategy to find generalizable solutions at the flat minima of the landscape.
 Finally, we demonstrate how these new theoretical insights lead to more
-efficient algorithms, e.g., for avoiding catastrophic forgetting.",physics.data-an,"cond-mat.stat-mech, cs.LG, physics.data-an, nlin.AO",4,"Data Analysis, Statistics and Probability","Statistical Mechanics, Machine Learning, Data Analysis, Statistics and Probability, Adaptation and Self-Organizing Systems",Yuhai Tu,"Yu Feng, Yuhai Tu",2,http://arxiv.org/pdf/2001.01678v1,http://arxiv.org/abs/2001.01678v1,2020-01-06
+efficient algorithms, e.g., for avoiding catastrophic forgetting.",physics.data-an,"physics.data-an, cs.LG, cond-mat.stat-mech, nlin.AO",4,"Data Analysis, Statistics and Probability","Data Analysis, Statistics and Probability, Machine Learning, Statistical Mechanics, Adaptation and Self-Organizing Systems",Yuhai Tu,"Yu Feng, Yuhai Tu",2,http://arxiv.org/pdf/2001.01678v1,http://arxiv.org/abs/2001.01678v1,2020-01-06
 "Topic Extraction of Crawled Documents Collection using Correlated Topic
   Model in MapReduce Framework","The tremendous increase in the amount of available research documents impels
 researchers to propose topic models to extract the latent semantic themes of a
@@ -482,9 +482,9 @@ digital library. In addition, the full-texts of the crawled documents are
 analysed to enhance the accuracy of MapReduce CTM. The experiments are
 conducted to demonstrate the performance of the proposed algorithm. From the
 evaluation, the proposed approach has a comparable performance in terms of
-topic coherences with LDA implemented in MapReduce framework.",cs.IR,"cs.CL, cs.IR, stat.ML, cs.LG",4,Information Retrieval,"Computation and Language, Information Retrieval, Machine Learning, Machine Learning",May Aye Khine,"Mi Khine Oo, May Aye Khine",2,http://arxiv.org/pdf/2001.01669v1,http://arxiv.org/abs/2001.01669v1,2020-01-06
-"MREC: a fast and versatile framework for aligning and matching data with
-  applications to single cell molecular data","Comparing and aligning large datasets is a pervasive problem occurring across
+topic coherences with LDA implemented in MapReduce framework.",cs.IR,"cs.CL, cs.LG, stat.ML, cs.IR",4,Information Retrieval,"Computation and Language, Machine Learning, Machine Learning, Information Retrieval",May Aye Khine,"Mi Khine Oo, May Aye Khine",2,http://arxiv.org/pdf/2001.01669v1,http://arxiv.org/abs/2001.01669v1,2020-01-06
+"MREC: a fast and versatile framework for aligning and matching point
+  clouds with applications to single cell molecular data","Comparing and aligning large datasets is a pervasive problem occurring across
 many different knowledge domains. We introduce and study MREC, a recursive
 decomposition algorithm for computing matchings between data sets. The basic
 idea is to partition the data, match the partitions, and then recursively match
@@ -495,7 +495,7 @@ framework supports optimization over parameters including partitioning
 procedures and matching algorithms. By design, MREC can be applied to extremely
 large data sets. We analyze the procedure to describe when we can expect it to
 work well and demonstrate its flexibility and power by applying it to a number
-of alignment problems arising in the analysis of single cell molecular data.",stat.ML,"cs.LG, q-bio.GN, stat.ML",3,Machine Learning,"Machine Learning, Genomics, Machine Learning",Soledad Villar,"Andrew J. Blumberg, Mathieu Carriere, Michael A. Mandell, Raul Rabadan, Soledad Villar",5,http://arxiv.org/pdf/2001.01666v1,http://arxiv.org/abs/2001.01666v1,2020-01-06
+of alignment problems arising in the analysis of single cell molecular data.",stat.ML,"cs.LG, stat.ML, q-bio.GN",3,Machine Learning,"Machine Learning, Machine Learning, Genomics",Soledad Villar,"Andrew J. Blumberg, Mathieu Carriere, Michael A. Mandell, Raul Rabadan, Soledad Villar",5,http://arxiv.org/pdf/2001.01666v2,http://arxiv.org/abs/2001.01666v2,2020-01-06
 "ARA : Aggregated RAPPOR and Analysis for Centralized Differential
   Privacy","Differential privacy(DP) has now become a standard in case of sensitive
 statistical data analysis. The two main approaches in DP is local and central.
@@ -508,7 +508,7 @@ pushed to a Tf-Idf estimation model. The Tf-Idf estimation model then estimates
 the reports on the basis of the occurrence of ""on bit"" in a particular position
 and its contribution to that position. Thus it generates a centralized
 differential privacy analysis from multiple clients. Our model successfully and
-efficiently analyzed the major truth value every time.",cs.CR,"cs.CR, stat.ML, cs.LG",3,Cryptography and Security,"Cryptography and Security, Machine Learning, Machine Learning",Subhankar Mishra,"Sudipta Paul, Subhankar Mishra",2,http://arxiv.org/pdf/2001.01618v1,http://arxiv.org/abs/2001.01618v1,2020-01-06
+efficiently analyzed the major truth value every time.",cs.CR,"cs.CR, cs.LG, stat.ML",3,Cryptography and Security,"Cryptography and Security, Machine Learning, Machine Learning",Subhankar Mishra,"Sudipta Paul, Subhankar Mishra",2,http://arxiv.org/pdf/2001.01618v1,http://arxiv.org/abs/2001.01618v1,2020-01-06
 The SmartSHARK Ecosystem for Software Repository Mining,"Software repository mining is the foundation for many empirical software
 engineering studies. The collection and analysis of detailed data can be
 challenging, especially if data shall be shared to enable replicable research
@@ -562,7 +562,7 @@ policy requirements. As a basis for it, we use an additional Event-B
 specification of the Linux system call interface that is formally proved to
 satisfy all the requirements of the security policy model. In order to perform
 the conformance checks we use it to reproduce intercepted system calls and
-verify accesses.",cs.SE,"cs.OS, cs.SE",2,Software Engineering,"Operating Systems, Software Engineering",Ilya Shchepetkov,"Denis Efremov, Ilya Shchepetkov",2,http://arxiv.org/pdf/2001.01442v1,http://arxiv.org/abs/2001.01442v1,2020-01-06
+verify accesses.",cs.SE,"cs.SE, cs.OS",2,Software Engineering,"Software Engineering, Operating Systems",Ilya Shchepetkov,"Denis Efremov, Ilya Shchepetkov",2,http://arxiv.org/pdf/2001.01442v1,http://arxiv.org/abs/2001.01442v1,2020-01-06
 Cross-Dataset Design Discussion Mining,"Being able to identify software discussions that are primarily about design,
 which we call design mining, can improve documentation and maintenance of
 software systems. Existing design mining approaches have good classification
@@ -581,7 +581,7 @@ convergence for both gradient descent and stochastic gradient descent despite
 the fact that the barycenter functional is not geodesically convex. Our
 analysis overcomes this technical hurdle by developing a Polyak-Lojasiewicz
 (PL) inequality, which is built using tools from optimal transport and metric
-geometry.",math.ST,"Primary: 62F10, Secondary: 90C26, 58E, 68W25, math.ST, stat.TH",3,Statistics Theory,"Statistics Theory, Statistics Theory",Austin J. Stromme,"Sinho Chewi, Tyler Maunu, Philippe Rigollet, Austin J. Stromme",4,http://arxiv.org/pdf/2001.01700v1,http://arxiv.org/abs/2001.01700v1,2020-01-06
+geometry.",math.ST,"math.ST, stat.TH, Primary: 62F10, Secondary: 90C26, 58E, 68W25",3,Statistics Theory,"Statistics Theory, Statistics Theory",Austin J. Stromme,"Sinho Chewi, Tyler Maunu, Philippe Rigollet, Austin J. Stromme",4,http://arxiv.org/pdf/2001.01700v1,http://arxiv.org/abs/2001.01700v1,2020-01-06
 "Maximum Likelihood Estimation of Stochastic Differential Equations with
   Random Effects Driven by Fractional Brownian Motion","Stochastic differential equations and stochastic dynamics are good models to
 describe stochastic phenomena in real world. In this paper, we study N
@@ -593,7 +593,7 @@ transformation. Under some assumptions of the random effect, we estimate the
 parameter estimators by the maximum likelihood estimation and give some
 numerical simulations for the discrete observations. Results show that for the
 different H, the parameter estimator is closer to the true value as the amount
-of data increases.",math.ST,"math.ST, stat.TH, math.DS",3,Statistics Theory,"Statistics Theory, Statistics Theory, Dynamical Systems",Xiangjun Wang,"Min Dai, Jinqiao Duan, Junjun Liao, Xiangjun Wang",4,http://arxiv.org/pdf/2001.01412v1,http://arxiv.org/abs/2001.01412v1,2020-01-06
+of data increases.",math.ST,"math.ST, math.DS, stat.TH",3,Statistics Theory,"Statistics Theory, Dynamical Systems, Statistics Theory",Xiangjun Wang,"Min Dai, Jinqiao Duan, Junjun Liao, Xiangjun Wang",4,http://arxiv.org/pdf/2001.01412v1,http://arxiv.org/abs/2001.01412v1,2020-01-06
 Unsupervised machine learning and band topology,"The study of topological bandstructures is an active area of research in
 condensed matter physics and beyond. Here, we combine recent progress in this
 field with developments in machine-learning, another rising topic of interest.
@@ -606,7 +606,7 @@ class. We demonstrate the approach using several different models in both one
 and two spatial dimensions and for different symmetry classes with and without
 crystalline symmetries. Accordingly, it is also shown how trivial and
 topological phases can be diagnosed upon comparing with a generally designated
-set of trivial atomic insulators.",cond-mat.mes-hall,"cond-mat.mes-hall, cond-mat.str-el, physics.comp-ph",3,Mesoscale and Nanoscale Physics,"Mesoscale and Nanoscale Physics, Strongly Correlated Electrons, Computational Physics",Robert-Jan Slager,"Mathias S. Scheurer, Robert-Jan Slager",2,http://arxiv.org/pdf/2001.01711v1,http://arxiv.org/abs/2001.01711v1,2020-01-06
+set of trivial atomic insulators.",cond-mat.mes-hall,"cond-mat.str-el, physics.comp-ph, cond-mat.mes-hall",3,Mesoscale and Nanoscale Physics,"Strongly Correlated Electrons, Computational Physics, Mesoscale and Nanoscale Physics",Robert-Jan Slager,"Mathias S. Scheurer, Robert-Jan Slager",2,http://arxiv.org/pdf/2001.01711v1,http://arxiv.org/abs/2001.01711v1,2020-01-06
 "Performance of parallel-in-time integration for Rayleigh Bénard
   Convection","Rayleigh-B\'enard convection (RBC) is a fundamental problem of fluid
 dynamics, with many applications to geophysical, astrophysical, and industrial
@@ -652,7 +652,7 @@ the optimization problem more difficult than using linear transaction costs.
 The reason lies in the specification of the budget constraint, which is no
 longer linear. We provide numerical algorithms for solving this issue and
 illustrate how transaction costs may considerably impact the expected returns
-of optimized portfolios.",q-fin.PM,"G.1.6; I.1.2, q-fin.CP, 90C30, q-fin.PM, stat.ML",5,Portfolio Management,"Computational Finance, Portfolio Management, Machine Learning",Jiali Xu,"Pierre Chen, Edmond Lezmi, Thierry Roncalli, Jiali Xu",4,http://arxiv.org/pdf/2001.01612v1,http://arxiv.org/abs/2001.01612v1,2020-01-06
+of optimized portfolios.",q-fin.PM,"q-fin.CP, 90C30, stat.ML, q-fin.PM, G.1.6; I.1.2",5,Portfolio Management,"Computational Finance, Machine Learning, Portfolio Management",Jiali Xu,"Pierre Chen, Edmond Lezmi, Thierry Roncalli, Jiali Xu",4,http://arxiv.org/pdf/2001.01612v1,http://arxiv.org/abs/2001.01612v1,2020-01-06
 "Disentangling shock diffusion on complex networks: Identification
   through graph planarity","Large scale networks delineating collective dynamics often exhibit cascading
 failures across nodes leading to a system-wide collapse. Prominent examples of
@@ -678,10 +678,13 @@ which is consistent with empirical observations over the past decade.",q-fin.ST,
   analysis on sparse graphs","We derive new discrete event simulation algorithms for marked time point
 processes. The main idea is to couple a special structure, namely the
 associated local independence graph, as defined by Didelez arXiv:0710.5874,
-with the activity tracking algorithm arXiv:arch-ive/190102412629 for achieving
-high performance asynchronous simulations. With respect to classical algorithm,
-this allows reducing drastically the computational complexity, especially when
-the graph is sparse.",stat.CO,"stat.AP, stat.CO",2,Computation,"Applications, Computation",Patricia Reynaud-bouret,"Cyrille Mascart, Alexandre Muzy, Patricia Reynaud-bouret",3,http://arxiv.org/pdf/2001.01702v1,http://arxiv.org/abs/2001.01702v1,2020-01-06
+with the activity tracking algorithm [muzy, 2019] for achieving high
+performance asynchronous simulations. With respect to classical algorithm, this
+allows reducing drastically the computational complexity, especially when the
+graph is sparse.
+  [muzy, 2019] A. Muzy. 2019. Exploiting activity for the modeling and
+simulation of dynamics and learning processes in hierarchical (neurocognitive)
+systems. (Submitted to) Magazine of Computing in Science & Engineering (2019)",stat.CO,"stat.AP, stat.CO",2,Computation,"Applications, Computation",Patricia Reynaud-bouret,"Cyrille Mascart, Alexandre Muzy, Patricia Reynaud-bouret",3,http://arxiv.org/pdf/2001.01702v2,http://arxiv.org/abs/2001.01702v2,2020-01-06
 A Spectral Hidden Markov Model for Nonstationary Oscillatory Processes,"We propose to model time-varying periodic and oscillatory processes by means
 of a hidden Markov model where the states are defined through the spectral
 properties of a periodic regime. The number of states is unknown along with the
@@ -708,7 +711,7 @@ improve outliers 9.9% over the standard filters proposed for the Large Synoptic
 Survey Telescope (LSST). We compare features of our optimal filters to LSST and
 find that the LSST filters incorporate key features for optimal photometric
 redshift estimation. Finally, we describe how information theory can be applied
-to a range of optimization problems in astronomy.",astro-ph.IM,"stat.AP, astro-ph.IM, cs.IT, math.IT",4,Instrumentation and Methods for Astrophysics,"Applications, Instrumentation and Methods for Astrophysics, Information Theory, Information Theory",Andrew J. Connolly,"J. Bryce Kalmbach, Jacob T. VanderPlas, Andrew J. Connolly",3,http://arxiv.org/pdf/2001.01372v1,http://arxiv.org/abs/2001.01372v1,2020-01-06
+to a range of optimization problems in astronomy.",astro-ph.IM,"math.IT, stat.AP, cs.IT, astro-ph.IM",4,Instrumentation and Methods for Astrophysics,"Information Theory, Applications, Information Theory, Instrumentation and Methods for Astrophysics",Andrew J. Connolly,"J. Bryce Kalmbach, Jacob T. VanderPlas, Andrew J. Connolly",3,http://arxiv.org/pdf/2001.01372v1,http://arxiv.org/abs/2001.01372v1,2020-01-06
 "Estimation of the spatial weighting matrix for regular lattice data --
   An adaptive lasso approach with cross-sectional resampling","Spatial econometric research typically relies on the assumption that the
 spatial dependence structure is known in advance and is represented by a
@@ -725,7 +728,7 @@ cross-sectional resampling is verified using Monte Carlo simulations.
 Eventually, we apply the procedure to model nitrogen dioxide ($\mathrm{NO_2}$)
 concentrations and show that estimating the spatial dependence structure
 contrary to using prespecified weights matrices improves the prediction
-accuracy considerably.",stat.CO,"stat.CO, stat.ML",2,Computation,"Computation, Machine Learning",Philipp Otto,"Miryam S. Merk, Philipp Otto",2,http://arxiv.org/pdf/2001.01532v1,http://arxiv.org/abs/2001.01532v1,2020-01-06
+accuracy considerably.",stat.CO,"stat.ML, stat.CO",2,Computation,"Machine Learning, Computation",Philipp Otto,"Miryam S. Merk, Philipp Otto",2,http://arxiv.org/pdf/2001.01532v1,http://arxiv.org/abs/2001.01532v1,2020-01-06
 "Bayesian inference of Stochastic reaction networks using Multifidelity
   Sequential Tempered Markov Chain Monte Carlo","Stochastic reaction network models are often used to explain and predict the
 dynamics of gene regulation in single cells. These models usually involve
@@ -749,7 +752,7 @@ appropriate fidelity, we introduce a novel information-theoretic criteria that
 seeks to extract the most information about the ultimate Bayesian posterior
 from each model in the hierarchy without inducing significant bias. This novel
 sampling scheme is tested with high performance computing resources using
-biologically relevant problems.",stat.CO,"62C10, 62F15, 65C05, 65C40, 92C42, stat.CO, G.3; J.3",3,Computation,Computation,Brian Munsky,"Thomas A. Catanach, Huy D. Vo, Brian Munsky",3,http://arxiv.org/pdf/2001.01373v1,http://arxiv.org/abs/2001.01373v1,2020-01-06
+biologically relevant problems.",stat.CO,"G.3; J.3, stat.CO, 62C10, 62F15, 65C05, 65C40, 92C42",3,Computation,Computation,Brian Munsky,"Thomas A. Catanach, Huy D. Vo, Brian Munsky",3,http://arxiv.org/pdf/2001.01373v1,http://arxiv.org/abs/2001.01373v1,2020-01-06
 Closed testing with Globaltest with applications on metabolomics data,"We derive a shortcut for closed testing with Globaltest, which is powerful
 for pathway analysis, especially in the presence of many weak features. The
 shortcut strongly controls the family-wise error rate over all possible feature
@@ -773,7 +776,7 @@ Here, we propose permutation tests for models where the number of nuisance
 coefficients exceeds the sample size. The performance of the novel tests is
 investigated with simulations. In a wide range of simulation scenarios our
 proposed permutation methods provided appropriate type I error rate control,
-unlike some competing tests, while having good power.",stat.ME,"stat.ME, 62G09",2,Methodology,Methodology,Livio Finos,"Jesse Hemerik, Magne Thoresen, Livio Finos",3,http://arxiv.org/pdf/2001.01466v1,http://arxiv.org/abs/2001.01466v1,2020-01-06
+unlike some competing tests, while having good power.",stat.ME,"62G09, stat.ME",2,Methodology,Methodology,Livio Finos,"Jesse Hemerik, Magne Thoresen, Livio Finos",3,http://arxiv.org/pdf/2001.01466v1,http://arxiv.org/abs/2001.01466v1,2020-01-06
 "Scalable Estimation and Inference with Large-scale or Online Survival
   Data","With the rapid development of data collection and aggregation technologies in
 many scientific disciplines, it is becoming increasingly ubiquitous to conduct
@@ -808,7 +811,7 @@ technique is then assessed; and more precisely, critical freezing claims the
 best performance on both previous and coming tasks over baselines, proving the
 capability of the investigation. Our techniques could not only be supplementary
 to existing solutions for completely eradicating catastrophic forgetting for
-life-long learning but also explainable.",cs.LG,"cs.LG, stat.ML",2,Machine Learning,"Machine Learning, Machine Learning",Daeyoung Kim,"Giang Nguyen, Shuan Chen, Thao Do, Tae Joon Jun, Ho-Jin Choi, Daeyoung Kim",6,http://arxiv.org/pdf/2001.01578v1,http://arxiv.org/abs/2001.01578v1,2020-01-06
+life-long learning but also explainable.",cs.LG,"cs.LG, stat.ML",2,Machine Learning,"Machine Learning, Machine Learning",Daeyoung Kim,"Giang Nguyen, Shuan Chen, Thao Do, Tae Joon Jun, Ho-Jin Choi, Daeyoung Kim",6,http://arxiv.org/pdf/2001.01578v2,http://arxiv.org/abs/2001.01578v2,2020-01-06
 "Think Locally, Act Globally: Federated Learning with Local and Global
   Representations","Federated learning is an emerging research paradigm to train models on
 private data distributed over multiple devices. A key challenge involves
@@ -831,7 +834,7 @@ reducing the bottleneck in terms of communication cost. Finally, we show that
 our local models provide flexibility in dealing with online heterogeneous data
 and can be easily modified to learn fair representations that obfuscate
 protected attributes such as race, age, and gender, a feature crucial to
-preserving the privacy of on-device data.",cs.LG,"cs.LG, cs.DC, stat.ML",3,Machine Learning,"Machine Learning, Distributed, Parallel, and Cluster Computing, Machine Learning",Louis-Philippe Morency,"Paul Pu Liang, Terrance Liu, Liu Ziyin, Ruslan Salakhutdinov, Louis-Philippe Morency",5,http://arxiv.org/pdf/2001.01523v1,http://arxiv.org/abs/2001.01523v1,2020-01-06
+preserving the privacy of on-device data.",cs.LG,"cs.DC, cs.LG, stat.ML",3,Machine Learning,"Distributed, Parallel, and Cluster Computing, Machine Learning, Machine Learning",Louis-Philippe Morency,"Paul Pu Liang, Terrance Liu, Liu Ziyin, Ruslan Salakhutdinov, Louis-Philippe Morency",5,http://arxiv.org/pdf/2001.01523v1,http://arxiv.org/abs/2001.01523v1,2020-01-06
 "Combining data assimilation and machine learning to emulate a dynamical
   model from sparse and noisy observations: a case study with the Lorenz 96
   model","A novel method, based on the combination of data assimilation and machine
@@ -852,4 +855,4 @@ presented: forecast skills decrease smoothly with increased observational noise
 but drops abruptly if less than half of the model domain is observed. The
 successful synergy between data assimilation and machine learning, proven here
 with a low-dimensional system, encourages further investigation of such hybrids
-with more sophisticated dynamics.",stat.ML,"cs.LG, physics.ao-ph, stat.ML",3,Machine Learning,"Machine Learning, Atmospheric and Oceanic Physics, Machine Learning",Laurent Bertino,"Julien Brajard, Alberto Carassi, Marc Bocquet, Laurent Bertino",4,http://arxiv.org/pdf/2001.01520v1,http://arxiv.org/abs/2001.01520v1,2020-01-06
+with more sophisticated dynamics.",stat.ML,"physics.ao-ph, cs.LG, stat.ML",3,Machine Learning,"Atmospheric and Oceanic Physics, Machine Learning, Machine Learning",Laurent Bertino,"Julien Brajard, Alberto Carassi, Marc Bocquet, Laurent Bertino",4,http://arxiv.org/pdf/2001.01520v1,http://arxiv.org/abs/2001.01520v1,2020-01-06
