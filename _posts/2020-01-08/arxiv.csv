@@ -1,0 +1,771 @@
+title,summary,primary_tag,tags,n_tags,primary_category,categories,author,authors,n_authors,url_pdf,url_href,date
+An Exploration of Embodied Visual Exploration,"Embodied computer vision considers perception for robots in general,
+unstructured environments. Of particular importance is the embodied visual
+exploration problem: how might a robot equipped with a camera scope out a new
+environment? Despite the progress thus far, many basic questions pertinent to
+this problem remain unanswered: (i) What does it mean for an agent to explore
+its environment well? (ii) Which methods work well, and under which assumptions
+and environmental settings? (iii) Where do current approaches fall short, and
+where might future work seek to improve? Seeking answers to these questions, we
+perform a thorough empirical study of four state-of-the-art paradigms on two
+photorealistic simulated 3D environments. We present a taxonomy of key
+exploration methods and a standard framework for benchmarking visual
+exploration algorithms. Our experimental results offer insights, and suggest
+new performance metrics and baselines for future work in visual exploration.",cs.CV,"cs.CV, cs.AI",2,Computer Vision and Pattern Recognition,"Computer Vision and Pattern Recognition, Artificial Intelligence",Kristen Grauman,"Santhosh K. Ramakrishnan, Dinesh Jayaraman, Kristen Grauman",3,http://arxiv.org/pdf/2001.02192v1,http://arxiv.org/abs/2001.02192v1,2020-01-07
+"Effect of Confidence and Explanation on Accuracy and Trust Calibration
+  in AI-Assisted Decision Making","Today, AI is being increasingly used to help human experts make decisions in
+high-stakes scenarios. In these scenarios, full automation is often
+undesirable, not only due to the significance of the outcome, but also because
+human experts can draw on their domain knowledge complementary to the model's
+to ensure task success. We refer to these scenarios as AI-assisted decision
+making, where the individual strengths of the human and the AI come together to
+optimize the joint decision outcome. A key to their success is to appropriately
+\textit{calibrate} human trust in the AI on a case-by-case basis; knowing when
+to trust or distrust the AI allows the human expert to appropriately apply
+their knowledge, improving decision outcomes in cases where the model is likely
+to perform poorly. This research conducts a case study of AI-assisted decision
+making in which humans and AI have comparable performance alone, and explores
+whether features that reveal case-specific model information can calibrate
+trust and improve the joint performance of the human and AI. Specifically, we
+study the effect of showing confidence score and local explanation for a
+particular prediction. Through two human experiments, we show that confidence
+score can help calibrate people's trust in an AI model, but trust calibration
+alone is not sufficient to improve AI-assisted decision making, which may also
+depend on whether the human can bring in enough unique knowledge to complement
+the AI's errors. We also highlight the problems in using local explanation for
+AI-assisted decision making scenarios and invite the research community to
+explore new approaches to explainability for calibrating human trust in AI.",cs.AI,"cs.AI, cs.HC",2,Artificial Intelligence,"Artificial Intelligence, Human-Computer Interaction",Rachel K. E. Bellamy,"Yunfeng Zhang, Q. Vera Liao, Rachel K. E. Bellamy",3,http://arxiv.org/pdf/2001.02114v1,http://arxiv.org/abs/2001.02114v1,2020-01-07
+Exploring Unknown Universes in Probabilistic Relational Models,"Large probabilistic models are often shaped by a pool of known individuals (a
+universe) and relations between them. Lifted inference algorithms handle sets
+of known individuals for tractable inference. Universes may not always be
+known, though, or may only described by assumptions such as ""small universes
+are more likely"". Without a universe, inference is no longer possible for
+lifted algorithms, losing their advantage of tractable inference. The aim of
+this paper is to define a semantics for models with unknown universes decoupled
+from a specific constraint language to enable lifted and thereby, tractable
+inference.",cs.AI,cs.AI,1,Artificial Intelligence,Artificial Intelligence,Ralf Möller,"Tanya Braun, Ralf Möller",2,http://arxiv.org/pdf/2001.02021v1,http://arxiv.org/abs/2001.02021v1,2020-01-07
+CNN 101: Interactive Visual Learning for Convolutional Neural Networks,"The success of deep learning solving previously-thought hard problems has
+inspired many non-experts to learn and understand this exciting technology.
+However, it is often challenging for learners to take the first steps due to
+the complexity of deep learning models. We present our ongoing work, CNN 101,
+an interactive visualization system for explaining and teaching convolutional
+neural networks. Through tightly integrated interactive views, CNN 101 offers
+both overview and detailed descriptions of how a model works. Built using
+modern web technologies, CNN 101 runs locally in users' web browsers without
+requiring specialized hardware, broadening the public's education access to
+modern deep learning techniques.",cs.HC,"cs.LG, cs.AI, cs.HC",3,Human-Computer Interaction,"Machine Learning, Artificial Intelligence, Human-Computer Interaction",Duen Horng Chau,"Zijie J. Wang, Robert Turko, Omar Shaikh, Haekyu Park, Nilaksh Das, Fred Hohman, Minsuk Kahng, Duen Horng Chau",8,http://arxiv.org/pdf/2001.02004v1,http://arxiv.org/abs/2001.02004v1,2020-01-07
+"Intrinsic Motivation and Episodic Memories for Robot Exploration of
+  High-Dimensional Sensory Spaces","This work presents an architecture that generates curiosity-driven
+goal-directed exploration behaviours for an image sensor of a microfarming
+robot. A combination of deep neural networks for offline unsupervised learning
+of low-dimensional features from images, and of online learning of shallow
+neural networks representing the inverse and forward kinematics of the system
+have been used. The artificial curiosity system assigns interest values to a
+set of pre-defined goals, and drives the exploration towards those that are
+expected to maximise the learning progress. We propose the integration of an
+episodic memory in intrinsic motivation systems to face catastrophic forgetting
+issues, typically experienced when performing online updates of artificial
+neural networks. Our results show that adopting an episodic memory system not
+only prevents the computational models from quickly forgetting knowledge that
+has been previously acquired, but also provides new avenues for modulating the
+balance between plasticity and stability of the models.",cs.AI,"cs.RO, cs.LG, cs.AI",3,Artificial Intelligence,"Robotics, Machine Learning, Artificial Intelligence",Timothée Wintz,"Guido Schillaci, Antonio Pico Villalpando, Verena Vanessa Hafner, Peter Hanappe, David Colliaux, Timothée Wintz",6,http://arxiv.org/pdf/2001.01982v1,http://arxiv.org/abs/2001.01982v1,2020-01-07
+Context-Aware Design of Cyber-Physical Human Systems (CPHS),"Recently, it has been widely accepted by the research community that
+interactions between humans and cyber-physical infrastructures have played a
+significant role in determining the performance of the latter. The existing
+paradigm for designing cyber-physical systems for optimal performance focuses
+on developing models based on historical data. The impacts of context factors
+driving human system interaction are challenging and are difficult to capture
+and replicate in existing design models. As a result, many existing models do
+not or only partially address those context factors of a new design owing to
+the lack of capabilities to capture the context factors. This limitation in
+many existing models often causes performance gaps between predicted and
+measured results. We envision a new design environment, a cyber-physical human
+system (CPHS) where decision-making processes for physical infrastructures
+under design are intelligently connected to distributed resources over
+cyberinfrastructure such as experiments on design features and empirical
+evidence from operations of existing instances. The framework combines existing
+design models with context-aware design-specific data involving
+human-infrastructure interactions in new designs, using a machine learning
+approach to create augmented design models with improved predictive powers.",cs.AI,"cs.MA, cs.LG, cs.AI",3,Artificial Intelligence,"Multiagent Systems, Machine Learning, Artificial Intelligence",Arnab Ganguly,"Supratik Mukhopadhyay, Qun Liu, Edward Collier, Yimin Zhu, Ravindra Gudishala, Chanachok Chokwitthaya, Robert DiBiano, Alimire Nabijiang, Sanaz Saeidi, Subhajit Sidhanta, Arnab Ganguly",11,http://arxiv.org/pdf/2001.01918v1,http://arxiv.org/abs/2001.01918v1,2020-01-07
+"Monte Carlo Tree Search for Generating Interactive Data Analysis
+  Interfaces","Interactive tools like user interfaces help democratize data access for
+end-users by hiding underlying programming details and exposing the necessary
+widget interface to users. Since customized interfaces are costly to build,
+automated interface generation is desirable. SQL is the dominant way to analyze
+data and there already exists logs to analyze data. Previous work proposed a
+syntactic approach to analyze structural changes in SQL query logs and
+automatically generates a set of widgets to express the changes. However, they
+do not consider layout usability and the sequential order of queries in the
+log. We propose to adopt Monte Carlo Tree Search(MCTS) to search for the
+optimal interface that accounts for hierarchical layout as well as the
+usability in terms of how easy to express the query log.",cs.DB,"cs.DB, I.2; H.2, cs.AI, cs.HC",4,Databases,"Databases, Artificial Intelligence, Human-Computer Interaction",Eugene Wu,"Yiru Chen, Eugene Wu",2,http://arxiv.org/pdf/2001.01902v1,http://arxiv.org/abs/2001.01902v1,2020-01-07
+"IMLI: An Incremental Framework for MaxSAT-Based Learning of
+  Interpretable Classification Rules","The wide adoption of machine learning in the critical domains such as medical
+diagnosis, law, education had propelled the need for interpretable techniques
+due to the need for end users to understand the reasoning behind decisions due
+to learning systems. The computational intractability of interpretable learning
+led practitioners to design heuristic techniques, which fail to provide sound
+handles to tradeoff accuracy and interpretability.
+  Motivated by the success of MaxSAT solvers over the past decade, recently
+MaxSAT-based approach, called MLIC, was proposed that seeks to reduce the
+problem of learning interpretable rules expressed in Conjunctive Normal Form
+(CNF) to a MaxSAT query. While MLIC was shown to achieve accuracy similar to
+that of other state of the art black-box classifiers while generating small
+interpretable CNF formulas, the runtime performance of MLIC is significantly
+lagging and renders approach unusable in practice. In this context, authors
+raised the question: Is it possible to achieve the best of both worlds, i.e., a
+sound framework for interpretable learning that can take advantage of MaxSAT
+solvers while scaling to real-world instances?
+  In this paper, we take a step towards answering the above question in
+affirmation. We propose IMLI: an incremental approach to MaxSAT based framework
+that achieves scalable runtime performance via partition-based training
+methodology. Extensive experiments on benchmarks arising from UCI repository
+demonstrate that IMLI achieves up to three orders of magnitude runtime
+improvement without loss of accuracy and interpretability.",cs.AI,"cs.LG, cs.AI",2,Artificial Intelligence,"Machine Learning, Artificial Intelligence",Kuldeep S. Meel,"Bishwamittra Ghosh, Kuldeep S. Meel",2,http://arxiv.org/pdf/2001.01891v1,http://arxiv.org/abs/2001.01891v1,2020-01-07
+"Understanding the QuickXPlain Algorithm: Simple Explanation and Formal
+  Proof","In his seminal paper of 2004, Ulrich Junker proposed the QuickXPlain
+algorithm, which provides a divide-and-conquer computation strategy to find
+within a given set an irreducible subset with a particular (monotone) property.
+Beside its original application in the domain of constraint satisfaction
+problems, the algorithm has since then found widespread adoption in areas as
+different as model-based diagnosis, recommender systems, verification, or the
+Semantic Web. This popularity is due to the frequent occurrence of the problem
+of finding irreducible subsets on the one hand, and to QuickXPlain's general
+applicability and favorable computational complexity on the other hand.
+  However, although (we regularly experience) people are having a hard time
+understanding QuickXPlain and seeing why it works correctly, a proof of
+correctness of the algorithm has never been published. This is what we account
+for in this work, by explaining QuickXPlain in a novel tried and tested way and
+by presenting an intelligible formal proof of it. Apart from showing the
+correctness of the algorithm and excluding the later detection of errors (proof
+and trust effect), the added value of the availability of a formal proof is,
+e.g., (i) that the workings of the algorithm often become completely clear only
+after studying, verifying and comprehending the proof (didactic effect), (ii)
+the shown proof methodology can be used as a guidance for proving other
+recursive algorithms (transfer effect), and (iii) the possibility of providing
+""gapless"" correctness proofs of systems that rely on (results computed by)
+QuickXPlain, such as numerous model-based debuggers (completeness effect).",cs.AI,"cs.DS, cs.LO, cs.AI",3,Artificial Intelligence,"Data Structures and Algorithms, Logic in Computer Science, Artificial Intelligence",Patrick Rodler,Patrick Rodler,1,http://arxiv.org/pdf/2001.01835v1,http://arxiv.org/abs/2001.01835v1,2020-01-07
+Artificial Intelligence for Social Good: A Survey,"Artificial intelligence for social good (AI4SG) is a research theme that aims
+to use and advance artificial intelligence to address societal issues and
+improve the well-being of the world. AI4SG has received lots of attention from
+the research community in the past decade with several successful applications.
+Building on the most comprehensive collection of the AI4SG literature to date
+with over 1000 contributed papers, we provide a detailed account and analysis
+of the work under the theme in the following ways. (1) We quantitatively
+analyze the distribution and trend of the AI4SG literature in terms of
+application domains and AI techniques used. (2) We propose three conceptual
+methods to systematically group the existing literature and analyze the eight
+AI4SG application domains in a unified framework. (3) We distill five research
+topics that represent the common challenges in AI4SG across various application
+domains. (4) We discuss five issues that, we hope, can shed light on the future
+development of the AI4SG research.",cs.CY,"cs.CY, cs.AI",2,Computers and Society,"Computers and Society, Artificial Intelligence",Fei Fang,"Zheyuan Ryan Shi, Claire Wang, Fei Fang",3,http://arxiv.org/pdf/2001.01818v1,http://arxiv.org/abs/2001.01818v1,2020-01-07
+"Dynamic Task Weighting Methods for Multi-task Networks in Autonomous
+  Driving Systems","Deep multi-task networks are of particular interest for autonomous driving
+systems. They can potentially strike an excellent trade-off between predictive
+performance, hardware constraints and efficient use of information from
+multiple types of annotations and modalities. However, training such models is
+non-trivial and requires balancing the learning of all tasks as their
+respective losses display different scales, ranges and dynamics across
+training. Multiple task weighting methods that adjust the losses in an adaptive
+way have been proposed recently on different datasets and combinations of
+tasks, making it difficult to compare them. In this work, we review and
+systematically evaluate nine task weighting strategies on common grounds on
+three automotive datasets (KITTI, Cityscapes and WoodScape). We then propose a
+novel method combining evolutionary meta-learning and task-based selective
+backpropagation, for finding the task weights and training the network
+reliably. Our method outperforms state-of-the-art methods by $3\%$ on a
+two-task application.",cs.CV,"cs.RO, cs.LG, cs.CV",3,Computer Vision and Pattern Recognition,"Robotics, Machine Learning, Computer Vision and Pattern Recognition",Senthil Yogamani,"Isabelle Leang, Ganesh Sistu, Fabian Burger, Andrei Bursuc, Senthil Yogamani",5,http://arxiv.org/pdf/2001.02223v1,http://arxiv.org/abs/2001.02223v1,2020-01-07
+Trained Trajectory based Automated Parking System using Visual SLAM,"Automated Parking is becoming a standard feature in modern vehicles. Existing
+parking systems build a local map to be able to plan for maneuvering towards a
+detected slot. Next generation parking systems have an use case where they
+build a persistent map of the environment where the car is frequently parked,
+say for example, home parking or office parking. The pre-built map helps in
+re-localizing the vehicle better when its trying to park the next time. This is
+achieved by augmenting the parking system with a Visual SLAM pipeline and the
+feature is called trained trajectory parking. In this paper, we discuss the use
+cases, design and implementation of a trained trajectory automated parking
+system. To encourage further research, we release a dataset of 50 video
+sequences comprising of over 100,000 images with the associated ground truth as
+a companion to our WoodScape dataset \cite{Yogamani_2019_ICCV}. To the best of
+the authors' knowledge, this is the first public dataset for trained trajectory
+parking system scenarios.",cs.CV,"cs.RO, cs.CV",2,Computer Vision and Pattern Recognition,"Robotics, Computer Vision and Pattern Recognition",Senthil Yogamani,"Nivedita Tripathi, Ganesh Sistu, Senthil Yogamani",3,http://arxiv.org/pdf/2001.02161v1,http://arxiv.org/abs/2001.02161v1,2020-01-07
+"Inferring Convolutional Neural Networks' accuracies from their
+  architectural characterizations","Convolutional Neural Networks (CNNs) have shown strong promise for analyzing
+scientific data from many domains including particle imaging detectors.
+However, the challenge of choosing the appropriate network architecture (depth,
+kernel shapes, activation functions, etc.) for specific applications and
+different data sets is still poorly understood. In this paper, we study the
+relationships between a CNN's architecture and its performance by proposing a
+systematic language that is useful for comparison between different CNN's
+architectures before training time. We characterize CNN's architecture by
+different attributes, and demonstrate that the attributes can be predictive of
+the networks' performance in two specific computer vision-based physics
+problems -- event vertex finding and hadron multiplicity classification in the
+MINERvA experiment at Fermi National Accelerator Laboratory. In doing so, we
+extract several architectural attributes from optimized networks' architecture
+for the physics problems, which are outputs of a model selection algorithm
+called Multi-node Evolutionary Neural Networks for Deep Learning (MENNDL). We
+use machine learning models to predict whether a network can perform better
+than a certain threshold accuracy before training. The models perform 16-20%
+better than random guessing. Additionally, we found an coefficient of
+determination of 0.966 for an Ordinary Least Squares model in a regression on
+accuracy over a large population of networks.",cs.CV,"cs.LG, hep-ex, cs.CV",3,Computer Vision and Pattern Recognition,"Machine Learning, High Energy Physics - Experiment, Computer Vision and Pattern Recognition",A. Ghosh,"D. Hoang, J. Hamer, G. N. Perdue, S. R. Young, J. Miller, A. Ghosh",6,http://arxiv.org/pdf/2001.02160v1,http://arxiv.org/abs/2001.02160v1,2020-01-07
+General 3D Room Layout from a Single View by Render-and-Compare,"We present a novel method to reconstruct the 3D layout of a room --
+walls,floors, ceilings -- from a single perspective view, even for the case of
+general configurations. This input view can consist of a color image only, but
+considering a depth map will result in a more accurate reconstruction. Our
+approach is based on solving a constrained discrete optimization problem, which
+selects the polygons which are part of the layout from a large set of potential
+polygons. In order to deal with occlusions between components of the layout,
+which is a problem ignored by previous works, we introduce an
+analysis-by-synthesis method to iteratively refine the 3D layout estimate. To
+the best of our knowledge, our method is the first that can estimate a layout
+in such general conditions from a single view. We additionally introduce a new
+annotation dataset made of 91 images from the ScanNet dataset and several
+metrics, in order to evaluate our results quantitatively.",cs.CV,cs.CV,1,Computer Vision and Pattern Recognition,Computer Vision and Pattern Recognition,Vincent Lepetit,"Sinisa Stekovic, Friedrich Fraundorfer, Vincent Lepetit",3,http://arxiv.org/pdf/2001.02149v1,http://arxiv.org/abs/2001.02149v1,2020-01-07
+"State Transition Modeling of the Smoking Behavior using LSTM Recurrent
+  Neural Networks","The use of sensors has pervaded everyday life in several applications
+including human activity monitoring, healthcare, and social networks. In this
+study, we focus on the use of smartwatch sensors to recognize smoking activity.
+More specifically, we have reformulated the previous work in detection of
+smoking to include in-context recognition of smoking. Our presented
+reformulation of the smoking gesture as a state-transition model that consists
+of the mini-gestures hand-to-lip, hand-on-lip, and hand-off-lip, has
+demonstrated improvement in detection rates nearing 100% using conventional
+neural networks. In addition, we have begun the utilization of Long-Short-Term
+Memory (LSTM) neural networks to allow for in-context detection of gestures
+with accuracy nearing 97%.",cs.CV,"cs.LG, cs.CV",2,Computer Vision and Pattern Recognition,"Machine Learning, Computer Vision and Pattern Recognition",Homayoun Valafar,"Chrisogonas O. Odhiambo, Casey A. Cole, Alaleh Torkjazi, Homayoun Valafar",4,http://arxiv.org/pdf/2001.02101v1,http://arxiv.org/abs/2001.02101v1,2020-01-07
+AD-VO: Scale-Resilient Visual Odometry Using Attentive Disparity Map,"Visual odometry is an essential key for a localization module in SLAM
+systems. However, previous methods require tuning the system to adapt
+environment changes. In this paper, we propose a learning-based approach for
+frame-to-frame monocular visual odometry estimation. The proposed network is
+only learned by disparity maps for not only covering the environment changes
+but also solving the scale problem. Furthermore, attention block and
+skip-ordering scheme are introduced to achieve robust performance in various
+driving environment. Our network is compared with the conventional methods
+which use common domain such as color or optical flow. Experimental results
+confirm that the proposed network shows better performance than other
+approaches with higher and more stable results.",cs.CV,cs.CV,1,Computer Vision and Pattern Recognition,Computer Vision and Pattern Recognition,Sangyoun Lee,"Joosung Lee, Sangwon Hwang, Kyungjae Lee, Woo Jin Kim, Junhyeop Lee, Tae-young Chung, Sangyoun Lee",7,http://arxiv.org/pdf/2001.02090v1,http://arxiv.org/abs/2001.02090v1,2020-01-07
+Deep Reinforcement Learning for Active Human Pose Estimation,"Most 3d human pose estimation methods assume that input -- be it images of a
+scene collected from one or several viewpoints, or from a video -- is given.
+Consequently, they focus on estimates leveraging prior knowledge and
+measurement by fusing information spatially and/or temporally, whenever
+available. In this paper we address the problem of an active observer with
+freedom to move and explore the scene spatially -- in `time-freeze' mode --
+and/or temporally, by selecting informative viewpoints that improve its
+estimation accuracy. Towards this end, we introduce Pose-DRL, a fully trainable
+deep reinforcement learning-based active pose estimation architecture which
+learns to select appropriate views, in space and time, to feed an underlying
+monocular pose estimator. We evaluate our model using single- and multi-target
+estimators with strong result in both settings. Our system further learns
+automatic stopping conditions in time and transition functions to the next
+temporal processing step in videos. In extensive experiments with the Panoptic
+multi-view setup, and for complex scenes containing multiple people, we show
+that our model learns to select viewpoints that yield significantly more
+accurate pose estimates compared to strong multi-view baselines.",cs.CV,cs.CV,1,Computer Vision and Pattern Recognition,Computer Vision and Pattern Recognition,Cristian Sminchisescu,"Erik Gärtner, Aleksis Pirinen, Cristian Sminchisescu",3,http://arxiv.org/pdf/2001.02024v1,http://arxiv.org/abs/2001.02024v1,2020-01-07
+"Delineating Bone Surfaces in B-Mode Images Constrained by Physics of
+  Ultrasound Propagation","Bone surface delineation in ultrasound is of interest due to its potential in
+diagnosis, surgical planning, and post-operative follow-up in orthopedics, as
+well as the potential of using bones as anatomical landmarks in surgical
+navigation. We herein propose a method to encode the physics of ultrasound
+propagation into a factor graph formulation for the purpose of bone surface
+delineation. In this graph structure, unary node potentials encode the local
+likelihood for being a soft tissue or acoustic-shadow (behind bone surface)
+region, both learned through image descriptors. Pair-wise edge potentials
+encode ultrasound propagation constraints of bone surfaces given their large
+acoustic-impedance difference. We evaluate the proposed method in comparison
+with four earlier approaches, on in-vivo ultrasound images collected from
+dorsal and volar views of the forearm. The proposed method achieves an average
+root-mean-square error and symmetric Hausdorff distance of 0.28mm and 1.78mm,
+respectively. It detects 99.9% of the annotated bone surfaces with a mean
+scanline error (distance to annotations) of 0.39mm.",cs.CV,cs.CV,1,Computer Vision and Pattern Recognition,Computer Vision and Pattern Recognition,Orcun Goksel,"Firat Ozdemir, Christine Tanner, Orcun Goksel",3,http://arxiv.org/pdf/2001.02001v1,http://arxiv.org/abs/2001.02001v1,2020-01-07
+Data Structure Primitives on Persistent Memory: An Evaluation,"Persistent Memory (PM), as already available e.g. with Intel Optane DC
+Persistent Memory, represents a very promising, next generation memory solution
+with a significant impact on database architectures. Several data structures
+for this new technology and its properties have already been proposed. However,
+primarily merely complete structures were presented and evaluated hiding the
+impact of the individual ideas and PM characteristics. Therefore, in this
+paper, we disassemble the structures presented so far, identify their
+underlying design primitives, and assign them to appropriate design goals
+regarding PM. As a result of our comprehensive experiments on real PM hardware,
+we were able to reveal the trade-offs of the primitives at the micro level.
+From this, performance profiles could be derived for selected primitives. With
+these it is possible to precisely identify their best use cases as well as
+vulnerabilities. Beside our general insights regarding PM-based data structure
+design, we also discovered new promising combinations not considered in the
+literature so far.",cs.DB,"cs.DS, cs.ET, cs.DB",3,Databases,"Data Structures and Algorithms, Emerging Technologies, Databases",Kai-Uwe Sattler,"Philipp Götze, Arun Kumar Tharanatha, Kai-Uwe Sattler",3,http://arxiv.org/pdf/2001.02172v1,http://arxiv.org/abs/2001.02172v1,2020-01-07
+"Switching dynamics of single and coupled VO2-based oscillators as
+  elements of neural networks","In the present paper, we report on the switching dynamics of both single and
+coupled VO2-based oscillators, with resistive and capacitive coupling, and
+explore the capability of their application in oscillatory neural networks.
+Based on these results, we further select an adequate SPICE model to describe
+the modes of operation of coupled oscillator circuits. Physical mechanisms
+influencing the time of forward and reverse electrical switching, that
+determine the applicability limits of the proposed model, are identified. For
+the resistive coupling, it is shown that synchronization takes place at a
+certain value of the coupling resistance, though it is unstable and a
+synchronization failure occurs periodically. For the capacitive coupling, two
+synchronization modes, with weak and strong coupling, are found. The transition
+between these modes is accompanied by chaotic oscillations. A decrease in the
+width of the spectrum harmonics in the weak-coupling mode, and its increase in
+the strong-coupling one, is detected. The dependences of frequencies and phase
+differences of the coupled oscillatory circuits on the coupling capacitance are
+found. Examples of operation of coupled VO2 oscillators as a central pattern
+generator are demonstrated.",cs.NE,"cs.NE, cs.ET",2,Neural and Evolutionary Computing,"Neural and Evolutionary Computing, Emerging Technologies",Valentin Perminov,"Andrei Velichko, Maksim Belyaev, Vadim Putrolaynen, Alexander Pergament, Valentin Perminov",5,http://arxiv.org/pdf/2001.01854v1,http://arxiv.org/abs/2001.01854v1,2020-01-07
+"Minimum entropy production in multipartite processes due to neighborhood
+  constraints","It is known that the minimal total entropy production (EP) generated during
+the discrete-time evolution of a composite system is nonzero if its subsystems
+are isolated from one another. Minimal EP is also nonzero if the subsystems
+jointly implement a specified Bayes net. Here I extend these discrete-time
+results to continuous time, and to allow all subsystems to be simultaneously
+interacting. To do this I model the composite system as a multipartite process,
+subject to constraints on the overlaps among the ""neighborhoods"" of the rate
+matrices of the subsystems. I derive two information-theoretic lower bounds on
+the minimal achievable EP rate expressed in terms of those neighborhood
+overlaps. The first bound is based on applying the inclusion-exclusion
+principle to the eighborhood overlaps. The second is based on constructing
+counterfactual rate matrices, in which all subsystems outside of a particular
+neighborhood are held fixed while those inside the neighborhood are allowed to
+evolve. This second bound involves quantities related to the ""learning rate"" of
+stationary bipartite systems, or more generally to the ""information flow"".",cond-mat.stat-mech,"cs.LG, cond-mat.stat-mech",2,Statistical Mechanics,"Machine Learning, Statistical Mechanics",David H Wolpert,David H Wolpert,1,http://arxiv.org/pdf/2001.02205v1,http://arxiv.org/abs/2001.02205v1,2020-01-07
+"On-the-fly Prediction of Protein Hydration Densities and Free Energies
+  using Deep Learning","The calculation of thermodynamic properties of biochemical systems typically
+requires the use of resource-intensive molecular simulation methods. One
+example thereof is the thermodynamic profiling of hydration sites, i.e.
+high-probability locations for water molecules on the protein surface, which
+play an essential role in protein-ligand associations and must therefore be
+incorporated in the prediction of binding poses and affinities. To replace
+time-consuming simulations in hydration site predictions, we developed two
+different types of deep neural-network models aiming to predict hydration site
+data. In the first approach, meshed 3D images are generated representing the
+interactions between certain molecular probes placed on regular 3D grids,
+encompassing the binding pocket, with the static protein. These molecular
+interaction fields are mapped to the corresponding 3D image of hydration
+occupancy using a neural network based on an U-Net architecture. In a second
+approach, hydration occupancy and thermodynamics were predicted point-wise
+using a neural network based on fully-connected layers. In addition to direct
+protein interaction fields, the environment of each grid point was represented
+using moments of a spherical harmonics expansion of the interaction properties
+of nearby grid points. Application to structure-activity relationship analysis
+and protein-ligand pose scoring demonstrates the utility of the predicted
+hydration information.",q-bio.BM,"q-bio.BM, cs.LG, q-bio.QM",3,Biomolecules,"Biomolecules, Machine Learning, Quantitative Methods",Markus A. Lill,"Ahmadreza Ghanbarpour, Amr H. Mahmoud, Markus A. Lill",3,http://arxiv.org/pdf/2001.02201v1,http://arxiv.org/abs/2001.02201v1,2020-01-07
+Generalized mean shift with triangular kernel profile,"The mean shift algorithm is a popular way to find modes of some probability
+density functions taking a specific kernel-based shape, used for clustering or
+visual tracking. Since its introduction, it underwent several practical
+improvements and generalizations, as well as deep theoretical analysis mainly
+focused on its convergence properties. In spite of encouraging results, this
+question has not received a clear general answer yet. In this paper we focus on
+a specific class of kernels, adapted in particular to the distributions
+clustering applications which motivated this work. We show that a novel Mean
+Shift variant adapted to them can be derived, and proved to converge after a
+finite number of iterations. In order to situate this new class of methods in
+the general picture of the Mean Shift theory, we alo give a synthetic exposure
+of existing results of this field.",cs.LG,"cs.LG, math.OC, stat.ML",3,Machine Learning,"Machine Learning, Optimization and Control, Machine Learning",Axel Barrau,"Sébastien Razakarivony, Axel Barrau",2,http://arxiv.org/pdf/2001.02165v1,http://arxiv.org/abs/2001.02165v1,2020-01-07
+PaRoT: A Practical Framework for Robust Deep NeuralNetwork Training,"Deep Neural Networks (DNNs) are finding important applications in
+safety-critical systems such as Autonomous Vehicles (AVs), where perceiving the
+environment correctly and robustly is necessary for safe operation. Raising
+unique challenges for assurance due to their black-box nature, DNNs pose a
+fundamental problem for regulatory acceptance of these types of systems. Robust
+training --- training to minimize excessive sensitivity to small changes in
+input --- has emerged as one promising technique to address this challenge.
+However, existing robust training tools are inconvenient to use or apply to
+existing codebases and models: they typically only support a small subset of
+model elements and require users to extensively rewrite the training code. In
+this paper we introduce a novel framework, PaRoT, developed on the popular
+TensorFlow platform, that greatly reduces the barrier to entry. Our framework
+enables robust training to be performed on arbitrary DNNs without any rewrites
+to the model. We demonstrate that our framework's performance is comparable to
+prior art, and exemplify its ease of use on off-the-shelf, trained models and
+on a real-world industrial application: training a robust traffic light
+detection network.",cs.LG,"cs.LG, stat.ML",2,Machine Learning,"Machine Learning, Machine Learning",Iain Whiteside,"Edward Ayers, Francisco Eiras, Majd Hawasly, Iain Whiteside",4,http://arxiv.org/pdf/2001.02152v1,http://arxiv.org/abs/2001.02152v1,2020-01-07
+Multitask learning over graphs,"The problem of learning simultaneously several related tasks has received
+considerable attention in several domains, especially in machine learning with
+the so-called multitask learning problem or learning to learn problem [1], [2].
+Multitask learning is an approach to inductive transfer learning (using what is
+learned for one problem to assist in another problem) and helps improve
+generalization performance relative to learning each task separately by using
+the domain information contained in the training signals of related tasks as an
+inductive bias. Several strategies have been derived within this community
+under the assumption that all data are available beforehand at a fusion center.
+However, recent years have witnessed an increasing ability to collect data in a
+distributed and streaming manner. This requires the design of new strategies
+for learning jointly multiple tasks from streaming data over distributed (or
+networked) systems. This article provides an overview of multitask strategies
+for learning and adaptation over networks. The working hypothesis for these
+strategies is that agents are allowed to cooperate with each other in order to
+learn distinct, though related tasks. The article shows how cooperation steers
+the network limiting point and how different cooperation rules allow to promote
+different task relatedness models. It also explains how and when cooperation
+over multitask networks outperforms non-cooperative strategies.",eess.SP,"cs.MA, cs.LG, eess.SP",3,Signal Processing,"Multiagent Systems, Machine Learning, Signal Processing",Ali H. Sayed,"Roula Nassif, Stefan Vlaski, Cedric Richard, Jie Chen, Ali H. Sayed",5,http://arxiv.org/pdf/2001.02112v1,http://arxiv.org/abs/2001.02112v1,2020-01-07
+With Registered Reports Towards Large Scale Data Curation,"The scale of manually validated data is currently limited by the effort that
+small groups of researchers can invest for the curation of such data. Within
+this paper, we propose the use of registered reports to scale the curation of
+manually validated data. The idea is inspired by the mechanical turk and
+replaces monetary payment with authorship of data set publication.",cs.DL,cs.DL,1,Digital Libraries,Digital Libraries,Steffen Herbold,Steffen Herbold,1,http://arxiv.org/pdf/2001.01972v1,http://arxiv.org/abs/2001.01972v1,2020-01-07
+Statistical Inference for High-Dimensional Matrix-Variate Factor Model,"This paper considers the estimation and inference of factor loadings, latent
+factors and the low-rank components in high-dimensional matrix-variate factor
+model, where each dimension of the matrix-variates ($p \times q$) is comparable
+to or greater than the number of observations ($T$). We preserve matrix
+structure in the estimation and develop an inferential theory, establishing
+consistency, the rate of convergence, and the limiting distributions. We show
+that the estimated loading matrices are asymptotically normal. These results
+are obtained under general conditions that allow for correlations across time,
+rows or columns of the noise. Stronger results are obtained when the noise is
+temporally, row- and/or column-wise uncorrelated. Simulation results
+demonstrate the adequacy of the asymptotic results in approximating the finite
+sample properties. Our proposed method compares favorably with the existing
+methods. We illustrate the proposed model and estimation procedure with a real
+numeric data set and a real image data set. In both applications, the proposed
+estimation procedure outperforms previous methods in the power of variance
+explanation under the out-of-sample 10-fold cross-validation setting.",math.ST,"stat.ME, stat.TH, math.ST",3,Statistics Theory,"Methodology, Statistics Theory, Statistics Theory",Ellen Li,"Elynn Y. Chen, Jianqing Fan, Ellen Li",3,http://arxiv.org/pdf/2001.01890v1,http://arxiv.org/abs/2001.01890v1,2020-01-07
+Stochastic nodal surfaces in quantum Monte Carlo calculations,"Treating the fermionic ground state problem as a constrained stochastic
+optimization problem, a formalism for fermionic quantum Monte Carlo is
+developed that makes no reference to a trial wavefunction. Exchange symmetry is
+enforced by nonlocal terms appearing in the Green's function corresponding to a
+new kind of walker propagation. Complemented by a treatment of diffusion that
+encourages the formation of a stochastic nodal surface, an extension to many
+fermion systems is proposed. The method is shown to give a stable fermionic
+ground state for harmonic systems and the Lithium and Beryllium atoms.",cond-mat.str-el,"physics.comp-ph, cond-mat.str-el",2,Strongly Correlated Electrons,"Computational Physics, Strongly Correlated Electrons",Michael Hutcheon,Michael Hutcheon,1,http://arxiv.org/pdf/2001.02215v1,http://arxiv.org/abs/2001.02215v1,2020-01-07
+Off-lattice and parallel implementations of the pivot algorithm,"The pivot algorithm is the most efficient known method for sampling polymer
+configurations for self-avoiding walks and related models. Here we introduce
+two recent improvements to an efficient binary tree implementation of the pivot
+algorithm: an extension to an off-lattice model, and a parallel implementation.",cond-mat.stat-mech,"physics.comp-ph, cond-mat.stat-mech",2,Statistical Mechanics,"Computational Physics, Statistical Mechanics",Dac Thanh Chuong Ho,"Nathan Clisby, Dac Thanh Chuong Ho",2,http://arxiv.org/pdf/2001.02186v1,http://arxiv.org/abs/2001.02186v1,2020-01-07
+"Modelling of hydro-mechanical processes in heterogeneous fracture
+  intersections using a fictitious domain method with variational transfer
+  operators","Fluid flow in rough fractures and the coupling with the mechanical behaviour
+of the fractures pose great difficulties for numerical modeling approaches, due
+to complex fracture surface topographies, the non-linearity of hydromechanical
+processes and their tightly coupled nature. To this end, we have adapted a
+fictitious domain method to enable the simulation of hydromechanical processes
+in fracture-intersections. The main characteristic of the method is the
+immersion of the fracture, modelled as a linear elastic solid, in the
+surrounding computational fluid domain, modelled with the incompressible Navier
+Stokes equations. The fluid and the solid problems are coupled with variational
+transfer operators. Variational transfer operators are also used to solve
+contact within the fracture using a dual mortar approach and to generate
+problem specific fluid meshes. With respect to our applications, the key
+features of the method are the usage of different finite element
+discretizations for the solid and the fluid problem and the automatically
+generated representation of the fluid-solid boundary. We demonstrate that the
+presented methodology resolves small-scale roughness on the fracture surface,
+while capturing fluid flow field changes during mechanical loading. Starting
+with 2D/3D benchmark simulations of intersected fractures, we end with an
+intersected fracture composed of complex fracture surface topographies, which
+are in contact under increasing loads. The contributions of this article are:
+(1) the application of the fictitious domain method to study flow in fractures
+with intersections, (2) a mortar based contact solver for the solid problem,
+(3) generation of problem specific grids using the geometry information from
+the variational transfer operators.",physics.comp-ph,"physics.geo-ph, physics.comp-ph",2,Computational Physics,"Geophysics, Computational Physics",Rolf Krause,"Cyrill von Planta, Daniel Vogler, Xiaoqing Chen, Maria G. C. Nestola, Martin O. Saar, Rolf Krause",6,http://arxiv.org/pdf/2001.02030v1,http://arxiv.org/abs/2001.02030v1,2020-01-07
+"Dependency of the Young's modulus to plastic strain in DP steels: a
+  consequence of heterogeneity ?","The accurate springback prediction of dual phase (DP) steels has been
+reported as a major challenge. It was demonstrated that this was due to the
+lack of understanding of their nonlinear unloading behavior and especially the
+dependency of their unloading moduli on the plastic prestrain. A so-called
+compartmentalized finite element model was developed. In this model, each
+element was assigned a unique linear elastic J2 plastic behavior without
+hardening. The model's specificity lied in the fact that: (i) a statistical
+distribution was discretized in a deterministic way and used to assign yield
+stresses to structures called compartments; (ii) those compartments were
+randomly associated with the elements through a random compartment element
+mapping (CEM). Multiple CEM were simulated in parallel to investigate the
+intrinsic randomness of the model. The model was confronted with experimental
+data extracted from the literature and it was demonstrated that the model was
+able to reproduce the dependence of the apparent moduli on the tensile
+prestrain. It was also observed that the evolution of the apparent moduli was
+predicted even if it was not an explicit input of the experimental dataset used
+to identify the input parameters of the model. It was then deduced that the
+shape of the hardening and the dependancy of moduli on the prestrain were two
+manifestations of a single cause: the heterogeneous yield stress in DP steels.",cond-mat.mtrl-sci,"physics.comp-ph, cond-mat.mtrl-sci",2,Materials Science,"Computational Physics, Materials Science",Laurent Bizet,"Ludovic Charleux, Laurent Tabourot, Emile Roux, Moustapha Issack Farah, Laurent Bizet",5,http://arxiv.org/pdf/2001.01939v1,http://arxiv.org/abs/2001.01939v1,2020-01-07
+Study of Microwave Assisted CNOT Gate,"Population evolution in a magnetic impurity doped semiconductor quantum dot
+has been studied by applying a sequence of pulses of chosen pulse area. By
+optical excitation mechanism, the population in (J_z=+3/2), heavy hole state of
+valence band is carried over to (J_z=-3/2), valance band state, via the
+(J=+1/2) conduction band states. The injected microwaves entangle conduction
+band states. This arrangement is successfully employed to ascertain quantum
+CNOT operation, and the calculation predicts maximum fidelity of 80\% for the
+CNOT operation.",quant-ph,"quant-ph, physics.comp-ph",2,Quantum Physics,"Quantum Physics, Computational Physics",J T Andrews,"M K Mehta, P Sen, J T Andrews",3,http://arxiv.org/pdf/2001.01928v1,http://arxiv.org/abs/2001.01928v1,2020-01-07
+"Numerical viscosity in simulations of the two-dimensional
+  Kelvin-Helmholtz instability","The Kelvin-Helmholtz instability serves as a simple, well-defined setup for
+assessing the accuracy of different numerical methods for solving the equations
+of hydrodynamics. We use it to extend our previous analysis of the convergence
+and the numerical dissipation in models of the propagation of waves and in the
+tearing-mode instability in magnetohydrodynamic models. To this end, we perform
+two-dimensional simulations with and without explicit physical viscosity at
+different resolutions. A comparison of the growth of the modes excited by our
+initial perturbations allows us to estimate the effective numerical viscosity
+of two spatial reconstruction schemes (fifth-order monotonicity preserving and
+second-order piecewise linear schemes).",astro-ph.IM,"physics.comp-ph, astro-ph.IM",2,Instrumentation and Methods for Astrophysics,"Computational Physics, Instrumentation and Methods for Astrophysics",Miguel-Ángel Aloy,"Martin Obergaulinger, Miguel-Ángel Aloy",2,http://arxiv.org/pdf/2001.01927v1,http://arxiv.org/abs/2001.01927v1,2020-01-07
+"Uncertainty Quantification for Materials Properties in Density
+  Functional Theory with k-Point Density","Many computational databases emerged over the last five years that report
+material properties calculated with density functional theory. The properties
+in these databases are commonly calculated to a precision that is set by choice
+of the basis set and the k-point density for the Brillouin zone integration. We
+determine how the precision of properties obtained from the Birch equation of
+state for 29 transition metals and aluminum in the three common structures --
+fcc, bcc, and hcp -- correlate with the k-point density and the precision of
+the energy. We show that the precision of the equilibrium volume, bulk modulus,
+and the pressure derivative of the bulk modulus correlate comparably well with
+the k-point density and the precision of the energy, following an approximate
+power law. We recommend the k-point density as the convergence parameter
+because it is computationally efficient, easy to use as a direct input
+parameter, and correlates with property precision at least as well as the
+energy precision. We predict that common k-point density choices in high
+throughput DFT databases result in precision for the volume of 0.1%, the bulk
+modulus of 1%, and the pressure derivative of 10%.",cond-mat.mtrl-sci,"physics.comp-ph, cond-mat.mtrl-sci",2,Materials Science,"Computational Physics, Materials Science",Richard G. Hennig,"Joshua J. Gabriel, Faical Yannick C. Congo, Alexander Sinnott, Kiran Mathew, Thomas C. Allison, Francesca Tavazza, Richard G. Hennig",7,http://arxiv.org/pdf/2001.01851v1,http://arxiv.org/abs/2001.01851v1,2020-01-07
+"Heaps' law and Heaps functions in tagged texts: Evidences of their
+  linguistic relevance","We study the relationship between vocabulary size and text length in a corpus
+of $75$ literary works in English, authored by six writers, distinguishing
+between the contributions of three grammatical classes (or ``tags,'' namely,
+{\it nouns}, {\it verbs}, and {\it others}), and analyze the progressive
+appearance of new words of each tag along each individual text. While the
+power-law relation prescribed by Heaps' law is satisfactorily fulfilled by
+total vocabulary sizes and text lengths, the appearance of new words in each
+text is on the whole well described by the average of random shufflings of the
+text, which does not obey a power law. Deviations from this average, however,
+are statistically significant and show a systematic trend across the corpus.
+Specifically, they reveal that the appearance of new words along each text is
+predominantly retarded with respect to the average of random shufflings.
+Moreover, different tags are shown to add systematically distinct contributions
+to this tendency, with {\it verbs} and {\it others} being respectively more and
+less retarded than the mean trend, and {\it nouns} following instead this
+overall mean. These statistical systematicities are likely to point to the
+existence of linguistically relevant information stored in the different
+variants of Heaps' law, a feature that is still in need of extensive
+assessment.",cs.CL,"physics.data-an, cs.CL",2,Computation and Language,"Data Analysis, Statistics and Probability, Computation and Language",Damián H. Zanette,"Andrés Chacoma, Damián H. Zanette",2,http://arxiv.org/pdf/2001.02178v1,http://arxiv.org/abs/2001.02178v1,2020-01-07
+A DNA damage multi-scale model for NTCP in proton and hadron therapy,"{\bf Purpose}: To develop a first principle and multi-scale model for normal
+tissue complication probability (NTCP) as a function of dose and LET for proton
+and in general for particle therapy with a goal of incorporating nano-scale
+radio-chemical to macro-scale cell biological pathways, spanning from initial
+DNA damage to tissue late effects.
+  {\bf Methods}: The method is combination of analytical and multi-scale
+computational steps including (1) derivation of functional dependencies of NTCP
+on DNA driven cell lethality in nanometer and mapping to dose and LET in
+millimeter, and (2) 3D-surface fitting to Monte Carlo data set generated based
+on post radiation image change and gathered for a cohort of 14 pediatric
+patients treated by scanning beam of protons for ependymoma. We categorize
+voxel-based dose and LET associated with development of necrosis in NTCP.
+  {\bf Result}: Our model fits well the clinical data, generated for post
+radiation tissue toxicity and necrosis. The fitting procedure results in
+extraction of in-{\it vivo} radio-biological $\alpha$-$\beta$ indices and their
+numerical values.
+  {\bf Discussion and conclusion}: The NTCP model, explored in this work,
+allows to correlate the tissue toxicities to DNA initial damage, cell lethality
+and the properties and qualities of radiation, dose and LET.",physics.med-ph,"physics.data-an, cond-mat.mes-hall, physics.bio-ph, physics.med-ph",4,Medical Physics,"Data Analysis, Statistics and Probability, Mesoscale and Nanoscale Physics, Biological Physics, Medical Physics",David Grosshans,"Ramin Abolfath, Chris Peeler, Dragan Mirkovic, Radhe Mohan, David Grosshans",5,http://arxiv.org/pdf/2001.02146v1,http://arxiv.org/abs/2001.02146v1,2020-01-07
+Inferring genetic fitness from genomic data,"The genetic composition of a naturally developing population is considered as
+due to mutation, selection, genetic drift and recombination. Selection is
+modeled as single-locus terms (additive fitness) and two-loci terms (pairwise
+epistatic fitness). The problem is posed to infer epistatic fitness from
+population-wide whole-genome data from a time series of a developing
+population. We generate such data in silico, and show that in the Quasi-Linkage
+Equilibrium (QLE) phase of Kimura, Neher and Shraiman, that pertains at high
+enough recombination rates and low enough mutation rates, epistatic fitness can
+be quantitatively correctly inferred using inverse Ising/Potts methods.",q-bio.PE,"q-bio.QM, q-bio.PE",2,Populations and Evolution,"Quantitative Methods, Populations and Evolution",Erik Aurell,"Hong-Li Zeng, Erik Aurell",2,http://arxiv.org/pdf/2001.02173v1,http://arxiv.org/abs/2001.02173v1,2020-01-07
+Prediction of Drug Synergy by Ensemble Learning,"One of the promising methods for the treatment of complex diseases such as
+cancer is combinational therapy. Due to the combinatorial complexity, machine
+learning models can be useful in this field, where significant improvements
+have recently been achieved in determination of synergistic combinations. In
+this study, we investigate the effectiveness of different compound
+representations in predicting the drug synergy. On a large drug combination
+screen dataset, we first demonstrate the use of a promising representation that
+has not been used for this problem before, then we propose an ensemble on
+representation-model combinations that outperform each of the baseline models.",cs.LG,"cs.LG, q-bio.QM, stat.ML",3,Machine Learning,"Machine Learning, Quantitative Methods, Machine Learning",Mehmet Tan,"Işıksu Ekşioğlu, Mehmet Tan",2,http://arxiv.org/pdf/2001.01997v1,http://arxiv.org/abs/2001.01997v1,2020-01-07
+"Selection Induced Contrast Estimate (SICE) Effect: An Attempt to
+  Quantify the Impact of Some Patient Selection Criteria in Randomized Clinical
+  Trials","Defining the Inclusion/Exclusion (I/E) criteria of a trial is one of the most
+important steps during a trial design. Increasingly complex I/E criteria
+potentially create information imbalance and transparency issues between the
+people who design and run the trials and those who consume the information
+produced by the trials. In order to better understand and quantify the impact
+of a category of I/E criteria on observed treatment effects, a concept, named
+the Selection Induced Contrast Estimate (SICE) effect, is introduced and
+formulated in this paper. The SICE effect can exist in controlled clinical
+trials when treatment affects the correlation between a marker used for
+selection and the response of interest. This effect is demonstrated with both
+simulations and real clinical trial data. Although the statistical elements
+behind the SICE effect have been well studied, explicitly formulating and
+studying this effect can benefit several areas, including better transparency
+in I/E criteria, meta-analysis of multiple clinical trials, treatment effect
+interpretation in real-world medical practice, etc.",stat.AP,"stat.AP, stat.OT",2,Applications,"Applications, Other Statistics",Daniel J. Holder,"Junshui Ma, Daniel J. Holder",2,http://arxiv.org/pdf/2001.02036v1,http://arxiv.org/abs/2001.02036v1,2020-01-07
+"School value-added models for multivariate academic and non-academic
+  outcomes: A more rounded approach to using student data to inform school
+  accountability","Education systems around the world increasingly rely on school value-added
+models to hold schools to account. These models typically focus on a limited
+number of academic outcomes, failing to recognise the broader range of
+non-academic student outcomes, attitudes and behaviours to which schools
+contribute. We explore how the traditional multilevel modelling approach to
+school value-added models can be extended to simultaneously analyse multiple
+academic and non-academic outcomes and thereby can potentially provide a more
+rounded approach to using student data to inform school accountability. We
+jointly model student attainment, absence and exclusion data for schools in
+England. We find different results across the three outcomes, in terms of the
+size and consistency of school effects, and the importance of adjusting for
+student and school characteristics. The results suggest the three outcomes are
+capturing fundamentally distinct aspects of school performance, recommending
+the consideration of non-academic outcomes in systems of school accountability.",stat.AP,stat.AP,1,Applications,Applications,George Leckie,"Lucy Prior, Harvey Goldstein, George Leckie",3,http://arxiv.org/pdf/2001.01996v1,http://arxiv.org/abs/2001.01996v1,2020-01-07
+"Future Proofing a Building Design Using History Matching Inspired Level
+  Set Techniques","History Matching is a technique used to calibrate complex computer models,
+that is, finding the input settings which lead to the simulated output matching
+up with real world observations. Key to this technique is the construction of
+emulators, which provide fast probabilistic predictions of future simulations.
+In this work, we adapt the History Matching framework to tackle the problem of
+level set estimation, that is, finding input settings where the output is below
+(or above) some threshold. The developed methodology is heavily motivated by a
+specific case study: how can one design a building that will be sufficiently
+protected against overheating and sufficiently energy efficient, whilst
+considering the expected increases in temperature due to climate change? We
+successfully manage to address this - greatly reducing a large initial set of
+candidate building designs down to a small set of acceptable potential
+buildings.",stat.AP,stat.AP,1,Applications,Applications,Matt Eames,"Evan Baker, Peter Challenor, Matt Eames",3,http://arxiv.org/pdf/2001.01992v1,http://arxiv.org/abs/2001.01992v1,2020-01-07
+"A semi-supervised learning framework for quantitative structure-activity
+  regression modelling","Supervised learning models, also known as quantitative structure-activity
+regression (QSAR) models, are increasingly used in assisting the process of
+preclinical, small molecule drug discovery. The models are trained on data
+consisting of a finite dimensional representation of molecular structures and
+their corresponding target specific activities. These models can then be used
+to predict the activity of previously unmeasured novel compounds. In this work
+we address two problems related to this approach. The first is to estimate the
+extent to which the quality of the model predictions degrades for compounds
+very different from the compounds in the training data. The second is to adjust
+for the screening dependent selection bias inherent in many training data sets.
+In the most extreme cases, only compounds which pass an activity-dependent
+screening are reported. By using a semi-supervised learning framework, we show
+that it is possible to make predictions which take into account the similarity
+of the testing compounds to those in the training data and adjust for the
+reporting selection bias. We illustrate this approach using publicly available
+structure-activity data on a large set of compounds reported by GlaxoSmithKline
+(the Tres Cantos AntiMalarial Set) to inhibit in vitro P. falciparum growth.",stat.AP,"stat.AP, stat.ML",2,Applications,"Applications, Machine Learning",James A Watson,"Oliver P Watson, Isidro Cortes-Ciriano, James A Watson",3,http://arxiv.org/pdf/2001.01924v1,http://arxiv.org/abs/2001.01924v1,2020-01-07
+"Machine-learning classifiers for logographic name matching in public
+  health applications: approaches for incorporating phonetic, visual, and
+  keystroke similarity in large-scale probabilistic record linkage","Approximate string-matching methods to account for complex variation in
+highly discriminatory text fields, such as personal names, can enhance
+probabilistic record linkage. However, discriminating between matching and
+non-matching strings is challenging for logographic scripts, where similarities
+in pronunciation, appearance, or keystroke sequence are not directly encoded in
+the string data. We leverage a large Chinese administrative dataset with known
+match status to develop logistic regression and Xgboost classifiers integrating
+measures of visual, phonetic, and keystroke similarity to enhance
+identification of potentially-matching name pairs. We evaluate three methods of
+leveraging name similarity scores in large-scale probabilistic record linkage,
+which can adapt to varying match prevalence and information in supporting
+fields: (1) setting a threshold score based on predicted quality of
+name-matching across all record pairs; (2) setting a threshold score based on
+predicted discriminatory power of the linkage model; and (3) using empirical
+score distributions among matches and nonmatches to perform Bayesian adjustment
+of matching probabilities estimated from exact-agreement linkage. In
+experiments on holdout data, as well as data simulated with varying name error
+rates and supporting fields, a logistic regression classifier incorporated via
+the Bayesian method demonstrated marked improvements over exact-agreement
+linkage with respect to discriminatory power, match probability estimation, and
+accuracy, reducing the total number of misclassified record pairs by 21% in
+test data and up to an average of 93% in simulated datasets. Our results
+demonstrate the value of incorporating visual, phonetic, and keystroke
+similarity for logographic name matching, as well as the promise of our
+Bayesian approach to leverage name-matching within large-scale record linkage.",cs.IR,"stat.AP, cs.IR, cs.CL",3,Information Retrieval,"Applications, Information Retrieval, Computation and Language",Justin V. Remais,"Philip A. Collender, Zhiyue Tom Hu, Charles Li, Qu Cheng, Xintong Li, Yue You, Song Liang, Changhong Yang, Justin V. Remais",9,http://arxiv.org/pdf/2001.01895v1,http://arxiv.org/abs/2001.01895v1,2020-01-07
+Fast Kernel Smoothing in R with Applications to Projection Pursuit,"This paper introduces the R package FKSUM, which offers fast and exact
+evaluation of univariate kernel smoothers. The main kernel computations are
+implemented in C++, and are wrapped in simple, intuitive and versatile R
+functions. The fast kernel computations are based on recursive expressions
+involving the order statistics, which allows for exact evaluation of kernel
+smoothers at all sample points in log-linear time. In addition to general
+purpose kernel smoothing functions, the package offers purpose built and
+ready-to-use implementations of popular kernel-type estimators. On top of these
+basic smoothing problems, this paper focuses on projection pursuit problems in
+which the projection index is based on kernel-type estimators of functionals of
+the projected density.",stat.CO,stat.CO,1,Computation,Computation,David P. Hofmeyr,David P. Hofmeyr,1,http://arxiv.org/pdf/2001.02225v1,http://arxiv.org/abs/2001.02225v1,2020-01-07
+MCMC for a hyperbolic Bayesian inverse problem in traffic flow modelling,"As work on hyperbolic Bayesian inverse problems remains rare in the
+literature, we explore empirically the sampling challenges these offer which
+have to do with shock formation in the solution of the PDE. Furthermore, we
+provide a unified statistical model to estimate using motorway data both
+boundary conditions and fundamental diagram parameters in LWR, a well known
+motorway traffic flow model. This allows us to provide a traffic flow density
+estimation method that is shown to be superior to two methods found in the
+traffic flow literature. Finally, we highlight how \emph{Population Parallel
+Tempering} - a modification of Parallel Tempering - is a scalable method that
+can increase the mixing speed of the sampler by a factor of 10.",stat.CO,stat.CO,1,Computation,Computation,Yvo Pokern,"Jeremie Coullon, Yvo Pokern",2,http://arxiv.org/pdf/2001.02013v1,http://arxiv.org/abs/2001.02013v1,2020-01-07
+"Implementing version control with Git as a learning objective in
+  statistics courses","Version control is an essential element of a reproducible workflow that
+deserves due consideration among the learning objectives of statistics courses.
+This paper describes experiences and implementation decisions of four
+contributing faculty who are teaching different courses at a variety of
+institutions. Each of these faculty have set version control as a learning
+objective and successfully integrated teaching Git into one or more statistics
+courses. The various approaches described in the paper span different
+implementation strategies to suit student background, course type, software
+choices, and assessment practices. By presenting a wide range of approaches to
+teaching Git, the paper aims to serve as a resource for statistics instructors
+teaching courses at any level within an undergraduate or graduate curriculum.",stat.CO,"stat.CO, stat.OT",2,Computation,"Computation, Other Statistics",Maria Tackett,"Matthew D. Beckman, Mine Çetinkaya-Rundel, Nicholas J. Horton, Colin W. Rundel, Adam J. Sullivan, Maria Tackett",6,http://arxiv.org/pdf/2001.01988v1,http://arxiv.org/abs/2001.01988v1,2020-01-07
+"High-Performance Statistical Computing in the Computing Environments of
+  the 2020s","Technological advances in the past decade, hardware and software alike, have
+made access to high-performance computing (HPC) easier than ever. We review
+these advances from a statistical computing perspective. Cloud computing allows
+access to supercomputers affordable. Deep learning software libraries make
+programming statistical algorithms easy, and enable users to write code once
+and run it anywhere from a laptop to a workstation with multiple graphics
+processing units (GPUs) or a supercomputer in a cloud. To promote statisticians
+to benefit from these developments, we review recent optimization algorithms
+that are useful for high-dimensional models and can harness the power of HPC.
+Code snippets are provided for the readers to grasp the ease of programming. We
+also provide an easy-to-use distributed matrix data structure suitable for HPC.
+Employing this data structure, we illustrate various statistical applications
+including large-scale nonnegative matrix factorization, positron emission
+tomography, multidimensional scaling, and $\ell_1$-regularized Cox regression.
+Our examples easily scale up to an 8-GPU workstation and a 720-CPU-core cluster
+in a cloud. As a case in point, we analyze the on-set of type-2 diabetes from
+the UK Biobank with 200,000 subjects and about 500,000 single nucleotide
+polymorphisms using the HPC $\ell_1$-regularized Cox regression. Fitting a
+half-million-variate model takes less than 45 minutes, reconfirming known
+associations. To our knowledge, the feasibility of jointly genome-wide
+association analysis of survival outcomes at this scale is first demonstrated.",stat.CO,stat.CO,1,Computation,Computation,Joong-Ho Won,"Seyoon Ko, Hua Zhou, Jin Zhou, Joong-Ho Won",4,http://arxiv.org/pdf/2001.01916v1,http://arxiv.org/abs/2001.01916v1,2020-01-07
+"Monitoring Coefficient of Variation using One-Sided Run Rules control
+  charts in the presence of Measurement Errors","We investigate in this paper the effect of the measurement error on the
+performance of Run Rules control charts monitoring the coefficient of variation
+(CV) squared. The previous Run Rules CV chart in the literature is improved
+slightly by monitoring the CV squared using two one-sided Run Rules charts
+instead of monitoring the CV itself using a two-sided chart. The numerical
+results show that this improvement gives better performance in detecting
+process shifts. Moreover, we will show through simulation that the
+\textit{precision} and \textit{accuracy} errors do have negative effect on the
+performance of the proposed Run Rules charts. We also find out that taking
+multiple measurements per item is not an effective way to reduce these negative
+effects.",stat.CO,stat.CO,1,Computation,Computation,H. D. Nguyen,"P. H. Tran, C. Heuchenne, H. D. Nguyen",3,http://arxiv.org/pdf/2001.01821v1,http://arxiv.org/abs/2001.01821v1,2020-01-07
+Backtracking Gradient Descent allowing unbounded learning rates,"In unconstrained optimisation on an Euclidean space, to prove convergence in
+Gradient Descent processes (GD) $x_{n+1}=x_n-\delta _n \nabla f(x_n)$ it
+usually is required that the learning rates $\delta _n$'s are bounded: $\delta
+_n\leq \delta $ for some positive $\delta $. Under this assumption, if the
+sequence $x_n$ converges to a critical point $z$, then with large values of $n$
+the update will be small because $||x_{n+1}-x_n||\lesssim ||\nabla f(x_n)||$.
+This may also force the sequence to converge to a bad minimum. If we can allow,
+at least theoretically, that the learning rates $\delta _n$'s are not bounded,
+then we may have better convergence to better minima.
+  A previous joint paper by the author showed convergence for the usual version
+of Backtracking GD under very general assumptions on the cost function $f$. In
+this paper, we allow the learning rates $\delta _n$ to be unbounded, in the
+sense that there is a function $h:(0,\infty)\rightarrow (0,\infty )$ such that
+$\lim _{t\rightarrow 0}th(t)=0$ and $\delta _n\lesssim \max \{h(x_n),\delta \}$
+for all $n$ satisfying Armijo's condition, and prove convergence under the same
+assumptions as in the mentioned paper. It will be shown that this growth rate
+of $h$ is best possible if one wants convergence of the sequence $\{x_n\}$.
+  A specific way for choosing $\delta _n$ in a discrete way connects to Two-way
+Backtracking GD defined in the mentioned paper. We provide some results which
+either improve or are implicitly contained in those in the mentioned paper and
+another recent paper on avoidance of saddle points.",math.OC,"cs.LG, math.OC, stat.ML",3,Optimization and Control,"Machine Learning, Optimization and Control, Machine Learning",Tuyen Trung Truong,Tuyen Trung Truong,1,http://arxiv.org/pdf/2001.02005v1,http://arxiv.org/abs/2001.02005v1,2020-01-07
+"Softmax-based Classification is k-means Clustering: Formal Proof,
+  Consequences for Adversarial Attacks, and Improvement through Centroid Based
+  Tailoring","We formally prove the connection between k-means clustering and the
+predictions of neural networks based on the softmax activation layer. In
+existing work, this connection has been analyzed empirically, but it has never
+before been mathematically derived. The softmax function partitions the
+transformed input space into cones, each of which encompasses a class. This is
+equivalent to putting a number of centroids in this transformed space at equal
+distance from the origin, and k-means clustering the data points by proximity
+to these centroids. Softmax only cares in which cone a data point falls, and
+not how far from the centroid it is within that cone. We formally prove that
+networks with a small Lipschitz modulus (which corresponds to a low
+susceptibility to adversarial attacks) map data points closer to the cluster
+centroids, which results in a mapping to a k-means-friendly space. To leverage
+this knowledge, we propose Centroid Based Tailoring as an alternative to the
+softmax function in the last layer of a neural network. The resulting Gauss
+network has similar predictive accuracy as traditional networks, but is less
+susceptible to one-pixel attacks; while the main contribution of this paper is
+theoretical in nature, the Gauss network contributes empirical auxiliary
+benefits.",cs.LG,"cs.LG, stat.ML",2,Machine Learning,"Machine Learning, Machine Learning",Decebal Mocanu,"Sibylle Hess, Wouter Duivesteijn, Decebal Mocanu",3,http://arxiv.org/pdf/2001.01987v1,http://arxiv.org/abs/2001.01987v1,2020-01-07

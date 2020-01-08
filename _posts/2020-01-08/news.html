@@ -1,0 +1,2155 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+  <meta name="generator" content="distill" />
+
+  <style type="text/css">
+  /* Hide doc at startup (prevent jankiness while JS renders/transforms) */
+  body {
+    visibility: hidden;
+  }
+  </style>
+
+ <!--radix_placeholder_import_source-->
+ <!--/radix_placeholder_import_source-->
+
+  <!--radix_placeholder_meta_tags-->
+  <title>Articles from 2020-01-07</title>
+  
+  <meta property="description" itemprop="description" content="50 new data science research articles were published on 2020-01-07. 16 discussed machine learning."/>
+  
+  
+  <!--  https://schema.org/Article -->
+  <meta property="article:published" itemprop="datePublished" content="2020-01-08"/>
+  <meta property="article:created" itemprop="dateCreated" content="2020-01-08"/>
+  <meta name="article:author" content="Bryan Whiting"/>
+  
+  <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
+  <meta property="og:title" content="Articles from 2020-01-07"/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:description" content="50 new data science research articles were published on 2020-01-07. 16 discussed machine learning."/>
+  <meta property="og:locale" content="en_US"/>
+  
+  <!--  https://dev.twitter.com/cards/types/summary -->
+  <meta property="twitter:card" content="summary"/>
+  <meta property="twitter:title" content="Articles from 2020-01-07"/>
+  <meta property="twitter:description" content="50 new data science research articles were published on 2020-01-07. 16 discussed machine learning."/>
+  
+  <!--/radix_placeholder_meta_tags-->
+  <!--radix_placeholder_rmarkdown_metadata-->
+  
+  <script type="text/json" id="radix-rmarkdown-metadata">
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","date","author","output"]}},"value":[{"type":"character","attributes":{},"value":["Articles from 2020-01-07"]},{"type":"character","attributes":{},"value":["50 new data science research articles were published on 2020-01-07. 16 discussed machine learning.\n"]},{"type":"character","attributes":{},"value":["2020-01-08"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url"]}},"value":[{"type":"character","attributes":{},"value":["Bryan Whiting"]},{"type":"character","attributes":{},"value":["https://www.bryanwhiting.com"]}]}]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained","toc"]}},"value":[{"type":"logical","attributes":{},"value":[false]},{"type":"logical","attributes":{},"value":[true]}]}]}]}
+  </script>
+  <!--/radix_placeholder_rmarkdown_metadata-->
+  
+  <script type="text/json" id="radix-resource-manifest">
+  {"type":"character","attributes":{},"value":["arxiv.csv","news_files/bowser-1.9.3/bowser.min.js","news_files/distill-2.2.21/template.v2.js","news_files/jquery-1.11.3/jquery.min.js","news_files/kePrint-0.0.1/kePrint.js","news_files/webcomponents-2.0.0/webcomponents.js","news.Rmd.bak","output_df_summary.Rda","tweet.txt"]}
+  </script>
+  <!--radix_placeholder_navigation_in_header-->
+  <!--/radix_placeholder_navigation_in_header-->
+  <!--radix_placeholder_distill-->
+  
+  <style type="text/css">
+  
+  body {
+    background-color: white;
+  }
+  
+  .pandoc-table {
+    width: 100%;
+  }
+  
+  .pandoc-table>caption {
+    margin-bottom: 10px;
+  }
+  
+  .pandoc-table th:not([align]) {
+    text-align: left;
+  }
+  
+  .pagedtable-footer {
+    font-size: 15px;
+  }
+  
+  .html-widget {
+    margin-bottom: 2.0em;
+  }
+  
+  .l-screen-inset {
+    padding-right: 16px;
+  }
+  
+  .l-screen .caption {
+    margin-left: 10px;
+  }
+  
+  .shaded {
+    background: rgb(247, 247, 247);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  
+  .shaded .html-widget {
+    margin-bottom: 0;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  
+  .shaded .shaded-content {
+    background: white;
+  }
+  
+  .text-output {
+    margin-top: 0;
+    line-height: 1.5em;
+  }
+  
+  .hidden {
+    display: none !important;
+  }
+  
+  d-article {
+    padding-bottom: 30px;
+  }
+  
+  d-appendix {
+    padding-top: 30px;
+  }
+  
+  d-article>p>img {
+    width: 100%;
+  }
+  
+  d-article iframe {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 2.0em;
+    width: 100%;
+  }
+  
+  figure img.external {
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+    padding: 18px;
+    box-sizing: border-box;
+  }
+  
+  /* CSS for table of contents */
+  
+  .d-toc {
+    color: rgba(0,0,0,0.8);
+    font-size: 0.8em;
+    line-height: 1em;
+  }
+  
+  .d-toc-header {
+    font-size: 0.6rem;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 1.3em;
+  }
+  
+  .d-toc a {
+    border-bottom: none;
+  }
+  
+  .d-toc ul {
+    padding-left: 0;
+  }
+  
+  .d-toc li>ul {
+    padding-top: 0.8em;
+    padding-left: 16px;
+    margin-bottom: 0.6em;
+  }
+  
+  .d-toc ul,
+  .d-toc li {
+    list-style-type: none;
+  }
+  
+  .d-toc li {
+    margin-bottom: 0.9em;
+  }
+  
+  .d-toc-separator {
+    margin-top: 20px;
+    margin-bottom: 2em;
+  }
+  
+  .d-article-with-toc {
+    border-top: none;
+    padding-top: 0;
+  }
+  
+  
+  
+  /* Tweak code blocks (note that this CSS is repeated above in an injection
+     into the d-code shadow dom) */
+  
+  d-code {
+    overflow-x: auto !important;
+  }
+  
+  pre.d-code code.d-code {
+    padding-left: 10px;
+    font-size: 12px;
+    border-left: 2px solid rgba(0,0,0,0.1);
+  }
+  
+  pre.text-output {
+  
+    font-size: 12px;
+    color: black;
+    background: none;
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.5;
+  
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+  
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+  }
+  
+  @media(min-width: 768px) {
+  
+  d-code {
+    overflow-x: visible !important;
+  }
+  
+  pre.d-code code.d-code  {
+      padding-left: 18px;
+      font-size: 14px;
+  }
+  pre.text-output {
+    font-size: 14px;
+  }
+  }
+  
+  /* Figure */
+  
+  .figure {
+    position: relative;
+    margin-bottom: 2.5em;
+    margin-top: 1.5em;
+  }
+  
+  .figure img {
+    width: 100%;
+  }
+  
+  .figure .caption {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 12px;
+    line-height: 1.5em;
+  }
+  
+  .figure img.external {
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+    padding: 18px;
+    box-sizing: border-box;
+  }
+  
+  .figure .caption a {
+    color: rgba(0, 0, 0, 0.6);
+  }
+  
+  .figure .caption b,
+  .figure .caption strong, {
+    font-weight: 600;
+    color: rgba(0, 0, 0, 1.0);
+  }
+  
+  
+  
+  /* Tweak 1000px media break to show more text */
+  
+  @media(min-width: 1000px) {
+    .base-grid,
+    distill-header,
+    d-title,
+    d-abstract,
+    d-article,
+    d-appendix,
+    distill-appendix,
+    d-byline,
+    d-footnote-list,
+    d-citation-list,
+    distill-footer {
+      grid-template-columns: [screen-start] 1fr [page-start kicker-start] 80px [middle-start] 50px [text-start kicker-end] 65px 65px 65px 65px 65px 65px 65px 65px [text-end gutter-start] 65px [middle-end] 65px [page-end gutter-end] 1fr [screen-end];
+      grid-column-gap: 16px;
+    }
+  
+    .grid {
+      grid-column-gap: 16px;
+    }
+  
+    d-article {
+      font-size: 1.06rem;
+      line-height: 1.7em;
+    }
+    figure .caption, .figure .caption, figure figcaption {
+      font-size: 13px;
+    }
+  }
+  
+  @media(min-width: 1180px) {
+    .base-grid,
+    distill-header,
+    d-title,
+    d-abstract,
+    d-article,
+    d-appendix,
+    distill-appendix,
+    d-byline,
+    d-footnote-list,
+    d-citation-list,
+    distill-footer {
+      grid-template-columns: [screen-start] 1fr [page-start kicker-start] 60px [middle-start] 60px [text-start kicker-end] 60px 60px 60px 60px 60px 60px 60px 60px [text-end gutter-start] 60px [middle-end] 60px [page-end gutter-end] 1fr [screen-end];
+      grid-column-gap: 32px;
+    }
+  
+    .grid {
+      grid-column-gap: 32px;
+    }
+  }
+  
+  
+  /* Get the citation styles for the appendix (not auto-injected on render since
+     we do our own rendering of the citation appendix) */
+  
+  d-appendix .citation-appendix,
+  .d-appendix .citation-appendix {
+    font-size: 11px;
+    line-height: 15px;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    padding-left: 18px;
+    border: 1px solid rgba(0,0,0,0.1);
+    background: rgba(0, 0, 0, 0.02);
+    padding: 10px 18px;
+    border-radius: 3px;
+    color: rgba(150, 150, 150, 1);
+    overflow: hidden;
+    margin-top: -12px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+  
+  
+  /* Social footer */
+  
+  .social_footer {
+    margin-top: 30px;
+    margin-bottom: 0;
+    color: rgba(0,0,0,0.67);
+  }
+  
+  .disqus-comments {
+    margin-right: 30px;
+  }
+  
+  .disqus-comment-count {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+  }
+  
+  #disqus_thread {
+    margin-top: 30px;
+  }
+  
+  .article-sharing a {
+    border-bottom: none;
+    margin-right: 8px;
+  }
+  
+  .article-sharing a:hover {
+    border-bottom: none;
+  }
+  
+  .sidebar-section.subscribe {
+    font-size: 12px;
+    line-height: 1.6em;
+  }
+  
+  .subscribe p {
+    margin-bottom: 0.5em;
+  }
+  
+  
+  .article-footer .subscribe {
+    font-size: 15px;
+    margin-top: 45px;
+  }
+  
+  
+  /* Improve display for browsers without grid (IE/Edge <= 15) */
+  
+  .downlevel {
+    line-height: 1.6em;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+  }
+  
+  .downlevel .d-title {
+    padding-top: 6rem;
+    padding-bottom: 1.5rem;
+  }
+  
+  .downlevel .d-title h1 {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.1em;
+    margin: 0 0 0.5rem;
+  }
+  
+  .downlevel .d-title p {
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 1.55em;
+    margin-top: 0;
+  }
+  
+  .downlevel .d-byline {
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+    font-size: 0.8rem;
+    line-height: 1.8em;
+  }
+  
+  .downlevel .section-separator {
+    border: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  
+  .downlevel .d-article {
+    font-size: 1.06rem;
+    line-height: 1.7em;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
+  
+  
+  .downlevel .d-appendix {
+    padding-left: 0;
+    padding-right: 0;
+    max-width: none;
+    font-size: 0.8em;
+    line-height: 1.7em;
+    margin-bottom: 0;
+    color: rgba(0,0,0,0.5);
+    padding-top: 40px;
+    padding-bottom: 48px;
+  }
+  
+  .downlevel .footnotes ol {
+    padding-left: 13px;
+  }
+  
+  .downlevel .base-grid,
+  .downlevel .distill-header,
+  .downlevel .d-title,
+  .downlevel .d-abstract,
+  .downlevel .d-article,
+  .downlevel .d-appendix,
+  .downlevel .distill-appendix,
+  .downlevel .d-byline,
+  .downlevel .d-footnote-list,
+  .downlevel .d-citation-list,
+  .downlevel .distill-footer,
+  .downlevel .appendix-bottom,
+  .downlevel .posts-container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  
+  @media(min-width: 768px) {
+    .downlevel .base-grid,
+    .downlevel .distill-header,
+    .downlevel .d-title,
+    .downlevel .d-abstract,
+    .downlevel .d-article,
+    .downlevel .d-appendix,
+    .downlevel .distill-appendix,
+    .downlevel .d-byline,
+    .downlevel .d-footnote-list,
+    .downlevel .d-citation-list,
+    .downlevel .distill-footer,
+    .downlevel .appendix-bottom,
+    .downlevel .posts-container {
+    padding-left: 150px;
+    padding-right: 150px;
+    max-width: 900px;
+  }
+  }
+  
+  .downlevel pre code {
+    display: block;
+    border-left: 2px solid rgba(0, 0, 0, .1);
+    padding: 0 0 0 20px;
+    font-size: 14px;
+  }
+  
+  .downlevel code, .downlevel pre {
+    color: black;
+    background: none;
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.5;
+  
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+  
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+  }
+  
+  </style>
+  
+  <script type="application/javascript">
+  
+  function is_downlevel_browser() {
+    if (bowser.isUnsupportedBrowser({ msie: "12", msedge: "16"},
+                                   window.navigator.userAgent)) {
+      return true;
+    } else {
+      return window.load_distill_framework === undefined;
+    }
+  }
+  
+  // show body when load is complete
+  function on_load_complete() {
+  
+    // set body to visible
+    document.body.style.visibility = 'visible';
+  
+    // force redraw for leaflet widgets
+    if (window.HTMLWidgets) {
+      var maps = window.HTMLWidgets.findAll(".leaflet");
+      $.each(maps, function(i, el) {
+        var map = this.getMap();
+        map.invalidateSize();
+        map.eachLayer(function(layer) {
+          if (layer instanceof L.TileLayer)
+            layer.redraw();
+        });
+      });
+    }
+  
+    // trigger 'shown' so htmlwidgets resize
+    $('d-article').trigger('shown');
+  }
+  
+  function init_distill() {
+  
+    init_common();
+  
+    // create front matter
+    var front_matter = $('<d-front-matter></d-front-matter>');
+    $('#distill-front-matter').wrap(front_matter);
+  
+    // create d-title
+    $('.d-title').changeElementType('d-title');
+  
+    // create d-byline
+    var byline = $('<d-byline></d-byline>');
+    $('.d-byline').replaceWith(byline);
+  
+    // create d-article
+    var article = $('<d-article></d-article>');
+    $('.d-article').wrap(article).children().unwrap();
+  
+    // move posts container into article
+    $('.posts-container').appendTo($('d-article'));
+  
+    // create d-appendix
+    $('.d-appendix').changeElementType('d-appendix');
+  
+    // create d-bibliography
+    var bibliography = $('<d-bibliography></d-bibliography>');
+    $('#distill-bibliography').wrap(bibliography);
+  
+    // flag indicating that we have appendix items
+    var appendix = $('.appendix-bottom').children('h3').length > 0;
+  
+    // replace citations with <d-cite>
+    $('.citation').each(function(i, val) {
+      appendix = true;
+      var cites = $(this).attr('data-cites').split(" ");
+      var dt_cite = $('<d-cite></d-cite>');
+      dt_cite.attr('key', cites.join());
+      $(this).replaceWith(dt_cite);
+    });
+    // remove refs
+    $('#refs').remove();
+  
+    // replace footnotes with <d-footnote>
+    $('.footnote-ref').each(function(i, val) {
+      appendix = true;
+      var href = $(this).attr('href');
+      var id = href.replace('#', '');
+      var fn = $('#' + id);
+      var fn_p = $('#' + id + '>p');
+      fn_p.find('.footnote-back').remove();
+      var text = fn_p.html();
+      var dtfn = $('<d-footnote></d-footnote>');
+      dtfn.html(text);
+      $(this).replaceWith(dtfn);
+    });
+    // remove footnotes
+    $('.footnotes').remove();
+  
+    $('h1.appendix, h2.appendix').each(function(i, val) {
+      $(this).changeElementType('h3');
+    });
+    $('h3.appendix').each(function(i, val) {
+      var id = $(this).attr('id');
+      $('.d-toc a[href="#' + id + '"]').parent().remove();
+      appendix = true;
+      $(this).nextUntil($('h1, h2, h3')).addBack().appendTo($('d-appendix'));
+    });
+  
+    // show d-appendix if we have appendix content
+    $("d-appendix").css('display', appendix ? 'grid' : 'none');
+  
+    // replace code blocks with d-code
+    $('pre>code').each(function(i, val) {
+      var code = $(this);
+      var pre = code.parent();
+      var clz = "";
+      var language = pre.attr('class');
+      if (language) {
+        // map unknown languages to "clike" (without this they just dissapear)
+        if ($.inArray(language, ["bash", "clike", "css", "go", "html",
+                                 "javascript", "js", "julia", "lua", "markdown",
+                                 "markup", "mathml", "python", "svg", "xml"]) == -1)
+          language = "clike";
+        language = ' language="' + language + '"';
+        var dt_code = $('<d-code block' + language + clz + '></d-code>');
+        dt_code.text(code.text());
+        pre.replaceWith(dt_code);
+      } else {
+        code.addClass('text-output').unwrap().changeElementType('pre');
+      }
+    });
+  
+    // localize layout chunks to just output
+    $('.layout-chunk').each(function(i, val) {
+  
+      // capture layout
+      var layout = $(this).attr('data-layout');
+  
+      // apply layout to markdown level block elements
+      var elements = $(this).children().not('d-code, pre.text-output, script');
+      elements.each(function(i, el) {
+        var layout_div = $('<div class="' + layout + '"></div>');
+        if (layout_div.hasClass('shaded')) {
+          var shaded_content = $('<div class="shaded-content"></div>');
+          $(this).wrap(shaded_content);
+          $(this).parent().wrap(layout_div);
+        } else {
+          $(this).wrap(layout_div);
+        }
+      });
+  
+  
+      // unwrap the layout-chunk div
+      $(this).children().unwrap();
+    });
+  
+    // load distill framework
+    load_distill_framework();
+  
+    // wait for window.distillRunlevel == 4 to do post processing
+    function distill_post_process() {
+  
+      if (!window.distillRunlevel || window.distillRunlevel < 4)
+        return;
+  
+      // hide author/affiliations entirely if we have no authors
+      var front_matter = JSON.parse($("#distill-front-matter").html());
+      var have_authors = front_matter.authors && front_matter.authors.length > 0;
+      if (!have_authors)
+        $('d-byline').addClass('hidden');
+  
+      // table of contents
+      if (have_authors) // adjust border if we are in authors
+        $('.d-toc').parent().addClass('d-article-with-toc');
+  
+      // strip links that point to #
+      $('.authors-affiliations').find('a[href="#"]').removeAttr('href');
+  
+      // hide elements of author/affiliations grid that have no value
+      function hide_byline_column(caption) {
+        $('d-byline').find('h3:contains("' + caption + '")').parent().css('visibility', 'hidden');
+      }
+  
+      // affiliations
+      var have_affiliations = false;
+      for (var i = 0; i<front_matter.authors.length; ++i) {
+        var author = front_matter.authors[i];
+        if (author.affiliation !== "&nbsp;") {
+          have_affiliations = true;
+          break;
+        }
+      }
+      if (!have_affiliations)
+        $('d-byline').find('h3:contains("Affiliations")').css('visibility', 'hidden');
+  
+      // published date
+      if (!front_matter.publishedDate)
+        hide_byline_column("Published");
+  
+      // document object identifier
+      var doi = $('d-byline').find('h3:contains("DOI")');
+      var doi_p = doi.next().empty();
+      if (!front_matter.doi) {
+        // if we have a citation and valid citationText then link to that
+        if ($('#citation').length > 0 && front_matter.citationText) {
+          doi.html('Citation');
+          $('<a href="#citation"></a>')
+            .text(front_matter.citationText)
+            .appendTo(doi_p);
+        } else {
+          hide_byline_column("DOI");
+        }
+      } else {
+        $('<a></a>')
+           .attr('href', "https://doi.org/" + front_matter.doi)
+           .html(front_matter.doi)
+           .appendTo(doi_p);
+      }
+  
+       // change plural form of authors/affiliations
+      if (front_matter.authors.length === 1) {
+        var grid = $('.authors-affiliations');
+        grid.children('h3:contains("Authors")').text('Author');
+        grid.children('h3:contains("Affiliations")').text('Affiliation');
+      }
+  
+      // inject pre code styles (can't do this with a global stylesheet b/c a shadow root is used)
+      $('d-code').each(function(i, val) {
+        var style = document.createElement('style');
+        style.innerHTML = 'pre code { padding-left: 10px; font-size: 12px; border-left: 2px solid rgba(0,0,0,0.1); } ' +
+                          '@media(min-width: 768px) { pre code { padding-left: 18px; font-size: 14px; } }';
+        if (this.shadowRoot)
+          this.shadowRoot.appendChild(style);
+      });
+  
+      // move appendix-bottom entries to the bottom
+      $('.appendix-bottom').appendTo('d-appendix').children().unwrap();
+      $('.appendix-bottom').remove();
+  
+      // clear polling timer
+      clearInterval(tid);
+  
+      // show body now that everything is ready
+      on_load_complete();
+    }
+  
+    var tid = setInterval(distill_post_process, 50);
+    distill_post_process();
+  
+  }
+  
+  function init_downlevel() {
+  
+    init_common();
+  
+     // insert hr after d-title
+    $('.d-title').after($('<hr class="section-separator"/>'));
+  
+    // check if we have authors
+    var front_matter = JSON.parse($("#distill-front-matter").html());
+    var have_authors = front_matter.authors && front_matter.authors.length > 0;
+  
+    // manage byline/border
+    if (!have_authors)
+      $('.d-byline').remove();
+    $('.d-byline').after($('<hr class="section-separator"/>'));
+    $('.d-byline a').remove();
+  
+    // remove toc
+    $('.d-toc-header').remove();
+    $('.d-toc').remove();
+    $('.d-toc-separator').remove();
+  
+    // move appendix elements
+    $('h1.appendix, h2.appendix').each(function(i, val) {
+      $(this).changeElementType('h3');
+    });
+    $('h3.appendix').each(function(i, val) {
+      $(this).nextUntil($('h1, h2, h3')).addBack().appendTo($('.d-appendix'));
+    });
+  
+  
+    // inject headers into references and footnotes
+    var refs_header = $('<h3></h3>');
+    refs_header.text('References');
+    $('#refs').prepend(refs_header);
+  
+    var footnotes_header = $('<h3></h3');
+    footnotes_header.text('Footnotes');
+    $('.footnotes').children('hr').first().replaceWith(footnotes_header);
+  
+    // move appendix-bottom entries to the bottom
+    $('.appendix-bottom').appendTo('.d-appendix').children().unwrap();
+    $('.appendix-bottom').remove();
+  
+    // remove appendix if it's empty
+    if ($('.d-appendix').children().length === 0)
+      $('.d-appendix').remove();
+  
+    // prepend separator above appendix
+    $('.d-appendix').before($('<hr class="section-separator" style="clear: both"/>'));
+  
+    // trim code
+    $('pre>code').each(function(i, val) {
+      $(this).html($.trim($(this).html()));
+    });
+  
+    // move posts-container right before article
+    $('.posts-container').insertBefore($('.d-article'));
+  
+    $('body').addClass('downlevel');
+  
+    on_load_complete();
+  }
+  
+  
+  function init_common() {
+  
+    // jquery plugin to change element types
+    (function($) {
+      $.fn.changeElementType = function(newType) {
+        var attrs = {};
+  
+        $.each(this[0].attributes, function(idx, attr) {
+          attrs[attr.nodeName] = attr.nodeValue;
+        });
+  
+        this.replaceWith(function() {
+          return $("<" + newType + "/>", attrs).append($(this).contents());
+        });
+      };
+    })(jQuery);
+  
+    // prevent underline for linked images
+    $('a > img').parent().css({'border-bottom' : 'none'});
+  
+    // mark non-body figures created by knitr chunks as 100% width
+    $('.layout-chunk').each(function(i, val) {
+      var figures = $(this).find('img, .html-widget');
+      if ($(this).attr('data-layout') !== "l-body") {
+        figures.css('width', '100%');
+      } else {
+        figures.css('max-width', '100%');
+        figures.filter("[width]").each(function(i, val) {
+          var fig = $(this);
+          fig.css('width', fig.attr('width') + 'px');
+        });
+  
+      }
+    });
+  
+    // auto-append index.html to post-preview links in file: protocol
+    // and in rstudio ide preview
+    $('.post-preview').each(function(i, val) {
+      if (window.location.protocol === "file:")
+        $(this).attr('href', $(this).attr('href') + "index.html");
+    });
+  
+    // get rid of index.html references in header
+    if (window.location.protocol !== "file:") {
+      $('.distill-site-header a[href]').each(function(i,val) {
+        $(this).attr('href', $(this).attr('href').replace("index.html", "./"));
+      });
+    }
+  
+    // add class to pandoc style tables
+    $('tr.header').parent('thead').parent('table').addClass('pandoc-table');
+    $('.kable-table').children('table').addClass('pandoc-table');
+  
+    // add figcaption style to table captions
+    $('caption').parent('table').addClass("figcaption");
+  
+    // initialize posts list
+    if (window.init_posts_list)
+      window.init_posts_list();
+  
+    // implmement disqus comment link
+    $('.disqus-comment-count').click(function() {
+      window.headroom_prevent_pin = true;
+      $('#disqus_thread').toggleClass('hidden');
+      if (!$('#disqus_thread').hasClass('hidden')) {
+        var offset = $(this).offset();
+        $(window).resize();
+        $('html, body').animate({
+          scrollTop: offset.top - 35
+        });
+      }
+    });
+  }
+  
+  document.addEventListener('DOMContentLoaded', function() {
+    if (is_downlevel_browser())
+      init_downlevel();
+    else
+      window.addEventListener('WebComponentsReady', init_distill);
+  });
+  
+  </script>
+  
+  <!--/radix_placeholder_distill-->
+  <script src="news_files/kePrint-0.0.1/kePrint.js"></script>
+  <script src="news_files/jquery-1.11.3/jquery.min.js"></script>
+  <script src="news_files/bowser-1.9.3/bowser.min.js"></script>
+  <script src="news_files/webcomponents-2.0.0/webcomponents.js"></script>
+  <script src="news_files/distill-2.2.21/template.v2.js"></script>
+  <!--radix_placeholder_site_in_header-->
+  <!--/radix_placeholder_site_in_header-->
+
+
+</head>
+
+<body>
+
+<!--radix_placeholder_front_matter-->
+
+<script id="distill-front-matter" type="text/json">
+{"title":"Articles from 2020-01-07","description":"50 new data science research articles were published on 2020-01-07. 16 discussed machine learning.","authors":[{"author":"Bryan Whiting","authorURL":"https://www.bryanwhiting.com","affiliation":"&nbsp;","affiliationURL":"#"}],"publishedDate":"2020-01-08T00:00:00.000-05:00","citationText":"Whiting, 2020"}
+</script>
+
+<!--/radix_placeholder_front_matter-->
+<!--radix_placeholder_navigation_before_body-->
+<!--/radix_placeholder_navigation_before_body-->
+<!--radix_placeholder_site_before_body-->
+<!--/radix_placeholder_site_before_body-->
+
+<div class="d-title">
+<h1>Articles from 2020-01-07</h1>
+<p>50 new data science research articles were published on 2020-01-07. 16 discussed machine learning.</p>
+</div>
+
+<div class="d-byline">
+  Bryan Whiting <a href="https://www.bryanwhiting.com" class="uri">https://www.bryanwhiting.com</a> 
+  
+<br/>2020-01-08
+</div>
+
+<div class="d-article">
+<h3 class="d-toc-header">Table of Contents</h3>
+<nav class="d-toc" id="TOC">
+<ul>
+<li><a href="#breakdown-of-arxiv-publication-counts">Breakdown of arXiv Publication Counts</a></li>
+<li><a href="#articles-for-statitstics-machine-learning-econonmetrics-and-finance">Articles for Statitstics, Machine Learning Econonmetrics, and Finance</a><ul>
+<li><a href="#applications--stat-ap-">Applications (stat.AP): 5 new</a></li>
+<li><a href="#new">: 6 new</a></li>
+<li><a href="#machine-learning--cs-lg-">Machine Learning (cs.LG): 15 new</a></li>
+</ul></li>
+<li><a href="#data-science-arxiv-by-primary-tag">Data Science arXiv by Primary Tag</a><ul>
+<li><a href="#computer-science">Computer Science</a></li>
+<li><a href="#statistics">Statistics</a></li>
+<li><a href="#condensed-matter">Condensed Matter</a></li>
+<li><a href="#mathematics">Mathematics</a></li>
+<li><a href="#physics">Physics</a></li>
+<li><a href="#quantitative-biology">Quantitative Biology</a></li>
+<li><a href="#elec.-eng.-and-systems-science">Elec. Eng. and Systems Science</a></li>
+<li><a href="#other">Other</a></li>
+<li><a href="#quantum-physics">Quantum Physics</a></li>
+</ul></li>
+</ul>
+</nav>
+<hr class="d-toc-separator"/>
+<h2 id="breakdown-of-arxiv-publication-counts">Breakdown of arXiv Publication Counts</h2>
+<p>Yesterday’s counts of submitted papers on www.arxiv.org grouped by primary subject. Click the links in the table to be re-directed to the abstracts below. The links under <code>Subject</code> will redirect you to abstracts with the primary subject (there can only be one primary subject on arXiv). The links under <code>Category</code> will redirect you to all publications yesterday with a given tag (primary or secondary).</p>
+<div class="layout-chunk" data-layout="l-body">
+<table class="table table-striped" style="margin-left: auto; margin-right: auto;">
+<caption>
+<span id="tab:summary-table-with-counts">Table 1: </span>Number of articles by subject and primary category. Colored titles represent hyperlinks that take you below to abstracts. Key - Subject: Computer Science (5) means there were 5 articles with primary tag CS. Category: Machine Learning (cs.LG) N = 8 (16) means there were 8 primary articles with the (cs.LG) tag but 16 articles had it as a secondary tag, so there should be 24 in total. Click this link to be taken to all 24. Only select categories are highlighted because they are of particular interest to applied data scientists.
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+Subject
+</th>
+<th style="text-align:left;">
+Category
+</th>
+<th style="text-align:left;">
+N
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;font-weight: bold;vertical-align: top !important;" rowspan="10">
+<a href="#computer-science" style=" font-weight: bold;    color: #d9230f !important;">Computer Science (27)</a>
+</td>
+<td style="text-align:left;">
+Computer Vision and Pattern Recognition (cs.CV)
+</td>
+<td style="text-align:left;">
+9
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Artificial Intelligence (cs.AI)
+</td>
+<td style="text-align:left;">
+6 (4)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="#machine-learning--cs-lg-" style=" font-weight: bold;    color: #d9230f !important;">Machine Learning (cs.LG)</a>
+</td>
+<td style="text-align:left;">
+4 (11)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Databases (cs.DB)
+</td>
+<td style="text-align:left;">
+2
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Human-Computer Interaction (cs.HC)
+</td>
+<td style="text-align:left;">
+1 (2)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Computation and Language (cs.CL)
+</td>
+<td style="text-align:left;">
+1 (1)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Computers and Society (cs.CY)
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Digital Libraries (cs.DL)
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Information Retrieval (cs.IR)
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Neural and Evolutionary Computing (cs.NE)
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;font-weight: bold;vertical-align: top !important;" rowspan="2">
+<a href="#statistics" style=" font-weight: bold;    color: #d9230f !important;">Statistics (9)</a>
+</td>
+<td style="text-align:left;">
+Computation (stat.CO)
+</td>
+<td style="text-align:left;">
+5
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="#applications--stat-ap-" style=" font-weight: bold;    color: #d9230f !important;">Applications (stat.AP)</a>
+</td>
+<td style="text-align:left;">
+4 (1)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;font-weight: bold;vertical-align: top !important;" rowspan="3">
+<a href="#condensed-matter" style=" font-weight: bold;    color: #d9230f !important;">Condensed Matter (5)</a>
+</td>
+<td style="text-align:left;">
+Materials Science (cond-mat.mtrl-sci)
+</td>
+<td style="text-align:left;">
+2
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Statistical Mechanics (cond-mat.stat-mech)
+</td>
+<td style="text-align:left;">
+2
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Strongly Correlated Electrons (cond-mat.str-el)
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;font-weight: bold;vertical-align: top !important;" rowspan="2">
+<a href="#mathematics" style=" font-weight: bold;    color: #d9230f !important;">Mathematics (2)</a>
+</td>
+<td style="text-align:left;">
+Optimization and Control (math.OC)
+</td>
+<td style="text-align:left;">
+1 (1)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Statistics Theory (math.ST)
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;font-weight: bold;vertical-align: top !important;" rowspan="2">
+<a href="#physics" style=" font-weight: bold;    color: #d9230f !important;">Physics (2)</a>
+</td>
+<td style="text-align:left;">
+Computational Physics (physics.comp-ph)
+</td>
+<td style="text-align:left;">
+1 (6)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Medical Physics (physics.med-ph)
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;font-weight: bold;vertical-align: top !important;" rowspan="2">
+<a href="#quantitative-biology" style=" font-weight: bold;    color: #d9230f !important;">Quantitative Biology (2)</a>
+</td>
+<td style="text-align:left;">
+Biomolecules (q-bio.BM)
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Populations and Evolution (q-bio.PE)
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;font-weight: bold;">
+<a href="#elec.-eng.%20and%20systems%20science" style=" font-weight: bold;    color: #d9230f !important;">Elec. Eng. and Systems Science (1)</a>
+</td>
+<td style="text-align:left;">
+Signal Processing (eess.SP)
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;font-weight: bold;">
+<a href="#other" style=" font-weight: bold;    color: #d9230f !important;">Other (1)</a>
+</td>
+<td style="text-align:left;">
+Instrumentation and Methods for Astrophysics (astro-ph.IM)
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;font-weight: bold;">
+<a href="#quantum-physics" style=" font-weight: bold;    color: #d9230f !important;">Quantum Physics (1)</a>
+</td>
+<td style="text-align:left;">
+Quantum Physics (quant-ph)
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+
+</div>
+<div class="layout-chunk" data-layout="l-body">
+
+</div>
+<h2 id="articles-for-statitstics-machine-learning-econonmetrics-and-finance">Articles for Statitstics, Machine Learning Econonmetrics, and Finance</h2>
+<p>This section contains all articles with any tag of <code>stat.AP</code>, <code>stat.co</code>, <code>stat.ML</code>, <code>cs.LG</code>, <code>q-fin.ST</code>, <code>q-fin.EC</code>, or <code>econ-EM</code>. Only the first two sentences are shown - click the links for more detail.</p>
+<div class="layout-chunk" data-layout="l-screen-inset">
+
+<h3 id="applications--stat-ap-">Applications (stat.AP): 5 new</h3>
+<table class="table table-striped table-condensed" style="margin-left: auto; margin-right: auto;">
+<tbody>
+<tr grouplength="5">
+<td colspan="1" style="background-color: #666; color: #fff;">
+<strong>Applications (stat.AP)</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01895v1" style="color: #d9230f">Machine-learning classifiers for logographic name matching in public health applications: approaches for incorporating phonetic, visual, and keystroke similarity in large-scale probabilistic record linkage</a></b><br><em>Applications, Information Retrieval, Computation and Language</em>. 9 authors. <a href="http://arxiv.org/pdf/2001.01895v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Approximate string-matching methods to account for complex variation in highly discriminatory text fields, such as personal names, can enhance probabilistic record linkage. However, discriminating between matching and non-matching strings is challenging for logographic scripts, where similarities in pronunciation, appearance, or keystroke sequence are not directly encoded in the string data. …</summary><br> We leverage a large Chinese administrative dataset with known match status to develop logistic regression and Xgboost classifiers integrating measures of visual, phonetic, and keystroke similarity to enhance identification of potentially-matching name pairs. We evaluate three methods of leveraging name similarity scores in large-scale probabilistic record linkage, which can adapt to varying match prevalence and information in supporting fields: (1) setting a threshold score based on predicted quality of name-matching across all record pairs; (2) setting a threshold score based on predicted discriminatory power of the linkage model; and (3) using empirical score distributions among matches and nonmatches to perform Bayesian adjustment of matching probabilities estimated from exact-agreement linkage. In experiments on holdout data, as well as data simulated with varying name error rates and supporting fields, a logistic regression classifier incorporated via the Bayesian method demonstrated marked improvements over exact-agreement linkage with respect to discriminatory power, match probability estimation, and accuracy, reducing the total number of misclassified record pairs by 21% in test data and up to an average of 93% in simulated datasets. Our results demonstrate the value of incorporating visual, phonetic, and keystroke similarity for logographic name matching, as well as the promise of our Bayesian approach to leverage name-matching within large-scale record linkage.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01996v1" style="color: #d9230f">School value-added models for multivariate academic and non-academic outcomes: A more rounded approach to using student data to inform school accountability</a></b><br><em>Applications</em>. 3 authors. <a href="http://arxiv.org/pdf/2001.01996v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Education systems around the world increasingly rely on school value-added models to hold schools to account. These models typically focus on a limited number of academic outcomes, failing to recognise the broader range of non-academic student outcomes, attitudes and behaviours to which schools contribute. …</summary><br> We explore how the traditional multilevel modelling approach to school value-added models can be extended to simultaneously analyse multiple academic and non-academic outcomes and thereby can potentially provide a more rounded approach to using student data to inform school accountability. We jointly model student attainment, absence and exclusion data for schools in England. We find different results across the three outcomes, in terms of the size and consistency of school effects, and the importance of adjusting for student and school characteristics. The results suggest the three outcomes are capturing fundamentally distinct aspects of school performance, recommending the consideration of non-academic outcomes in systems of school accountability.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01992v1" style="color: #d9230f">Future Proofing a Building Design Using History Matching Inspired Level Set Techniques</a></b><br><em>Applications</em>. 3 authors. <a href="http://arxiv.org/pdf/2001.01992v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>History Matching is a technique used to calibrate complex computer models, that is, finding the input settings which lead to the simulated output matching up with real world observations. Key to this technique is the construction of emulators, which provide fast probabilistic predictions of future simulations. …</summary><br> In this work, we adapt the History Matching framework to tackle the problem of level set estimation, that is, finding input settings where the output is below (or above) some threshold. The developed methodology is heavily motivated by a specific case study: how can one design a building that will be sufficiently protected against overheating and sufficiently energy efficient, whilst considering the expected increases in temperature due to climate change? We successfully manage to address this - greatly reducing a large initial set of candidate building designs down to a small set of acceptable potential buildings.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01924v1" style="color: #d9230f">A semi-supervised learning framework for quantitative structure-activity regression modelling</a></b><br><em>Applications, Machine Learning</em>. 3 authors. <a href="http://arxiv.org/pdf/2001.01924v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Supervised learning models, also known as quantitative structure-activity regression (QSAR) models, are increasingly used in assisting the process of preclinical, small molecule drug discovery. The models are trained on data consisting of a finite dimensional representation of molecular structures and their corresponding target specific activities. …</summary><br> These models can then be used to predict the activity of previously unmeasured novel compounds. In this work we address two problems related to this approach. The first is to estimate the extent to which the quality of the model predictions degrades for compounds very different from the compounds in the training data. The second is to adjust for the screening dependent selection bias inherent in many training data sets. In the most extreme cases, only compounds which pass an activity-dependent screening are reported. By using a semi-supervised learning framework, we show that it is possible to make predictions which take into account the similarity of the testing compounds to those in the training data and adjust for the reporting selection bias. We illustrate this approach using publicly available structure-activity data on a large set of compounds reported by GlaxoSmithKline (the Tres Cantos AntiMalarial Set) to inhibit in vitro P. falciparum growth.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.02036v1" style="color: #d9230f">Selection Induced Contrast Estimate (SICE) Effect: An Attempt to Quantify the Impact of Some Patient Selection Criteria in Randomized Clinical Trials</a></b><br><em>Applications, Other Statistics</em>. 2 authors. <a href="http://arxiv.org/pdf/2001.02036v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Defining the Inclusion/Exclusion (I/E) criteria of a trial is one of the most important steps during a trial design. Increasingly complex I/E criteria potentially create information imbalance and transparency issues between the people who design and run the trials and those who consume the information produced by the trials. …</summary><br> In order to better understand and quantify the impact of a category of I/E criteria on observed treatment effects, a concept, named the Selection Induced Contrast Estimate (SICE) effect, is introduced and formulated in this paper. The SICE effect can exist in controlled clinical trials when treatment affects the correlation between a marker used for selection and the response of interest. This effect is demonstrated with both simulations and real clinical trial data. Although the statistical elements behind the SICE effect have been well studied, explicitly formulating and studying this effect can benefit several areas, including better transparency in I/E criteria, meta-analysis of multiple clinical trials, treatment effect interpretation in real-world medical practice, etc.
+</details>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="new">: 6 new</h3>
+<table class="table table-striped table-condensed" style="margin-left: auto; margin-right: auto;">
+<tbody>
+<tr grouplength="6">
+<td colspan="1" style="background-color: #666; color: #fff;">
+<strong>NA</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.02152v1" style="color: #d9230f">PaRoT: A Practical Framework for Robust Deep NeuralNetwork Training</a></b><br><em>Machine Learning, Machine Learning</em>. 4 authors. <a href="http://arxiv.org/pdf/2001.02152v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Deep Neural Networks (DNNs) are finding important applications in safety-critical systems such as Autonomous Vehicles (AVs), where perceiving the environment correctly and robustly is necessary for safe operation. Raising unique challenges for assurance due to their black-box nature, DNNs pose a fundamental problem for regulatory acceptance of these types of systems. …</summary><br> Robust training — training to minimize excessive sensitivity to small changes in input — has emerged as one promising technique to address this challenge. However, existing robust training tools are inconvenient to use or apply to existing codebases and models: they typically only support a small subset of model elements and require users to extensively rewrite the training code. In this paper we introduce a novel framework, PaRoT, developed on the popular TensorFlow platform, that greatly reduces the barrier to entry. Our framework enables robust training to be performed on arbitrary DNNs without any rewrites to the model. We demonstrate that our framework’s performance is comparable to prior art, and exemplify its ease of use on off-the-shelf, trained models and on a real-world industrial application: training a robust traffic light detection network.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01924v1" style="color: #d9230f">A semi-supervised learning framework for quantitative structure-activity regression modelling</a></b><br><em>Applications, Machine Learning</em>. 3 authors. <a href="http://arxiv.org/pdf/2001.01924v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Supervised learning models, also known as quantitative structure-activity regression (QSAR) models, are increasingly used in assisting the process of preclinical, small molecule drug discovery. The models are trained on data consisting of a finite dimensional representation of molecular structures and their corresponding target specific activities. …</summary><br> These models can then be used to predict the activity of previously unmeasured novel compounds. In this work we address two problems related to this approach. The first is to estimate the extent to which the quality of the model predictions degrades for compounds very different from the compounds in the training data. The second is to adjust for the screening dependent selection bias inherent in many training data sets. In the most extreme cases, only compounds which pass an activity-dependent screening are reported. By using a semi-supervised learning framework, we show that it is possible to make predictions which take into account the similarity of the testing compounds to those in the training data and adjust for the reporting selection bias. We illustrate this approach using publicly available structure-activity data on a large set of compounds reported by GlaxoSmithKline (the Tres Cantos AntiMalarial Set) to inhibit in vitro P. falciparum growth.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01987v1" style="color: #d9230f">Softmax-based Classification is k-means Clustering: Formal Proof, Consequences for Adversarial Attacks, and Improvement through Centroid Based Tailoring</a></b><br><em>Machine Learning, Machine Learning</em>. 3 authors. <a href="http://arxiv.org/pdf/2001.01987v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>We formally prove the connection between k-means clustering and the predictions of neural networks based on the softmax activation layer. In existing work, this connection has been analyzed empirically, but it has never before been mathematically derived. …</summary><br> The softmax function partitions the transformed input space into cones, each of which encompasses a class. This is equivalent to putting a number of centroids in this transformed space at equal distance from the origin, and k-means clustering the data points by proximity to these centroids. Softmax only cares in which cone a data point falls, and not how far from the centroid it is within that cone. We formally prove that networks with a small Lipschitz modulus (which corresponds to a low susceptibility to adversarial attacks) map data points closer to the cluster centroids, which results in a mapping to a k-means-friendly space. To leverage this knowledge, we propose Centroid Based Tailoring as an alternative to the softmax function in the last layer of a neural network. The resulting Gauss network has similar predictive accuracy as traditional networks, but is less susceptible to one-pixel attacks; while the main contribution of this paper is theoretical in nature, the Gauss network contributes empirical auxiliary benefits.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.02165v1" style="color: #d9230f">Generalized mean shift with triangular kernel profile</a></b><br><em>Machine Learning, Optimization and Control, Machine Learning</em>. 2 authors. <a href="http://arxiv.org/pdf/2001.02165v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>The mean shift algorithm is a popular way to find modes of some probability density functions taking a specific kernel-based shape, used for clustering or visual tracking. Since its introduction, it underwent several practical improvements and generalizations, as well as deep theoretical analysis mainly focused on its convergence properties. …</summary><br> In spite of encouraging results, this question has not received a clear general answer yet. In this paper we focus on a specific class of kernels, adapted in particular to the distributions clustering applications which motivated this work. We show that a novel Mean Shift variant adapted to them can be derived, and proved to converge after a finite number of iterations. In order to situate this new class of methods in the general picture of the Mean Shift theory, we alo give a synthetic exposure of existing results of this field.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01997v1" style="color: #d9230f">Prediction of Drug Synergy by Ensemble Learning</a></b><br><em>Machine Learning, Quantitative Methods, Machine Learning</em>. 2 authors. <a href="http://arxiv.org/pdf/2001.01997v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>One of the promising methods for the treatment of complex diseases such as cancer is combinational therapy. Due to the combinatorial complexity, machine learning models can be useful in this field, where significant improvements have recently been achieved in determination of synergistic combinations. …</summary><br> In this study, we investigate the effectiveness of different compound representations in predicting the drug synergy. On a large drug combination screen dataset, we first demonstrate the use of a promising representation that has not been used for this problem before, then we propose an ensemble on representation-model combinations that outperform each of the baseline models.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.02005v1" style="color: #d9230f">Backtracking Gradient Descent allowing unbounded learning rates</a></b><br><em>Machine Learning, Optimization and Control, Machine Learning</em>. 1 authors. <a href="http://arxiv.org/pdf/2001.02005v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>In unconstrained optimisation on an Euclidean space, to prove convergence in Gradient Descent processes (GD) <span class="math inline">\(x_{n+1}=x_n-\delta _n \nabla f(x_n)\)</span> it usually is required that the learning rates <span class="math inline">\(\delta _n\)</span>’s are bounded: $ _n$ for some positive <span class="math inline">\(\delta latex287af42deb553a23bf089232a14b9cb1\lim _{t\rightarrow 0}th(t)=0\)</span> and <span class="math inline">\(\delta _n\lesssim \max \{h(x_n),\delta \}\)</span> for all <span class="math inline">\(n\)</span> satisfying Armijo’s condition, and prove convergence under the same assumptions as in the mentioned paper. It will be shown that this growth rate of <span class="math inline">\(h\)</span> is best possible if one wants convergence of the sequence <span class="math inline">\(\{x_n\}\)</span>. A specific way for choosing <span class="math inline">\(\delta _n\)</span> in a discrete way connects to Two-way Backtracking GD defined in the mentioned paper. We provide some results which either improve or are implicitly contained in those in the mentioned paper and another recent paper on avoidance of saddle points.</summary>
+</details>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="machine-learning--cs-lg-">Machine Learning (cs.LG): 15 new</h3>
+<table class="table table-striped table-condensed" style="margin-left: auto; margin-right: auto;">
+<tbody>
+<tr grouplength="15">
+<td colspan="1" style="background-color: #666; color: #fff;">
+<strong>Machine Learning (cs.LG)</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01918v1" style="color: #d9230f">Context-Aware Design of Cyber-Physical Human Systems (CPHS)</a></b><br><em>Multiagent Systems, Machine Learning, Artificial Intelligence</em>. 11 authors. <a href="http://arxiv.org/pdf/2001.01918v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Recently, it has been widely accepted by the research community that interactions between humans and cyber-physical infrastructures have played a significant role in determining the performance of the latter. The existing paradigm for designing cyber-physical systems for optimal performance focuses on developing models based on historical data. …</summary><br> The impacts of context factors driving human system interaction are challenging and are difficult to capture and replicate in existing design models. As a result, many existing models do not or only partially address those context factors of a new design owing to the lack of capabilities to capture the context factors. This limitation in many existing models often causes performance gaps between predicted and measured results. We envision a new design environment, a cyber-physical human system (CPHS) where decision-making processes for physical infrastructures under design are intelligently connected to distributed resources over cyberinfrastructure such as experiments on design features and empirical evidence from operations of existing instances. The framework combines existing design models with context-aware design-specific data involving human-infrastructure interactions in new designs, using a machine learning approach to create augmented design models with improved predictive powers.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.02004v1" style="color: #d9230f">CNN 101: Interactive Visual Learning for Convolutional Neural Networks</a></b><br><em>Machine Learning, Artificial Intelligence, Human-Computer Interaction</em>. 8 authors. <a href="http://arxiv.org/pdf/2001.02004v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>The success of deep learning solving previously-thought hard problems has inspired many non-experts to learn and understand this exciting technology. However, it is often challenging for learners to take the first steps due to the complexity of deep learning models. …</summary><br> We present our ongoing work, CNN 101, an interactive visualization system for explaining and teaching convolutional neural networks. Through tightly integrated interactive views, CNN 101 offers both overview and detailed descriptions of how a model works. Built using modern web technologies, CNN 101 runs locally in users’ web browsers without requiring specialized hardware, broadening the public’s education access to modern deep learning techniques.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01982v1" style="color: #d9230f">Intrinsic Motivation and Episodic Memories for Robot Exploration of High-Dimensional Sensory Spaces</a></b><br><em>Robotics, Machine Learning, Artificial Intelligence</em>. 6 authors. <a href="http://arxiv.org/pdf/2001.01982v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>This work presents an architecture that generates curiosity-driven goal-directed exploration behaviours for an image sensor of a microfarming robot. A combination of deep neural networks for offline unsupervised learning of low-dimensional features from images, and of online learning of shallow neural networks representing the inverse and forward kinematics of the system have been used. …</summary><br> The artificial curiosity system assigns interest values to a set of pre-defined goals, and drives the exploration towards those that are expected to maximise the learning progress. We propose the integration of an episodic memory in intrinsic motivation systems to face catastrophic forgetting issues, typically experienced when performing online updates of artificial neural networks. Our results show that adopting an episodic memory system not only prevents the computational models from quickly forgetting knowledge that has been previously acquired, but also provides new avenues for modulating the balance between plasticity and stability of the models.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.02160v1" style="color: #d9230f">Inferring Convolutional Neural Networks’ accuracies from their architectural characterizations</a></b><br><em>Machine Learning, High Energy Physics - Experiment, Computer Vision and Pattern Recognition</em>. 6 authors. <a href="http://arxiv.org/pdf/2001.02160v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Convolutional Neural Networks (CNNs) have shown strong promise for analyzing scientific data from many domains including particle imaging detectors. However, the challenge of choosing the appropriate network architecture (depth, kernel shapes, activation functions, etc. …</summary><br>) for specific applications and different data sets is still poorly understood. In this paper, we study the relationships between a CNN’s architecture and its performance by proposing a systematic language that is useful for comparison between different CNN’s architectures before training time. We characterize CNN’s architecture by different attributes, and demonstrate that the attributes can be predictive of the networks’ performance in two specific computer vision-based physics problems – event vertex finding and hadron multiplicity classification in the MINERvA experiment at Fermi National Accelerator Laboratory. In doing so, we extract several architectural attributes from optimized networks’ architecture for the physics problems, which are outputs of a model selection algorithm called Multi-node Evolutionary Neural Networks for Deep Learning (MENNDL). We use machine learning models to predict whether a network can perform better than a certain threshold accuracy before training. The models perform 16-20% better than random guessing. Additionally, we found an coefficient of determination of 0.966 for an Ordinary Least Squares model in a regression on accuracy over a large population of networks.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.02223v1" style="color: #d9230f">Dynamic Task Weighting Methods for Multi-task Networks in Autonomous Driving Systems</a></b><br><em>Robotics, Machine Learning, Computer Vision and Pattern Recognition</em>. 5 authors. <a href="http://arxiv.org/pdf/2001.02223v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Deep multi-task networks are of particular interest for autonomous driving systems. They can potentially strike an excellent trade-off between predictive performance, hardware constraints and efficient use of information from multiple types of annotations and modalities. …</summary><br> However, training such models is non-trivial and requires balancing the learning of all tasks as their respective losses display different scales, ranges and dynamics across training. Multiple task weighting methods that adjust the losses in an adaptive way have been proposed recently on different datasets and combinations of tasks, making it difficult to compare them. In this work, we review and systematically evaluate nine task weighting strategies on common grounds on three automotive datasets (KITTI, Cityscapes and WoodScape). We then propose a novel method combining evolutionary meta-learning and task-based selective backpropagation, for finding the task weights and training the network reliably. Our method outperforms state-of-the-art methods by <span class="math inline">\(3\%\)</span> on a two-task application.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.02112v1" style="color: #d9230f">Multitask learning over graphs</a></b><br><em>Multiagent Systems, Machine Learning, Signal Processing</em>. 5 authors. <a href="http://arxiv.org/pdf/2001.02112v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>The problem of learning simultaneously several related tasks has received considerable attention in several domains, especially in machine learning with the so-called multitask learning problem or learning to learn problem [1], [2]. Multitask learning is an approach to inductive transfer learning (using what is learned for one problem to assist in another problem) and helps improve generalization performance relative to learning each task separately by using the domain information contained in the training signals of related tasks as an inductive bias. …</summary><br> Several strategies have been derived within this community under the assumption that all data are available beforehand at a fusion center. However, recent years have witnessed an increasing ability to collect data in a distributed and streaming manner. This requires the design of new strategies for learning jointly multiple tasks from streaming data over distributed (or networked) systems. This article provides an overview of multitask strategies for learning and adaptation over networks. The working hypothesis for these strategies is that agents are allowed to cooperate with each other in order to learn distinct, though related tasks. The article shows how cooperation steers the network limiting point and how different cooperation rules allow to promote different task relatedness models. It also explains how and when cooperation over multitask networks outperforms non-cooperative strategies.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.02101v1" style="color: #d9230f">State Transition Modeling of the Smoking Behavior using LSTM Recurrent Neural Networks</a></b><br><em>Machine Learning, Computer Vision and Pattern Recognition</em>. 4 authors. <a href="http://arxiv.org/pdf/2001.02101v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>The use of sensors has pervaded everyday life in several applications including human activity monitoring, healthcare, and social networks. In this study, we focus on the use of smartwatch sensors to recognize smoking activity. …</summary><br> More specifically, we have reformulated the previous work in detection of smoking to include in-context recognition of smoking. Our presented reformulation of the smoking gesture as a state-transition model that consists of the mini-gestures hand-to-lip, hand-on-lip, and hand-off-lip, has demonstrated improvement in detection rates nearing 100% using conventional neural networks. In addition, we have begun the utilization of Long-Short-Term Memory (LSTM) neural networks to allow for in-context detection of gestures with accuracy nearing 97%.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.02152v1" style="color: #d9230f">PaRoT: A Practical Framework for Robust Deep NeuralNetwork Training</a></b><br><em>Machine Learning, Machine Learning</em>. 4 authors. <a href="http://arxiv.org/pdf/2001.02152v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Deep Neural Networks (DNNs) are finding important applications in safety-critical systems such as Autonomous Vehicles (AVs), where perceiving the environment correctly and robustly is necessary for safe operation. Raising unique challenges for assurance due to their black-box nature, DNNs pose a fundamental problem for regulatory acceptance of these types of systems. …</summary><br> Robust training — training to minimize excessive sensitivity to small changes in input — has emerged as one promising technique to address this challenge. However, existing robust training tools are inconvenient to use or apply to existing codebases and models: they typically only support a small subset of model elements and require users to extensively rewrite the training code. In this paper we introduce a novel framework, PaRoT, developed on the popular TensorFlow platform, that greatly reduces the barrier to entry. Our framework enables robust training to be performed on arbitrary DNNs without any rewrites to the model. We demonstrate that our framework’s performance is comparable to prior art, and exemplify its ease of use on off-the-shelf, trained models and on a real-world industrial application: training a robust traffic light detection network.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.02201v1" style="color: #d9230f">On-the-fly Prediction of Protein Hydration Densities and Free Energies using Deep Learning</a></b><br><em>Biomolecules, Machine Learning, Quantitative Methods</em>. 3 authors. <a href="http://arxiv.org/pdf/2001.02201v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>The calculation of thermodynamic properties of biochemical systems typically requires the use of resource-intensive molecular simulation methods. One example thereof is the thermodynamic profiling of hydration sites, i. …</summary><br>e. high-probability locations for water molecules on the protein surface, which play an essential role in protein-ligand associations and must therefore be incorporated in the prediction of binding poses and affinities. To replace time-consuming simulations in hydration site predictions, we developed two different types of deep neural-network models aiming to predict hydration site data. In the first approach, meshed 3D images are generated representing the interactions between certain molecular probes placed on regular 3D grids, encompassing the binding pocket, with the static protein. These molecular interaction fields are mapped to the corresponding 3D image of hydration occupancy using a neural network based on an U-Net architecture. In a second approach, hydration occupancy and thermodynamics were predicted point-wise using a neural network based on fully-connected layers. In addition to direct protein interaction fields, the environment of each grid point was represented using moments of a spherical harmonics expansion of the interaction properties of nearby grid points. Application to structure-activity relationship analysis and protein-ligand pose scoring demonstrates the utility of the predicted hydration information.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01987v1" style="color: #d9230f">Softmax-based Classification is k-means Clustering: Formal Proof, Consequences for Adversarial Attacks, and Improvement through Centroid Based Tailoring</a></b><br><em>Machine Learning, Machine Learning</em>. 3 authors. <a href="http://arxiv.org/pdf/2001.01987v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>We formally prove the connection between k-means clustering and the predictions of neural networks based on the softmax activation layer. In existing work, this connection has been analyzed empirically, but it has never before been mathematically derived. …</summary><br> The softmax function partitions the transformed input space into cones, each of which encompasses a class. This is equivalent to putting a number of centroids in this transformed space at equal distance from the origin, and k-means clustering the data points by proximity to these centroids. Softmax only cares in which cone a data point falls, and not how far from the centroid it is within that cone. We formally prove that networks with a small Lipschitz modulus (which corresponds to a low susceptibility to adversarial attacks) map data points closer to the cluster centroids, which results in a mapping to a k-means-friendly space. To leverage this knowledge, we propose Centroid Based Tailoring as an alternative to the softmax function in the last layer of a neural network. The resulting Gauss network has similar predictive accuracy as traditional networks, but is less susceptible to one-pixel attacks; while the main contribution of this paper is theoretical in nature, the Gauss network contributes empirical auxiliary benefits.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01891v1" style="color: #d9230f">IMLI: An Incremental Framework for MaxSAT-Based Learning of Interpretable Classification Rules</a></b><br><em>Machine Learning, Artificial Intelligence</em>. 2 authors. <a href="http://arxiv.org/pdf/2001.01891v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>The wide adoption of machine learning in the critical domains such as medical diagnosis, law, education had propelled the need for interpretable techniques due to the need for end users to understand the reasoning behind decisions due to learning systems. The computational intractability of interpretable learning led practitioners to design heuristic techniques, which fail to provide sound handles to tradeoff accuracy and interpretability. …</summary><br> Motivated by the success of MaxSAT solvers over the past decade, recently MaxSAT-based approach, called MLIC, was proposed that seeks to reduce the problem of learning interpretable rules expressed in Conjunctive Normal Form (CNF) to a MaxSAT query. While MLIC was shown to achieve accuracy similar to that of other state of the art black-box classifiers while generating small interpretable CNF formulas, the runtime performance of MLIC is significantly lagging and renders approach unusable in practice. In this context, authors raised the question: Is it possible to achieve the best of both worlds, i.e., a sound framework for interpretable learning that can take advantage of MaxSAT solvers while scaling to real-world instances? In this paper, we take a step towards answering the above question in affirmation. We propose IMLI: an incremental approach to MaxSAT based framework that achieves scalable runtime performance via partition-based training methodology. Extensive experiments on benchmarks arising from UCI repository demonstrate that IMLI achieves up to three orders of magnitude runtime improvement without loss of accuracy and interpretability.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.02165v1" style="color: #d9230f">Generalized mean shift with triangular kernel profile</a></b><br><em>Machine Learning, Optimization and Control, Machine Learning</em>. 2 authors. <a href="http://arxiv.org/pdf/2001.02165v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>The mean shift algorithm is a popular way to find modes of some probability density functions taking a specific kernel-based shape, used for clustering or visual tracking. Since its introduction, it underwent several practical improvements and generalizations, as well as deep theoretical analysis mainly focused on its convergence properties. …</summary><br> In spite of encouraging results, this question has not received a clear general answer yet. In this paper we focus on a specific class of kernels, adapted in particular to the distributions clustering applications which motivated this work. We show that a novel Mean Shift variant adapted to them can be derived, and proved to converge after a finite number of iterations. In order to situate this new class of methods in the general picture of the Mean Shift theory, we alo give a synthetic exposure of existing results of this field.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01997v1" style="color: #d9230f">Prediction of Drug Synergy by Ensemble Learning</a></b><br><em>Machine Learning, Quantitative Methods, Machine Learning</em>. 2 authors. <a href="http://arxiv.org/pdf/2001.01997v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>One of the promising methods for the treatment of complex diseases such as cancer is combinational therapy. Due to the combinatorial complexity, machine learning models can be useful in this field, where significant improvements have recently been achieved in determination of synergistic combinations. …</summary><br> In this study, we investigate the effectiveness of different compound representations in predicting the drug synergy. On a large drug combination screen dataset, we first demonstrate the use of a promising representation that has not been used for this problem before, then we propose an ensemble on representation-model combinations that outperform each of the baseline models.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.02205v1" style="color: #d9230f">Minimum entropy production in multipartite processes due to neighborhood constraints</a></b><br><em>Machine Learning, Statistical Mechanics</em>. 1 authors. <a href="http://arxiv.org/pdf/2001.02205v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>It is known that the minimal total entropy production (EP) generated during the discrete-time evolution of a composite system is nonzero if its subsystems are isolated from one another. Minimal EP is also nonzero if the subsystems jointly implement a specified Bayes net. …</summary><br> Here I extend these discrete-time results to continuous time, and to allow all subsystems to be simultaneously interacting. To do this I model the composite system as a multipartite process, subject to constraints on the overlaps among the “neighborhoods” of the rate matrices of the subsystems. I derive two information-theoretic lower bounds on the minimal achievable EP rate expressed in terms of those neighborhood overlaps. The first bound is based on applying the inclusion-exclusion principle to the eighborhood overlaps. The second is based on constructing counterfactual rate matrices, in which all subsystems outside of a particular neighborhood are held fixed while those inside the neighborhood are allowed to evolve. This second bound involves quantities related to the “learning rate” of stationary bipartite systems, or more generally to the “information flow”.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.02005v1" style="color: #d9230f">Backtracking Gradient Descent allowing unbounded learning rates</a></b><br><em>Machine Learning, Optimization and Control, Machine Learning</em>. 1 authors. <a href="http://arxiv.org/pdf/2001.02005v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>In unconstrained optimisation on an Euclidean space, to prove convergence in Gradient Descent processes (GD) <span class="math inline">\(x_{n+1}=x_n-\delta _n \nabla f(x_n)\)</span> it usually is required that the learning rates <span class="math inline">\(\delta _n\)</span>’s are bounded: $ _n$ for some positive <span class="math inline">\(\delta latex287af42deb553a23bf089232a14b9cb1\lim _{t\rightarrow 0}th(t)=0\)</span> and <span class="math inline">\(\delta _n\lesssim \max \{h(x_n),\delta \}\)</span> for all <span class="math inline">\(n\)</span> satisfying Armijo’s condition, and prove convergence under the same assumptions as in the mentioned paper. It will be shown that this growth rate of <span class="math inline">\(h\)</span> is best possible if one wants convergence of the sequence <span class="math inline">\(\{x_n\}\)</span>. A specific way for choosing <span class="math inline">\(\delta _n\)</span> in a discrete way connects to Two-way Backtracking GD defined in the mentioned paper. We provide some results which either improve or are implicitly contained in those in the mentioned paper and another recent paper on avoidance of saddle points.</summary>
+</details>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="data-science-arxiv-by-primary-tag">Data Science arXiv by Primary Tag</h2>
+<p>The tables below show abstracts organized by category with hyperlinks back to the arXiv site.</p>
+<div class="layout-chunk" data-layout="l-page">
+
+<h3 id="computer-science">Computer Science</h3>
+<table class="table table-striped table-condensed" style="margin-left: auto; margin-right: auto;">
+<tbody>
+<tr grouplength="9">
+<td colspan="1" style="background-color: #666; color: #fff;">
+<strong>Computer Vision and Pattern Recognition (cs.CV)</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01918v1" style="color: #d9230f">Context-Aware Design of Cyber-Physical Human Systems (CPHS)</a></b><br><em>Multiagent Systems, Machine Learning, Artificial Intelligence</em>. 11 authors. <a href="http://arxiv.org/pdf/2001.01918v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Recently, it has been widely accepted by the research community that interactions between humans and cyber-physical infrastructures have played a significant role in determining the performance of the latter. The existing paradigm for designing cyber-physical systems for optimal performance focuses on developing models based on historical data. …</summary><br> The impacts of context factors driving human system interaction are challenging and are difficult to capture and replicate in existing design models. As a result, many existing models do not or only partially address those context factors of a new design owing to the lack of capabilities to capture the context factors. This limitation in many existing models often causes performance gaps between predicted and measured results. We envision a new design environment, a cyber-physical human system (CPHS) where decision-making processes for physical infrastructures under design are intelligently connected to distributed resources over cyberinfrastructure such as experiments on design features and empirical evidence from operations of existing instances. The framework combines existing design models with context-aware design-specific data involving human-infrastructure interactions in new designs, using a machine learning approach to create augmented design models with improved predictive powers.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01895v1" style="color: #d9230f">Machine-learning classifiers for logographic name matching in public health applications: approaches for incorporating phonetic, visual, and keystroke similarity in large-scale probabilistic record linkage</a></b><br><em>Applications, Information Retrieval, Computation and Language</em>. 9 authors. <a href="http://arxiv.org/pdf/2001.01895v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Approximate string-matching methods to account for complex variation in highly discriminatory text fields, such as personal names, can enhance probabilistic record linkage. However, discriminating between matching and non-matching strings is challenging for logographic scripts, where similarities in pronunciation, appearance, or keystroke sequence are not directly encoded in the string data. …</summary><br> We leverage a large Chinese administrative dataset with known match status to develop logistic regression and Xgboost classifiers integrating measures of visual, phonetic, and keystroke similarity to enhance identification of potentially-matching name pairs. We evaluate three methods of leveraging name similarity scores in large-scale probabilistic record linkage, which can adapt to varying match prevalence and information in supporting fields: (1) setting a threshold score based on predicted quality of name-matching across all record pairs; (2) setting a threshold score based on predicted discriminatory power of the linkage model; and (3) using empirical score distributions among matches and nonmatches to perform Bayesian adjustment of matching probabilities estimated from exact-agreement linkage. In experiments on holdout data, as well as data simulated with varying name error rates and supporting fields, a logistic regression classifier incorporated via the Bayesian method demonstrated marked improvements over exact-agreement linkage with respect to discriminatory power, match probability estimation, and accuracy, reducing the total number of misclassified record pairs by 21% in test data and up to an average of 93% in simulated datasets. Our results demonstrate the value of incorporating visual, phonetic, and keystroke similarity for logographic name matching, as well as the promise of our Bayesian approach to leverage name-matching within large-scale record linkage.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.02004v1" style="color: #d9230f">CNN 101: Interactive Visual Learning for Convolutional Neural Networks</a></b><br><em>Machine Learning, Artificial Intelligence, Human-Computer Interaction</em>. 8 authors. <a href="http://arxiv.org/pdf/2001.02004v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>The success of deep learning solving previously-thought hard problems has inspired many non-experts to learn and understand this exciting technology. However, it is often challenging for learners to take the first steps due to the complexity of deep learning models. …</summary><br> We present our ongoing work, CNN 101, an interactive visualization system for explaining and teaching convolutional neural networks. Through tightly integrated interactive views, CNN 101 offers both overview and detailed descriptions of how a model works. Built using modern web technologies, CNN 101 runs locally in users’ web browsers without requiring specialized hardware, broadening the public’s education access to modern deep learning techniques.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.02090v1" style="color: #d9230f">AD-VO: Scale-Resilient Visual Odometry Using Attentive Disparity Map</a></b><br><em>Computer Vision and Pattern Recognition</em>. 7 authors. <a href="http://arxiv.org/pdf/2001.02090v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Visual odometry is an essential key for a localization module in SLAM systems. However, previous methods require tuning the system to adapt environment changes. …</summary><br> In this paper, we propose a learning-based approach for frame-to-frame monocular visual odometry estimation. The proposed network is only learned by disparity maps for not only covering the environment changes but also solving the scale problem. Furthermore, attention block and skip-ordering scheme are introduced to achieve robust performance in various driving environment. Our network is compared with the conventional methods which use common domain such as color or optical flow. Experimental results confirm that the proposed network shows better performance than other approaches with higher and more stable results.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01982v1" style="color: #d9230f">Intrinsic Motivation and Episodic Memories for Robot Exploration of High-Dimensional Sensory Spaces</a></b><br><em>Robotics, Machine Learning, Artificial Intelligence</em>. 6 authors. <a href="http://arxiv.org/pdf/2001.01982v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>This work presents an architecture that generates curiosity-driven goal-directed exploration behaviours for an image sensor of a microfarming robot. A combination of deep neural networks for offline unsupervised learning of low-dimensional features from images, and of online learning of shallow neural networks representing the inverse and forward kinematics of the system have been used. …</summary><br> The artificial curiosity system assigns interest values to a set of pre-defined goals, and drives the exploration towards those that are expected to maximise the learning progress. We propose the integration of an episodic memory in intrinsic motivation systems to face catastrophic forgetting issues, typically experienced when performing online updates of artificial neural networks. Our results show that adopting an episodic memory system not only prevents the computational models from quickly forgetting knowledge that has been previously acquired, but also provides new avenues for modulating the balance between plasticity and stability of the models.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.02160v1" style="color: #d9230f">Inferring Convolutional Neural Networks’ accuracies from their architectural characterizations</a></b><br><em>Machine Learning, High Energy Physics - Experiment, Computer Vision and Pattern Recognition</em>. 6 authors. <a href="http://arxiv.org/pdf/2001.02160v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Convolutional Neural Networks (CNNs) have shown strong promise for analyzing scientific data from many domains including particle imaging detectors. However, the challenge of choosing the appropriate network architecture (depth, kernel shapes, activation functions, etc. …</summary><br>) for specific applications and different data sets is still poorly understood. In this paper, we study the relationships between a CNN’s architecture and its performance by proposing a systematic language that is useful for comparison between different CNN’s architectures before training time. We characterize CNN’s architecture by different attributes, and demonstrate that the attributes can be predictive of the networks’ performance in two specific computer vision-based physics problems – event vertex finding and hadron multiplicity classification in the MINERvA experiment at Fermi National Accelerator Laboratory. In doing so, we extract several architectural attributes from optimized networks’ architecture for the physics problems, which are outputs of a model selection algorithm called Multi-node Evolutionary Neural Networks for Deep Learning (MENNDL). We use machine learning models to predict whether a network can perform better than a certain threshold accuracy before training. The models perform 16-20% better than random guessing. Additionally, we found an coefficient of determination of 0.966 for an Ordinary Least Squares model in a regression on accuracy over a large population of networks.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.02223v1" style="color: #d9230f">Dynamic Task Weighting Methods for Multi-task Networks in Autonomous Driving Systems</a></b><br><em>Robotics, Machine Learning, Computer Vision and Pattern Recognition</em>. 5 authors. <a href="http://arxiv.org/pdf/2001.02223v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Deep multi-task networks are of particular interest for autonomous driving systems. They can potentially strike an excellent trade-off between predictive performance, hardware constraints and efficient use of information from multiple types of annotations and modalities. …</summary><br> However, training such models is non-trivial and requires balancing the learning of all tasks as their respective losses display different scales, ranges and dynamics across training. Multiple task weighting methods that adjust the losses in an adaptive way have been proposed recently on different datasets and combinations of tasks, making it difficult to compare them. In this work, we review and systematically evaluate nine task weighting strategies on common grounds on three automotive datasets (KITTI, Cityscapes and WoodScape). We then propose a novel method combining evolutionary meta-learning and task-based selective backpropagation, for finding the task weights and training the network reliably. Our method outperforms state-of-the-art methods by <span class="math inline">\(3\%\)</span> on a two-task application.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01854v1" style="color: #d9230f">Switching dynamics of single and coupled VO2-based oscillators as elements of neural networks</a></b><br><em>Neural and Evolutionary Computing, Emerging Technologies</em>. 5 authors. <a href="http://arxiv.org/pdf/2001.01854v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>In the present paper, we report on the switching dynamics of both single and coupled VO2-based oscillators, with resistive and capacitive coupling, and explore the capability of their application in oscillatory neural networks. Based on these results, we further select an adequate SPICE model to describe the modes of operation of coupled oscillator circuits. …</summary><br> Physical mechanisms influencing the time of forward and reverse electrical switching, that determine the applicability limits of the proposed model, are identified. For the resistive coupling, it is shown that synchronization takes place at a certain value of the coupling resistance, though it is unstable and a synchronization failure occurs periodically. For the capacitive coupling, two synchronization modes, with weak and strong coupling, are found. The transition between these modes is accompanied by chaotic oscillations. A decrease in the width of the spectrum harmonics in the weak-coupling mode, and its increase in the strong-coupling one, is detected. The dependences of frequencies and phase differences of the coupled oscillatory circuits on the coupling capacitance are found. Examples of operation of coupled VO2 oscillators as a central pattern generator are demonstrated.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.02101v1" style="color: #d9230f">State Transition Modeling of the Smoking Behavior using LSTM Recurrent Neural Networks</a></b><br><em>Machine Learning, Computer Vision and Pattern Recognition</em>. 4 authors. <a href="http://arxiv.org/pdf/2001.02101v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>The use of sensors has pervaded everyday life in several applications including human activity monitoring, healthcare, and social networks. In this study, we focus on the use of smartwatch sensors to recognize smoking activity. …</summary><br> More specifically, we have reformulated the previous work in detection of smoking to include in-context recognition of smoking. Our presented reformulation of the smoking gesture as a state-transition model that consists of the mini-gestures hand-to-lip, hand-on-lip, and hand-off-lip, has demonstrated improvement in detection rates nearing 100% using conventional neural networks. In addition, we have begun the utilization of Long-Short-Term Memory (LSTM) neural networks to allow for in-context detection of gestures with accuracy nearing 97%.
+</details>
+</td>
+</tr>
+<tr grouplength="6">
+<td colspan="1" style="background-color: #666; color: #fff;">
+<strong>Artificial Intelligence (cs.AI)</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.02152v1" style="color: #d9230f">PaRoT: A Practical Framework for Robust Deep NeuralNetwork Training</a></b><br><em>Machine Learning, Machine Learning</em>. 4 authors. <a href="http://arxiv.org/pdf/2001.02152v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Deep Neural Networks (DNNs) are finding important applications in safety-critical systems such as Autonomous Vehicles (AVs), where perceiving the environment correctly and robustly is necessary for safe operation. Raising unique challenges for assurance due to their black-box nature, DNNs pose a fundamental problem for regulatory acceptance of these types of systems. …</summary><br> Robust training — training to minimize excessive sensitivity to small changes in input — has emerged as one promising technique to address this challenge. However, existing robust training tools are inconvenient to use or apply to existing codebases and models: they typically only support a small subset of model elements and require users to extensively rewrite the training code. In this paper we introduce a novel framework, PaRoT, developed on the popular TensorFlow platform, that greatly reduces the barrier to entry. Our framework enables robust training to be performed on arbitrary DNNs without any rewrites to the model. We demonstrate that our framework’s performance is comparable to prior art, and exemplify its ease of use on off-the-shelf, trained models and on a real-world industrial application: training a robust traffic light detection network.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.02192v1" style="color: #d9230f">An Exploration of Embodied Visual Exploration</a></b><br><em>Computer Vision and Pattern Recognition, Artificial Intelligence</em>. 3 authors. <a href="http://arxiv.org/pdf/2001.02192v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Embodied computer vision considers perception for robots in general, unstructured environments. Of particular importance is the embodied visual exploration problem: how might a robot equipped with a camera scope out a new environment? Despite the progress thus far, many basic questions pertinent to this problem remain unanswered: (i) What does it mean for an agent to explore its environment well? (ii) Which methods work well, and under which assumptions and environmental settings? (iii) Where do current approaches fall short, and where might future work seek to improve? Seeking answers to these questions, we perform a thorough empirical study of four state-of-the-art paradigms on two photorealistic simulated 3D environments. …</summary><br> We present a taxonomy of key exploration methods and a standard framework for benchmarking visual exploration algorithms. Our experimental results offer insights, and suggest new performance metrics and baselines for future work in visual exploration.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.02114v1" style="color: #d9230f">Effect of Confidence and Explanation on Accuracy and Trust Calibration in AI-Assisted Decision Making</a></b><br><em>Artificial Intelligence, Human-Computer Interaction</em>. 3 authors. <a href="http://arxiv.org/pdf/2001.02114v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Today, AI is being increasingly used to help human experts make decisions in high-stakes scenarios. In these scenarios, full automation is often undesirable, not only due to the significance of the outcome, but also because human experts can draw on their domain knowledge complementary to the model’s to ensure task success. …</summary><br> We refer to these scenarios as AI-assisted decision making, where the individual strengths of the human and the AI come together to optimize the joint decision outcome. A key to their success is to appropriately  human trust in the AI on a case-by-case basis; knowing when to trust or distrust the AI allows the human expert to appropriately apply their knowledge, improving decision outcomes in cases where the model is likely to perform poorly. This research conducts a case study of AI-assisted decision making in which humans and AI have comparable performance alone, and explores whether features that reveal case-specific model information can calibrate trust and improve the joint performance of the human and AI. Specifically, we study the effect of showing confidence score and local explanation for a particular prediction. Through two human experiments, we show that confidence score can help calibrate people’s trust in an AI model, but trust calibration alone is not sufficient to improve AI-assisted decision making, which may also depend on whether the human can bring in enough unique knowledge to complement the AI’s errors. We also highlight the problems in using local explanation for AI-assisted decision making scenarios and invite the research community to explore new approaches to explainability for calibrating human trust in AI.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01818v1" style="color: #d9230f">Artificial Intelligence for Social Good: A Survey</a></b><br><em>Computers and Society, Artificial Intelligence</em>. 3 authors. <a href="http://arxiv.org/pdf/2001.01818v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Artificial intelligence for social good (AI4SG) is a research theme that aims to use and advance artificial intelligence to address societal issues and improve the well-being of the world. AI4SG has received lots of attention from the research community in the past decade with several successful applications. …</summary><br> Building on the most comprehensive collection of the AI4SG literature to date with over 1000 contributed papers, we provide a detailed account and analysis of the work under the theme in the following ways. (1) We quantitatively analyze the distribution and trend of the AI4SG literature in terms of application domains and AI techniques used. (2) We propose three conceptual methods to systematically group the existing literature and analyze the eight AI4SG application domains in a unified framework. (3) We distill five research topics that represent the common challenges in AI4SG across various application domains. (4) We discuss five issues that, we hope, can shed light on the future development of the AI4SG research.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.02161v1" style="color: #d9230f">Trained Trajectory based Automated Parking System using Visual SLAM</a></b><br><em>Robotics, Computer Vision and Pattern Recognition</em>. 3 authors. <a href="http://arxiv.org/pdf/2001.02161v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Automated Parking is becoming a standard feature in modern vehicles. Existing parking systems build a local map to be able to plan for maneuvering towards a detected slot. …</summary><br> Next generation parking systems have an use case where they build a persistent map of the environment where the car is frequently parked, say for example, home parking or office parking. The pre-built map helps in re-localizing the vehicle better when its trying to park the next time. This is achieved by augmenting the parking system with a Visual SLAM pipeline and the feature is called trained trajectory parking. In this paper, we discuss the use cases, design and implementation of a trained trajectory automated parking system. To encourage further research, we release a dataset of 50 video sequences comprising of over 100,000 images with the associated ground truth as a companion to our WoodScape dataset . To the best of the authors’ knowledge, this is the first public dataset for trained trajectory parking system scenarios.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.02149v1" style="color: #d9230f">General 3D Room Layout from a Single View by Render-and-Compare</a></b><br><em>Computer Vision and Pattern Recognition</em>. 3 authors. <a href="http://arxiv.org/pdf/2001.02149v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>We present a novel method to reconstruct the 3D layout of a room – walls,floors, ceilings – from a single perspective view, even for the case of general configurations. This input view can consist of a color image only, but considering a depth map will result in a more accurate reconstruction. …</summary><br> Our approach is based on solving a constrained discrete optimization problem, which selects the polygons which are part of the layout from a large set of potential polygons. In order to deal with occlusions between components of the layout, which is a problem ignored by previous works, we introduce an analysis-by-synthesis method to iteratively refine the 3D layout estimate. To the best of our knowledge, our method is the first that can estimate a layout in such general conditions from a single view. We additionally introduce a new annotation dataset made of 91 images from the ScanNet dataset and several metrics, in order to evaluate our results quantitatively.
+</details>
+</td>
+</tr>
+<tr grouplength="4">
+<td colspan="1" style="background-color: #666; color: #fff;">
+<strong>Machine Learning (cs.LG)</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.02024v1" style="color: #d9230f">Deep Reinforcement Learning for Active Human Pose Estimation</a></b><br><em>Computer Vision and Pattern Recognition</em>. 3 authors. <a href="http://arxiv.org/pdf/2001.02024v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Most 3d human pose estimation methods assume that input – be it images of a scene collected from one or several viewpoints, or from a video – is given. Consequently, they focus on estimates leveraging prior knowledge and measurement by fusing information spatially and/or temporally, whenever available. …</summary><br> In this paper we address the problem of an active observer with freedom to move and explore the scene spatially – in `time-freeze’ mode – and/or temporally, by selecting informative viewpoints that improve its estimation accuracy. Towards this end, we introduce Pose-DRL, a fully trainable deep reinforcement learning-based active pose estimation architecture which learns to select appropriate views, in space and time, to feed an underlying monocular pose estimator. We evaluate our model using single- and multi-target estimators with strong result in both settings. Our system further learns automatic stopping conditions in time and transition functions to the next temporal processing step in videos. In extensive experiments with the Panoptic multi-view setup, and for complex scenes containing multiple people, we show that our model learns to select viewpoints that yield significantly more accurate pose estimates compared to strong multi-view baselines.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.02001v1" style="color: #d9230f">Delineating Bone Surfaces in B-Mode Images Constrained by Physics of Ultrasound Propagation</a></b><br><em>Computer Vision and Pattern Recognition</em>. 3 authors. <a href="http://arxiv.org/pdf/2001.02001v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Bone surface delineation in ultrasound is of interest due to its potential in diagnosis, surgical planning, and post-operative follow-up in orthopedics, as well as the potential of using bones as anatomical landmarks in surgical navigation. We herein propose a method to encode the physics of ultrasound propagation into a factor graph formulation for the purpose of bone surface delineation. …</summary><br> In this graph structure, unary node potentials encode the local likelihood for being a soft tissue or acoustic-shadow (behind bone surface) region, both learned through image descriptors. Pair-wise edge potentials encode ultrasound propagation constraints of bone surfaces given their large acoustic-impedance difference. We evaluate the proposed method in comparison with four earlier approaches, on in-vivo ultrasound images collected from dorsal and volar views of the forearm. The proposed method achieves an average root-mean-square error and symmetric Hausdorff distance of 0.28mm and 1.78mm, respectively. It detects 99.9% of the annotated bone surfaces with a mean scanline error (distance to annotations) of 0.39mm.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.02172v1" style="color: #d9230f">Data Structure Primitives on Persistent Memory: An Evaluation</a></b><br><em>Data Structures and Algorithms, Emerging Technologies, Databases</em>. 3 authors. <a href="http://arxiv.org/pdf/2001.02172v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Persistent Memory (PM), as already available e.g. …</summary><br> with Intel Optane DC Persistent Memory, represents a very promising, next generation memory solution with a significant impact on database architectures. Several data structures for this new technology and its properties have already been proposed. However, primarily merely complete structures were presented and evaluated hiding the impact of the individual ideas and PM characteristics. Therefore, in this paper, we disassemble the structures presented so far, identify their underlying design primitives, and assign them to appropriate design goals regarding PM. As a result of our comprehensive experiments on real PM hardware, we were able to reveal the trade-offs of the primitives at the micro level. From this, performance profiles could be derived for selected primitives. With these it is possible to precisely identify their best use cases as well as vulnerabilities. Beside our general insights regarding PM-based data structure design, we also discovered new promising combinations not considered in the literature so far.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01987v1" style="color: #d9230f">Softmax-based Classification is k-means Clustering: Formal Proof, Consequences for Adversarial Attacks, and Improvement through Centroid Based Tailoring</a></b><br><em>Machine Learning, Machine Learning</em>. 3 authors. <a href="http://arxiv.org/pdf/2001.01987v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>We formally prove the connection between k-means clustering and the predictions of neural networks based on the softmax activation layer. In existing work, this connection has been analyzed empirically, but it has never before been mathematically derived. …</summary><br> The softmax function partitions the transformed input space into cones, each of which encompasses a class. This is equivalent to putting a number of centroids in this transformed space at equal distance from the origin, and k-means clustering the data points by proximity to these centroids. Softmax only cares in which cone a data point falls, and not how far from the centroid it is within that cone. We formally prove that networks with a small Lipschitz modulus (which corresponds to a low susceptibility to adversarial attacks) map data points closer to the cluster centroids, which results in a mapping to a k-means-friendly space. To leverage this knowledge, we propose Centroid Based Tailoring as an alternative to the softmax function in the last layer of a neural network. The resulting Gauss network has similar predictive accuracy as traditional networks, but is less susceptible to one-pixel attacks; while the main contribution of this paper is theoretical in nature, the Gauss network contributes empirical auxiliary benefits.
+</details>
+</td>
+</tr>
+<tr grouplength="2">
+<td colspan="1" style="background-color: #666; color: #fff;">
+<strong>Databases (cs.DB)</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.02021v1" style="color: #d9230f">Exploring Unknown Universes in Probabilistic Relational Models</a></b><br><em>Artificial Intelligence</em>. 2 authors. <a href="http://arxiv.org/pdf/2001.02021v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Large probabilistic models are often shaped by a pool of known individuals (a universe) and relations between them. Lifted inference algorithms handle sets of known individuals for tractable inference. …</summary><br> Universes may not always be known, though, or may only described by assumptions such as “small universes are more likely”. Without a universe, inference is no longer possible for lifted algorithms, losing their advantage of tractable inference. The aim of this paper is to define a semantics for models with unknown universes decoupled from a specific constraint language to enable lifted and thereby, tractable inference.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01902v1" style="color: #d9230f">Monte Carlo Tree Search for Generating Interactive Data Analysis Interfaces</a></b><br><em>Databases, Artificial Intelligence, Human-Computer Interaction</em>. 2 authors. <a href="http://arxiv.org/pdf/2001.01902v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Interactive tools like user interfaces help democratize data access for end-users by hiding underlying programming details and exposing the necessary widget interface to users. Since customized interfaces are costly to build, automated interface generation is desirable. …</summary><br> SQL is the dominant way to analyze data and there already exists logs to analyze data. Previous work proposed a syntactic approach to analyze structural changes in SQL query logs and automatically generates a set of widgets to express the changes. However, they do not consider layout usability and the sequential order of queries in the log. We propose to adopt Monte Carlo Tree Search(MCTS) to search for the optimal interface that accounts for hierarchical layout as well as the usability in terms of how easy to express the query log.
+</details>
+</td>
+</tr>
+<tr grouplength="1">
+<td colspan="1" style="background-color: #666; color: #fff;">
+<strong>Computation and Language (cs.CL)</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01891v1" style="color: #d9230f">IMLI: An Incremental Framework for MaxSAT-Based Learning of Interpretable Classification Rules</a></b><br><em>Machine Learning, Artificial Intelligence</em>. 2 authors. <a href="http://arxiv.org/pdf/2001.01891v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>The wide adoption of machine learning in the critical domains such as medical diagnosis, law, education had propelled the need for interpretable techniques due to the need for end users to understand the reasoning behind decisions due to learning systems. The computational intractability of interpretable learning led practitioners to design heuristic techniques, which fail to provide sound handles to tradeoff accuracy and interpretability. …</summary><br> Motivated by the success of MaxSAT solvers over the past decade, recently MaxSAT-based approach, called MLIC, was proposed that seeks to reduce the problem of learning interpretable rules expressed in Conjunctive Normal Form (CNF) to a MaxSAT query. While MLIC was shown to achieve accuracy similar to that of other state of the art black-box classifiers while generating small interpretable CNF formulas, the runtime performance of MLIC is significantly lagging and renders approach unusable in practice. In this context, authors raised the question: Is it possible to achieve the best of both worlds, i.e., a sound framework for interpretable learning that can take advantage of MaxSAT solvers while scaling to real-world instances? In this paper, we take a step towards answering the above question in affirmation. We propose IMLI: an incremental approach to MaxSAT based framework that achieves scalable runtime performance via partition-based training methodology. Extensive experiments on benchmarks arising from UCI repository demonstrate that IMLI achieves up to three orders of magnitude runtime improvement without loss of accuracy and interpretability.
+</details>
+</td>
+</tr>
+<tr grouplength="1">
+<td colspan="1" style="background-color: #666; color: #fff;">
+<strong>Computers and Society (cs.CY)</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.02165v1" style="color: #d9230f">Generalized mean shift with triangular kernel profile</a></b><br><em>Machine Learning, Optimization and Control, Machine Learning</em>. 2 authors. <a href="http://arxiv.org/pdf/2001.02165v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>The mean shift algorithm is a popular way to find modes of some probability density functions taking a specific kernel-based shape, used for clustering or visual tracking. Since its introduction, it underwent several practical improvements and generalizations, as well as deep theoretical analysis mainly focused on its convergence properties. …</summary><br> In spite of encouraging results, this question has not received a clear general answer yet. In this paper we focus on a specific class of kernels, adapted in particular to the distributions clustering applications which motivated this work. We show that a novel Mean Shift variant adapted to them can be derived, and proved to converge after a finite number of iterations. In order to situate this new class of methods in the general picture of the Mean Shift theory, we alo give a synthetic exposure of existing results of this field.
+</details>
+</td>
+</tr>
+<tr grouplength="1">
+<td colspan="1" style="background-color: #666; color: #fff;">
+<strong>Digital Libraries (cs.DL)</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.02178v1" style="color: #d9230f">Heaps’ law and Heaps functions in tagged texts: Evidences of their linguistic relevance</a></b><br><em>Data Analysis, Statistics and Probability, Computation and Language</em>. 2 authors. <a href="http://arxiv.org/pdf/2001.02178v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>We study the relationship between vocabulary size and text length in a corpus of <span class="math inline">\(75\)</span> literary works in English, authored by six writers, distinguishing between the contributions of three grammatical classes (or ``tags,’’ namely, {}, {}, and {}), and analyze the progressive appearance of new words of each tag along each individual text. While the power-law relation prescribed by Heaps’ law is satisfactorily fulfilled by total vocabulary sizes and text lengths, the appearance of new words in each text is on the whole well described by the average of random shufflings of the text, which does not obey a power law. …</summary><br> Deviations from this average, however, are statistically significant and show a systematic trend across the corpus. Specifically, they reveal that the appearance of new words along each text is predominantly retarded with respect to the average of random shufflings. Moreover, different tags are shown to add systematically distinct contributions to this tendency, with {} and {} being respectively more and less retarded than the mean trend, and {} following instead this overall mean. These statistical systematicities are likely to point to the existence of linguistically relevant information stored in the different variants of Heaps’ law, a feature that is still in need of extensive assessment.
+</details>
+</td>
+</tr>
+<tr grouplength="1">
+<td colspan="1" style="background-color: #666; color: #fff;">
+<strong>Human-Computer Interaction (cs.HC)</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01997v1" style="color: #d9230f">Prediction of Drug Synergy by Ensemble Learning</a></b><br><em>Machine Learning, Quantitative Methods, Machine Learning</em>. 2 authors. <a href="http://arxiv.org/pdf/2001.01997v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>One of the promising methods for the treatment of complex diseases such as cancer is combinational therapy. Due to the combinatorial complexity, machine learning models can be useful in this field, where significant improvements have recently been achieved in determination of synergistic combinations. …</summary><br> In this study, we investigate the effectiveness of different compound representations in predicting the drug synergy. On a large drug combination screen dataset, we first demonstrate the use of a promising representation that has not been used for this problem before, then we propose an ensemble on representation-model combinations that outperform each of the baseline models.
+</details>
+</td>
+</tr>
+<tr grouplength="1">
+<td colspan="1" style="background-color: #666; color: #fff;">
+<strong>Information Retrieval (cs.IR)</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01835v1" style="color: #d9230f">Understanding the QuickXPlain Algorithm: Simple Explanation and Formal Proof</a></b><br><em>Data Structures and Algorithms, Logic in Computer Science, Artificial Intelligence</em>. 1 authors. <a href="http://arxiv.org/pdf/2001.01835v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>In his seminal paper of 2004, Ulrich Junker proposed the QuickXPlain algorithm, which provides a divide-and-conquer computation strategy to find within a given set an irreducible subset with a particular (monotone) property. Beside its original application in the domain of constraint satisfaction problems, the algorithm has since then found widespread adoption in areas as different as model-based diagnosis, recommender systems, verification, or the Semantic Web. …</summary><br> This popularity is due to the frequent occurrence of the problem of finding irreducible subsets on the one hand, and to QuickXPlain’s general applicability and favorable computational complexity on the other hand. However, although (we regularly experience) people are having a hard time understanding QuickXPlain and seeing why it works correctly, a proof of correctness of the algorithm has never been published. This is what we account for in this work, by explaining QuickXPlain in a novel tried and tested way and by presenting an intelligible formal proof of it. Apart from showing the correctness of the algorithm and excluding the later detection of errors (proof and trust effect), the added value of the availability of a formal proof is, e.g., (i) that the workings of the algorithm often become completely clear only after studying, verifying and comprehending the proof (didactic effect), (ii) the shown proof methodology can be used as a guidance for proving other recursive algorithms (transfer effect), and (iii) the possibility of providing “gapless” correctness proofs of systems that rely on (results computed by) QuickXPlain, such as numerous model-based debuggers (completeness effect).
+</details>
+</td>
+</tr>
+<tr grouplength="1">
+<td colspan="1" style="background-color: #666; color: #fff;">
+<strong>Neural and Evolutionary Computing (cs.NE)</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01972v1" style="color: #d9230f">With Registered Reports Towards Large Scale Data Curation</a></b><br><em>Digital Libraries</em>. 1 authors. <a href="http://arxiv.org/pdf/2001.01972v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>The scale of manually validated data is currently limited by the effort that small groups of researchers can invest for the curation of such data. Within this paper, we propose the use of registered reports to scale the curation of manually validated data. …</summary><br> The idea is inspired by the mechanical turk and replaces monetary payment with authorship of data set publication.
+</details>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="statistics">Statistics</h3>
+<table class="table table-striped table-condensed" style="margin-left: auto; margin-right: auto;">
+<tbody>
+<tr grouplength="5">
+<td colspan="1" style="background-color: #666; color: #fff;">
+<strong>Computation (stat.CO)</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01988v1" style="color: #d9230f">Implementing version control with Git as a learning objective in statistics courses</a></b><br><em>Computation, Other Statistics</em>. 6 authors. <a href="http://arxiv.org/pdf/2001.01988v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Version control is an essential element of a reproducible workflow that deserves due consideration among the learning objectives of statistics courses. This paper describes experiences and implementation decisions of four contributing faculty who are teaching different courses at a variety of institutions. …</summary><br> Each of these faculty have set version control as a learning objective and successfully integrated teaching Git into one or more statistics courses. The various approaches described in the paper span different implementation strategies to suit student background, course type, software choices, and assessment practices. By presenting a wide range of approaches to teaching Git, the paper aims to serve as a resource for statistics instructors teaching courses at any level within an undergraduate or graduate curriculum.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01916v1" style="color: #d9230f">High-Performance Statistical Computing in the Computing Environments of the 2020s</a></b><br><em>Computation</em>. 4 authors. <a href="http://arxiv.org/pdf/2001.01916v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Technological advances in the past decade, hardware and software alike, have made access to high-performance computing (HPC) easier than ever. We review these advances from a statistical computing perspective. …</summary><br> Cloud computing allows access to supercomputers affordable. Deep learning software libraries make programming statistical algorithms easy, and enable users to write code once and run it anywhere from a laptop to a workstation with multiple graphics processing units (GPUs) or a supercomputer in a cloud. To promote statisticians to benefit from these developments, we review recent optimization algorithms that are useful for high-dimensional models and can harness the power of HPC. Code snippets are provided for the readers to grasp the ease of programming. We also provide an easy-to-use distributed matrix data structure suitable for HPC. Employing this data structure, we illustrate various statistical applications including large-scale nonnegative matrix factorization, positron emission tomography, multidimensional scaling, and <span class="math inline">\(\ell_1\)</span>-regularized Cox regression. Our examples easily scale up to an 8-GPU workstation and a 720-CPU-core cluster in a cloud. As a case in point, we analyze the on-set of type-2 diabetes from the UK Biobank with 200,000 subjects and about 500,000 single nucleotide polymorphisms using the HPC <span class="math inline">\(\ell_1\)</span>-regularized Cox regression. Fitting a half-million-variate model takes less than 45 minutes, reconfirming known associations. To our knowledge, the feasibility of jointly genome-wide association analysis of survival outcomes at this scale is first demonstrated.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01996v1" style="color: #d9230f">School value-added models for multivariate academic and non-academic outcomes: A more rounded approach to using student data to inform school accountability</a></b><br><em>Applications</em>. 3 authors. <a href="http://arxiv.org/pdf/2001.01996v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Education systems around the world increasingly rely on school value-added models to hold schools to account. These models typically focus on a limited number of academic outcomes, failing to recognise the broader range of non-academic student outcomes, attitudes and behaviours to which schools contribute. …</summary><br> We explore how the traditional multilevel modelling approach to school value-added models can be extended to simultaneously analyse multiple academic and non-academic outcomes and thereby can potentially provide a more rounded approach to using student data to inform school accountability. We jointly model student attainment, absence and exclusion data for schools in England. We find different results across the three outcomes, in terms of the size and consistency of school effects, and the importance of adjusting for student and school characteristics. The results suggest the three outcomes are capturing fundamentally distinct aspects of school performance, recommending the consideration of non-academic outcomes in systems of school accountability.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01992v1" style="color: #d9230f">Future Proofing a Building Design Using History Matching Inspired Level Set Techniques</a></b><br><em>Applications</em>. 3 authors. <a href="http://arxiv.org/pdf/2001.01992v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>History Matching is a technique used to calibrate complex computer models, that is, finding the input settings which lead to the simulated output matching up with real world observations. Key to this technique is the construction of emulators, which provide fast probabilistic predictions of future simulations. …</summary><br> In this work, we adapt the History Matching framework to tackle the problem of level set estimation, that is, finding input settings where the output is below (or above) some threshold. The developed methodology is heavily motivated by a specific case study: how can one design a building that will be sufficiently protected against overheating and sufficiently energy efficient, whilst considering the expected increases in temperature due to climate change? We successfully manage to address this - greatly reducing a large initial set of candidate building designs down to a small set of acceptable potential buildings.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01924v1" style="color: #d9230f">A semi-supervised learning framework for quantitative structure-activity regression modelling</a></b><br><em>Applications, Machine Learning</em>. 3 authors. <a href="http://arxiv.org/pdf/2001.01924v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Supervised learning models, also known as quantitative structure-activity regression (QSAR) models, are increasingly used in assisting the process of preclinical, small molecule drug discovery. The models are trained on data consisting of a finite dimensional representation of molecular structures and their corresponding target specific activities. …</summary><br> These models can then be used to predict the activity of previously unmeasured novel compounds. In this work we address two problems related to this approach. The first is to estimate the extent to which the quality of the model predictions degrades for compounds very different from the compounds in the training data. The second is to adjust for the screening dependent selection bias inherent in many training data sets. In the most extreme cases, only compounds which pass an activity-dependent screening are reported. By using a semi-supervised learning framework, we show that it is possible to make predictions which take into account the similarity of the testing compounds to those in the training data and adjust for the reporting selection bias. We illustrate this approach using publicly available structure-activity data on a large set of compounds reported by GlaxoSmithKline (the Tres Cantos AntiMalarial Set) to inhibit in vitro P. falciparum growth.
+</details>
+</td>
+</tr>
+<tr grouplength="4">
+<td colspan="1" style="background-color: #666; color: #fff;">
+<strong>Applications (stat.AP)</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01821v1" style="color: #d9230f">Monitoring Coefficient of Variation using One-Sided Run Rules control charts in the presence of Measurement Errors</a></b><br><em>Computation</em>. 3 authors. <a href="http://arxiv.org/pdf/2001.01821v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>We investigate in this paper the effect of the measurement error on the performance of Run Rules control charts monitoring the coefficient of variation (CV) squared. The previous Run Rules CV chart in the literature is improved slightly by monitoring the CV squared using two one-sided Run Rules charts instead of monitoring the CV itself using a two-sided chart. …</summary><br> The numerical results show that this improvement gives better performance in detecting process shifts. Moreover, we will show through simulation that the  and  errors do have negative effect on the performance of the proposed Run Rules charts. We also find out that taking multiple measurements per item is not an effective way to reduce these negative effects.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.02036v1" style="color: #d9230f">Selection Induced Contrast Estimate (SICE) Effect: An Attempt to Quantify the Impact of Some Patient Selection Criteria in Randomized Clinical Trials</a></b><br><em>Applications, Other Statistics</em>. 2 authors. <a href="http://arxiv.org/pdf/2001.02036v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Defining the Inclusion/Exclusion (I/E) criteria of a trial is one of the most important steps during a trial design. Increasingly complex I/E criteria potentially create information imbalance and transparency issues between the people who design and run the trials and those who consume the information produced by the trials. …</summary><br> In order to better understand and quantify the impact of a category of I/E criteria on observed treatment effects, a concept, named the Selection Induced Contrast Estimate (SICE) effect, is introduced and formulated in this paper. The SICE effect can exist in controlled clinical trials when treatment affects the correlation between a marker used for selection and the response of interest. This effect is demonstrated with both simulations and real clinical trial data. Although the statistical elements behind the SICE effect have been well studied, explicitly formulating and studying this effect can benefit several areas, including better transparency in I/E criteria, meta-analysis of multiple clinical trials, treatment effect interpretation in real-world medical practice, etc.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.02013v1" style="color: #d9230f">MCMC for a hyperbolic Bayesian inverse problem in traffic flow modelling</a></b><br><em>Computation</em>. 2 authors. <a href="http://arxiv.org/pdf/2001.02013v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>As work on hyperbolic Bayesian inverse problems remains rare in the literature, we explore empirically the sampling challenges these offer which have to do with shock formation in the solution of the PDE. Furthermore, we provide a unified statistical model to estimate using motorway data both boundary conditions and fundamental diagram parameters in LWR, a well known motorway traffic flow model. …</summary><br> This allows us to provide a traffic flow density estimation method that is shown to be superior to two methods found in the traffic flow literature. Finally, we highlight how  - a modification of Parallel Tempering - is a scalable method that can increase the mixing speed of the sampler by a factor of 10.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.02225v1" style="color: #d9230f">Fast Kernel Smoothing in R with Applications to Projection Pursuit</a></b><br><em>Computation</em>. 1 authors. <a href="http://arxiv.org/pdf/2001.02225v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>This paper introduces the R package FKSUM, which offers fast and exact evaluation of univariate kernel smoothers. The main kernel computations are implemented in C++, and are wrapped in simple, intuitive and versatile R functions. …</summary><br> The fast kernel computations are based on recursive expressions involving the order statistics, which allows for exact evaluation of kernel smoothers at all sample points in log-linear time. In addition to general purpose kernel smoothing functions, the package offers purpose built and ready-to-use implementations of popular kernel-type estimators. On top of these basic smoothing problems, this paper focuses on projection pursuit problems in which the projection index is based on kernel-type estimators of functionals of the projected density.
+</details>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="condensed-matter">Condensed Matter</h3>
+<table class="table table-striped table-condensed" style="margin-left: auto; margin-right: auto;">
+<tbody>
+<tr grouplength="2">
+<td colspan="1" style="background-color: #666; color: #fff;">
+<strong>Materials Science (cond-mat.mtrl-sci)</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01851v1" style="color: #d9230f">Uncertainty Quantification for Materials Properties in Density Functional Theory with k-Point Density</a></b><br><em>Computational Physics, Materials Science</em>. 7 authors. <a href="http://arxiv.org/pdf/2001.01851v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Many computational databases emerged over the last five years that report material properties calculated with density functional theory. The properties in these databases are commonly calculated to a precision that is set by choice of the basis set and the k-point density for the Brillouin zone integration. …</summary><br> We determine how the precision of properties obtained from the Birch equation of state for 29 transition metals and aluminum in the three common structures – fcc, bcc, and hcp – correlate with the k-point density and the precision of the energy. We show that the precision of the equilibrium volume, bulk modulus, and the pressure derivative of the bulk modulus correlate comparably well with the k-point density and the precision of the energy, following an approximate power law. We recommend the k-point density as the convergence parameter because it is computationally efficient, easy to use as a direct input parameter, and correlates with property precision at least as well as the energy precision. We predict that common k-point density choices in high throughput DFT databases result in precision for the volume of 0.1%, the bulk modulus of 1%, and the pressure derivative of 10%.
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01939v1" style="color: #d9230f">Dependency of the Young’s modulus to plastic strain in DP steels: a consequence of heterogeneity ?</a></b><br><em>Computational Physics, Materials Science</em>. 5 authors. <a href="http://arxiv.org/pdf/2001.01939v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>The accurate springback prediction of dual phase (DP) steels has been reported as a major challenge. It was demonstrated that this was due to the lack of understanding of their nonlinear unloading behavior and especially the dependency of their unloading moduli on the plastic prestrain. …</summary><br> A so-called compartmentalized finite element model was developed. In this model, each element was assigned a unique linear elastic J2 plastic behavior without hardening. The model’s specificity lied in the fact that: (i) a statistical distribution was discretized in a deterministic way and used to assign yield stresses to structures called compartments; (ii) those compartments were randomly associated with the elements through a random compartment element mapping (CEM). Multiple CEM were simulated in parallel to investigate the intrinsic randomness of the model. The model was confronted with experimental data extracted from the literature and it was demonstrated that the model was able to reproduce the dependence of the apparent moduli on the tensile prestrain. It was also observed that the evolution of the apparent moduli was predicted even if it was not an explicit input of the experimental dataset used to identify the input parameters of the model. It was then deduced that the shape of the hardening and the dependancy of moduli on the prestrain were two manifestations of a single cause: the heterogeneous yield stress in DP steels.
+</details>
+</td>
+</tr>
+<tr grouplength="2">
+<td colspan="1" style="background-color: #666; color: #fff;">
+<strong>Statistical Mechanics (cond-mat.stat-mech)</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.02186v1" style="color: #d9230f">Off-lattice and parallel implementations of the pivot algorithm</a></b><br><em>Computational Physics, Statistical Mechanics</em>. 2 authors. <a href="http://arxiv.org/pdf/2001.02186v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>The pivot algorithm is the most efficient known method for sampling polymer configurations for self-avoiding walks and related models. Here we introduce two recent improvements to an efficient binary tree implementation of the pivot algorithm: an extension to an off-lattice model, and a parallel implementation. …</summary><br>
+</details>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.02205v1" style="color: #d9230f">Minimum entropy production in multipartite processes due to neighborhood constraints</a></b><br><em>Machine Learning, Statistical Mechanics</em>. 1 authors. <a href="http://arxiv.org/pdf/2001.02205v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>It is known that the minimal total entropy production (EP) generated during the discrete-time evolution of a composite system is nonzero if its subsystems are isolated from one another. Minimal EP is also nonzero if the subsystems jointly implement a specified Bayes net. …</summary><br> Here I extend these discrete-time results to continuous time, and to allow all subsystems to be simultaneously interacting. To do this I model the composite system as a multipartite process, subject to constraints on the overlaps among the “neighborhoods” of the rate matrices of the subsystems. I derive two information-theoretic lower bounds on the minimal achievable EP rate expressed in terms of those neighborhood overlaps. The first bound is based on applying the inclusion-exclusion principle to the eighborhood overlaps. The second is based on constructing counterfactual rate matrices, in which all subsystems outside of a particular neighborhood are held fixed while those inside the neighborhood are allowed to evolve. This second bound involves quantities related to the “learning rate” of stationary bipartite systems, or more generally to the “information flow”.
+</details>
+</td>
+</tr>
+<tr grouplength="1">
+<td colspan="1" style="background-color: #666; color: #fff;">
+<strong>Strongly Correlated Electrons (cond-mat.str-el)</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.02215v1" style="color: #d9230f">Stochastic nodal surfaces in quantum Monte Carlo calculations</a></b><br><em>Computational Physics, Strongly Correlated Electrons</em>. 1 authors. <a href="http://arxiv.org/pdf/2001.02215v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Treating the fermionic ground state problem as a constrained stochastic optimization problem, a formalism for fermionic quantum Monte Carlo is developed that makes no reference to a trial wavefunction. Exchange symmetry is enforced by nonlocal terms appearing in the Green’s function corresponding to a new kind of walker propagation. …</summary><br> Complemented by a treatment of diffusion that encourages the formation of a stochastic nodal surface, an extension to many fermion systems is proposed. The method is shown to give a stable fermionic ground state for harmonic systems and the Lithium and Beryllium atoms.
+</details>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="mathematics">Mathematics</h3>
+<table class="table table-striped table-condensed" style="margin-left: auto; margin-right: auto;">
+<tbody>
+<tr grouplength="1">
+<td colspan="1" style="background-color: #666; color: #fff;">
+<strong>Optimization and Control (math.OC)</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01890v1" style="color: #d9230f">Statistical Inference for High-Dimensional Matrix-Variate Factor Model</a></b><br><em>Methodology, Statistics Theory, Statistics Theory</em>. 3 authors. <a href="http://arxiv.org/pdf/2001.01890v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>This paper considers the estimation and inference of factor loadings, latent factors and the low-rank components in high-dimensional matrix-variate factor model, where each dimension of the matrix-variates (<span class="math inline">\(p \times q\)</span>) is comparable to or greater than the number of observations (<span class="math inline">\(T\)</span>). We preserve matrix structure in the estimation and develop an inferential theory, establishing consistency, the rate of convergence, and the limiting distributions. …</summary><br> We show that the estimated loading matrices are asymptotically normal. These results are obtained under general conditions that allow for correlations across time, rows or columns of the noise. Stronger results are obtained when the noise is temporally, row- and/or column-wise uncorrelated. Simulation results demonstrate the adequacy of the asymptotic results in approximating the finite sample properties. Our proposed method compares favorably with the existing methods. We illustrate the proposed model and estimation procedure with a real numeric data set and a real image data set. In both applications, the proposed estimation procedure outperforms previous methods in the power of variance explanation under the out-of-sample 10-fold cross-validation setting.
+</details>
+</td>
+</tr>
+<tr grouplength="1">
+<td colspan="1" style="background-color: #666; color: #fff;">
+<strong>Statistics Theory (math.ST)</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.02005v1" style="color: #d9230f">Backtracking Gradient Descent allowing unbounded learning rates</a></b><br><em>Machine Learning, Optimization and Control, Machine Learning</em>. 1 authors. <a href="http://arxiv.org/pdf/2001.02005v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>In unconstrained optimisation on an Euclidean space, to prove convergence in Gradient Descent processes (GD) <span class="math inline">\(x_{n+1}=x_n-\delta _n \nabla f(x_n)\)</span> it usually is required that the learning rates <span class="math inline">\(\delta _n\)</span>’s are bounded: $ _n$ for some positive <span class="math inline">\(\delta latex287af42deb553a23bf089232a14b9cb1\lim _{t\rightarrow 0}th(t)=0\)</span> and <span class="math inline">\(\delta _n\lesssim \max \{h(x_n),\delta \}\)</span> for all <span class="math inline">\(n\)</span> satisfying Armijo’s condition, and prove convergence under the same assumptions as in the mentioned paper. It will be shown that this growth rate of <span class="math inline">\(h\)</span> is best possible if one wants convergence of the sequence <span class="math inline">\(\{x_n\}\)</span>. A specific way for choosing <span class="math inline">\(\delta _n\)</span> in a discrete way connects to Two-way Backtracking GD defined in the mentioned paper. We provide some results which either improve or are implicitly contained in those in the mentioned paper and another recent paper on avoidance of saddle points.</summary>
+</details>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="physics">Physics</h3>
+<table class="table table-striped table-condensed" style="margin-left: auto; margin-right: auto;">
+<tbody>
+<tr grouplength="1">
+<td colspan="1" style="background-color: #666; color: #fff;">
+<strong>Computational Physics (physics.comp-ph)</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.02030v1" style="color: #d9230f">Modelling of hydro-mechanical processes in heterogeneous fracture intersections using a fictitious domain method with variational transfer operators</a></b><br><em>Geophysics, Computational Physics</em>. 6 authors. <a href="http://arxiv.org/pdf/2001.02030v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Fluid flow in rough fractures and the coupling with the mechanical behaviour of the fractures pose great difficulties for numerical modeling approaches, due to complex fracture surface topographies, the non-linearity of hydromechanical processes and their tightly coupled nature. To this end, we have adapted a fictitious domain method to enable the simulation of hydromechanical processes in fracture-intersections. …</summary><br> The main characteristic of the method is the immersion of the fracture, modelled as a linear elastic solid, in the surrounding computational fluid domain, modelled with the incompressible Navier Stokes equations. The fluid and the solid problems are coupled with variational transfer operators. Variational transfer operators are also used to solve contact within the fracture using a dual mortar approach and to generate problem specific fluid meshes. With respect to our applications, the key features of the method are the usage of different finite element discretizations for the solid and the fluid problem and the automatically generated representation of the fluid-solid boundary. We demonstrate that the presented methodology resolves small-scale roughness on the fracture surface, while capturing fluid flow field changes during mechanical loading. Starting with 2D/3D benchmark simulations of intersected fractures, we end with an intersected fracture composed of complex fracture surface topographies, which are in contact under increasing loads. The contributions of this article are: (1) the application of the fictitious domain method to study flow in fractures with intersections, (2) a mortar based contact solver for the solid problem, (3) generation of problem specific grids using the geometry information from the variational transfer operators.
+</details>
+</td>
+</tr>
+<tr grouplength="1">
+<td colspan="1" style="background-color: #666; color: #fff;">
+<strong>Medical Physics (physics.med-ph)</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.02146v1" style="color: #d9230f">A DNA damage multi-scale model for NTCP in proton and hadron therapy</a></b><br><em>Data Analysis, Statistics and Probability, Mesoscale and Nanoscale Physics, Biological Physics, Medical Physics</em>. 5 authors. <a href="http://arxiv.org/pdf/2001.02146v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>{}: To develop a first principle and multi-scale model for normal tissue complication probability (NTCP) as a function of dose and LET for proton and in general for particle therapy with a goal of incorporating nano-scale radio-chemical to macro-scale cell biological pathways, spanning from initial DNA damage to tissue late effects. {}: The method is combination of analytical and multi-scale computational steps including (1) derivation of functional dependencies of NTCP on DNA driven cell lethality in nanometer and mapping to dose and LET in millimeter, and (2) 3D-surface fitting to Monte Carlo data set generated based on post radiation image change and gathered for a cohort of 14 pediatric patients treated by scanning beam of protons for ependymoma. …</summary><br> We categorize voxel-based dose and LET associated with development of necrosis in NTCP. {}: Our model fits well the clinical data, generated for post radiation tissue toxicity and necrosis. The fitting procedure results in extraction of in-{} radio-biological <span class="math inline">\(\alpha\)</span>-<span class="math inline">\(\beta\)</span> indices and their numerical values. {}: The NTCP model, explored in this work, allows to correlate the tissue toxicities to DNA initial damage, cell lethality and the properties and qualities of radiation, dose and LET.
+</details>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="quantitative-biology">Quantitative Biology</h3>
+<table class="table table-striped table-condensed" style="margin-left: auto; margin-right: auto;">
+<tbody>
+<tr grouplength="1">
+<td colspan="1" style="background-color: #666; color: #fff;">
+<strong>Biomolecules (q-bio.BM)</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.02201v1" style="color: #d9230f">On-the-fly Prediction of Protein Hydration Densities and Free Energies using Deep Learning</a></b><br><em>Biomolecules, Machine Learning, Quantitative Methods</em>. 3 authors. <a href="http://arxiv.org/pdf/2001.02201v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>The calculation of thermodynamic properties of biochemical systems typically requires the use of resource-intensive molecular simulation methods. One example thereof is the thermodynamic profiling of hydration sites, i. …</summary><br>e. high-probability locations for water molecules on the protein surface, which play an essential role in protein-ligand associations and must therefore be incorporated in the prediction of binding poses and affinities. To replace time-consuming simulations in hydration site predictions, we developed two different types of deep neural-network models aiming to predict hydration site data. In the first approach, meshed 3D images are generated representing the interactions between certain molecular probes placed on regular 3D grids, encompassing the binding pocket, with the static protein. These molecular interaction fields are mapped to the corresponding 3D image of hydration occupancy using a neural network based on an U-Net architecture. In a second approach, hydration occupancy and thermodynamics were predicted point-wise using a neural network based on fully-connected layers. In addition to direct protein interaction fields, the environment of each grid point was represented using moments of a spherical harmonics expansion of the interaction properties of nearby grid points. Application to structure-activity relationship analysis and protein-ligand pose scoring demonstrates the utility of the predicted hydration information.
+</details>
+</td>
+</tr>
+<tr grouplength="1">
+<td colspan="1" style="background-color: #666; color: #fff;">
+<strong>Populations and Evolution (q-bio.PE)</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.02173v1" style="color: #d9230f">Inferring genetic fitness from genomic data</a></b><br><em>Quantitative Methods, Populations and Evolution</em>. 2 authors. <a href="http://arxiv.org/pdf/2001.02173v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>The genetic composition of a naturally developing population is considered as due to mutation, selection, genetic drift and recombination. Selection is modeled as single-locus terms (additive fitness) and two-loci terms (pairwise epistatic fitness). …</summary><br> The problem is posed to infer epistatic fitness from population-wide whole-genome data from a time series of a developing population. We generate such data in silico, and show that in the Quasi-Linkage Equilibrium (QLE) phase of Kimura, Neher and Shraiman, that pertains at high enough recombination rates and low enough mutation rates, epistatic fitness can be quantitatively correctly inferred using inverse Ising/Potts methods.
+</details>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="elec.-eng.-and-systems-science">Elec. Eng. and Systems Science</h3>
+<table class="table table-striped table-condensed" style="margin-left: auto; margin-right: auto;">
+<tbody>
+<tr grouplength="1">
+<td colspan="1" style="background-color: #666; color: #fff;">
+<strong>Signal Processing (eess.SP)</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.02112v1" style="color: #d9230f">Multitask learning over graphs</a></b><br><em>Multiagent Systems, Machine Learning, Signal Processing</em>. 5 authors. <a href="http://arxiv.org/pdf/2001.02112v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>The problem of learning simultaneously several related tasks has received considerable attention in several domains, especially in machine learning with the so-called multitask learning problem or learning to learn problem [1], [2]. Multitask learning is an approach to inductive transfer learning (using what is learned for one problem to assist in another problem) and helps improve generalization performance relative to learning each task separately by using the domain information contained in the training signals of related tasks as an inductive bias. …</summary><br> Several strategies have been derived within this community under the assumption that all data are available beforehand at a fusion center. However, recent years have witnessed an increasing ability to collect data in a distributed and streaming manner. This requires the design of new strategies for learning jointly multiple tasks from streaming data over distributed (or networked) systems. This article provides an overview of multitask strategies for learning and adaptation over networks. The working hypothesis for these strategies is that agents are allowed to cooperate with each other in order to learn distinct, though related tasks. The article shows how cooperation steers the network limiting point and how different cooperation rules allow to promote different task relatedness models. It also explains how and when cooperation over multitask networks outperforms non-cooperative strategies.
+</details>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="other">Other</h3>
+<table class="table table-striped table-condensed" style="margin-left: auto; margin-right: auto;">
+<tbody>
+<tr grouplength="1">
+<td colspan="1" style="background-color: #666; color: #fff;">
+<strong>Instrumentation and Methods for Astrophysics (astro-ph.IM)</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01927v1" style="color: #d9230f">Numerical viscosity in simulations of the two-dimensional Kelvin-Helmholtz instability</a></b><br><em>Computational Physics, Instrumentation and Methods for Astrophysics</em>. 2 authors. <a href="http://arxiv.org/pdf/2001.01927v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>The Kelvin-Helmholtz instability serves as a simple, well-defined setup for assessing the accuracy of different numerical methods for solving the equations of hydrodynamics. We use it to extend our previous analysis of the convergence and the numerical dissipation in models of the propagation of waves and in the tearing-mode instability in magnetohydrodynamic models. …</summary><br> To this end, we perform two-dimensional simulations with and without explicit physical viscosity at different resolutions. A comparison of the growth of the modes excited by our initial perturbations allows us to estimate the effective numerical viscosity of two spatial reconstruction schemes (fifth-order monotonicity preserving and second-order piecewise linear schemes).
+</details>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="quantum-physics">Quantum Physics</h3>
+<table class="table table-striped table-condensed" style="margin-left: auto; margin-right: auto;">
+<tbody>
+<tr grouplength="1">
+<td colspan="1" style="background-color: #666; color: #fff;">
+<strong>Quantum Physics (quant-ph)</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<b><a href="http://arxiv.org/abs/2001.01928v1" style="color: #d9230f">Study of Microwave Assisted CNOT Gate</a></b><br><em>Quantum Physics, Computational Physics</em>. 3 authors. <a href="http://arxiv.org/pdf/2001.01928v1" style="color: #d9230f;
+    text-decoration: none;">pdf</a><br>
+<details>
+<summary>Population evolution in a magnetic impurity doped semiconductor quantum dot has been studied by applying a sequence of pulses of chosen pulse area. By optical excitation mechanism, the population in (J_z=+3/2), heavy hole state of valence band is carried over to (J_z=-3/2), valance band state, via the (J=+1/2) conduction band states. …</summary><br> The injected microwaves entangle conduction band states. This arrangement is successfully employed to ascertain quantum CNOT operation, and the calculation predicts maximum fidelity of 80% for the CNOT operation.
+</details>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!--radix_placeholder_article_footer-->
+<!--/radix_placeholder_article_footer-->
+</div>
+
+<div class="d-appendix">
+</div>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+<!--radix_placeholder_site_after_body-->
+<!--/radix_placeholder_site_after_body-->
+<!--radix_placeholder_appendices-->
+<div class="appendix-bottom"></div>
+<!--/radix_placeholder_appendices-->
+<!--radix_placeholder_navigation_after_body-->
+<!--/radix_placeholder_navigation_after_body-->
+
+</body>
+
+</html>

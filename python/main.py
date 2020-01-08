@@ -117,7 +117,7 @@ def parse_arxiv_post(post, arx_dict):
 
 # Checkpointing
 # @task
-@task(checkpoint=True, result_handler=LocalResultHandler(dir="~/.prefect/2019-01-07"))
+@task(checkpoint=True, result_handler=LocalResultHandler(dir="~/.prefect/ds-arxiv"))
 def df_get_arxiv(
     arx_list, 
     arx_dict, 

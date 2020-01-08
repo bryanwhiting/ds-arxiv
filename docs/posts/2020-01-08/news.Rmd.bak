@@ -1,0 +1,280 @@
+
+---
+title: "Articles from XXYESTERDAY_DATEXX"
+description: |
+  50 new data science research articles were published on XXYESTERDAY_DATEXX. 16 discussed machine learning.
+
+date: 2020-01-08
+author:
+  - name: Bryan Whiting
+    url: https://www.bryanwhiting.com
+output:
+  distill::distill_article:
+    self_contained: false
+    toc: true
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+install.load::install_load('DT', 'dplyr', 'tidyverse', 'readr', 'stringr', 'kableExtra')
+
+
+# Core Data Science and ML tags that I care about
+tags <- c('stat.AP', 'stat.co', 'stat.ML', 'cs.LG', 'q-fin.ST', 'q-fin.EC', 'econ-EM')
+LINK_COLOR = "#d9230f"
+SITE_URL = 'https://bryanwhiting.github.io/ds-arxiv/posts/'
+POST_URL = paste0(SITE_URL, Sys.Date())
+
+create_subjects <- function(df){
+  #' Function to take the primary_tag and turn it into the true subject name
+  df %>% 
+    mutate(subject = str_extract(primary_tag, '^[a-z\\-]*'),
+         subject = case_when(
+           subject == 'cs' ~ 'Computer Science',
+           subject == 'physics' ~ 'Physics',
+           subject == 'econ' ~ 'Economics',
+           subject == 'eess' ~ 'Elec. Eng. and Systems Science',
+           subject == 'math' ~ 'Mathematics',
+           subject == 'q-bio' ~ 'Quantitative Biology',
+           subject == 'q-fin' ~ 'Quantitative Finance',
+           subject == 'stat' ~ 'Statistics',
+           subject == 'quant-ph' ~ 'Quantum Physics',
+           subject == 'cond-mat' ~ 'Condensed Matter',
+           TRUE ~ 'Other'
+         )) %>%
+    return()
+}
+
+# Load in the data
+df = read_csv('arxiv.csv') 
+df <- df %>% 
+  create_subjects()
+
+
+prep_abstracts <- function(df){
+  #' This function prepares a dataframe with html
+  #' 
+  df %>%
+  # TODO: Sort by number of authors. FUTURE: sort by pagerank of authors
+  arrange(desc(n_authors)) %>%
+  mutate(
+    primary_category = paste0(primary_category, ' (',primary_tag,')'),
+    # Find the index for the nth period
+    idx_period = str_locate(summary, '^([^.]+\\.){2}')[,2],
+    title = paste0('<b><a href=',url_href ,' style="color: #d9230f">', title, '</a></b>',
+                   '<br><em>', categories,  '</em>', 
+                   '. ', n_authors, ' authors. ',
+                   '<a href=', url_pdf, ' style="color: #d9230f;
+    text-decoration: none;">pdf</a>', 
+    # Create the abstract summary
+                   '<br><details><summary>', str_sub(summary, 1, idx_period), ' ...</summary><br>',
+                   str_sub(summary, idx_period + 1), '</details>')) %>%
+  select(primary_category, title) 
+}
+#df %>% filter(subject == 'Statistics') %>% prep_abstracts()
+
+create_html_table <- function(df){
+  #' This function groups rows and prepares a pretty able of the data from prep_abstracts
+  
+  # Identify the break points in the Category
+  # Grouping rows via labeling: https://cran.r-project.org/web/packages/kableExtra/vignettes/awesome_table_in_html.html#group_rows_via_labeling
+  # breakpoints for the pack_rows
+  breaks <- df %>% 
+    group_by(primary_category) %>% 
+    count(sort=T) %>% 
+    ungroup() %>%
+    mutate(end = cumsum(n),
+           start = end - n + 1) %>%
+    select(primary_category, start, end, n) 
+  
+  tab <- df %>%
+    select(-primary_category) %>%
+    kable(escape=F, format='html', col.names=NULL) %>%
+    kable_styling(bootstrap_options = c('striped', 'condensed')) 
+  
+  # This could be simplified with index = c(), but I'm lazy
+  for (i in 1:nrow(breaks)){
+    tab <- tab %>%
+      pack_rows(breaks$primary_category[i], 
+                breaks$start[i],
+                breaks$end[i],
+                label_row_css = "background-color: #666; color: #fff;")
+  } 
+  return(tab)
+}
+# Test
+# df %>% 
+#   filter(subject == 'Statistics') %>% 
+#   prep_abstracts() %>% 
+#   create_html_table()
+    
+```
+
+
+## Breakdown of arXiv Publication Counts
+Yesterday's counts of submitted papers on www.arxiv.org grouped by primary subject. Click the links in the table to be re-directed to the abstracts below. The links under `Subject` will redirect you to abstracts with the primary subject (there can only be one primary subject on arXiv). The links under `Category` will redirect you to all publications yesterday with a given tag (primary or secondary).
+
+```{r summary-table-with-counts, fig.cap='Breakdown of arXiv categories by Primary Tag'}
+#### PRODUCE MAIN TABLE WITH HYPERLINKS
+# Summarize how many articles were created within each section.
+
+# Count how many tags by primary tag
+df_primary <- df %>% 
+  group_by(primary_category, primary_tag) %>% 
+  count(sort=TRUE)
+
+# Count number of tags by secondary tag. Filter out ocurrances where primary tag was used.
+df_other <- df %>% 
+  # remove the primary tag
+  mutate(tags = str_replace(tags, primary_tag, '')) %>% 
+  # Create a single vector
+  summarize(paste(tags, collapse=', ')) %>% 
+  pull() %>% 
+  str_split(', ') %>%  # this returns a list
+  `[[`(1) %>% # extract first element in list
+  data.frame(category = .) %>% # convert back to dataframe
+  filter(category != "") %>% # remove empty tags
+  group_by(category) %>% 
+  count(sort=T) %>%
+  ungroup() %>%
+  mutate(category = as.character(category)) %>%
+  rename(n_secondary=n) 
+
+# Create a summary table of the tags. This will be later formatted
+df_summary <- df_primary %>% 
+  create_subjects() %>%
+  rename(category=primary_tag) %>% 
+  left_join(df_other, by='category') %>%
+  # Arrange the tables by group max
+  group_by(subject) %>%
+  mutate(n_tot = sum(n)) %>%
+  arrange(desc(n_tot), subject, desc(n), desc(n_secondary)) %>%
+  ungroup() %>%
+  select(subject, n_tot, everything())
+
+# Create an intermediate formatted table that has data that will be used later when creating the core data science
+# collapse the info across rows
+df_summ_formatted <- df_summary %>%
+  # the text_spec provides an anchor: https://cran.r-project.org/web/packages/kableExtra/vignettes/awesome_table_in_html.html#links
+  mutate(
+    compact_subject = paste0(subject, ' (', n_tot, ')'),
+    subj_link = paste0('#', str_replace(tolower(subject), fixed(' '), '-')),
+    subject = text_spec(compact_subject, link=subj_link, color=LINK_COLOR, bold=T),
+    tag = category,
+    # format the category 
+    compact_category = paste0(primary_category, ' (', category, ')'),
+    cat_link = paste0('#', tolower(compact_category)),
+    cat_link = str_replace_all(cat_link, fixed(' '), '-'),
+    cat_link = str_replace_all(cat_link, fixed('('), '-'),
+    cat_link = str_replace_all(cat_link, fixed(')'), '-'),
+    cat_link = str_replace_all(cat_link, fixed('.'), '-'),
+    category = ifelse(tag %in% tags,
+      text_spec(compact_category, link=cat_link, color=LINK_COLOR, bold = T),
+      compact_category),
+    n = paste0(n, ' (', n_secondary, ')'),
+    n = str_remove(n, fixed('(NA)'))) 
+
+
+# Final table
+df_summ_formatted %>%
+  select(subject, category, n) %>%
+  kable(caption = 'Number of articles by subject and primary category. Colored titles represent hyperlinks that take you below to abstracts. Key - Subject: Computer Science (5) means there were 5 articles with primary tag CS. Category: Machine Learning (cs.LG) N = 8 (16) means there were 8 primary articles with the (cs.LG) tag but 16 articles had it as a secondary tag, so there should be 24 in total. Click this link to be taken to all 24. Only select categories are highlighted because they are of particular interest to applied data scientists.',
+        col.names = c('Subject', 'Category', 'N'),
+        escape=FALSE) %>%
+  kable_styling('striped') %>%
+  column_spec(1, bold=T) %>%
+  collapse_rows(columns=1, valign='top') 
+```
+
+```{r save-summary}
+# Save out table for future data tracking (for funsies)
+save(df_summary, file = 'output_df_summary.Rda')
+```
+
+
+```{r make-twitter}
+#### PRODUCE TWITTER OUTPUT
+# TODO: Find a way to improve the description by printing this out and having it be in the title
+# Save out data for tweets
+
+  
+# The message being written out:
+# "There were 60 new data-science articles published on archive yesterday, with 24 talking about machine learning."
+n_articles <- nrow(df)
+n_ml <- df %>% filter(str_detect(tags, 'stat.ML|cs.LG')) %>% nrow()
+tweet <- paste(n_articles, 'new #datascience research articles were published on XXYESTERDAY_DATEXX.', n_ml, 'discussed #machinelearning.')
+write(tweet, 'tweet.txt')
+
+
+# Other considerations:
+# df_summary %>%
+#   mutate(n_cat_tot = n + n_secondary) %>%
+#   arrange(desc(n_cat_tot)) %>%
+#   top_n(3) %>%
+#   mutate(primary_category = paste0(primary_category, ', ', 
+#                                    subject, ' (', n_cat_tot,')'))
+#   #mutate(subject = paste0(subject, ' (', n_tot, ')')) %>%
+#   unique() %>% pull() %>% paste(collapse = ', ')
+  
+```
+
+
+## Articles for Statitstics, Machine Learning Econonmetrics, and Finance
+This section contains all articles with any tag of `stat.AP`, `stat.co`, `stat.ML`, `cs.LG`, `q-fin.ST`, `q-fin.EC`, or `econ-EM`. Only the first two sentences are shown - click the links for more detail.
+
+```{r list-ds-articles, results='asis', layout='l-screen-inset'}
+#### Produce Headers and Subheaders with core stats articles
+
+df_relevant <- df %>% 
+  filter(str_detect(tags, paste0(tags, collapse='|'))) 
+# Loop through tags and produce a section for each tag
+
+df_headings <- df_summ_formatted %>%
+      select(tag, compact_category, cat_link) %>%
+  rename(primary_category = tag)
+
+for (tg in tags){
+  df_filtered <- df_relevant %>%
+    filter(str_detect(tags, tg))
+  if (nrow(df_filtered) > 0){
+    # Create markdown anchor: https://talk.commonmark.org/t/anchors-in-markdown/247
+    # title will be pulled from details
+    row <- df_headings %>%
+      filter(primary_category == tg)
+    cat(paste0('\n\n### ', row$compact_category, ': ', nrow(df_filtered),' new', ' {', row$cat_link,'} \n\n'))
+    
+    df_filtered %>%
+      prep_abstracts() %>%
+      mutate(primary_category = tg) %>%
+      left_join(df_headings, by='primary_category') %>%
+      mutate(primary_category = compact_category) %>% 
+      select(-compact_category, -cat_link) %>%
+      create_html_table() %>%
+      print()
+  }
+}
+
+  
+```
+
+
+
+## Data Science arXiv by Primary Tag
+
+The tables below show abstracts organized by category with hyperlinks back to the arXiv site. 
+
+```{r list-primary-tags, layout='l-page', results='asis'}
+# https://rstudio.github.io/DT/#escaping-table-content
+
+subjects <- df_summary$subject %>% unique()
+for (sub in subjects){
+  cat(paste('\n\n###', sub, '\n\n'))
+  # Loop through multiple datatables: https://stackoverflow.com/a/39734221/2138773
+  df %>% 
+    filter(subject == sub) %>% 
+    prep_abstracts() %>%
+    create_html_table() %>%
+    print()
+}
+```
