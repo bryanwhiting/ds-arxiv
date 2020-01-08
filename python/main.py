@@ -39,6 +39,15 @@ from tweet import create_twitter_api
 from arxivapi import arx_dict, arx_list
 from resources.config import feeds
 
+
+# Build a handler for slack
+# https://docs.prefect.io/core/tutorials/slack-notifications.html#using-your-url-to-get-notifications
+# You need to store the secrets in ~/.prefect/config.toml
+# Visit slack: https://app.slack.com/client/T04SR64EX/CS0P8PVKM
+slack_handler = slack_notifier(webhook_secret='SLACK_WEBHOOK_URL_DSARXIV')
+slack_message = SlackTask(webhook_secret='SLACK_WEBHOOK_URL_DSARXIV')
+
+
 def extract_domain(url):
     parsed_uri = urlparse(url)
     return '{uri.netloc}'.format(uri=parsed_uri).replace('www.', '').replace('.com', '')
@@ -206,7 +215,7 @@ def read_file(filename):
         text = f.read()
     return text
 
-@task(max_retries=3, retry_delay=timedelta(minutes=2))
+@task(max_retries=3, retry_delay=timedelta(minutes=2), state_handlers=[slack_handler])
 def replace_rmd_template_metadata(dir_post, fp_post, date_today, date_query):
     """After R Markdown is compiled, tweet.txt is created. This pulls that tweet and 
     replaces the XXDESCRIPTIONXX in the template
@@ -271,12 +280,6 @@ if __name__ == '__main__':
     from setproctitle import setproctitle
     setproctitle('prefect: ds arxiv')
 
-    # Build a handler for slack
-    # https://docs.prefect.io/core/tutorials/slack-notifications.html#using-your-url-to-get-notifications
-    # You need to store the secrets in ~/.prefect/config.toml
-    # Visit slack: https://app.slack.com/client/T04SR64EX/CS0P8PVKM
-    slack_handler = slack_notifier(webhook_secret='SLACK_WEBHOOK_URL_DSARXIV')
-    slack_message = SlackTask(webhook_secret='SLACK_WEBHOOK_URL_DSARXIV')
 
 
     # using the Imperitive API: https://docs.prefect.io/core/concepts/flows.html#imperative-api
