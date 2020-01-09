@@ -1,22 +1,22 @@
-[2020-01-08 22:24:17,608] INFO - prefect.FlowRunner | Beginning Flow run for 'Build Arxiv'
-[2020-01-08 22:24:17,610] INFO - prefect.FlowRunner | Starting flow run.
-[2020-01-08 22:24:17,819] INFO - prefect.TaskRunner | Task 'df_get_arxiv': Starting task run...
-[2020-01-08 22:24:29,333] INFO - prefect.TaskRunner | Task 'df_get_arxiv': finished task run for task with final state: 'Success'
-[2020-01-08 22:24:29,341] INFO - prefect.TaskRunner | Task 'determine_filter_date': Starting task run...
-[2020-01-08 22:24:29,345] INFO - prefect.TaskRunner | Task 'determine_filter_date': finished task run for task with final state: 'Success'
-[2020-01-08 22:24:29,352] INFO - prefect.TaskRunner | Task 'filter_df_arxiv': Starting task run...
-[2020-01-08 22:24:29,363] INFO - prefect.TaskRunner | Task 'filter_df_arxiv': finished task run for task with final state: 'Success'
-[2020-01-08 22:24:29,372] INFO - prefect.TaskRunner | Task 'create_dir_post': Starting task run...
-[2020-01-08 22:24:29,376] INFO - prefect.TaskRunner | Task 'create_dir_post': finished task run for task with final state: 'Success'
-[2020-01-08 22:24:29,384] INFO - prefect.TaskRunner | Task 'write_df_to_csv': Starting task run...
-[2020-01-08 22:24:29,393] INFO - prefect.TaskRunner | Task 'write_df_to_csv': finished task run for task with final state: 'Success'
-[2020-01-08 22:24:29,401] INFO - prefect.TaskRunner | Task 'copy_rmd_template': Starting task run...
-[2020-01-08 22:24:29,406] INFO - prefect.TaskRunner | Task 'copy_rmd_template': finished task run for task with final state: 'Success'
-[2020-01-08 22:24:29,414] INFO - prefect.TaskRunner | Task 'knit_rmd_to_html': Starting task run...
+[2020-01-09 18:25:15,428] INFO - prefect.FlowRunner | Beginning Flow run for 'Build Arxiv'
+[2020-01-09 18:25:15,431] INFO - prefect.FlowRunner | Starting flow run.
+[2020-01-09 18:25:15,697] INFO - prefect.TaskRunner | Task 'df_get_arxiv': Starting task run...
+[2020-01-09 18:25:37,298] INFO - prefect.TaskRunner | Task 'df_get_arxiv': finished task run for task with final state: 'Success'
+[2020-01-09 18:25:37,323] INFO - prefect.TaskRunner | Task 'determine_filter_date': Starting task run...
+[2020-01-09 18:25:37,339] INFO - prefect.TaskRunner | Task 'determine_filter_date': finished task run for task with final state: 'Success'
+[2020-01-09 18:25:37,365] INFO - prefect.TaskRunner | Task 'filter_df_arxiv': Starting task run...
+[2020-01-09 18:25:37,404] INFO - prefect.TaskRunner | Task 'filter_df_arxiv': finished task run for task with final state: 'Success'
+[2020-01-09 18:25:37,475] INFO - prefect.TaskRunner | Task 'create_dir_post': Starting task run...
+[2020-01-09 18:25:37,502] INFO - prefect.TaskRunner | Task 'create_dir_post': finished task run for task with final state: 'Success'
+[2020-01-09 18:25:37,581] INFO - prefect.TaskRunner | Task 'copy_rmd_template': Starting task run...
+[2020-01-09 18:25:37,593] INFO - prefect.TaskRunner | Task 'copy_rmd_template': finished task run for task with final state: 'Success'
+[2020-01-09 18:25:37,609] INFO - prefect.TaskRunner | Task 'write_df_to_csv': Starting task run...
+[2020-01-09 18:25:37,661] INFO - prefect.TaskRunner | Task 'write_df_to_csv': finished task run for task with final state: 'Success'
+[2020-01-09 18:25:37,685] INFO - prefect.TaskRunner | Task 'knit_rmd_to_html': Starting task run...
 sh: Rscript: command not found
-[2020-01-08 22:24:29,426] INFO - prefect.TaskRunner | Task 'knit_rmd_to_html': finished task run for task with final state: 'Success'
-[2020-01-08 22:24:29,434] INFO - prefect.TaskRunner | Task 'replace_rmd_template_metadata': Starting task run...
-[2020-01-08 22:24:29,435] ERROR - prefect.TaskRunner | Unexpected error: FileNotFoundError(2, 'No such file or directory')
+[2020-01-09 18:25:37,701] INFO - prefect.TaskRunner | Task 'knit_rmd_to_html': finished task run for task with final state: 'Success'
+[2020-01-09 18:25:37,722] INFO - prefect.TaskRunner | Task 'replace_rmd_template_metadata': Starting task run...
+[2020-01-09 18:25:38,973] ERROR - prefect.TaskRunner | Unexpected error: FileNotFoundError(2, 'No such file or directory')
 Traceback (most recent call last):
   File "/Users/bryanwhiting/venvs/py37/lib/python3.7/site-packages/prefect/engine/runner.py", line 48, in inner
     new_state = method(self, state, *args, **kwargs)
@@ -24,29 +24,29 @@ Traceback (most recent call last):
     self.task.run, timeout=self.task.timeout, **raw_inputs
   File "/Users/bryanwhiting/venvs/py37/lib/python3.7/site-packages/prefect/utilities/executors.py", line 250, in timeout_handler
     return fn(*args, **kwargs)
-  File "/Users/bryanwhiting/github/ds-arxiv/python/main.py", line 219, in replace_rmd_template_metadata
+  File "/Users/bryanwhiting/github/ds-arxiv/python/main.py", line 228, in replace_rmd_template_metadata
     tweet = read_file(filename=fp_tweet)
-  File "/Users/bryanwhiting/github/ds-arxiv/python/main.py", line 205, in read_file
+  File "/Users/bryanwhiting/github/ds-arxiv/python/main.py", line 214, in read_file
     with open(filename,'r') as f:
-FileNotFoundError: [Errno 2] No such file or directory: '/Users/bryanwhiting/github/ds-arxiv/_posts/2020-01-08/tweet.txt'
-[2020-01-08 22:24:29,444] INFO - prefect.TaskRunner | Task 'replace_rmd_template_metadata': finished task run for task with final state: 'Retrying'
-[2020-01-08 22:24:29,452] INFO - prefect.TaskRunner | Task 'knit_rmd_to_html': Starting task run...
-[2020-01-08 22:24:29,456] INFO - prefect.TaskRunner | Task 'knit_rmd_to_html': finished task run for task with final state: 'Pending'
-[2020-01-08 22:24:29,465] INFO - prefect.TaskRunner | Task 'git_commit_push': Starting task run...
-[2020-01-08 22:24:29,469] INFO - prefect.TaskRunner | Task 'git_commit_push': finished task run for task with final state: 'Pending'
-[2020-01-08 22:24:29,479] INFO - prefect.TaskRunner | Task 'create_tweet': Starting task run...
-[2020-01-08 22:24:29,482] INFO - prefect.TaskRunner | Task 'create_tweet': finished task run for task with final state: 'Pending'
-[2020-01-08 22:24:29,489] INFO - prefect.TaskRunner | Task 'tweet_world': Starting task run...
-[2020-01-08 22:24:29,492] INFO - prefect.TaskRunner | Task 'tweet_world': finished task run for task with final state: 'Pending'
-[2020-01-08 22:24:29,500] INFO - prefect.TaskRunner | Task 'tweet_bryan': Starting task run...
-[2020-01-08 22:24:29,503] INFO - prefect.TaskRunner | Task 'tweet_bryan': finished task run for task with final state: 'Pending'
-[2020-01-08 22:24:29,510] INFO - prefect.TaskRunner | Task 'SlackTask': Starting task run...
-[2020-01-08 22:24:29,513] INFO - prefect.TaskRunner | Task 'SlackTask': finished task run for task with final state: 'Pending'
-[2020-01-08 22:24:29,515] INFO - prefect.FlowRunner | Flow run RUNNING: terminal tasks are incomplete.
-[2020-01-08 22:24:29,515] INFO - prefect.Flow: Build Arxiv | Waiting for next available Task run at 2020-01-08T22:26:29.440194+00:00
-[2020-01-08 22:26:29,448] INFO - prefect.FlowRunner | Beginning Flow run for 'Build Arxiv'
-[2020-01-08 22:26:29,474] INFO - prefect.TaskRunner | Task 'replace_rmd_template_metadata': Starting task run...
-[2020-01-08 22:26:29,475] ERROR - prefect.TaskRunner | Unexpected error: FileNotFoundError(2, 'No such file or directory')
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/bryanwhiting/github/ds-arxiv/_posts/2020-01-09/tweet.txt'
+[2020-01-09 18:25:39,385] INFO - prefect.TaskRunner | Task 'replace_rmd_template_metadata': finished task run for task with final state: 'Retrying'
+[2020-01-09 18:25:39,405] INFO - prefect.TaskRunner | Task 'knit_rmd_to_html': Starting task run...
+[2020-01-09 18:25:39,412] INFO - prefect.TaskRunner | Task 'knit_rmd_to_html': finished task run for task with final state: 'Pending'
+[2020-01-09 18:25:39,428] INFO - prefect.TaskRunner | Task 'git_commit_push': Starting task run...
+[2020-01-09 18:25:39,432] INFO - prefect.TaskRunner | Task 'git_commit_push': finished task run for task with final state: 'Pending'
+[2020-01-09 18:25:39,447] INFO - prefect.TaskRunner | Task 'create_tweet': Starting task run...
+[2020-01-09 18:25:39,452] INFO - prefect.TaskRunner | Task 'create_tweet': finished task run for task with final state: 'Pending'
+[2020-01-09 18:25:39,464] INFO - prefect.TaskRunner | Task 'tweet_world': Starting task run...
+[2020-01-09 18:25:39,470] INFO - prefect.TaskRunner | Task 'tweet_world': finished task run for task with final state: 'Pending'
+[2020-01-09 18:25:39,485] INFO - prefect.TaskRunner | Task 'SlackTask': Starting task run...
+[2020-01-09 18:25:39,491] INFO - prefect.TaskRunner | Task 'SlackTask': finished task run for task with final state: 'Pending'
+[2020-01-09 18:25:39,506] INFO - prefect.TaskRunner | Task 'tweet_bryan': Starting task run...
+[2020-01-09 18:25:39,511] INFO - prefect.TaskRunner | Task 'tweet_bryan': finished task run for task with final state: 'Pending'
+[2020-01-09 18:25:39,512] INFO - prefect.FlowRunner | Flow run RUNNING: terminal tasks are incomplete.
+[2020-01-09 18:25:39,513] INFO - prefect.Flow: Build Arxiv | Waiting for next available Task run at 2020-01-09T18:27:39.155540+00:00
+[2020-01-09 18:27:39,149] INFO - prefect.FlowRunner | Beginning Flow run for 'Build Arxiv'
+[2020-01-09 18:27:39,160] INFO - prefect.TaskRunner | Task 'replace_rmd_template_metadata': Starting task run...
+[2020-01-09 18:27:39,452] ERROR - prefect.TaskRunner | Unexpected error: FileNotFoundError(2, 'No such file or directory')
 Traceback (most recent call last):
   File "/Users/bryanwhiting/venvs/py37/lib/python3.7/site-packages/prefect/engine/runner.py", line 48, in inner
     new_state = method(self, state, *args, **kwargs)
@@ -54,22 +54,98 @@ Traceback (most recent call last):
     self.task.run, timeout=self.task.timeout, **raw_inputs
   File "/Users/bryanwhiting/venvs/py37/lib/python3.7/site-packages/prefect/utilities/executors.py", line 250, in timeout_handler
     return fn(*args, **kwargs)
-  File "/Users/bryanwhiting/github/ds-arxiv/python/main.py", line 219, in replace_rmd_template_metadata
-    def replace_rmd_template_metadata(dir_post, fp_post, date_today, date_query):
-  File "/Users/bryanwhiting/github/ds-arxiv/python/main.py", line 205, in read_file
-FileNotFoundError: [Errno 2] No such file or directory: '/Users/bryanwhiting/github/ds-arxiv/_posts/2020-01-08/tweet.txt'
-[2020-01-08 22:26:29,483] INFO - prefect.TaskRunner | Task 'replace_rmd_template_metadata': finished task run for task with final state: 'Retrying'
-[2020-01-08 22:26:29,491] INFO - prefect.TaskRunner | Task 'knit_rmd_to_html': Starting task run...
-[2020-01-08 22:26:29,494] INFO - prefect.TaskRunner | Task 'knit_rmd_to_html': finished task run for task with final state: 'Pending'
-[2020-01-08 22:26:29,502] INFO - prefect.TaskRunner | Task 'git_commit_push': Starting task run...
-[2020-01-08 22:26:29,505] INFO - prefect.TaskRunner | Task 'git_commit_push': finished task run for task with final state: 'Pending'
-[2020-01-08 22:26:29,512] INFO - prefect.TaskRunner | Task 'create_tweet': Starting task run...
-[2020-01-08 22:26:29,515] INFO - prefect.TaskRunner | Task 'create_tweet': finished task run for task with final state: 'Pending'
-[2020-01-08 22:26:29,522] INFO - prefect.TaskRunner | Task 'tweet_world': Starting task run...
-[2020-01-08 22:26:29,525] INFO - prefect.TaskRunner | Task 'tweet_world': finished task run for task with final state: 'Pending'
-[2020-01-08 22:26:29,532] INFO - prefect.TaskRunner | Task 'tweet_bryan': Starting task run...
-[2020-01-08 22:26:29,535] INFO - prefect.TaskRunner | Task 'tweet_bryan': finished task run for task with final state: 'Pending'
-[2020-01-08 22:26:29,542] INFO - prefect.TaskRunner | Task 'SlackTask': Starting task run...
-[2020-01-08 22:26:29,545] INFO - prefect.TaskRunner | Task 'SlackTask': finished task run for task with final state: 'Pending'
-[2020-01-08 22:26:29,546] INFO - prefect.FlowRunner | Flow run RUNNING: terminal tasks are incomplete.
-[2020-01-08 22:26:29,546] INFO - prefect.Flow: Build Arxiv | Waiting for next available Task run at 2020-01-08T22:28:29.479622+00:00
+  File "/Users/bryanwhiting/github/ds-arxiv/python/main.py", line 228, in replace_rmd_template_metadata
+    tweet = read_file(filename=fp_tweet)
+  File "/Users/bryanwhiting/github/ds-arxiv/python/main.py", line 214, in read_file
+    with open(filename,'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/bryanwhiting/github/ds-arxiv/_posts/2020-01-09/tweet.txt'
+[2020-01-09 18:27:40,310] INFO - prefect.TaskRunner | Task 'replace_rmd_template_metadata': finished task run for task with final state: 'Retrying'
+[2020-01-09 18:27:40,338] INFO - prefect.TaskRunner | Task 'knit_rmd_to_html': Starting task run...
+[2020-01-09 18:27:40,348] INFO - prefect.TaskRunner | Task 'knit_rmd_to_html': finished task run for task with final state: 'Pending'
+[2020-01-09 18:27:40,359] INFO - prefect.TaskRunner | Task 'git_commit_push': Starting task run...
+[2020-01-09 18:27:40,363] INFO - prefect.TaskRunner | Task 'git_commit_push': finished task run for task with final state: 'Pending'
+[2020-01-09 18:27:40,371] INFO - prefect.TaskRunner | Task 'create_tweet': Starting task run...
+[2020-01-09 18:27:40,375] INFO - prefect.TaskRunner | Task 'create_tweet': finished task run for task with final state: 'Pending'
+[2020-01-09 18:27:40,383] INFO - prefect.TaskRunner | Task 'tweet_world': Starting task run...
+[2020-01-09 18:27:40,386] INFO - prefect.TaskRunner | Task 'tweet_world': finished task run for task with final state: 'Pending'
+[2020-01-09 18:27:40,394] INFO - prefect.TaskRunner | Task 'SlackTask': Starting task run...
+[2020-01-09 18:27:40,400] INFO - prefect.TaskRunner | Task 'SlackTask': finished task run for task with final state: 'Pending'
+[2020-01-09 18:27:40,408] INFO - prefect.TaskRunner | Task 'tweet_bryan': Starting task run...
+[2020-01-09 18:27:40,410] INFO - prefect.TaskRunner | Task 'tweet_bryan': finished task run for task with final state: 'Pending'
+[2020-01-09 18:27:40,411] INFO - prefect.FlowRunner | Flow run RUNNING: terminal tasks are incomplete.
+[2020-01-09 18:27:40,411] INFO - prefect.Flow: Build Arxiv | Waiting for next available Task run at 2020-01-09T18:29:40.076574+00:00
+[2020-01-09 18:29:40,081] INFO - prefect.FlowRunner | Beginning Flow run for 'Build Arxiv'
+[2020-01-09 18:29:40,103] INFO - prefect.TaskRunner | Task 'replace_rmd_template_metadata': Starting task run...
+[2020-01-09 18:29:40,484] ERROR - prefect.TaskRunner | Unexpected error: FileNotFoundError(2, 'No such file or directory')
+Traceback (most recent call last):
+  File "/Users/bryanwhiting/venvs/py37/lib/python3.7/site-packages/prefect/engine/runner.py", line 48, in inner
+    new_state = method(self, state, *args, **kwargs)
+  File "/Users/bryanwhiting/venvs/py37/lib/python3.7/site-packages/prefect/engine/task_runner.py", line 873, in get_task_run_state
+    self.task.run, timeout=self.task.timeout, **raw_inputs
+  File "/Users/bryanwhiting/venvs/py37/lib/python3.7/site-packages/prefect/utilities/executors.py", line 250, in timeout_handler
+    return fn(*args, **kwargs)
+  File "/Users/bryanwhiting/github/ds-arxiv/python/main.py", line 228, in replace_rmd_template_metadata
+    tweet = read_file(filename=fp_tweet)
+  File "/Users/bryanwhiting/github/ds-arxiv/python/main.py", line 214, in read_file
+    with open(filename,'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/bryanwhiting/github/ds-arxiv/_posts/2020-01-09/tweet.txt'
+[2020-01-09 18:29:40,924] INFO - prefect.TaskRunner | Task 'replace_rmd_template_metadata': finished task run for task with final state: 'Retrying'
+[2020-01-09 18:29:40,933] INFO - prefect.TaskRunner | Task 'knit_rmd_to_html': Starting task run...
+[2020-01-09 18:29:40,937] INFO - prefect.TaskRunner | Task 'knit_rmd_to_html': finished task run for task with final state: 'Pending'
+[2020-01-09 18:29:40,947] INFO - prefect.TaskRunner | Task 'git_commit_push': Starting task run...
+[2020-01-09 18:29:40,950] INFO - prefect.TaskRunner | Task 'git_commit_push': finished task run for task with final state: 'Pending'
+[2020-01-09 18:29:40,959] INFO - prefect.TaskRunner | Task 'create_tweet': Starting task run...
+[2020-01-09 18:29:40,961] INFO - prefect.TaskRunner | Task 'create_tweet': finished task run for task with final state: 'Pending'
+[2020-01-09 18:29:40,969] INFO - prefect.TaskRunner | Task 'tweet_world': Starting task run...
+[2020-01-09 18:29:40,972] INFO - prefect.TaskRunner | Task 'tweet_world': finished task run for task with final state: 'Pending'
+[2020-01-09 18:29:40,979] INFO - prefect.TaskRunner | Task 'SlackTask': Starting task run...
+[2020-01-09 18:29:40,982] INFO - prefect.TaskRunner | Task 'SlackTask': finished task run for task with final state: 'Pending'
+[2020-01-09 18:29:40,990] INFO - prefect.TaskRunner | Task 'tweet_bryan': Starting task run...
+[2020-01-09 18:29:40,993] INFO - prefect.TaskRunner | Task 'tweet_bryan': finished task run for task with final state: 'Pending'
+[2020-01-09 18:29:40,994] INFO - prefect.FlowRunner | Flow run RUNNING: terminal tasks are incomplete.
+[2020-01-09 18:29:40,994] INFO - prefect.Flow: Build Arxiv | Waiting for next available Task run at 2020-01-09T18:31:40.729266+00:00
+[2020-01-09 18:31:40,736] INFO - prefect.FlowRunner | Beginning Flow run for 'Build Arxiv'
+[2020-01-09 18:31:40,788] INFO - prefect.TaskRunner | Task 'replace_rmd_template_metadata': Starting task run...
+[2020-01-09 18:31:41,156] ERROR - prefect.TaskRunner | Unexpected error: FileNotFoundError(2, 'No such file or directory')
+Traceback (most recent call last):
+  File "/Users/bryanwhiting/venvs/py37/lib/python3.7/site-packages/prefect/engine/runner.py", line 48, in inner
+    new_state = method(self, state, *args, **kwargs)
+  File "/Users/bryanwhiting/venvs/py37/lib/python3.7/site-packages/prefect/engine/task_runner.py", line 873, in get_task_run_state
+    self.task.run, timeout=self.task.timeout, **raw_inputs
+  File "/Users/bryanwhiting/venvs/py37/lib/python3.7/site-packages/prefect/utilities/executors.py", line 250, in timeout_handler
+    return fn(*args, **kwargs)
+  File "/Users/bryanwhiting/github/ds-arxiv/python/main.py", line 228, in replace_rmd_template_metadata
+    tweet = read_file(filename=fp_tweet)
+  File "/Users/bryanwhiting/github/ds-arxiv/python/main.py", line 214, in read_file
+    with open(filename,'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/bryanwhiting/github/ds-arxiv/_posts/2020-01-09/tweet.txt'
+[2020-01-09 18:31:41,469] INFO - prefect.TaskRunner | Task 'replace_rmd_template_metadata': finished task run for task with final state: 'Failed'
+[2020-01-09 18:31:41,497] INFO - prefect.TaskRunner | Task 'knit_rmd_to_html': Starting task run...
+[2020-01-09 18:31:41,511] INFO - prefect.TaskRunner | Task 'knit_rmd_to_html': finished task run for task with final state: 'TriggerFailed'
+[2020-01-09 18:31:41,529] INFO - prefect.TaskRunner | Task 'git_commit_push': Starting task run...
+[2020-01-09 18:31:41,539] INFO - prefect.TaskRunner | Task 'git_commit_push': finished task run for task with final state: 'TriggerFailed'
+[2020-01-09 18:31:41,576] INFO - prefect.TaskRunner | Task 'create_tweet': Starting task run...
+[2020-01-09 18:31:41,592] INFO - prefect.TaskRunner | Task 'create_tweet': finished task run for task with final state: 'TriggerFailed'
+[2020-01-09 18:31:41,613] INFO - prefect.TaskRunner | Task 'tweet_world': Starting task run...
+[2020-01-09 18:31:41,637] INFO - prefect.TaskRunner | Task 'tweet_world': finished task run for task with final state: 'TriggerFailed'
+[2020-01-09 18:31:41,704] INFO - prefect.TaskRunner | Task 'SlackTask': Starting task run...
+[2020-01-09 18:31:41,723] INFO - prefect.TaskRunner | Task 'SlackTask': finished task run for task with final state: 'TriggerFailed'
+[2020-01-09 18:31:41,772] INFO - prefect.TaskRunner | Task 'tweet_bryan': Starting task run...
+[2020-01-09 18:31:41,810] INFO - prefect.TaskRunner | Task 'tweet_bryan': finished task run for task with final state: 'TriggerFailed'
+[2020-01-09 18:31:41,818] INFO - prefect.FlowRunner | Flow run FAILED: some reference tasks failed.
+Traceback (most recent call last):
+  File "/Users/bryanwhiting/github/ds-arxiv/python/main.py", line 325, in <module>
+    flow.visualize(flow_state=state, filename=fp_pdf)
+  File "/Users/bryanwhiting/venvs/py37/lib/python3.7/site-packages/prefect/core/flow.py", line 1150, in visualize
+    graph.render(filename, view=False)
+  File "/Users/bryanwhiting/venvs/py37/lib/python3.7/site-packages/graphviz/files.py", line 209, in render
+    quiet=quiet)
+  File "/Users/bryanwhiting/venvs/py37/lib/python3.7/site-packages/graphviz/backend.py", line 206, in render
+    run(cmd, capture_output=True, cwd=cwd, check=True, quiet=quiet)
+  File "/Users/bryanwhiting/venvs/py37/lib/python3.7/site-packages/graphviz/backend.py", line 159, in run
+    proc = subprocess.Popen(cmd, startupinfo=get_startupinfo(), **kwargs)
+  File "/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/subprocess.py", line 800, in __init__
+    restore_signals, start_new_session)
+  File "/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/subprocess.py", line 1551, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+NotADirectoryError: [Errno 20] Not a directory: 'dot'

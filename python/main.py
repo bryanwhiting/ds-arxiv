@@ -126,7 +126,7 @@ def parse_arxiv_post(post, arx_dict):
 
 # Checkpointing
 # @task
-@task(checkpoint=True, result_handler=LocalResultHandler(dir="~/.prefect/ds-arxiv"))
+@task(checkpoint=False, result_handler=LocalResultHandler(dir="~/.prefect/ds-arxiv"), state_handlers=[slack_handler])
 def df_get_arxiv(
     arx_list, 
     arx_dict, 

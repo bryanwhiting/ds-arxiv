@@ -1,10 +1,10 @@
 
 ---
-title: "Articles from XXYESTERDAY_DATEXX"
+title: "Articles from 2020-01-08"
 description: |
-  50 new data science research articles were published on XXYESTERDAY_DATEXX. 16 discussed machine learning.
+  47 new data science research articles were published on 2020-01-08. 20 discussed machine learning.
 
-date: 2020-01-08
+date: 2020-01-09
 author:
   - name: Bryan Whiting
     url: https://www.bryanwhiting.com
@@ -203,7 +203,7 @@ save(df_summary, file = 'output_df_summary.Rda')
 # "There were 60 new data-science articles published on archive yesterday, with 24 talking about machine learning."
 n_articles <- nrow(df)
 n_ml <- df %>% filter(str_detect(tags, 'stat.ML|cs.LG')) %>% nrow()
-tweet <- paste(n_articles, 'new #datascience research articles were published on XXYESTERDAY_DATEXX.', n_ml, 'discussed #machinelearning.')
+tweet <- paste(n_articles, 'new #datascience research articles were published on 2020-01-08.', n_ml, 'discussed #machinelearning.')
 write(tweet, 'tweet.txt')
 
 

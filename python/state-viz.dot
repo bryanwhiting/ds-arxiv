@@ -1,39 +1,39 @@
 digraph {
-	4648629840 [label=tweet_bryan color="#28a74580" colorscheme=svg shape=ellipse style=filled]
-	4648628944 [label=create_tweet color="#28a74580" colorscheme=svg shape=ellipse style=filled]
-	4648630096 [label=tweet_world color="#28a74580" colorscheme=svg shape=ellipse style=filled]
-	4648578000 [label=df_get_arxiv color="#28a74580" colorscheme=svg shape=ellipse style=filled]
-	4648578576 [label=create_dir_post color="#28a74580" colorscheme=svg shape=ellipse style=filled]
-	4648611920 [label=write_df_to_csv color="#28a74580" colorscheme=svg shape=ellipse style=filled]
-	4648577424 [label=determine_filter_date color="#28a74580" colorscheme=svg shape=ellipse style=filled]
-	4648577744 [label=filter_df_arxiv color="#28a74580" colorscheme=svg shape=ellipse style=filled]
-	4648612880 [label=copy_rmd_template color="#28a74580" colorscheme=svg shape=ellipse style=filled]
-	4648613136 [label=knit_rmd_to_html color="#28a74580" colorscheme=svg shape=ellipse style=filled]
-	4648613840 [label=replace_rmd_template_metadata color="#28a74580" colorscheme=svg shape=ellipse style=filled]
-	4648615056 [label=knit_rmd_to_html color="#28a74580" colorscheme=svg shape=ellipse style=filled]
-	4648628304 [label=git_commit_push color="#28a74580" colorscheme=svg shape=ellipse style=filled]
-	4648630480 [label=SlackTask color="#28a74580" colorscheme=svg shape=ellipse style=filled]
-	4648628944 -> 4648630480 [label=message]
-	4648577424 -> 4648577744 [label=filter_to_date]
-	4648615056 -> 4648628304
-	4648577744 -> 4648578576
-	4648612880 -> 4648613136 [label=fp_post]
-	4648611920 -> 4648613136
-	4648577744 -> 4648611920 [label=df]
-	4648578000 -> 4648577744 [label=df]
-	4648613136 -> 4648613840
-	4648612880 -> 4648615056 [label=fp_post]
-	4648613840 -> 4648615056
-	4648578576 -> 4648613840 [label=dir_post]
-	4648578576 -> 4648628944 [label=dir_post]
-	4648578576 -> 4648611920 [label=dir_post]
-	4648628944 -> 4648629840 [label=tweet]
-	4648628944 -> 4648630096 [label=tweet]
-	4648577424 -> 4648613840 [label=date_query]
-	4648577424 -> 4648628944 [label=date_query]
-	4648613136 -> 4648615056
-	4648612880 -> 4648613840 [label=fp_post]
-	4648628304 -> 4648628944
-	4648578000 -> 4648577424 [label=df]
-	4648578576 -> 4648612880 [label=dir_post]
+	4676774736 [label=SlackTask color="#ff513180" colorscheme=svg shape=ellipse style=filled]
+	4676774096 [label=tweet_bryan color="#ff513180" colorscheme=svg shape=ellipse style=filled]
+	4676705936 [label=df_get_arxiv color="#28a74580" colorscheme=svg shape=ellipse style=filled]
+	4676705552 [label=determine_filter_date color="#28a74580" colorscheme=svg shape=ellipse style=filled]
+	4676705872 [label=filter_df_arxiv color="#28a74580" colorscheme=svg shape=ellipse style=filled]
+	4676756176 [label=write_df_to_csv color="#28a74580" colorscheme=svg shape=ellipse style=filled]
+	4676755664 [label=create_dir_post color="#28a74580" colorscheme=svg shape=ellipse style=filled]
+	4676757136 [label=copy_rmd_template color="#28a74580" colorscheme=svg shape=ellipse style=filled]
+	4676757392 [label=knit_rmd_to_html color="#28a74580" colorscheme=svg shape=ellipse style=filled]
+	4676758096 [label=replace_rmd_template_metadata color="#eb000080" colorscheme=svg shape=ellipse style=filled]
+	4676759312 [label=knit_rmd_to_html color="#ff513180" colorscheme=svg shape=ellipse style=filled]
+	4676772560 [label=git_commit_push color="#ff513180" colorscheme=svg shape=ellipse style=filled]
+	4676773200 [label=create_tweet color="#ff513180" colorscheme=svg shape=ellipse style=filled]
+	4676774352 [label=tweet_world color="#ff513180" colorscheme=svg shape=ellipse style=filled]
+	4676773200 -> 4676774736 [label=message]
+	4676773200 -> 4676774096 [label=tweet]
+	4676773200 -> 4676774352 [label=tweet]
+	4676757136 -> 4676758096 [label=fp_post]
+	4676705552 -> 4676773200 [label=date_query]
+	4676705552 -> 4676758096 [label=date_query]
+	4676705552 -> 4676705872 [label=filter_to_date]
+	4676705936 -> 4676705872 [label=df]
+	4676755664 -> 4676756176 [label=dir_post]
+	4676756176 -> 4676757392
+	4676755664 -> 4676758096 [label=dir_post]
+	4676757392 -> 4676758096
+	4676758096 -> 4676759312
+	4676759312 -> 4676772560
+	4676755664 -> 4676773200 [label=dir_post]
+	4676757136 -> 4676759312 [label=fp_post]
+	4676757136 -> 4676757392 [label=fp_post]
+	4676705936 -> 4676705552 [label=df]
+	4676705872 -> 4676756176 [label=df]
+	4676755664 -> 4676757136 [label=dir_post]
+	4676705872 -> 4676755664
+	4676757392 -> 4676759312
+	4676772560 -> 4676773200
 }

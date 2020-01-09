@@ -1,0 +1,739 @@
+title,summary,primary_tag,tags,n_tags,primary_category,categories,author,authors,n_authors,url_pdf,url_href,date
+"D3BA: A Tool for Optimizing Business Processes Using Non-Deterministic
+  Planning","This paper builds upon recent work in the declarative design of dialogue
+agents and proposes an exciting new tool -- D3BA -- Declarative Design for
+Digital Business Automation, built to optimize business processes using the
+power of AI planning. The tool provides a powerful framework to build,
+optimize, and maintain complex business processes and optimize them by
+composing with services that automate one or more subtasks. We illustrate
+salient features of this composition technique, compare with other philosophies
+of composition, and highlight exciting opportunities for research in this
+emerging field of business process automation.",cs.AI,"cs.CE, cs.AI",2,Artificial Intelligence,"Computational Engineering, Finance, and Science, Artificial Intelligence",Yasaman Khazaeni,"Tathagata Chakraborti, Yasaman Khazaeni",2,http://arxiv.org/pdf/2001.02619v1,http://arxiv.org/abs/2001.02619v1,2020-01-08
+On Interpretability of Artificial Neural Networks,"Deep learning has achieved great successes in many important areas to dealing
+with text, images, video, graphs, and so on. However, the black-box nature of
+deep artificial neural networks has become the primary obstacle to their public
+acceptance and wide popularity in critical applications such as diagnosis and
+therapy. Due to the huge potential of deep learning, interpreting neural
+networks has become one of the most critical research directions. In this
+paper, we systematically review recent studies in understanding the mechanism
+of neural networks and shed light on some future directions of interpretability
+research (This work is still in progress).",cs.LG,"cs.LG, cs.AI, stat.ML",3,Machine Learning,"Machine Learning, Artificial Intelligence, Machine Learning",Ge Wang,"Fenglei Fan, Jinjun Xiong, Ge Wang",3,http://arxiv.org/pdf/2001.02522v1,http://arxiv.org/abs/2001.02522v1,2020-01-08
+"Questioning the AI: Informing Design Practices for Explainable AI User
+  Experiences","A surge of interest in explainable AI (XAI) has led to a vast collection of
+algorithmic work on the topic. While many recognize the necessity to
+incorporate explainability features in AI systems, how to address real-world
+user needs for understanding AI remains an open question. By interviewing 20 UX
+and design practitioners working on various AI products, we seek to identify
+gaps between the current XAI algorithmic work and practices to create
+explainable AI products. To do so, we develop an algorithm-informed XAI
+question bank in which user needs for explainability are represented as
+prototypical questions users might ask about the AI, and use it as a study
+probe. Our work contributes insights into the design space of XAI, informs
+efforts to support design practices in this space, and identifies opportunities
+for future XAI work. We also provide an extended XAI question bank and discuss
+how it can be used for creating user-centered XAI.",cs.HC,"cs.SE, cs.HC, cs.AI, cs.LG",4,Human-Computer Interaction,"Software Engineering, Human-Computer Interaction, Artificial Intelligence, Machine Learning",Sarah Miller,"Q. Vera Liao, Daniel Gruen, Sarah Miller",3,http://arxiv.org/pdf/2001.02478v1,http://arxiv.org/abs/2001.02478v1,2020-01-08
+"From Natural Language Instructions to Complex Processes: Issues in
+  Chaining Trigger Action Rules","Automation services for complex business processes usually require a high
+level of information technology literacy. There is a strong demand for a
+smartly assisted process automation (IPA: intelligent process automation)
+service that enables even general users to easily use advanced automation. A
+natural language interface for such automation is expected as an elemental
+technology for the IPA realization. The workflow targeted by IPA is generally
+composed of a combination of multiple tasks. However, semantic parsing, one of
+the natural language processing methods, for such complex workflows has not yet
+been fully studied. The reasons are that (1) the formal expression and grammar
+of the workflow required for semantic analysis have not been sufficiently
+examined and (2) the dataset of the workflow formal expression with its
+corresponding natural language description required for learning workflow
+semantics did not exist. This paper defines a new grammar for complex workflows
+with chaining machine-executable meaning representations for semantic parsing.
+The representations are at a high abstraction level. Additionally, an approach
+to creating datasets is proposed based on this grammar.",cs.AI,"cs.AI, cs.CL",2,Artificial Intelligence,"Artificial Intelligence, Computation and Language",Akiko Aizawa,"Nobuhiro Ito, Yuya Suzuki, Akiko Aizawa",3,http://arxiv.org/pdf/2001.02462v1,http://arxiv.org/abs/2001.02462v1,2020-01-08
+"High-Level Plan for Behavioral Robot Navigation with Natural Language
+  Directions and R-NET","When the navigational environment is known, it can be represented as a graph
+where landmarks are nodes, the robot behaviors that move from node to node are
+edges, and the route is a set of behavioral instructions. The route path from
+source to destination can be viewed as a class of combinatorial optimization
+problems where the path is a sequential subset from a set of discrete items.
+The pointer network is an attention-based recurrent network that is suitable
+for such a task. In this paper, we utilize a modified R-NET with gated
+attention and self-matching attention translating natural language instructions
+to a high-level plan for behavioral robot navigation by developing an
+understanding of the behavioral navigational graph to enable the pointer
+network to produce a sequence of behaviors representing the path. Tests on the
+navigation graph dataset show that our model outperforms the state-of-the-art
+approach for both known and unknown environments.",cs.AI,"cs.LG, cs.AI",2,Artificial Intelligence,"Machine Learning, Artificial Intelligence",Qinru Qiu,"Amar Shrestha, Krittaphat Pugdeethosapol, Haowen Fang, Qinru Qiu",4,http://arxiv.org/pdf/2001.02330v1,http://arxiv.org/abs/2001.02330v1,2020-01-08
+"Emo-CNN for Perceiving Stress from Audio Signals: A Brain Chemistry
+  Approach","Emotion plays a key role in many applications like healthcare, to gather
+patients emotional behavior. There are certain emotions which are given more
+importance due to their effectiveness in understanding human feelings. In this
+paper, we propose an approach that models human stress from audio signals. The
+research challenge in speech emotion detection is defining the very meaning of
+stress and being able to categorize it in a precise manner. Supervised Machine
+Learning models, including state of the art Deep Learning classification
+methods, rely on the availability of clean and labelled data. One of the
+problems in affective computation and emotion detection is the limited amount
+of annotated data of stress. The existing labelled stress emotion datasets are
+highly subjective to the perception of the annotator.
+  We address the first issue of feature selection by exploiting the use of
+traditional MFCC features in Convolutional Neural Network. Our experiments show
+that Emo-CNN consistently and significantly outperforms the popular existing
+methods over multiple datasets. It achieves 90.2% categorical accuracy on the
+Emo-DB dataset. To tackle the second and the more significant problem of
+subjectivity in stress labels, we use Lovheim's cube, which is a 3-dimensional
+projection of emotions. The cube aims at explaining the relationship between
+these neurotransmitters and the positions of emotions in 3D space. The learnt
+emotion representations from the Emo-CNN are mapped to the cube using three
+component PCA (Principal Component Analysis) which is then used to model human
+stress. This proposed approach not only circumvents the need for labelled
+stress data but also complies with the psychological theory of emotions given
+by Lovheim's cube. We believe that this work is the first step towards creating
+a connection between Artificial Intelligence and the chemistry of human
+emotions.",cs.HC,"cs.HC, cs.AI, cs.SD, eess.AS",4,Human-Computer Interaction,"Human-Computer Interaction, Artificial Intelligence, Sound, Audio and Speech Processing",Renaud Seguier,"Anup Anand Deshmukh, Catherine Soladie, Renaud Seguier",3,http://arxiv.org/pdf/2001.02329v1,http://arxiv.org/abs/2001.02329v1,2020-01-08
+The Past and Present of Imitation Learning: A Citation Chain Study,"Imitation Learning is a promising area of active research. Over the last 30
+years, Imitation Learning has advanced significantly and been used to solve
+difficult tasks ranging from Autonomous Driving to playing Atari games. In the
+course of this development, different methods for performing Imitation Learning
+have fallen into and out of favor. In this paper, I explore the development of
+these different methods and attempt to examine how the field has progressed. I
+focus my analysis on surveying 4 landmark papers that sequentially build upon
+each other to develop increasingly impressive Imitation Learning methods.",cs.LG,"cs.LG, cs.AI",2,Machine Learning,"Machine Learning, Artificial Intelligence",Nishanth Kumar,Nishanth Kumar,1,http://arxiv.org/pdf/2001.02328v1,http://arxiv.org/abs/2001.02328v1,2020-01-08
+"SGD with Hardness Weighted Sampling for Distributionally Robust Deep
+  Learning","Distributionally Robust Optimization (DRO) has been proposed as an
+alternative to Empirical Risk Minimization (ERM) in order to account for
+potential biases in the training data distribution. However, its use in deep
+learning has been severely restricted due to the relative inefficiency of the
+optimizers available for DRO in comparison to the wide-spread Stochastic
+Gradient Descent (SGD) based optimizers for deep learning with ERM. We propose
+SGD with Hardness weighted sampling, an efficient optimization method for
+machine learning with DRO with a focus on deep learning. In this work, we
+propose SGD with hardness weighted sampling, a principled and efficient
+optimization method for DRO in machine learning that is particularly suited in
+the context of deep learning. We show that our optimization method can be
+interpreted as a principled Hard Example Mining strategy. Similar to an online
+hard example mining strategy in essence and in practice, the proposed algorithm
+is straightforward to implement and computationally as efficient as SGD-based
+optimizers used for deep learning. It only requires adding a softmax layer and
+maintaining a history of the loss values for each training example to compute
+adaptive sampling probabilities. In contrast to typical ad hoc hard mining
+approaches, and exploiting recent theoretical results in deep learning
+optimization, we We also prove the convergence of our DRO algorithm for
+over-parameterized deep learning networks with ReLU activation and finite
+number of layers and parameters. Preliminary results demonstrate the
+feasibility and usefulness of our approach.",cs.LG,"cs.CV, cs.LG",2,Machine Learning,"Computer Vision and Pattern Recognition, Machine Learning",Tom Vercauteren,"Lucas Fidon, Sebastien Ourselin, Tom Vercauteren",3,http://arxiv.org/pdf/2001.02658v1,http://arxiv.org/abs/2001.02658v1,2020-01-08
+CONSAC: Robust Multi-Model Fitting by Conditional Sample Consensus,"We present a robust estimator for fitting multiple parametric models of the
+same form to noisy measurements. Applications include finding multiple
+vanishing points in man-made scenes, fitting planes to architectural imagery,
+or estimating multiple rigid motions within the same sequence. In contrast to
+previous works, which resorted to hand-crafted search strategies for multiple
+model detection, we learn the search strategy from data. A neural network
+conditioned on previously detected models guides a RANSAC estimator to
+different subsets of all measurements, thereby finding model instances one
+after another. We train our method supervised as well as self-supervised. For
+supervised training of the search strategy, we contribute a new dataset for
+vanishing point estimation. Leveraging this dataset, the proposed algorithm is
+superior with respect to other robust estimators as well as to designated
+vanishing point estimation algorithms. For self-supervised learning of the
+search, we evaluate the proposed algorithm on multi-homography estimation and
+demonstrate an accuracy that is superior to state-of-the-art methods.",cs.CV,cs.CV,1,Computer Vision and Pattern Recognition,Computer Vision and Pattern Recognition,Bodo Rosenhahn,"Florian Kluger, Eric Brachmann, Hanno Ackermann, Carsten Rother, Michael Ying Yang, Bodo Rosenhahn",6,http://arxiv.org/pdf/2001.02643v1,http://arxiv.org/abs/2001.02643v1,2020-01-08
+Don't Forget The Past: Recurrent Depth Estimation from Monocular Video,"Autonomous cars need continuously updated depth information. Thus far, the
+depth is mostly estimated independently for a single frame at a time, even if
+the method starts from video input. Our method produces a time series of depth
+maps, which makes it an ideal candidate for online learning approaches. In
+particular, we put three different types of depth estimation (supervised depth
+prediction, self-supervised depth prediction, and self-supervised depth
+completion) into a common framework. We integrate the corresponding networks
+with a convolutional LSTM such that the spatiotemporal structures of depth
+across frames can be exploited to yield a more accurate depth estimation. Our
+method is flexible. It can be applied to monocular videos only or be combined
+with different types of sparse depth patterns. We carefully study the
+architecture of the recurrent network and its training strategy. We are first
+to successfully exploit recurrent networks for real-time self-supervised
+monocular depth estimation and completion. Extensive experiments show that our
+recurrent method outperforms its image-based counterpart consistently and
+significantly in both self-supervised scenarios. It also outperforms previous
+depth estimation methods of the three popular groups.",cs.CV,"eess.IV, cs.CV, cs.LG, cs.RO",4,Computer Vision and Pattern Recognition,"Image and Video Processing, Computer Vision and Pattern Recognition, Machine Learning, Robotics",Luc Van Gool,"Vaishakh Patil, Wouter Van Gansbeke, Dengxin Dai, Luc Van Gool",4,http://arxiv.org/pdf/2001.02613v1,http://arxiv.org/abs/2001.02613v1,2020-01-08
+"Do As I Do: Transferring Human Motion and Appearance between Monocular
+  Videos with Spatial and Temporal Constraints","Creating plausible virtual actors from images of real actors remains one of
+the key challenges in computer vision and computer graphics. Marker-less human
+motion estimation and shape modeling from images in the wild bring this
+challenge to the fore. Although the recent advances on view synthesis and
+image-to-image translation, currently available formulations are limited to
+transfer solely style and do not take into account the character's motion and
+shape, which are by nature intermingled to produce plausible human forms. In
+this paper, we propose a unifying formulation for transferring appearance and
+retargeting human motion from monocular videos that regards all these aspects.
+Our method is composed of four main components and synthesizes new videos of
+people in a different context where they were initially recorded. Differently
+from recent appearance transferring methods, our approach takes into account
+body shape, appearance and motion constraints. The evaluation is performed with
+several experiments using publicly available real videos containing hard
+conditions. Our method is able to transfer both human motion and appearance
+outperforming state-of-the-art methods, while preserving specific features of
+the motion that must be maintained (e.g., feet touching the floor, hands
+touching a particular object) and holding the best visual quality and
+appearance metrics such as Structural Similarity (SSIM) and Learned Perceptual
+Image Patch Similarity (LPIPS).",cs.CV,cs.CV,1,Computer Vision and Pattern Recognition,Computer Vision and Pattern Recognition,Erickson R. Nascimento,"Thiago L. Gomes, Renato Martins, João Ferreira, Erickson R. Nascimento",4,http://arxiv.org/pdf/2001.02606v1,http://arxiv.org/abs/2001.02606v1,2020-01-08
+Deep Learning for Free-Hand Sketch: A Survey,"Free-hand sketches are highly hieroglyphic and illustrative, which have been
+widely used by humans to depict objects or stories from ancient times to the
+present. The recent prevalence of touchscreen devices has made sketch creation
+a much easier task than ever and consequently made sketch-oriented applications
+increasingly more popular. The prosperity of deep learning has also immensely
+promoted the research for the free-hand sketch. This paper presents a
+comprehensive survey of the free-hand sketch oriented deep learning techniques.
+The main contents of this survey include: (i) The intrinsic traits and
+domain-unique challenges of the free-hand sketch are discussed, to clarify the
+essential differences between free-hand sketch and other data modalities, e.g.,
+natural photo. (ii) The development of the free-hand sketch community in the
+deep learning era is reviewed, by surveying the existing datasets, research
+topics, and the state-of-the-art methods via a detailed taxonomy. (iii)
+Moreover, the bottlenecks, open problems, and potential research directions of
+this community have also been discussed to promote the future works.",cs.CV,"cs.GR, cs.CV, cs.LG",3,Computer Vision and Pattern Recognition,"Graphics, Computer Vision and Pattern Recognition, Machine Learning",Peng Xu,Peng Xu,1,http://arxiv.org/pdf/2001.02600v1,http://arxiv.org/abs/2001.02600v1,2020-01-08
+An Analysis of Object Representations in Deep Visual Trackers,"Fully convolutional deep correlation networks are integral components of
+state-of the-art approaches to single object visual tracking. It is commonly
+assumed that these networks perform tracking by detection by matching features
+of the object instance with features of the entire frame. Strong architectural
+priors and conditioning on the object representation is thought to encourage
+this tracking strategy. Despite these strong priors, we show that deep trackers
+often default to tracking by saliency detection - without relying on the object
+instance representation. Our analysis shows that despite being a useful prior,
+salience detection can prevent the emergence of more robust tracking strategies
+in deep networks. This leads us to introduce an auxiliary detection task that
+encourages more discriminative object representations that improve tracking
+performance.",cs.CV,cs.CV,1,Computer Vision and Pattern Recognition,Computer Vision and Pattern Recognition,Debidatta Dwibedi,"Ross Goroshin, Jonathan Tompson, Debidatta Dwibedi",3,http://arxiv.org/pdf/2001.02593v1,http://arxiv.org/abs/2001.02593v1,2020-01-08
+"Fast Neural Network Adaptation via Parameter Remapping and Architecture
+  Search","Deep neural networks achieve remarkable performance in many computer vision
+tasks. Most state-of-the-art (SOTA) semantic segmentation and object detection
+approaches reuse neural network architectures designed for image classification
+as the backbone, commonly pre-trained on ImageNet. However, performance gains
+can be achieved by designing network architectures specifically for detection
+and segmentation, as shown by recent neural architecture search (NAS) research
+for detection and segmentation. One major challenge though, is that ImageNet
+pre-training of the search space representation (a.k.a. super network) or the
+searched networks incurs huge computational cost. In this paper, we propose a
+Fast Neural Network Adaptation (FNA) method, which can adapt both the
+architecture and parameters of a seed network (e.g. a high performing manually
+designed backbone) to become a network with different depth, width, or kernels
+via a Parameter Remapping technique, making it possible to utilize NAS for
+detection/segmentation tasks a lot more efficiently. In our experiments, we
+conduct FNA on MobileNetV2 to obtain new networks for both segmentation and
+detection that clearly out-perform existing networks designed both manually and
+by NAS. The total computation cost of FNA is significantly less than SOTA
+segmentation/detection NAS approaches: 1737$\times$ less than DPC, 6.8$\times$
+less than Auto-DeepLab and 7.4$\times$ less than DetNAS. The code is available
+at https://github.com/JaminFong/FNA.",cs.CV,cs.CV,1,Computer Vision and Pattern Recognition,Computer Vision and Pattern Recognition,Xinggang Wang,"Jiemin Fang, Yuzhu Sun, Kangjian Peng, Qian Zhang, Yuan Li, Wenyu Liu, Xinggang Wang",7,http://arxiv.org/pdf/2001.02525v1,http://arxiv.org/abs/2001.02525v1,2020-01-08
+Deep OCT Angiography Image Generation for Motion Artifact Suppression,"Eye movements, blinking and other motion during the acquisition of optical
+coherence tomography (OCT) can lead to artifacts, when processed to OCT
+angiography (OCTA) images. Affected scans emerge as high intensity (white) or
+missing (black) regions, resulting in lost information. The aim of this
+research is to fill these gaps using a deep generative model for OCT to OCTA
+image translation relying on a single intact OCT scan. Therefore, a U-Net is
+trained to extract the angiographic information from OCT patches. At inference,
+a detection algorithm finds outlier OCTA scans based on their surroundings,
+which are then replaced by the trained network. We show that generative models
+can augment the missing scans. The augmented volumes could then be used for 3-D
+segmentation or increase the diagnostic value.",eess.IV,"eess.IV, cs.CV",2,Image and Video Processing,"Image and Video Processing, Computer Vision and Pattern Recognition",Andreas K. Maier,"Julian Hossbach, Lennart Husvogt, Martin F. Kraus, James G. Fujimoto, Andreas K. Maier",5,http://arxiv.org/pdf/2001.02512v1,http://arxiv.org/abs/2001.02512v1,2020-01-08
+"Table Structure Extraction with Bi-directional Gated Recurrent Unit
+  Networks","Tables present summarized and structured information to the reader, which
+makes table structure extraction an important part of document understanding
+applications. However, table structure identification is a hard problem not
+only because of the large variation in the table layouts and styles, but also
+owing to the variations in the page layouts and the noise contamination levels.
+A lot of research has been done to identify table structure, most of which is
+based on applying heuristics with the aid of optical character recognition
+(OCR) to hand pick layout features of the tables. These methods fail to
+generalize well because of the variations in the table layouts and the errors
+generated by OCR. In this paper, we have proposed a robust deep learning based
+approach to extract rows and columns from a detected table in document images
+with a high precision. In the proposed solution, the table images are first
+pre-processed and then fed to a bi-directional Recurrent Neural Network with
+Gated Recurrent Units (GRU) followed by a fully-connected layer with soft max
+activation. The network scans the images from top-to-bottom as well as
+left-to-right and classifies each input as either a row-separator or a
+column-separator. We have benchmarked our system on publicly available UNLV as
+well as ICDAR 2013 datasets on which it outperformed the state-of-the-art table
+structure extraction systems by a significant margin.",cs.CV,"cs.CV, cs.IT, math.IT",3,Computer Vision and Pattern Recognition,"Computer Vision and Pattern Recognition, Information Theory, Information Theory",Faisal Shafait,"Saqib Ali Khan, Syed Muhammad Daniyal Khalid, Muhammad Ali Shahzad, Faisal Shafait",4,http://arxiv.org/pdf/2001.02501v1,http://arxiv.org/abs/2001.02501v1,2020-01-08
+"Disentangling Representations using Gaussian Processes in Variational
+  Autoencoders for Video Prediction","We introduce MGP-VAE, a variational autoencoder which uses Gaussian processes
+(GP) to model the latent space distribution. We employ MGP-VAE for the
+unsupervised learning of video sequences to obtain disentangled
+representations. Previous work in this area has mainly been confined to
+separating dynamic information from static content. We improve on previous
+results by establishing a framework by which multiple features, static or
+dynamic, can be disentangled. Specifically we use fractional Brownian motions
+(fBM) and Brownian bridges (BB) to enforce an inter-frame correlation structure
+in each independent channel. We show that varying this correlation structure
+enables one to capture different aspects of variation in the data. We
+demonstrate the quality of our disentangled representations on numerous
+experiments on three publicly available datasets, and also perform quantitative
+tests on a video prediction task. In addition, we introduce a novel geodesic
+loss function which takes into account the curvature of the data manifold to
+improve learning in the prediction task. Our experiments show quantitatively
+that the combination of our improved disentangled representations with the
+novel loss function enable MGP-VAE to outperform the state-of-the-art in video
+prediction.",cs.CV,cs.CV,1,Computer Vision and Pattern Recognition,Computer Vision and Pattern Recognition,Nengli Lim,"Sarthak Bhagat, Shagun Uppal, Vivian Yin, Nengli Lim",4,http://arxiv.org/pdf/2001.02408v1,http://arxiv.org/abs/2001.02408v1,2020-01-08
+"SPACE: Unsupervised Object-Oriented Scene Representation via Spatial
+  Attention and Decomposition","The ability to decompose complex multi-object scenes into meaningful
+abstractions like objects is fundamental to achieve higher-level cognition.
+Previous approaches for unsupervised object-oriented scene representation
+learning are either based on spatial-attention or scene-mixture approaches and
+limited in scalability which is a main obstacle towards modeling real-world
+scenes. In this paper, we propose a generative latent variable model, called
+SPACE, that provides a unified probabilistic modeling framework that combines
+the best of spatial-attention and scene-mixture approaches. SPACE can
+explicitly provide factorized object representations for foreground objects
+while also decomposing background segments of complex morphology. Previous
+models are good at either of these, but not both. SPACE also resolves the
+scalability problems of previous methods by incorporating parallel
+spatial-attention and thus is applicable to scenes with a large number of
+objects without performance degradations. We show through experiments on Atari
+and 3D-Rooms that SPACE achieves the above properties consistently in
+comparison to SPAIR, IODINE, and GENESIS. Results of our experiments can be
+found on our project website: https://sites.google.com/view/space-project-page",cs.LG,"eess.IV, cs.CV, cs.LG, stat.ML",4,Machine Learning,"Image and Video Processing, Computer Vision and Pattern Recognition, Machine Learning, Machine Learning",Sungjin Ahn,"Zhixuan Lin, Yi-Fu Wu, Skand Vishwanath Peri, Weihao Sun, Gautam Singh, Fei Deng, Jindong Jiang, Sungjin Ahn",8,http://arxiv.org/pdf/2001.02407v1,http://arxiv.org/abs/2001.02407v1,2020-01-08
+Streaming automatic speech recognition with the transformer model,"Encoder-decoder based sequence-to-sequence models have demonstrated
+state-of-the-art results in end-to-end automatic speech recognition (ASR).
+Recently, the transformer architecture, which uses self-attention to model
+temporal context information, has been shown to achieve significantly lower
+word error rates (WERs) compared to recurrent neural network (RNN) based system
+architectures. Despite its success, the practical usage is limited to offline
+ASR tasks, since encoder-decoder architectures typically require an entire
+speech utterance as input. In this work, we propose a transformer based
+end-to-end ASR system for streaming ASR, where an output must be generated
+shortly after each spoken word. To achieve this, we apply time-restricted
+self-attention for the encoder and triggered attention for the encoder-decoder
+attention mechanism. Our proposed streaming transformer architecture achieves
+2.7% and 7.0% WER for the ``clean'' and ``other'' test data of LibriSpeech,
+which to the best of our knowledge is the best published streaming end-to-end
+ASR result for this task.",cs.SD,"cs.LG, cs.CL, eess.AS, cs.SD, stat.ML",5,Sound,"Machine Learning, Computation and Language, Audio and Speech Processing, Sound, Machine Learning",Jonathan Le Roux,"Niko Moritz, Takaaki Hori, Jonathan Le Roux",3,http://arxiv.org/pdf/2001.02674v1,http://arxiv.org/abs/2001.02674v1,2020-01-08
+"A Correspondence Analysis Framework for Author-Conference
+  Recommendations","For many years, achievements and discoveries made by scientists are made
+aware through research papers published in appropriate journals or conferences.
+Often, established scientists and especially newbies are caught up in the
+dilemma of choosing an appropriate conference to get their work through. Every
+scientific conference and journal is inclined towards a particular field of
+research and there is a vast multitude of them for any particular field.
+Choosing an appropriate venue is vital as it helps in reaching out to the right
+audience and also to further one's chance of getting their paper published. In
+this work, we address the problem of recommending appropriate conferences to
+the authors to increase their chances of acceptance. We present three different
+approaches for the same involving the use of social network of the authors and
+the content of the paper in the settings of dimensionality reduction and topic
+modeling. In all these approaches, we apply Correspondence Analysis (CA) to
+derive appropriate relationships between the entities in question, such as
+conferences and papers. Our models show promising results when compared with
+existing methods such as content-based filtering, collaborative filtering and
+hybrid filtering.",cs.IR,"cs.IR, cs.LG, cs.CL, cs.SI, stat.ML",5,Information Retrieval,"Information Retrieval, Machine Learning, Computation and Language, Social and Information Networks, Machine Learning",Vijaya Saradhi,"Rahul Radhakrishnan Iyer, Manish Sharma, Vijaya Saradhi",3,http://arxiv.org/pdf/2001.02669v1,http://arxiv.org/abs/2001.02669v1,2020-01-08
+Stochastic probabilistic programs,"We introduce the notion of a stochastic probabilistic program and present a
+reference implementation of a probabilistic programming facility supporting
+specification of stochastic probabilistic programs and inference in them.
+Stochastic probabilistic programs allow straightforward specification and
+efficient inference in models with nuisance parameters, noise, and
+nondeterminism. We give several examples of stochastic probabilistic programs,
+and compare the programs with corresponding deterministic probabilistic
+programs in terms of model specification and inference. We conclude with
+discussion of open research topics and related work.",stat.ML,"cs.LG, cs.PL, stat.ML",3,Machine Learning,"Machine Learning, Programming Languages, Machine Learning",Tomer Dobkin,"David Tolpin, Tomer Dobkin",2,http://arxiv.org/pdf/2001.02656v1,http://arxiv.org/abs/2001.02656v1,2020-01-08
+Sample-based Distributional Policy Gradient,"Distributional reinforcement learning (DRL) is a recent reinforcement
+learning framework whose success has been supported by various empirical
+studies. It relies on the key idea of replacing the expected return with the
+return distribution, which captures the intrinsic randomness of the long term
+rewards. Most of the existing literature on DRL focuses on problems with
+discrete action space and value based methods. In this work, motivated by
+applications in robotics with continuous action space control settings, we
+propose sample-based distributional policy gradient (SDPG) algorithm. It models
+the return distribution using samples via a reparameterization technique widely
+used in generative modeling and inference. We compare SDPG with the
+state-of-art policy gradient method in DRL, distributed distributional
+deterministic policy gradients (D4PG), which has demonstrated state-of-art
+performance. We apply SDPG and D4PG to multiple OpenAI Gym environments and
+observe that our algorithm shows better sample efficiency as well as higher
+reward for most tasks.",cs.LG,"cs.LG, stat.ML",2,Machine Learning,"Machine Learning, Machine Learning",Yongxin Chen,"Rahul Singh, Keuntaek Lee, Yongxin Chen",3,http://arxiv.org/pdf/2001.02652v1,http://arxiv.org/abs/2001.02652v1,2020-01-08
+iDLG: Improved Deep Leakage from Gradients,"It is widely believed that sharing gradients will not leak private training
+data in distributed learning systems such as Collaborative Learning and
+Federated Learning, etc. Recently, Zhu et al. presented an approach which shows
+the possibility to obtain private training data from the publicly shared
+gradients. In their Deep Leakage from Gradient (DLG) method, they synthesize
+the dummy data and corresponding labels with the supervision of shared
+gradients. However, DLG has difficulty in convergence and discovering the
+ground-truth labels consistently. In this paper, we find that sharing gradients
+definitely leaks the ground-truth labels. We propose a simple but reliable
+approach to extract accurate data from the gradients. Particularly, our
+approach can certainly extract the ground-truth labels as opposed to DLG, hence
+we name it Improved DLG (iDLG). Our approach is valid for any differentiable
+model trained with cross-entropy loss over one-hot labels. We mathematically
+illustrate how our method can extract ground-truth labels from the gradients
+and empirically demonstrate the advantages over DLG.",cs.LG,"cs.LG, stat.ML",2,Machine Learning,"Machine Learning, Machine Learning",Hakan Bilen,"Bo Zhao, Konda Reddy Mopuri, Hakan Bilen",3,http://arxiv.org/pdf/2001.02610v1,http://arxiv.org/abs/2001.02610v1,2020-01-08
+"Machine learning enables completely automatic tuning of a quantum device
+  faster than human experts","Device variability is a bottleneck for the scalability of semiconductor
+quantum devices. Increasing device control comes at the cost of a large
+parameter space that has to be explored in order to find the optimal operating
+conditions. We demonstrate a statistical tuning algorithm that navigates this
+entire parameter space, using just a few modelling assumptions, in the search
+for specific electron transport features. We focused on gate-defined quantum
+dot devices, demonstrating fully automated tuning of two different devices to
+double quantum dot regimes in an up to eight-dimensional gate voltage space. We
+considered a parameter space defined by the maximum range of each gate voltage
+in these devices, demonstrating expected tuning in under 70 minutes. This
+performance exceeded a human benchmark, although we recognise that there is
+room for improvement in the performance of both humans and machines. Our
+approach is approximately 180 times faster than a pure random search of the
+parameter space, and it is readily applicable to different material systems and
+device architectures. With an efficient navigation of the gate voltage space we
+are able to give a quantitative measurement of device variability, from one
+device to another and after a thermal cycle of a device. This is a key
+demonstration of the use of machine learning techniques to explore and optimise
+the parameter space of quantum devices and overcome the challenge of device
+variability.",cond-mat.mes-hall,"cs.LG, quant-ph, cond-mat.mes-hall",3,Mesoscale and Nanoscale Physics,"Machine Learning, Quantum Physics, Mesoscale and Nanoscale Physics",N. Ares,"H. Moon, D. T. Lennon, J. Kirkpatrick, N. M. van Esbroeck, L. C. Camenzind, Liuqi Yu, F. Vigneau, D. M. Zumbühl, G. A. D. Briggs, M. A Osborne, D. Sejdinovic, E. A. Laird, N. Ares",13,http://arxiv.org/pdf/2001.02589v1,http://arxiv.org/abs/2001.02589v1,2020-01-08
+"Learning Dynamic and Personalized Comorbidity Networks from Event Data
+  using Deep Diffusion Processes","Comorbid diseases co-occur and progress via complex temporal patterns that
+vary among individuals. In electronic medical records, we only observe onsets
+of diseases, but not their triggering comorbidities i.e., the mechanisms
+underlying temporal relations between diseases need to be inferred. Learning
+such temporal patterns from event data is crucial for understanding disease
+pathology and predicting prognoses. To this end, we develop deep diffusion
+processes (DDP) to model ''dynamic comorbidity networks'', i.e., the temporal
+relationships between comorbid disease onsets expressed through a dynamic
+graph. A DDP comprises events modelled as a multi-dimensional point process,
+with an intensity function parameterized by the edges of a dynamic weighted
+graph. The graph structure is modulated by a neural network that maps patient
+history to edge weights, enabling rich temporal representations for disease
+trajectories. The DDP parameters decouple into clinically meaningful
+components, which enables serving the dual purpose of accurate risk prediction
+and intelligible representation of disease pathology. We illustrate these
+features in experiments using cancer registry data.",cs.LG,"cs.LG, stat.ML",2,Machine Learning,"Machine Learning, Machine Learning",Mihaela van der Schaar,"Zhaozhi Qian, Ahmed M. Alaa, Alexis Bellot, Jem Rashbass, Mihaela van der Schaar",5,http://arxiv.org/pdf/2001.02585v1,http://arxiv.org/abs/2001.02585v1,2020-01-08
+A Group Norm Regularized LRR Factorization Model for Spectral Clustering,"Spectral clustering is a very important and classic graph clustering method.
+Its clustering results are heavily dependent on affine matrix produced by data.
+Solving Low-Rank Representation~(LRR) problems is a very effective method to
+obtain affine matrix. This paper proposes LRR factorization model based on
+group norm regularization and uses Augmented Lagrangian Method~(ALM) algorithm
+to solve this model. We adopt group norm regularization to make the columns of
+the factor matrix sparse, thereby achieving the purpose of low rank. And no
+Singular Value Decomposition~(SVD) is required, computational complexity of
+each step is great reduced. We get the affine matrix by different LRR model and
+then perform cluster testing on synthetic noise data and real data~(Hopkin155
+and EYaleB) respectively. Compared to traditional models and algorithms, ours
+are faster to solve affine matrix and more robust to noise. The final
+clustering results are better. And surprisingly, the numerical results show
+that our algorithm converges very fast, and the convergence condition is
+satisfied in only about ten steps. Group norm regularized LRR factorization
+model with the algorithm designed for it is effective and fast to obtain a
+better affine matrix.",cs.LG,"cs.LG, stat.ML",2,Machine Learning,"Machine Learning, Machine Learning",Hui Wang,"Xishun Wang, Zhouwang Yang, Xingye Yue, Hui Wang",4,http://arxiv.org/pdf/2001.02568v1,http://arxiv.org/abs/2001.02568v1,2020-01-08
+On the Evaluation of Intelligence Process Automation,"Intelligent Process Automation (IPA) is emerging as a sub-field of AI to
+support the automation of long-tail processes which requires the coordination
+of tasks across different systems. So far, the field of IPA has been largely
+driven by systems and use cases, lacking a more formal definition of the task
+and its assessment. This paper aims to address this gap by providing a
+formalisation of IPA and by proposing specific metrics to support the empirical
+evaluation of IPA systems. This work also compares and contrasts IPA against
+related tasks such as end-user programming and program synthesis.",cs.HC,"cs.SE, cs.HC",2,Human-Computer Interaction,"Software Engineering, Human-Computer Interaction",Andre Freitas,"Deborah Ferreira, Julia Rozanova, Krishna Dubba, Dell Zhang, Andre Freitas",5,http://arxiv.org/pdf/2001.02639v1,http://arxiv.org/abs/2001.02639v1,2020-01-08
+Perception and Acceptance of an Autonomous Refactoring Bot,"The use of autonomous bots for automatic support in software development
+tasks is increasing. In the past, however, they were not always perceived
+positively and sometimes experienced a negative bias compared to their human
+counterparts. We conducted a qualitative study in which we deployed an
+autonomous refactoring bot for 41 days in a student software development
+project. In between and at the end, we conducted semi-structured interviews to
+find out how developers perceive the bot and whether they are more or less
+critical when reviewing the contributions of a bot compared to human
+contributions. Our findings show that the bot was perceived as a useful and
+unobtrusive contributor, and developers were no more critical of it than they
+were about their human colleagues, but only a few team members felt responsible
+for the bot.",cs.SE,"cs.SE, cs.HC",2,Software Engineering,"Software Engineering, Human-Computer Interaction",Riccardo Scandariato,"Marvin Wyrich, Regina Hebig, Stefan Wagner, Riccardo Scandariato",4,http://arxiv.org/pdf/2001.02553v1,http://arxiv.org/abs/2001.02553v1,2020-01-08
+"Comparing Python, Go, and C++ on the N-Queens Problem","Python currently is the dominant language in the field of Machine Learning
+but is often criticized for being slow to perform certain tasks. In this
+report, we use the well-known $N$-queens puzzle as a benchmark to show that
+once compiled using the Numba compiler it becomes competitive with C++ and Go
+in terms of execution speed while still allowing for very fast prototyping.
+This is true of both sequential and parallel programs. In most cases that arise
+in an academic environment, it therefore makes sense to develop in ordinary
+Python, identify computational bottlenecks, and use Numba to remove them.",cs.SE,"cs.SE, cs.MS",2,Software Engineering,"Software Engineering, Mathematical Software",Krzysztof Lis,"Pascal Fua, Krzysztof Lis",2,http://arxiv.org/pdf/2001.02491v1,http://arxiv.org/abs/2001.02491v1,2020-01-08
+"Comparing Constraints Mined From Execution Logs to Understand Software
+  Evolution","Complex software systems evolve frequently, e.g., when introducing new
+features or fixing bugs during maintenance. However, understanding the impact
+of such changes on system behavior is often difficult. Many approaches have
+thus been proposed that analyze systems before and after changes, e.g., by
+comparing source code, model-based representations, or system execution logs.
+In this paper, we propose an approach for comparing run-time constraints,
+synthesized by a constraint mining algorithm, based on execution logs recorded
+before and after changes. Specifically, automatically mined constraints define
+the expected timing and order of recurring events and the values of data
+elements attached to events. Our approach presents the differences of the mined
+constraints to users, thereby providing a higher-level view on software
+evolution and supporting the analysis of the impact of changes on system
+behavior. We present a motivating example and a preliminary evaluation based on
+a cyber-physical system controlling unmanned aerial vehicles. The results of
+our preliminary evaluation show that our approach can help to analyze changed
+behavior and thus contributes to understanding software evolution.",cs.SE,cs.SE,1,Software Engineering,Software Engineering,Paul Grünbacher,"Thomas Krismayer, Michael Vierhauser, Rick Rabiser, Paul Grünbacher",4,http://arxiv.org/pdf/2001.02467v1,http://arxiv.org/abs/2001.02467v1,2020-01-08
+Learning to Encode and Classify Test Executions,"The challenge of automatically determining the correctness of test executions
+is referred to as the test oracle problem and is one of the key remaining
+issues for automated testing. The goal in this paper is to solve the test
+oracle problem in a way that is general, scalable and accurate.
+  To achieve this, we use supervised learning over test execution traces. We
+label a small fraction of the execution traces with their verdict of pass or
+fail. We use the labelled traces to train a neural network (NN) model to learn
+to distinguish runtime patterns for passing versus failing executions for a
+given program. Our approach for building this NN model involves the following
+steps, 1. Instrument the program to record execution traces as sequences of
+method invocations and global state, 2. Label a small fraction of the execution
+traces with their verdicts, 3. Designing a NN component that embeds information
+in execution traces to fixed length vectors, 4. Design a NN model that uses the
+trace information for classification, 5. Evaluate the inferred classification
+model on unseen execution traces from the program.
+  We evaluate our approach using case studies from different application
+domains: 1. Module from Ethereum Blockchain, 2. Module from PyTorch deep
+learning framework, 3. Microsoft SEAL encryption library components, 4. Sed
+stream editor, 5. Value pointer library and 6. Nine network protocols from
+Linux packet identifier, L7-Filter. We found the classification models for all
+subject programs resulted in high precision, recall and specificity, over 95%,
+while only training with an average 9% of the total traces. Our experiments
+show that the proposed neural network model is highly effective as a test
+oracle and is able to learn runtime patterns to distinguish passing and failing
+test executions for systems and tests from different application domains.",cs.SE,"cs.SE, cs.LG",2,Software Engineering,"Software Engineering, Machine Learning",Miltiadis Allamanis,"Foivos Tsimpourlas, Ajitha Rajan, Miltiadis Allamanis",3,http://arxiv.org/pdf/2001.02444v1,http://arxiv.org/abs/2001.02444v1,2020-01-08
+"Spectral estimation for non-linear long range dependent discrete time
+  trawl processes","Discrete time trawl processes constitute a large class of time series
+parameterized by a trawl sequence (a j) j$\in$N and defined though a sequence
+of independent and identically distributed (i.i.d.) copies of a continuous time
+process ($\gamma$(t)) t$\in$R called the seed process. They provide a general
+framework for modeling linear or non-linear long range dependent time series.
+We investigate the spectral estimation, either pointwise or broadband, of long
+range dependent discrete-time trawl processes. The difficulty arising from the
+variety of seed processes and of trawl sequences is twofold. First, the
+spectral density may take different forms, often including smooth additive
+correction terms. Second, trawl processes with similar spectral densities may
+exhibit very different statistical behaviors. We prove the consistency of our
+estimators under very general conditions and we show that a wide class of trawl
+processes satisfy them. This is done in particular by introducing a weighted
+weak dependence index that can be of independent interest. The broadband
+spectral estimator includes an estimator of the long memory parameter. We
+complete this work with numerical experiments to evaluate the finite sample
+size performance of this estimator for various integer valued discrete time
+trawl processes.",math.ST,"math.ST, stat.TH",2,Statistics Theory,"Statistics Theory, Statistics Theory",Joseph Rynkiewicz,"Paul Doukhan, François Roueff, Joseph Rynkiewicz",3,http://arxiv.org/pdf/2001.02579v1,http://arxiv.org/abs/2001.02579v1,2020-01-08
+Tests for detecting risk equivalent portfolios,"The aim of this paper is the development of consistent tests for the
+comparison of the distributions of two possibly dependent portfolios. The tests
+can be used to check whether the two portfolios are risk equivalent. The
+related testing problem can be endowed into a more general paired data
+framework by testing marginal homogeneity of bivariate functional data, or even
+paired random variables taking values in a general Hilbert space. To address
+this problem, we apply a Cram\'er-von-Mises type test statistic and suggest a
+bootstrap as well as permutation procedure to obtain critical values. The
+usually desired properties of a bootstrap and permutation test can be derived,
+that are asymptotic exactness under the null hypothesis and consistency under
+alternatives. Simulations demonstrate the quality of the tests in the finite
+sample case and confirm the theoretical findings. Finally, we illustrate the
+application of the approach by comparing real financial time series.",stat.ME,"stat.ME, math.ST, stat.TH",3,Methodology,"Methodology, Statistics Theory, Statistics Theory",Daniel Gaigall,"Marc Ditzhaus, Daniel Gaigall",2,http://arxiv.org/pdf/2001.02488v1,http://arxiv.org/abs/2001.02488v1,2020-01-08
+"Taylor Moment Expansion for Continuous-Discrete Gaussian Filtering and
+  Smoothing","The paper is concerned with non-linear Gaussian filtering and smoothing in
+continuous-discrete state-space models, where the dynamic model is formulated
+as an It\^{o} stochastic differential equation (SDE), and the measurements are
+obtained at discrete time instants. We propose novel Taylor moment expansion
+(TME) Gaussian filter and smoother which approximate the moments of the SDE
+with a temporal Taylor expansion. Differently from classical linearisation or
+It\^{o}--Taylor approaches, the Taylor expansion is formed for the moment
+functions directly and in time variable, not by using a Taylor expansion on the
+non-linear functions in the model. We analyse the theoretical properties,
+including the positive definiteness of the covariance estimate and stability of
+the TME Gaussian filter and smoother. By numerical experiments, we demonstrate
+that the proposed TME Gaussian filter and smoother significantly outperform the
+state-of-the-art methods in terms of estimation accuracy and numerical
+stability.",stat.ME,"stat.ME, math.ST, stat.ML, stat.TH",4,Methodology,"Methodology, Statistics Theory, Machine Learning, Statistics Theory",Simo Särkkä,"Zheng Zhao, Toni Karvonen, Roland Hostettler, Simo Särkkä",4,http://arxiv.org/pdf/2001.02466v1,http://arxiv.org/abs/2001.02466v1,2020-01-08
+"Deep Reinforcement Learning in Fluid Mechanics: a promising method for
+  both Active Flow Control and Shape Optimization","In recent years, Artificial Neural Networks (ANNs) and Deep Learning have
+become increasingly popular across a wide range of scientific and technical
+fields, including Fluid Mechanics. While it will take time to fully grasp the
+potentialities as well as the limitations of these methods, evidence is
+starting to accumulate that point to their potential in helping solve problems
+for which no theoretically optimal solution method is known. This is
+particularly true in Fluid Mechanics, where problems involving optimal control
+and optimal design are involved. Indeed, such problems are famously difficult
+to solve effectively with traditional methods due to the combination of non
+linearity, non convexity, and high dimensionality they involve. By contrast,
+Deep Reinforcement Learning (DRL), a method of optimization based on teaching
+empirical strategies to an ANN through trial and error, is well adapted to
+solving such problems. In this short review, we offer an insight into the
+current state of the art of the use of DRL within fluid mechanics, focusing on
+control and optimal design problems.",physics.flu-dyn,"physics.comp-ph, physics.flu-dyn",2,Fluid Dynamics,"Computational Physics, Fluid Dynamics",Hui Xu,"Jean Rabault, Feng Ren, Wei Zhang, Hui Tang, Hui Xu",5,http://arxiv.org/pdf/2001.02464v1,http://arxiv.org/abs/2001.02464v1,2020-01-08
+"RESPACK: An ab initio tool for derivation of effective low-energy model
+  of material","RESPACK is a first-principles calculation software for evaluating the
+interaction parameters of materials and is able to calculate maximally
+localized Wannier functions, response functions based on the random phase
+approximation and related optical properties, and frequency-dependent
+electronic interaction parameters. RESPACK receives its input data from a
+band-calculation code using norm-conserving pseudopotentials with plane-wave
+basis sets. Automatic generation scripts that convert the band-structure
+results to the RESPACK inputs are prepared for xTAPP and Quantum ESPRESSO. An
+input file for specifying the RESPACK calculation conditions is designed
+pursuing simplicity and is given in the Fortran namelist format. RESPACK
+supports hybrid parallelization using OpenMP and MPI and can treat large
+systems including a few hundred atoms in the calculation cell.",cond-mat.str-el,"cond-mat.str-el, physics.comp-ph, cond-mat.mtrl-sci",3,Strongly Correlated Electrons,"Strongly Correlated Electrons, Computational Physics, Materials Science",Yuichi Motoyama,"Kazuma Nakamura, Yoshihide Yoshimoto, Yusuke Nomura, Terumasa Tadano, Mitsuaki Kawamura, Taichi Kosugi, Kazuyoshi Yoshimi, Takahiro Misawa, Yuichi Motoyama",9,http://arxiv.org/pdf/2001.02351v1,http://arxiv.org/abs/2001.02351v1,2020-01-08
+"Self-gravitational Force Calculation of Second Order Accuracy Using
+  Multigrid Method on Nested Grids","We present a simple and effective multigrid-based Poisson solver of
+second-order accuracy in both gravitational potential and forces in terms of
+the one, two and infinity norms. The method is especially suitable for
+numerical simulations using nested mesh refinement. The Poisson equation is
+solved from coarse to fine levels using a one-way interface scheme. We
+introduce anti-symmetrically linear interpolation for evaluating the boundary
+conditions across the multigrid hierarchy. The spurious forces commonly
+observed at the interfaces between refinement levels are effectively
+suppressed. We validate the method using two- and three-dimensional
+density-force pairs that are sufficiently smooth for probing the order of
+accuracy.",physics.comp-ph,"physics.comp-ph, astro-ph.IM",2,Computational Physics,"Computational Physics, Instrumentation and Methods for Astrophysics",Chien-Chang Yen,"Hsiang-Hsu Wang, Chien-Chang Yen",2,http://arxiv.org/pdf/2001.02327v1,http://arxiv.org/abs/2001.02327v1,2020-01-08
+Unsupervised Manifold Clustering of Topological Phononics,"Classification of topological phononics is challenging due to the lack of
+universal topological invariants and the randomness of structure patterns.
+Here, we show the unsupervised manifold learning for clustering topological
+phononics without any priori knowledge, neither topological invariants nor
+supervised trainings, even when systems are imperfect or disordered. This is
+achieved by exploiting the real-space projection operator about finite phononic
+lattices to describe the correlation between oscillators. We exemplify the
+efficient unsupervised manifold clustering in typical phononic systems,
+including one-dimensional Su-Schrieffer-Heeger-type phononic chain with random
+couplings, amorphous phononic topological insulators, higher-order phononic
+topological states and non-Hermitian phononic chain with random dissipations.
+The results would inspire more efforts on applications of unsupervised machine
+learning for topological phononic devices and beyond.",cond-mat.dis-nn,"cond-mat.dis-nn, physics.data-an, cond-mat.mes-hall",3,Disordered Systems and Neural Networks,"Disordered Systems and Neural Networks, Data Analysis, Statistics and Probability, Mesoscale and Nanoscale Physics",Hong Chen,"Yang Long, Jie Ren, Hong Chen",3,http://arxiv.org/pdf/2001.02661v1,http://arxiv.org/abs/2001.02661v1,2020-01-08
+"An empirical, Bayesian approach to modelling the impact of weather on
+  crop yield: maize in the US","We apply an empirical, data-driven approach for describing crop yield as a
+function of monthly temperature and precipitation by employing generative
+probabilistic models with parameters determined through Bayesian inference. Our
+approach is applied to state-scale maize yield and meteorological data for the
+US Corn Belt from 1981 to 2014 as an exemplar, but would be readily
+transferable to other crops, locations and spatial scales. Experimentation with
+a number of models shows that maize growth rates can be characterised by a
+two-dimensional Gaussian function of temperature and precipitation with monthly
+contributions accumulated over the growing period. This approach accounts for
+non-linear growth responses to the individual meteorological variables, and
+allows for interactions between them. Our models correctly identify that
+temperature and precipitation have the largest impact on yield in the six
+months prior to the harvest, in agreement with the typical growing season for
+US maize (April to September). Maximal growth rates occur for monthly mean
+temperature 18-19$^\circ$C, corresponding to a daily maximum temperature of
+24-25$^\circ$C (in broad agreement with previous work) and monthly total
+precipitation 115 mm. Our approach also provides a self-consistent way of
+investigating climate change impacts on current US maize varieties in the
+absence of adaptation measures. Keeping precipitation and growing area fixed, a
+temperature increase of $2^\circ$C, relative to 1981-2014, results in the mean
+yield decreasing by 8\%, while the yield variance increases by a factor of
+around 3. We thus provide a flexible, data-driven framework for exploring the
+impacts of natural climate variability and climate change on globally
+significant crops based on their observed behaviour. In concert with other
+approaches, this can help inform the development of adaptation strategies that
+will ensure food security under a changing climate.",physics.ao-ph,"physics.ao-ph, physics.data-an",2,Atmospheric and Oceanic Physics,"Atmospheric and Oceanic Physics, Data Analysis, Statistics and Probability",James Bacon,"Raphael Shirley, Edward Pope, Myles Bartlett, Seb Oliver, Novi Quadrianto, Peter Hurley, Steven Duivenvoorden, Phil Rooney, Adam B. Barrett, Chris Kent, James Bacon",11,http://arxiv.org/pdf/2001.02614v1,http://arxiv.org/abs/2001.02614v1,2020-01-08
+"Investigating Multiwavelength Lognormality with Simulations : Case of
+  Mrk 421","Blazars are highly variable and display complex characteristics. A key
+characteristic is the flux probability distribution function or flux PDF whose
+shape depends upon the form of the underlying physical process driving
+variability. The BL Lacertae Mrk 421 is one of the brightest and most variable
+blazars across the electromagnetic spectrum. It has been reported to show hints
+of lognormality across the spectrum from radio to gamma-ray histograms of
+observed fluxes. This would imply that the underlying mechanisms may not
+conform to the ""standard"" additive, multi-zone picture, but could potentially
+have multiplicative processes. This is investigated by testing the observed
+lightcurves at different wavelengths with time-series simulations. We find that
+the simulations reveal a more complex scenario, than a single lognormal
+distribution explaining the multiwavelength lightcurves of Mrk 421.",astro-ph.HE,"physics.data-an, astro-ph.HE, astro-ph.GA",3,High Energy Astrophysical Phenomena,"Data Analysis, Statistics and Probability, High Energy Astrophysical Phenomena, Astrophysics of Galaxies",Nachiketa Chakraborty,Nachiketa Chakraborty,1,http://arxiv.org/pdf/2001.02458v1,http://arxiv.org/abs/2001.02458v1,2020-01-08
+"Photon arrival time tagging with many channels, sub-nanosecond deadtime,
+  very high throughput, and fiber optic remote synchronization","Time-Correlated Single Photon Counting (TCSPC) and time tagging of individual
+photon detections are powerful tools in many quantum optical experiments and
+other areas of applied physics. Using TCSPC, e.g., for the purpose of
+fluorescence lifetime measurements, is often limited in speed due to dead-time
+losses and pile-up. We show that this limitation can be lifted by reducing the
+dead-time of the timing electronics to the absolute minimum imposed by the
+speed of the detector signals while maintaining high temporal resolution. A
+complementing approach to speedy data acquisition is parallelization by means
+of simultaneous readout of many detector channels. This puts high demands on
+the data throughput of the TCSPC system, especially in time tagging of
+individual photon arrivals. Here, we present a new design approach, supporting
+up to 16 input channels, an extremely short dead-time of 650 ps, very high time
+tagging throughput, and a timing resolution of 80 ps. In order to facilitate
+remote synchronization of multiple such instruments with highest precision, the
+new TCSPC electronics provide an interface for White Rabbit fiber optic
+networks. Beside fundamental research in the field of astronomy, such remote
+synchronization tasks arise routinely in quantum communication networks with
+node to node distances on the order of tens of kilometers. In addition to
+showing design features and benchmark results of new TCSPC electronics, we
+present application results from spectrally resolved and high-speed
+fluorescence lifetime imaging in medical research. We furthermore show how
+pulse-pile-up occurring in the detector signals at high photon flux can be
+corrected for and how this data acquisition scheme performs in terms of
+accuracy and efficiency.",physics.ins-det,"physics.ins-det, q-bio.TO, physics.data-an",3,Instrumentation and Detectors,"Instrumentation and Detectors, Tissues and Organs, Data Analysis, Statistics and Probability",Andreas C. Hocke,"Michael Wahl, Tino Roehlicke, Sebastian Kulisch, Sumeet Rohilla, Benedikt Kraeamer, Andreas C. Hocke",6,http://arxiv.org/pdf/2001.02424v1,http://arxiv.org/abs/2001.02424v1,2020-01-08
+"EoN (Epidemics on Networks): a fast, flexible Python package for
+  simulation, analytic approximation, and analysis of epidemics on networks","We provide a description of the Epidemics on Networks (EoN) python package
+designed for studying disease spread in static networks. The package consists
+of over $100$ methods available for users to perform stochastic simulation of a
+range of different processes including SIS and SIR disease, and generic simple
+or comlex contagions.",q-bio.QM,"physics.soc-ph, q-bio.QM",2,Quantitative Methods,"Physics and Society, Quantitative Methods",Tony TIng,"Joel C. Miller, Tony TIng",2,http://arxiv.org/pdf/2001.02436v1,http://arxiv.org/abs/2001.02436v1,2020-01-08
+Functional linear models for interval-valued data,"Aggregation of large databases in a specific format is a frequently used
+process to make the data easily manageable. Interval-valued data is one of the
+data types that is generated by such an aggregation process. Using traditional
+methods to analyze interval-valued data results in loss of information, and
+thus, several interval-valued data models have been proposed to gather reliable
+information from such data types. On the other hand, recent technological
+developments have led to high dimensional and complex data in many application
+areas, which may not be analyzed by traditional techniques. Functional data
+analysis is one of the most commonly used techniques to analyze such complex
+datasets. While the functional extensions of much traditional statistical
+techniques are available, the functional form of the interval-valued data has
+not been studied well. This paper introduces the functional forms of some
+well-known regression models that take interval-valued data. The proposed
+methods are based on the function-on-function regression model, where both the
+response and predictor/s are functional. Through several Monte Carlo
+simulations and empirical data analysis, the finite sample performance of the
+proposed methods is evaluated and compared with the state-of-the-art.",stat.ME,"stat.AP, stat.ME, 97K80",3,Methodology,"Applications, Methodology",Abdel-Salam G. Abdel-Salam,"Ufuk Beyaztas, Han Lin Shang, Abdel-Salam G. Abdel-Salam",3,http://arxiv.org/pdf/2001.02342v1,http://arxiv.org/abs/2001.02342v1,2020-01-08
+Conditional density estimation with covariate measurement error,"We consider estimating the density of a response conditioning on an
+error-prone covariate. Motivated by two existing kernel density estimators in
+the absence of covariate measurement error, we propose a method to correct the
+existing estimators for measurement error. Asymptotic properties of the
+resultant estimators under different types of measurement error distributions
+are derived. Moreover, we adjust bandwidths readily available from existing
+bandwidth selection methods developed for error-free data to obtain bandwidths
+for the new estimators. Extensive simulation studies are carried out to compare
+the proposed estimators with naive estimators that ignore measurement error,
+which also provide empirical evidence for the effectiveness of the proposed
+bandwidth selection methods. A real-life data example is used to illustrate
+implementation of these methods under practical scenarios. An R package, lpme,
+is developed for implementing all considered methods, which we demonstrate via
+an R code example in Appendix H.",stat.ME,"stat.ME, 62G08, 62G20",2,Methodology,Methodology,Haiming Zhou,"Xianzheng Huang, Haiming Zhou",2,http://arxiv.org/pdf/2001.02673v1,http://arxiv.org/abs/2001.02673v1,2020-01-08
+On a Generalization of the Average Distance Classifier,"In high dimension, low sample size (HDLSS)settings, the simple average
+distance classifier based on the Euclidean distance performs poorly if
+differences between the locations get masked by the scale differences. To
+rectify this issue, modifications to the average distance classifier was
+proposed by Chan and Hall (2009). However, the existing classifiers cannot
+discriminate when the populations differ in other aspects than locations and
+scales. In this article, we propose some simple transformations of the average
+distance classifier to tackle this issue. The resulting classifiers perform
+quite well even when the underlying populations have the same location and
+scale. The high-dimensional behaviour of the proposed classifiers is studied
+theoretically. Numerical experiments with a variety of simulated as well as
+real data sets exhibit the usefulness of the proposed methodology.",stat.ME,"stat.ME, stat.ML",2,Methodology,"Methodology, Machine Learning",Subhajit Dutta,"Sarbojit Roy, Soham Sarkar, Subhajit Dutta",3,http://arxiv.org/pdf/2001.02430v1,http://arxiv.org/abs/2001.02430v1,2020-01-08
+Estimating Tukey Depth Using Incremental Quantile Estimators,"The concept of depth represents methods to measure how deep an arbitrary
+point is positioned in a dataset and can be seen as the opposite of
+outlyingness. It has proved very useful and a wide range of methods have been
+developed based on the concept.
+  To address the well-known computational challenges associated with the depth
+concept, we suggest to estimate Tukey depth contours using recently developed
+incremental quantile estimators. The suggested algorithm can estimate depth
+contours when the dataset in known in advance, but also recursively update and
+even track Tukey depth contours for dynamically varying data stream
+distributions. Tracking was demonstrated in a real-life data example where
+changes in human activity was detected in real-time from accelerometer
+observations.",stat.ME,stat.ME,1,Methodology,Methodology,Håvard Rue,"Hugo Lewi Hammer, Anis Yazidi, Håvard Rue",3,http://arxiv.org/pdf/2001.02393v1,http://arxiv.org/abs/2001.02393v1,2020-01-08
+"Limited Angle Tomography for Transmission X-Ray Microscopy Using Deep
+  Learning","In transmission X-ray microscopy (TXM) systems, the rotation of a scanned
+sample might be restricted to a limited angular range to avoid collision to
+other system parts or high attenuation at certain tilting angles. Image
+reconstruction from such limited angle data suffers from artifacts due to
+missing data. In this work, deep learning is applied to limited angle
+reconstruction in TXMs for the first time. With the challenge to obtain
+sufficient real data for training, training a deep neural network from
+synthetic data is investigated. Particularly, the U-Net, the state-of-the-art
+neural network in biomedical imaging, is trained from synthetic ellipsoid data
+and multi-category data to reduce artifacts in filtered back-projection (FBP)
+reconstruction images. The proposed method is evaluated on synthetic data and
+real scanned chlorella data in $100^\circ$ limited angle tomography. For
+synthetic test data, the U-Net significantly reduces root-mean-square error
+(RMSE) from $2.55 \times 10^{-3}$ {\mu}m$^{-1}$ in the FBP reconstruction to
+$1.21 \times 10^{-3}$ {\mu}m$^{-1}$ in the U-Net reconstruction, and also
+improves structural similarity (SSIM) index from 0.625 to 0.920. With penalized
+weighted least square denoising of measured projections, the RMSE and SSIM are
+further improved to $1.16 \times 10^{-3}$ {\mu}m$^{-1}$ and 0.932,
+respectively. For real test data, the proposed method remarkably improves the
+3-D visualization of the subcellular structures in the chlorella cell, which
+indicates its important value for nano-scale imaging in biology, nanoscience
+and materials science.",eess.IV,"eess.IV, cs.LG, I.2.1; J.3, stat.ML",4,Image and Video Processing,"Image and Video Processing, Machine Learning, Machine Learning",Andreas Maier,"Yixing Huang, Shengxiang Wang, Yong Guan, Andreas Maier",4,http://arxiv.org/pdf/2001.02469v1,http://arxiv.org/abs/2001.02469v1,2020-01-08
