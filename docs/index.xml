@@ -7,7 +7,15 @@
     <description>A daily digest of arXiv articles focused on data science topics.
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Thu, 09 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 10 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Articles from 2020-01-09</title>
+      <dc:creator>Bryan Whiting</dc:creator>
+      <link>bryanwhiting.github.io/ds-arxiv/posts/2020-01-10</link>
+      <description>46 new data science research articles were published on 2020-01-09. 18 discussed machine learning.</description>
+      <guid>bryanwhiting.github.io/ds-arxiv/posts/2020-01-10</guid>
+      <pubDate>Fri, 10 Jan 2020 00:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>Articles from 2020-01-08</title>
       <dc:creator>Bryan Whiting</dc:creator>
