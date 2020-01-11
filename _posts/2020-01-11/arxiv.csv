@@ -17,7 +17,7 @@ maximizes coverage and minimizes the variance of importance sampling estimates.
 To our knowledge, this is the first such application of the Pearson $\chi^2$
 divergence. We demonstrate the effectiveness of cGAN in achieving feature
 balance relative to established weighting methods in simulation and with
-real-world medical data.",cs.LG,"cs.LG, stat.ML",2,Machine Learning,"Machine Learning, Machine Learning",Adler J. Perotte,"Amelia J. Averitt, Natnicha Vanitchanant, Rajesh Ranganath, Adler J. Perotte",4,http://arxiv.org/pdf/2001.03115v1,http://arxiv.org/abs/2001.03115v1,2020-01-09
+real-world medical data.",cs.LG,"stat.ML, cs.LG",2,Machine Learning,"Machine Learning, Machine Learning",Adler J. Perotte,"Amelia J. Averitt, Natnicha Vanitchanant, Rajesh Ranganath, Adler J. Perotte",4,http://arxiv.org/pdf/2001.03115v1,http://arxiv.org/abs/2001.03115v1,2020-01-09
 Open Challenge for Correcting Errors of Speech Recognition Systems,"The paper announces the new long-term challenge for improving the performance
 of automatic speech recognition systems. The goal of the challenge is to
 investigate methods of correcting the recognition results on the basis of
@@ -34,7 +34,7 @@ architecture that is not only highly accurate, but also efficiently mapped to
 the computing platform which will perform the inference. Using our modified
 neural architecture search, we demonstrate $0.88\%$ increase in TOP-1 accuracy
 with $1.85\times$ reduction in latency for keyword spotting in audio on an
-embedded SoC, and $1.59\times$ on a high-end GPU.",cs.LG,"cs.LG, cs.NE",2,Machine Learning,"Machine Learning, Neural and Evolutionary Computing",David Gregg,"Andrew Anderson, Jing Su, Rozenn Dahyot, David Gregg",4,http://arxiv.org/pdf/2001.02976v1,http://arxiv.org/abs/2001.02976v1,2020-01-09
+embedded SoC, and $1.59\times$ on a high-end GPU.",cs.LG,"cs.NE, cs.LG",2,Machine Learning,"Neural and Evolutionary Computing, Machine Learning",David Gregg,"Andrew Anderson, Jing Su, Rozenn Dahyot, David Gregg",4,http://arxiv.org/pdf/2001.02976v1,http://arxiv.org/abs/2001.02976v1,2020-01-09
 "Closed-loop deep learning: generating forward models with
   back-propagation","A reflex is a simple closed loop control approach which tries to minimise an
 error but fails to do so because it will always react too late. An adaptive
@@ -49,7 +49,7 @@ continuous processing. We show specifically how error back-propagation can be
 achieved in z-space and in general how gradient based approaches can be
 analysed in such closed loop scenarios. The performance of this learning
 paradigm is demonstrated using a line-follower both in simulation and on a real
-robot that show very fast and continuous learning.",cs.LG,"cs.RO, cs.LG, cs.AI",3,Machine Learning,"Robotics, Machine Learning, Artificial Intelligence",Bernd Porr,"Sama Daryanavard, Bernd Porr",2,http://arxiv.org/pdf/2001.02970v1,http://arxiv.org/abs/2001.02970v1,2020-01-09
+robot that show very fast and continuous learning.",cs.LG,"cs.LG, cs.AI, cs.RO",3,Machine Learning,"Machine Learning, Artificial Intelligence, Robotics",Bernd Porr,"Sama Daryanavard, Bernd Porr",2,http://arxiv.org/pdf/2001.02970v1,http://arxiv.org/abs/2001.02970v1,2020-01-09
 GRIDS: Interactive Layout Design with Integer Programming,"Grid layouts are used by designers to spatially organise user interfaces when
 sketching and wireframing. However, their design is largely time consuming
 manual work. This is challenging due to combinatorial explosion and complex
@@ -70,7 +70,7 @@ implication of such cooperation with the learning perspective from both user
 and system side. We also focus on the stimulation of learning through a key
 component of conversational search, namely the multimodality of communication
 way, and discuss the implication in terms of information retrieval. We end with
-a research road map describing promising research directions and perspectives.",cs.AI,"cs.IR, cs.AI, cs.HC",3,Artificial Intelligence,"Information Retrieval, Artificial Intelligence, Human-Computer Interaction",Laure Soulier,"Sharon Oviatt, Laure Soulier",2,http://arxiv.org/pdf/2001.02912v1,http://arxiv.org/abs/2001.02912v1,2020-01-09
+a research road map describing promising research directions and perspectives.",cs.AI,"cs.HC, cs.AI, cs.IR",3,Artificial Intelligence,"Human-Computer Interaction, Artificial Intelligence, Information Retrieval",Laure Soulier,"Sharon Oviatt, Laure Soulier",2,http://arxiv.org/pdf/2001.02912v1,http://arxiv.org/abs/2001.02912v1,2020-01-09
 Population-Guided Parallel Policy Search for Reinforcement Learning,"In this paper, a new population-guided parallel learning scheme is proposed
 to enhance the performance of off-policy reinforcement learning (RL). In the
 proposed scheme, multiple identical learners with their own value-functions and
@@ -85,7 +85,7 @@ is proved theoretically. Working algorithms are constructed by applying the
 proposed scheme to the twin delayed deep deterministic (TD3) policy gradient
 algorithm. Numerical results show that the constructed algorithm outperforms
 most of the current state-of-the-art RL algorithms, and the gain is significant
-in the case of sparse reward environment.",cs.LG,"cs.LG, stat.ML, cs.AI",3,Machine Learning,"Machine Learning, Machine Learning, Artificial Intelligence",Youngchul Sung,"Whiyoung Jung, Giseung Park, Youngchul Sung",3,http://arxiv.org/pdf/2001.02907v1,http://arxiv.org/abs/2001.02907v1,2020-01-09
+in the case of sparse reward environment.",cs.LG,"stat.ML, cs.LG, cs.AI",3,Machine Learning,"Machine Learning, Machine Learning, Artificial Intelligence",Youngchul Sung,"Whiyoung Jung, Giseung Park, Youngchul Sung",3,http://arxiv.org/pdf/2001.02907v1,http://arxiv.org/abs/2001.02907v1,2020-01-09
 Supervised Hyperalignment for multi-subject fMRI data alignment,"Hyperalignment has been widely employed in Multivariate Pattern (MVP)
 analysis to discover the cognitive states in the human brains based on
 multi-subject functional Magnetic Resonance Imaging (fMRI) datasets. Most of
@@ -101,7 +101,7 @@ Further, SHA employs a generalized optimization solution, which generates the
 shared space and calculates the mapped features in a single iteration, hence
 with optimum time and space complexities for large datasets. Experiments on
 multi-subject datasets demonstrate that SHA method achieves up to 19% better
-performance for multi-class problems over the state-of-the-art HA algorithms.",stat.ML,"cs.LG, stat.ML, q-bio.NC",3,Machine Learning,"Machine Learning, Machine Learning, Neurons and Cognition",Daoqiang Zhang,"Muhammad Yousefnezhad, Alessandro Selvitella, Liangxiu Han, Daoqiang Zhang",4,http://arxiv.org/pdf/2001.02894v1,http://arxiv.org/abs/2001.02894v1,2020-01-09
+performance for multi-class problems over the state-of-the-art HA algorithms.",stat.ML,"stat.ML, cs.LG, q-bio.NC",3,Machine Learning,"Machine Learning, Machine Learning, Neurons and Cognition",Daoqiang Zhang,"Muhammad Yousefnezhad, Alessandro Selvitella, Liangxiu Han, Daoqiang Zhang",4,http://arxiv.org/pdf/2001.02894v1,http://arxiv.org/abs/2001.02894v1,2020-01-09
 Probabilistic Reasoning across the Causal Hierarchy,"We propose a formalization of the three-tier causal hierarchy of association,
 intervention, and counterfactuals as a series of probabilistic logical
 languages. Our languages are of strictly increasing expressivity, the first
@@ -111,7 +111,7 @@ do-calculus reasoning for causal effects, and the third capturing a fully
 expressive do-calculus for arbitrary counterfactual queries. We give a
 corresponding series of finitary axiomatizations complete over both structural
 causal models and probabilistic programs, and show that satisfiability and
-validity for each language are decidable in polynomial space.",cs.LO,"cs.AI, cs.LO",2,Logic in Computer Science,"Artificial Intelligence, Logic in Computer Science",Thomas Icard,"Duligur Ibeling, Thomas Icard",2,http://arxiv.org/pdf/2001.02889v1,http://arxiv.org/abs/2001.02889v1,2020-01-09
+validity for each language are decidable in polynomial space.",cs.LO,"cs.LO, cs.AI",2,Logic in Computer Science,"Logic in Computer Science, Artificial Intelligence",Thomas Icard,"Duligur Ibeling, Thomas Icard",2,http://arxiv.org/pdf/2001.02889v1,http://arxiv.org/abs/2001.02889v1,2020-01-09
 The Neighbours' Similar Fitness Property for Local Search,"For most practical optimisation problems local search outperforms random
 sampling - despite the ""No Free Lunch Theorem"". This paper introduces a
 property of search landscapes termed Neighbours' Similar Fitness (NSF) that
@@ -120,7 +120,7 @@ improvement. Though necessary, NSF is not sufficient to ensure that searching
 for improvement among the neighbours of a good solution is better than random
 search. The paper introduces an additional (natural) property which supports a
 general proof that, for NSF landscapes, neighbourhood search beats random
-search.",cs.AI,"cs.AI, cs.DM",2,Artificial Intelligence,"Artificial Intelligence, Discrete Mathematics",Aldeida Aleti,"Mark Wallace, Aldeida Aleti",2,http://arxiv.org/pdf/2001.02872v1,http://arxiv.org/abs/2001.02872v1,2020-01-09
+search.",cs.AI,"cs.DM, cs.AI",2,Artificial Intelligence,"Discrete Mathematics, Artificial Intelligence",Aldeida Aleti,"Mark Wallace, Aldeida Aleti",2,http://arxiv.org/pdf/2001.02872v1,http://arxiv.org/abs/2001.02872v1,2020-01-09
 "Addressing Value Estimation Errors in Reinforcement Learning with a
   State-Action Return Distribution Function","In current reinforcement learning (RL) methods, function approximation errors
 are known to lead to the overestimated or underestimated state-action values Q,
@@ -151,7 +151,7 @@ represents categories occurring in the absence of context along side a joint
 feature subspace that represents both categories and context. Our very simple
 yet effective method is extensible to two multi-label tasks -- object and
 attribute classification. On 4 challenging datasets, we demonstrate the
-effectiveness of our method in reducing contextual bias.",cs.CV,"cs.LG, cs.CV",2,Computer Vision and Pattern Recognition,"Machine Learning, Computer Vision and Pattern Recognition",Deepti Ghadiyaram,"Krishna Kumar Singh, Dhruv Mahajan, Kristen Grauman, Yong Jae Lee, Matt Feiszli, Deepti Ghadiyaram",6,http://arxiv.org/pdf/2001.03152v1,http://arxiv.org/abs/2001.03152v1,2020-01-09
+effectiveness of our method in reducing contextual bias.",cs.CV,"cs.CV, cs.LG",2,Computer Vision and Pattern Recognition,"Computer Vision and Pattern Recognition, Machine Learning",Deepti Ghadiyaram,"Krishna Kumar Singh, Dhruv Mahajan, Kristen Grauman, Yong Jae Lee, Matt Feiszli, Deepti Ghadiyaram",6,http://arxiv.org/pdf/2001.03152v1,http://arxiv.org/abs/2001.03152v1,2020-01-09
 "Compression of convolutional neural networks for high performance
   imagematching tasks on mobile devices","Deep neural networks have demonstrated state-of-the-art performance for
 feature-based image matching through the advent of new large and diverse
@@ -229,7 +229,7 @@ fine-tuning the CNN using the synthetic data and also exploiting a mixed-batch
 supervised training approach. Extensive experimentation carried out on
 different real-world datasets shows very competitive results compared to other
 methods presented in the literature in which the algorithms are trained using
-real-world data.",cs.CV,"eess.IV, cs.LG, cs.CV",3,Computer Vision and Pattern Recognition,"Image and Video Processing, Machine Learning, Computer Vision and Pattern Recognition",Giuseppe Amato,"Luca Ciampi, Nicola Messina, Fabrizio Falchi, Claudio Gennaro, Giuseppe Amato",5,http://arxiv.org/pdf/2001.03032v1,http://arxiv.org/abs/2001.03032v1,2020-01-09
+real-world data.",cs.CV,"cs.CV, cs.LG, eess.IV",3,Computer Vision and Pattern Recognition,"Computer Vision and Pattern Recognition, Machine Learning, Image and Video Processing",Giuseppe Amato,"Luca Ciampi, Nicola Messina, Fabrizio Falchi, Claudio Gennaro, Giuseppe Amato",5,http://arxiv.org/pdf/2001.03032v1,http://arxiv.org/abs/2001.03032v1,2020-01-09
 "DeeperForensics-1.0: A Large-Scale Dataset for Real-World Face Forgery
   Detection","In this paper, we present our on-going effort of constructing a large-scale
 benchmark, DeeperForensics-1.0, for face forgery detection. Our benchmark
@@ -245,7 +245,7 @@ which contains manipulated videos achieving high deceptive scores in human
 evaluations. We further contribute a comprehensive study that evaluates five
 representative detection baselines and make a thorough analysis of different
 settings. We believe this dataset will contribute to real-world face forgery
-detection research.",cs.CV,"cs.LG, cs.CV",2,Computer Vision and Pattern Recognition,"Machine Learning, Computer Vision and Pattern Recognition",Chen Change Loy,"Liming Jiang, Wayne Wu, Ren Li, Chen Qian, Chen Change Loy",5,http://arxiv.org/pdf/2001.03024v1,http://arxiv.org/abs/2001.03024v1,2020-01-09
+detection research.",cs.CV,"cs.CV, cs.LG",2,Computer Vision and Pattern Recognition,"Computer Vision and Pattern Recognition, Machine Learning",Chen Change Loy,"Liming Jiang, Wayne Wu, Ren Li, Chen Qian, Chen Change Loy",5,http://arxiv.org/pdf/2001.03024v1,http://arxiv.org/abs/2001.03024v1,2020-01-09
 "An Emerging Coding Paradigm VCM: A Scalable Coding Approach Beyond
   Feature and Signal","In this paper, we study a new problem arising from the emerging MPEG
 standardization effort Video Coding for Machine (VCM), which aims to bridge the
@@ -267,7 +267,7 @@ demonstrate that our method yields much better reconstruction quality compared
 with the traditional video codecs (0.0063 gain in SSIM), as well as
 state-of-the-art action recognition performance over highly compressed videos
 (9.4% gain in recognition accuracy), which showcases a promising paradigm of
-coding signal for both human and machine vision.",eess.IV,"eess.IV, cs.CV",2,Image and Video Processing,"Image and Video Processing, Computer Vision and Pattern Recognition",Jiaying Liu,"Sifeng Xia, Kunchangtai Liang, Wenhan Yang, Ling-Yu Duan, Jiaying Liu",5,http://arxiv.org/pdf/2001.03004v1,http://arxiv.org/abs/2001.03004v1,2020-01-09
+coding signal for both human and machine vision.",eess.IV,"cs.CV, eess.IV",2,Image and Video Processing,"Computer Vision and Pattern Recognition, Image and Video Processing",Jiaying Liu,"Sifeng Xia, Kunchangtai Liang, Wenhan Yang, Ling-Yu Duan, Jiaying Liu",5,http://arxiv.org/pdf/2001.03004v1,http://arxiv.org/abs/2001.03004v1,2020-01-09
 "Spherical Image Generation from a Single Normal Field of View Image by
   Considering Scene Symmetry","Spherical images taken in all directions (360 degrees) allow representing the
 surroundings of the subject and the space itself, providing an immersive
@@ -288,7 +288,7 @@ images for NFOV images and scene symmetry. Furthermore, the probability density
 functions are represented using neural networks, and scene symmetry is
 implemented using both circular shift and flip of the hidden variables. Our
 experiments show that the proposed method can generate various plausible
-spherical images, controlled from symmetric to asymmetric.",cs.CV,"eess.IV, cs.LG, cs.CV",3,Computer Vision and Pattern Recognition,"Image and Video Processing, Machine Learning, Computer Vision and Pattern Recognition",Tatsuya Harada,"Takayuki Hara, Tatsuya Harada",2,http://arxiv.org/pdf/2001.02993v1,http://arxiv.org/abs/2001.02993v1,2020-01-09
+spherical images, controlled from symmetric to asymmetric.",cs.CV,"cs.CV, cs.LG, eess.IV",3,Computer Vision and Pattern Recognition,"Computer Vision and Pattern Recognition, Machine Learning, Image and Video Processing",Tatsuya Harada,"Takayuki Hara, Tatsuya Harada",2,http://arxiv.org/pdf/2001.02993v1,http://arxiv.org/abs/2001.02993v1,2020-01-09
 Objects detection for remote sensing images based on polar coordinates,"Oriented and horizontal bounding box are two typical output forms in the
 field of remote sensing object detection. In this filed, most present
 state-of-the-art detectors belong to anchor-based method and perform regression
@@ -359,7 +359,7 @@ sensitivity equation for both the value function and optimal feedback relaxed
 control. We finally prove first-order monotone convergence of the value
 functions for relaxed control problems with vanishing exploration parameters,
 which subsequently enables us to construct the pure exploitation strategy of
-the original control problem based on the feedback relaxed controls.",math.OC,"3B52, 93B35, 93E20, 68Q32, math.OC, cs.LG",3,Optimization and Control,"Optimization and Control, Machine Learning",Yufei Zhang,"Christoph Reisinger, Yufei Zhang",2,http://arxiv.org/pdf/2001.03148v1,http://arxiv.org/abs/2001.03148v1,2020-01-09
+the original control problem based on the feedback relaxed controls.",math.OC,"cs.LG, math.OC, 3B52, 93B35, 93E20, 68Q32",3,Optimization and Control,"Machine Learning, Optimization and Control",Yufei Zhang,"Christoph Reisinger, Yufei Zhang",2,http://arxiv.org/pdf/2001.03148v1,http://arxiv.org/abs/2001.03148v1,2020-01-09
 "A Connection between Feedback Capacity and Kalman Filter for Colored
   Gaussian Noises","In this paper, we establish a connection between the feedback capacity of
 additive colored Gaussian noise channels and the Kalman filters with additive
@@ -371,7 +371,7 @@ case of first-order auto-regressive moving average colored noises. On the other
 hand, the Kalman filtering systems, after certain equivalence transformations,
 can be employed as recursive coding schemes/algorithms to achieve the lower
 bounds. In general, our results provide an alternative perspective while
-pointing to potentially tighter bounds for the feedback capacity problem.",cs.IT,"cs.IT, eess.SY, eess.SP, math.IT, cs.SY, math.OC, cs.LG",7,Information Theory,"Information Theory, Signal Processing, Information Theory, Systems and Control, Optimization and Control, Machine Learning",Quanyan Zhu,"Song Fang, Quanyan Zhu",2,http://arxiv.org/pdf/2001.03108v1,http://arxiv.org/abs/2001.03108v1,2020-01-09
+pointing to potentially tighter bounds for the feedback capacity problem.",cs.IT,"cs.SY, math.IT, cs.LG, math.OC, eess.SP, cs.IT, eess.SY",7,Information Theory,"Systems and Control, Information Theory, Machine Learning, Optimization and Control, Signal Processing, Information Theory",Quanyan Zhu,"Song Fang, Quanyan Zhu",2,http://arxiv.org/pdf/2001.03108v1,http://arxiv.org/abs/2001.03108v1,2020-01-09
 "Supervised Discriminative Sparse PCA with Adaptive Neighbors for
   Dimensionality Reduction","Dimensionality reduction is an important operation in information
 visualization, feature extraction, clustering, regression, and classification,
@@ -388,7 +388,7 @@ discriminative sparse PCA and projected clustering with adaptive neighbors. As
 a result, both global and local data structures, as well as the label
 information, are used for better dimensionality reduction. Classification
 experiments on nine high-dimensional datasets validated the effectiveness and
-robustness of our proposed SDSPCAAN.",cs.LG,"cs.LG, stat.ML",2,Machine Learning,"Machine Learning, Machine Learning",Chin-Teng Lin,"Zhenhua Shi, Dongrui Wu, Yu-Kai Wang, Chin-Teng Lin",4,http://arxiv.org/pdf/2001.03103v1,http://arxiv.org/abs/2001.03103v1,2020-01-09
+robustness of our proposed SDSPCAAN.",cs.LG,"stat.ML, cs.LG",2,Machine Learning,"Machine Learning, Machine Learning",Chin-Teng Lin,"Zhenhua Shi, Dongrui Wu, Yu-Kai Wang, Chin-Teng Lin",4,http://arxiv.org/pdf/2001.03103v1,http://arxiv.org/abs/2001.03103v1,2020-01-09
 "Trajectron++: Multi-Agent Generative Trajectory Forecasting With
   Heterogeneous Data for Control","Reasoning about human motion through an environment is an important
 prerequisite to safe and socially-aware robotic navigation. As a result,
@@ -405,7 +405,7 @@ designed to be tightly integrated with robotic planning and control frameworks;
 it is capable of producing predictions that are conditioned on ego-agent motion
 plans. We demonstrate the performance of our model on several challenging
 real-world trajectory forecasting datasets, outperforming a wide array of
-state-of-the-art deterministic and generative methods.",cs.RO,"cs.RO, cs.HC, cs.LG",3,Robotics,"Robotics, Human-Computer Interaction, Machine Learning",Marco Pavone,"Tim Salzmann, Boris Ivanovic, Punarjay Chakravarty, Marco Pavone",4,http://arxiv.org/pdf/2001.03093v1,http://arxiv.org/abs/2001.03093v1,2020-01-09
+state-of-the-art deterministic and generative methods.",cs.RO,"cs.HC, cs.LG, cs.RO",3,Robotics,"Human-Computer Interaction, Machine Learning, Robotics",Marco Pavone,"Tim Salzmann, Boris Ivanovic, Punarjay Chakravarty, Marco Pavone",4,http://arxiv.org/pdf/2001.03093v1,http://arxiv.org/abs/2001.03093v1,2020-01-09
 "Sampling Prediction-Matching Examples in Neural Networks: A
   Probabilistic Programming Approach","Though neural network models demonstrate impressive performance, we do not
 understand exactly how these black-box models make individual predictions. This
@@ -421,7 +421,7 @@ instantiation, if we take the classifier to be a neural network and the data
 distribution to be that of the training data, we can obtain examples that will
 result in specified predictions by the neural network. We demonstrate this
 technique with experiments on a synthetic dataset and MNIST. Such level sets in
-classification may facilitate human understanding of classification behaviors.",cs.LG,"cs.LG, stat.ML",2,Machine Learning,"Machine Learning, Machine Learning",Julie Shah,"Serena Booth, Ankit Shah, Yilun Zhou, Julie Shah",4,http://arxiv.org/pdf/2001.03076v1,http://arxiv.org/abs/2001.03076v1,2020-01-09
+classification may facilitate human understanding of classification behaviors.",cs.LG,"stat.ML, cs.LG",2,Machine Learning,"Machine Learning, Machine Learning",Julie Shah,"Serena Booth, Ankit Shah, Yilun Zhou, Julie Shah",4,http://arxiv.org/pdf/2001.03076v1,http://arxiv.org/abs/2001.03076v1,2020-01-09
 Deep Network Approximation for Smooth Functions,"This paper establishes optimal approximation error characterization of deep
 ReLU networks for smooth functions in terms of both width and depth
 simultaneously. To that end, we first prove that multivariate polynomials can
@@ -432,7 +432,7 @@ that deep ReLU networks of width $\mathcal{O}(N\ln N)$ and depth
 $\mathcal{O}(L\ln L)$ can approximate $f\in C^s([0,1]^d)$ with a nearly optimal
 approximation rate $\mathcal{O}(\|f\|_{C^s([0,1]^d)}N^{-2s/d}L^{-2s/d})$. Our
 estimate is non-asymptotic in the sense that it is valid for arbitrary width
-and depth specified by $N\in\mathbb{N}^+$ and $L\in\mathbb{N}^+$, respectively.",cs.LG,"stat.ML, math.NA, cs.LG, cs.NA",4,Machine Learning,"Machine Learning, Numerical Analysis, Machine Learning, Numerical Analysis",Shijun Zhang,"Jianfeng Lu, Zuowei Shen, Haizhao Yang, Shijun Zhang",4,http://arxiv.org/pdf/2001.03040v1,http://arxiv.org/abs/2001.03040v1,2020-01-09
+and depth specified by $N\in\mathbb{N}^+$ and $L\in\mathbb{N}^+$, respectively.",cs.LG,"cs.NA, stat.ML, math.NA, cs.LG",4,Machine Learning,"Numerical Analysis, Machine Learning, Numerical Analysis, Machine Learning",Shijun Zhang,"Jianfeng Lu, Zuowei Shen, Haizhao Yang, Shijun Zhang",4,http://arxiv.org/pdf/2001.03040v1,http://arxiv.org/abs/2001.03040v1,2020-01-09
 Killing Stubborn Mutants with Symbolic Execution,"We introduce SeMu, a Dynamic Symbolic Execution technique that generates test
 inputs capable of killing stubborn mutants (killable mutants that remain
 undetected after a reasonable amount of testing). SeMu aims at mutant
@@ -466,7 +466,7 @@ variable $Z$. To complement these results, we provide a new proof of the
 hardness result of Shah and Peters and show that in the absence of smoothness
 assumptions conditional independence testing remains difficult even when $X,Y$
 are discrete variables of finite (and not scaling with the sample-size)
-support.",math.ST,"math.ST, stat.TH",2,Statistics Theory,"Statistics Theory, Statistics Theory",Larry Wasserman,"Matey Neykov, Sivaraman Balakrishnan, Larry Wasserman",3,http://arxiv.org/pdf/2001.03039v1,http://arxiv.org/abs/2001.03039v1,2020-01-09
+support.",math.ST,"stat.TH, math.ST",2,Statistics Theory,"Statistics Theory, Statistics Theory",Larry Wasserman,"Matey Neykov, Sivaraman Balakrishnan, Larry Wasserman",3,http://arxiv.org/pdf/2001.03039v1,http://arxiv.org/abs/2001.03039v1,2020-01-09
 "Transformer ratio enhancement at wakefield excitation in blowout regime
   in plasma by electron bunch with semi-gaussian charge distribution","Using 2d3v code LCODE, the numerical simulation of nonlinear wakefield
 excitation in plasma by shaped relativistic electron bunch with charge
@@ -481,7 +481,7 @@ was taken into account that the length of the nonlinear wakefield increases
 with increasing length of the bunch. It is shown that the transformer ratio
 reaches its maximum value for a certain length of the bunch. The maximum value
 of the transformer ratio reaches six as due to the profiling of the bunch, and
-due to the non-linearity of the wakefield.",physics.plasm-ph,"65Z05, F.2.1, physics.comp-ph, physics.acc-ph, physics.plasm-ph",5,Plasma Physics,"Computational Physics, Accelerator Physics, Plasma Physics",Ivan Onishchenko,"Denys Bondar, Vasyl Maslov, Irina Levchuk, Ivan Onishchenko",4,http://arxiv.org/pdf/2001.03155v1,http://arxiv.org/abs/2001.03155v1,2020-01-09
+due to the non-linearity of the wakefield.",physics.plasm-ph,"physics.plasm-ph, physics.acc-ph, F.2.1, 65Z05, physics.comp-ph",5,Plasma Physics,"Plasma Physics, Accelerator Physics, Computational Physics",Ivan Onishchenko,"Denys Bondar, Vasyl Maslov, Irina Levchuk, Ivan Onishchenko",4,http://arxiv.org/pdf/2001.03155v1,http://arxiv.org/abs/2001.03155v1,2020-01-09
 "High-precision estimate of the hydrodynamic radius for self-avoiding
   walks","The universal asymptotic amplitude ratio between the gyration radius and the
 hydrodynamic radius of self-avoiding walks is estimated by high-resolution
@@ -512,7 +512,7 @@ temperature with exponent $n\approx2.1$. This agrees well with what observed
 experimentally and it is obtained without including a two-ion anisotropy term
 as in other approaches. Our work shows that incorporating longitudinal
 fluctuations into spin dynamics calculations is crucial for understanding the
-properties of materials with induced moments.",cond-mat.mtrl-sci,"cond-mat.mtrl-sci, physics.comp-ph",2,Materials Science,"Materials Science, Computational Physics",Stefano Sanvito,"Matthew O. A. Ellis, Mario Galante, Stefano Sanvito",3,http://arxiv.org/pdf/2001.03074v1,http://arxiv.org/abs/2001.03074v1,2020-01-09
+properties of materials with induced moments.",cond-mat.mtrl-sci,"physics.comp-ph, cond-mat.mtrl-sci",2,Materials Science,"Computational Physics, Materials Science",Stefano Sanvito,"Matthew O. A. Ellis, Mario Galante, Stefano Sanvito",3,http://arxiv.org/pdf/2001.03074v1,http://arxiv.org/abs/2001.03074v1,2020-01-09
 "Electrocrystallization of Supercooled Water Confined between Graphene
   Layers","A key feature of the crystallization of supercooled water confined in an
 applied static electric field is that the structural order here is determined
@@ -528,7 +528,7 @@ orientation of dipolar water molecules by the applied electric field. The
 subsequent mode is characterized by the relaxation of a metastable system to a
 crystalline phase. The uniform electric field applied perpendicularly to the
 graphene sheets suppresses structural ordering, whereas the field applied in
-the lateral direction promotes cubic ice $I_c$.",cond-mat.mtrl-sci,"cond-mat.mtrl-sci, physics.chem-ph, cond-mat.soft, cond-mat.mes-hall, physics.comp-ph",5,Materials Science,"Materials Science, Chemical Physics, Soft Condensed Matter, Mesoscale and Nanoscale Physics, Computational Physics",Anatolii V. Mokshin,"Ramil M. Khusnutdinoff, Anatolii V. Mokshin",2,http://arxiv.org/pdf/2001.03060v1,http://arxiv.org/abs/2001.03060v1,2020-01-09
+the lateral direction promotes cubic ice $I_c$.",cond-mat.mtrl-sci,"cond-mat.soft, cond-mat.mes-hall, physics.comp-ph, cond-mat.mtrl-sci, physics.chem-ph",5,Materials Science,"Soft Condensed Matter, Mesoscale and Nanoscale Physics, Computational Physics, Materials Science, Chemical Physics",Anatolii V. Mokshin,"Ramil M. Khusnutdinoff, Anatolii V. Mokshin",2,http://arxiv.org/pdf/2001.03060v1,http://arxiv.org/abs/2001.03060v1,2020-01-09
 "A Hybrid Volume-Surface-Wire Integral Equation for the Anisotropic
   Forward Problem in Electroencephalography","Solving the electroencephalography (EEG) forward problem is a fundamental
 step in a wide range of applications including biomedical imaging techniques
@@ -561,7 +561,7 @@ molecular simulation are resolved, and the line tension concept is shown to be
 robust down to molecular confinements. The same qualitative behavior is
 observed for water but the line tension at the wetting transition diverges or
 converges towards a finite value depending on the range of the solid/fluid
-interactions at play.",cond-mat.mes-hall,"cond-mat.mes-hall, physics.comp-ph, physics.chem-ph",3,Mesoscale and Nanoscale Physics,"Mesoscale and Nanoscale Physics, Computational Physics, Chemical Physics",Cyril Picard,"Romain Bey, Benoit Coasne, Cyril Picard",3,http://arxiv.org/pdf/2001.02896v1,http://arxiv.org/abs/2001.02896v1,2020-01-09
+interactions at play.",cond-mat.mes-hall,"physics.comp-ph, cond-mat.mes-hall, physics.chem-ph",3,Mesoscale and Nanoscale Physics,"Computational Physics, Mesoscale and Nanoscale Physics, Chemical Physics",Cyril Picard,"Romain Bey, Benoit Coasne, Cyril Picard",3,http://arxiv.org/pdf/2001.02896v1,http://arxiv.org/abs/2001.02896v1,2020-01-09
 "Deconfined quantum criticality in spin-1/2 chains with long-range
   interactions","We study spin-$1/2$ chains with long-range power-law decaying unfrustrated
 (bipartite) Heisenberg exchange $J_r \propto r^{-\alpha}$ and multi-spin
@@ -594,7 +594,7 @@ Deep learning for clustering of continuous gravitational wave candidates,"In sea
 sensitivity by identifying and bundling together candidates that are due to the
 same root cause. We implement a deep learning network that identifies clusters
 of signal candidates in the output of continuous gravitational wave searches
-and assess its performance.",gr-qc,"astro-ph.IM, physics.data-an, gr-qc",3,General Relativity and Quantum Cosmology,"Instrumentation and Methods for Astrophysics, Data Analysis, Statistics and Probability, General Relativity and Quantum Cosmology",Maria Alessandra Papa,"Banafsheh Beheshtipour, Maria Alessandra Papa",2,http://arxiv.org/pdf/2001.03116v1,http://arxiv.org/abs/2001.03116v1,2020-01-09
+and assess its performance.",gr-qc,"astro-ph.IM, gr-qc, physics.data-an",3,General Relativity and Quantum Cosmology,"Instrumentation and Methods for Astrophysics, General Relativity and Quantum Cosmology, Data Analysis, Statistics and Probability",Maria Alessandra Papa,"Banafsheh Beheshtipour, Maria Alessandra Papa",2,http://arxiv.org/pdf/2001.03116v1,http://arxiv.org/abs/2001.03116v1,2020-01-09
 Cluster-based network model of an incompressible mixing layer,"We propose an automatable data-driven methodology for robust nonlinear
 reduced-order modeling from time-resolved snapshot data. In the kinematical
 coarse-graining, the snapshots are clustered into few centroids representable
@@ -645,7 +645,7 @@ sub-micrometer localization of real-time temperature information in living
 animals and direct identification of their pharmacological thermogenesis. The
 results obtained facilitate the development of a method to probe subcellular
 temperature variation inside living organisms and may allow for quantification
-of their biological activities based on their energy expenditures.",q-bio.QM,"cond-mat.mes-hall, quant-ph, physics.bio-ph, q-bio.QM",4,Quantitative Methods,"Mesoscale and Nanoscale Physics, Quantum Physics, Biological Physics, Quantitative Methods",Eriko Kage-Nakadai,"Masazumi Fujiwara, Simo Sun, Alexander Dohms, Yushi Nishimura, Ken Suto, Yuka Takezawa, Keisuke Oshimi, Li Zhao, Nikola Sadzak, Yumi Umehara, Yoshio Teki, Naoki Komatsu, Oliver Benson, Yutaka Shikano, Eriko Kage-Nakadai",15,http://arxiv.org/pdf/2001.02844v1,http://arxiv.org/abs/2001.02844v1,2020-01-09
+of their biological activities based on their energy expenditures.",q-bio.QM,"quant-ph, q-bio.QM, cond-mat.mes-hall, physics.bio-ph",4,Quantitative Methods,"Quantum Physics, Quantitative Methods, Mesoscale and Nanoscale Physics, Biological Physics",Eriko Kage-Nakadai,"Masazumi Fujiwara, Simo Sun, Alexander Dohms, Yushi Nishimura, Ken Suto, Yuka Takezawa, Keisuke Oshimi, Li Zhao, Nikola Sadzak, Yumi Umehara, Yoshio Teki, Naoki Komatsu, Oliver Benson, Yutaka Shikano, Eriko Kage-Nakadai",15,http://arxiv.org/pdf/2001.02844v1,http://arxiv.org/abs/2001.02844v1,2020-01-09
 "Rapid Numerical Approximation Method for Integrated Covariance Functions
   Over Irregular Data Regions","In many practical applications, spatial data are often collected at areal
 levels (i.e., block data) and the inferences and predictions about the variable
@@ -720,4 +720,4 @@ identifies some of the opportunities for avoiding these redundancies by
 directly reusing computation results. We start by motivating why and how a more
 efficient implementation can be achieved by exploiting reuse in the memory
 hierarchy of modern instruction set processors. Next we document the
-possibilities of such reuse in some selected machine learning algorithms.",cs.LG,"cs.LG, stat.ML",2,Machine Learning,"Machine Learning, Machine Learning",Thomas J. Ashby,"Imen Chakroun, Tom Vander Aa, Thomas J. Ashby",3,http://arxiv.org/pdf/2001.03000v1,http://arxiv.org/abs/2001.03000v1,2020-01-09
+possibilities of such reuse in some selected machine learning algorithms.",cs.LG,"stat.ML, cs.LG",2,Machine Learning,"Machine Learning, Machine Learning",Thomas J. Ashby,"Imen Chakroun, Tom Vander Aa, Thomas J. Ashby",3,http://arxiv.org/pdf/2001.03000v1,http://arxiv.org/abs/2001.03000v1,2020-01-09
