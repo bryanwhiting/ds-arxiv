@@ -1,0 +1,904 @@
+title,summary,primary_tag,tags,n_tags,primary_category,categories,author,authors,n_authors,url_pdf,url_href,date
+"Intelligent Bandwidth Allocation for Latency Management in NG-EPON using
+  Reinforcement Learning Methods","A novel intelligent bandwidth allocation scheme in NG-EPON using
+reinforcement learning is proposed and demonstrated for latency management. We
+verify the capability of the proposed scheme under both fixed and dynamic
+traffic loads scenarios to achieve <1ms average latency. The RL agent
+demonstrates an efficient intelligent mechanism to manage the latency, which
+provides a promising IBA solution for the next-generation access network.",cs.NI,"eess.SP, cs.LG, cs.NI",3,Networking and Internet Architecture,"Signal Processing, Machine Learning, Networking and Internet Architecture",Gee-Kung Chang,"Qi Zhou, Jingjie Zhu, Junwen Zhang, Zhensheng Jia, Bernardo Huberman, Gee-Kung Chang",6,http://arxiv.org/pdf/2001.07698v1,http://arxiv.org/abs/2001.07698v1,2020-01-21
+Stochastic Finite State Control of POMDPs with LTL Specifications,"Partially observable Markov decision processes (POMDPs) provide a modeling
+framework for autonomous decision making under uncertainty and imperfect
+sensing, e.g. robot manipulation and self-driving cars. However, optimal
+control of POMDPs is notoriously intractable. This paper considers the
+quantitative problem of synthesizing sub-optimal stochastic finite state
+controllers (sFSCs) for POMDPs such that the probability of satisfying a set of
+high-level specifications in terms of linear temporal logic (LTL) formulae is
+maximized. We begin by casting the latter problem into an optimization and use
+relaxations based on the Poisson equation and McCormick envelopes. Then, we
+propose an stochastic bounded policy iteration algorithm, leading to a
+controlled growth in sFSC size and an any time algorithm, where the performance
+of the controller improves with successive iterations, but can be stopped by
+the user based on time or memory considerations. We illustrate the proposed
+method by a robot navigation case study.",cs.AI,"cs.RO, eess.SY, cs.FL, cs.SY, math.OC, cs.AI",6,Artificial Intelligence,"Robotics, Formal Languages and Automata Theory, Systems and Control, Optimization and Control, Artificial Intelligence",Joel W. Burdick,"Mohamadreza Ahmadi, Rangoli Sharan, Joel W. Burdick",3,http://arxiv.org/pdf/2001.07679v1,http://arxiv.org/abs/2001.07679v1,2020-01-21
+Deceptive AI Explanations: Creation and Detection,"Artificial intelligence comes with great opportunities and but also great
+risks. We investigate to what extent deep learning can be used to create and
+detect deceptive explanations that either aim to lure a human into believing a
+decision that is not truthful to the model or provide reasoning that is
+non-faithful to the decision. Our theoretical insights show some limits of
+deception and detection in the absence of domain knowledge. For empirical
+evaluation, we focus on text classification. To create deceptive explanations,
+we alter explanations originating from GradCAM, a state-of-art technique for
+creating explanations in neural networks. We evaluate the effectiveness of
+deceptive explanations on 200 participants. Our findings indicate that
+deceptive explanations can indeed fool humans. Our classifier can detect even
+seemingly minor attempts of deception with accuracy that exceeds 80\% given
+sufficient domain knowledge encoded in the form of training data.",cs.LG,"stat.ML, cs.AI, cs.LG",3,Machine Learning,"Machine Learning, Artificial Intelligence, Machine Learning",Christian Meske,"Johannes Schneider, Joshua Handali, Michalis Vlachos, Christian Meske",4,http://arxiv.org/pdf/2001.07641v1,http://arxiv.org/abs/2001.07641v1,2020-01-21
+"Improving Interaction Quality Estimation with BiLSTMs and the Impact on
+  Dialogue Policy Learning","Learning suitable and well-performing dialogue behaviour in statistical
+spoken dialogue systems has been in the focus of research for many years. While
+most work which is based on reinforcement learning employs an objective measure
+like task success for modelling the reward signal, we use a reward based on
+user satisfaction estimation. We propose a novel estimator and show that it
+outperforms all previous estimators while learning temporal dependencies
+implicitly. Furthermore, we apply this novel user satisfaction estimation model
+live in simulated experiments where the satisfaction estimation model is
+trained on one domain and applied in many other domains which cover a similar
+task. We show that applying this model results in higher estimated
+satisfaction, similar task success rates and a higher robustness to noise.",cs.CL,"stat.ML, cs.AI, cs.CL",3,Computation and Language,"Machine Learning, Artificial Intelligence, Computation and Language",Stefan Ultes,Stefan Ultes,1,http://arxiv.org/pdf/2001.07615v1,http://arxiv.org/abs/2001.07615v1,2020-01-21
+Turing analogues of Gödel statements and computability of intelligence,"We show that there is a mathematical obstruction to complete Turing
+computability of intelligence. This obstruction can be circumvented only if
+human reasoning is fundamentally unsound. The most compelling original argument
+for existence of such an obstruction was proposed by Penrose, however G\""odel,
+Turing and Lucas have also proposed such arguments. We first partially
+reformulate the argument of Penrose. In this formulation we argue that his
+argument works up to possibility of construction of a certain G\""odel
+statement. We then completely re-frame the argument in the language of Turing
+machines, and by partially defining our subject just enough, we show that a
+certain analogue of a G\""odel statement, or a G\""odel string as we call it in
+the language of Turing machines, can be readily constructed directly, without
+appeal to the G\""odel incompleteness theorem, and thus removing the final
+objection.",cs.LO,"cs.LO, cs.AI",2,Logic in Computer Science,"Logic in Computer Science, Artificial Intelligence",Yasha Savelyev,Yasha Savelyev,1,http://arxiv.org/pdf/2001.07592v1,http://arxiv.org/abs/2001.07592v1,2020-01-21
+Adequate and fair explanations,"Explaining sophisticated machine-learning based systems is an important issue
+at the foundations of AI. Recent efforts have shown various methods for
+providing explanations. These approaches can be broadly divided into two
+schools: those that provide a local and human interpreatable approximation of a
+machine learning algorithm, and logical approaches that exactly characterise
+one aspect of the decision. In this paper we focus upon the second school of
+exact explanations with a rigorous logical foundation. There is an
+epistemological problem with these exact methods. While they can furnish
+complete explanations, such explanations may be too complex for humans to
+understand or even to write down in human readable form. Interpretability
+requires epistemically accessible explanations, explanations humans can grasp.
+Yet what is a sufficiently complete epistemically accessible explanation still
+needs clarification. We do this here in terms of counterfactuals, following
+[Wachter et al., 2017]. With counterfactual explanations, many of the
+assumptions needed to provide a complete explanation are left implicit. To do
+so, counterfactual explanations exploit the properties of a particular data
+point or sample, and as such are also local as well as partial explanations. We
+explore how to move from local partial explanations to what we call complete
+local explanations and then to global ones. But to preserve accessibility we
+argue for the need for partiality. This partiality makes it possible to hide
+explicit biases present in the algorithm that may be injurious or unfair.We
+investigate how easy it is to uncover these biases in providing complete and
+fair explanations by exploiting the structure of the set of counterfactuals
+providing a complete local explanation.",cs.AI,"cs.AI, I.2.0",2,Artificial Intelligence,Artificial Intelligence,Chris Russell,"Nicholas Asher, Soumya Paul, Chris Russell",3,http://arxiv.org/pdf/2001.07578v1,http://arxiv.org/abs/2001.07578v1,2020-01-21
+Implementations in Machine Ethics: A Survey,"Increasingly complex and autonomous systems require machine ethics to
+maximize the benefits and minimize the risks to society arising from the new
+technology. It is challenging to decide which type of ethical theory to employ
+and how to implement it effectively. This survey provides a threefold
+contribution. Firstly, it introduces a taxonomy to analyze the field of machine
+ethics from an ethical, implementational, and technical perspective. Secondly,
+an exhaustive selection and description of relevant works is presented.
+Thirdly, applying the new taxonomy to the selected works, dominant research
+patterns and lessons for the field are identified, and future directions for
+research are suggested.",cs.AI,cs.AI,1,Artificial Intelligence,Artificial Intelligence,Abraham Bernstein,"Suzanne Tolmeijer, Markus Kneer, Cristina Sarasua, Markus Christen, Abraham Bernstein",5,http://arxiv.org/pdf/2001.07573v1,http://arxiv.org/abs/2001.07573v1,2020-01-21
+Provenance for the Description Logic ELHr,"We address the problem of handling provenance information in ELHr ontologies.
+We consider a setting recently introduced for ontology-based data access, based
+on semirings and extending classical data provenance, in which ontology axioms
+are annotated with provenance tokens. A consequence inherits the provenance of
+the axioms involved in deriving it, yielding a provenance polynomial as an
+annotation. We analyse the semantics for the ELHr case and show that the
+presence of conjunctions poses various difficulties for handling provenance,
+some of which are mitigated by assuming multiplicative idempotency of the
+semiring. Under this assumption, we study three problems: ontology completion
+with provenance, computing the set of relevant axioms for a consequence, and
+query answering.",cs.LO,"cs.LO, cs.AI, 16Y60",3,Logic in Computer Science,"Logic in Computer Science, Artificial Intelligence",Livia Predoiu,"Camille Bourgaux, Ana Ozaki, Rafael Peñaloza, Livia Predoiu",4,http://arxiv.org/pdf/2001.07541v1,http://arxiv.org/abs/2001.07541v1,2020-01-21
+AI Trust in business processes: The need for process-aware explanations,"Business processes underpin a large number of enterprise operations including
+processing loan applications, managing invoices, and insurance claims. There is
+a large opportunity for infusing AI to reduce cost or provide better customer
+experience, and the business process management (BPM) literature is rich in
+machine learning solutions including unsupervised learning to gain insights on
+clusters of process traces, classification models to predict the outcomes,
+duration, or paths of partial process traces, extracting business process from
+documents, and models to recommend how to optimize a business process or
+navigate decision points. More recently, deep learning models including those
+from the NLP domain have been applied to process predictions.
+  Unfortunately, very little of these innovations have been applied and adopted
+by enterprise companies. We assert that a large reason for the lack of adoption
+of AI models in BPM is that business users are risk-averse and do not
+implicitly trust AI models. There has, unfortunately, been little attention
+paid to explaining model predictions to business users with process context. We
+challenge the BPM community to build on the AI interpretability literature, and
+the AI Trust community to understand",cs.AI,cs.AI,1,Artificial Intelligence,Artificial Intelligence,Vinod Muthusamy,"Steve T. K. Jan, Vatche Ishakian, Vinod Muthusamy",3,http://arxiv.org/pdf/2001.07537v1,http://arxiv.org/abs/2001.07537v1,2020-01-21
+Domain-Aware Dialogue State Tracker for Multi-Domain Dialogue Systems,"In task-oriented dialogue systems the dialogue state tracker (DST) component
+is responsible for predicting the state of the dialogue based on the dialogue
+history. Current DST approaches rely on a predefined domain ontology, a fact
+that limits their effective usage for large scale conversational agents, where
+the DST constantly needs to be interfaced with ever-increasing services and
+APIs. Focused towards overcoming this drawback, we propose a domain-aware
+dialogue state tracker, that is completely data-driven and it is modeled to
+predict for dynamic service schemas. The proposed model utilizes domain and
+slot information to extract both domain and slot specific representations for a
+given dialogue, and then uses such representations to predict the values of the
+corresponding slot. Integrating this mechanism with a pretrained language model
+(i.e. BERT), our approach can effectively learn semantic relations.",cs.CL,"cs.AI, cs.CL",2,Computation and Language,"Artificial Intelligence, Computation and Language",Bernardo Magnini,"Vevake Balaraman, Bernardo Magnini",2,http://arxiv.org/pdf/2001.07526v1,http://arxiv.org/abs/2001.07526v1,2020-01-21
+"Combining Federated and Active Learning for Communication-efficient
+  Distributed Failure Prediction in Aeronautics","Machine Learning has proven useful in the recent years as a way to achieve
+failure prediction for industrial systems. However, the high computational
+resources necessary to run learning algorithms are an obstacle to its
+widespread application. The sub-field of Distributed Learning offers a solution
+to this problem by enabling the use of remote resources but at the expense of
+introducing communication costs in the application that are not always
+acceptable. In this paper, we propose a distributed learning approach able to
+optimize the use of computational and communication resources to achieve
+excellent learning model performances through a centralized architecture. To
+achieve this, we present a new centralized distributed learning algorithm that
+relies on the learning paradigms of Active Learning and Federated Learning to
+offer a communication-efficient method that offers guarantees of model
+precision on both the clients and the central server. We evaluate this method
+on a public benchmark and show that its performances in terms of precision are
+very close to state-of-the-art performance level of non-distributed learning
+despite additional constraints.",cs.AI,"cs.AI, cs.DC",2,Artificial Intelligence,"Artificial Intelligence, Distributed, Parallel, and Cluster Computing",Yohan Petetin,"Nicolas Aussel, Sophie Chabridon, Yohan Petetin",3,http://arxiv.org/pdf/2001.07504v1,http://arxiv.org/abs/2001.07504v1,2020-01-21
+Unsupervisedly Learned Representations: Should the Quest be Over?,"There exists a Classification accuracy gap of about 20% between our best
+methods of generating Unsupervisedly Learned Representations and the accuracy
+rates achieved by (naturally Unsupervisedly Learning) humans. We are at our
+fourth decade at least in search of this class of paradigms. It thus may well
+be that we are looking in the wrong direction. We present in this paper a
+possible solution to this puzzle. We demonstrate that Reinforcement Learning
+schemes can learn representations, which may be used for Pattern Recognition
+tasks such as Classification, achieving practically the same accuracy as that
+of humans. Our main modest contribution lies in the observations that: a. when
+applied to a real world environment (e.g. nature itself) Reinforcement Learning
+does not require labels, and thus may be considered a natural candidate for the
+long sought, accuracy competitive Unsupervised Learning method, and b. in
+contrast, when Reinforcement Learning is applied in a simulated or symbolic
+processing environment (e.g. a computer program) it does inherently require
+labels and should thus be generally classified, with some exceptions, as
+Supervised Learning. The corollary of these observations is that further search
+for Unsupervised Learning competitive paradigms which may be trained in
+simulated environments like many of those found in research and applications
+may be futile.",cs.LG,"cs.AI, cs.LG",2,Machine Learning,"Artificial Intelligence, Machine Learning",Daniel N. Nissani,Daniel N. Nissani,1,http://arxiv.org/pdf/2001.07495v1,http://arxiv.org/abs/2001.07495v1,2020-01-21
+Fast Sequence-Based Embedding with Diffusion Graphs,"A graph embedding is a representation of graph vertices in a low-dimensional
+space, which approximately preserves properties such as distances between
+nodes. Vertex sequence-based embedding procedures use features extracted from
+linear sequences of nodes to create embeddings using a neural network. In this
+paper, we propose diffusion graphs as a method to rapidly generate vertex
+sequences for network embedding. Its computational efficiency is superior to
+previous methods due to simpler sequence generation, and it produces more
+accurate results. In experiments, we found that the performance relative to
+other methods improves with increasing edge density in the graph. In a
+community detection task, clustering nodes in the embedding space produces
+better results compared to other sequence-based embedding methods.",cs.LG,"cs.SI, cs.DC, stat.ML, cs.LG",4,Machine Learning,"Social and Information Networks, Distributed, Parallel, and Cluster Computing, Machine Learning, Machine Learning",Rik Sarkar,"Benedek Rozemberczki, Rik Sarkar",2,http://arxiv.org/pdf/2001.07463v1,http://arxiv.org/abs/2001.07463v1,2020-01-21
+Designing for the Long Tail of Machine Learning,"Recent technical advances has made machine learning (ML) a promising
+component to include in end user facing systems. However, user experience (UX)
+practitioners face challenges in relating ML to existing user-centered design
+processes and how to navigate the possibilities and constraints of this design
+space. Drawing on our own experience, we characterize designing within this
+space as navigating trade-offs between data gathering, model development and
+designing valuable interactions for a given model performance. We suggest that
+the theoretical description of how machine learning performance scales with
+training data can guide designers in these trade-offs as well as having
+implications for prototyping. We exemplify the learning curve's usage by
+arguing that a useful pattern is to design an initial system in a bootstrap
+phase that aims to exploit the training effect of data collected at increasing
+orders of magnitude.",cs.HC,"cs.AI, cs.HC, cs.LG",3,Human-Computer Interaction,"Artificial Intelligence, Human-Computer Interaction, Machine Learning",Jesper Molin,"Martin Lindvall, Jesper Molin",2,http://arxiv.org/pdf/2001.07455v1,http://arxiv.org/abs/2001.07455v1,2020-01-21
+"Learning Diverse Features with Part-Level Resolution for Person
+  Re-Identification","Learning diverse features is key to the success of person re-identification.
+Various part-based methods have been extensively proposed for learning local
+representations, which, however, are still inferior to the best-performing
+methods for person re-identification. This paper proposes to construct a strong
+lightweight network architecture, termed PLR-OSNet, based on the idea of
+Part-Level feature Resolution over the Omni-Scale Network (OSNet) for achieving
+feature diversity. The proposed PLR-OSNet has two branches, one branch for
+global feature representation and the other branch for local feature
+representation. The local branch employs a uniform partition strategy for
+part-level feature resolution but produces only a single identity-prediction
+loss, which is in sharp contrast to the existing part-based methods. Empirical
+evidence demonstrates that the proposed PLR-OSNet achieves state-of-the-art
+performance on popular person Re-ID datasets, including Market1501,
+DukeMTMC-reID and CUHK03, despite its small model size.",cs.CV,"cs.CV, cs.LG",2,Computer Vision and Pattern Recognition,"Computer Vision and Pattern Recognition, Machine Learning",Ming Li,"Ben Xie, Xiaofu Wu, Suofei Zhang, Shiliang Zhao, Ming Li",5,http://arxiv.org/pdf/2001.07442v1,http://arxiv.org/abs/2001.07442v1,2020-01-21
+"Explaining Data-Driven Decisions made by AI Systems: The Counterfactual
+  Approach","Lack of understanding of the decisions made by model-based AI systems is an
+important barrier for their adoption. We examine counterfactual explanations as
+an alternative for explaining AI decisions. The counterfactual approach defines
+an explanation as a set of the system's data inputs that causally drives the
+decision (meaning that removing them changes the decision) and is irreducible
+(meaning that removing any subset of the inputs in the explanation does not
+change the decision). We generalize previous work on counterfactual
+explanations, resulting in a framework that (a) is model-agnostic, (b) can
+address features with arbitrary data types, (c) is able explain decisions made
+by complex AI systems that incorporate multiple models, and (d) is scalable to
+large numbers of features. We also propose a heuristic procedure to find the
+most useful explanations depending on the context. We contrast counterfactual
+explanations with another alternative: methods that explain model predictions
+by weighting features according to their importance (e.g., SHAP, LIME). This
+paper presents two fundamental reasons why explaining model predictions is not
+the same as explaining the decisions made using those predictions, suggesting
+we should carefully consider whether importance-weight explanations are
+well-suited to explain decisions made by AI systems. Specifically, we show that
+(1) features that have a large importance weight for a model prediction may not
+actually affect the corresponding decision, and (2) importance weights are
+insufficient to communicate whether and how features influence system
+decisions. We demonstrate this using several examples, including three detailed
+studies using real-world data that compare the counterfactual approach with
+SHAP and illustrate various conditions under which counterfactual explanations
+explain data-driven decisions better than feature importance weights.",cs.LG,"stat.ML, cs.AI, cs.LG",3,Machine Learning,"Machine Learning, Artificial Intelligence, Machine Learning",Xintian Han,"Carlos Fernandez, Foster Provost, Xintian Han",3,http://arxiv.org/pdf/2001.07417v1,http://arxiv.org/abs/2001.07417v1,2020-01-21
+A multi-agent ontologies-based clinical decision support system,"Clinical decision support systems combine knowledge and data from a variety
+of sources, represented by quantitative models based on stochastic methods, or
+qualitative based rather on expert heuristics and deductive reasoning. At the
+same time, case-based reasoning (CBR) memorizes and returns the experience of
+solving similar problems. The cooperation of heterogeneous clinical knowledge
+bases (knowledge objects, semantic distances, evaluation functions, logical
+rules, databases...) is based on medical ontologies. A multi-agent decision
+support system (MADSS) enables the integration and cooperation of agents
+specialized in different fields of knowledge (semiology, pharmacology, clinical
+cases, etc.). Each specialist agent operates a knowledge base defining the
+conduct to be maintained in conformity with the state of the art associated
+with an ontological basis that expresses the semantic relationships between the
+terms of the domain in question. Our approach is based on the specialization of
+agents adapted to the knowledge models used during the clinical steps and
+ontologies. This modular approach is suitable for the realization of MADSS in
+many areas.",cs.AI,cs.AI,1,Artificial Intelligence,Artificial Intelligence,Joël Colloc,"Ying Shen, Jacquet-Andrieu Armelle, Joël Colloc",3,http://arxiv.org/pdf/2001.07374v1,http://arxiv.org/abs/2001.07374v1,2020-01-21
+"FixMatch: Simplifying Semi-Supervised Learning with Consistency and
+  Confidence","Semi-supervised learning (SSL) provides an effective means of leveraging
+unlabeled data to improve a model's performance. In this paper, we demonstrate
+the power of a simple combination of two common SSL methods: consistency
+regularization and pseudo-labeling. Our algorithm, FixMatch, first generates
+pseudo-labels using the model's predictions on weakly-augmented unlabeled
+images. For a given image, the pseudo-label is only retained if the model
+produces a high-confidence prediction. The model is then trained to predict the
+pseudo-label when fed a strongly-augmented version of the same image. Despite
+its simplicity, we show that FixMatch achieves state-of-the-art performance
+across a variety of standard semi-supervised learning benchmarks, including
+94.93% accuracy on CIFAR-10 with 250 labels and 88.61% accuracy with 40 -- just
+4 labels per class. Since FixMatch bears many similarities to existing SSL
+methods that achieve worse performance, we carry out an extensive ablation
+study to tease apart the experimental factors that are most important to
+FixMatch's success. We make our code available at
+https://github.com/google-research/fixmatch.",cs.LG,"stat.ML, cs.CV, cs.LG",3,Machine Learning,"Machine Learning, Computer Vision and Pattern Recognition, Machine Learning",Colin Raffel,"Kihyuk Sohn, David Berthelot, Chun-Liang Li, Zizhao Zhang, Nicholas Carlini, Ekin D. Cubuk, Alex Kurakin, Han Zhang, Colin Raffel",9,http://arxiv.org/pdf/2001.07685v1,http://arxiv.org/abs/2001.07685v1,2020-01-21
+"SAUNet: Shape Attentive U-Net for Interpretable Medical Image
+  Segmentation","Medical image segmentation is a difficult but important task for many
+clinical operations such as cardiac bi-ventricular volume estimation. More
+recently, there has been a shift to utilizing deep learning and fully
+convolutional neural networks (CNNs) to perform image segmentation that has
+yielded state-of-the-art results in many public benchmark datasets. Despite the
+progress of deep learning in medical image segmentation, standard CNNs are
+still not fully adopted in clinical settings as they lack robustness and
+interpretability. Shapes are generally more meaningful features than solely
+textures of images, which are features regular CNNs learn, causing a lack of
+robustness. Likewise, previous works surrounding model interpretability have
+been focused on post hoc gradient-based saliency methods. However,
+gradient-based saliency methods typically require additional computations post
+hoc and have been shown to be unreliable for interpretability. Thus, we present
+a new architecture called Shape Attentive U-Net (SAUNet) which focuses on model
+interpretability and robustness. The proposed architecture attempts to address
+these limitations by the use of a secondary shape stream that captures rich
+shape-dependent information in parallel with the regular texture stream.
+Furthermore, we suggest multi-resolution saliency maps can be learned using our
+dual-attention decoder module which allows for multi-level interpretability and
+mitigates the need for additional computations post hoc. Our method also
+achieves state-of-the-art results on the two large public cardiac MRI image
+segmentation datasets of SUN09 and AC17.",eess.IV,"eess.IV, cs.CV",2,Image and Video Processing,"Image and Video Processing, Computer Vision and Pattern Recognition",Bo Wang,"Jesse Sun, Fatemeh Darbeha, Mark Zaidi, Bo Wang",4,http://arxiv.org/pdf/2001.07645v1,http://arxiv.org/abs/2001.07645v1,2020-01-21
+"Generate High-Resolution Adversarial Samples by Identifying Effective
+  Features","As the prevalence of deep learning in computer vision, adversarial samples
+that weaken the neural networks emerge in large numbers, revealing their
+deep-rooted defects. Most adversarial attacks calculate an imperceptible
+perturbation in image space to fool the DNNs. In this strategy, the
+perturbation looks like noise and thus could be mitigated. Attacks in feature
+space produce semantic perturbation, but they could only deal with low
+resolution samples. The reason lies in the great number of coupled features to
+express a high-resolution image. In this paper, we propose Attack by
+Identifying Effective Features (AIEF), which learns different weights for
+features to attack. Effective features, those with great weights, influence the
+victim model much but distort the image little, and thus are more effective for
+attack. By attacking mostly on them, AIEF produces high resolution adversarial
+samples with acceptable distortions. We demonstrate the effectiveness of AIEF
+by attacking on different tasks with different generative models.",cs.LG,"stat.ML, cs.CV, cs.LG",3,Machine Learning,"Machine Learning, Computer Vision and Pattern Recognition, Machine Learning",Xiaolin Huang,"Sizhe Chen, Peidong Zhang, Chengjin Sun, Jia Cai, Xiaolin Huang",5,http://arxiv.org/pdf/2001.07631v1,http://arxiv.org/abs/2001.07631v1,2020-01-21
+"batchboost: regularization for stabilizing training with resistance to
+  underfitting & overfitting","Overfitting & underfitting and stable training are an important challenges in
+machine learning. Current approaches for these issues are mixup, SamplePairing
+and BC learning. In our work, we state the hypothesis that mixing many images
+together can be more effective than just two. Batchboost pipeline has three
+stages: (a) pairing: method of selecting two samples. (b) mixing: how to create
+a new one from two samples. (c) feeding: combining mixed samples with new ones
+from dataset into batch (with ratio $\gamma$). Note that sample that appears in
+our batch propagates with subsequent iterations with less and less importance
+until the end of training. Pairing stage calculates the error per sample, sorts
+the samples and pairs with strategy: hardest with easiest one, than mixing
+stage merges two samples using mixup, $x_1 + (1-\lambda)x_2$. Finally, feeding
+stage combines new samples with mixed by ratio 1:1. Batchboost has 0.5-3%
+better accuracy than the current state-of-the-art mixup regularization on
+CIFAR-10 & Fashion-MNIST. Our method is slightly better than SamplePairing
+technique on small datasets (up to 5%). Batchboost provides stable training on
+not tuned parameters (like weight decay), thus its a good method to test
+performance of different architectures. Source code is at:
+https://github.com/maciejczyzewski/batchboost",cs.LG,"stat.ML, cs.CV, cs.LG",3,Machine Learning,"Machine Learning, Computer Vision and Pattern Recognition, Machine Learning",Maciej A. Czyzewski,Maciej A. Czyzewski,1,http://arxiv.org/pdf/2001.07627v1,http://arxiv.org/abs/2001.07627v1,2020-01-21
+PatchPerPix for Instance Segmentation,"In this paper we present a novel method for proposal free instance
+segmentation that can handle sophisticated object shapes that span large parts
+of an image and form dense object clusters with crossovers. Our method is based
+on predicting dense local shape descriptors, which we assemble to form
+instances. All instances are assembled simultaneously in one go. To our
+knowledge, our method is the first non-iterative method that guarantees
+instances to be composed of learnt shape patches. We evaluate our method on a
+variety of data domains, where it defines the new state of the art on two
+challenging benchmarks, namely the ISBI 2012 EM segmentation benchmark, and the
+BBBC010 C. elegans dataset. We show furthermore that our method performs well
+also on 3d image data, and can handle even extreme cases of complex shape
+clusters.",cs.CV,cs.CV,1,Computer Vision and Pattern Recognition,Computer Vision and Pattern Recognition,Dagmar Kainmueller,"Peter Hirsch, Lisa Mais, Dagmar Kainmueller",3,http://arxiv.org/pdf/2001.07626v1,http://arxiv.org/abs/2001.07626v1,2020-01-21
+"Motif Difference Field: A Simple and Effective Image Representation of
+  Time Series for Classification","Time series motifs play an important role in the time series analysis. The
+motif-based time series clustering is used for the discovery of higher-order
+patterns or structures in time series data. Inspired by the convolutional
+neural network (CNN) classifier based on the image representations of time
+series, motif difference field (MDF) is proposed. Compared to other image
+representations of time series, MDF is simple and easy to construct. With the
+Fully Convolution Network (FCN) as the classifier, MDF demonstrates the
+superior performance on the UCR time series dataset in benchmark with other
+time series classification methods. It is interesting to find that the triadic
+time series motifs give the best result in the test. Due to the motif
+clustering reflected in MDF, the significant motifs are detected with the help
+of the Gradient-weighted Class Activation Mapping (Grad-CAM). The areas in MDF
+with high weight in Grad-CAM have a high contribution from the significant
+motifs with the desired ordinal patterns associated with the signature patterns
+in time series. However, the signature patterns cannot be identified with the
+neural network classifiers directly based on the time series.",cs.LG,"stat.ML, cs.CV, cs.LG",3,Machine Learning,"Machine Learning, Computer Vision and Pattern Recognition, Machine Learning",Xin Chen,"Yadong Zhang, Xin Chen",2,http://arxiv.org/pdf/2001.07582v1,http://arxiv.org/abs/2001.07582v1,2020-01-21
+Geometric Proxies for Live RGB-D Stream Enhancement and Consolidation,"We propose a geometric superstructure for unified real-time processing of
+RGB-D data. Modern RGB-D sensors are widely used for indoor 3D capture, with
+applications ranging from modeling to robotics, through augmented reality.
+Nevertheless, their use is limited by their low resolution, with frames often
+corrupted with noise, missing data and temporal inconsistencies. Our approach
+consists in generating and updating through time a single set of compact local
+statistics parameterized over detected geometric proxies, which are fed from
+raw RGB-D data. Our proxies provide several processing primitives, which
+improve the quality of the RGB-D stream on the fly or lighten further
+operations. Experimental results confirm that our lightweight analysis
+framework copes well with embedded execution as well as moderate memory and
+computational capabilities compared to state-of-the-art methods. Processing
+RGB-D data with our proxies allows noise and temporal flickering removal, hole
+filling and resampling. As a substitute of the observed scene, our proxies can
+additionally be applied to compression and scene reconstruction. We present
+experiments performed with our framework in indoor scenes of different natures
+within a recent open RGB-D dataset.",cs.CV,cs.CV,1,Computer Vision and Pattern Recognition,Computer Vision and Pattern Recognition,Tamy Boubekeur,"Adrien Kaiser, José Alonso Ybanez Zepeda, Tamy Boubekeur",3,http://arxiv.org/pdf/2001.07577v1,http://arxiv.org/abs/2001.07577v1,2020-01-21
+Multimodal Deep Unfolding for Guided Image Super-Resolution,"The reconstruction of a high resolution image given a low resolution
+observation is an ill-posed inverse problem in imaging. Deep learning methods
+rely on training data to learn an end-to-end mapping from a low-resolution
+input to a high-resolution output. Unlike existing deep multimodal models that
+do not incorporate domain knowledge about the problem, we propose a multimodal
+deep learning design that incorporates sparse priors and allows the effective
+integration of information from another image modality into the network
+architecture. Our solution relies on a novel deep unfolding operator,
+performing steps similar to an iterative algorithm for convolutional sparse
+coding with side information; therefore, the proposed neural network is
+interpretable by design. The deep unfolding architecture is used as a core
+component of a multimodal framework for guided image super-resolution. An
+alternative multimodal design is investigated by employing residual learning to
+improve the training efficiency. The presented multimodal approach is applied
+to super-resolution of near-infrared and multi-spectral images as well as depth
+upsampling using RGB images as side information. Experimental results show that
+our model outperforms state-of-the-art methods.",eess.IV,"eess.IV, cs.CV, cs.LG",3,Image and Video Processing,"Image and Video Processing, Computer Vision and Pattern Recognition, Machine Learning",Nikos Deligiannis,"Iman Marivani, Evaggelia Tsiligianni, Bruno Cornelis, Nikos Deligiannis",4,http://arxiv.org/pdf/2001.07575v1,http://arxiv.org/abs/2001.07575v1,2020-01-21
+"Joint Learning of Instance and Semantic Segmentation for Robotic
+  Pick-and-Place with Heavy Occlusions in Clutter","We present joint learning of instance and semantic segmentation for visible
+and occluded region masks. Sharing the feature extractor with instance
+occlusion segmentation, we introduce semantic occlusion segmentation into the
+instance segmentation model. This joint learning fuses the instance- and
+image-level reasoning of the mask prediction on the different segmentation
+tasks, which was missing in the previous work of learning instance segmentation
+only (instance-only). In the experiments, we evaluated the proposed joint
+learning comparing the instance-only learning on the test dataset. We also
+applied the joint learning model to 2 different types of robotic pick-and-place
+tasks (random and target picking) and evaluated its effectiveness to achieve
+real-world robotic tasks.",cs.RO,"cs.RO, cs.CV",2,Robotics,"Robotics, Computer Vision and Pattern Recognition",Masayuki Inaba,"Kentaro Wada, Kei Okada, Masayuki Inaba",3,http://arxiv.org/pdf/2001.07481v1,http://arxiv.org/abs/2001.07481v1,2020-01-21
+P$^2$-GAN: Efficient Style Transfer Using Single Style Image,"Style transfer is a useful image synthesis technique that can re-render given
+image into another artistic style while preserving its content information.
+Generative Adversarial Network (GAN) is a widely adopted framework toward this
+task for its better representation ability on local style patterns than the
+traditional Gram-matrix based methods. However, most previous methods rely on
+sufficient amount of pre-collected style images to train the model. In this
+paper, a novel Patch Permutation GAN (P$^2$-GAN) network that can efficiently
+learn the stroke style from a single style image is proposed. We use patch
+permutation to generate multiple training samples from the given style image. A
+patch discriminator that can simultaneously process patch-wise images and
+natural images seamlessly is designed. We also propose a local texture
+descriptor based criterion to quantitatively evaluate the style transfer
+quality. Experimental results showed that our method can produce finer quality
+re-renderings from single style image with improved computational efficiency
+compared with many state-of-the-arts methods.",cs.CV,"eess.IV, cs.CV",2,Computer Vision and Pattern Recognition,"Image and Video Processing, Computer Vision and Pattern Recognition",Jianyi Liu,"Zhentan Zheng, Jianyi Liu",2,http://arxiv.org/pdf/2001.07466v1,http://arxiv.org/abs/2001.07466v1,2020-01-21
+Detecting Face2Face Facial Reenactment in Videos,"Visual content has become the primary source of information, as evident in
+the billions of images and videos, shared and uploaded on the Internet every
+single day. This has led to an increase in alterations in images and videos to
+make them more informative and eye-catching for the viewers worldwide. Some of
+these alterations are simple, like copy-move, and are easily detectable, while
+other sophisticated alterations like reenactment based DeepFakes are hard to
+detect. Reenactment alterations allow the source to change the target
+expressions and create photo-realistic images and videos. While technology can
+be potentially used for several applications, the malicious usage of automatic
+reenactment has a very large social implication. It is therefore important to
+develop detection techniques to distinguish real images and videos with the
+altered ones. This research proposes a learning-based algorithm for detecting
+reenactment based alterations. The proposed algorithm uses a multi-stream
+network that learns regional artifacts and provides a robust performance at
+various compression levels. We also propose a loss function for the balanced
+learning of the streams for the proposed network. The performance is evaluated
+on the publicly available FaceForensics dataset. The results show
+state-of-the-art classification accuracy of 99.96%, 99.10%, and 91.20% for no,
+easy, and hard compression factors, respectively.",cs.CV,cs.CV,1,Computer Vision and Pattern Recognition,Computer Vision and Pattern Recognition,Richa Singh,"Prabhat Kumar, Mayank Vatsa, Richa Singh",3,http://arxiv.org/pdf/2001.07444v1,http://arxiv.org/abs/2001.07444v1,2020-01-21
+Evaluating Weakly Supervised Object Localization Methods Right,"Weakly-supervised object localization (WSOL) has gained popularity over the
+last years for its promise to train localization models with only image-level
+labels. Since the seminal WSOL work of class activation mapping (CAM), the
+field has focused on how to expand the attention regions to cover objects more
+broadly and localize them better. However, these strategies rely on full
+localization supervision to validate hyperparameters and for model selection,
+which is in principle prohibited under the WSOL setup. In this paper, we argue
+that WSOL task is ill-posed with only image-level labels, and propose a new
+evaluation protocol where full supervision is limited to only a small held-out
+set not overlapping with the test set. We observe that, under our protocol, the
+five most recent WSOL methods have not made a major improvement over the CAM
+baseline. Moreover, we report that existing WSOL methods have not reached the
+few-shot learning baseline, where the full-supervision at validation time is
+used for model training instead. Based on our findings, we discuss some future
+directions for WSOL.",cs.CV,"cs.CV, cs.LG",2,Computer Vision and Pattern Recognition,"Computer Vision and Pattern Recognition, Machine Learning",Hyunjung Shim,"Junsuk Choe, Seong Joon Oh, Seungho Lee, Sanghyuk Chun, Zeynep Akata, Hyunjung Shim",6,http://arxiv.org/pdf/2001.07437v1,http://arxiv.org/abs/2001.07437v1,2020-01-21
+Mobility Inference on Long-Tailed Sparse Trajectory,"Analyzing the urban trajectory in cities has become an important topic in
+data mining. How can we model the human mobility consisting of stay and travel
+from the raw trajectory data? How can we infer such a mobility model from the
+single trajectory information? How can we further generalize the mobility
+inference to accommodate the real-world trajectory data that is sparsely
+sampled over time?
+  In this paper, based on formal and rigid definitions of the stay/travel
+mobility, we propose a single trajectory inference algorithm that utilizes a
+generic long-tailed sparsity pattern in the large-scale trajectory data. The
+algorithm guarantees a 100\% precision in the stay/travel inference with a
+provable lower-bound in the recall. Furthermore, we introduce an
+encoder-decoder learning architecture that admits multiple trajectories as
+inputs. The architecture is optimized for the mobility inference problem
+through customized embedding and learning mechanism. Evaluations with three
+trajectory data sets of 40 million urban users validate the performance
+guarantees of the proposed inference algorithm and demonstrate the superiority
+of our deep learning model, in comparison to well-known sequence learning
+methods. On extremely sparse trajectories, the deep learning model achieves a
+2$\times$ overall accuracy improvement from the single trajectory inference
+algorithm, through proven scalability and generalizability to large-scale
+versatile training data.",cs.LG,"cs.SI, stat.ML, cs.LG",3,Machine Learning,"Social and Information Networks, Machine Learning, Machine Learning",Lei Shi,Lei Shi,1,http://arxiv.org/pdf/2001.07636v1,http://arxiv.org/abs/2001.07636v1,2020-01-21
+EdgeNets:Edge Varying Graph Neural Networks,"Driven by the outstanding performance of neural networks in the structured
+Euclidean domain, recent years have seen a surge of interest in developing
+neural networks for graphs and data supported on graphs. The graph is leveraged
+as a parameterization to capture detail at the node level with a reduced number
+of parameters and complexity. Following this rationale, this paper puts forth a
+general framework that unifies state-of-the-art graph neural networks (GNNs)
+through the concept of EdgeNet. An EdgeNet is a GNN architecture that allows
+different nodes to use different parameters to weigh the information of
+different neighbors. By extrapolating this strategy to more iterations between
+neighboring nodes, the EdgeNet learns edge- and neighbor-dependent weights to
+capture local detail. This is the most general local operation that a node can
+do and encompasses under one formulation all graph convolutional neural
+networks (GCNNs) as well as graph attention networks (GATs). In writing
+different GNN architectures with a common language, EdgeNets highlight specific
+architecture advantages and limitations, while providing guidelines to improve
+their capacity without compromising their local implementation. For instance,
+we show that GCNNs have a parameter sharing structure that induces permutation
+equivariance. This can be an advantage or a limitation, depending on the
+application. When it is a limitation, we propose hybrid approaches and provide
+insights to develop several other solutions that promote parameter sharing
+without enforcing permutation equivariance. Another interesting conclusion is
+the unification of GCNNs and GATs -approaches that have been so far perceived
+as separate. In particular, we show that GATs are GCNNs on a graph that is
+learned from the features. This particularization opens the doors to develop
+alternative attention mechanisms for improving discriminatory power.",cs.LG,"stat.ML, eess.SP, cs.NE, cs.LG",4,Machine Learning,"Machine Learning, Signal Processing, Neural and Evolutionary Computing, Machine Learning",Alejandro Ribeiro,"Elvin Isufi, Fernando Gama, Alejandro Ribeiro",3,http://arxiv.org/pdf/2001.07620v1,http://arxiv.org/abs/2001.07620v1,2020-01-21
+TopRank+: A Refinement of TopRank Algorithm,"Online learning to rank is a core problem in machine learning. In Lattimore
+et al. (2018), a novel online learning algorithm was proposed based on
+topological sorting. In the paper they provided a set of self-normalized
+inequalities (a) in the algorithm as a criterion in iterations and (b) to
+provide an upper bound for cumulative regret, which is a measure of algorithm
+performance. In this work, we utilized method of mixtures and asymptotic
+expansions of certain implicit function to provide a tighter, iterated-log-like
+boundary for the inequalities, and as a consequence improve both the algorithm
+itself as well as its performance estimation.",stat.ML,"stat.ML, cs.LG, 60-04",3,Machine Learning,"Machine Learning, Machine Learning",Haolin Zou,"Victor de la Pena, Haolin Zou",2,http://arxiv.org/pdf/2001.07617v1,http://arxiv.org/abs/2001.07617v1,2020-01-21
+Simple and Effective Graph Autoencoders with One-Hop Linear Models,"Graph autoencoders (AE) and variational autoencoders (VAE) recently emerged
+as powerful node embedding methods, with promising performances on challenging
+tasks such as link prediction and node clustering. Graph AE, VAE and most of
+their extensions rely on graph convolutional networks (GCN) encoders to learn
+vector space representations of nodes. In this paper, we propose to replace the
+GCN encoder by a significantly simpler linear model w.r.t. the direct
+neighborhood (one-hop) adjacency matrix of the graph. For the two
+aforementioned tasks, we show that this approach consistently reaches
+competitive performances w.r.t. GCN-based models for numerous real-world
+graphs, including all benchmark datasets commonly used to evaluate graph AE and
+VAE. We question the relevance of repeatedly using these datasets to compare
+complex graph AE and VAE. We also emphasize the effectiveness of the proposed
+encoding scheme, that appears as a simpler and faster alternative to GCN
+encoders for many real-world applications.",cs.LG,"cs.SI, stat.ML, cs.LG",3,Machine Learning,"Social and Information Networks, Machine Learning, Machine Learning",Michalis Vazirgiannis,"Guillaume Salha, Romain Hennequin, Michalis Vazirgiannis",3,http://arxiv.org/pdf/2001.07614v1,http://arxiv.org/abs/2001.07614v1,2020-01-21
+"R2DE: a NLP approach to estimating IRT parameters of newly generated
+  questions","The main objective of exams consists in performing an assessment of students'
+expertise on a specific subject. Such expertise, also referred to as skill or
+knowledge level, can then be leveraged in different ways (e.g., to assign a
+grade to the students, to understand whether a student might need some support,
+etc.). Similarly, the questions appearing in the exams have to be assessed in
+some way before being used to evaluate students. Standard approaches to
+questions' assessment are either subjective (e.g., assessment by human experts)
+or introduce a long delay in the process of question generation (e.g.,
+pretesting with real students). In this work we introduce R2DE (which is a
+Regressor for Difficulty and Discrimination Estimation), a model capable of
+assessing newly generated multiple-choice questions by looking at the text of
+the question and the text of the possible choices. In particular, it can
+estimate the difficulty and the discrimination of each question, as they are
+defined in Item Response Theory. We also present the results of extensive
+experiments we carried out on a real world large scale dataset coming from an
+e-learning platform, showing that our model can be used to perform an initial
+assessment of newly created questions and ease some of the problems that arise
+in question generation.",cs.LG,"stat.ML, cs.CL, cs.LG",3,Machine Learning,"Machine Learning, Computation and Language, Machine Learning",Paolo Cremonesi,"Luca Benedetto, Andrea Cappelli, Roberto Turrin, Paolo Cremonesi",4,http://arxiv.org/pdf/2001.07569v1,http://arxiv.org/abs/2001.07569v1,2020-01-21
+"Classifying Wikipedia in a fine-grained hierarchy: what graphs can
+  contribute","Wikipedia is a huge opportunity for machine learning, being the largest
+semi-structured base of knowledge available. Because of this, countless works
+examine its contents, and focus on structuring it in order to make it usable in
+learning tasks, for example by classifying it into an ontology. Beyond its
+textual contents, Wikipedia also displays a typical graph structure, where
+pages are linked together through citations. In this paper, we address the task
+of integrating graph (i.e. structure) information to classify Wikipedia into a
+fine-grained named entity ontology (NE), the Extended Named Entity hierarchy.
+To address this task, we first start by assessing the relevance of the graph
+structure for NE classification. We then explore two directions, one related to
+feature vectors using graph descriptors commonly used in large-scale network
+analysis, and one extending flat classification to a weighted model taking into
+account semantic similarity. We conduct at-scale practical experiments, on a
+manually labeled subset of 22,000 pages extracted from the Japanese Wikipedia.
+Our results show that integrating graph information succeeds at reducing
+sparsity of the input feature space, and yields classification results that are
+comparable or better than previous works.",cs.LG,"stat.ML, cs.LG",2,Machine Learning,"Machine Learning, Machine Learning",Satoshi Sekine,"Tiphaine Viard, Thomas McLachlan, Hamidreza Ghader, Satoshi Sekine",4,http://arxiv.org/pdf/2001.07558v1,http://arxiv.org/abs/2001.07558v1,2020-01-21
+Ensemble Genetic Programming,"Ensemble learning is a powerful paradigm that has been usedin the top
+state-of-the-art machine learning methods like Random Forestsand XGBoost.
+Inspired by the success of such methods, we have devel-oped a new Genetic
+Programming method called Ensemble GP. The evo-lutionary cycle of Ensemble GP
+follows the same steps as other GeneticProgramming systems, but with
+differences in the population structure,fitness evaluation and genetic
+operators. We have tested this method oneight binary classification problems,
+achieving results significantly betterthan standard GP, with much smaller
+models. Although other methodslike M3GP and XGBoost were the best overall,
+Ensemble GP was able toachieve exceptionally good generalization results on a
+particularly hardproblem where none of the other methods was able to succeed.",cs.NE,"stat.ML, cs.NE, cs.LG",3,Neural and Evolutionary Computing,"Machine Learning, Neural and Evolutionary Computing, Machine Learning",Sara Silva,"Nuno M. Rodrigues, João E. Batista, Sara Silva",3,http://arxiv.org/pdf/2001.07553v1,http://arxiv.org/abs/2001.07553v1,2020-01-21
+Towards Fault Localization via Probabilistic Software Modeling,"Software testing helps developers to identify bugs. However, awareness of
+bugs is only the first step. Finding and correcting the faulty program
+components is equally hard and essential for high-quality software. Fault
+localization automatically pinpoints the location of an existing bug in a
+program. It is a hard problem, and existing methods are not yet precise enough
+for widespread industrial adoption. We propose fault localization via
+Probabilistic Software Modeling (PSM). PSM analyzes the structure and behavior
+of a program and synthesizes a network of Probabilistic Models (PMs). Each PM
+models a method with its inputs and outputs and is capable of evaluating the
+likelihood of runtime data. We use this likelihood evaluation to find fault
+locations and their impact on dependent code elements. Results indicate that
+PSM is a robust framework for accurate fault localization.",cs.SE,cs.SE,1,Software Engineering,Software Engineering,Stefan Fischer,"Hannes Thaller, Lukas Linsbauer, Alexander Egyed, Stefan Fischer",4,http://arxiv.org/pdf/2001.07409v1,http://arxiv.org/abs/2001.07409v1,2020-01-21
+Towards Semantic Clone Detection via Probabilistic Software Modeling,"Semantic clones are program components with similar behavior, but different
+textual representation. Semantic similarity is hard to detect, and semantic
+clone detection is still an open issue. We present semantic clone detection via
+Probabilistic Software Modeling (PSM) as a robust method for detecting
+semantically equivalent methods. PSM inspects the structure and runtime
+behavior of a program and synthesizes a network of Probabilistic Models (PMs).
+Each PM in the network represents a method in the program and is capable of
+generating and evaluating runtime events. We leverage these capabilities to
+accurately find semantic clones. Results show that the approach can detect
+semantic clones in the complete absence of syntactic similarity with high
+precision and low error rates.",cs.SE,cs.SE,1,Software Engineering,Software Engineering,Alexander Egyed,"Hannes Thaller, Lukas Linsbauer, Alexander Egyed",3,http://arxiv.org/pdf/2001.07399v1,http://arxiv.org/abs/2001.07399v1,2020-01-21
+"AutoMATES: Automated Model Assembly from Text, Equations, and Software","Models of complicated systems can be represented in different ways - in
+scientific papers, they are represented using natural language text as well as
+equations. But to be of real use, they must also be implemented as software,
+thus making code a third form of representing models. We introduce the
+AutoMATES project, which aims to build semantically-rich unified
+representations of models from scientific code and publications to facilitate
+the integration of computational models from different domains and allow for
+modeling large, complicated systems that span multiple domains and levels of
+abstraction.",cs.AI,"cs.AI, cs.MM, cs.SE, D.3.3; D.3.4; H.1.0; I.2.2; I.2.5; I.2.7; I.6.4; I.6.5",4,Artificial Intelligence,"Artificial Intelligence, Multimedia, Software Engineering",Clayton T. Morrison,"Adarsh Pyarelal, Marco A. Valenzuela-Escarcega, Rebecca Sharp, Paul D. Hein, Jon Stephens, Pratik Bhandari, HeuiChan Lim, Saumya Debray, Clayton T. Morrison",9,http://arxiv.org/pdf/2001.07295v1,http://arxiv.org/abs/2001.07295v1,2020-01-21
+"Invariant density adaptive estimation for ergodic jump diffusion
+  processes over anisotropic classes","We consider the solution X = (Xt) t$\ge$0 of a multivariate stochastic
+differential equation with Levy-type jumps and with unique invariant
+probability measure with density $\mu$. We assume that a continuous record of
+observations X T = (Xt) 0$\le$t$\le$T is available. In the case without jumps,
+Reiss and Dalalyan (2007) and Strauch (2018) have found convergence rates of
+invariant density estimators, under respectively isotropic and anisotropic
+H{\""o}lder smoothness constraints, which are considerably faster than those
+known from standard multivariate density estimation. We extend the previous
+works by obtaining, in presence of jumps, some estimators which have the same
+convergence rates they had in the case without jumps for d $\ge$ 2 and a rate
+which depends on the degree of the jumps in the one-dimensional setting. We
+propose moreover a data driven bandwidth selection procedure based on the
+Goldensh-luger and Lepski (2011) method which leads us to an adaptive
+non-parametric kernel estimator of the stationary density $\mu$ of the jump
+diffusion X. Adaptive bandwidth selection, anisotropic density estimation,
+ergodic diffusion with jumps, L{\'e}vy driven SDE",math.ST,"math.ST, stat.TH",2,Statistics Theory,"Statistics Theory, Statistics Theory",Arnaud Gloter,"Chiara Amorino, Arnaud Gloter",2,http://arxiv.org/pdf/2001.07422v1,http://arxiv.org/abs/2001.07422v1,2020-01-21
+Explicit agreement extremes for a $2\times2$ table with given marginals,"The problem of maximizing (or minimizing) the agreement between clusterings,
+subject to given marginals, can be formally posed under a common framework for
+several agreement measures. Until now, it was possible to find its solution
+only through numerical algorithms. Here, an explicit solution is shown for the
+case where the two clusterings have two clusters each.",stat.ML,"cs.LG, 62H30, 91C20, math.ST, stat.ML, stat.TH",5,Machine Learning,"Machine Learning, Statistics Theory, Machine Learning, Statistics Theory",José E. Chacón,José E. Chacón,1,http://arxiv.org/pdf/2001.07415v1,http://arxiv.org/abs/2001.07415v1,2020-01-21
+"On Construction of Higher Order Kernels Using Fourier Transforms and
+  Covariance Functions","In this paper, we show that a suitably chosen covariance function of a
+continuous time, second order stationary stochastic process can be viewed as a
+symmetric higher order kernel. This leads to the construction of a higher order
+kernel by choosing an appropriate covariance function. An optimal choice of the
+constructed higher order kernel that partially minimizes the mean integrated
+square error of the kernel density estimator is also discussed.",math.ST,"stat.ME, math.ST, stat.TH",3,Statistics Theory,"Methodology, Statistics Theory, Statistics Theory",Radhenduhska Srivastava,"Soumya Das, Subhajit Dutta, Radhenduhska Srivastava",3,http://arxiv.org/pdf/2001.07383v1,http://arxiv.org/abs/2001.07383v1,2020-01-21
+A General Class of Weighted Rank Correlation Measures,"In this paper we propose a class of weighted rank correlation coefficients
+extending the Spearman's rho. The proposed class constructed by giving suitable
+weights to the distance between two sets of ranks to place more emphasis on
+items having low rankings than those have high rankings or vice versa. The
+asymptotic distribution of the proposed measures and properties of the
+parameters estimated by them are studied through the associated copula. A
+simulation study is performed to compare the performance of the proposed
+statistics for testing independence using asymptotic relative efficiency
+calculations.",math.ST,"math.ST, stat.TH",2,Statistics Theory,"Statistics Theory, Statistics Theory",M. Amini,"M. Sanatgar, A. Dolati, M. Amini",3,http://arxiv.org/pdf/2001.07298v1,http://arxiv.org/abs/2001.07298v1,2020-01-21
+Coupled Moebius Maps as a Tool to Model Kuramoto Phase Synchronization,"We propose Moebius maps as a tool to model synchronization phenomena in
+coupled phase oscillators. Not only does the map provide fast computation of
+phase synchronization, it also reflects the underlying group structure of the
+sinusoidally coupled continuous phase dynamics. We study map versions of
+various known continuous-time collective dynamics, such as the synchronization
+transition in the Kuramoto-Sakaguchi model of non-identical oscillators,
+chimeras in two coupled populations of identical phase oscillators, and
+Kuramoto-Battogtokh chimeras on a ring, and demonstrate similarities and
+differences between the iterated map models and their known continuous-time
+counterparts.",nlin.AO,"nlin.AO, physics.comp-ph",2,Adaptation and Self-Organizing Systems,"Adaptation and Self-Organizing Systems, Computational Physics",Arkady Pikovsky,"Chen Chris Gong, Ralf Toenjes, Arkady Pikovsky",3,http://arxiv.org/pdf/2001.07593v1,http://arxiv.org/abs/2001.07593v1,2020-01-21
+Dimensionalities and multiplicities determination of crystal nets,"Low-dimensional materials have attracted significant attentions over the past
+decade. To discover new low-dimensional materials, high-throughout screening
+methods have been applied in different materials databases. For this purpose,
+the reliability of dimensionality identification is therefore highly important.
+In this work, we find that the existence of self-penetrating nets may lead to
+incorrect results by previous methods. In stead of this, we use the quotient
+graph to analysis the topologies of structures and compute their
+dimensionalities. Based on the quotient graph, we can calculate not only the
+dimensionality but also the multiplicity of self-penetrating structures. As a
+demonstration, we screened the Crystallography Open Database using our method
+and found hundreds of structures with different dimensionalities and high
+multiplicities up to eleven.",cond-mat.mtrl-sci,"cond-mat.mtrl-sci, physics.comp-ph",2,Materials Science,"Materials Science, Computational Physics",Jian Sun,"Hao Gao, Junjie Wang, Zhaopeng Guo, Jian Sun",4,http://arxiv.org/pdf/2001.07565v1,http://arxiv.org/abs/2001.07565v1,2020-01-21
+"An arbitrary-order Cell Method with block-diagonal mass-matrices for the
+  time-dependent 2D Maxwell equations","We introduce a new numerical method for the time-dependent Maxwell equations
+on unstructured meshes in two space dimensions. This relies on the introduction
+of a new mesh, which is the barycentric-dual cellular complex of the starting
+simplicial mesh, and on approximating two unknown fields with integral
+quantities on geometric entities of the two dual complexes. A careful choice of
+basis-functions yields cheaply invertible block-diagonal system matrices for
+the discrete time-stepping scheme. The main novelty of the present contribution
+lies in incorporating arbitrary polynomial degree in the approximating
+functional spaces, defined through a new reference cell. The presented method,
+albeit a kind of Discontinuous Galerkin approach, requires neither the
+introduction of user-tuned penalty parameters for the tangential jump of the
+fields, nor numerical dissipation to achieve stability. In fact an exact
+electromagnetic energy conservation law for the semi-discrete scheme is proved
+and it is shown on several numerical tests that the resulting algorithm
+provides spurious-free solutions with the expected order of convergence.",physics.comp-ph,"math.NA, cs.NA, 65M60, physics.comp-ph",4,Computational Physics,"Numerical Analysis, Numerical Analysis, Computational Physics",Joachim Schöberl,"Bernard Kapidani, Lorenzo Codecasa, Joachim Schöberl",3,http://arxiv.org/pdf/2001.07544v1,http://arxiv.org/abs/2001.07544v1,2020-01-21
+"Dissecting strong-field excitation dynamics with atomic-momentum
+  spectroscopy","Strong, focussed linearly-polarized infra-red fields electronically excite
+and accelerate atoms in the laser propagation and the transverse directions. We
+develop a numerically-tractable, quantum-mechanical treatment of correlations
+between internal and centre-of-mass (c.m.) dynamics, and apply it to the
+hydrogen atom. The propagation-direction c.m. momentum carries no information
+on the internal dynamics. The transverse momentum records the time spent in the
+field, allowing femtosecond reconstruction of the strong-field excitation
+process. The ground state becomes weak-field seeking, an unambiguous signature
+of the Kramers-Henneberger regime.",physics.atom-ph,"physics.atom-ph, physics.comp-ph, physics.chem-ph",3,Atomic Physics,"Atomic Physics, Computational Physics, Chemical Physics",S. Patchkovskii,"A. W. Bray, U. Eichmann, S. Patchkovskii",3,http://arxiv.org/pdf/2001.07513v1,http://arxiv.org/abs/2001.07513v1,2020-01-21
+Variational Dropout Sparsification for Particle Identification speed-up,"Accurate particle identification (PID) is one of the most important aspects
+of the LHCb experiment. Modern machine learning techniques such as neural
+networks (NNs) are efficiently applied to this problem and are integrated into
+the LHCb software. In this research, we discuss novel applications of neural
+network speed-up techniques to achieve faster PID in LHC upgrade conditions. We
+show that the best results are obtained using variational dropout
+sparsification, which provides a prediction (feedforward pass) speed increase
+of up to a factor of sixteen even when compared to a model with shallow
+networks.",physics.data-an,"cs.LG, physics.data-an",2,"Data Analysis, Statistics and Probability","Machine Learning, Data Analysis, Statistics and Probability",Mikhail Hushchyn,"Artem Ryzhikov, Denis Derkach, Mikhail Hushchyn",3,http://arxiv.org/pdf/2001.07493v1,http://arxiv.org/abs/2001.07493v1,2020-01-21
+"Brief Communication: A Re-Examination of the Eye Movement Data used by
+  Hooge et al (2018): ""Is human classification by experienced untrained
+  observers a gold standard in fixation detection?""","Hooge et al. (2018) asked the question: ""Is human classification by
+experienced untrained observers a gold standard in fixation detection?"" They
+conclude the answer is no. I have had a close look at their data and their
+report, and I find that both the data itself and the method of presentation of
+the data to the human raters are problematic. I think that data used to address
+this important question should be very high quality, and the method of
+presentation of the data should be optimized. The Hooge et al. (2018) study
+does not meet this standard. A number of fixations have clear saccades within
+them. No expert human rater would intentionally include such saccades in
+fixations. Something has gone wrong. Also, the treatment of some inter-fixation
+intervals as saccades that might have been identified by human experts is
+completely unjustified. The results regarding these saccades are without merit
+or meaning.",q-bio.QM,q-bio.QM,1,Quantitative Methods,Quantitative Methods,Lee Friedman,Lee Friedman,1,http://arxiv.org/pdf/2001.07701v1,http://arxiv.org/abs/2001.07701v1,2020-01-21
+Understanding the role of phenotypic switching in cancer drug resistance,"The emergence of acquired drug resistance in cancer represents a major
+barrier to treatment success. While research has traditionally focused on
+genetic sources of resistance, recent findings suggest that cancer cells can
+acquire transient resistant phenotypes via epigenetic modifications and other
+non-genetic mechanisms. Although these resistant phenotypes are eventually
+relinquished by individual cells, they can temporarily 'save' the tumor from
+extinction and enable the emergence of more permanent resistance mechanisms.
+These observations have generated interest in the potential of epigenetic
+therapies for long-term tumor control or eradication. In this work, we develop
+a mathematical model to study how phenotypic switching at the single-cell level
+affects resistance evolution in cancer. We highlight unique features of
+non-genetic resistance, probe the evolutionary consequences of epigenetic drugs
+and explore potential therapeutic strategies. We find that even short-term
+epigenetic modifications and stochastic fluctuations in gene expression can
+drive long-term drug resistance in the absence of any bona fide resistance
+mechanisms. We also find that an epigenetic drug that slightly perturbs the
+average retention of the resistant phenotype can turn guaranteed treatment
+failure into guaranteed success. Lastly, we find that combining an epigenetic
+drug with an anti-cancer agent can significantly outperform monotherapy, and
+that treatment outcome is heavily affected by drug sequencing.",q-bio.PE,"q-bio.PE, q-bio.QM, 92D25, 92B05, 60J85",3,Populations and Evolution,"Populations and Evolution, Quantitative Methods",Jasmine Foo,"Einar Bjarki Gunnarsson, Subhajyoti De, Kevin Leder, Jasmine Foo",4,http://arxiv.org/pdf/2001.07690v1,http://arxiv.org/abs/2001.07690v1,2020-01-21
+Bisimilar Conversion of Multi-valued Networks to Boolean Networks,"Discrete modelling frameworks of Biological networks can be divided in two
+distinct categories: Boolean and Multi-valued. Although Multi-valued networks
+are more expressive for qualifying the regulatory behaviours modelled by more
+than two values, the ability to automatically convert them to Boolean network
+with an equivalent behaviour breaks down the fundamental borders between the
+two approaches. Theoretically investigating the conversion process provides
+relevant insights into bridging the gap between them. Basically, the conversion
+aims at finding a Boolean network bisimulating a Multi-valued one. In this
+article, we investigate the bisimilar conversion where the Boolean integer
+coding is a parameter that can be freely modified. Based on this analysis, we
+define a computational method automatically inferring a bisimilar Boolean
+network from a given Multi-valued one.",cs.DM,"cs.SC, cs.DM, q-bio.QM",3,Discrete Mathematics,"Symbolic Computation, Discrete Mathematics, Quantitative Methods",Sergiu Ivanov,"Franck Delaplace, Sergiu Ivanov",2,http://arxiv.org/pdf/2001.07371v1,http://arxiv.org/abs/2001.07371v1,2020-01-21
+"Estimating locomotor demands during team play from broadcast-derived
+  tracking data","The introduction of optical tracking data across sports has given rise to the
+ability to dissect athletic performance at a level unfathomable a decade ago.
+One specific area that has seen substantial benefit is sports science, as high
+resolution coordinate data permits sports scientists to have to-the-second
+estimates of external load metrics, such as acceleration load and high speed
+running distance, traditionally used to understand the physical toll a game
+takes on an athlete. Unfortunately, collecting this data requires installation
+of expensive hardware and paying costly licensing fees to data providers,
+restricting its availability. Algorithms have been developed that allow a
+traditional broadcast feed to be converted to x-y coordinate data, making
+tracking data easier to acquire, but coordinates are available for an athlete
+only when that player is within the camera frame. Obviously, this leads to
+inaccuracies in player load estimates, limiting the usefulness of this data for
+sports scientists. In this research, we develop models that predict offscreen
+load metrics and demonstrate the viability of broadcast-derived tracking data
+for understanding external load in soccer.",stat.AP,stat.AP,1,Applications,Applications,Luke Bornn,"Jacob Mortensen, Luke Bornn",2,http://arxiv.org/pdf/2001.07692v1,http://arxiv.org/abs/2001.07692v1,2020-01-21
+"How Fast You Can Actually Fly: A Comparative Investigation of Flight
+  Airborne Time in China and the U.S","Actual airborne time (AAT) is the time between wheels-off and wheels-on of a
+flight. Understanding the behavior of AAT is increasingly important given the
+ever growing demand for air travel and flight delays becoming more rampant. As
+no research on AAT exists, this paper performs the first empirical analysis of
+AAT behavior, comparatively for the U.S. and China. The focus is on how AAT is
+affected by scheduled block time (SBT), origin-destination (OD) distance, and
+the possible pressure to reduce AAT from other parts of flight operations.
+Multiple econometric models are developed. The estimation results show that in
+both countries AAT is highly correlated with SBT and OD distance. Flights in
+the U.S. are faster than in China. On the other hand, facing ground delay prior
+to takeoff, a flight has limited capability to speed up. The pressure from
+short turnaround time after landing to reduce AAT is immaterial. Sensitivity
+analysis of AAT to flight length and aircraft utilization is further conducted.
+Given the more abundant airspace, flexible routing networks, and efficient ATFM
+procedures, a counterfactual that the AAT behavior in the U.S. were adopted in
+China is examined. We find that by doing so significant efficiency gains could
+be achieved in the Chinese air traffic system. On average, 11.8 minutes of AAT
+per flight would be saved, coming from both reduction in SBT and reduction in
+AAT relative to the new SBT. Systemwide fuel saving would amount to over 300
+million gallons with direct airline operating cost saving of nearly $1.3
+billion nationwide in 2016.",stat.AP,"62P30, stat.AP",2,Applications,Applications,Mark Hansen,"Ke Liu, Zhe Zheng, Bo Zou, Mark Hansen",4,http://arxiv.org/pdf/2001.07646v1,http://arxiv.org/abs/2001.07646v1,2020-01-21
+how well can sensitivity and sojourn time be estimated,"Chronic disease progression models are governed by three main parameters:
+sensitivity, preclinical intensity, and sojourn time. The estimation of these
+parameters helps in optimizing screening programs and examine the improvement
+in survival. Multiple approaches exist to estimate those parameters. However,
+these models are based on strong underlying assumptions. The main aim of this
+article is to investigate the effect of these assumptions. For this purpose, we
+developed a simulator to mimic a breast cancer screening program directly
+observing the exact onset and the sojourn time of the disease. We investigate
+the effects of assuming the sensitivity to be constant, inter-screening
+interval and misspecifying the sojourn time. Our results indicate a strong
+correlation between the estimated parameters, and that the chosen sojourn
+time-distribution has a strong effect on the accuracy of the estimation. These
+findings shed a light on the seemingly discrepant results got by different
+authors using the same data sets but different assumptions.",stat.AP,stat.AP,1,Applications,Applications,András Zempléni,"Ayman Hijazy, András Zempléni",2,http://arxiv.org/pdf/2001.07469v1,http://arxiv.org/abs/2001.07469v1,2020-01-21
+"Bayesian Spatial Models for Voxel-wise Prostate Cancer Classification
+  Using Multi-parametric MRI Data","Multi-parametric magnetic resonance imaging (mpMRI) plays an increasingly
+important role in the diagnosis of prostate cancer. Various computer-aided
+detection algorithms have been proposed for automated prostate cancer detection
+by combining information from various mpMRI data components. However, there
+exist other features of mpMRI, including the spatial correlation between voxels
+and between-patient heterogeneity in the mpMRI parameters, that have not been
+fully explored in the literature but could potentially improve cancer detection
+if leveraged appropriately. This paper proposes novel voxel-wise Bayesian
+classifiers for prostate cancer that account for the spatial correlation and
+between-patient heterogeneity in mpMRI. Modeling the spatial correlation is
+challenging due to the extreme high dimensionality of the data, and we consider
+three computationally efficient approaches using Nearest Neighbor Gaussian
+Process (NNGP), knot-based reduced-rank approximation, and a conditional
+autoregressive (CAR) model, respectively. The between-patient heterogeneity is
+accounted for by adding a subject-specific random intercept on the mpMRI
+parameter model. Simulation results show that properly modeling the spatial
+correlation and between-patient heterogeneity improves classification accuracy.
+Application to in vivo data illustrates that classification is improved by
+spatial modeling using NNGP and reduced-rank approximation but not the CAR
+model, while modeling the between-patient heterogeneity does not further
+improve our classifier. Among our proposed models, the NNGP-based model is
+recommended considering its robust classification accuracy and high
+computational efficiency.",stat.AP,stat.AP,1,Applications,Applications,Joseph S. Koopmeiners,"Jin Jin, Lin Zhang, Ethan Leng, Gregory J. Metzger, Joseph S. Koopmeiners",5,http://arxiv.org/pdf/2001.07316v1,http://arxiv.org/abs/2001.07316v1,2020-01-21
+"MonteCarloMeasurements.jl: Nonlinear Propagation of Arbitrary
+  Multivariate Distributions by means of Method Overloading","This manuscript outlines a software package that facilitates working with
+probability distributions by means of Monte-Carlo methods, in a way that allows
+for propagation of multivariate probability distributions through arbitrary
+functions. We provide a \emph{type} that represents probability distributions
+by an internal vector of unweighted samples, \texttt{Particles}, which is a
+subtype of a \texttt{Real} number and behaves just like a regular real number
+in calculations by means of method overloading. This makes the software easy to
+work with and presents minimal friction for the user. We highlight how this
+design facilitates optimal usage of SIMD instructions and showcase the package
+for uncertainty propagation through an off-the-shelf ODE solver, as well as for
+robust probabilistic optimization with automatic differentiation.",cs.MS,"stat.OT, cs.MS, stat.CO",3,Mathematical Software,"Other Statistics, Mathematical Software, Computation",Fredrik Bagge Carlson,Fredrik Bagge Carlson,1,http://arxiv.org/pdf/2001.07625v1,http://arxiv.org/abs/2001.07625v1,2020-01-21
+"Clinical Prediction Models to Predict the Risk of Multiple Binary
+  Outcomes: a comparison of approaches","Clinical prediction models (CPMs) are used to predict clinically relevant
+outcomes or events. Typically, prognostic CPMs are derived to predict the risk
+of a single future outcome. However, with rising emphasis on the prediction of
+multi-morbidity, there is growing need for CPMs to simultaneously predict risks
+for each of multiple future outcomes. A common approach to multi-outcome risk
+prediction is to derive a CPM for each outcome separately, then multiply the
+predicted risks. This approach is only valid if the outcomes are conditionally
+independent given the covariates, and it fails to exploit the potential
+relationships between the outcomes. This paper outlines several approaches that
+could be used to develop prognostic CPMs for multiple outcomes. We consider
+four methods, ranging in complexity and assumed conditional independence
+assumptions: namely, probabilistic classifier chain, multinomial logistic
+regression, multivariate logistic regression, and a Bayesian probit model.
+These are compared with methods that rely on conditional independence: separate
+univariate CPMs and stacked regression. Employing a simulation study and
+real-world example via the MIMIC-III database, we illustrate that CPMs for
+joint risk prediction of multiple outcomes should only be derived using methods
+that model the residual correlation between outcomes. In such a situation, our
+results suggest that probabilistic classification chains, multinomial logistic
+regression or the Bayesian probit model are all appropriate choices. We call
+into question the development of CPMs for each outcome in isolation when
+multiple correlated or structurally related outcomes are of interest and
+recommend more holistic risk prediction.",stat.ME,stat.ME,1,Methodology,Methodology,Richard D. Riley,"Glen P. Martin, Matthew Sperrin, Kym I. E. Snell, Iain Buchan, Richard D. Riley",5,http://arxiv.org/pdf/2001.07624v1,http://arxiv.org/abs/2001.07624v1,2020-01-21
+"Understanding the stochastic partial differential equation approach to
+  smoothing","Correlation and smoothness are terms used to describe a wide variety of
+random quantities. In time, space, and many other domains, they both imply the
+same idea: quantities that occur closer together are more similar than those
+further apart. Two popular statistical models that represent this idea are
+basis-penalty smoothers (Wood, 2017) and stochastic partial differential
+equations (SPDE) (Lindgren et al., 2011). In this paper, we discuss how the
+SPDE can be interpreted as a smoothing penalty and can be fitted using the R
+package mgcv, allowing practitioners with existing knowledge of smoothing
+penalties to better understand the implementation and theory behind the SPDE
+approach.",stat.ME,stat.ME,1,Methodology,Methodology,Andrew E Seaton,"David L Miller, Richard Glennie, Andrew E Seaton",3,http://arxiv.org/pdf/2001.07623v1,http://arxiv.org/abs/2001.07623v1,2020-01-21
+Learning to Control PDEs with Differentiable Physics,"Predicting outcomes and planning interactions with the physical world are
+long-standing goals for machine learning. A variety of such tasks involves
+continuous physical systems, which can be described by partial differential
+equations (PDEs) with many degrees of freedom. Existing methods that aim to
+control the dynamics of such systems are typically limited to relatively short
+time frames or a small number of interaction parameters. We present a novel
+hierarchical predictor-corrector scheme which enables neural networks to learn
+to understand and control complex nonlinear physical systems over long time
+frames. We propose to split the problem into two distinct tasks: planning and
+control. To this end, we introduce a predictor network that plans optimal
+trajectories and a control network that infers the corresponding control
+parameters. Both stages are trained end-to-end using a differentiable PDE
+solver. We demonstrate that our method successfully develops an understanding
+of complex physical systems and learns to control them for tasks involving PDEs
+such as the incompressible Navier-Stokes equations.",cs.LG,"stat.ML, physics.flu-dyn, cs.LG",3,Machine Learning,"Machine Learning, Fluid Dynamics, Machine Learning",Nils Thuerey,"Philipp Holl, Vladlen Koltun, Nils Thuerey",3,http://arxiv.org/pdf/2001.07457v1,http://arxiv.org/abs/2001.07457v1,2020-01-21
+Integrating data science ethics into an undergraduate major,"We present a programmatic approach to incorporating ethics into an
+undergraduate major in statistical and data sciences. We discuss
+departmental-level initiatives designed to meet the National Academy of
+Sciences recommendation for weaving ethics into the curriculum from
+top-to-bottom as our majors progress from our introductory courses to our
+senior capstone course, as well as from side-to-side through co-curricular
+programming. We also provide six examples of data science ethics modules
+(""patches"") used in five different courses at our liberal arts college, each
+focusing on a different ethical consideration. The patches are designed to be
+portable such that they can be flexibly incorporated into existing courses at
+different levels of instruction with minimal disruption to syllabi. We conclude
+with next steps and preliminary assessments.",stat.OT,"stat.OT, K.7.4; K.3.2, 00A05, cs.OH",4,Other Statistics,"Other Statistics, Other Computer Science",Miles Q. Ott,"Benjamin S. Baumer, Randi L. Garcia, Albert Y. Kim, Katherine M. Kinnaird, Miles Q. Ott",5,http://arxiv.org/pdf/2001.07649v1,http://arxiv.org/abs/2001.07649v1,2020-01-21
+"The Principled Prediction-Problem Ontology: when black box algorithms
+  are (not) appropriate","Black-box algorithms have had astonishing success in some settings. But their
+unpredictable brittleness has provoked serious concern and increased scrutiny.
+For any given black-box algorithm understanding where it might fail is
+extraordinarily challenging. In contrast, understanding which settings are not
+appropriate for black-box deployment requires no more than understanding simply
+how they are developed. We introduce a framework that isolates four
+problem-features -- measurement, adaptability, resilience, and agnosis -- which
+need to be carefully considered before selecting an algorithm. This paper lays
+out a principled framework, justified through careful decomposition of the
+system components used to develop black-box algorithms, for people to
+understand and discuss where black-box algorithms are appropriate and, more
+frequently, where they are not appropriate.",stat.OT,stat.OT,1,Other Statistics,Other Statistics,Michael Baiocchi,"Jordan Rodu, Michael Baiocchi",2,http://arxiv.org/pdf/2001.07648v1,http://arxiv.org/abs/2001.07648v1,2020-01-21

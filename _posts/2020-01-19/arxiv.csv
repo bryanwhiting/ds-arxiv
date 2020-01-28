@@ -1,0 +1,694 @@
+title,summary,primary_tag,tags,n_tags,primary_category,categories,author,authors,n_authors,url_pdf,url_href,date
+Adversarially Guided Self-Play for Adopting Social Conventions,"Robotic agents must adopt existing social conventions in order to be
+effective teammates. These social conventions, such as driving on the right or
+left side of the road, are arbitrary choices among optimal policies, but all
+agents on a successful team must use the same convention. Prior work has
+identified a method of combining self-play with paired input-output data
+gathered from existing agents in order to learn their social convention without
+interacting with them. We build upon this work by introducing a technique
+called Adversarial Self-Play (ASP) that uses adversarial training to shape the
+space of possible learned policies and substantially improves learning
+efficiency. ASP only requires the addition of unpaired data: a dataset of
+outputs produced by the social convention without associated inputs.
+Theoretical analysis reveals how ASP shapes the policy space and the
+circumstances (when behaviors are clustered or exhibit some other structure)
+under which it offers the greatest benefits. Empirical results across three
+domains confirm ASP's advantages: it produces models that more closely match
+the desired social convention when given as few as two paired datapoints.",cs.AI,"cs.RO, cs.MA, cs.AI",3,Artificial Intelligence,"Robotics, Multiagent Systems, Artificial Intelligence",Julie Shah,"Mycal Tucker, Yilun Zhou, Julie Shah",3,http://arxiv.org/pdf/2001.05994v1,http://arxiv.org/abs/2001.05994v1,2020-01-16
+"#MeToo on Campus: Studying College Sexual Assault at Scale Using Data
+  Reported on Social Media","Recently, the emergence of the #MeToo trend on social media has empowered
+thousands of people to share their own sexual harassment experiences. This
+viral trend, in conjunction with the massive personal information and content
+available on Twitter, presents a promising opportunity to extract data driven
+insights to complement the ongoing survey based studies about sexual harassment
+in college. In this paper, we analyze the influence of the #MeToo trend on a
+pool of college followers. The results show that the majority of topics
+embedded in those #MeToo tweets detail sexual harassment stories, and there
+exists a significant correlation between the prevalence of this trend and
+official reports on several major geographical regions. Furthermore, we
+discover the outstanding sentiments of the #MeToo tweets using deep semantic
+meaning representations and their implications on the affected users
+experiencing different types of sexual harassment. We hope this study can raise
+further awareness regarding sexual misconduct in academia.",cs.SI,"cs.MM, cs.SI, cs.CL, cs.AI",4,Social and Information Networks,"Multimedia, Social and Information Networks, Computation and Language, Artificial Intelligence",Jiebo Luo,"Viet Duong, Phu Pham, Ritwik Bose, Jiebo Luo",4,http://arxiv.org/pdf/2001.05970v1,http://arxiv.org/abs/2001.05970v1,2020-01-16
+"On Expert Behaviors and Question Types for Efficient Query-Based
+  Ontology Fault Localization","We challenge existing query-based ontology fault localization methods wrt.
+assumptions they make, criteria they optimize, and interaction means they use.
+We find that their efficiency depends largely on the behavior of the
+interacting expert, that performed calculations can be inefficient or
+imprecise, and that used optimization criteria are often not fully realistic.
+As a remedy, we suggest a novel (and simpler) interaction approach which
+overcomes all identified problems and, in comprehensive experiments on faulty
+real-world ontologies, enables a successful fault localization while requiring
+fewer expert interactions in 66 % of the cases, and always at least 80 % less
+expert waiting time, compared to existing methods.",cs.AI,"cs.LO, cs.PF, cs.HC, cs.AI",4,Artificial Intelligence,"Logic in Computer Science, Performance, Human-Computer Interaction, Artificial Intelligence",Patrick Rodler,Patrick Rodler,1,http://arxiv.org/pdf/2001.05952v1,http://arxiv.org/abs/2001.05952v1,2020-01-16
+Broadening Label-based Argumentation Semantics with May-Must Scales,"The semantics as to which set of arguments in a given argumentation graph may
+be acceptable (acceptability semantics) can be characterised in a few different
+ways. Among them, labelling-based approach allows for concise and flexible
+determination of acceptability statuses of arguments through assignment of a
+label indicating acceptance, rejection, or undecided to each argument. In this
+work, we contemplate a way of broadening it by accommodating may- and must-
+conditions for an argument to be accepted or rejected, as determined by the
+number(s) of rejected and accepted attacking arguments. We show that the
+broadened label-based semantics can be used to express more mild indeterminacy
+than inconsistency for acceptability judgement when, for example, it may be the
+case that an argument is accepted and when it may also be the case that it is
+rejected. We identify that finding which conditions a labelling satisfies for
+every argument can be an undecidable problem, which has an unfavourable
+implication to semantics. We propose to address this problem by enforcing a
+labelling to maximally respect the conditions, while keeping the rest that
+would necessarily cause non-termination labelled undecided.",cs.AI,cs.AI,1,Artificial Intelligence,Artificial Intelligence,Takayuki Ito,"Ryuta Arisaka, Takayuki Ito",2,http://arxiv.org/pdf/2001.05730v1,http://arxiv.org/abs/2001.05730v1,2020-01-16
+Graph Attentional Autoencoder for Anticancer Hyperfood Prediction,"Recent research efforts have shown the possibility to discover anticancer
+drug-like molecules in food from their effect on protein-protein interaction
+networks, opening a potential pathway to disease-beating diet design. We
+formulate this task as a graph classification problem on which graph neural
+networks (GNNs) have achieved state-of-the-art results. However, GNNs are
+difficult to train on sparse low-dimensional features according to our
+empirical evidence. Here, we present graph augmented features, integrating
+graph structural information and raw node attributes with varying ratios, to
+ease the training of networks. We further introduce a novel neural network
+architecture on graphs, the Graph Attentional Autoencoder (GAA) to predict food
+compounds with anticancer properties based on perturbed protein networks. We
+demonstrate that the method outperforms the baseline approach and
+state-of-the-art graph classification models in this task.",cs.LG,"cs.LG, cs.AI",2,Machine Learning,"Machine Learning, Artificial Intelligence",Michael Bronstein,"Guadalupe Gonzalez, Shunwang Gong, Ivan Laponogov, Kirill Veselkov, Michael Bronstein",5,http://arxiv.org/pdf/2001.05724v1,http://arxiv.org/abs/2001.05724v1,2020-01-16
+"A Common Operating Picture Framework Leveraging Data Fusion and Deep
+  Learning","Organizations are starting to realize of the combined power of data and
+data-driven algorithmic models to gain insights, situational awareness, and
+advance their mission. A common challenge to gaining insights is connecting
+inherently different datasets. These datasets (e.g. geocoded features, video
+streams, raw text, social network data, etc.) per separate they provide very
+narrow answers; however collectively they can provide new capabilities. In this
+work, we present a data fusion framework for accelerating solutions for
+Processing, Exploitation, and Dissemination (PED). Our platform is a collection
+of services that extract information from several data sources (per separate)
+by leveraging deep learning and other means of processing. This information is
+fused by a set of analytical engines that perform data correlations, searches,
+and other modeling operations to combine information from the disparate data
+sources. As a result, events of interest are detected, geolocated, logged, and
+presented into a common operating picture. This common operating picture allows
+the user to visualize in real time all the data sources, per separate and their
+collective cooperation. In addition, forensic activities have been implemented
+and made available through the framework. Users can review archived results and
+compare them to the most recent snapshot of the operational environment. In our
+first iteration we have focused on visual data (FMV, WAMI, CCTV/PTZ-Cameras,
+open source video, etc.) and AIS data streams (satellite and terrestrial
+sources). As a proof-of-concept, in our experiments we show how FMV detections
+can be combined with vessel tracking signals from AIS sources to confirm
+identity, tip-and-cue aerial reconnaissance, and monitor vessel activity in an
+area.",cs.CV,cs.CV,1,Computer Vision and Pattern Recognition,Computer Vision and Pattern Recognition,Marc Bosch,"Benjamin Ortiz, David Lindenbaum, Joseph Nassar, Brendan Lammers, John Wahl, Robert Mangum, Margaret Smith, Marc Bosch",8,http://arxiv.org/pdf/2001.05982v1,http://arxiv.org/abs/2001.05982v1,2020-01-16
+"Contextual Sense Making by Fusing Scene Classification, Detections, and
+  Events in Full Motion Video","With the proliferation of imaging sensors, the volume of multi-modal imagery
+far exceeds the ability of human analysts to adequately consume and exploit it.
+Full motion video (FMV) possesses the extra challenge of containing large
+amounts of redundant temporal data. We aim to address the needs of human
+analysts to consume and exploit data given aerial FMV. We have investigated and
+designed a system capable of detecting events and activities of interest that
+deviate from the baseline patterns of observation given FMV feeds. We have
+divided the problem into three tasks: (1) Context awareness, (2) object
+cataloging, and (3) event detection. The goal of context awareness is to
+constraint the problem of visual search and detection in video data. A custom
+image classifier categorizes the scene with one or multiple labels to identify
+the operating context and environment. This step helps reducing the semantic
+search space of downstream tasks in order to increase their accuracy. The
+second step is object cataloging, where an ensemble of object detectors locates
+and labels any known objects found in the scene (people, vehicles, boats,
+planes, buildings, etc.). Finally, context information and detections are sent
+to the event detection engine to monitor for certain behaviors. A series of
+analytics monitor the scene by tracking object counts, and object interactions.
+If these object interactions are not declared to be commonly observed in the
+current scene, the system will report, geolocate, and log the event. Events of
+interest include identifying a gathering of people as a meeting and/or a crowd,
+alerting when there are boats on a beach unloading cargo, increased count of
+people entering a building, people getting in and/or out of vehicles of
+interest, etc. We have applied our methods on data from different sensors at
+different resolutions in a variety of geographical areas.",cs.CV,cs.CV,1,Computer Vision and Pattern Recognition,Computer Vision and Pattern Recognition,Margaret Smith,"Marc Bosch, Joseph Nassar, Benjamin Ortiz, Brendan Lammers, David Lindenbaum, John Wahl, Robert Mangum, Margaret Smith",8,http://arxiv.org/pdf/2001.05979v1,http://arxiv.org/abs/2001.05979v1,2020-01-16
+MeliusNet: Can Binary Neural Networks Achieve MobileNet-level Accuracy?,"Binary Neural Networks (BNNs) are neural networks which use binary weights
+and activations instead of the typical 32-bit floating point values. They have
+reduced model sizes and allow for efficient inference on mobile or embedded
+devices with limited power and computational resources. However, the
+binarization of weights and activations leads to feature maps of lower quality
+and lower capacity and thus a drop in accuracy compared to traditional
+networks. Previous work has increased the number of channels or used multiple
+binary bases to alleviate these problems. In this paper, we instead present
+MeliusNet consisting of alternating two block designs, which consecutively
+increase the number of features and then improve the quality of these features.
+In addition, we propose a redesign of those layers that use 32-bit values in
+previous approaches to reduce the required number of operations. Experiments on
+the ImageNet dataset demonstrate the superior performance of our MeliusNet over
+a variety of popular binary architectures with regards to both computation
+savings and accuracy. Furthermore, with our method we trained BNN models, which
+for the first time can match the accuracy of the popular compact network
+MobileNet in terms of model size and accuracy. Our code is published online:
+https://github.com/hpi-xnor/BMXNet-v2",cs.LG,"stat.ML, cs.LG, cs.CV",3,Machine Learning,"Machine Learning, Machine Learning, Computer Vision and Pattern Recognition",Christoph Meinel,"Joseph Bethge, Christian Bartz, Haojin Yang, Ying Chen, Christoph Meinel",5,http://arxiv.org/pdf/2001.05936v1,http://arxiv.org/abs/2001.05936v1,2020-01-16
+"Road Network and Travel Time Extraction from Multiple Look Angles with
+  SpaceNet Data","Identification of road networks and optimal routes directly from remote
+sensing is of critical importance to a broad array of humanitarian and
+commercial applications. Yet while identification of road pixels has been
+attempted before, estimation of route travel times from overhead imagery
+remains a novel problem, particularly for off-nadir overhead imagery. To this
+end, we extract road networks with travel time estimates from the SpaceNet MVOI
+dataset. Utilizing the CRESIv2 framework, we demonstrate the ability to extract
+road networks in various observation angles and quantify performance at 27
+unique nadir angles with the graph-theoretic APLS_length and APLS_time metrics.
+A minimal gap of 0.03 between APLS_length and APLS_time scores indicates that
+our approach yields speed limits and travel times with very high fidelity. We
+also explore the utility of incorporating all available angles during model
+training, and find a peak score of APLS_time = 0.56. The combined model
+exhibits greatly improved robustness over angle-specific models, despite the
+very different appearance of road networks at extremely oblique off-nadir
+angles versus images captured from directly overhead.",cs.CV,cs.CV,1,Computer Vision and Pattern Recognition,Computer Vision and Pattern Recognition,Ryan Lewis,"Adam Van Etten, Jacob Shermeyer, Daniel Hogan, Nicholas Weir, Ryan Lewis",5,http://arxiv.org/pdf/2001.05923v1,http://arxiv.org/abs/2001.05923v1,2020-01-16
+Continual Learning for Domain Adaptation in Chest X-ray Classification,"Over the last years, Deep Learning has been successfully applied to a broad
+range of medical applications. Especially in the context of chest X-ray
+classification, results have been reported which are on par, or even superior
+to experienced radiologists. Despite this success in controlled experimental
+environments, it has been noted that the ability of Deep Learning models to
+generalize to data from a new domain (with potentially different tasks) is
+often limited. In order to address this challenge, we investigate techniques
+from the field of Continual Learning (CL) including Joint Training (JT),
+Elastic Weight Consolidation (EWC) and Learning Without Forgetting (LWF). Using
+the ChestX-ray14 and the MIMIC-CXR datasets, we demonstrate empirically that
+these methods provide promising options to improve the performance of Deep
+Learning models on a target domain and to mitigate effectively catastrophic
+forgetting for the source domain. To this end, the best overall performance was
+obtained using JT, while for LWF competitive results could be achieved - even
+without accessing data from the source domain.",cs.CV,"cs.CV, cs.LG",2,Computer Vision and Pattern Recognition,"Computer Vision and Pattern Recognition, Machine Learning",Axel Saalbach,"Matthias Lenga, Heinrich Schulz, Axel Saalbach",3,http://arxiv.org/pdf/2001.05922v1,http://arxiv.org/abs/2001.05922v1,2020-01-16
+MixPath: A Unified Approach for One-shot Neural Architecture Search,"The expressiveness of search space is a key concern in neural architecture
+search (NAS). Previous block-level approaches mainly focus on searching
+networks that chain one operation after another. Incorporating multi-path
+search space with the one-shot doctrine remains untackled. In this paper, we
+investigate the supernet behavior under the multi-path setting, which we call
+MixPath. For a sampled training, simply switching multiple paths on and off
+incurs severe feature inconsistency which deteriorates the convergence. To
+remedy this effect, we employ what we term as \emph{shadow batch
+normalizations} (SBN) to follow various path patterns. Experiments performed on
+CIFAR-10 show that our approach is effective regardless of the number of
+allowable paths. Further experiments are conducted on ImageNet to have a fair
+comparison with the latest NAS methods. Our code will be available
+https://github.com/xiaomi-automl/MixPath.git .",cs.LG,"stat.ML, cs.LG, cs.CV",3,Machine Learning,"Machine Learning, Machine Learning, Computer Vision and Pattern Recognition",Jixiang Li,"Xiangxiang Chu, Xudong Li, Yi Lu, Bo Zhang, Jixiang Li",5,http://arxiv.org/pdf/2001.05887v1,http://arxiv.org/abs/2001.05887v1,2020-01-16
+A Little Fog for a Large Turn,"Small, carefully crafted perturbations called adversarial perturbations can
+easily fool neural networks. However, these perturbations are largely additive
+and not naturally found. We turn our attention to the field of Autonomous
+navigation wherein adverse weather conditions such as fog have a drastic effect
+on the predictions of these systems. These weather conditions are capable of
+acting like natural adversaries that can help in testing models. To this end,
+we introduce a general notion of adversarial perturbations, which can be
+created using generative models and provide a methodology inspired by
+Cycle-Consistent Generative Adversarial Networks to generate adversarial
+weather conditions for a given image. Our formulation and results show that
+these images provide a suitable testbed for steering models used in Autonomous
+navigation models. Our work also presents a more natural and general definition
+of Adversarial perturbations based on Perceptual Similarity.",cs.LG,"stat.ML, cs.LG, cs.CV, eess.IV",4,Machine Learning,"Machine Learning, Machine Learning, Computer Vision and Pattern Recognition, Image and Video Processing",Vineeth N Balasubramanian,"Harshitha Machiraju, Vineeth N Balasubramanian",2,http://arxiv.org/pdf/2001.05873v1,http://arxiv.org/abs/2001.05873v1,2020-01-16
+ScaIL: Classifier Weights Scaling for Class Incremental Learning,"Incremental learning is useful if an AI agent needs to integrate data from a
+stream. The problem is non trivial if the agent runs on a limited computational
+budget and has a bounded memory of past data. In a deep learning approach, the
+constant computational budget requires the use of a fixed architecture for all
+incremental states. The bounded memory generates data imbalance in favor of new
+classes and a prediction bias toward them appears. This bias is commonly
+countered by introducing a data balancing step in addition to the basic network
+training. We depart from this approach and propose simple but efficient scaling
+of past class classifier weights to make them more comparable to those of new
+classes. Scaling exploits incremental state level statistics and is applied to
+the classifiers learned in the initial state of classes in order to profit from
+all their available data. We also question the utility of the widely used
+distillation loss component of incremental learning algorithms by comparing it
+to vanilla fine tuning in presence of a bounded memory. Evaluation is done
+against competitive baselines using four public datasets. Results show that the
+classifier weights scaling and the removal of the distillation are both
+beneficial.",cs.CV,cs.CV,1,Computer Vision and Pattern Recognition,Computer Vision and Pattern Recognition,Adrian Popescu,"Eden Belouadah, Adrian Popescu",2,http://arxiv.org/pdf/2001.05755v1,http://arxiv.org/abs/2001.05755v1,2020-01-16
+"Probabilistic 3D Multilabel Real-time Mapping for Multi-object
+  Manipulation","Probabilistic 3D map has been applied to object segmentation with multiple
+camera viewpoints, however, conventional methods lack of real-time efficiency
+and functionality of multilabel object mapping. In this paper, we propose a
+method to generate three-dimensional map with multilabel occupancy in
+real-time. Extending our previous work in which only target label occupancy is
+mapped, we achieve multilabel object segmentation in a single looking around
+action. We evaluate our method by testing segmentation accuracy with 39
+different objects, and applying it to a manipulation task of multiple objects
+in the experiments. Our mapping-based method outperforms the conventional
+projection-based method by 40 - 96\% relative (12.6 mean $IU_{3d}$), and robot
+successfully recognizes (86.9\%) and manipulates multiple objects (60.7\%) in
+an environment with heavy occlusions.",cs.RO,"cs.CV, cs.RO",2,Robotics,"Computer Vision and Pattern Recognition, Robotics",Masayuki Inaba,"Kentaro Wada, Kei Okada, Masayuki Inaba",3,http://arxiv.org/pdf/2001.05752v1,http://arxiv.org/abs/2001.05752v1,2020-01-16
+"A Technology-aided Multi-modal Training Approach to Assist Abdominal
+  Palpation Training and its Assessment in Medical Education","Computer-assisted multimodal training is an effective way of learning complex
+motor skills in various applications. In particular disciplines (eg.
+healthcare) incompetency in performing dexterous hands-on examinations
+(clinical palpation) may result in misdiagnosis of symptoms, serious injuries
+or even death. Furthermore, a high quality clinical examination can help to
+exclude significant pathology, and reduce time and cost of diagnosis by
+eliminating the need for unnecessary medical imaging. Medical palpation is used
+regularly as an effective preliminary diagnosis method all around the world but
+years of training are required currently to achieve competency. This paper
+focuses on a multimodal palpation training system to teach and improve clinical
+examination skills in relation to the abdomen. It is our aim to shorten
+significantly the palpation training duration by increasing the frequency of
+rehearsals as well as providing essential augmented feedback on how to perform
+various abdominal palpation techniques which has been captured and modelled
+from medical experts. Twenty three first year medical students divided into a
+control group (n=8), a semi-visually trained group (n=8), and a fully visually
+trained group (n=7) were invited to perform three palpation tasks (superficial,
+deep and liver). The medical students performances were assessed using both
+computer-based and human-based methods where a positive correlation was shown
+between the generated scores, r=.62, p(one-tailed)<.05. The visually-trained
+group significantly outperformed the control group in which abstract
+visualisation of applied forces and their palmar locations were provided to the
+students during each palpation examination (p<.05). Moreover, a positive trend
+was observed between groups when visual feedback was presented, J=132, z=2.62,
+r=0.55.",cs.HC,"cs.CV, eess.IV, cs.HC",3,Human-Computer Interaction,"Computer Vision and Pattern Recognition, Image and Video Processing, Human-Computer Interaction",A. Chalmers,"A. Asadipour, K. Debattista, V. Patel, A. Chalmers",4,http://arxiv.org/pdf/2001.05745v1,http://arxiv.org/abs/2001.05745v1,2020-01-16
+"SketchDesc: Learning Local Sketch Descriptors for Multi-view
+  Correspondence","In this paper, we study the problem of multi-view sketch correspondence,
+where we take as input multiple freehand sketches with different views of the
+same object and predict semantic correspondence among the sketches. This
+problem is challenging, since visual features of corresponding points at
+different views can be very different. To this end, we take a deep learning
+approach and learn a novel local sketch descriptor from data. We contribute a
+training dataset by generating the pixel-level correspondence for the
+multi-view line drawings synthesized from 3D shapes. To handle the sparsity and
+ambiguity of sketches, we design a novel multi-branch neural network that
+integrates a patch-based representation and a multi-scale strategy to learn the
+\pixelLevel correspondence among multi-view sketches. We demonstrate the
+effectiveness of our proposed approach with extensive experiments on hand-drawn
+sketches, and multi-view line drawings rendered from multiple 3D shape
+datasets.",cs.CV,cs.CV,1,Computer Vision and Pattern Recognition,Computer Vision and Pattern Recognition,Hongbo Fu,"Deng Yu, Lei Li, Youyi Zheng, Manfred Lau, Yi-Zhe Song, Chew-Lan Tai, Hongbo Fu",7,http://arxiv.org/pdf/2001.05744v1,http://arxiv.org/abs/2001.05744v1,2020-01-16
+Adaptive Direction-Guided Structure Tensor Total Variation,"Direction-guided structure tensor total variation (DSTV) is a recently
+proposed regularization term that aims at increasing the sensitivity of the
+structure tensor total variation (STV) to the changes towards a predetermined
+direction. Despite of the plausible results obtained on the uni-directional
+images, the DSTV model is not applicable to the multi-directional images of
+real-world. In this study, we build a two-stage framework that brings
+adaptivity to DSTV. We design an alternative to STV, which encodes the
+first-order information within a local neighborhood under the guidance of
+spatially varying directional descriptors (i.e., orientation and the dose of
+anisotropy). In order to estimate those descriptors, we propose an efficient
+preprocessor that captures the local geometry based on the structure tensor.
+Through the extensive experiments, we demonstrate how beneficial the
+involvement of the directional information in STV is, by comparing the proposed
+method with the state-of-the-art analysis-based denoising models, both in terms
+of restoration quality and computational efficiency.",eess.IV,"cs.CV, eess.IV",2,Image and Video Processing,"Computer Vision and Pattern Recognition, Image and Video Processing",Mustafa E. Kamasak,"Ezgi Demircan-Tureyen, Mustafa E. Kamasak",2,http://arxiv.org/pdf/2001.05717v1,http://arxiv.org/abs/2001.05717v1,2020-01-16
+"Generation and application of bursting dynamic behaviour in memristor
+  neurons","The memristor neurons built with two memristors can be used to mimics many
+dynamical behaviours of a biological neuron. Firstly, the dynamic operating
+conditions of memristor neurons and their transformation boundaries between the
+spiking and the bursting are comprehensively investigated. Then, the underlying
+mechanism of bursting is analysed and the controllability of the number of
+spikes in each burst period is demonstrated under proper input voltage and
+input resistor. Final, numbers of spikes per period is recognized as neuron
+information carries and shown to enable pattern recognition and information
+transmitting. These results show a promising approach for the efficient use of
+neuristor in the construction of neural networks.",cs.ET,"eess.SP, cs.ET",2,Emerging Technologies,"Signal Processing, Emerging Technologies",Xinjun Liu,"Yeheng Bo, Shuai Li, Peng Zhang, Juan Song, Xinjun Liu",5,http://arxiv.org/pdf/2001.05663v1,http://arxiv.org/abs/2001.05663v1,2020-01-16
+"Knowledge Discovery from Social Media using Big Data provided Sentiment
+  Analysis (SoMABiT)","In todays competitive business world, being aware of customer needs and
+market-oriented production is a key success factor for industries. To this aim,
+the use of efficient analytic algorithms ensures a better understanding of
+customer feedback and improves the next generation of products. Accordingly,
+the dramatic increase in using social media in daily life provides beneficial
+sources for market analytics. But how traditional analytic algorithms and
+methods can scale up for such disparate and multi-structured data sources is
+the main challenge in this regard. This paper presents and discusses the
+technological and scientific focus of the SoMABiT as a social media analysis
+platform using big data technology. Sentiment analysis has been employed in
+order to discover knowledge from social media. The use of MapReduce and
+developing a distributed algorithm towards an integrated platform that can
+scale for any data volume and provide a social media-driven knowledge is the
+main novelty of the proposed concept in comparison to the state-of-the-art
+technologies.",cs.SI,"cs.LG, cs.DB, cs.SI",3,Social and Information Networks,"Machine Learning, Databases, Social and Information Networks",Madjid Fathi,"Mahdi Bohlouli, Jens Dalter, Mareike Dornhöfer, Johannes Zenkert, Madjid Fathi",5,http://arxiv.org/pdf/2001.05996v1,http://arxiv.org/abs/2001.05996v1,2020-01-16
+"Inferring Individual Level Causal Models from Graph-based Relational
+  Time Series","In this work, we formalize the problem of causal inference over graph-based
+relational time-series data where each node in the graph has one or more
+time-series associated to it. We propose causal inference models for this
+problem that leverage both the graph topology and time-series to accurately
+estimate local causal effects of nodes. Furthermore, the relational time-series
+causal inference models are able to estimate local effects for individual nodes
+by exploiting local node-centric temporal dependencies and
+topological/structural dependencies. We show that simpler causal models that do
+not consider the graph topology are recovered as special cases of the proposed
+relational time-series causal inference model. We describe the conditions under
+which the resulting estimate can be used to estimate a causal effect, and
+describe how the Durbin-Wu-Hausman test of specification can be used to test
+for the consistency of the proposed estimator from data. Empirically, we
+demonstrate the effectiveness of the causal inference models on both synthetic
+data with known ground-truth and a large-scale observational relational
+time-series data set collected from Wikipedia.",cs.LG,"stat.ML, cs.LG, cs.SI",3,Machine Learning,"Machine Learning, Machine Learning, Social and Information Networks",Nesreen Ahmed,"Ryan Rossi, Somdeb Sarkhel, David Arbour, Nesreen Ahmed",4,http://arxiv.org/pdf/2001.05993v1,http://arxiv.org/abs/2001.05993v1,2020-01-16
+"Provable Benefit of Orthogonal Initialization in Optimizing Deep Linear
+  Networks","The selection of initial parameter values for gradient-based optimization of
+deep neural networks is one of the most impactful hyperparameter choices in
+deep learning systems, affecting both convergence times and model performance.
+Yet despite significant empirical and theoretical analysis, relatively little
+has been proved about the concrete effects of different initialization schemes.
+In this work, we analyze the effect of initialization in deep linear networks,
+and provide for the first time a rigorous proof that drawing the initial
+weights from the orthogonal group speeds up convergence relative to the
+standard Gaussian initialization with iid weights. We show that for deep
+networks, the width needed for efficient convergence to a global minimum with
+orthogonal initializations is independent of the depth, whereas the width
+needed for efficient convergence with Gaussian initializations scales linearly
+in the depth. Our results demonstrate how the benefits of a good initialization
+can persist throughout learning, suggesting an explanation for the recent
+empirical successes found by initializing very deep non-linear networks
+according to the principle of dynamical isometry.",cs.LG,"cs.NE, cs.LG, math.OC, stat.ML",4,Machine Learning,"Neural and Evolutionary Computing, Machine Learning, Optimization and Control, Machine Learning",Jeffrey Pennington,"Wei Hu, Lechao Xiao, Jeffrey Pennington",3,http://arxiv.org/pdf/2001.05992v1,http://arxiv.org/abs/2001.05992v1,2020-01-16
+"A Better Bound Gives a Hundred Rounds: Enhanced Privacy Guarantees via
+  $f$-Divergences","We derive the optimal differential privacy (DP) parameters of a mechanism
+that satisfies a given level of R\'enyi differential privacy (RDP). Our result
+is based on the joint range of two $f$-divergences that underlie the
+approximate and the R\'enyi variations of differential privacy. We apply our
+result to the moments accountant framework for characterizing privacy
+guarantees of stochastic gradient descent. When compared to the
+state-of-the-art, our bounds may lead to about 100 more stochastic gradient
+descent iterations for training deep learning models for the same privacy
+budget.",cs.IT,"cs.LG, math.IT, stat.ML, cs.CR, cs.IT",5,Information Theory,"Machine Learning, Information Theory, Machine Learning, Cryptography and Security, Information Theory",Lalitha Sankar,"Shahab Asoodeh, Jiachun Liao, Flavio P. Calmon, Oliver Kosut, Lalitha Sankar",5,http://arxiv.org/pdf/2001.05990v1,http://arxiv.org/abs/2001.05990v1,2020-01-16
+Cross-conformal e-prediction,"This note discusses a simple modification of cross-conformal prediction
+inspired by recent work on e-values. The precursor of conformal prediction
+developed in the 1990s by Gammerman, Vapnik, and Vovk was also based on
+e-values and is called conformal e-prediction in this note. Replacing e-values
+by p-values led to conformal prediction, which has important advantages over
+conformal e-prediction without obvious disadvantages. The situation with
+cross-conformal prediction is, however, different: whereas for cross-conformal
+prediction validity is only an empirical fact (and can be broken with excessive
+randomization), this note draws the reader's attention to the obvious fact that
+cross-conformal e-prediction enjoys a guaranteed property of validity.",cs.LG,"stat.ML, cs.LG, 68T05",3,Machine Learning,"Machine Learning, Machine Learning",Vladimir Vovk,Vladimir Vovk,1,http://arxiv.org/pdf/2001.05989v1,http://arxiv.org/abs/2001.05989v1,2020-01-16
+Reward Shaping for Reinforcement Learning with Omega-Regular Objectives,"Recently, successful approaches have been made to exploit good-for-MDPs
+automata (B\""uchi automata with a restricted form of nondeterminism) for model
+free reinforcement learning, a class of automata that subsumes good for games
+automata and the most widespread class of limit deterministic automata. The
+foundation of using these B\""uchi automata is that the B\""uchi condition can,
+for good-for-MDP automata, be translated to reachability.
+  The drawback of this translation is that the rewards are, on average, reaped
+very late, which requires long episodes during the learning process. We devise
+a new reward shaping approach that overcomes this issue. We show that the
+resulting model is equivalent to a discounted payoff objective with a biased
+discount that simplifies and improves on prior work in this direction.",cs.LO,"cs.LO, cs.LG",2,Logic in Computer Science,"Logic in Computer Science, Machine Learning",D. Wojtczak,"E. M. Hahn, M. Perez, S. Schewe, F. Somenzi, A. Trivedi, D. Wojtczak",6,http://arxiv.org/pdf/2001.05977v1,http://arxiv.org/abs/2001.05977v1,2020-01-16
+"Robust Topological Descriptors for Machine Learning Prediction of Guest
+  Adsorption in Nanoporous Materials","In recent years, machine learning (ML) for predicting material properties has
+emerged as a quicker alternative to experimental and simulation-based
+investigations. Standard ML approaches tend to utilize specific domain
+knowledge when designing feature inputs. Each ML property predictor then
+requires a set of tailored structural features - this can commonly lead to
+drawbacks, due to the small number of implemented features and their lack of
+prediction transferability across different predictors. The latter has been
+empirically observed in the case of guest uptake predictors for nanoporous
+materials, where local and global porosity features become dominant descriptors
+at low and high pressures, respectively. Here, we provide a more holistic
+feature representation for materials structures using tools from topological
+data analysis and persistent homology to describe the geometry and topology of
+nanoporous materials at various scales. We demonstrate an application of these
+topology-based feature representations to predict methane uptakes for zeolite
+structures in the range of 1-200 bar. These predictions show a root-mean-square
+deviation decrease of up to 50% at low pressures and up to 100% across high
+pressures in comparison to a model based on commonly used local and global
+features. Similarly, the topology-based model shows an increase of 0.2-0.3 in
+R2 score in comparison to the commonly used porosity descriptors. Notably,
+unlike the standard porosity features, the topology-based features show
+accuracy across multiple different pressures. Furthermore, we show feature
+importance in terms of different topological features, thus elucidating
+information about the channel and pore sizes that correlate best to adsorption
+properties. Finally, we demonstrate that ML models relying on a combination of
+topological and commonly employed descriptors provide even better guest uptake
+regressors.",cond-mat.mtrl-sci,"physics.comp-ph, cond-mat.mtrl-sci, cs.LG, math.AT",4,Materials Science,"Computational Physics, Materials Science, Machine Learning, Algebraic Topology",Dmitriy Morozov,"Aditi S. Krishnapriyan, Maciej Haranczyk, Dmitriy Morozov",3,http://arxiv.org/pdf/2001.05972v1,http://arxiv.org/abs/2001.05972v1,2020-01-16
+Machine learning for total cloud cover prediction,"Accurate and reliable forecasting of total cloud cover (TCC) is vital for
+many areas such as astronomy, energy demand and production, or agriculture.
+Most meteorological centres issue ensemble forecasts of TCC, however, these
+forecasts are often uncalibrated and exhibit worse forecast skill than ensemble
+forecasts of other weather variables. Hence, some form of post-processing is
+strongly required to improve predictive performance. As TCC observations are
+usually reported on a discrete scale taking just nine different values called
+oktas, statistical calibration of TCC ensemble forecasts can be considered a
+classification problem with outputs given by the probabilities of the oktas.
+This is a classical area where machine learning methods are applied. We
+investigate the performance of post-processing using multilayer perceptron
+(MLP) neural networks, gradient boosting machines (GBM) and random forest (RF)
+methods. Based on the European Centre for Medium-Range Weather Forecasts global
+TCC ensemble forecasts for 2002-2014 we compare these approaches with the
+proportional odds logistic regression (POLR) and multiclass logistic regression
+(MLR) models, as well as the raw TCC ensemble forecasts. We further assess
+whether improvements in forecast skill can be obtained by incorporating
+ensemble forecasts of precipitation as additional predictor. Compared to the
+raw ensemble, all calibration methods result in a significant improvement in
+forecast skill. RF models provide the smallest increase in predictive
+performance, while MLP, POLR and GBM approaches perform best. The use of
+precipitation forecast data leads to further improvements in forecast skill and
+except for very short lead times the extended MLP model shows the best overall
+performance.",stat.ML,"stat.ML, cs.LG, stat.AP",3,Machine Learning,"Machine Learning, Machine Learning, Applications",Sándor Baran,"Ágnes Baran, Sebastian Lerch, Mehrez El Ayari, Sándor Baran",4,http://arxiv.org/pdf/2001.05948v1,http://arxiv.org/abs/2001.05948v1,2020-01-16
+"Elastic Consistency: A General Consistency Model for Distributed
+  Stochastic Gradient Descent","Machine learning has made tremendous progress in recent years, with models
+matching or even surpassing humans on a series of specialized tasks. One key
+element behind the progress of machine learning in recent years has been the
+ability to train machine learning models in large-scale distributed
+shared-memory and message-passing environments. Many of these models are
+trained employing variants of stochastic gradient descent (SGD) based
+optimization.
+  In this paper, we introduce a general consistency condition covering
+communication-reduced and asynchronous distributed SGD implementations. Our
+framework, called elastic consistency enables us to derive convergence bounds
+for a variety of distributed SGD methods used in practice to train large-scale
+machine learning models. The proposed framework de-clutters the
+implementation-specific convergence analysis and provides an abstraction to
+derive convergence bounds. We utilize the framework to analyze a sparsification
+scheme for distributed SGD methods in an asynchronous setting for convex and
+non-convex objectives. We implement the distributed SGD variant to train deep
+CNN models in an asynchronous shared-memory setting. Empirical results show
+that error-feedback may not necessarily help in improving the convergence of
+sparsified asynchronous distributed SGD, which corroborates an insight
+suggested by our convergence analysis.",cs.LG,"stat.ML, cs.LG",2,Machine Learning,"Machine Learning, Machine Learning",Vyacheslav Kungurtsev,"Dan Alistarh, Bapi Chatterjee, Vyacheslav Kungurtsev",3,http://arxiv.org/pdf/2001.05918v1,http://arxiv.org/abs/2001.05918v1,2020-01-16
+Masking schemes for universal marginalisers,"We consider the effect of structure-agnostic and structure-dependent masking
+schemes when training a universal marginaliser (arXiv:1711.00695) in order to
+learn conditional distributions of the form $P(x_i |\mathbf x_{\mathbf b})$,
+where $x_i$ is a given random variable and $\mathbf x_{\mathbf b}$ is some
+arbitrary subset of all random variables of the generative model of interest.
+In other words, we mimic the self-supervised training of a denoising
+autoencoder, where a dataset of unlabelled data is used as partially observed
+input and the neural approximator is optimised to minimise reconstruction loss.
+We focus on studying the underlying process of the partially observed
+data---how good is the neural approximator at learning all conditional
+distributions when the observation process at prediction time differs from the
+masking process during training? We compare networks trained with different
+masking schemes in terms of their predictive performance and generalisation
+properties.",cs.LG,"stat.ML, cs.LG",2,Machine Learning,"Machine Learning, Machine Learning",Saurabh Johri,"Divya Gautam, Maria Lomeli, Kostis Gourgoulias, Daniel H. Thompson, Saurabh Johri",5,http://arxiv.org/pdf/2001.05895v1,http://arxiv.org/abs/2001.05895v1,2020-01-16
+A piecewise deterministic Monte Carlo method for diffusion bridges,"We introduce the use of the Zig-Zag sampler to the problem of sampling of
+conditional diffusion processes (diffusion bridges). The Zig-Zag sampler is a
+rejection-free sampling scheme based on a non-reversible continuous piecewise
+deterministic Markov process. Similar to the L\'evy-Ciesielski construction of
+a Brownian motion, we expand the diffusion path in a truncated Faber-Schauder
+basis. The coefficients within the basis are sampled using a Zig-Zag sampler. A
+key innovation is the use of a local version of the Zig-Zag sampler that allows
+to exploit the sparse dependency structure of the coefficients of the
+Faber-Schauder expansion to reduce the complexity of the algorithm. We
+illustrate the performance of the proposed methods in a number of examples.
+Contrary to some other Markov Chain Monte Carlo methods, our approach works
+well in case of strong nonlinearity in the drift and multimodal distributions
+of sample paths.",math.ST,"math.PR, math.ST, stat.TH, stat.ME",4,Statistics Theory,"Probability, Statistics Theory, Statistics Theory, Methodology",Moritz Schauer,"Joris Bierkens, Sebastiano Grazzi, Frank van der Meulen, Moritz Schauer",4,http://arxiv.org/pdf/2001.05889v1,http://arxiv.org/abs/2001.05889v1,2020-01-16
+Weak Detection in the Spiked Wigner Model with General Rank,"We study the statistical decision process of detecting the presence of signal
+from a 'signal+noise' type matrix model with an additive Wigner noise. We
+derive the error of the likelihood ratio test, which minimizes the sum of the
+Type-I and Type-II errors, under the Gaussian noise for the signal matrix with
+arbitrary finite rank. We propose a hypothesis test based on the linear
+spectral statistics of the data matrix, which is optimal and does not depend on
+the distribution of the signal or the noise. We also introduce a test for rank
+estimation that does not require the prior information on the rank of the
+signal.",math.ST,"cs.LG, math.PR, stat.TH, stat.ML, math.ST, 62H15, 60B20",6,Statistics Theory,"Machine Learning, Probability, Statistics Theory, Machine Learning, Statistics Theory",Ji Oon Lee,"Ji Hyung Jung, Hye Won Chung, Ji Oon Lee",3,http://arxiv.org/pdf/2001.05676v1,http://arxiv.org/abs/2001.05676v1,2020-01-16
+"A sparse-grid probabilistic scheme for approximation of the runway
+  probability of electrons in fusion tokamak simulation","Runaway electrons (RE) generated during magnetic disruptions present a major
+threat to the safe operation of plasma nuclear fusion reactors. A critical
+aspect of understanding RE dynamics is to calculate the runaway probability,
+i.e., the probability that an electron in the phase space will runaway on, or
+before, a prescribed time. Such probability can be obtained by solving the
+adjoint equation of the underlying Fokker-Planck equation that controls the
+electron dynamics. In this effort, we present a sparse-grid probabilistic
+scheme for computing the runaway probability. The key ingredient of our
+approach is to represent the solution of the adjoint equation as a conditional
+expectation, such that discretizing the differential operator reduces to the
+approximation of a set of integrals. Adaptive sparse grid interpolation is
+utilized to approximate the map from the phase space to the runaway
+probability. The main novelties of this effort are the integration of the
+sparse-grid method into the probabilistic numerical scheme for computing escape
+probability, as well as the demonstration in computing RE probabilities. Two
+numerical examples are given to illustrate that the proposed method can achieve
+$\mathcal{O}(\Delta t)$ convergence, as well as the adaptive refinement
+strategy can effectively handle the sharp transition layer between the runaway
+and non-runaway regions.",physics.comp-ph,"physics.comp-ph, physics.plasm-ph",2,Computational Physics,"Computational Physics, Plasma Physics",Matthew Beidler,"Minglei Yang, Guannan Zhang, Diego del-Castillo-Negrete, Miroslav Stoyanov, Matthew Beidler",5,http://arxiv.org/pdf/2001.05800v1,http://arxiv.org/abs/2001.05800v1,2020-01-16
+"On Solving Groundwater Flow and Transport Models with Algebraic
+  Multigrid Preconditioning","Sparse iterative solvers preconditioned with the algebraic multigrid has been
+devised as an optimal technology to speed up the response of large linear
+systems. In this work, this technique was introduced into the framework of the
+dual delineation approach. This involves a single groundwater flow solution and
+a scalar advective transport solution with different right-hand sides. The
+method was compared with traditional preconditioned iterative methods and a
+direct sparse solver on several two- and three-dimensional benchmarks spanning
+homogeneous and heterogeneous formations. The algebraic multigrid
+preconditioning enabled speedups lying between one and two orders of magnitude
+for the groundwater flow problems. However, the sparse direct solver was the
+fastest for the pure advective transport processes such as the forward travel
+time simulations. This leads to conclude that the best sparse solver for the
+general advection-dispersion transport equation is P\'eclet number dependent.
+When equipped with the best solvers, the dual delineation technique was run on
+a took only a few seconds to solve multi-million grid cell problems paving the
+way for comprehensive sensitivity analysis. The paper gives practical hints on
+the strategies and conditions under which the algebraic multigrid
+preconditioning for nonlinear and/or transient problems would remain
+competitive.",physics.geo-ph,"physics.geo-ph, math.NA, cs.NA, physics.comp-ph",4,Geophysics,"Geophysics, Numerical Analysis, Numerical Analysis, Computational Physics",A. Larabi,"M. A. Sbai, A. Larabi",2,http://arxiv.org/pdf/2001.05798v1,http://arxiv.org/abs/2001.05798v1,2020-01-16
+"A Perspective on Regression and Bayesian Approaches for System
+  Identification of Pattern Formation Dynamics","We present two approaches to system identification, i.e. the identification
+of partial differential equations (PDEs) from measurement data. The first is a
+regression-based Variational System Identification procedure that is
+advantageous in not requiring repeated forward model solves and has good
+scalability to large number of differential operators. However it has strict
+data type requirements needing the ability to directly represent the operators
+through the available data. The second is a Bayesian inference framework highly
+valuable for providing uncertainty quantification, and flexible for
+accommodating sparse and noisy data that may also be indirect quantities of
+interest. However, it also requires repeated forward solutions of the PDE
+models which is expensive and hinders scalability. We provide illustrations of
+results on a model problem for pattern formation dynamics, and discuss merits
+of the presented methods.",physics.comp-ph,physics.comp-ph,1,Computational Physics,Computational Physics,Xun Huan,"Zhenlin Wang, Bowei Wu, Krishna Garikipati, Xun Huan",4,http://arxiv.org/pdf/2001.05646v1,http://arxiv.org/abs/2001.05646v1,2020-01-16
+"The Widely Linear Complex Ornstein-Uhlenbeck Process with Application to
+  Polar Motion","Complex-valued and widely linear modelling of time series signals are
+widespread and found in many applications. However, existing models and
+analysis techniques are usually restricted to signals observed in discrete
+time. In this paper we introduce a widely linear version of the complex
+Ornstein-Uhlenbeck (OU) process. This is a continuous-time process which
+generalises the standard complex-valued OU process such that signals generated
+from the process contain elliptical oscillations, as opposed to circular
+oscillations, when viewed in the complex plane. We determine properties of the
+widely linear complex OU process, including the conditions for stationarity,
+and the geometrical structure of the elliptical oscillations. We derive the
+analytical form of the power spectral density function, which then provides an
+efficient procedure for parameter inference using the Whittle likelihood. We
+apply the process to measure periodic and elliptical properties of Earth's
+polar motion, including that of the Chandler wobble, for which the standard
+complex OU process was originally proposed.",stat.ME,"astro-ph.EP, physics.data-an, stat.AP, stat.ME, eess.SP",5,Methodology,"Earth and Planetary Astrophysics, Data Analysis, Statistics and Probability, Applications, Methodology, Signal Processing",Hanna M. Sykulska-Lawrence,"Adam M. Sykulski, Sofia C. Olhede, Hanna M. Sykulska-Lawrence",3,http://arxiv.org/pdf/2001.05965v1,http://arxiv.org/abs/2001.05965v1,2020-01-16
+"Deep ICE: A Deep learning approach for MRI Intracranial Cavity
+  Extraction","Automatic methods for measuring normalized regional brain volumes from MRI
+data are a key tool to help in the objective diagnostic and follow-up of many
+neurological diseases. To estimate such regional brain volumes, the
+intracranial cavity volume is commonly used for normalization. In this paper,
+we present an accurate and efficient approach to automatically segment the
+intracranial cavity using a volumetric 3D convolutional neural network and a
+new 3D patch extraction strategy specially adapted to deal with the traditional
+low number of training cases available in supervised segmentation and the
+memory limitations of modern GPUs. The proposed method is compared with recent
+state-of-the-art methods and the results show an excellent accuracy and
+improved performance in terms of computational burden.",q-bio.QM,"q-bio.QM, eess.IV",2,Quantitative Methods,"Quantitative Methods, Image and Video Processing",Pierrick Coupé,"José V. Manjón, Jose E. Romero, Roberto Vivo-Hernando, Gregorio Rubio-Navarro, María De la Iglesia-Vaya, Fernando Aparici-Robles, Pierrick Coupé",7,http://arxiv.org/pdf/2001.05720v1,http://arxiv.org/abs/2001.05720v1,2020-01-16
+"Flow Rate Estimation From Probe Vehicle Data And Sample Size
+  Requirements","The interest to use probe vehicles for traffic monitoring is growing. This
+paper is focused on the estimation of flow rate from probe vehicle data and the
+evaluation of sample size requirements. Three cases are considered depending on
+the available information on the percentage of probes p and the flow rate
+\lambda: i) p is known but \lambda is unknown ii) \lambda is known but p is
+unknown, and iii) both parameters are not known. Estimation methods for all
+three cases are presented along with the reliability of these estimates. For
+the first two cases, count data provide sufficient information to estimate the
+unknown parameters p and \lambda individually when the other one is known. For
+these two cases, simple analytical expressions are derived to analyze the
+accuracy and sample size requirements. However, when both parameters are
+unknown then additional information beyond count data is required. The position
+of probe vehicles in a queue at signalized intersections is used as additional
+information in that case. The results show for how long data need to be
+collected to estimate the parameters at acceptable confidence levels.",stat.AP,stat.AP,1,Applications,Applications,Gurcan Comert,"Mecit Cetin, Gurcan Comert",2,http://arxiv.org/pdf/2001.05904v1,http://arxiv.org/abs/2001.05904v1,2020-01-16
+"Analysis of Queue Length Prediction from Probe Vehicles Problem with
+  Bunch Arrival Headways","This paper discusses the real-time prediction of queue lengths from probe
+vehicles for the Bunch arrival headways at an isolated intersection for
+undersaturated conditions. The paper incorporates the bunching effect of the
+traffic into the evaluation of the accuracy of the predictions as a function of
+proportion of probe vehicles to entire vehicle population. Formulations are
+presented for predicting the expected queue length and its variance based on
+Negative Exponential and Bunched Exponential vehicle headways. Numerical
+results for both vehicle headway types are documented to show how prediction
+errors behave by the volume to capacity ratio and probe proportions. It is
+found that the Poisson arrivals generate conservative confidence intervals and
+demand higher probe proportions compared to Bunched Exponential headways at the
+same arrival rate and probe proportion.",stat.AP,"cs.SY, stat.AP, eess.SY",3,Applications,"Systems and Control, Applications",Stacey Franklin Jones,"Gurcan Comert, Stacey Franklin Jones",2,http://arxiv.org/pdf/2001.05885v1,http://arxiv.org/abs/2001.05885v1,2020-01-16
+"Nonparametric methods for detecting change in Multitemporal SAR/PolSAR
+  Satellite Data","We employ nonparametric statistical procedures to analyse multitemporal
+SAR/PolSAR satellite images. The aim is two-fold. We seek parsimony in data
+representation as well as efficient change detection. For these, wavelets and
+geostatistical analyses are applied to the images (Morettin et al., 2017;
+Krainski et al., 2018). Following this representation, the dimension of the
+underlying generating process is estimated (Fonseca and Pinheiro, 2019), and a
+set of multivariate characteristics is extracted. Change-points are then
+detected via wavelets (Montoril et al., 2019).",stat.AP,"62G07, 62M10, stat.AP, G.3; I.4.9",3,Applications,Applications,Aluísio Pinheiro,"Rodney Fonseca, Guilherme Ludwig, Michel Montoril, Aluísio Pinheiro",4,http://arxiv.org/pdf/2001.05764v1,http://arxiv.org/abs/2001.05764v1,2020-01-16
+"Estimating and comparing adverse event probabilities in the presence of
+  varying follow-up times and competing events","Safety analyses in terms of adverse events (AEs) are an important aspect of
+benefit-risk assessments of therapies. Compared to efficacy analyses AE
+analyses are often rather simplistic. The probability of an AE of a specific
+type is typically estimated by the incidence proportion, sometimes the
+incidence density or the Kaplan-Meier estimator are proposed. But these
+analyses either do not account for censoring, rely on a too restrictive
+parametric model, or ignore competing events. With the non-parametric
+Aalen-Johansen estimator as the gold-standard, these potential sources of bias
+are investigated in a data example from oncology and in simulations, both in
+the one-sample and in the two-sample case. As the estimators may have large
+variances at the end of follow-up, the estimators are not only compared at the
+maximal event time but also at two quantiles of the observed times. To date,
+consequences for safety comparisons have hardly been investigated in the
+literature. The impact of using different estimators for group comparisons is
+unclear, as, for example, the ratio of two both underestimating or
+overestimating estimators may or may not be comparable to the ratio of the
+gold-standard estimator. Therefore, the ratio of the AE probabilities is also
+calculated based on different approaches. By simulations investigating constant
+and non-constant hazards, different censoring mechanisms and event frequencies,
+we show that ignoring competing events is more of a problem than falsely
+assuming constant hazards by use of the incidence density and that the choice
+of the AE probability estimator is crucial for group comparisons.",stat.AP,stat.AP,1,Applications,Applications,Jan Beyersmann,"Regina Stegherr, Claudia Schmoor, Michael Lübbert, Tim Friede, Jan Beyersmann",5,http://arxiv.org/pdf/2001.05709v1,http://arxiv.org/abs/2001.05709v1,2020-01-16
+"A Support Detection and Root Finding Approach for Learning
+  High-dimensional Generalized Linear Models","Feature selection is important for modeling high-dimensional data, where the
+number of variables can be much larger than the sample size. In this paper, we
+develop a support detection and root finding procedure to learn the high
+dimensional sparse generalized linear models and denote this method by GSDAR.
+Based on the KKT condition for $\ell_0$-penalized maximum likelihood
+estimations, GSDAR generates a sequence of estimators iteratively.
+  Under some restricted invertibility conditions on the maximum likelihood
+function and sparsity assumption on the target coefficients, the errors of the
+proposed estimate decays exponentially to the optimal order. Moreover, the
+oracle estimator can be recovered if the target signal is stronger than the
+detectable level.
+  We conduct simulations and real data analysis to illustrate the advantages of
+our proposed method over several existing methods, including Lasso and MCP.",stat.ML,"stat.ML, cs.LG, stat.CO",3,Machine Learning,"Machine Learning, Machine Learning, Computation",Xiliang Lu,"Jian Huang, Yuling Jiao, Lican Kang, Jin Liu, Yanyan Liu, Xiliang Lu",6,http://arxiv.org/pdf/2001.05819v1,http://arxiv.org/abs/2001.05819v1,2020-01-16
+Multiscale stick-breaking mixture models,"We introduce a family of multiscale stick-breaking mixture models for
+Bayesian nonparametric density estimation. The Bayesian nonparametric
+literature is dominated by single scale methods, exception made for P\`olya
+trees and allied approaches. Our proposal is based on a mixture specification
+exploiting an infinitely-deep binary tree of random weights that grows
+according to a multiscale generalization of a large class of stick-breaking
+processes; this multiscale stick-breaking is paired with specific stochastic
+processes generating sequences of parameters that induce stochastically ordered
+kernel functions. Properties of this family of multiscale stick-breaking
+mixtures are described. Focusing on a Gaussian specification, a Markov Chain
+Montecarlo algorithm for posterior computation is introduced. The performance
+of the method is illustrated analyzing both synthetic and real data sets. The
+method is well-suited for data living in $\mathbb{R}$ and is able to detect
+densities with varying degree of smoothness and local features.",stat.ME,"stat.CO, stat.ME",2,Methodology,"Computation, Methodology",Antonio Canale,"Marco Stefanucci, Antonio Canale",2,http://arxiv.org/pdf/2001.05729v1,http://arxiv.org/abs/2001.05729v1,2020-01-16
+"Sequential Selection for Accelerated Life Testing via Approximate
+  Bayesian Inference","Accelerated life testing (ALT) is typically used to assess the reliability of
+material's lifetime under desired stress levels. Recent advances in material
+engineering have made a variety of material alternatives readily available. To
+identify the most reliable material setting with efficient experimental design,
+a sequential test planning strategy is preferred. To guarantee a tractable
+statistical mechanism for information collection and update, we develop
+explicit model parameter update formulas via approximate Bayesian inference.
+Theories show that our explicit update formulas give consistent parameter
+estimates. Simulation study and a case study show that the proposed sequential
+selection approach can significantly improve the probability of identifying the
+material alternative with best reliability performance over other design
+approaches.",stat.ME,stat.ME,1,Methodology,Methodology,Wenjun Cai,"Ye Chen, Qiong Zhang, Mingyang Li, Wenjun Cai",4,http://arxiv.org/pdf/2001.05602v1,http://arxiv.org/abs/2001.05602v1,2020-01-16
+Quantified limits of the nuclear landscape,"The chart of the nuclides is limited by particle drip lines beyond which
+nuclear stability to proton or neutron emission is lost. Predicting the range
+of particle-bound isotopes poses an appreciable challenge for nuclear theory as
+it involves extreme extrapolations of nuclear masses beyond the regions where
+experimental information is available. Still, quantified extrapolations are
+crucial for a variety of applications, including the modeling of stellar
+nucleosynthesis. We use microscopic nuclear mass models and Bayesian
+methodology to provide quantified predictions of proton and neutron separation
+energies as well as Bayesian probabilities of existence throughout the nuclear
+landscape all the way to the particle drip lines. We apply nuclear density
+functional theory with several energy density functionals. To account for
+uncertainties, Bayesian Gaussian processes are trained on the separation-energy
+residuals for each individual model, and the resulting predictions are combined
+via Bayesian model averaging. This framework allows to account for systematic
+and statistical uncertainties and propagate them to extrapolative predictions.
+We characterize the drip-line regions where the probability that the nucleus is
+particle-bound decreases from $1$ to $0$. In these regions, we provide
+quantified predictions for one- and two-nucleon separation energies. According
+to our Bayesian model averaging analysis, 7759 nuclei with $Z\leq 119$ have a
+probability of existence $\geq 0.5$. The extrapolations obtained in this study
+will be put through stringent tests when new experimental information on exotic
+nuclei becomes available. In this respect, the quantified landscape of nuclear
+existence obtained in this study should be viewed as a dynamical prediction
+that will be fine-tuned when new experimental information and improved global
+mass models become available.",nucl-th,"stat.ML, nucl-th, nucl-ex, 62F15, 62P35, 60G15",4,Nuclear Theory,"Machine Learning, Nuclear Theory, Nuclear Experiment",Oleg B. Tarasov,"Léo Neufcourt, Yuchen Cao, Samuel A. Giuliani, Witold Nazarewicz, Erik Olsen, Oleg B. Tarasov",6,http://arxiv.org/pdf/2001.05924v1,http://arxiv.org/abs/2001.05924v1,2020-01-16

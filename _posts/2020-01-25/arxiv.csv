@@ -1,0 +1,856 @@
+title,summary,primary_tag,tags,n_tags,primary_category,categories,author,authors,n_authors,url_pdf,url_href,date
+Robust Explanations for Visual Question Answering,"In this paper, we propose a method to obtain robust explanations for visual
+question answering(VQA) that correlate well with the answers. Our model
+explains the answers obtained through a VQA model by providing visual and
+textual explanations. The main challenges that we address are i) Answers and
+textual explanations obtained by current methods are not well correlated and
+ii) Current methods for visual explanation do not focus on the right location
+for explaining the answer. We address both these challenges by using a
+collaborative correlated module which ensures that even if we do not train for
+noise based attacks, the enhanced correlation ensures that the right
+explanation and answer can be generated. We further show that this also aids in
+improving the generated visual and textual explanations. The use of the
+correlated module can be thought of as a robust method to verify if the answer
+and explanations are coherent. We evaluate this model using VQA-X dataset. We
+observe that the proposed method yields better textual and visual justification
+that supports the decision. We showcase the robustness of the model against a
+noise-based perturbation attack using corresponding visual and textual
+explanations. A detailed empirical analysis is shown. Here we provide source
+code link for our model \url{https://github.com/DelTA-Lab-IITK/CCM-WACV}.",cs.CV,"cs.CL, cs.LG, cs.AI, cs.CV, cs.MM",5,Computer Vision and Pattern Recognition,"Computation and Language, Machine Learning, Artificial Intelligence, Computer Vision and Pattern Recognition, Multimedia",Vinay P. Namboodiri,"Badri N. Patro, Shivansh Pate, Vinay P. Namboodiri",3,http://arxiv.org/pdf/2001.08730v1,http://arxiv.org/abs/2001.08730v1,2020-01-23
+Model-theoretic Characterizations of Existential Rule Languages,"Existential rules, a.k.a. dependencies in databases, and Datalog+/- in
+knowledge representation and reasoning recently, are a family of important
+logical languages widely used in computer science and artificial intelligence.
+Towards a deep understanding of these languages in model theory, we establish
+model-theoretic characterizations for a number of existential rule languages
+such as (disjunctive) embedded dependencies, tuple-generating dependencies
+(TGDs), (frontier-)guarded TGDs and linear TGDs. All these characterizations
+hold for arbitrary structures, and most of them also work on the class of
+finite structures. As a natural application of these characterizations,
+complexity bounds for the rewritability of above languages are also identified.",cs.AI,"cs.DB, cs.LO, cs.AI",3,Artificial Intelligence,"Databases, Logic in Computer Science, Artificial Intelligence",Guifei Jiang,"Heng Zhang, Yan Zhang, Guifei Jiang",3,http://arxiv.org/pdf/2001.08688v1,http://arxiv.org/abs/2001.08688v1,2020-01-23
+I Feel I Feel You: A Theory of Mind Experiment in Games,"In this study into the player's emotional theory of mind of gameplaying
+agents, we investigate how an agent's behaviour and the player's own
+performance and emotions shape the recognition of a frustrated behaviour. We
+focus on the perception of frustration as it is a prevalent affective
+experience in human-computer interaction. We present a testbed game tailored
+towards this end, in which a player competes against an agent with a
+frustration model based on theory. We collect gameplay data, an annotated
+ground truth about the player's appraisal of the agent's frustration, and apply
+face recognition to estimate the player's emotional state. We examine the
+collected data through correlation analysis and predictive machine learning
+models, and find that the player's observable emotions are not correlated
+highly with the perceived frustration of the agent. This suggests that our
+subject's theory of mind is a cognitive process based on the gameplay context.
+Our predictive models---using ranking support vector machines---corroborate
+these results, yielding moderately accurate predictors of players' theory of
+mind.",cs.AI,"cs.LG, cs.HC, cs.AI",3,Artificial Intelligence,"Machine Learning, Human-Computer Interaction, Artificial Intelligence",Antonios Liapis,"David Melhart, Georgios N. Yannakakis, Antonios Liapis",3,http://arxiv.org/pdf/2001.08656v1,http://arxiv.org/abs/2001.08656v1,2020-01-23
+Compositional properties of emergent languages in deep learning,"Recent findings in multi-agent deep learning systems point towards the
+emergence of compositional languages. These claims are often made without exact
+analysis or testing of the language. In this work, we analyze the emergent
+language resulting from two different cooperative multi-agent game with more
+exact measures for compositionality. Our findings suggest that solutions found
+by deep learning models are often lacking the ability to reason on an abstract
+level therefore failing to generalize the learned knowledge to out of the
+training distribution examples. Strategies for testing compositional capacities
+and emergence of human-level concepts are discussed.",cs.LG,"cs.AI, stat.ML, cs.LG",3,Machine Learning,"Artificial Intelligence, Machine Learning, Machine Learning",Elia Bruni,"Bence Keresztury, Elia Bruni",2,http://arxiv.org/pdf/2001.08618v1,http://arxiv.org/abs/2001.08618v1,2020-01-23
+Learning Distributional Programs for Relational Autocompletion,"Relational autocompletion is the problem of automatically filling out some
+missing fields in a relational database. We tackle this problem within the
+probabilistic logic programming framework of Distributional Clauses (DC), which
+supports both discrete and continuous probability distributions. Within this
+framework, we introduce Dreaml -- an approach to learn both the structure and
+the parameters of DC programs from databases that may contain missing
+information. To realize this, Dreaml integrates statistical modeling,
+distributional clauses with rule learning. The distinguishing features of
+Dreaml are that it 1) tackles relational autocompletion, 2) learns
+distributional clauses extended with statistical models, 3) deals with both
+discrete and continuous distributions, 4) can exploit background knowledge, and
+5) uses an expectation-maximization based algorithm to cope with missing data.",cs.AI,"cs.LG, cs.LO, cs.AI",3,Artificial Intelligence,"Machine Learning, Logic in Computer Science, Artificial Intelligence",De Raedt Luc,"Kumar Nitesh, Kuzelka Ondrej, De Raedt Luc",3,http://arxiv.org/pdf/2001.08603v1,http://arxiv.org/abs/2001.08603v1,2020-01-23
+"Learning Object Placements For Relational Instructions by Hallucinating
+  Scene Representations","Robots coexisting with humans in their environment and performing services
+for them need the ability to interact with them. One particular requirement for
+such robots is that they are able to understand spatial relations and can place
+objects in accordance with the spatial relations expressed by their user. In
+this work, we present a convolutional neural network for estimating pixelwise
+object placement probabilities for a set of spatial relations from a single
+input image. During training, our network receives the learning signal by
+classifying hallucinated high-level scene representations as an auxiliary task.
+Unlike previous approaches, our method does not require ground truth data for
+the pixelwise relational probabilities or 3D models of the objects, which
+significantly expands the applicability in practical applications. Our results
+obtained using real-world data and human-robot experiments demonstrate the
+effectiveness of our method in reasoning about the best way to place objects to
+reproduce a spatial relation.",cs.RO,"cs.CV, cs.RO, cs.AI",3,Robotics,"Computer Vision and Pattern Recognition, Robotics, Artificial Intelligence",Wolfram Burgard,"Oier Mees, Alp Emek, Johan Vertens, Wolfram Burgard",4,http://arxiv.org/pdf/2001.08481v1,http://arxiv.org/abs/2001.08481v1,2020-01-23
+"Socially intelligent task and motion planning for human-robot
+  interaction","As social beings, much human behavior is predicated on social context - the
+ambient social state that includes cultural norms, social signals, individual
+preferences, etc. In this paper, we propose a socially-aware task and motion
+planning algorithm that considers social context to generate appropriate and
+effective plans in human social environments (HSEs). The key strength of our
+proposed approach is that it explicitly models how potential actions not only
+affect objective cost, but also transform the social context in which it plans
+and acts. We investigate strategies to limit the complexity of our algorithm,
+so that our planner will remain tractable for mobile platforms in complex HSEs
+like hospitals and factories. The planner will also consider the relative
+importance and urgency of its tasks, which it uses to determine when it is and
+is not appropriate to violate social expectations to achieve its objective.
+This social awareness will allow robots to understand a fundamental rule of
+society: just because something makes your job easier, does not make it the
+right thing to do!
+  To our knowledge, the proposed work is the first task and motion planning
+approach that supports socially intelligent robot policy for HSEs. Through this
+ongoing work, robots will be able to understand, respect, and leverage social
+context accomplish tasks both acceptably and effectively in HSEs.",cs.RO,"cs.RO, cs.AI",2,Robotics,"Robotics, Artificial Intelligence",Laurel Riek,"Andrea Frank, Laurel Riek",2,http://arxiv.org/pdf/2001.08398v1,http://arxiv.org/abs/2001.08398v1,2020-01-23
+"Numerical Abstract Persuasion Argumentation for Expressing Concurrent
+  Multi-Agent Negotiations","A negotiation process by 2 agents e1 and e2 can be interleaved by another
+negotiation process between, say, e1 and e3. The interleaving may alter the
+resource allocation assumed at the inception of the first negotiation process.
+Existing proposals for argumentation-based negotiations have focused primarily
+on two-agent bilateral negotiations, but scarcely on the concurrency of
+multi-agent negotiations. To fill the gap, we present a novel argumentation
+theory, basing its development on abstract persuasion argumentation (which is
+an abstract argumentation formalism with a dynamic relation). Incorporating
+into it numerical information and a mechanism of handshakes among members of
+the dynamic relation, we show that the extended theory adapts well to
+concurrent multi-agent negotiations over scarce resources.",cs.AI,"cs.MA, cs.AI",2,Artificial Intelligence,"Multiagent Systems, Artificial Intelligence",Takayuki Ito,"Ryuta Arisaka, Takayuki Ito",2,http://arxiv.org/pdf/2001.08335v1,http://arxiv.org/abs/2001.08335v1,2020-01-23
+Audiovisual SlowFast Networks for Video Recognition,"We present Audiovisual SlowFast Networks, an architecture for integrated
+audiovisual perception. AVSlowFast extends SlowFast Networks with a Faster
+Audio pathway that is deeply integrated with its visual counterparts. We fuse
+audio and visual features at multiple layers, enabling audio to contribute to
+the formation of hierarchical audiovisual concepts. To overcome training
+difficulties that arise from different learning dynamics for audio and visual
+modalities, we employ DropPathway that randomly drops the Audio pathway during
+training as a simple and effective regularization technique. Inspired by prior
+studies in neuroscience, we perform hierarchical audiovisual synchronization
+and show that it leads to better audiovisual features. We report
+state-of-the-art results on four video action classification and detection
+datasets, perform detailed ablation studies, and show the generalization of
+AVSlowFast to self-supervised tasks, where it improves over prior work. Code
+will be made available at: https://github.com/facebookresearch/SlowFast.",cs.CV,cs.CV,1,Computer Vision and Pattern Recognition,Computer Vision and Pattern Recognition,Christoph Feichtenhofer,"Fanyi Xiao, Yong Jae Lee, Kristen Grauman, Jitendra Malik, Christoph Feichtenhofer",5,http://arxiv.org/pdf/2001.08740v1,http://arxiv.org/abs/2001.08740v1,2020-01-23
+"Cross-Domain Few-Shot Classification via Learned Feature-Wise
+  Transformation","Few-shot classification aims to recognize novel categories with only few
+labeled images in each class. Existing metric-based few-shot classification
+algorithms predict categories by comparing the feature embeddings of query
+images with those from a few labeled images (support examples) using a learned
+metric function. While promising performance has been demonstrated, these
+methods often fail to generalize to unseen domains due to large discrepancy of
+the feature distribution across domains. In this work, we address the problem
+of few-shot classification under domain shifts for metric-based methods. Our
+core idea is to use feature-wise transformation layers for augmenting the image
+features using affine transforms to simulate various feature distributions
+under different domains in the training stage. To capture variations of the
+feature distributions under different domains, we further apply a
+learning-to-learn approach to search for the hyper-parameters of the
+feature-wise transformation layers. We conduct extensive experiments and
+ablation studies under the domain generalization setting using five few-shot
+classification datasets: mini-ImageNet, CUB, Cars, Places, and Plantae.
+Experimental results demonstrate that the proposed feature-wise transformation
+layer is applicable to various metric-based models, and provides consistent
+improvements on the few-shot classification performance under domain shift.",cs.CV,"cs.CV, cs.LG",2,Computer Vision and Pattern Recognition,"Computer Vision and Pattern Recognition, Machine Learning",Ming-Hsuan Yang,"Hung-Yu Tseng, Hsin-Ying Lee, Jia-Bin Huang, Ming-Hsuan Yang",4,http://arxiv.org/pdf/2001.08735v1,http://arxiv.org/abs/2001.08735v1,2020-01-23
+"Interpretable End-to-end Urban Autonomous Driving with Latent Deep
+  Reinforcement Learning","Unlike popular modularized framework, end-to-end autonomous driving seeks to
+solve the perception, decision and control problems in an integrated way, which
+can be more adapting to new scenarios and easier to generalize at scale.
+However, existing end-to-end approaches are often lack of interpretability, and
+can only deal with simple driving tasks like lane keeping. In this paper, we
+propose an interpretable deep reinforcement learning method for end-to-end
+autonomous driving, which is able to handle complex urban scenarios. A
+sequential latent environment model is introduced and learned jointly with the
+reinforcement learning process. With this latent model, a semantic birdeye mask
+can be generated, which is enforced to connect with a certain intermediate
+property in today's modularized framework for the purpose of explaining the
+behaviors of learned policy. The latent space also significantly reduces the
+sample complexity of reinforcement learning. Comparison tests with a simulated
+autonomous car in CARLA show that the performance of our method in urban
+scenarios with crowded surrounding vehicles dominates many baselines including
+DQN, DDPG, TD3 and SAC. Moreover, through masked outputs, the learned policy is
+able to provide a better explanation of how the car reasons about the driving
+environment.",cs.RO,"cs.CV, cs.RO, cs.LG",3,Robotics,"Computer Vision and Pattern Recognition, Robotics, Machine Learning",Masayoshi Tomizuka,"Jianyu Chen, Shengbo Eben Li, Masayoshi Tomizuka",3,http://arxiv.org/pdf/2001.08726v1,http://arxiv.org/abs/2001.08726v1,2020-01-23
+Ternary Feature Masks: continual learning without any forgetting,"In this paper, we propose an approach without any forgetting to continual
+learning for the task-aware regime, where at inference the task-label is known.
+By using ternary masks we can upgrade a model to new tasks, reusing knowledge
+from previous tasks while not forgetting anything about them. Using masks
+prevents both catastrophic forgetting and backward transfer. We argue -- and
+show experimentally -- that avoiding the former largely compensates for the
+lack of the latter, which is rarely observed in practice. In contrast to
+earlier works, our masks are applied to the features (activations) of each
+layer instead of the weights. This considerably reduces the number of mask
+parameters to be added for each new task; with more than three orders of
+magnitude for most networks. The encoding of the ternary masks into two bits
+per feature creates very little overhead to the network, avoiding scalability
+issues. Our masks do not permit any changes to features which are used by
+previous tasks. As this may be too restrictive to allow learning of new tasks,
+we add task-specific feature normalization. This way, already learned features
+can adapt to the current task without changing the behavior of these features
+for previous tasks. Extensive experiments on several finegrained datasets and
+ImageNet show that our method outperforms current state-of-the-art while
+reducing memory overhead in comparison to weight-based approaches.",cs.CV,cs.CV,1,Computer Vision and Pattern Recognition,Computer Vision and Pattern Recognition,Joost van de Weijer,"Marc Masana, Tinne Tuytelaars, Joost van de Weijer",3,http://arxiv.org/pdf/2001.08714v1,http://arxiv.org/abs/2001.08714v1,2020-01-23
+Lipreading using Temporal Convolutional Networks,"Lip-reading has attracted a lot of research attention lately thanks to
+advances in deep learning. The current state-of-the-art model for recognition
+of isolated words in-the-wild consists of a residual network and Bidirectional
+Gated Recurrent Unit (BGRU) layers. In this work, we address the limitations of
+this model and we propose changes which further improve its performance.
+Firstly, the BGRU layers are replaced with Temporal Convolutional Networks
+(TCN). Secondly, we greatly simplify the training procedure, which allows us to
+train the model in one single stage. Thirdly, we show that the current
+state-of-the-art methodology produces models that do not generalize well to
+variations on the sequence length, and we addresses this issue by proposing a
+variable-length augmentation. We present results on the largest
+publicly-available datasets for isolated word recognition in English and
+Mandarin, LRW and LRW1000, respectively. Our proposed model results in an
+absolute improvement of 1.2% and 3.2%, respectively, in these datasets which is
+the new state-of-the-art performance.",cs.CV,"cs.CV, cs.SD, eess.AS",3,Computer Vision and Pattern Recognition,"Computer Vision and Pattern Recognition, Sound, Audio and Speech Processing",Maja Pantic,"Brais Martinez, Pingchuan Ma, Stavros Petridis, Maja Pantic",4,http://arxiv.org/pdf/2001.08702v1,http://arxiv.org/abs/2001.08702v1,2020-01-23
+MRI Banding Removal via Adversarial Training,"MRI images reconstructed from sub-sampled data using deep learning techniques
+often show a characteristic banding, which is particularly strong in low
+signal-to-noise regions of the reconstructed image. In this work, we propose
+the use of an adversarial loss that penalizes banding structures without
+requiring any human annotation. Our technique greatly reduces the appearance of
+banding, without requiring any additional computation or post-processing at
+reconstruction time. We report the results of a blind comparison against a
+strong baseline by a group of expert evaluators (board-certified radiologists),
+where our approach is ranked superior at banding removal with no statistically
+significant loss of detail.",eess.IV,"cs.CV, eess.IV, stat.ML, cs.LG",4,Image and Video Processing,"Computer Vision and Pattern Recognition, Image and Video Processing, Machine Learning, Machine Learning",Michael P. Recht,"Aaron Defazio, Tullie Murrell, Michael P. Recht",3,http://arxiv.org/pdf/2001.08699v1,http://arxiv.org/abs/2001.08699v1,2020-01-23
+"Disassembling the Dataset: A Camera Alignment Mechanism for Multiple
+  Tasks in Person Re-identification","In person re-identification (ReID), one of the main challenges is the
+distribution inconsistency among different datasets. Previous researchers have
+defined several seemingly individual topics, such as fully supervised learning,
+direct transfer, domain adaptation, and incremental learning, each with
+different settings of training and testing scenarios. These topics are designed
+in a dataset-wise manner, i.e., images from the same dataset, even from
+disjoint cameras, are presumed to follow the same distribution. However, such
+distribution is coarse and training-set-specific, and the ReID knowledge
+learned in such manner works well only on the corresponding scenarios. To
+address this issue, we propose a fine-grained distribution alignment
+formulation, which disassembles the dataset and aligns all training and testing
+cameras. It connects all topics above and guarantees that ReID knowledge is
+always learned, accumulated, and verified in the aligned distributions. In
+practice, we devise the Camera-based Batch Normalization, which is easy for
+integration and nearly cost-free for existing ReID methods. Extensive
+experiments on the above four ReID tasks demonstrate the superiority of our
+approach. The code will be publicly available.",cs.CV,cs.CV,1,Computer Vision and Pattern Recognition,Computer Vision and Pattern Recognition,Qi Tian,"Zijie Zhuang, Longhui Wei, Lingxi Xie, Hengheng Zhang, Tianyu Zhang, Haozhe Wu, Haizhou Ai, Qi Tian",8,http://arxiv.org/pdf/2001.08680v1,http://arxiv.org/abs/2001.08680v1,2020-01-23
+"Tensor-Based Grading: A Novel Patch-Based Grading Approach for the
+  Analysis of Deformation Fields in Huntington's Disease","The improvements in magnetic resonance imaging have led to the development of
+numerous techniques to better detect structural alterations caused by
+neurodegenerative diseases. Among these, the patch-based grading framework has
+been proposed to model local patterns of anatomical changes. This approach is
+attractive because of its low computational cost and its competitive
+performance. Other studies have proposed to analyze the deformations of brain
+structures using tensor-based morphometry, which is a highly interpretable
+approach. In this work, we propose to combine the advantages of these two
+approaches by extending the patch-based grading framework with a new
+tensor-based grading method that enables us to model patterns of local
+deformation using a log-Euclidean metric. We evaluate our new method in a study
+of the putamen for the classification of patients with pre-manifest
+Huntington's disease and healthy controls. Our experiments show a substantial
+increase in classification accuracy (87.5 $\pm$ 0.5 vs. 81.3 $\pm$ 0.6)
+compared to the existing patch-based grading methods, and a good complement to
+putamen volume, which is a primary imaging-based marker for the study of
+Huntington's disease.",eess.IV,"cs.CV, eess.IV",2,Image and Video Processing,"Computer Vision and Pattern Recognition, Image and Video Processing",Ipek Oguz,"Kilian Hett, Hans Johnson, Pierrick Coupé, Jane Paulsen, Jeffrey Long, Ipek Oguz",6,http://arxiv.org/pdf/2001.08651v1,http://arxiv.org/abs/2001.08651v1,2020-01-23
+"Structured Compression and Sharing of Representational Space for
+  Continual Learning","Humans are skilled at learning adaptively and efficiently throughout their
+lives, but learning tasks incrementally causes artificial neural networks to
+overwrite relevant information learned about older tasks, resulting in
+'Catastrophic Forgetting'. Efforts to overcome this phenomenon suffer from poor
+utilization of resources in many ways, such as through the need to save older
+data or parametric importance scores, or to grow the network architecture. We
+propose an algorithm that enables a network to learn continually and
+efficiently by partitioning the representational space into a Core space, that
+contains the condensed information from previously learned tasks, and a
+Residual space, which is akin to a scratch space for learning the current task.
+The information in the Residual space is then compressed using Principal
+Component Analysis and added to the Core space, freeing up parameters for the
+next task. We evaluate our algorithm on P-MNIST, CIFAR-10 and CIFAR-100
+datasets. We achieve comparable accuracy to state-of-the-art methods while
+overcoming the problem of catastrophic forgetting completely. Additionally, we
+get up to 4.5x improvement in energy efficiency during inference due to the
+structured nature of the resulting architecture.",cs.LG,"cs.CV, stat.ML, cs.LG",3,Machine Learning,"Computer Vision and Pattern Recognition, Machine Learning, Machine Learning",Kaushik Roy,"Gobinda Saha, Isha Garg, Aayush Ankit, Kaushik Roy",4,http://arxiv.org/pdf/2001.08650v1,http://arxiv.org/abs/2001.08650v1,2020-01-23
+"Deformation-aware Unpaired Image Translation for Pose Estimation on
+  Laboratory Animals","Our goal is to capture the pose of neuroscience model organisms, without
+using any manual supervision, to be able to study how neural circuits
+orchestrate behaviour. Human pose estimation attains remarkable accuracy when
+trained on real or simulated datasets consisting of millions of frames.
+However, for many applications simulated models are unrealistic and real
+training datasets with comprehensive annotations do not exist. We address this
+problem with a new sim2real domain transfer method. Our key contribution is the
+explicit and independent modeling of appearance, shape and poses in an unpaired
+image translation framework. Our model lets us train a pose estimator on the
+target domain by transferring readily available body keypoint locations from
+the source domain to generated target images. We compare our approach with
+existing domain transfer methods and demonstrate improved pose estimation
+accuracy on Drosophila melanogaster (fruit fly), Caenorhabditis elegans (worm)
+and Danio rerio (zebrafish), without requiring any manual annotation on the
+target domain and despite using simplistic off-the-shelf animal characters for
+simulation, or simple geometric shapes as models. Our new datasets, code, and
+trained models will be published to support future neuroscientific studies.",cs.CV,cs.CV,1,Computer Vision and Pattern Recognition,Computer Vision and Pattern Recognition,Helge Rhodin,"Siyuan Li, Semih Günel, Mirela Ostrek, Pavan Ramdya, Pascal Fua, Helge Rhodin",6,http://arxiv.org/pdf/2001.08601v1,http://arxiv.org/abs/2001.08601v1,2020-01-23
+"CNN-CASS: CNN for Classification of Coronary Artery Stenosis Score in
+  MPR Images","To decrease patient waiting time for diagnosis of the Coronary Artery
+Disease, automatic methods are applied to identify its severity using Coronary
+Computed Tomography Angiography scans or extracted Multiplanar Reconstruction
+(MPR) images, giving doctors a second-opinion on the priority of each case. The
+main disadvantage of previous studies is the lack of large set of data that
+could guarantee their reliability. Another limitation is the usage of
+handcrafted features requiring manual preprocessing, such as centerline
+extraction. We overcome both limitations by applying a different automated
+approach based on ShuffleNet V2 network architecture and testing it on the
+proposed collected dataset of MPR images, which is bigger than any other used
+in this field before. We also omit centerline extraction step and train and
+test our model using whole curved MPR images of 708 and 105 patients,
+respectively. The model predicts one of three classes: 'no stenosis' for
+normal, 'non-significant' - 1-50% of stenosis detected, 'significant' - more
+than 50% of stenosis. We demonstrate model's interpretability through
+visualization of the most important features selected by the network. For
+stenosis score classification, the method shows improved performance comparing
+to previous works, achieving 80% accuracy on the patient level. Our code is
+publicly available.",eess.IV,"cs.CV, eess.IV",2,Image and Video Processing,"Computer Vision and Pattern Recognition, Image and Video Processing",Oles Dobosevych,"Mariia Dobko, Bohdan Petryshak, Oles Dobosevych",3,http://arxiv.org/pdf/2001.08593v1,http://arxiv.org/abs/2001.08593v1,2020-01-23
+Weakly-Supervised Lesion Segmentation on CT Scans using Co-Segmentation,"Lesion segmentation on computed tomography (CT) scans is an important step
+for precisely monitoring changes in lesion/tumor growth. This task, however, is
+very challenging since manual segmentation is prohibitively time-consuming,
+expensive, and requires professional knowledge. Current practices rely on an
+imprecise substitute called response evaluation criteria in solid tumors
+(RECIST). Although these markers lack detailed information about the lesion
+regions, they are commonly found in hospitals' picture archiving and
+communication systems (PACS). Thus, these markers have the potential to serve
+as a powerful source of weak-supervision for 2D lesion segmentation. To
+approach this problem, this paper proposes a convolutional neural network (CNN)
+based weakly-supervised lesion segmentation method, which first generates the
+initial lesion masks from the RECIST measurements and then utilizes
+co-segmentation to leverage lesion similarities and refine the initial masks.
+In this work, an attention-based co-segmentation model is adopted due to its
+ability to learn more discriminative features from a pair of images.
+Experimental results on the NIH DeepLesion dataset demonstrate that the
+proposed co-segmentation approach significantly improves lesion segmentation
+performance, e.g the Dice score increases about 4.0% (from 85.8% to 89.8%).",cs.CV,cs.CV,1,Computer Vision and Pattern Recognition,Computer Vision and Pattern Recognition,Ronald M. Summers,"Vatsal Agarwal, Youbao Tang, Jing Xiao, Ronald M. Summers",4,http://arxiv.org/pdf/2001.08590v1,http://arxiv.org/abs/2001.08590v1,2020-01-23
+Detecting Deficient Coverage in Colonoscopies,"Colorectal Cancer (CRC) is a global health problem, resulting in 900K deaths
+per year. Colonoscopy is the tool of choice for preventing CRC, by detecting
+polyps before they become cancerous, and removing them. However, colonoscopy is
+hampered by the fact that endoscopists routinely miss an average of 22-28% of
+polyps. While some of these missed polyps appear in the endoscopist's field of
+view, others are missed simply because of substandard coverage of the
+procedure, i.e. not all of the colon is seen. This paper attempts to rectify
+the problem of substandard coverage in colonoscopy through the introduction of
+the C2D2 (Colonoscopy Coverage Deficiency via Depth) algorithm which detects
+deficient coverage, and can thereby alert the endoscopist to revisit a given
+area. More specifically, C2D2 consists of two separate algorithms: the first
+performs depth estimation of the colon given an ordinary RGB video stream;
+while the second computes coverage given these depth estimates. Rather than
+compute coverage for the entire colon, our algorithm computes coverage locally,
+on a segment-by-segment basis; C2D2 can then indicate in real-time whether a
+particular area of the colon has suffered from deficient coverage, and if so
+the endoscopist can return to that area. Our coverage algorithm is the first
+such algorithm to be evaluated in a large-scale way; while our depth estimation
+technique is the first calibration-free unsupervised method applied to
+colonoscopies. The C2D2 algorithm achieves state of the art results in the
+detection of deficient coverage: it is 2.4 times more accurate than human
+experts.",cs.CV,cs.CV,1,Computer Vision and Pattern Recognition,Computer Vision and Pattern Recognition,Ehud Rivlin,"Daniel Freedman, Yochai Blau, Liran Katzir, Amit Aides, Ilan Shimshoni, Danny Veikherman, Tomer Golany, Ariel Gordon, Greg Corrado, Yossi Matias, Ehud Rivlin",11,http://arxiv.org/pdf/2001.08589v1,http://arxiv.org/abs/2001.08589v1,2020-01-23
+"Observer variation-aware medical image segmentation by combining deep
+  learning and surrogate-assisted genetic algorithms","There has recently been great progress in automatic segmentation of medical
+images with deep learning algorithms. In most works observer variation is
+acknowledged to be a problem as it makes training data heterogeneous but so far
+no attempts have been made to explicitly capture this variation. Here, we
+propose an approach capable of mimicking different styles of segmentation,
+which potentially can improve quality and clinical acceptance of automatic
+segmentation methods. In this work, instead of training one neural network on
+all available data, we train several neural networks on subgroups of data
+belonging to different segmentation variations separately. Because a priori it
+may be unclear what styles of segmentation exist in the data and because
+different styles do not necessarily map one-on-one to different observers, the
+subgroups should be automatically determined. We achieve this by searching for
+the best data partition with a genetic algorithm. Therefore, each network can
+learn a specific style of segmentation from grouped training data. We provide
+proof of principle results for open-sourced prostate segmentation MRI data with
+simulated observer variations. Our approach provides an improvement of up to
+23% (depending on simulated variations) in terms of Dice and surface Dice
+coefficients compared to one network trained on all data.",cs.CV,"cs.CV, eess.IV, cs.NE, cs.LG",4,Computer Vision and Pattern Recognition,"Computer Vision and Pattern Recognition, Image and Video Processing, Neural and Evolutionary Computing, Machine Learning",Tanja Alderliesten,"Arkadiy Dushatskiy, Adriënne M. Mendrik, Peter A. N. Bosman, Tanja Alderliesten",4,http://arxiv.org/pdf/2001.08552v1,http://arxiv.org/abs/2001.08552v1,2020-01-23
+Channel Pruning via Automatic Structure Search,"Channel pruning is among the predominant approaches to compress deep neural
+networks. To this end, most existing pruning methods focus on selecting
+channels (filters) by importance/optimization or regularization based on
+rule-of-thumb designs, which defects in sub-optimal pruning. In this paper, we
+propose a new channel pruning method based on artificial bee colony algorithm
+(ABC), dubbed as ABCPruner, which aims to efficiently find optimal pruned
+structure, i.e., channel number in each layer, rather than selecting
+""important"" channels as previous works did. To solve the intractably huge
+combinations of pruned structure for deep networks, we first propose to shrink
+the combinations where the preserved channels are limited to a specific space,
+thus the combinations of pruned structure can be significantly reduced. And
+then, we formulate the search of optimal pruned structure as an optimization
+problem and integrate the ABC algorithm to solve it in an automatic manner to
+lessen human interference. ABCPruner has been demonstrated to be more
+effective, which also enables the fine-tuning to be conducted efficiently in an
+end-to-end manner. Experiments on CIFAR-10 show that ABCPruner reduces 73.68\%
+of FLOPs and 88.68\% of parameters with even 0.06\% accuracy improvement for
+VGGNet-16. On ILSVRC-2012, it achieves a reduction of 62.87\% FLOPs and removes
+60.01\% of parameters with negligible accuracy cost for ResNet-152. The source
+codes can be available at https://github.com/lmbxmu/ABCPruner.",cs.CV,cs.CV,1,Computer Vision and Pattern Recognition,Computer Vision and Pattern Recognition,Yonghong Tian,"Mingbao Lin, Rongrong Ji, Yuxin Zhang, Baochang Zhang, Yongjian Wu, Yonghong Tian",6,http://arxiv.org/pdf/2001.08565v1,http://arxiv.org/abs/2001.08565v1,2020-01-23
+Communication Efficient Federated Learning over Multiple Access Channels,"In this work, we study the problem of federated learning (FL), where
+distributed users aim to jointly train a machine learning model with the help
+of a parameter server (PS). In each iteration of FL, users compute local
+gradients, followed by transmission of the quantized gradients for subsequent
+aggregation and model updates at PS. One of the challenges of FL is that of
+communication overhead due to FL's iterative nature and large model sizes. One
+recent direction to alleviate communication bottleneck in FL is to let users
+communicate simultaneously over a multiple access channel (MAC), possibly
+making better use of the communication resources.
+  In this paper, we consider the problem of FL learning over a MAC. In
+particular, we focus on the design of digital gradient transmission schemes
+over a MAC, where gradients at each user are first quantized, and then
+transmitted over a MAC to be decoded individually at the PS. When designing
+digital FL schemes over MACs, there are new opportunities to assign different
+amount of resources (such as rate or bandwidth) to different users based on a)
+the informativeness of the gradients at each user, and b) the underlying
+channel conditions. We propose a stochastic gradient quantization scheme, where
+the quantization parameters are optimized based on the capacity region of the
+MAC. We show that such channel aware quantization for FL outperforms uniform
+quantization, particularly when users experience different channel conditions,
+and when have gradients with varying levels of informativeness.",cs.IT,"math.IT, cs.LG, cs.IT",3,Information Theory,"Information Theory, Machine Learning, Information Theory",Ravi Tandon,"Wei-Ting Chang, Ravi Tandon",2,http://arxiv.org/pdf/2001.08737v1,http://arxiv.org/abs/2001.08737v1,2020-01-23
+"Facial Feedback for Reinforcement Learning: A Case Study and Offline
+  Analysis Using the TAMER Framework","Interactive reinforcement learning provides a way for agents to learn to
+solve tasks from evaluative feedback provided by a human user. Previous
+research showed that humans give copious feedback early in training but very
+sparsely thereafter. In this article, we investigate the potential of agent
+learning from trainers' facial expressions via interpreting them as evaluative
+feedback. To do so, we implemented TAMER which is a popular interactive
+reinforcement learning method in a reinforcement-learning benchmark problem ---
+Infinite Mario, and conducted the first large-scale study of TAMER involving
+561 participants. With designed CNN-RNN model, our analysis shows that telling
+trainers to use facial expressions and competition can improve the accuracies
+for estimating positive and negative feedback using facial expressions. In
+addition, our results with a simulation experiment show that learning solely
+from predicted feedback based on facial expressions is possible and using
+strong/effective prediction models or a regression method, facial responses
+would significantly improve the performance of agents. Furthermore, our
+experiment supports previous studies demonstrating the importance of
+bi-directional feedback and competitive elements in the training interface.",cs.HC,"cs.HC, cs.LG",2,Human-Computer Interaction,"Human-Computer Interaction, Machine Learning",Hayley Hung,"Guangliang Li, Hamdi Dibeklioğlu, Shimon Whiteson, Hayley Hung",4,http://arxiv.org/pdf/2001.08703v1,http://arxiv.org/abs/2001.08703v1,2020-01-23
+"EventMapper: Detecting Real-World Physical Events Using Corroborative
+  and Probabilistic Sources","The ubiquity of social media makes it a rich source for physical event
+detection, such as disasters, and as a potential resource for crisis management
+resource allocation. There have been some recent works on leveraging social
+media sources for retrospective, after-the-fact event detection of large events
+such as earthquakes or hurricanes. Similarly, there is a long history of using
+traditional physical sensors such as climate satellites to perform regional
+event detection. However, combining social media with corroborative physical
+sensors for real-time, accurate, and global physical detection has remained
+unexplored.
+  This paper presents EventMapper, a framework to support event recognition of
+small yet equally costly events (landslides, flooding, wildfires). EventMapper
+integrates high-latency, high-accuracy corroborative sources such as physical
+sensors with low-latency, noisy probabilistic sources such as social media
+streams to deliver real-time, global event recognition. Furthermore,
+EventMapper is resilient to the concept drift phenomenon, where machine
+learning models require continuous fine-tuning to maintain high performance.
+  By exploiting the common features of probabilistic and corroborative sources,
+EventMapper automates machine learning model updates, maintenance, and
+fine-tuning. We describe three applications built on EventMapper for landslide,
+wildfire, and flooding detection.",cs.IR,"cs.CL, cs.IR, cs.LG",3,Information Retrieval,"Computation and Language, Information Retrieval, Machine Learning",Calton Pu,"Abhijit Suprem, Calton Pu",2,http://arxiv.org/pdf/2001.08700v1,http://arxiv.org/abs/2001.08700v1,2020-01-23
+"Expected Information Maximization: Using the I-Projection for Mixture
+  Density Estimation","Modelling highly multi-modal data is a challenging problem in machine
+learning. Most algorithms are based on maximizing the likelihood, which
+corresponds to the M(oment)-projection of the data distribution to the model
+distribution. The M-projection forces the model to average over modes it cannot
+represent. In contrast, the I(information)-projection ignores such modes in the
+data and concentrates on the modes the model can represent. Such behavior is
+appealing whenever we deal with highly multi-modal data where modelling single
+modes correctly is more important than covering all the modes. Despite this
+advantage, the I-projection is rarely used in practice due to the lack of
+algorithms that can efficiently optimize it based on data. In this work, we
+present a new algorithm called Expected Information Maximization (EIM) for
+computing the I-projection solely based on samples for general latent variable
+models, where we focus on Gaussian mixtures models and Gaussian mixtures of
+experts. Our approach applies a variational upper bound to the I-projection
+objective which decomposes the original objective into single objectives for
+each mixture component as well as for the coefficients, allowing an efficient
+optimization. Similar to GANs, our approach employs discriminators but uses a
+more stable optimization procedure, using a tight upper bound. We show that our
+algorithm is much more effective in computing the I-projection than recent GAN
+approaches and we illustrate the effectiveness of our approach for modelling
+multi-modal behavior on two pedestrian and traffic prediction datasets.",cs.LG,"stat.ML, cs.LG",2,Machine Learning,"Machine Learning, Machine Learning",Gerhard Neumann,"Philipp Becker, Oleg Arenz, Gerhard Neumann",3,http://arxiv.org/pdf/2001.08682v1,http://arxiv.org/abs/2001.08682v1,2020-01-23
+"Towards Automatic Clustering Analysis using Traces of Information Gain:
+  The InfoGuide Method","Clustering analysis has become a ubiquitous information retrieval tool in a
+wide range of domains, but a more automatic framework is still lacking. Though
+internal metrics are the key players towards a successful retrieval of
+clusters, their effectiveness on real-world datasets remains not fully
+understood, mainly because of their unrealistic assumptions underlying
+datasets. We hypothesized that capturing {\it traces of information gain}
+between increasingly complex clustering retrievals---{\it InfoGuide}---enables
+an automatic clustering analysis with improved clustering retrievals. We
+validated the {\it InfoGuide} hypothesis by capturing the traces of information
+gain using the Kolmogorov-Smirnov statistic and comparing the clusters
+retrieved by {\it InfoGuide} against those retrieved by other commonly used
+internal metrics in artificially-generated, benchmarks, and real-world
+datasets. Our results suggested that {\it InfoGuide} can enable a more
+automatic clustering analysis and may be more suitable for retrieving clusters
+in real-world datasets displaying nontrivial statistical properties.",cs.LG,"stat.ML, cs.LG",2,Machine Learning,"Machine Learning, Machine Learning",Carmelo Bastos-Filho,"Paulo Rocha, Diego Pinheiro, Martin Cadeiras, Carmelo Bastos-Filho",4,http://arxiv.org/pdf/2001.08677v1,http://arxiv.org/abs/2001.08677v1,2020-01-23
+"Action Recognition and State Change Prediction in a Recipe Understanding
+  Task Using a Lightweight Neural Network Model","Consider a natural language sentence describing a specific step in a food
+recipe. In such instructions, recognizing actions (such as press, bake, etc.)
+and the resulting changes in the state of the ingredients (shape molded,
+custard cooked, temperature hot, etc.) is a challenging task. One way to cope
+with this challenge is to explicitly model a simulator module that applies
+actions to entities and predicts the resulting outcome (Bosselut et al. 2018).
+However, such a model can be unnecessarily complex. In this paper, we propose a
+simplified neural network model that separates action recognition and state
+change prediction, while coupling the two through a novel loss function. This
+allows learning to indirectly influence each other. Our model, although
+simpler, achieves higher state change prediction performance (67% average
+accuracy for ours vs. 55% in (Bosselut et al. 2018)) and takes fewer samples to
+train (10K ours vs. 65K+ by (Bosselut et al. 2018)).",cs.CL,"cs.CL, cs.LG",2,Computation and Language,"Computation and Language, Machine Learning",Yoonsuck Choe,"Qing Wan, Yoonsuck Choe",2,http://arxiv.org/pdf/2001.08665v1,http://arxiv.org/abs/2001.08665v1,2020-01-23
+"The INTERSPEECH 2020 Deep Noise Suppression Challenge: Datasets,
+  Subjective Speech Quality and Testing Framework","The INTERSPEECH 2020 Deep Noise Suppression Challenge is intended to promote
+collaborative research in real-time single-channel Speech Enhancement aimed to
+maximize the subjective (perceptual) quality of the enhanced speech. A typical
+approach to evaluate the noise suppression methods is to use objective metrics
+on the test set obtained by splitting the original dataset. Many publications
+report reasonable performance on the synthetic test set drawn from the same
+distribution as that of the training set. However, often the model performance
+degrades significantly on real recordings. Also, most of the conventional
+objective metrics do not correlate well with subjective tests and lab
+subjective tests are not scalable for a large test set. In this challenge, we
+open-source a large clean speech and noise corpus for training the noise
+suppression models and a representative test set to real-world scenarios
+consisting of both synthetic and real recordings. We also open source an online
+subjective test framework based on ITU-T P.808 for researchers to quickly test
+their developments. The winners of this challenge will be selected based on
+subjective evaluation on a representative test set using P.808 framework.",cs.SD,"cs.SD, cs.LG, eess.AS",3,Sound,"Sound, Machine Learning, Audio and Speech Processing",Johannes Gehrke,"Chandan K. A. Reddy, Ebrahim Beyrami, Harishchandra Dubey, Vishak Gopal, Roger Cheng, Ross Cutler, Sergiy Matusevych, Robert Aichner, Ashkan Aazami, Sebastian Braun, Puneet Rana, Sriram Srinivasan, Johannes Gehrke",13,http://arxiv.org/pdf/2001.08662v1,http://arxiv.org/abs/2001.08662v1,2020-01-23
+"An Android Application Risk Evaluation Framework Based on Minimum
+  Permission Set Identification","Android utilizes a security mechanism that requires apps to request
+permission for accessing sensitive user data, e.g., contacts and SMSs, or
+certain system features, e.g., camera and Internet access. However, Android
+apps tend to be overprivileged, i.e., they often request more permissions than
+necessary. This raises the security problem of overprivilege. To alleviate the
+overprivilege problem, this paper proposes MPDroid, an approach that combines
+static analysis and collaborative filtering to identify the minimum permissions
+for an Android app based on its app description and API usage. Given an app,
+MPDroid first employs collaborative filtering to identify the initial minimum
+permissions for the app. Then, through static analysis, the final minimum
+permissions that an app really needs are identified. Finally, it evaluates the
+overprivilege risk by inspecting the apps extra privileges, i.e., the
+unnecessary permissions requested by the app. Experiments are conducted on
+16,343 popular apps collected from Google Play. The results show that MPDroid
+outperforms the state-of-the-art approach significantly.",cs.SE,cs.SE,1,Software Engineering,Software Engineering,Xiao Xue,"Jianmao Xiao, Shizhan Chen, Qiang He, Zhiyong Feng, Xiao Xue",5,http://arxiv.org/pdf/2001.08399v1,http://arxiv.org/abs/2001.08399v1,2020-01-23
+A precise local limit theorem for the multinomial distribution,"We develop a precise local limit theorem for the multinomial distribution
+where the error terms are explicit up to an order smaller than previous known
+results by a factor of $N^{1/2}$. We show how it can be used to approximate
+multinomial probabilities on most subsets of $\mathbb{R}^d$ and we also
+describe potential applications related to asymptotic properties of Bernstein
+estimators on the simplex, bounds for the deficiency distance with multivariate
+normal experiments and finely tuned continuity corrections.",math.ST,"62E20, 62H12, math.ST, stat.TH, math.PR",4,Statistics Theory,"Statistics Theory, Statistics Theory, Probability",Frédéric Ouimet,Frédéric Ouimet,1,http://arxiv.org/pdf/2001.08512v1,http://arxiv.org/abs/2001.08512v1,2020-01-23
+"On the Hauck-Donner Effect in Wald Tests: Detection, Tipping Points, and
+  Parameter Space Characterization","The Wald test remains ubiquitous in statistical practice despite shortcomings
+such as its inaccuracy in small samples and lack of invariance under
+reparameterization. This paper develops on another but lesser-known shortcoming
+called the Hauck--Donner effect (HDE) whereby a Wald test statistic is not
+monotonely increasing as a function of increasing distance between the
+parameter estimate and the null value. Resulting in an upward biased $p$-value
+and loss of power, the aberration can lead to very damaging consequences such
+as in variable selection. The HDE afflicts many types of regression models and
+corresponds to estimates near the boundary of the parameter space. This article
+presents several new results, and its main contributions are to (i) propose a
+very general test for detecting the HDE, regardless of its underlying cause;
+(ii) fundamentally characterize the HDE by pairwise ratios of Wald and Rao
+score and likelihood ratio test statistics for 1-parameter distributions; (iii)
+show that the parameter space may be partitioned into an interior encased by 5
+HDE severity measures (faint, weak, moderate, strong, extreme); (iv) prove that
+a necessary condition for the HDE in a 2 by 2 table is a log odds ratio of at
+least 2; (v) give some practical guidelines about HDE-free hypothesis testing.
+Overall, practical post-fit tests can now be conducted potentially to any model
+estimated by iteratively reweighted least squares, such as the generalized
+linear model (GLM) and Vector GLM (VGLM) classes, the latter which encompasses
+many popular regression models.",stat.ME,"math.ST, stat.ME, stat.CO, stat.TH",4,Methodology,"Statistics Theory, Methodology, Computation, Statistics Theory",Thomas William Yee,Thomas William Yee,1,http://arxiv.org/pdf/2001.08431v1,http://arxiv.org/abs/2001.08431v1,2020-01-23
+"Geometric Conditions for the Discrepant Posterior Phenomenon and
+  Connections to Simpson's Paradox","The discrepant posterior phenomenon (DPP) is a counterintuitive phenomenon
+that occurs in the Bayesian analysis of multivariate parameters. It refers to
+when an estimate of a marginal parameter obtained from the posterior is more
+extreme than both of those obtained using either the prior or the likelihood
+alone. Inferential claims that exhibit DPP defy intuition, and the phenomenon
+can be surprisingly ubiquitous in well-behaved Bayesian models. Using point
+estimation as an example, we derive conditions under which the DPP occurs in
+Bayesian models with exponential quadratic likelihoods, including Gaussian
+models and those with local asymptotic normality property, with conjugate
+multivariate Gaussian priors. We also examine the DPP for the Binomial model,
+in which the posterior mean is not a linear combination of that of the prior
+and the likelihood. We provide an intuitive geometric interpretation of the
+phenomenon and show that there exists a non-trivial space of marginal
+directions such that the DPP occurs. We further relate the phenomenon to the
+Simpson's paradox and discover their deep-rooted connection that is associated
+with marginalization. We also draw connections with Bayesian computational
+algorithms when difficult geometry exists. Theoretical results are complemented
+by numerical illustrations. Scenarios covered in this study have implications
+for parameterization, sensitivity analysis, and prior choice for Bayesian
+modeling.",math.ST,"math.ST, stat.ME, stat.TH",3,Statistics Theory,"Statistics Theory, Methodology, Statistics Theory",Min-ge Xie,"Yang Chen, Ruobin Gong, Min-ge Xie",3,http://arxiv.org/pdf/2001.08336v1,http://arxiv.org/abs/2001.08336v1,2020-01-23
+K$ω$ -- Open-source library for the shifted Krylov subspace method,"We develop K$\omega$, an open-source linear algebra library for the shifted
+Krylov subspace methods. The methods solve a set of shifted linear equations
+for a given matrix and a vector, simultaneously. The leading order of the
+operational cost is the same as that for a single equation. The shift
+invariance of the Krylov subspace is the mathematical foundation of the shifted
+Krylov subspace methods. Applications in materials science are presented to
+demonstrate the advantages of the algorithm over the standard Krylov subspace
+methods such as the Lanczos method. We introduce benchmark calculations of (i)
+an excited (optical) spectrum and (ii) intermediate eigenvalues by the contour
+integral on the complex plane. In combination with the quantum lattice solver
+H$\Phi$, K$\omega$ can realize parallel computation of excitation spectra and
+intermediate eigenvalues for various quantum lattice models.",math.NA,"cond-mat.str-el, cs.NA, physics.comp-ph, math.NA",4,Numerical Analysis,"Strongly Correlated Electrons, Numerical Analysis, Computational Physics, Numerical Analysis",Tomohiro Sogabe,"Takeo Hoshi, Mitsuaki Kawamura, Kazuyoshi Yoshimi, Yuichi Motoyama, Takahiro Misawa, Youhei Yamaji, Synge Todo, Naoki Kawashima, Tomohiro Sogabe",9,http://arxiv.org/pdf/2001.08707v1,http://arxiv.org/abs/2001.08707v1,2020-01-23
+"Bunch width versus macrostep height: A quantitative study of the effects
+  of step-step repulsion","Bunching of steps at the surface of growing crystals can be induced by both
+directions of the driving force: step up and step down. The processes happen in
+different adatom concentrations and differ in character. In this study we show
+how the overall picture of the bunching process depends on the strength of
+short range step-step repulsion. The repulsive interaction between steps,
+controlled by an additional parameter, is introduced into the recently studied
+atomistic scale model of vicinal crystal growth, based on cellular automata. It
+is shown that the repulsion modifies bunching process in a different way,
+depending on the direction of the destabilizing force. In particular, bunch
+profiles, stability diagrams and time-scaling dependences of various bunch
+properties are affected when the step-step repulsion increases. The repulsion
+between steps creates a competition between two characteristic sizes - bunch
+width and macrostep height, playing the role of the second length scale that
+describes the step bunching phenomenon. A new characteristic time scale
+dependent on the step-step repulsion parameter emerges as an effect of
+interplay between (01) faceted macrosteps and (11) faceted bunches. The bunch
+height being the major characteristic size of the bunches is not influenced
+dramatically by the repulsion.",cond-mat.mtrl-sci,"cond-mat.mtrl-sci, nlin.PS, physics.comp-ph, nlin.CG",4,Materials Science,"Materials Science, Pattern Formation and Solitons, Computational Physics, Cellular Automata and Lattice Gases",Vesselin Tonchev,"Hristina Popova, Filip Krzyżewski, Magdalena Załuska-Kotur, Vesselin Tonchev",4,http://arxiv.org/pdf/2001.08463v1,http://arxiv.org/abs/2001.08463v1,2020-01-23
+"Spatial Control of Localized Oscillations in Arrays of Coupled Laser
+  Dimers","Arrays of coupled semiconductor lasers are systems possessing radically
+complex dynamics that makes them useful for numerous applications in beam
+forming and beam shaping. In this work, we investigate the spatial
+controllability of oscillation amplitudes in an array of coupled photonic
+dimers, each consisting of two semiconductor lasers driven by differential
+pumping rates. We consider parameter values for which each dimer's stable
+phase-locked state has become unstable through a Hopf bifurcation and we show
+that, by assigning appropriate pumping rate values to each dimer,
+large-amplitude oscillations coexist with negligibly small amplitude
+oscillations. The spatial profile? of the amplitude of oscillations across the
+array can be dynamically controlled by appropriate pumping rate values in each
+dimer. This feature is shown to be quite robust, even for random detuning
+between the lasers, and suggests a mechanism for dynamically reconfigurable
+production of a large diversity of spatial profiles of laser amplitude
+oscillations.",physics.optics,"nlin.PS, physics.optics, physics.comp-ph",3,Optics,"Pattern Formation and Solitons, Optics, Computational Physics",Vassilios Kovanis,"Joniald Shena, Yannis Kominis, Anastasios Bountis, Vassilios Kovanis",4,http://arxiv.org/pdf/2001.08430v1,http://arxiv.org/abs/2001.08430v1,2020-01-23
+"Semiclassical Approach to Photophysics Beyond Kasha's Rule and Vibronic
+  Spectroscopy Beyond the Condon Approximation. The Case of Azulene","Azulene is a prototypical molecule with an anomalous fluorescence from the
+second excited electronic state, thus violating Kasha's rule, and with an
+emission spectrum that cannot be understood within the Condon approximation. To
+better understand photophysics and spectroscopy of azulene and other
+non-conventional molecules, we develop a systematic, general, and efficient
+computational approach combining semiclassical dynamics of nuclei with ab
+initio electronic structure. First, to analyze the nonadiabatic effects, we
+complement the standard population dynamics by a rigorous measure of
+adiabaticity, estimated with the multiple-surface dephasing representation.
+Second, we propose a new semiclassical method for simulating non-Condon
+spectra, which combines the extended thawed Gaussian approximation with the
+efficient single-Hessian approach. S$_{1} \leftarrow$ S$_0$ and S$_{2}
+\leftarrow$ S$_0$ absorption and S$_{2} \rightarrow$ S$_0$ emission spectra of
+azulene, recorded in a new set of experiments, agree very well with our
+calculations. We find that accuracy of the evaluated spectra requires the
+treatment of anharmonicity, Herzberg--Teller, and mode-mixing effects.",physics.chem-ph,"physics.chem-ph, physics.comp-ph, quant-ph",3,Chemical Physics,"Chemical Physics, Computational Physics, Quantum Physics",Jiří Vaníček,"Antonio Prlj, Tomislav Begušić, Zhan Tong Zhang George Cameron Fish, Marius Wehrle, Tomáš Zimmermann, Seonghoon Choi, Julien Roulet, Jacques-Edouard Moser, Jiří Vaníček",9,http://arxiv.org/pdf/2001.08414v1,http://arxiv.org/abs/2001.08414v1,2020-01-23
+Criticality in Tissue Homeostasis: Models and Experiments,"There is considerable theoretical and experimental support to the proposal
+that tissue homeostasis in the adult skin can be represented as a critical
+branching process. The homeostatic condition requires that the proliferation
+rate of the progenitor (P) cells (capable of cell division) is counterbalanced
+by the loss rate due to the differentiation of a P cell into differentiated (D)
+cells so that the total number of P cells remains constant. We consider the
+two-branch and three-branch models of tissue homeostasis to establish
+homeostasis as a critical phenomenon. It is first shown that some critical
+branching process theorems correctly predict experimental observations. A
+number of temporal signatures of the approach to criticality are investigated
+based on simulation and analytical results. The analogy between a critical
+branching process and mean-field percolation and sandpile models is invoked to
+show that the size and lifetime distributions of the populations of P cells
+have power-law forms. The associated critical exponents have the same
+magnitudes as in the cases of the mean-field lattice statistical models. The
+results indicate that tissue homeostasis provides experimental opportunities
+for testing critical phenomena.",cond-mat.stat-mech,"cond-mat.stat-mech, q-bio.QM",2,Statistical Mechanics,"Statistical Mechanics, Quantitative Methods",Indrani Bose,"Somsubhra Ghosh, Indrani Bose",2,http://arxiv.org/pdf/2001.08669v1,http://arxiv.org/abs/2001.08669v1,2020-01-23
+"Unsupervised learning of control signals and their encodings in
+  $\textit{C. elegans}$ whole-brain recordings","Recent whole brain imaging experiments on $\textit{C. elegans}$ has revealed
+that the neural population dynamics encode motor commands and stereotyped
+transitions between behaviors on low dimensional manifolds. Efforts to
+characterize the dynamics on this manifold have used piecewise linear models to
+describe the entire state space, but it is unknown how a single, global
+dynamical model can generate the observed dynamics. Here, we propose a control
+framework to achieve such a global model of the dynamics, whereby underlying
+linear dynamics is actuated by sparse control signals. This method learns the
+control signals in an unsupervised way from data, then uses $\textit{ Dynamic
+Mode Decomposition with control}$ (DMDc) to create the first global, linear
+dynamical system that can reconstruct whole-brain imaging data. These control
+signals are shown to be implicated in transitions between behaviors. In
+addition, we analyze the time-delay encoding of these control signals, showing
+that these transitions can be predicted from neurons previously implicated in
+behavioral transitions, but also additional neurons previously unidentified.
+Moreover, our decomposition method allows one to understand the observed
+nonlinear global dynamics instead as linear dynamics with control. The proposed
+mathematical framework is generic and can be generalized to other neurosensory
+systems, potentially revealing transitions and their encodings in a completely
+unsupervised way.",q-bio.QM,"q-bio.QM, q-bio.NC",2,Quantitative Methods,"Quantitative Methods, Neurons and Cognition",Nathan Kutz,"Charles Fieseler, Manuel Zimmer, Nathan Kutz",3,http://arxiv.org/pdf/2001.08346v1,http://arxiv.org/abs/2001.08346v1,2020-01-23
+"Marked point processes and intensity ratios for limit order book
+  modeling","This paper extends the analysis of Muni Toke and Yoshida (2020) to the case
+of marked point processes. We consider multiple marked point processes with
+intensities defined by three multiplicative components, namely a common
+baseline intensity, a state-dependent component specific to each process, and a
+state-dependent component specific to each mark within each process. We show
+that for specific mark distributions, this model is a combination of the ratio
+models defined in Muni Toke and Yoshida (2020). We prove convergence results
+for the quasi-maximum and quasi-Bayesian likelihood estimators of this model
+and provide numerical illustrations of the asymptotic variances. We use these
+ratio processes in order to model transactions occuring in a limit order book.
+Model flexibility allows us to investigate both state-dependency (emphasizing
+the role of imbalance and spread as significant signals) and clustering.
+Calibration, model selection and prediction results are reported for
+high-frequency trading data on multiple stocks traded on Euronext Paris. We
+show that the marked ratio model outperforms other intensity-based methods
+(such as ""pure"" Hawkes-based methods) in predicting the sign and aggressiveness
+of market orders on financial markets.",q-fin.TR,"q-fin.ST, q-fin.TR",2,Trading and Market Microstructure,"Statistical Finance, Trading and Market Microstructure",Nakahiro Yoshida,"Ioane Muni Toke, Nakahiro Yoshida",2,http://arxiv.org/pdf/2001.08442v1,http://arxiv.org/abs/2001.08442v1,2020-01-23
+"Statistical post-processing of heat index ensemble forecasts: is there a
+  royal road?","We investigate the effect of statistical post-processing on the probabilistic
+skill of discomfort index (DI) and indoor wet-bulb globe temperature (WBGTid)
+ensemble forecasts, both calculated from the corresponding forecasts of
+temperature and dew point temperature. Two different methodological approaches
+to calibration are compared. In the first case, we start with joint
+post-processing of the temperature and dew point forecasts and then create
+calibrated samples of DI and WBGTid using samples from the obtained bivariate
+predictive distributions. This approach is compared with direct post-processing
+of the heat index ensemble forecasts. For this purpose, a novel ensemble model
+output statistics model based on a generalized extreme value distribution is
+proposed. The predictive performance of both methods is tested on the
+operational temperature and dew point ensemble forecasts of the European Centre
+for Medium-Range Weather Forecasts and the corresponding forecasts of DI and
+WBGTid. For short lead times (up to day 6), both approaches significantly
+improve the forecast skill. Among the competing post-processing methods, direct
+calibration of heat indices exhibits the best predictive performance, very
+closely followed by the more general approach based on joint calibration of
+temperature and dew point temperature. Additionally, a machine learning
+approach is tested and shows comparable performance for the case when one is
+interested only in forecasting heat index warning level categories.",stat.AP,stat.AP,1,Applications,Applications,Zied Ben Bouallègue,"Sándor Baran, Ágnes Baran, Florian Pappenberger, Zied Ben Bouallègue",4,http://arxiv.org/pdf/2001.08712v1,http://arxiv.org/abs/2001.08712v1,2020-01-23
+"Bayesian estimates of transmission line outage rates that consider line
+  dependencies","Transmission line outage rates are fundamental to power system reliability
+analysis. Line outages are infrequent, occurring only about once a year, so
+outage data are limited. We propose a Bayesian hierarchical model that
+leverages line dependencies to better estimate outage rates of individual
+transmission lines from limited outage data. The Bayesian estimates have a
+lower standard deviation than estimating the outage rates simply by dividing
+the number of outages by the number of years of data, especially when the
+number of outages is small. The Bayesian model produces more accurate
+individual line outage rates, as well as estimates of the uncertainty of these
+rates. Better estimates of line outage rates can improve system risk
+assessment, outage prediction, and maintenance scheduling.",stat.AP,"cs.SY, eess.SY, physics.soc-ph, stat.AP",4,Applications,"Systems and Control, Physics and Society, Applications",Amy L. Wilson,"Kai Zhou, James R. Cruise, Chris J. Dent, Ian Dobson, Louis Wehenkel, Zhaoyu Wang, Amy L. Wilson",7,http://arxiv.org/pdf/2001.08681v1,http://arxiv.org/abs/2001.08681v1,2020-01-23
+"A covariance-enhanced approach to multi-tissue joint eQTL mapping with
+  application to transcriptome-wide association studies","Transcriptome-wide association studies based on genetically predicted gene
+expression have the potential to identify novel regions associated with various
+complex traits. It has been shown that incorporating expression quantitative
+trait loci (eQTLs) corresponding to multiple tissue types can improve power for
+association studies involving complex etiology. In this article, we propose a
+new multivariate response linear regression model and method for predicting
+gene expression in multiple tissues simultaneously. Unlike existing methods for
+multi-tissue joint eQTL mapping, our approach incorporates tissue-tissue
+expression correlation, which allows us to more efficiently handle missing
+expression measurements and more accurately predict gene expression using a
+weighted summation of eQTL genotypes. We show through simulation studies that
+our approach performs better than the existing methods in many scenarios. We
+use our method to estimate eQTL weights for 29 tissues collected by GTEx, and
+show that our approach significantly improves expression prediction accuracy
+compared to competitors. Using our eQTL weights, we perform a
+multi-tissue-based S-MultiXcan transcriptome-wide association study and show
+that our method leads to more discoveries in novel regions and more discoveries
+overall than the existing methods. Estimated eQTL weights are available for
+download online at github.com/ajmolstad/MTeQTLResults.",stat.AP,"stat.ME, stat.AP",2,Applications,"Methodology, Applications",Li Hsu,"Aaron J. Molstad, Wei Sun, Li Hsu",3,http://arxiv.org/pdf/2001.08363v1,http://arxiv.org/abs/2001.08363v1,2020-01-23
+The Reciprocal Bayesian LASSO,"A reciprocal LASSO (rLASSO) regularization employs a decreasing penalty
+function as opposed to conventional penalization methods that use increasing
+penalties on the coefficients, leading to stronger parsimony and superior model
+selection relative to traditional shrinkage methods. Here we consider a fully
+Bayesian formulation of the rLASSO problem, which is based on the observation
+that the rLASSO estimate for linear regression parameters can be interpreted as
+a Bayesian posterior mode estimate when the regression parameters are assigned
+independent inverse Laplace priors. Bayesian inference from this posterior is
+possible using an expanded hierarchy motivated by a scale mixture of double
+Pareto or truncated normal distributions. On simulated and real datasets, we
+show that the Bayesian formulation outperforms its classical cousin in
+estimation, prediction, and variable selection across a wide range of scenarios
+while offering the advantage of posterior inference. Finally, we discuss other
+variants of this new approach and provide a unified framework for variable
+selection using flexible reciprocal penalties. All methods described in this
+paper are publicly available as an R package at:
+https://github.com/himelmallick/BayesRecipe.",stat.ME,"stat.ME, stat.CO, stat.ML",3,Methodology,"Methodology, Computation, Machine Learning",Vladimir Svetnik,"Himel Mallick, Rahim Alhamzawi, Vladimir Svetnik",3,http://arxiv.org/pdf/2001.08327v1,http://arxiv.org/abs/2001.08327v1,2020-01-23
+Shrinkage with Robustness: Log-Adjusted Priors for Sparse Signals,"We introduce a new class of distributions named log-adjusted shrinkage priors
+for the analysis of sparse signals, which extends the three parameter beta
+priors by multiplying an additional log-term to their densities. The key
+feature of the proposed prior is that its density tail is extremely heavy and
+heavier than even that of the Cauchy distribution, leading to the strong
+tail-robustness of Bayes estimator, while keeping the shrinkage effect on
+noises. The proposed prior has density tails that are heavier than even those
+of the Cauchy distribution and realizes the tail-robustness of the Bayes
+estimator, while keeping the strong shrinkage effect on noises. We verify this
+property via the improved posterior mean squared errors in the tail. An
+integral representation with latent variables for the new density is available
+and enables fast and simple Gibbs samplers for the full posterior analysis. Our
+log-adjusted prior is significantly different from existing shrinkage priors
+with logarithms for allowing its further generalization by multiple log-terms
+in the density. The performance of the proposed priors is investigated through
+simulation studies and data analysis.",stat.ME,stat.ME,1,Methodology,Methodology,Shonosuke Sugasawa,"Yasuyuki Hamura, Kaoru Irie, Shonosuke Sugasawa",3,http://arxiv.org/pdf/2001.08465v1,http://arxiv.org/abs/2001.08465v1,2020-01-23
+"Best Arm Identification for Cascading Bandits in the Fixed Confidence
+  Setting","We design and analyze CascadeBAI, an algorithm for finding the best set of
+$K$ items, also called an arm, within the framework of cascading bandits. An
+upper bound on the time complexity of CascadeBAI is derived by overcoming a
+crucial analytical challenge, namely, that of probabilistically estimating the
+amount of available feedback at each step. To do so, we define a new class of
+random variables (r.v.'s) which we term as left-sided sub-Gaussian r.v.'s;
+these are r.v.'s whose cumulant generating functions (CGFs) can be bounded by a
+quadratic only for non-positive arguments of the CGFs. This enables the
+application of a sufficiently tight Bernstein-type concentration inequality. We
+show, through the derivation of a lower bound on the time complexity, that the
+performance of CascadeBAI is optimal in some practical regimes. Finally,
+extensive numerical simulations corroborate the efficacy of CascadeBAI as well
+as the tightness of our upper bound on its time complexity.",cs.LG,"stat.ML, cs.LG",2,Machine Learning,"Machine Learning, Machine Learning",Vincent Y. F. Tan,"Zixin Zhong, Wang Chi Cheung, Vincent Y. F. Tan",3,http://arxiv.org/pdf/2001.08655v1,http://arxiv.org/abs/2001.08655v1,2020-01-23
+RPN: A Residual Pooling Network for Efficient Federated Learning,"Federated learning is a new machine learning framework which enables
+different parties to collaboratively train a model while protecting data
+privacy and security. Due to model complexity, network unreliability and
+connection in-stability, communication cost has became a major bottleneck for
+applying federated learning to real-world applications. Current existing
+strategies are either need to manual setting for hyper-parameters, or break up
+the original process into multiple steps, which make it hard to realize
+end-to-end implementation. In this paper, we propose a novel compression
+strategy called Residual Pooling Network (RPN). Our experiments show that RPN
+not only reduce data transmission effectively, but also achieve almost the same
+performance as compared to standard federated learning. Our new approach
+performs as an end-to-end procedure, which should be readily applied to all
+CNN-based model training scenarios for improvement of communication efficiency,
+and hence make it easy to deploy in real-world application without human
+intervention.",cs.LG,"stat.ML, cs.LG",2,Machine Learning,"Machine Learning, Machine Learning",Qiang Yang,"Anbu Huang, Yuanyuan Chen, Yang Liu, Tianjian Chen, Qiang Yang",5,http://arxiv.org/pdf/2001.08600v1,http://arxiv.org/abs/2001.08600v1,2020-01-23
+Information Compensation for Deep Conditional Generative Networks,"In recent years, unsupervised/weakly-supervised conditional generative
+adversarial networks (GANs) have achieved many successes on the task of
+modeling and generating data. However, one of their weaknesses lies in their
+poor ability to separate, or disentangle, the different factors that
+characterize the representation encoded in their latent space. To address this
+issue, we propose a novel structure for unsupervised conditional GANs powered
+by a novel Information Compensation Connection (IC-Connection). The proposed
+IC-Connection enables GANs to compensate for information loss incurred during
+deconvolution operations. In addition, to quantify the degree of
+disentanglement on both discrete and continuous latent variables, we design a
+novel evaluation procedure. Our empirical results suggest that our method
+achieves better disentanglement compared to the state-of-the-art GANs in a
+conditional generation setting.",cs.LG,"cs.CV, stat.ML, cs.LG",3,Machine Learning,"Computer Vision and Pattern Recognition, Machine Learning, Machine Learning",Jose Oramas,"Zehao Wang, Kaili Wang, Tinne Tuytelaars, Jose Oramas",4,http://arxiv.org/pdf/2001.08559v1,http://arxiv.org/abs/2001.08559v1,2020-01-23
+"Best Principal Submatrix Selection for the Maximum Entropy Sampling
+  Problem: Scalable Algorithms and Performance Guarantees","This paper studies a classic maximum entropy sampling problem (MESP), which
+aims to select the most informative principal submatrix of a prespecified size
+from a covariance matrix. MESP has been widely applied to many areas, including
+healthcare, power system, manufacturing and data science. By investigating its
+Lagrangian dual and primal characterization, we derive a novel convex integer
+program for MESP and show that its continuous relaxation yields a near-optimal
+solution. The results motivate us to study an efficient sampling algorithm and
+develop its approximation bound for MESP, which improves the best-known bound
+in literature. We then provide an efficient deterministic implementation of the
+sampling algorithm with the same approximation bound. By developing new
+mathematical tools for the singular matrices and analyzing the Lagrangian dual
+of the proposed convex integer program, we investigate the widely-used local
+search algorithm and prove its first-known approximation bound for MESP. The
+proof techniques further inspire us with an efficient implementation of the
+local search algorithm. Our numerical experiments demonstrate that these
+approximation algorithms can efficiently solve medium-sized and large-scale
+instances to near-optimality. Our proposed algorithms are coded and released as
+open-source software. Finally, we extend the analyses to the A-Optimal MESP
+(A-MESP), where the objective is to minimize the trace of the inverse of the
+selected principal submatrix.",stat.ML,"stat.ML, cs.LG, math.OC",3,Machine Learning,"Machine Learning, Machine Learning, Optimization and Control",Weijun Xie,"Yongchun Li, Weijun Xie",2,http://arxiv.org/pdf/2001.08537v1,http://arxiv.org/abs/2001.08537v1,2020-01-23
+"Semi-supervised Grasp Detection by Representation Learning in a Vector
+  Quantized Latent Space","Determining quality grasps from an image is an important area of research. In
+this work, we present a semi-supervised learning based grasp detection approach
+which models a discrete latent space using a Vector Quantized Variational
+Autoencoder (VQ-VAE). To the best of our knowledge, this is the first time VAEs
+have been applied in the domain of robot grasp detection. The VAE helps the
+model in generalizing beyond the Cornell Grasping Dataset (CGD) despite having
+limited amount of labelled data. We validate this claim by testing the model on
+images not there in the CGD. Also, the model performs significantly better than
+existing approaches which do not make use of unlabeled images to improve the
+grasp.",cs.LG,"stat.ML, cs.RO, cs.LG",3,Machine Learning,"Machine Learning, Robotics, Machine Learning",G C Nandi,"Mridul Mahajan, Tryambak Bhattacharjee, Arya Krishnan, Priya Shukla, G C Nandi",5,http://arxiv.org/pdf/2001.08477v1,http://arxiv.org/abs/2001.08477v1,2020-01-23

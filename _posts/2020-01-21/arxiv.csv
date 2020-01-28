@@ -1,0 +1,744 @@
+title,summary,primary_tag,tags,n_tags,primary_category,categories,author,authors,n_authors,url_pdf,url_href,date
+Plato Dialogue System: A Flexible Conversational AI Research Platform,"As the field of Spoken Dialogue Systems and Conversational AI grows, so does
+the need for tools and environments that abstract away implementation details
+in order to expedite the development process, lower the barrier of entry to the
+field, and offer a common test-bed for new ideas. In this paper, we present
+Plato, a flexible Conversational AI platform written in Python that supports
+any kind of conversational agent architecture, from standard architectures to
+architectures with jointly-trained components, single- or multi-party
+interactions, and offline or online training of any conversational agent
+component. Plato has been designed to be easy to understand and debug and is
+agnostic to the underlying learning frameworks that train each component.",cs.HC,"cs.HC, cs.AI, cs.CL",3,Human-Computer Interaction,"Human-Computer Interaction, Artificial Intelligence, Computation and Language",Gokhan Tur,"Alexandros Papangelis, Mahdi Namazifar, Chandra Khatri, Yi-Chia Wang, Piero Molino, Gokhan Tur",6,http://arxiv.org/pdf/2001.06463v1,http://arxiv.org/abs/2001.06463v1,2020-01-17
+Modality-Balanced Models for Visual Dialogue,"The Visual Dialog task requires a model to exploit both image and
+conversational context information to generate the next response to the
+dialogue. However, via manual analysis, we find that a large number of
+conversational questions can be answered by only looking at the image without
+any access to the context history, while others still need the conversation
+context to predict the correct answers. We demonstrate that due to this reason,
+previous joint-modality (history and image) models over-rely on and are more
+prone to memorizing the dialogue history (e.g., by extracting certain keywords
+or patterns in the context information), whereas image-only models are more
+generalizable (because they cannot memorize or extract keywords from history)
+and perform substantially better at the primary normalized discounted
+cumulative gain (NDCG) task metric which allows multiple correct answers.
+Hence, this observation encourages us to explicitly maintain two models, i.e.,
+an image-only model and an image-history joint model, and combine their
+complementary abilities for a more balanced multimodal model. We present
+multiple methods for this integration of the two models, via ensemble and
+consensus dropout fusion with shared parameters. Empirically, our models
+achieve strong results on the Visual Dialog challenge 2019 (rank 3 on NDCG and
+high balance across metrics), and substantially outperform the winner of the
+Visual Dialog challenge 2018 on most metrics.",cs.CL,"cs.AI, cs.CL, cs.CV",3,Computation and Language,"Artificial Intelligence, Computation and Language, Computer Vision and Pattern Recognition",Mohit Bansal,"Hyounghun Kim, Hao Tan, Mohit Bansal",3,http://arxiv.org/pdf/2001.06354v1,http://arxiv.org/abs/2001.06354v1,2020-01-17
+Visual Simplified Characters' Emotion Emulator Implementing OCC Model,"In this paper, we present a visual emulator of the emotions seen in
+characters in stories. This system is based on a simplified view of the
+cognitive structure of emotions proposed by Ortony, Clore and Collins (OCC
+Model). The goal of this paper is to provide a visual platform that allows us
+to observe changes in the characters' different emotions, and the intricate
+interrelationships between: 1) each character's emotions, 2) their affective
+relationships and actions, 3) The events that take place in the development of
+a plot, and 4) the objects of desire that make up the emotional map of any
+story. This tool was tested on stories with a contrasting variety of emotional
+and affective environments: Othello, Twilight, and Harry Potter, behaving
+sensibly and in keeping with the atmosphere in which the characters were
+immersed.",cs.AI,cs.AI,1,Artificial Intelligence,Artificial Intelligence,Jaime Enrique Cabrera-López,"Ana Lilia Laureano-Cruces, Laura Hernández-Domínguez, Martha Mora-Torres, Juan-Manuel Torres-Moreno, Jaime Enrique Cabrera-López",5,http://arxiv.org/pdf/2001.06190v1,http://arxiv.org/abs/2001.06190v1,2020-01-17
+Unsupervised Learning of Camera Pose with Compositional Re-estimation,"We consider the problem of unsupervised camera pose estimation. Given an
+input video sequence, our goal is to estimate the camera pose (i.e. the camera
+motion) between consecutive frames. Traditionally, this problem is tackled by
+placing strict constraints on the transformation vector or by incorporating
+optical flow through a complex pipeline. We propose an alternative approach
+that utilizes a compositional re-estimation process for camera pose estimation.
+Given an input, we first estimate a depth map. Our method then iteratively
+estimates the camera motion based on the estimated depth map. Our approach
+significantly improves the predicted camera motion both quantitatively and
+visually. Furthermore, the re-estimation resolves the problem of
+out-of-boundaries pixels in a novel and simple way. Another advantage of our
+approach is that it is adaptable to other camera pose estimation approaches.
+Experimental analysis on KITTI benchmark dataset demonstrates that our method
+outperforms existing state-of-the-art approaches in unsupervised camera
+ego-motion estimation.",cs.CV,cs.CV,1,Computer Vision and Pattern Recognition,Computer Vision and Pattern Recognition,Yang Wang,"Seyed Shahabeddin Nabavi, Mehrdad Hosseinzadeh, Ramin Fahimi, Yang Wang",4,http://arxiv.org/pdf/2001.06479v1,http://arxiv.org/abs/2001.06479v1,2020-01-17
+"Combining PRNU and noiseprint for robust and efficient device source
+  identification","PRNU-based image processing is a key asset in digital multimedia forensics.
+It allows for reliable device identification and effective detection and
+localization of image forgeries, in very general conditions. However,
+performance impairs significantly in challenging conditions involving low
+quality and quantity of data. These include working on compressed and cropped
+images, or estimating the camera PRNU pattern based on only a few images. To
+boost the performance of PRNU-based analyses in such conditions we propose to
+leverage the image noiseprint, a recently proposed camera-model fingerprint
+that has proved effective for several forensic tasks. Numerical experiments on
+datasets widely used for source identification prove that the proposed method
+ensures a significant performance improvement in a wide range of challenging
+situations.",cs.CV,"eess.IV, cs.CV",2,Computer Vision and Pattern Recognition,"Image and Video Processing, Computer Vision and Pattern Recognition",Luisa Verdoliva,"Davide Cozzolino, Francesco Marra, Diego Gragnaniello, Giovanni Poggi, Luisa Verdoliva",5,http://arxiv.org/pdf/2001.06440v1,http://arxiv.org/abs/2001.06440v1,2020-01-17
+TailorGAN: Making User-Defined Fashion Designs,"Attribute editing has become an important and emerging topic of computer
+vision. In this paper, we consider a task: given a reference garment image A
+and another image B with target attribute (collar/sleeve), generate a
+photo-realistic image which combines the texture from reference A and the new
+attribute from reference B. The highly convoluted attributes and the lack of
+paired data are the main challenges to the task. To overcome those limitations,
+we propose a novel self-supervised model to synthesize garment images with
+disentangled attributes (e.g., collar and sleeves) without paired data. Our
+method consists of a reconstruction learning step and an adversarial learning
+step. The model learns texture and location information through reconstruction
+learning. And, the model's capability is generalized to achieve
+single-attribute manipulation by adversarial learning. Meanwhile, we compose a
+new dataset, named GarmentSet, with annotation of landmarks of collars and
+sleeves on clean garment images. Extensive experiments on this dataset and
+real-world samples demonstrate that our method can synthesize much better
+results than the state-of-the-art methods in both quantitative and qualitative
+comparisons.",cs.CV,cs.CV,1,Computer Vision and Pattern Recognition,Computer Vision and Pattern Recognition,Shao-Hang Hsieh,"Lele Chen, Justin Tian, Guo Li, Cheng-Haw Wu, Erh-Kan King, Kuan-Ting Chen, Shao-Hang Hsieh",7,http://arxiv.org/pdf/2001.06427v1,http://arxiv.org/abs/2001.06427v1,2020-01-17
+GraphBGS: Background Subtraction via Recovery of Graph Signals,"Graph-based algorithms have been successful approaching the problems of
+unsupervised and semi-supervised learning. Recently, the theory of graph signal
+processing and semi-supervised learning have been combined leading to new
+developments and insights in the field of machine learning. In this paper,
+concepts of recovery of graph signals and semi-supervised learning are
+introduced in the problem of background subtraction. We propose a new algorithm
+named GraphBGS, this method uses a Mask R-CNN for instances segmentation;
+temporal median filter for background initialization; motion, texture, color,
+and structural features for representing the nodes of a graph; k-nearest
+neighbors for the construction of the graph; and finally a semi-supervised
+method inspired from the theory of recovery of graph signals to solve the
+problem of background subtraction. The method is evaluated on the publicly
+available change detection, and scene background initialization databases.
+Experimental results show that GraphBGS outperforms unsupervised background
+subtraction algorithms in some challenges of the change detection dataset. And
+most significantly, this method outperforms generative adversarial networks in
+unseen videos in some sequences of the scene background initialization
+database.",cs.CV,cs.CV,1,Computer Vision and Pattern Recognition,Computer Vision and Pattern Recognition,Thierry Bouwmans,"Jhony H. Giraldo, Thierry Bouwmans",2,http://arxiv.org/pdf/2001.06404v1,http://arxiv.org/abs/2001.06404v1,2020-01-17
+Latency-Aware Differentiable Neural Architecture Search,"Differentiable neural architecture search methods became popular in automated
+machine learning, mainly due to their low search costs and flexibility in
+designing the search space. However, these methods suffer the difficulty in
+optimizing network, so that the searched network is often unfriendly to
+hardware. This paper deals with this problem by adding a differentiable latency
+loss term into optimization, so that the search process can tradeoff between
+accuracy and latency with a balancing coefficient. The core of latency
+prediction is to encode each network architecture and feed it into a
+multi-layer regressor, with the training data being collected from randomly
+sampling a number of architectures and evaluating them on the hardware. We
+evaluate our approach on NVIDIA Tesla-P100 GPUs. With 100K sampled
+architectures (requiring a few hours), the latency prediction module arrives at
+a relative error of lower than 10\%. Equipped with this module, the search
+method can reduce the latency by 20% meanwhile preserving the accuracy. Our
+approach also enjoys the ability of being transplanted to a wide range of
+hardware platforms with very few efforts, or being used to optimizing other
+non-differentiable factors such as power consumption.",cs.CV,cs.CV,1,Computer Vision and Pattern Recognition,Computer Vision and Pattern Recognition,Hongkai Xiong,"Yuhui Xu, Lingxi Xie, Xiaopeng Zhang, Xin Chen, Bowen Shi, Qi Tian, Hongkai Xiong",7,http://arxiv.org/pdf/2001.06392v1,http://arxiv.org/abs/2001.06392v1,2020-01-17
+"BigEarthNet Deep Learning Models with A New Class-Nomenclature for
+  Remote Sensing Image Understanding","Success of deep neural networks in the framework of remote sensing (RS) image
+analysis depends on the availability of a high number of annotated images.
+BigEarthNet is a new large-scale Sentinel-2 benchmark archive that has been
+recently introduced in RS to advance deep learning (DL) studies. Each image
+patch in BigEarthNet is annotated with multi-labels provided by the CORINE Land
+Cover (CLC) map of 2018 based on its most thematic detailed Level-3 class
+nomenclature. BigEarthNet has enabled data-hungry DL algorithms to reach high
+performance in the context of multi-label RS image retrieval and
+classification. However, initial research demonstrates that some CLC classes
+are challenging to be accurately described by considering only (single-date)
+Sentinel-2 images. To further increase the effectiveness of BigEarthNet, in
+this paper we introduce an alternative class-nomenclature to allow DL models
+for better learning and describing the complex spatial and spectral information
+content of the Sentinel-2 images. This is achieved by interpreting and
+arranging the CLC Level-3 nomenclature based on the properties of Sentinel-2
+images in a new nomenclature of 19 classes. Then, the new class-nomenclature of
+BigEarthNet is used within state-of-the-art DL models (namely VGG model at the
+depth of 16 and 19 layers [VGG16 and VGG19] and ResNet model at the depth of
+50, 101 and 152 layers [ResNet50, ResNet101, ResNet152] as well as K-Branch CNN
+model) in the context of multi-label classification. Experimental results show
+that the models trained from scratch on BigEarthNet outperform those
+pre-trained on ImageNet, especially in relation to some complex classes
+including agriculture and other vegetated and natural environments. All DL
+models are made publicly available, offering an important resource to guide
+future progress on content based image retrieval and scene classification
+problems in RS.",cs.CV,cs.CV,1,Computer Vision and Pattern Recognition,Computer Vision and Pattern Recognition,Begüm Demir,"Gencer Sumbul, Jian Kang, Tristan Kreuziger, Filipe Marcelino, Hugo Costa, Pedro Benevides, Mario Caetano, Begüm Demir",8,http://arxiv.org/pdf/2001.06372v1,http://arxiv.org/abs/2001.06372v1,2020-01-17
+"Efficient Facial Feature Learning with Wide Ensemble-based Convolutional
+  Neural Networks","Ensemble methods, traditionally built with independently trained
+de-correlated models, have proven to be efficient methods for reducing the
+remaining residual generalization error, which results in robust and accurate
+methods for real-world applications. In the context of deep learning, however,
+training an ensemble of deep networks is costly and generates high redundancy
+which is inefficient. In this paper, we present experiments on Ensembles with
+Shared Representations (ESRs) based on convolutional networks to demonstrate,
+quantitatively and qualitatively, their data processing efficiency and
+scalability to large-scale datasets of facial expressions. We show that
+redundancy and computational load can be dramatically reduced by varying the
+branching level of the ESR without loss of diversity and generalization power,
+which are both important for ensemble performance. Experiments on large-scale
+datasets suggest that ESRs reduce the remaining residual generalization error
+on the AffectNet and FER+ datasets, reach human-level performance, and
+outperform state-of-the-art methods on facial expression recognition in the
+wild using emotion and affect concepts.",cs.CV,"cs.LG, stat.ML, cs.CV",3,Computer Vision and Pattern Recognition,"Machine Learning, Machine Learning, Computer Vision and Pattern Recognition",Stefan Wermter,"Henrique Siqueira, Sven Magg, Stefan Wermter",3,http://arxiv.org/pdf/2001.06338v1,http://arxiv.org/abs/2001.06338v1,2020-01-17
+Review: deep learning on 3D point clouds,"Point cloud is point sets defined in 3D metric space. Point cloud has become
+one of the most significant data format for 3D representation. Its gaining
+increased popularity as a result of increased availability of acquisition
+devices, such as LiDAR, as well as increased application in areas such as
+robotics, autonomous driving, augmented and virtual reality. Deep learning is
+now the most powerful tool for data processing in computer vision, becoming the
+most preferred technique for tasks such as classification, segmentation, and
+detection. While deep learning techniques are mainly applied to data with a
+structured grid, point cloud, on the other hand, is unstructured. The
+unstructuredness of point clouds makes use of deep learning for its processing
+directly very challenging. Earlier approaches overcome this challenge by
+preprocessing the point cloud into a structured grid format at the cost of
+increased computational cost or lost of depth information. Recently, however,
+many state-of-the-arts deep learning techniques that directly operate on point
+cloud are being developed. This paper contains a survey of the recent
+state-of-the-art deep learning techniques that mainly focused on point cloud
+data. We first briefly discussed the major challenges faced when using deep
+learning directly on point cloud, we also briefly discussed earlier approaches
+which overcome the challenges by preprocessing the point cloud into a
+structured grid. We then give the review of the various state-of-the-art deep
+learning approaches that directly process point cloud in its unstructured form.
+We introduced the popular 3D point cloud benchmark datasets. And we also
+further discussed the application of deep learning in popular 3D vision tasks
+including classification, segmentation and detection.",cs.CV,cs.CV,1,Computer Vision and Pattern Recognition,Computer Vision and Pattern Recognition,Cheng Wang,"Saifullahi Aminu Bello, Shangshu Yu, Cheng Wang",3,http://arxiv.org/pdf/2001.06280v1,http://arxiv.org/abs/2001.06280v1,2020-01-17
+"Compounding the Performance Improvements of Assembled Techniques in a
+  Convolutional Neural Network","Recent studies in image classification have demonstrated a variety of
+techniques for improving the performance of Convolutional Neural Networks
+(CNNs). However, attempts to combine existing techniques to create a practical
+model are still uncommon. In this study, we carry out extensive experiments to
+validate that carefully assembling these techniques and applying them to a
+basic CNN model in combination can improve the accuracy and robustness of the
+model while minimizing the loss of throughput. For example, our proposed
+ResNet-50 shows an improvement in top-1 accuracy from 76.3% to 82.78%, and an
+mCE improvement from 76.0% to 48.9%, on the ImageNet ILSVRC2012 validation set.
+With these improvements, inference throughput only decreases from 536 to 312.
+The resulting model significantly outperforms state-of-the-art models with
+similar accuracy in terms of mCE and inference throughput. To verify the
+performance improvement in transfer learning, fine grained classification and
+image retrieval tasks were tested on several open datasets and showed that the
+improvement to backbone network performance boosted transfer learning
+performance significantly. Our approach achieved 1st place in the iFood
+Competition Fine-Grained Visual Recognition at CVPR 2019, and the source code
+and trained models are available at https://github.com/clovaai/assembled-cnn",cs.CV,cs.CV,1,Computer Vision and Pattern Recognition,Computer Vision and Pattern Recognition,Kiho Hong,"Jungkyu Lee, Taeryun Won, Kiho Hong",3,http://arxiv.org/pdf/2001.06268v1,http://arxiv.org/abs/2001.06268v1,2020-01-17
+SieveNet: A Unified Framework for Robust Image-Based Virtual Try-On,"Image-based virtual try-on for fashion has gained considerable attention
+recently. The task requires trying on a clothing item on a target model image.
+An efficient framework for this is composed of two stages: (1) warping
+(transforming) the try-on cloth to align with the pose and shape of the target
+model, and (2) a texture transfer module to seamlessly integrate the warped
+try-on cloth onto the target model image. Existing methods suffer from
+artifacts and distortions in their try-on output. In this work, we present
+SieveNet, a framework for robust image-based virtual try-on. Firstly, we
+introduce a multi-stage coarse-to-fine warping network to better model
+fine-grained intricacies (while transforming the try-on cloth) and train it
+with a novel perceptual geometric matching loss. Next, we introduce a try-on
+cloth conditioned segmentation mask prior to improve the texture transfer
+network. Finally, we also introduce a dueling triplet loss strategy for
+training the texture translation network which further improves the quality of
+the generated try-on results. We present extensive qualitative and quantitative
+evaluations of each component of the proposed pipeline and show significant
+performance improvements against the current state-of-the-art method.",cs.CV,"eess.IV, cs.LG, cs.CV",3,Computer Vision and Pattern Recognition,"Image and Video Processing, Machine Learning, Computer Vision and Pattern Recognition",Balaji Krishnamurthy,"Surgan Jandial, Ayush Chopra, Kumar Ayush, Mayur Hemani, Abhijeet Kumar, Balaji Krishnamurthy",6,http://arxiv.org/pdf/2001.06265v1,http://arxiv.org/abs/2001.06265v1,2020-01-17
+"Two-Phase Object-Based Deep Learning for Multi-temporal SAR Image Change
+  Detection","Change detection is one of the fundamental applications of synthetic aperture
+radar (SAR) images. However, speckle noise presented in SAR images has a much
+negative effect on change detection. In this research, a novel two-phase
+object-based deep learning approach is proposed for multi-temporal SAR image
+change detection. Compared with traditional methods, the proposed approach
+brings two main innovations. One is to classify all pixels into three
+categories rather than two categories: unchanged pixels, changed pixels caused
+by strong speckle (false changes), and changed pixels formed by real terrain
+variation (real changes). The other is to group neighboring pixels into
+segmented into superpixel objects (from pixels) such as to exploit local
+spatial context. Two phases are designed in the methodology: 1) Generate
+objects based on the simple linear iterative clustering algorithm, and
+discriminate these objects into changed and unchanged classes using fuzzy
+c-means (FCM) clustering and a deep PCANet. The prediction of this Phase is the
+set of changed and unchanged superpixels. 2) Deep learning on the pixel sets
+over the changed superpixels only, obtained in the first phase, to discriminate
+real changes from false changes. SLIC is employed again to achieve new
+superpixels in the second phase. Low rank and sparse decomposition are applied
+to these new superpixels to suppress speckle noise significantly. A further
+clustering step is applied to these new superpixels via FCM. A new PCANet is
+then trained to classify two kinds of changed superpixels to achieve the final
+change maps. Numerical experiments demonstrate that, compared with benchmark
+methods, the proposed approach can distinguish real changes from false changes
+effectively with significantly reduced false alarm rates, and achieve up to
+99.71% change detection accuracy using multi-temporal SAR imagery.",cs.CV,"eess.IV, cs.CV",2,Computer Vision and Pattern Recognition,"Image and Video Processing, Computer Vision and Pattern Recognition",Yongming Li,"Xinzheng Zhang, Guo Liu, Ce Zhang, Peter M Atkinson, Xiaoheng Tan, Xin Jian, Xichuan Zhou, Yongming Li",8,http://arxiv.org/pdf/2001.06252v1,http://arxiv.org/abs/2001.06252v1,2020-01-17
+"Detection Method Based on Automatic Visual Shape Clustering for
+  Pin-Missing Defect in Transmission Lines","Bolts are the most numerous fasteners in transmission lines and are prone to
+losing their split pins. How to realize the automatic pin-missing defect
+detection for bolts in transmission lines so as to achieve timely and efficient
+trouble shooting is a difficult problem and the long-term research target of
+power systems. In this paper, an automatic detection model called Automatic
+Visual Shape Clustering Network (AVSCNet) for pin-missing defect is
+constructed. Firstly, an unsupervised clustering method for the visual shapes
+of bolts is proposed and applied to construct a defect detection model which
+can learn the difference of visual shape. Next, three deep convolutional neural
+network optimization methods are used in the model: the feature enhancement,
+feature fusion and region feature extraction. The defect detection results are
+obtained by applying the regression calculation and classification to the
+regional features. In this paper, the object detection model of different
+networks is used to test the dataset of pin-missing defect constructed by the
+aerial images of transmission lines from multiple locations, and it is
+evaluated by various indicators and is fully verified. The results show that
+our method can achieve considerably satisfactory detection effect.",eess.IV,"eess.IV, cs.CV",2,Image and Video Processing,"Image and Video Processing, Computer Vision and Pattern Recognition",Wenqing Zhao,"Zhenbing Zhao, Hongyu Qi, Yincheng Qi, Ke Zhang, Yongjie Zhai, Wenqing Zhao",6,http://arxiv.org/pdf/2001.06236v1,http://arxiv.org/abs/2001.06236v1,2020-01-17
+"A back-end, CMOS compatible ferroelectric Field Effect Transistor for
+  synaptic weights","Neuromorphic computing architectures enable the dense co-location of memory
+and processing elements within a single circuit. This co-location removes the
+communication bottleneck of transferring data between separate memory and
+computing units as in standard von Neuman architectures for data-critical
+applications including machine learning. The essential building blocks of
+neuromorphic systems are non-volatile synaptic elements such as memristors. Key
+memristor properties include a suitable non-volatile resistance range,
+continuous linear resistance modulation and symmetric switching. In this work,
+we demonstrate voltage-controlled, symmetric and analog potentiation and
+depression of a ferroelectric Hf$_{57}$Zr$_{43}$O$_{2}$ (HZO) field effect
+transistor (FeFET) with good linearity. Our FeFET operates with a low writing
+energy (fJ) and fast programming time (40 ns). Retention measurements have been
+done over 4-bits depth with low noise (1%) in the tungsten oxide (WO$_{x}$)
+read out channel. By adjusting the channel thickness from 15nm to 8nm, the
+on/off ratio of the FeFET can be engineered from 1% to 200% with an
+on-resistance ideally >100 kOhm, depending on the channel geometry. The device
+concept is using earth-abundant materials, and is compatible with a back end of
+line (BEOL) integration into complementary metal-oxidesemiconductor (CMOS)
+processes. It has therefore a great potential for the fabrication of high
+density, large-scale integrated arrays of artificial analog synapses.",cs.ET,"cs.ET, physics.app-ph",2,Emerging Technologies,"Emerging Technologies, Applied Physics",Jean Fompeyriney,"Mattia Halter, Laura Bégon-Lours, Valeria Bragaglia, Marilyne Sousa, Bert Jan Offrein, Stefan Abel, Mathieu Luisier, Jean Fompeyriney",8,http://arxiv.org/pdf/2001.06475v1,http://arxiv.org/abs/2001.06475v1,2020-01-17
+Gradient descent with momentum --- to accelerate or to super-accelerate?,"We consider gradient descent with `momentum', a widely used method for loss
+function minimization in machine learning. This method is often used with
+`Nesterov acceleration', meaning that the gradient is evaluated not at the
+current position in parameter space, but at the estimated position after one
+step. In this work, we show that the algorithm can be improved by extending
+this `acceleration' --- by using the gradient at an estimated position several
+steps ahead rather than just one step ahead. How far one looks ahead in this
+`super-acceleration' algorithm is determined by a new hyperparameter.
+Considering a one-parameter quadratic loss function, the optimal value of the
+super-acceleration can be exactly calculated and analytically estimated. We
+show explicitly that super-accelerating the momentum algorithm is beneficial,
+not only for this idealized problem, but also for several synthetic loss
+landscapes and for the MNIST classification task with neural networks.
+Super-acceleration is also easy to incorporate into adaptive algorithms like
+RMSProp or Adam, and is shown to improve these algorithms.",cs.LG,"cs.LG, stat.ML, math.OC",3,Machine Learning,"Machine Learning, Machine Learning, Optimization and Control",Masudul Haque,"Goran Nakerst, John Brennan, Masudul Haque",3,http://arxiv.org/pdf/2001.06472v1,http://arxiv.org/abs/2001.06472v1,2020-01-17
+"Learning Sparse Classifiers: Continuous and Mixed Integer Optimization
+  Perspectives","We consider a discrete optimization based approach for learning sparse
+classifiers, where the outcome depends upon a linear combination of a small
+subset of features. Recent work has shown that mixed integer programming (MIP)
+can be used to solve (to optimality) $\ell_0$-regularized problems at scales
+much larger than what was conventionally considered possible in the statistics
+and machine learning communities. Despite their usefulness, MIP-based
+approaches are significantly slower compared to relatively mature algorithms
+based on $\ell_1$-regularization and relatives. We aim to bridge this
+computational gap by developing new MIP-based algorithms for
+$\ell_0$-regularized classification. We propose two classes of scalable
+algorithms: an exact algorithm that can handle $p\approx 50,000$ features in a
+few minutes, and approximate algorithms that can address instances with
+$p\approx 10^6$ in times comparable to fast $\ell_1$-based algorithms. Our
+exact algorithm is based on the novel idea of \textsl{integrality generation},
+which solves the original problem (with $p$ binary variables) via a sequence of
+mixed integer programs that involve a small number of binary variables. Our
+approximate algorithms are based on coordinate descent and local combinatorial
+search. In addition, we present new estimation error bounds for a class of
+$\ell_0$-regularized estimators. Experiments on real and synthetic data
+demonstrate that our approach leads to models with considerably improved
+statistical performance (especially, variable selection) when compared to
+competing toolkits.",stat.ML,"stat.CO, math.OC, cs.LG, stat.ML",4,Machine Learning,"Computation, Optimization and Control, Machine Learning, Machine Learning",Rahul Mazumder,"Antoine Dedieu, Hussein Hazimeh, Rahul Mazumder",3,http://arxiv.org/pdf/2001.06471v1,http://arxiv.org/abs/2001.06471v1,2020-01-17
+"Exact Information Bottleneck with Invertible Neural Networks: Getting
+  the Best of Discriminative and Generative Modeling","The Information Bottleneck (IB) principle offers a unified approach to many
+learning and prediction problems. Although optimal in an information-theoretic
+sense, practical applications of IB are hampered by a lack of accurate
+high-dimensional estimators of mutual information, its main constituent. We
+propose to combine IB with invertible neural networks (INNs), which for the
+first time allows exact calculation of the required mutual information. Applied
+to classification, our proposed method results in a generative classifier we
+call IB-INN. It accurately models the class conditional likelihoods,
+generalizes well to unseen data and reliably recognizes out-of-distribution
+examples. In contrast to existing generative classifiers, these advantages
+incur only minor reductions in classification accuracy in comparison to
+corresponding discriminative methods such as feed-forward networks.
+Furthermore, we provide insight into why IB-INNs are superior to other
+generative architectures and training procedures and show experimentally that
+our method outperforms alternative models of comparable complexity.",cs.LG,"68T01, cs.LG, stat.ML",3,Machine Learning,"Machine Learning, Machine Learning",Carsten Rother,"Lynton Ardizzone, Radek Mackowiak, Ullrich Köthe, Carsten Rother",4,http://arxiv.org/pdf/2001.06448v1,http://arxiv.org/abs/2001.06448v1,2020-01-17
+"Generalization of Change-Point Detection in Time Series Data Based on
+  Direct Density Ratio Estimation","The goal of the change-point detection is to discover changes of time series
+distribution. One of the state of the art approaches of the change-point
+detection are based on direct density ratio estimation. In this work we show
+how existing algorithms can be generalized using various binary classification
+and regression models. In particular, we show that the Gradient Boosting over
+Decision Trees and Neural Networks can be used for this purpose. The algorithms
+are tested on several synthetic and real-world datasets. The results show that
+the proposed methods outperform classical RuLSIF algorithm. Discussion of cases
+where the proposed algorithms have advantages over existing methods are also
+provided.",cs.LG,"cs.LG, stat.ML",2,Machine Learning,"Machine Learning, Machine Learning",Andrey Ustyuzhanin,"Mikhail Hushchyn, Andrey Ustyuzhanin",2,http://arxiv.org/pdf/2001.06386v1,http://arxiv.org/abs/2001.06386v1,2020-01-17
+Approximating Activation Functions,"ReLU is widely seen as the default choice for activation functions in neural
+networks. However, there are cases where more complicated functions are
+required. In particular, recurrent neural networks (such as LSTMs) make
+extensive use of both hyperbolic tangent and sigmoid functions. These functions
+are expensive to compute. We used function approximation techniques to develop
+replacements for these functions and evaluated them empirically on three
+popular network configurations. We find safe approximations that yield a 10% to
+37% improvement in training times on the CPU. These approximations were
+suitable for all cases we considered and we believe are appropriate
+replacements for all networks using these activation functions. We also develop
+ranged approximations which only apply in some cases due to restrictions on
+their input domain. Our ranged approximations yield a performance improvement
+of 20% to 53% in network training time. Our functions also match or
+considerably out perform the ad-hoc approximations used in Theano and the
+implementation of Word2Vec.",cs.LG,"68U99 (Primary) 68T01, cs.LG, stat.ML, cs.PF",4,Machine Learning,"Machine Learning, Machine Learning, Performance",Andrew Rice,"Nicholas Gerard Timmons, Andrew Rice",2,http://arxiv.org/pdf/2001.06370v1,http://arxiv.org/abs/2001.06370v1,2020-01-17
+"Rumor Detection on Social Media with Bi-Directional Graph Convolutional
+  Networks","Social media has been developing rapidly in public due to its nature of
+spreading new information, which leads to rumors being circulated. Meanwhile,
+detecting rumors from such massive information in social media is becoming an
+arduous challenge. Therefore, some deep learning methods are applied to
+discover rumors through the way they spread, such as Recursive Neural Network
+(RvNN) and so on. However, these deep learning methods only take into account
+the patterns of deep propagation but ignore the structures of wide dispersion
+in rumor detection. Actually, propagation and dispersion are two crucial
+characteristics of rumors. In this paper, we propose a novel bi-directional
+graph model, named Bi-Directional Graph Convolutional Networks (Bi-GCN), to
+explore both characteristics by operating on both top-down and bottom-up
+propagation of rumors. It leverages a GCN with a top-down directed graph of
+rumor spreading to learn the patterns of rumor propagation, and a GCN with an
+opposite directed graph of rumor diffusion to capture the structures of rumor
+dispersion. Moreover, the information from the source post is involved in each
+layer of GCN to enhance the influences from the roots of rumors. Encouraging
+empirical results on several benchmarks confirm the superiority of the proposed
+method over the state-of-the-art approaches.",cs.SI,"cs.LG, cs.SI",2,Social and Information Networks,"Machine Learning, Social and Information Networks",Junzhou Huang,"Tian Bian, Xi Xiao, Tingyang Xu, Peilin Zhao, Wenbing Huang, Yu Rong, Junzhou Huang",7,http://arxiv.org/pdf/2001.06362v1,http://arxiv.org/abs/2001.06362v1,2020-01-17
+Cyber Attack Detection thanks to Machine Learning Algorithms,"Cybersecurity attacks are growing both in frequency and sophistication over
+the years. This increasing sophistication and complexity call for more
+advancement and continuous innovation in defensive strategies. Traditional
+methods of intrusion detection and deep packet inspection, while still largely
+used and recommended, are no longer sufficient to meet the demands of growing
+security threats. As computing power increases and cost drops, Machine Learning
+is seen as an alternative method or an additional mechanism to defend against
+malwares, botnets, and other attacks. This paper explores Machine Learning as a
+viable solution by examining its capabilities to classify malicious traffic in
+a network.
+  First, a strong data analysis is performed resulting in 22 extracted features
+from the initial Netflow datasets. All these features are then compared with
+one another through a feature selection process. Then, our approach analyzes
+five different machine learning algorithms against NetFlow dataset containing
+common botnets. The Random Forest Classifier succeeds in detecting more than
+95% of the botnets in 8 out of 13 scenarios and more than 55% in the most
+difficult datasets. Finally, insight is given to improve and generalize the
+results, especially through a bootstrapping technique.",cs.LG,"cs.LG, cs.NI, cs.CR, stat.ML",4,Machine Learning,"Machine Learning, Networking and Internet Architecture, Cryptography and Security, Machine Learning",Kristofer Anandita,"Antoine Delplace, Sheryl Hermoso, Kristofer Anandita",3,http://arxiv.org/pdf/2001.06309v1,http://arxiv.org/abs/2001.06309v1,2020-01-17
+Eye of the Mind: Image Processing for Social Coding,"Developers are increasingly sharing images in social coding environments
+alongside the growth in visual interactions within social networks. The
+analysis of the ratio between the textual and visual content of Mozilla's
+change requests and in Q/As of StackOverflow programming revealed a steady
+increase in sharing images over the past five years. Developers' shared images
+are meaningful and are providing complementary information compared to their
+associated text. Often, the shared images are essential in understanding the
+change requests, questions, or the responses submitted. Relying on these
+observations, we delve into the potential of automatic completion of textual
+software artifacts with visual content.",cs.SE,cs.SE,1,Software Engineering,Software Engineering,Maleknaz Nayebi,Maleknaz Nayebi,1,http://arxiv.org/pdf/2001.06426v1,http://arxiv.org/abs/2001.06426v1,2020-01-17
+Entropy Balancing for Continuous Treatments,"This paper introduces entropy balancing for continuous treatments (EBCT) by
+extending the original entropy balancing methodology of Hainm\""uller (2012). In
+order to estimate balancing weights, the proposed approach solves a globally
+convex constrained optimization problem. EBCT weights reliably eradicate
+Pearson correlations between covariates and the continuous treatment variable.
+This is the case even when other methods based on the generalized propensity
+score tend to yield insufficient balance due to strong selection into different
+treatment intensities. Moreover, the optimization procedure is more successful
+in avoiding extreme weights attached to a single unit. Extensive Monte-Carlo
+simulations show that treatment effect estimates using EBCT display similar or
+lower bias and uniformly lower root mean squared error. These properties make
+EBCT an attractive method for the evaluation of continuous treatments.",econ.EM,"stat.ME, econ.EM",2,Econometrics,"Methodology, Econometrics",Stefan Tübbicke,Stefan Tübbicke,1,http://arxiv.org/pdf/2001.06281v1,http://arxiv.org/abs/2001.06281v1,2020-01-17
+Distributional synthetic controls,"This article extends the method of synthetic controls to probability
+measures. The distribution of the synthetic control group is obtained as the
+optimally weighted barycenter in Wasserstein space of the distributions of the
+control groups which minimizes the distance to the distribution of the
+treatment group. It can be applied to settings with disaggregated- or
+aggregated (functional) data. The method produces a generically unique
+counterfactual distribution when the data are continuously distributed. An
+efficient practical implementation along with novel inference results and a
+minimum wage empirical illustration are provided.",econ.EM,"stat.ME, econ.EM",2,Econometrics,"Methodology, Econometrics",Florian Gunsilius,Florian Gunsilius,1,http://arxiv.org/pdf/2001.06118v1,http://arxiv.org/abs/2001.06118v1,2020-01-17
+Passively parallel regularized stokeslets,"Stokes flow, discussed by G.G. Stokes in 1851, describes many microscopic
+biological flow phenomena, including cilia-driven transport and flagellar
+motility; the need to quantify and understand these flows has motivated decades
+of mathematical and computational research. Regularized stokeslet methods,
+which have been used and refined over the past twenty years, offer significant
+advantages in simplicity of implementation, with a recent modification based on
+nearest-neighbour interpolation providing significant improvements in
+efficiency and accuracy. Moreover this method can be implemented with the
+majority of the computation taking place through built-in linear algebra,
+entailing that state-of-the-art hardware and software developments in the
+latter, in particular multicore and GPU computing, can be exploited through
+minimal modifications ('passive parallelism') to existing MATLAB computer code.
+Hence, and with widely-available GPU hardware, significant improvements in the
+efficiency of the regularized stokeslet method can be obtained. The approach is
+demonstrated through computational experiments on three model biological flows:
+undulatory propulsion of multiple C. Elegans, simulation of multiple sperm in a
+geometrically confined region, and left-right symmetry breaking particle
+transport in the ventral node of the mouse embryo. In general an
+order-of-magnitude improvement in efficiency is observed. This development
+further widens the complexity of biological flow systems that are accessible
+without the need for extensive code development or specialist facilities.",physics.flu-dyn,"physics.flu-dyn, physics.comp-ph, 76Z10, 76D07, 65Y05, 92C05, physics.bio-ph",4,Fluid Dynamics,"Fluid Dynamics, Computational Physics, Biological Physics",David J. Smith,"Meurig T. Gallagher, David J. Smith",2,http://arxiv.org/pdf/2001.06468v1,http://arxiv.org/abs/2001.06468v1,2020-01-17
+"A library of ab initio Raman spectra for automated identification of 2D
+  materials","Raman spectroscopy is frequently used to identify composition, structure and
+layer thickness of two-dimensional (2D) materials. Here, we describe an
+efficient first-principles workflow for calculating Raman spectra of solids and
+molecules within third-order perturbation theory. The method is used to obtain
+the Raman spectra of 733 different 2D crystals selected as the most stable
+materials from the computational 2D materials database (C2DB). The calculations
+are based on an efficient density functional theory (DFT) implementation
+employing a localized atomic orbital (LCAO) basis set. We benchmark the
+computational scheme against available experimental data and present several
+examples from the database including the evolution of Raman spectra from
+MoSe$_2$ over MoSSe to MoS$_2$. Furthermore, we propose an automatic procedure
+for identifying a material based on an input experimental Raman spectrum and
+illustrate it for the cases of MoS$_2$ (H-phase) and WTe$_2$
+(T$^\prime$-phase). The Raman spectra of all materials at three commonly used
+laser excitation frequencies and nine polarization configurations are freely
+available from the C2DB where they can be browsed or downloaded as data files.
+Our work provides a comprehensive and easily accessible library of ab initio
+Raman spectra and should be a valuable information source for both
+theoreticians and experimentalists in the field of 2D materials.",cond-mat.mtrl-sci,"cond-mat.mtrl-sci, cond-mat.mes-hall, physics.comp-ph",3,Materials Science,"Materials Science, Mesoscale and Nanoscale Physics, Computational Physics",K. S. Thygesen,"A. Taghizadeh, U. Leffers, T. G. Pedersen, K. S. Thygesen",4,http://arxiv.org/pdf/2001.06313v1,http://arxiv.org/abs/2001.06313v1,2020-01-17
+Fingerprinting defects in diamond: Partitioning the vibrational spectrum,"In this work, we present a computational scheme for isolating the vibrational
+spectrum of a defect in a solid. By quantifying the defect character of the
+atom-projected vibrational spectra, the contributing atoms are identified and
+the strength of their contribution determined. This method could be used to
+systematically improve phonon fragment calculations. More interestingly, using
+the atom-projected vibrational spectra of the defect atoms directly, it is
+possible to obtain a well-converged defect spectrum at lower computational
+cost, which also incorporates the host-lattice interactions. Using diamond as
+the host material, four test case defects, each presenting a distinctly
+different vibrational behaviour, are considered: a heavy substitutional dopant
+(Eu), two intrinsic defects (neutral vacancy and split interstitial), and the
+negatively charged N-vacancy center. The heavy dopant and split interstitial
+present localized modes at low and high frequencies, respectively, showing
+little overlap with the host spectrum. In contrast, the neutral vacancy and the
+N-vacancy center show a broad contribution to the upper spectral range of the
+host spectrum, making them challenging to extract. Independent of the
+vibrational behaviour, the main atoms contributing to the defect spectrum can
+be clearly identified. Recombination of their atom-projected spectra results in
+the isolated defect spectrum.",cond-mat.mtrl-sci,"cond-mat.mtrl-sci, physics.comp-ph",2,Materials Science,"Materials Science, Computational Physics",Danny E. P. Vanpoucke,Danny E. P. Vanpoucke,1,http://arxiv.org/pdf/2001.06277v1,http://arxiv.org/abs/2001.06277v1,2020-01-17
+On the emergence mechanism of carrot sprites,"We investigate the launch of negative upward streamers from sprite glows.
+This phenomenon is readily observed in high-speed observations of sprites and
+underlies the classification of sprites into carrot or column types. First, we
+describe how an attachment instability leads to a sharply defined region in the
+upper part of the streamer channel. This region has an enhanced electric field,
+low conductivity and strongly emits in the first positive system of molecular
+nitrogen. We identify it as the sprite glow. We then show how, in the most
+common configuration of a carrot sprite, several upward streamers emerge close
+to the lower boundary of the glow, where negative charge gets trapped and the
+lateral electric field is high enough. These streamers cut off the current
+flowing towards the glow and lead to the optical deactivation of the glow
+above. Finally, we discuss how our results naturally explain angel sprites.",physics.ao-ph,"physics.comp-ph, physics.ao-ph, physics.plasm-ph",3,Atmospheric and Oceanic Physics,"Computational Physics, Atmospheric and Oceanic Physics, Plasma Physics",A. Luque,"A. Malagón-Romero, J. Teunissen, H. C. Stenbaek-Nielsen, M. G. McHarg, U. Ebert, A. Luque",6,http://arxiv.org/pdf/2001.06248v1,http://arxiv.org/abs/2001.06248v1,2020-01-17
+Modal characterization of thermal emitters using the Method of Moments,"Electromagnetic sources relying on spontaneous emission are difficult to
+characterize without a proper framework due to the partial spatial coherence of
+the emitted fields. In this paper, we propose to characterize emitters of any
+shape through their natural emitting modes, i.e. a set of coherent modes that
+add up incoherently. The resulting framework is very intuitive since any
+emitter is regarded as a multimode antenna with zero correlation between modes.
+Moreover, for any finite emitter, the modes form a compact set that can be
+truncated. Each significant mode corresponds to one independent degree of
+freedom through which the emitter radiates power. The proposed formalism is
+implemented using the Method of Moments (MoM) and applied to a lossy sphere and
+a lossy ellipsoid. It is shown that electrically small structures can be
+characterized with a small number of modes, and that this number grows as the
+structure becomes electrically large.",physics.comp-ph,physics.comp-ph,1,Computational Physics,Computational Physics,Christophe Craeye,"Denis Tihon, Stafford Withington, Christophe Craeye",3,http://arxiv.org/pdf/2001.06241v1,http://arxiv.org/abs/2001.06241v1,2020-01-17
+"Neglecting Uncertainties Leads to Suboptimal Decisions About Home-Owners
+  Flood Risk Management","Homeowners around the world elevate houses to manage flood risks. Deciding
+how high to elevate the house poses a nontrivial decision problem. The U.S.
+Federal Emergency Management Agency (FEMA) recommends elevating a house to the
+Base Flood Elevation (the elevation of the 100-yr flood) plus a freeboard. This
+recommendation neglects many uncertainties. Here we use a multi-objective
+robust decision-making framework to analyze this decision in the face of deep
+uncertainties. We find strong interactions between the economic, engineering,
+and Earth science uncertainties, illustrating the need for an integrated
+analysis. We show that considering deep uncertainties surrounding flood
+hazards, the discount rate, the house lifetime, and the fragility increases the
+economically optimal house elevation to values well above the recommendation by
+FEMA. An improved decision-support for home-owners has the potential to
+drastically improve decisions and outcomes.",stat.AP,"physics.data-an, stat.AP, q-fin.ST",3,Applications,"Data Analysis, Statistics and Probability, Applications, Statistical Finance",Klaus Keller,"Mahkameh Zarekarizi, Vivek Srikrishnan, Klaus Keller",3,http://arxiv.org/pdf/2001.06457v1,http://arxiv.org/abs/2001.06457v1,2020-01-17
+"Information geometry of scaling expansions of non-exponentially growing
+  confifiguration spaces","Many stochastic complex systems are characterized by the fact that their
+configuration space doesn't grow exponentially as a function of the degrees of
+freedom. The use of scaling expansions is a natural way to measure the
+asymptotic growth of the configuration space volume in terms of the scaling
+exponents of the system. These scaling exponents can, in turn, be used to
+define universality classes that uniquely determine the statistics of a system.
+Every system belongs to one of these classes. Here we derive the information
+geometry of scaling expansions of sample spaces. In particular, we present the
+deformed logarithms and the metric in a systematic and coherent way. We observe
+a phase transition for the curvature. The phase transition can be well measured
+by the characteristic length r, corresponding to a ball with radius 2r having
+the same curvature as the statistical manifold. Increasing characteristic
+length with respect to the size of the system is associated with
+sub-exponential sample space growth is associated with strongly constrained and
+correlated complex systems. Decreasing of the characteristic length corresponds
+to super-exponential sample space growth that occurs for example in systems
+that develop structure as they evolve. Constant curvature means exponential
+sample space growth that is associated with multinomial statistics, and
+traditional Boltzmann-Gibbs, or Shannon statistics applies. This allows us to
+characterize transitions between statistical manifolds corresponding to
+different families of probability distributions.",cond-mat.stat-mech,"math-ph, physics.data-an, cond-mat.stat-mech, math.MP",4,Statistical Mechanics,"Mathematical Physics, Data Analysis, Statistics and Probability, Statistical Mechanics, Mathematical Physics",Stefan Thurner,"Jan Korbel, Rudolf Hanel, Stefan Thurner",3,http://arxiv.org/pdf/2001.06393v1,http://arxiv.org/abs/2001.06393v1,2020-01-17
+"GSSMD: New metric for robust and interpretable assay quality assessment
+  and hit selection","In the high-throughput screening (HTS) campaigns, the Z'-factor and strictly
+standardized mean difference (SSMD) are commonly used to assess the quality of
+assays and to select hits. However, these measures are vulnerable to outliers
+and their performances are highly sensitive to background distributions. Here,
+we propose an alternative measure for assay quality assessment and hit
+selection. The proposed method is a non-parametric generalized variant of SSMD
+(GSSMD). In this paper, we have shown that the proposed method provides more
+robust and intuitive way of assay quality assessment and hit selection.",stat.AP,"math.IT, q-bio.QM, cs.IT, stat.AP, stat.ME",5,Applications,"Information Theory, Quantitative Methods, Information Theory, Applications, Methodology",Shujaat Khan,"Seongyong Park, Shujaat Khan",2,http://arxiv.org/pdf/2001.06384v1,http://arxiv.org/abs/2001.06384v1,2020-01-17
+"Coarsened mixtures of hierarchical skew normal kernels for flow
+  cytometry analyses","Flow cytometry (FCM) is the standard multi-parameter assay used to measure
+single cell phenotype and functionality. It is commonly used to quantify the
+relative frequencies of cell subsets in blood and disaggregated tissues. A
+typical analysis of FCM data involves cell classification - the identification
+of cell subgroups in the sample - and comparisons of the cell subgroups across
+samples. While modern experiments often necessitate the collection and
+processing of samples in multiple batches, analysis of FCM data across batches
+is challenging because the locations in the marker space of cell subsets may
+vary across samples. Differences across samples may occur because of true
+biological variation or technical reasons such as antibody lot effects or
+instrument optics. An important step in comparative analyses of multi-sample
+FCM data is cross-sample calibration, whose goal is to align cell subsets
+across multiple samples in the presence of variations in locations, so that
+variation due to technical reasons is minimized and true biological variation
+can be meaningfully compared. We introduce a Bayesian nonparametric
+hierarchical modeling approach for accomplishing calibration and cell
+classification simultaneously in a unified probabilistic manner. Three
+important features of our method make it particularly effective for analyzing
+multi-sample FCM data: a nonparametric mixture avoids prespecifying the number
+of cell clusters; the hierarchical skew normal kernels allow flexibility in the
+shapes of the cell subsets and cross-sample variation in their locations; and
+finally the ""coarsening"" strategy makes inference robust to small departures
+from the model, a feature that becomes crucial with massive numbers of
+observations such as those encountered in FCM data. We demonstrate the merits
+of our approach in simulated examples and carry out a case study in the
+analysis of two FCM data sets.",stat.AP,stat.AP,1,Applications,Applications,Li Ma,"Shai Gorsky, Cliburn Chan, Li Ma",3,http://arxiv.org/pdf/2001.06451v1,http://arxiv.org/abs/2001.06451v1,2020-01-17
+Unit Testing for MCMC and other Monte Carlo Methods,"We propose approaches for testing implementations of Markov Chain Monte Carlo
+methods as well as of general Monte Carlo methods. Based on statistical
+hypothesis tests, these approaches can be used in a unit testing framework to,
+for example, check if individual steps in a Gibbs sampler or a reversible jump
+MCMC have the desired invariant distribution. Two exact tests for assessing
+whether a given Markov chain has a specified invariant distribution are
+discussed. These and other tests of Monte Carlo methods can be embedded into a
+sequential method that allows low expected effort if the simulation shows the
+desired behavior and high power if it does not. Moreover, the false rejection
+probability can be kept arbitrarily low. For general Monte Carlo methods, this
+allows testing, for example, if a sampler has a specified distribution or if a
+sampler produces samples with the desired mean. The methods have been
+implemented in the R-package MCUnit.",stat.ME,"stat.CO, stat.ME",2,Methodology,"Computation, Methodology",James Scott,"Axel Gandy, James Scott",2,http://arxiv.org/pdf/2001.06465v1,http://arxiv.org/abs/2001.06465v1,2020-01-17
+"Multifidelity Approximate Bayesian Computation with Sequential Monte
+  Carlo Parameter Sampling","Multifidelity approximate Bayesian computation (MF-ABC) is a likelihood-free
+technique for parameter inference that exploits model approximations to
+significantly increase the speed of ABC algorithms (Prescott and Baker, 2020).
+Previous work has considered MF-ABC only in the context of rejection sampling,
+which does not explore parameter space particularly efficiently. In this work,
+we integrate the multifidelity approach with the ABC sequential Monte Carlo
+(ABC-SMC) algorithm into a new MF-ABC-SMC algorithm. We show that the
+improvements generated by each of ABC-SMC and MF-ABC to the efficiency of
+generating Monte Carlo samples and estimates from the ABC posterior are
+amplified when the two techniques are used together.",stat.CO,stat.CO,1,Computation,Computation,Ruth E. Baker,"Thomas P. Prescott, Ruth E. Baker",2,http://arxiv.org/pdf/2001.06256v1,http://arxiv.org/abs/2001.06256v1,2020-01-17
+"Markov Chain Monte Carlo Methods, a survey with some frequent
+  misunderstandings","In this chapter, we review some of the most standard MCMC tools used in
+Bayesian computation, along with vignettes on standard misunderstandings of
+these approaches taken from Q \&~A's on the forum Cross-validated answered by
+the first author.",stat.CO,stat.CO,1,Computation,Computation,Wu Changye,"Christian P. Robert, Wu Changye",2,http://arxiv.org/pdf/2001.06249v1,http://arxiv.org/abs/2001.06249v1,2020-01-17
+"Bayesian Inference for Big Spatial Data Using Non-stationary Spectral
+  Simulation","It is increasingly understood that the assumption of stationarity is
+unrealistic for many spatial processes. In this article, we combine dimension
+expansion with a spectral method to model big non-stationary spatial fields in
+a computationally efficient manner. Specifically, we use Mejia and
+Rodriguez-Iturbe (1974)'s spectral simulation approach to simulate a spatial
+process with a covariogram at locations that have an expanded dimension. We
+introduce Bayesian hierarchical modelling to dimension expansion, which
+originally has only been modeled using a method of moments approach. In
+particular, we simulate from the posterior distribution using a collapsed Gibbs
+sampler. Our method is both full rank and non-stationary, and can be applied to
+big spatial data because it does not involve storing and inverting large
+covariance matrices. Additionally, we have fewer parameters than many other
+non-stationary spatial models. We demonstrate the wide applicability of our
+approach using a simulation study, and an application using ozone data obtained
+from the National Aeronautics and Space Administration (NASA).",stat.ME,stat.ME,1,Methodology,Methodology,Jonathan R. Bradley,"Hou-Cheng Yang, Jonathan R. Bradley",2,http://arxiv.org/pdf/2001.06477v1,http://arxiv.org/abs/2001.06477v1,2020-01-17
+Causal models for dynamical systems,"A probabilistic model describes a system in its observational state. In many
+situations, however, we are interested in the system's response under
+interventions. The class of structural causal models provides a language that
+allows us to model the behaviour under interventions. It can been taken as a
+starting point to answer a plethora of causal questions, including the
+identification of causal effects or causal structure learning. In this chapter,
+we provide a natural and straight-forward extension of this concept to
+dynamical systems, focusing on continuous time models. In particular, we
+introduce two types of causal kinetic models that differ in how the randomness
+enters into the model: it may either be considered as observational noise or as
+systematic driving noise. In both cases, we define interventions and therefore
+provide a possible starting point for causal inference. In this sense, the book
+chapter provides more questions than answers. The focus of the proposed causal
+kinetic models lies on the dynamics themselves rather than corresponding
+stationary distributions, for example. We believe that this is beneficial when
+the aim is to model the full time evolution of the system and data are measured
+at different time points. Under this focus, it is natural to consider
+interventions in the differential equations themselves.",stat.ME,"math.DS, stat.ME",2,Methodology,"Dynamical Systems, Methodology",Niklas Pfister,"Jonas Peters, Stefan Bauer, Niklas Pfister",3,http://arxiv.org/pdf/2001.06208v1,http://arxiv.org/abs/2001.06208v1,2020-01-17
+"Communication-Efficient Distributed Estimator for Generalized Linear
+  Models with a Diverging Number of Covariates","Distributed statistical inference has recently attracted immense attention.
+Herein, we study the asymptotic efficiency of the maximum likelihood estimator
+(MLE), the one-step MLE, and the aggregated estimating equation estimator for
+generalized linear models with a diverging number of covariates. Then a novel
+method is proposed to obtain an asymptotically efficient estimator for
+large-scale distributed data by two rounds of communication between local
+machines and the central server. The assumption on the number of machines in
+this paper is more relaxed and thus practical for real-world applications.
+Simulations and a case study demonstrate the satisfactory finite-sample
+performance of the proposed estimators.",stat.ME,"stat.ME, cs.DC, cs.LG, stat.ML",4,Methodology,"Methodology, Distributed, Parallel, and Cluster Computing, Machine Learning, Machine Learning",Maozai Tian,"Ping Zhou, Zhen Yu, Jingyi Ma, Maozai Tian",4,http://arxiv.org/pdf/2001.06194v1,http://arxiv.org/abs/2001.06194v1,2020-01-17
+Optimal Crossover Designs for Generalized Linear Models,"We identify locally $D$-optimal crossover designs for generalized linear
+models. We use generalized estimating equations to estimate the model
+parameters along with their variances. To capture the dependency among the
+observations coming from the same subject, we propose six different correlation
+structures. We identify the optimal allocations of units for different
+sequences of treatments. For two-treatment crossover designs, we show via
+simulations that the optimal allocations are reasonably robust to different
+choices of the correlation structures. We discuss a real example of multiple
+treatment crossover experiments using Latin square designs. Using a simulation
+study, we show that a two-stage design with our locally $D$-optimal design at
+the second stage is more efficient than the uniform design, especially when the
+responses from the same subject are correlated.",stat.ME,stat.ME,1,Methodology,Methodology,Jie Yang,"Jeevan Jankar, Abhyuday Mandal, Jie Yang",3,http://arxiv.org/pdf/2001.06168v1,http://arxiv.org/abs/2001.06168v1,2020-01-17
+"Approximate Bayesian Bootstrap Procedures to Estimate Multilevel
+  Treatment Effects in Observational Studies with Application to Type 2
+  Diabetes Treatment Regimens","Randomized clinical trials are considered the gold standard for estimating
+causal effects. Nevertheless, in studies that are aimed at examining adverse
+effects of interventions, such trials are often impractical because of ethical
+and financial considerations. In observational studies, matching on the
+generalized propensity scores was proposed as a possible solution to estimate
+the treatment effects of multiple interventions. However, the derivation of
+point and interval estimates for these matching procedures can become complex
+with non-continuous or censored outcomes. We propose a novel Approximate
+Bayesian Bootstrap algorithm that result in statistically valid point and
+interval estimates of the treatment effects with categorical outcomes. The
+procedure relies on the estimated generalized propensity scores and multiply
+imputes the unobserved potential outcomes for each unit. In addition, we
+describe a corresponding interpretable sensitivity analysis to examine the
+unconfoundedness assumption. We apply this approach to examines the
+cardiovascular safety of common, real-world anti-diabetic treatment regimens
+for Type 2 diabetes mellitus in a large observational database.",stat.ME,stat.ME,1,Methodology,Methodology,Roee Gutman,"Anthony D. Scotina, Andrew R. Zullo, Robert J. Smith, Roee Gutman",4,http://arxiv.org/pdf/2001.06125v1,http://arxiv.org/abs/2001.06125v1,2020-01-17
+"Bayesian inference of dynamics from partial and noisy observations using
+  data assimilation and machine learning","The reconstruction from observations of high-dimensional chaotic dynamics
+such as geophysical flows is hampered by (i) the partial and noisy observations
+that can realistically be obtained, (ii) the need to learn from long time
+series of data, and (iii) the unstable nature of the dynamics. To achieve such
+inference from the observations over long time series, it has been suggested to
+combine data assimilation and machine learning in several ways. We show how to
+unify these approaches from a Bayesian perspective using
+expectation-maximization and coordinate descents. Implementations and
+approximations of these methods are also discussed. Finally, we numerically and
+successfully test the approach on two relevant low-order chaotic models with
+distinct identifiability.",stat.ML,"cs.LG, physics.ao-ph, stat.ML",3,Machine Learning,"Machine Learning, Atmospheric and Oceanic Physics, Machine Learning",Laurent Bertino,"Marc Bocquet, Julien Brajard, Alberto Carrassi, Laurent Bertino",4,http://arxiv.org/pdf/2001.06270v1,http://arxiv.org/abs/2001.06270v1,2020-01-17
+"Deep Neural Networks with Trainable Activations and Controlled Lipschitz
+  Constant","We introduce a variational framework to learn the activation functions of
+deep neural networks. The main motivation is to control the Lipschitz
+regularity of the input-output relation. To that end, we first establish a
+global bound for the Lipschitz constant of neural networks. Based on the
+obtained bound, we then formulate a variational problem for learning activation
+functions. Our variational problem is infinite-dimensional and is not
+computationally tractable. However, we prove that there always exists a
+solution that has continuous and piecewise-linear (linear-spline) activations.
+This reduces the original problem to a finite-dimensional minimization. We
+numerically compare our scheme with standard ReLU network and its variations,
+PReLU and LeakyReLU.",cs.LG,"cs.LG, stat.ML",2,Machine Learning,"Machine Learning, Machine Learning",Michael Unser,"Shayan Aziznejad, Harshit Gupta, Joaquim Campos, Michael Unser",4,http://arxiv.org/pdf/2001.06263v1,http://arxiv.org/abs/2001.06263v1,2020-01-17
+"Data-Driven Permanent Magnet Temperature Estimation in Synchronous
+  Motors with Supervised Machine Learning","Monitoring the magnet temperature in permanent magnet synchronous motors
+(PMSMs) for automotive applications is a challenging task for several decades
+now, as signal injection or sensor-based methods still prove unfeasible in a
+commercial context. Overheating results in severe motor deterioration and is
+thus of high concern for the machine's control strategy and its design. Lack of
+precise temperature estimations leads to lesser device utilization and higher
+material cost. In this work, several machine learning (ML) models are
+empirically evaluated on their estimation accuracy for the task of predicting
+latent high-dynamic magnet temperature profiles. The range of selected
+algorithms covers as diverse approaches as possible with ordinary and weighted
+least squares, support vector regression, $k$-nearest neighbors, randomized
+trees and neural networks. Having test bench data available, it is shown that
+ML approaches relying merely on collected data meet the estimation performance
+of classical thermal models built on thermodynamic theory, yet not all kinds of
+models render efficient use of large datasets or sufficient modeling
+capacities. Especially linear regression and simple feed-forward neural
+networks with optimized hyperparameters mark strong predictive quality at low
+to moderate model sizes.",cs.LG,"eess.SY, cs.SY, cs.LG, stat.ML",4,Machine Learning,"Systems and Control, Machine Learning, Machine Learning",Joachim Böcker,"Wilhelm Kirchgässner, Oliver Wallscheid, Joachim Böcker",3,http://arxiv.org/pdf/2001.06246v1,http://arxiv.org/abs/2001.06246v1,2020-01-17
